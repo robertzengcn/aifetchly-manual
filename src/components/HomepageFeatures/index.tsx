@@ -11,32 +11,35 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'AI Outreach Automation',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Launch high-performing outreach programs in minutes. Aifetchly orchestrates
+        sequencing, personalization, and follow-ups so your team can focus on the
+        conversations that matter.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Unified Lead Intelligence',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Blend CRM, enrichment, and intent data into a single workspace. Surface
+        the highest-value targets automatically with transparent scoring models
+        your revenue teams can trust.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Enterprise-Ready Governance',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Built-in compliance controls, audit-ready logging, and role-based access
+        keep every workflow secure. Aifetchly scales with the rigor demanded by
+        modern go-to-market teams.
       </>
     ),
   },
