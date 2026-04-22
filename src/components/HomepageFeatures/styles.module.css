@@ -5,7 +5,12 @@
   width: 100%;
 }
 
-.featureSvg {
-  height: 200px;
-  width: 200px;
+.featureCard {
+  padding: 1.5rem;
+  height: 100%;
+}
+
+.featureIcon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }

@@ -1,17 +1,19 @@
-import type {ReactNode} from 'react';
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import Heading from '@theme/Heading';
+import type { ReactNode } from "react";
+import clsx from "clsx";
+import Link from "@docusaurus/Link";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import Layout from "@theme/Layout";
+import HomepageFeatures from "@site/src/components/HomepageFeatures";
+import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
+import { translate } from "@docusaurus/Translate";
 
-import styles from './index.module.css';
+import styles from "./index.module.css";
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header className={clsx("hero hero--primary", styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
@@ -20,8 +22,11 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/getting-started/introduction">
-            Getting Started - 5min ⏱️
+            to="/docs/getting-started/introduction"
+          >
+            <Translate id="homepage.gettingStartedButton">
+              Getting Started - 5min ⏱️
+            </Translate>
           </Link>
         </div>
       </div>
@@ -30,11 +35,16 @@ function HomepageHeader() {
 }
 
 export default function Home(): ReactNode {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="AI-Powered Marketing Automation for Lead Generation and Outreach">
+      description={translate({
+        id: "homepage.description",
+        message:
+          "AI-Powered Marketing Automation for Lead Generation and Outreach",
+      })}
+    >
       <HomepageHeader />
       <main>
         <HomepageFeatures />

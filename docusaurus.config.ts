@@ -1,51 +1,66 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
-import type * as Preset from '@docusaurus/preset-classic';
+import { themes as prismThemes } from "prism-react-renderer";
+import type { Config } from "@docusaurus/types";
+import type * as Preset from "@docusaurus/preset-classic";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'aiFetchly Manual',
-  tagline: 'AI-Powered Marketing Automation for Lead Generation and Outreach',
-  favicon: 'img/favicon.ico',
-
-  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
-  future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
-  },
+  title: "aiFetchly Manual",
+  tagline: "AI-Powered Marketing Automation for Lead Generation and Outreach",
+  favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: "https://your-docusaurus-site.example.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: "facebook", // Usually your GitHub org/user name.
+  projectName: "docusaurus", // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: "throw",
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en", "zh-CN", "es", "fr", "de", "ja"],
+    localeConfigs: {
+      en: {
+        htmlLang: "en",
+      },
+      "zh-CN": {
+        htmlLang: "zh-CN",
+      },
+      es: {
+        htmlLang: "es",
+      },
+      fr: {
+        htmlLang: "fr",
+      },
+      de: {
+        htmlLang: "de",
+      },
+      ja: {
+        htmlLang: "ja",
+      },
+    },
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       {
         docs: {
-          sidebarPath: './sidebars.ts',
+          sidebarPath: "./sidebars.ts",
           editUrl: undefined,
         },
         blog: false,
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
       } satisfies Preset.Options,
     ],
@@ -53,69 +68,73 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: "img/docusaurus-social-card.jpg",
     colorMode: {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'aiFetchly Manual',
+      title: "aiFetchly Manual",
       logo: {
-        alt: 'aiFetchly Logo',
-        src: 'img/logo.svg',
+        alt: "aiFetchly Logo",
+        src: "img/logo.svg",
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'docs',
-          position: 'left',
-          label: 'Docs',
+          type: "docSidebar",
+          sidebarId: "docs",
+          position: "left",
+          label: "Docs",
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
+          href: "https://github.com/facebook/docusaurus",
+          label: "GitHub",
+          position: "right",
+        },
+        {
+          type: "localeDropdown",
+          position: "right",
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
         {
-          title: 'Docs',
+          title: "Docs",
           items: [
             {
-              label: 'Getting Started',
-              to: '/docs/getting-started/introduction',
+              label: "Getting Started",
+              to: "/docs/getting-started/introduction",
             },
             {
-              label: 'Lead Generation',
-              to: '/docs/lead-generation/search-engines',
+              label: "Lead Generation",
+              to: "/docs/lead-generation/search-engines",
             },
             {
-              label: 'AI Outreach',
-              to: '/docs/ai-outreach/knowledge-library',
+              label: "AI Outreach",
+              to: "/docs/ai-outreach/knowledge-library",
             },
           ],
         },
         {
-          title: 'Community',
+          title: "Community",
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/aifetchly',
+              label: "Stack Overflow",
+              href: "https://stackoverflow.com/questions/tagged/aifetchly",
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/aifetchly',
+              label: "Discord",
+              href: "https://discordapp.com/invite/aifetchly",
             },
           ],
         },
         {
-          title: 'More',
+          title: "More",
           items: [
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: "GitHub",
+              href: "https://github.com/facebook/docusaurus",
             },
           ],
         },
