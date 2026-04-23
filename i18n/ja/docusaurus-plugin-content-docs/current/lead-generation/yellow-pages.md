@@ -2,24 +2,43 @@
 id: yellow-pages
 title: Yellow Pages Scraping
 sidebar_label: Yellow Pages
-description: Extract business information from Yellow Pages, Yelp, and other online directories.
+description: Extract business information from Yellow Pages, Yelp, and other online directories worldwide.
 ---
 
 # Yellow Pages Scraping
 
-aiFetchly's Yellow Pages scraping feature allows you to extract comprehensive business information from multiple online directories. Collect leads from local business listings with detailed contact information, ratings, reviews, and more.
+aiFetchly's Yellow Pages scraping feature allows you to extract comprehensive business information from multiple online directories. Collect leads from local business listings with detailed contact information, ratings, reviews, and more. Powered by AI support, you can enhance scraping accuracy and generate related keywords automatically.
 
 ## Supported Directories
 
-| Directory | Region | Rate Limit | Features |
-|-----------|--------|------------|----------|
-| **YellowPages.com** | USA | 100 req/hour | Business details, ratings, reviews, hours |
-| **Yelp.com** | USA | 60 req/hour | Reviews, ratings, photos, detailed extraction |
-| **YellowPages.ca** | Canada | Varies | Canada-specific business directory |
+| Directory | Region | Language | Rate Limit | Features |
+|-----------|--------|----------|------------|----------|
+| **YellowPages.com** | USA | English | 100 req/hour | Business details, ratings, reviews, hours |
+| **Yelp.com** | USA | English | 60 req/hour | Reviews, ratings, photos, detailed extraction |
+| **YellowPages.ca** | Canada | English | 100 req/hour | Canadian business directory, address parsing |
+| **YellowPages.com.sg** | Singapore | English | 100 req/hour | Singapore business listings |
+| **192.com** | UK | English | 100 req/hour | UK-specific business directory |
+| **11880.com** | Germany | German | 100 req/hour | German directory, cookie consent handling |
+| **Gelbeseiten.de** | Germany | German | 100 req/hour | German Yellow Pages, shadow root handling |
+| **PagesJaunes.fr** | France | French | 100 req/hour | French Yellow Pages, location required |
+| **PagineGialle.it** | Italy | Italian | 100 req/hour | Italian Yellow Pages, cookie consent |
+| **iTownPage** | Japan | Japanese | 60 req/hour | Japanese directory, dialog handling |
+| **uSonar Yellow Page** | Japan | Japanese | 60 req/hour | Japanese business listings |
+| **KoreaLocalPages** | South Korea | Korean | 60 req/hour | Korean local business directory |
 
 :::tip Rate Limits
 
 Each directory has specific rate limits. aiFetchly automatically manages request delays to comply with these limits.
+
+:::
+
+:::info Platform Information
+
+When creating a task, select a platform from the dropdown. As you select each platform, you'll see a sidebar showing:
+- Country/Language support
+- Rate limits
+- Authentication requirements
+- Whether location is required
 
 :::
 
@@ -43,19 +62,24 @@ Enter the following required information:
 #### Platform Selection
 
 Select the directory you want to scrape from the dropdown:
+
+**Americas:**
 - YellowPages.com (USA)
 - Yelp.com (USA)
 - YellowPages.ca (Canada)
 
-:::info Platform Information
+**Europe:**
+- 192.com (UK)
+- 11880.com (Germany)
+- Gelbeseiten.de (Germany)
+- PagesJaunes.fr (France) — location required
+- PagineGialle.it (Italy)
 
-As you select each platform, you'll see a sidebar showing:
-- Country/Language support
-- Rate limits
-- Authentication requirements
-- Whether location is required
-
-:::
+**Asia-Pacific:**
+- YellowPages.com.sg (Singapore)
+- iTownPage (Japan)
+- uSonar Yellow Page (Japan)
+- KoreaLocalPages (South Korea)
 
 #### Keywords
 
@@ -63,6 +87,12 @@ Enter your search keywords:
 - **Format**: Comma-separated or one per line
 - **Examples**: `restaurant, plumber, dentist, marketing agency`
 - **Tip**: Use specific business types or categories for better results
+
+**AI Query Keywords** (Optional):
+- Click the **AI Query Keywords** button (purple, robot icon) inside the keywords field
+- aiFetchly uses AI to generate related search terms based on your existing keywords
+- Generated keywords are combined with your originals, duplicates removed automatically
+- If no keywords are entered, AI generates suggestions from a default seed term
 
 #### Location
 
@@ -107,9 +137,10 @@ Configure how the scraping task runs:
 - **Purpose**: Prevents rate limiting and blocking
 
 **Recommended delays:**
-- **Yelp**: 3000ms (stricter rate limits)
-- **YellowPages.com**: 2000ms
-- **YellowPages.ca**: 2000ms
+- **Yelp.com**: 3000ms (stricter rate limits)
+- **Japanese platforms** (iTownPage, uSonar): 2500ms
+- **Korean platforms** (KoreaLocalPages): 2500ms
+- **All others**: 2000ms
 
 ### Step 4: Browser Configuration
 
@@ -119,6 +150,22 @@ Configure how the scraping task runs:
 - **Disabled**: Browser window visible (useful for debugging)
 
 **Recommendation**: Keep headless mode enabled for production tasks.
+
+#### AI Support
+
+Toggle **AI Support** to enable AI-powered scraping assistance:
+
+- When enabled, AI helps improve scraping accuracy and handle edge cases
+- Enabled by default if your account has AI features enabled
+- Look for the purple robot icon next to the toggle
+
+#### Local Browser
+
+Toggle **Use Local Browser** to use your local Chrome or Firefox installation for scraping:
+
+1. Toggle **Local Browser** to enable
+2. Select **Chrome** or **Firefox** from the dropdown
+3. **Benefits**: Lower detection rates, better success with anti-bot protections
 
 ### Step 5: Optional Features
 
@@ -185,9 +232,25 @@ Set up automated recurring tasks:
 
 ### Step 7: Create Task
 
-Click **Create Task** to save your configuration. You can:
-- **Run Now**: Start the task immediately
-- **Schedule**: Set for later execution
+Click one of the action buttons in the sidebar:
+
+- **Create & Start Task** (primary button): Creates the task and starts execution immediately
+- **Create Task Only**: Saves the task without running it — status will be "Pending"
+
+:::tip Task Preview
+
+As you fill in the form, the **Task Preview** sidebar shows a live summary of your configuration including task name, platform, keywords count, location, max pages, concurrency, headless mode, and local browser selection. Review this before creating the task.
+
+:::
+
+### Editing a Task
+
+To modify an existing task:
+
+1. Go to **Yellow Pages** task list
+2. Click the **Edit** (pencil) icon on the task
+3. Modify the configuration in the form
+4. Click **Update Task** to save changes
 
 ## Managing Yellow Pages Tasks
 
@@ -196,9 +259,22 @@ Click **Create Task** to save your configuration. You can:
 Navigate to **Yellow Pages** to see all your tasks.
 
 **Task List Overview:**
-- **Real-time Statistics**: Total, running, pending, completed, failed tasks
-- **Success Rate**: Calculated percentage of successful tasks
-- **Auto-refresh**: Updates every 5 seconds
+- **Real-time Statistics**: Total, running, pending, completed, failed tasks with success rate
+- **Auto-refresh**: Updates every 5 seconds; toggle on/off with the refresh button
+- **Smart Pause**: Auto-refresh pauses automatically when you switch browser tabs and resumes when you return
+
+### Filtering and Search
+
+Use the filter bar to narrow down tasks:
+
+| Filter | Description |
+|--------|-------------|
+| **Search** | Search by task name or platform |
+| **Status** | Filter by Pending, Running, Completed, Failed, Paused |
+| **Platform** | Filter by directory platform |
+| **Priority** | Filter by High, Medium, Low priority |
+
+Active filters are displayed as removable chips below the filter bar. Click **Clear Filters** to reset all filters.
 
 ### Task Status
 
@@ -222,6 +298,10 @@ Navigate to **Yellow Pages** to see all your tasks.
 | **Delete** | Remove task from system |
 | **View Results** | See extracted business data |
 
+### Cloudflare Protection Alert
+
+If a task encounters Cloudflare protection, aiFetchly displays a warning notification at the top of the task list. This alert indicates that the target directory has activated anti-bot measures. To resolve this, try enabling local browser, using authenticated accounts, or adding proxies.
+
 ### Bulk Operations
 
 - **Start Multiple**: Select and start multiple paused/failed tasks
@@ -234,9 +314,19 @@ Navigate to **Yellow Pages** to see all your tasks.
 
 1. Go to **Yellow Pages** task list
 2. Find the completed task
-3. Click **View Results**
+3. Click **View Results** to open the results page
 
-### Step 2: Results Table
+### Step 2: Task Summary Card
+
+The results page shows a **Task Summary Card** at the top with:
+- **Platform**: Which directory was scraped
+- **Total Results**: Number of businesses extracted
+- **Status**: Current task status (color-coded)
+- **Created Time**: When the task was created
+- **Keywords**: Displayed as chips for easy review
+- **Location**: The geographic area searched
+
+### Step 4: Results Table
 
 The results table displays comprehensive business information:
 
@@ -255,7 +345,7 @@ The results table displays comprehensive business information:
 | **Employee Count** | Number of employees |
 | **Scraped At** | Timestamp of data extraction |
 
-### Step 3: Interact with Results
+### Step 5: Interact with Results
 
 **Individual Actions:**
 - **Copy Email**: Copy email address to clipboard
@@ -273,9 +363,8 @@ The results table displays comprehensive business information:
 ### Export as CSV
 
 1. Click **Export** button in the results view
-2. Choose CSV format
-3. File downloads automatically
-4. Filename includes task ID and date
+2. File downloads automatically in CSV format
+3. Filename includes task ID and date
 
 **Exported Data Includes:**
 - Business name and categories
@@ -284,13 +373,6 @@ The results table displays comprehensive business information:
 - Ratings and reviews
 - Business hours
 - Additional metadata
-
-### Export as JSON
-
-For programmatic processing:
-1. Click **Export** → **JSON**
-2. Use for integration with other tools
-3. Parse with your own applications
 
 ## Best Practices
 
@@ -341,6 +423,8 @@ For programmatic processing:
 3. **Rotate Proxies**: Distribute requests across multiple IPs
 4. **Use Accounts**: Authenticated scraping has higher limits
 5. **Take Breaks**: Don't run large tasks continuously
+6. **Enable AI Support**: AI can help handle anti-bot protections
+7. **Use Local Browser**: Real browser fingerprint reduces detection risk
 
 ### 5. Data Quality
 
@@ -379,13 +463,108 @@ For programmatic processing:
 
 **Strengths:**
 - Canada-specific listings
-- French language support
 - Canadian business verification
 
 **Tips:**
 - Essential for Canadian market
 - Use "City, Province" format
-- Both English and French results
+
+### YellowPages.com.sg (Singapore)
+
+**Strengths:**
+- Singapore business directory
+- Comprehensive local listings
+
+**Tips:**
+- Use city or district names for location
+- Good for Southeast Asian market research
+
+### 192.com (UK)
+
+**Strengths:**
+- UK-specific business and people directory
+- Good coverage across United Kingdom
+
+**Tips:**
+- Use UK city and postcode format
+- Good for UK B2B outreach
+
+### 11880.com (Germany)
+
+**Strengths:**
+- German business directory
+- Handles cookie consent automatically
+
+**Tips:**
+- Use German city names for best results
+- Good for DACH market research
+
+### Gelbeseiten.de (Germany)
+
+**Strengths:**
+- German Yellow Pages
+- Comprehensive business listings in Germany
+- Handles complex cookie consent dialogs
+
+**Tips:**
+- Use German keywords for best results
+- Essential for German market
+
+### PagesJaunes.fr (France)
+
+**Strengths:**
+- French Yellow Pages
+- Phone number reveal feature
+- Comprehensive French business listings
+
+**Tips:**
+- **Location is required** for this platform
+- Use French city names and postal codes
+- Good for French market outreach
+
+### PagineGialle.it (Italy)
+
+**Strengths:**
+- Italian Yellow Pages
+- Comprehensive Italian business directory
+- Handles cookie consent automatically
+
+**Tips:**
+- Use Italian city names for location
+- Good for Italian market research
+
+### iTownPage (Japan)
+
+**Strengths:**
+- Japanese business directory
+- Handles dialog popups automatically
+- Japanese cookie consent management
+
+**Tips:**
+- Use Japanese keywords for best results
+- Essential for Japanese local business discovery
+- Use 2500ms delay (60 req/hour rate limit)
+
+### uSonar Yellow Page (Japan)
+
+**Strengths:**
+- Alternative Japanese business directory
+- Good for cross-referencing with iTownPage
+
+**Tips:**
+- Use alongside iTownPage for broader coverage
+- Use 2500ms delay
+
+### KoreaLocalPages (South Korea)
+
+**Strengths:**
+- Korean local business directory
+- Good for Korean market entry research
+
+**Tips:**
+- Use Korean keywords for best results
+- Use 2500ms delay (60 req/hour rate limit)
+- Good for discovering Korean businesses
 
 ## Integration with Email Marketing
 
@@ -415,6 +594,8 @@ For detailed instructions, see [Batch Email Sending](../ai-outreach/batch-email-
 3. Reduce concurrency and increase delay
 4. Try different keywords/location
 5. Enable account authentication
+6. Enable AI Support for smarter error handling
+7. Use Local Browser to bypass anti-bot protections
 
 ### No Results Returned
 
