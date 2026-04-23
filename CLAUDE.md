@@ -81,3 +81,17 @@ sidebar_label: Short Label
 - **Custom CSS**: Edit `src/css/custom.css` for global style overrides
 - **Custom Components**: Add React components to `src/components/` and import in MDX files
 - **Swizzling**: Use `yarn swizzle` to customize built-in Docusaurus components (e.g., footer, navbar)
+
+### Internationalization (i18n)
+
+This project supports multiple languages. When updating documentation content:
+
+1. **English (`docs/`)** is the source language - update these files first
+2. **Translated versions** must be updated after English content changes:
+   - Spanish: `docs/es/`
+   - French: `docs/fr/`
+   - German: `docs/de/`
+   - Japanese: `docs/ja/`
+   - (and other language directories)
+
+**Important:** After updating English content, ensure all language versions are updated to maintain content parity across locales.
