@@ -7,12 +7,18 @@ description: Learn how to configure and manage proxies for safe and efficient we
 
 # Proxy Setup Guide
 
-Using proxies is essential for safe and efficient web scraping with aiFetchly. Proxies help you:
+Using proxies is **optional** with aiFetchly. You can run search tasks without proxies, but adding proxies helps you:
 
 - **Avoid IP blocks** from search engines and websites
 - **Scrape at scale** by distributing requests across multiple IPs
 - **Maintain anonymity** while collecting leads
 - **Access geo-restricted content** from different regions
+
+:::info Optional Feature
+
+Proxies are not required to use aiFetchly. You can start scraping immediately without configuring proxies. Add proxies only if you need to avoid rate limiting or access geo-specific content.
+
+:::
 
 ## Understanding Proxies
 
@@ -77,12 +83,24 @@ If your proxy provider requires authentication, you must enter the username and 
 
 After adding proxies, you should verify they work:
 
-1. Select the proxy(s) you want to test
-2. Click the **Check Proxy** button
-3. aiFetchly will test each proxy and update the status:
-   - ✅ **Pass** (green) - Proxy is working correctly
-   - ❌ **Failure** (pink) - Proxy is not working
-   - ⚪ **Unknown** (grey) - Proxy hasn't been tested yet
+1. Optionally set **Check timeout** on the toolbar (1–60 seconds per proxy; default 10 seconds). This limit applies to both the connectivity test and the Google check.
+2. Select the proxy or proxies you want to test (row checkboxes).
+3. Click **Check Proxy**.
+4. aiFetchly updates two kinds of results:
+
+**Status (connectivity)** — whether the proxy can relay traffic (for example, a tunnel to a test endpoint):
+
+- **Pass** — Basic proxy check succeeded.
+- **Failure** — Basic check failed (wrong host/port, auth, or network).
+- **Unknown** — Not tested yet.
+
+**Google Pass** — whether the same proxy can reach **Google** without being blocked as automated traffic. After **Status** shows **Pass**, the app runs a separate check (headless browser to Google). That column can update a moment later:
+
+- **Pass** — Google check succeeded; the IP is more likely to work for Google-backed scraping.
+- **Fail** — Google blocked, challenged, or the check errored (common for datacenter IPs or overused proxies).
+- **Not Checked** — No Google result yet (proxy never passed the basic check, or not checked since this feature was added).
+
+If **Status** is **Failure**, **Google Pass** stays **Not Checked** (the Google step only runs when the basic check passes).
 
 ## Batch Importing Proxies
 
@@ -116,7 +134,7 @@ host,port,protocols,user,pass
 
 :::tip CSV Formatting
 
-- Don't include headers in your import file (only data rows)
+- Your file can use the same column headers as the template (`host`, `port`, `protocols`, `user`, `pass`) or omit the header row if your columns are in that order
 - Use commas to separate fields
 - Leave user/pass fields empty if your proxy doesn't require authentication
 - Save the file as `.csv` (comma-separated values)
@@ -125,12 +143,14 @@ host,port,protocols,user,pass
 
 ### Step 3: Import the CSV
 
-1. Click **Batch Upload Proxy**
-2. Click the file upload area or drag and drop your CSV file
-3. The proxies will be displayed in a table
-4. Click **Check Proxy** to validate all imported proxies
-5. Click **Save to My Proxy** to add valid proxies to your account
-6. Click **Remove fail Proxy** to delete any proxies that failed the health check
+1. Click **Batch Upload**
+2. On **Upload File**, select your CSV (or use **Paste Text** for one proxy per line)
+3. Parsed proxies appear in the preview table
+4. Optional: click **Check Proxies** to run a **quick connectivity** test on the preview list (this is not the same as the full **Google Pass** check on saved proxies)
+5. Click **Import proxy** (shown as **Import All** in some locales) to add them to your library
+6. After import, open the main proxy list, select the new rows, and click **Check Proxy** to record **Status** and **Google Pass** for tasks that hit Google
+
+To clean the main list after checks, use **remove failure proxy** (removes rows whose **Status** is **Failure**).
 
 ## Managing Your Proxy List
 
@@ -142,12 +162,16 @@ The proxy list shows all your proxies with the following information:
 |--------|-------------|
 | **ID** | Unique identifier |
 | **Host** | Proxy server IP/hostname |
+| **Port** | Proxy port |
 | **Username** | Authentication username (if any) |
-| **Password** | Authentication password (masked) |
+| **Password** | Authentication password (hidden by default; use **Columns** to show) |
 | **Protocol** | HTTP, HTTPS, or SOCKS5 |
-| **Status** | Pass, Failure, or Unknown |
+| **Status** | Basic check: Pass, Failure, or Unknown |
 | **Check Time** | Last time the proxy was tested |
+| **Google Pass** | Google-specific check: Pass, Fail, or Not Checked (see [Google Pass check](#google-pass-check)) |
 | **Actions** | Edit or delete buttons |
+
+Use the **Columns** control on the toolbar to show or hide columns (for example, password is off by default for safety).
 
 ### Editing Proxies
 
@@ -164,8 +188,8 @@ The proxy list shows all your proxies with the following information:
 
 ### Bulk Operations
 
-- **Check All Proxies** - Test all proxies in your list simultaneously
-- **Remove Failed Proxies** - Delete all proxies with "Failure" status at once
+- **Check Proxy** — With one or more rows selected, runs the full check (**Status** plus **Google Pass** when the basic check passes). Nothing is checked until you select at least one proxy.
+- **remove failure proxy** — Deletes every saved proxy whose **Status** is **Failure** in one action
 
 ## Using Proxies in Search Tasks
 
@@ -182,7 +206,7 @@ Once you've added and tested your proxies, you can use them in search and scrapi
 2. Click the **Choose Proxy** button
 3. A proxy selection dialog will appear showing all your proxies
 4. Select one or more proxies from the list:
-   - Only proxies with "Pass" status are recommended
+   - Prefer proxies with **Status** **Pass** and **Google Pass** **Pass** when your task uses Google or Google-heavy flows
    - You can select multiple proxies for load balancing
 
 5. Click **Confirm** to add selected proxies to your task
@@ -206,23 +230,32 @@ When using multiple proxies, aiFetchly automatically rotates through them to dis
 
 Regular health checks ensure your proxies are working properly.
 
-### Automatic Health Checks
+### When checks run
 
-- Proxies are tested when you click **Check Proxy** or **Check All**
-- Check results update the status column
-- Check time is recorded for each proxy
+- **Saved proxies:** Use **Check Proxy** after selecting rows. The list refreshes while checks run; when progress reaches 100%, results are up to date for **Status**; **Google Pass** may finish slightly later for proxies that passed the basic step.
+- **Batch upload dialog:** **Check Proxies** only validates connectivity for the preview rows before import. Run **Check Proxy** on the main list after import for **Google Pass**.
 
 ### Health Check Timeout
 
-By default, proxy tests timeout after **10 seconds**. This can be adjusted in system settings if needed.
+On the **Proxy** page, set **Check timeout** (1–60 seconds, default **10**). The same value applies to the basic check and the Google browser check for saved proxies.
 
 ### Interpreting Status Results
 
 | Status | Meaning | Action |
 |--------|---------|--------|
-| **Pass** (green) | Proxy is working | Ready to use |
+| **Pass** (green) | Basic proxy check succeeded | Ready for general use; confirm **Google Pass** if you need Google |
 | **Failure** (pink) | Proxy is not working | Remove or replace |
 | **Unknown** (grey) | Not tested yet | Run health check |
+
+## Google Pass check
+
+**Google Pass** answers: “Through this proxy, can we load Google without obvious blocking?” It uses a headless browser session (similar to real browsing), which is stricter than a simple ping or HTTP tunnel test.
+
+- **Pass** — Useful signal for Google-oriented scraping; not a guarantee for every Google surface or volume.
+- **Fail** — Often datacenter IPs, recycled proxies, or IPs already flagged; try another proxy or provider.
+- **Not Checked** — Run **Check Proxy** on saved proxies, or the proxy has not passed the basic check yet.
+
+**Google Pass** can be **Fail** even when **Status** is **Pass**, because Google applies additional bot and abuse signals beyond generic connectivity.
 
 ## Best Practices
 
@@ -287,11 +320,13 @@ Even working proxies can get blocked if overused. Rotate them regularly.
 **Possible causes:**
 - Target website has stricter anti-scraping measures
 - Proxy is rate-limited by the target
+- **Status** is **Pass** but **Google Pass** is **Fail** while the task relies on Google
 
 **Solutions:**
 - Use more proxies to distribute requests
 - Slow down request frequency
 - Try different proxy providers
+- For Google-heavy workflows, favor proxies with **Google Pass** **Pass**
 
 ### Can't Connect to Proxy
 
