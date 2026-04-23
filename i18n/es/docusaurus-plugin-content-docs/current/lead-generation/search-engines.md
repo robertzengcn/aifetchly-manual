@@ -2,7 +2,7 @@
 id: search-engines
 title: Search Engine Scraping
 sidebar_label: Search Engines
-description: Learn how to scrape search results from Google, Bing, Yandex, and Yahoo to generate leads.
+description: Learn how to scrape search results from Google, Bing, and Yandex to generate leads with AI-powered analysis.
 ---
 
 # Search Engine Scraping
@@ -16,7 +16,6 @@ aiFetchly's multi-engine search scraping feature allows you to collect leads fro
 | **Google** | General searches, global reach | Recommended | Optional |
 | **Bing** | Microsoft ecosystem, US market | Optional | Optional |
 | **Yandex** | Russian market, Cyrillic content | Recommended | **Required** |
-| **Yahoo** | General searches, news | Optional | Optional |
 
 :::info Yandex Requirement
 
@@ -59,7 +58,6 @@ Select the search engine from the dropdown:
 - Google (default)
 - Bing
 - Yandex
-- Yahoo
 
 #### Page Number
 
@@ -131,7 +129,7 @@ Use authenticated accounts for better success rates:
 **Recommendations:**
 - **Google**: Use accounts for large-scale scraping
 - **Yandex**: Use accounts for better access
-- **Bing/Yahoo**: Optional, less critical
+- **Bing**: Optional, less critical
 
 ### Step 4: Execute or Save
 
@@ -311,11 +309,6 @@ If a task fails:
 - **Must use local browser**
 - Use accounts for better access
 - Essential for Russian/Cyrillic content
-
-**Yahoo:**
-- Similar to Bing in tolerance
-- Good for news and trends
-- Less strict anti-scraping
 
 ### 5. Monitor Task Status
 

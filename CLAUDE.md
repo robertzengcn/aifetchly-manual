@@ -88,10 +88,10 @@ This project supports multiple languages. When updating documentation content:
 
 1. **English (`docs/`)** is the source language - update these files first
 2. **Translated versions** must be updated after English content changes:
-   - Spanish: `docs/es/`
-   - French: `docs/fr/`
-   - German: `docs/de/`
-   - Japanese: `docs/ja/`
-   - (and other language directories)
+   - Spanish: `i18n/es/docusaurus-plugin-content-docs/current/`
+   - French: `i18n/fr/docusaurus-plugin-content-docs/current/`
+   - German: `i18n/de/docusaurus-plugin-content-docs/current/`
+   - Japanese: `i18n/ja/docusaurus-plugin-content-docs/current/`
+   - Chinese (Simplified): `i18n/zh-CN/docusaurus-plugin-content-docs/current/`
 
-**Important:** After updating English content, ensure all language versions are updated to maintain content parity across locales.
+**CRITICAL:** Every documentation change must be applied to ALL languages simultaneously. When you modify a file in `docs/`, you must also update the corresponding file in every `i18n/*/docusaurus-plugin-content-docs/current/` directory. The translated files mirror the `docs/` folder structure. Never leave one language out of sync with others.

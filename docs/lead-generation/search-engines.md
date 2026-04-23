@@ -2,12 +2,12 @@
 id: search-engines
 title: Search Engine Scraping
 sidebar_label: Search Engines
-description: Learn how to scrape search results from Google, Bing, Yandex, and Yahoo to generate leads.
+description: Learn how to scrape search results from Google, Bing, and Yandex to generate leads with AI-powered analysis.
 ---
 
 # Search Engine Scraping
 
-aiFetchly's multi-engine search scraping feature allows you to collect leads from multiple search engines simultaneously. Extract business information, URLs, and contact details from search results automatically.
+aiFetchly's multi-engine search scraping feature allows you to collect leads from multiple search engines simultaneously. Extract business information, URLs, and contact details from search results automatically. Powered by AI analysis, you can score leads, classify industries, and extract contact information — all from your search results.
 
 ## Supported Search Engines
 
@@ -16,7 +16,6 @@ aiFetchly's multi-engine search scraping feature allows you to collect leads fro
 | **Google** | General searches, global reach | Recommended | Optional |
 | **Bing** | Microsoft ecosystem, US market | Optional | Optional |
 | **Yandex** | Russian market, Cyrillic content | Recommended | **Required** |
-| **Yahoo** | General searches, news | Optional | Optional |
 
 :::info Yandex Requirement
 
@@ -59,7 +58,6 @@ Select the search engine from the dropdown:
 - Google (default)
 - Bing
 - Yandex
-- Yahoo
 
 #### Page Number
 
@@ -119,6 +117,27 @@ Enable local browser scraping for more human-like behavior:
 - Better success with anti-bot protections
 - More consistent results
 
+#### Show in Browser
+
+Toggle **Show in Browser** to control browser visibility during scraping:
+
+- **Enabled**: The browser window is visible while scraping — useful for debugging or monitoring progress
+- **Disabled** (default): The browser runs in headless mode for faster, background operation
+
+#### Enable AI Recovery
+
+Toggle **Enable AI Recovery** to let AI automatically recover from scraping errors:
+
+- When enabled, aiFetchly uses AI to diagnose and recover from errors encountered during scraping
+- The system can analyze error screenshots and adjust its strategy
+- Recovery attempts are rate-limited to avoid excessive resource usage
+
+:::tip When to Use AI Recovery
+
+Enable AI Recovery when scraping engines with strong anti-bot protection (such as Google) or when running large-scale tasks where occasional errors are expected.
+
+:::
+
 #### Search Account Usage
 
 Use authenticated accounts for better success rates:
@@ -131,7 +150,7 @@ Use authenticated accounts for better success rates:
 **Recommendations:**
 - **Google**: Use accounts for large-scale scraping
 - **Yandex**: Use accounts for better access
-- **Bing/Yahoo**: Optional, less critical
+- **Bing**: Optional, less critical
 
 ### Step 4: Execute or Save
 
@@ -163,8 +182,8 @@ Navigate to **Search** → **Result List** to see all your search tasks.
 | **Keywords** | Keywords used in the search |
 | **Search Engine** | Engine used (Google, Bing, etc.) |
 | **Status** | Not Start, Processing, Complete, Error |
-| **Created** | Date and time created |
-| **Actions** | Run, Edit, Delete, View Results |
+| **Record Time** | Date and time created |
+| **Actions** | Run, Edit, View Results, Kill Process, Retry, Download Logs |
 
 ### Task Actions
 
@@ -195,22 +214,33 @@ The results table displays:
 | **Title** | Page title from search result |
 | **Link** | URL of the search result |
 | **Keyword** | Keyword that generated this result |
-| **Timestamp** | When the result was scraped |
-| **AI Industry** | Industry classification (if analyzed) |
-| **AI Match Score** | Lead quality score (if analyzed) |
-| **Analysis Status** | Analysis completion status |
+| **Record Time** | When the result was scraped |
+| **Customer Industry** | AI-classified industry (if analyzed) |
+| **Probability** | AI lead quality score 0-100% (if analyzed) |
+| **Analysis Status** | Analysis completion status (pending/analyzing/completed/failed) |
+| **Contact Extraction** | Contact info extraction status |
+| **Email** | Extracted email address (if extracted) |
+| **Phone** | Extracted phone number (if extracted) |
+| **Address** | Extracted physical address (if extracted) |
+
+:::tip Column Visibility
+
+You can customize which columns are displayed by using the **column visibility** menu. Click the column selector to show or hide specific columns based on your workflow needs.
+
+:::
 
 ### Step 3: Interact with Results
 
 **Individual Actions:**
 - **Copy Link**: Copy URL to clipboard
-- **Open Link**: Open URL in your browser
+- **Copy Contact Info**: Copy extracted email, phone, or address directly
 
 **Batch Actions:**
 - Select multiple results using checkboxes
-- **AI Analysis**: Analyze selected results for lead scoring
-- **Extract Emails**: Extract email addresses from selected URLs
-- **Export**: Download results as CSV
+- **AI Analyze**: Analyze selected results for lead scoring and industry classification
+- **AI Extract Contact Info**: Extract contact information (email, phone, address) from selected URLs
+- **Extract Emails**: Navigate to the Email Extraction feature with selected URLs
+- **Export**: Download results as CSV (includes AI analysis fields)
 
 ## AI Website Analysis
 
@@ -219,26 +249,71 @@ Enhance your search results with AI-powered analysis:
 ### Step 1: Select Results
 
 1. Check the boxes next to results you want to analyze
-2. Click the **AI Analysis** button
+2. Click the **AI Analyze** button
 
-### Step 2: Configure Analysis
+### Step 2: Provide Business Context
 
-- **Industry Classification**: Categorize businesses by industry
-- **Lead Scoring**: Rate lead quality (0-100)
-- **Business Context**: Extract business information
+A dialog will appear asking for your business information:
 
-### Step 3: Monitor Progress
+1. **Enter your business description** in the text area — this helps the AI understand what kind of leads you're looking for
+2. **Save for future** (optional): Check this box to save your business description for future analyses
 
-- Progress bar shows completion status
-- Results update in real-time
-- AI Match Score indicates lead quality
+:::tip Business Context
 
-### Step 4: Filter by Score
+Provide a clear, specific description of your business and target customers. The more context you give, the more accurate the AI scoring will be. For example: "We are a B2B SaaS company selling marketing automation tools to small and medium businesses in the retail industry."
+
+:::
+
+### Step 3: Review Analysis Results
+
+The AI produces the following for each analyzed result:
+
+| Field | Description |
+|-------|-------------|
+| **Customer Industry** | AI-classified industry category |
+| **Probability** | Lead quality score from 0-100% |
+| **AI Reasoning** | Explanation of why this lead was scored this way |
+| **Client Business** | Identified business type of the website |
+
+### Step 4: Monitor Progress
+
+- Progress bar shows completion status for batch operations
+- Results update in real-time as each website is analyzed
+- Analysis status tracks each result: pending → analyzing → completed/failed
+
+### Step 5: Filter by Score
 
 After analysis:
-- Use the AI Match Score to prioritize leads
-- Filter results by industry
-- Focus on high-score leads for outreach
+- Use the Probability score to prioritize leads
+- Focus on leads scoring 70%+ for outreach
+- Filter results by industry classification
+
+## AI Contact Information Extraction
+
+Extract contact details directly from your search results using AI:
+
+### Step 1: Select Results
+
+1. Check the boxes next to results you want to extract contact info from
+2. Click the **AI Extract Contact Info** button
+
+### Step 2: Monitor Extraction
+
+- The system visits each selected URL and extracts contact information
+- Extraction runs in the background with real-time progress updates
+- Status tracks each result: pending → analyzing → completed/failed
+
+### Step 3: View Extracted Contacts
+
+Extracted information is displayed directly in the results table:
+
+| Field | Description |
+|-------|-------------|
+| **Email** | Extracted email addresses |
+| **Phone** | Extracted phone numbers |
+| **Address** | Extracted physical addresses |
+
+You can copy individual contact fields directly from the table using the copy buttons.
 
 ## Email Extraction from Search Results
 
@@ -264,7 +339,7 @@ Navigate to the Email Extraction section to view collected emails.
 1. Select results you want to export (or leave blank for all)
 2. Click **Export** → **CSV**
 3. Choose save location
-4. File includes all columns from the results table
+4. File includes all columns from the results table, including AI analysis fields (industry, score, reasoning) and contact info (email, phone, address)
 
 ### Export Error Logs
 
@@ -292,7 +367,9 @@ If a task fails:
 ### 3. Leverage AI Features
 
 - Use keyword generation to expand coverage
-- Run AI analysis to score leads
+- Provide clear business context for more accurate AI scoring
+- Run AI analysis to score and classify leads
+- Use AI contact extraction to get email, phone, and address
 - Focus on high-score results for outreach
 
 ### 4. Engine-Specific Tips
@@ -300,6 +377,7 @@ If a task fails:
 **Google:**
 - Use authenticated accounts
 - Enable local browser for large tasks
+- Enable AI Recovery for robust error handling
 - Respect rate limits (start with 1 concurrent)
 
 **Bing:**
@@ -311,11 +389,6 @@ If a task fails:
 - **Must use local browser**
 - Use accounts for better access
 - Essential for Russian/Cyrillic content
-
-**Yahoo:**
-- Similar to Bing in tolerance
-- Good for news and trends
-- Less strict anti-scraping
 
 ### 5. Monitor Task Status
 
@@ -344,6 +417,7 @@ If a task fails:
 3. Reduce concurrency
 4. Enable local browser
 5. Use authenticated accounts
+6. Enable AI Recovery for automatic error handling
 
 ### No Results Returned
 
@@ -377,6 +451,7 @@ If a task fails:
 3. Add more proxies
 4. Reduce request frequency
 5. Take breaks between large tasks
+6. Enable AI Recovery to handle blocks automatically
 
 ## Advanced Workflows
 
@@ -385,10 +460,11 @@ If a task fails:
 1. **Create search task** with broad keywords
 2. **Generate related keywords** using AI
 3. **Run with moderate concurrency** (3-5)
-4. **AI analyze** all results
-5. **Filter by match score** (focus on 70+)
-6. **Extract emails** from high-score results
-7. **Export** for email campaigns
+4. **Enable AI Recovery** for robust error handling
+5. **AI analyze** all results with your business context
+6. **Filter by probability score** (focus on 70%+)
+7. **AI extract contact info** from high-score results
+8. **Export** for email campaigns
 
 ### Workflow 2: Competitive Analysis
 
@@ -400,8 +476,8 @@ If a task fails:
 ### Workflow 3: Local Business Discovery
 
 1. **Search local keywords** (e.g., "plumbers in Chicago")
-2. **Extract emails** from results
-3. **Batch analyze** websites
+2. **AI extract contact info** from results (email, phone, address)
+3. **Batch analyze** websites with your business context
 4. **Create targeted outreach** campaigns
 
 ## Integration with Other Features
