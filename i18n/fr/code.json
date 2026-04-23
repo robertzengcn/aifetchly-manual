@@ -1,78 +1,78 @@
 {
   "homepage.description": {
-    "message": "AI-Powered Marketing Automation for Lead Generation and Outreach"
+    "message": "Automatisation du Marketing Propulsée par l'IA pour la Génération de Leads et la Prospection"
   },
   "homepage.feature1.title": {
-    "message": "Discover Leads Across Every Major Search Engine"
+    "message": "Découvrez des Leads sur Tous les Moteurs de Recherche Majeurs"
   },
   "homepage.feature1.description": {
-    "message": "Search Google, Bing, Yandex simultaneously with bulk keywords. AI generates related keywords automatically and recovers from scraping errors in real time, so you never miss a lead."
+    "message": "Recherchez sur Google, Bing, Yandex simultanément avec des mots-clés en masse. L'IA génère des mots-clés apparentés automatiquement et se remet des erreurs de scraping en temps réel, pour que vous ne manquiez jamais un lead."
   },
   "homepage.feature2.title": {
-    "message": "Extract Contact Data with AI Precision"
+    "message": "Extrayez des Données de Contact avec la Précision de l'IA"
   },
   "homepage.feature2.description": {
-    "message": "Feed in any list of URLs and let AI find emails, phone numbers, addresses, and social profiles instantly. Batch process thousands of pages with queue management, live progress tracking, and automatic error recovery."
+    "message": "Soumettez n'importe quelle liste d'URLs et laissez l'IA trouver des emails, numéros de téléphone, adresses et profils sociaux instantanément. Traitez par lot des milliers de pages avec gestion de file d'attente, suivi en direct et récupération automatique des erreurs."
   },
   "homepage.feature3.title": {
-    "message": "Run Email Campaigns That Convert"
+    "message": "Lancez des Campagnes Email Qui Convertissent"
   },
   "homepage.feature3.description": {
-    "message": "Design campaigns with AI-generated templates tailored to your tone and audience. Send bulk emails through your own SMTP, apply smart filters to target the right contacts, and track delivery status in real time."
+    "message": "Concevez des campagnes avec des modèles générés par l'IA adaptés à votre ton et votre audience. Envoyez des emails en masse via votre propre SMTP, appliquez des filtres intelligents pour cibler les bons contacts et suivez le statut de livraison en temps réel."
   },
   "homepage.feature4.title": {
-    "message": "Unlock Business Data from Global Directories"
+    "message": "Débloquez les Données Commerciales des Répertoires Mondiaux"
   },
   "homepage.feature4.description": {
-    "message": "Scrape business names, contact info, ratings, locations, and social links from yellow pages platforms worldwide. AI-assisted scraping adapts to directory changes so your data stays accurate."
+    "message": "Scraper les noms d'entreprises, informations de contact, notes, emplacements et liens sociaux des plateformes d'annuaires téléphoniques du monde entier. Le scraping assisté par l'IA s'adapte aux changements d'annuaire pour que vos données restent précises."
   },
   "homepage.feature5.title": {
-    "message": "Manage and Grow Your Social Presence"
+    "message": "Gérez et Développez Votre Présence Sociale"
   },
   "homepage.feature5.description": {
-    "message": "Connect your Facebook, Twitter, YouTube, and TikTok accounts. Schedule posts, automate content sharing."
+    "message": "Connectez vos comptes Facebook, Twitter, YouTube et TikTok. Planifiez des publications, automatisez le partage de contenu."
   },
   "homepage.feature6.title": {
-    "message": "Put Your Workflow on Autopilot"
+    "message": "Mettez Votre Flux de Travail en Autopilote"
   },
   "homepage.feature6.description": {
-    "message": "Schedule any task — searches, email campaigns, scrapes — with flexible cron timing. Set up recurring jobs, chain dependent tasks, and monitor execution history without lifting a finger."
+    "message": "Planifiez n'importe quelle tâche — recherches, campagnes email, scrapings — avec un timing cron flexible. Configurez des travaux récurrents, enchaînez des tâches dépendantes et surveillez l'historique d'exécution sans lever le petit doigt."
   },
   "homepage.feature7.title": {
-    "message": "Your Private AI Assistant, Powered by Your Own Data"
+    "message": "Votre Assistant IA Privé, Propulsé par Vos Propres Données"
   },
   "homepage.feature7.description": {
-    "message": "Upload documents (PDF, DOCX, TXT, MD) and chat with an AI that understands your content. Semantic search finds exactly what you need across your entire knowledge base."
+    "message": "Téléversez des documents (PDF, DOCX, TXT, MD) et discutez avec une IA qui comprend votre contenu. La recherche sémantique trouve exactement ce dont vous avez besoin dans l'ensemble de votre base de connaissances."
   },
   "homepage.feature8.title": {
-    "message": "Extend the Platform with Installable Skills"
+    "message": "Extension de la Plateforme avec des Compétences Installables"
   },
   "homepage.feature8.description": {
-    "message": "Import skill packages to add new AI capabilities on demand. From PDF processing to data analysis, the skill system lets the platform grow with your needs — no coding required."
+    "message": "Importez des packages de compétences pour ajouter de nouvelles capacités IA à la demande. Du traitement PDF à l'analyse de données, le système de compétences permet à la plateforme de grandir avec vos besoins — aucun codage requis."
   },
   "homepage.feature9.title": {
-    "message": "Stay Anonymous, Stay Unblocked"
+    "message": "Restez Anonyme, Restez Débloqué"
   },
   "homepage.feature9.description": {
-    "message": "Manage rotating HTTP, HTTPS, and SOCKS5 proxies with one click. Bulk import, validate, and test proxies to ensure uninterrupted access across all platforms."
+    "message": "Gérez des proxies HTTP, HTTPS et SOCKS5 rotatifs en un clic. Importation en masse, validation et test des proxies pour assurer un accès ininterrompu sur toutes les plateformes."
   },
   "homepage.feature10.title": {
-    "message": "Track Every Metric That Matters"
+    "message": "Suivez Chaque Métrique Qui Compte"
   },
   "homepage.feature10.description": {
-    "message": "Get a real-time overview of searches, emails extracted, campaigns sent, and success rates. Filter by date range, break down by search engine, and spot trends to optimize your strategy."
+    "message": "Obtenez une vue d'ensemble en temps réel des recherches, emails extraits, campagnes envoyées et taux de réussite. Filtrez par plage de dates, décomposez par moteur de recherche et repérez les tendances pour optimiser votre stratégie."
   },
   "homepage.feature11.title": {
-    "message": "Export Clean Data in One Click"
+    "message": "Exportez des Données Propres en Un Clic"
   },
   "homepage.feature11.description": {
-    "message": "Download any dataset as CSV with custom formatting. Generate performance reports with conversion tracking and ROI metrics to share with your team or clients."
+    "message": "Téléchargez n'importe quel ensemble de données en CSV avec un formatage personnalisé. Générez des rapports de performance avec suivi des conversions et métriques de ROI à partager avec votre équipe ou vos clients."
   },
   "homepage.feature12.title": {
-    "message": "Work in Your Language"
+    "message": "Travaillez dans Votre Langue"
   },
   "homepage.feature12.description": {
-    "message": "Full interface support for English, Chinese, Spanish, French, German, and Japanese. Switch languages on the fly — the entire app adapts instantly."
+    "message": "Support complet de l'interface pour l'anglais, le chinois, l'espagnol, le français, l'allemand et le japonais. Changez de langue instantanément — toute l'application s'adapte immédiatement."
   },
   "theme.ErrorPageContent.title": {
     "message": "Cette page a planté.",

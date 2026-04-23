@@ -1,14 +1,14 @@
 {
   "title": {
-    "message": "aiFetchly Manual",
+    "message": "aiFetchly マニュアル",
     "description": "The title in the navbar"
   },
   "logo.alt": {
-    "message": "aiFetchly Logo",
+    "message": "aiFetchly ロゴ",
     "description": "The alt text of navbar logo"
   },
   "item.label.Docs": {
-    "message": "Docs",
+    "message": "ドキュメント",
     "description": "Navbar item with label Docs"
   },
   "item.label.GitHub": {

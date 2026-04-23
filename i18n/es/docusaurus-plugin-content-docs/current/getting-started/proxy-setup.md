@@ -1,50 +1,50 @@
 ---
 id: proxy-setup
-title: Proxy Setup
-sidebar_label: Proxy Setup
-description: Learn how to configure and manage proxies for safe and efficient web scraping in aiFetchly.
+title: Configuración de Proxy
+sidebar_label: Configuración de Proxy
+description: Aprenda cómo configurar y gestionar proxies para un scraping web seguro y eficiente en aiFetchly.
 ---
 
-# Proxy Setup Guide
+# Guía de Configuración de Proxy
 
-Using proxies is essential for safe and efficient web scraping with aiFetchly. Proxies help you:
+El uso de proxies es esencial para un scraping web seguro y eficiente con aiFetchly. Los proxies le ayudan a:
 
-- **Avoid IP blocks** from search engines and websites
-- **Scrape at scale** by distributing requests across multiple IPs
-- **Maintain anonymity** while collecting leads
-- **Access geo-restricted content** from different regions
+- **Evitar bloqueos de IP** de motores de búsqueda y sitios web
+- **Scrapear a escala** distribuyendo solicitudes a través de múltiples IPs
+- **Mantener el anonimato** mientras recopila leads
+- **Acceder a contenido geo-restringido** de diferentes regiones
 
-## Understanding Proxies
+## Comprender los Proxies
 
-A proxy server acts as an intermediary between your computer and the websites you scrape. Instead of the website seeing your IP address, they see the proxy's IP address.
+Un servidor proxy actúa como intermediario entre su computadora y los sitios web que scrapea. En lugar de que el sitio web vea su dirección IP, ven la IP del proxy.
 
-### Proxy Types Supported
+### Tipos de Proxy Soportados
 
-aiFetchly supports three proxy protocols:
+aiFetchly soporta tres protocolos de proxy:
 
-| Protocol | Description | Use Case |
-|----------|-------------|----------|
-| **HTTP** | Basic HTTP proxy | General web scraping, non-SSL sites |
-| **HTTPS** | Secure HTTP proxy | Secure websites (HTTPS), recommended for most scraping |
-| **SOCKS5** | Socket Secure 5 | Advanced users, supports more protocols, better performance |
+| Protocolo | Descripción | Caso de Uso |
+|----------|-------------|-------------|
+| **HTTP** | Proxy HTTP básico | Scraping web general, sitios no-SSL |
+| **HTTPS** | Proxy HTTP seguro | Sitios web seguros (HTTPS), recomendado para la mayoría del scraping |
+| **SOCKS5** | Socket Secure 5 | Usuarios avanzados, soporta más protocolos, mejor rendimiento |
 
-:::tip Recommended Protocol
+:::tip Protocolo Recomendado
 
-For most use cases, **HTTPS** proxies are recommended as they work with both HTTP and HTTPS websites.
+Para la mayoría de los casos de uso, se recomiendan los proxies **HTTPS** ya que funcionan con sitios web HTTP y HTTPS.
 
 :::
 
-### Proxy Format
+### Formato del Proxy
 
-Each proxy requires the following information:
+Cada proxy requiere la siguiente información:
 
-- **Host/IP** - The proxy server address (e.g., `192.168.1.1` or `proxy.example.com`)
-- **Port** - The port number (e.g., `8080`, `3128`, `1080`)
-- **Protocol** - http, https, or socks5
-- **Username** (optional) - For authentication
-- **Password** (optional) - For authentication
+- **Host/IP** - La dirección del servidor proxy (ej., `192.168.1.1` o `proxy.ejemplo.com`)
+- **Puerto** - El número de puerto (ej., `8080`, `3128`, `1080`)
+- **Protocolo** - http, https o socks5
+- **Nombre de usuario** (opcional) - Para autenticación
+- **Contraseña** (opcional) - Para autenticación
 
-Example: `192.168.1.1:8080` with username `user1` and password `pass123`
+Ejemplo: `192.168.1.1:8080` con nombre de usuario `user1` y contraseña `pass123`
 
 ## Adding Proxies Manually
 

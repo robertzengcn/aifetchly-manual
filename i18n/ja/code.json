@@ -1,78 +1,78 @@
 {
   "homepage.description": {
-    "message": "AI-Powered Marketing Automation for Lead Generation and Outreach"
+    "message": "リードジェネレーションとアウトリーチのための AI 搭載マーケティングオートメーション"
   },
   "homepage.feature1.title": {
-    "message": "Discover Leads Across Every Major Search Engine"
+    "message": "すべての主要な検索エンジンでリードを発見"
   },
   "homepage.feature1.description": {
-    "message": "Search Google, Bing, Yandex simultaneously with bulk keywords. AI generates related keywords automatically and recovers from scraping errors in real time, so you never miss a lead."
+    "message": "Google、Bing、Yandex を同時に_bulk_キーワードで検索。AI が自動的に関連キーワードを生成し、リアルタイムでスクレイピングエラーから回復するため、リードを見逃すことはありません。"
   },
   "homepage.feature2.title": {
-    "message": "Extract Contact Data with AI Precision"
+    "message": "AI の精度で連絡先データを抽出"
   },
   "homepage.feature2.description": {
-    "message": "Feed in any list of URLs and let AI find emails, phone numbers, addresses, and social profiles instantly. Batch process thousands of pages with queue management, live progress tracking, and automatic error recovery."
+    "message": "URL のリストを入力すると、AI が即座にメール、電話番号、住所、SNS プロファイルを見つけます。キュー管理、ライブ進捗追跡、自動エラー回復で数千ページをバッチ処理します。"
   },
   "homepage.feature3.title": {
-    "message": "Run Email Campaigns That Convert"
+    "message": "成約するメールキャンペーンを実行"
   },
   "homepage.feature3.description": {
-    "message": "Design campaigns with AI-generated templates tailored to your tone and audience. Send bulk emails through your own SMTP, apply smart filters to target the right contacts, and track delivery status in real time."
+    "message": "トーンとオーディエンスに合わせた AI 生成テンプレートでキャンペーンを設計。独自の SMTP を介して_bulk_メールを送信し、スマートフィルターを適用して適切な連絡先をターゲティングし、配信ステータスをリアルタイムで追跡します。"
   },
   "homepage.feature4.title": {
-    "message": "Unlock Business Data from Global Directories"
+    "message": "グローバルディレクトリからビジネスデータを解放"
   },
   "homepage.feature4.description": {
-    "message": "Scrape business names, contact info, ratings, locations, and social links from yellow pages platforms worldwide. AI-assisted scraping adapts to directory changes so your data stays accurate."
+    "message": "世界のイエローページプラットフォームから企業名、連絡先情報、評価、場所、SNS リンクをスクレイピング。AI 支援スクレイピングがディレクトリの変化に適応し、データを正確に保ちます。"
   },
   "homepage.feature5.title": {
-    "message": "Manage and Grow Your Social Presence"
+    "message": "SNS 存在を管理・成長"
   },
   "homepage.feature5.description": {
-    "message": "Connect your Facebook, Twitter, YouTube, and TikTok accounts. Schedule posts, automate content sharing."
+    "message": "Facebook、Twitter、YouTube、TikTok アカウントを接続。投稿をスケジュールし、コンテンツ共有を自動化します。"
   },
   "homepage.feature6.title": {
-    "message": "Put Your Workflow on Autopilot"
+    "message": "ワークフローをオートパイロットに"
   },
   "homepage.feature6.description": {
-    "message": "Schedule any task — searches, email campaigns, scrapes — with flexible cron timing. Set up recurring jobs, chain dependent tasks, and monitor execution history without lifting a finger."
+    "message": "検索、メールキャンペーン、スクレイピングなどのタスクを柔軟な cron タイミングでスケジュール。 recurring ジョブを設定し、依存タスクをチェーンし、指を動かさずに実行履歴を監視します。"
   },
   "homepage.feature7.title": {
-    "message": "Your Private AI Assistant, Powered by Your Own Data"
+    "message": "独自のデータで動作するプライベート AI アシスタント"
   },
   "homepage.feature7.description": {
-    "message": "Upload documents (PDF, DOCX, TXT, MD) and chat with an AI that understands your content. Semantic search finds exactly what you need across your entire knowledge base."
+    "message": "ドキュメント (PDF、DOCX、TXT、MD) をアップロードし、内容を理解する AI とチャット。セマンティック検索で知識ベース全体から必要なものを正確に見つけ出します。"
   },
   "homepage.feature8.title": {
-    "message": "Extend the Platform with Installable Skills"
+    "message": "インストール可能なスキルでプラットフォームを拡張"
   },
   "homepage.feature8.description": {
-    "message": "Import skill packages to add new AI capabilities on demand. From PDF processing to data analysis, the skill system lets the platform grow with your needs — no coding required."
+    "message": "スキルパッケージをインポートして、必要に応じて新しい AI 機能を追加。PDF 処理からデータ分析まで、スキルシステムはプラットフォームをあなたのニーズに合わせて成長させます - コーディングは不要です。"
   },
   "homepage.feature9.title": {
-    "message": "Stay Anonymous, Stay Unblocked"
+    "message": "匿名で、ブロックされないで"
   },
   "homepage.feature9.description": {
-    "message": "Manage rotating HTTP, HTTPS, and SOCKS5 proxies with one click. Bulk import, validate, and test proxies to ensure uninterrupted access across all platforms."
+    "message": "ワンクリックでローテating HTTP、HTTPS、SOCKS5 プロキシを管理。_bulk_インポート、検証、テストで、すべてのプラットフォームでの中断のないアクセスを確保します。"
   },
   "homepage.feature10.title": {
-    "message": "Track Every Metric That Matters"
+    "message": "重要なすべてのメトリクスを追跡"
   },
   "homepage.feature10.description": {
-    "message": "Get a real-time overview of searches, emails extracted, campaigns sent, and success rates. Filter by date range, break down by search engine, and spot trends to optimize your strategy."
+    "message": "検索、抽出されたメール、送信されたキャンペーン、成功率のリアルタイム概要を取得。日付範囲でフィルターし、検索エンジン別に内訳を表示し、戦略を最適化する傾向を把握します。"
   },
   "homepage.feature11.title": {
-    "message": "Export Clean Data in One Click"
+    "message": "ワンクリックでクリーンなデータをエクスポート"
   },
   "homepage.feature11.description": {
-    "message": "Download any dataset as CSV with custom formatting. Generate performance reports with conversion tracking and ROI metrics to share with your team or clients."
+    "message": "任意のデータセットをカスタムフォーマットで CSV としてダウンロード。チームやクライアントと共有する、コンバージョン追跡と ROI メトリクスを含むパフォーマンスレポートを生成します。"
   },
   "homepage.feature12.title": {
-    "message": "Work in Your Language"
+    "message": "あなたの言語で作業"
   },
   "homepage.feature12.description": {
-    "message": "Full interface support for English, Chinese, Spanish, French, German, and Japanese. Switch languages on the fly — the entire app adapts instantly."
+    "message": "英語、中国語、スペイン語、フランス語、ドイツ語、日本語の完全なインターフェースサポート。言語をその場で切り替え - アプリ全体が即座に適応します。"
   },
   "theme.ErrorPageContent.title": {
     "message": "エラーが発生しました",
