@@ -1,4 +1,4 @@
-import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
+import type { SidebarsConfig } from "@docusaurus/plugin-content-docs";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -15,57 +15,51 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 const sidebars: SidebarsConfig = {
   // aiFetchly Manual Sidebar
   docs: [
-    'getting-started/introduction',
+    "getting-started/introduction",
     {
-      type: 'category',
-      label: 'Getting Started',
+      type: "category",
+      label: "Getting Started",
+      collapsible: false,
+      collapsed: false,
+      items: ["getting-started/installation", "getting-started/proxy-setup"],
+    },
+    {
+      type: "category",
+      label: "Lead Generation",
       collapsible: false,
       collapsed: false,
       items: [
-        'getting-started/installation',
-        'getting-started/proxy-setup',
+        "lead-generation/search-engines",
+        "lead-generation/yellow-pages",
+        "lead-generation/contact-extraction",
       ],
     },
     {
-      type: 'category',
-      label: 'Lead Generation',
+      type: "category",
+      label: "AI Outreach",
       collapsible: false,
       collapsed: false,
       items: [
-        'lead-generation/search-engines',
-        'lead-generation/yellow-pages',
-        'lead-generation/contact-extraction',
+        "ai-outreach/knowledge-library",
+        "ai-outreach/ai-skills",
+        "ai-outreach/ai-email-writer",
+        "ai-outreach/batch-email-sending",
+        "ai-outreach/ai-marketing-assistant",
       ],
     },
     {
-      type: 'category',
-      label: 'AI Outreach',
+      type: "category",
+      label: "Automation",
       collapsible: false,
       collapsed: false,
-      items: [
-        'ai-outreach/knowledge-library',
-        'ai-outreach/ai-email-writer',
-        'ai-outreach/batch-email-sending',
-        'ai-outreach/ai-marketing-assistant',
-      ],
+      items: ["automation/task-scheduling"],
     },
     {
-      type: 'category',
-      label: 'Automation',
+      type: "category",
+      label: "Settings",
       collapsible: false,
       collapsed: false,
-      items: [
-        'automation/task-scheduling',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Settings',
-      collapsible: false,
-      collapsed: false,
-      items: [
-        'settings/system-settings',
-      ],
+      items: ["settings/system-settings"],
     },
   ],
 };
