@@ -231,57 +231,9 @@ Configure your aiFetchly experience.
 
 ## MCP Tools Management
 
-**MCP** (Model Context Protocol) allows integration with external tools and services.
+**MCP** (Model Context Protocol) allows integration with external tools and services, extending the AI Marketing Assistant with capabilities like web search, database queries, and custom API calls.
 
-### What Are MCP Tools?
-
-MCP tools extend aiFetchly's AI capabilities by connecting to external services:
-- Web search tools
-- Database connectors
-- API integrations
-- Custom business logic
-
-### Managing MCP Tools
-
-Navigate to **Settings** → **MCP Tools**
-
-**Available Actions:**
-
-| Action | Description |
-|--------|-------------|
-| **Add Server** | Add new MCP server connection |
-| **Edit Server** | Modify server configuration |
-| **Remove Server** | Delete server connection |
-| **Test Connection** | Verify server connectivity |
-| **Enable/Disable Tools** | Toggle individual tools |
-
-### MCP Server Configuration
-
-When adding/editing an MCP server:
-
-| Setting | Description |
-|---------|-------------|
-| **Name** | Server identifier |
-| **Transport Type** | `stdio`, `SSE`, or `WebSocket` |
-| **Command** | Command to run (for stdio) |
-| **URL** | Server URL (for SSE/WebSocket) |
-| **Authentication** | API key, Bearer token, or Custom |
-| **Credentials** | Username/password or token |
-
-### Using MCP Tools
-
-Once configured:
-
-1. **Enabled in AI Chat**: Tools available in AI Marketing Assistant
-2. **Automatic Discovery**: AI can use available tools
-3. **Manual Invocation**: Request specific tool usage
-
-**Example Usage:**
-```
-User: "Search the web for latest SaaS pricing trends"
-AI: [Uses web search MCP tool]
-AI: "Here are the latest SaaS pricing trends..."
-```
+For full documentation on configuring and using MCP servers, see [MCP Tools](../ai-outreach/mcp-tools).
 
 ## Configuration Best Practices
 
@@ -484,7 +436,7 @@ After configuring system settings:
 
 - [Return to Getting Started](../getting-started/introduction)
 - [Set up your first search task](../lead-generation/search-engines)
-- [Configure email services](../ai-outreach/batch-email-sending)
+- [Configure email services](../lead-generation/batch-email-sending)
 - [Learn about AI Marketing Assistant](../ai-outreach/ai-marketing-assistant)
 
 ---

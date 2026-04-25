@@ -32,6 +32,7 @@ const sidebars: SidebarsConfig = {
         "lead-generation/search-engines",
         "lead-generation/yellow-pages",
         "lead-generation/contact-extraction",
+        "lead-generation/batch-email-sending",
       ],
     },
     {
@@ -41,9 +42,9 @@ const sidebars: SidebarsConfig = {
       collapsed: false,
       items: [
         "ai-outreach/knowledge-library",
+        "ai-outreach/mcp-tools",
         "ai-outreach/ai-skills",
         "ai-outreach/ai-email-writer",
-        "ai-outreach/batch-email-sending",
         "ai-outreach/ai-marketing-assistant",
       ],
     },
