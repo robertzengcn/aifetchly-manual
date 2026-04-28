@@ -116,7 +116,7 @@ Todas las características descritas en este manual están actualmente disponibl
 - [Configure proxies](./proxy-setup) para scraping seguro
 - [Aprenda sobre generación de leads](../lead-generation/search-engines)
 - [Configure la Biblioteca de Conocimiento](../ai-outreach/knowledge-library)
-- [Comience su primera campaña de email](../ai-outreach/batch-email-sending)
+- [Comience su primera campaña de email](../lead-generation/batch-email-sending)
 
 ## Soporte y Documentación
 

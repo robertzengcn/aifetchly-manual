@@ -22,8 +22,8 @@ The batch email sending process consists of **4 steps**:
 
 Before sending campaigns, ensure you have:
 - [Configured an SMTP service](#configuring-email-services)
-- [Created email templates](./ai-email-writer)
-- [Extracted or imported email lists](../lead-generation/contact-extraction)
+- [Created email templates](../ai-outreach/ai-email-writer)
+- [Extracted or imported email lists](./contact-extraction)
 
 :::
 
@@ -485,15 +485,15 @@ Target specific audiences:
 
 The complete email outreach workflow:
 
-1. **[Search Engines](../lead-generation/search-engines)**: Find target websites
-2. **[Contact Extraction](../lead-generation/contact-extraction)**: Harvest emails
-3. **[AI Email Writer](./ai-email-writer)**: Create personalized templates
-4. **[Knowledge Library](./knowledge-library)**: Provide context for AI
+1. **[Search Engines](./search-engines)**: Find target websites
+2. **[Contact Extraction](./contact-extraction)**: Harvest emails
+3. **[AI Email Writer](../ai-outreach/ai-email-writer)**: Create personalized templates
+4. **[Knowledge Library](../ai-outreach/knowledge-library)**: Provide context for AI
 5. **Batch Email Sending**: Launch campaigns
 
 ## Next Steps
 
-- [Set up the AI Marketing Assistant](./ai-marketing-assistant) for strategy
+- [Set up the AI Marketing Assistant](../ai-outreach/ai-marketing-assistant) for strategy
 - [Configure task scheduling](../automation/task-scheduling) for automation
 - [Review system settings](../settings/system-settings)
 

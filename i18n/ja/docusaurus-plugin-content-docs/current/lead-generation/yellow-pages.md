@@ -576,7 +576,7 @@ Extracted business emails can be used directly in email campaigns:
 4. **Create Template** for your outreach
 5. **Launch Campaign**
 
-For detailed instructions, see [Batch Email Sending](../ai-outreach/batch-email-sending).
+For detailed instructions, see [Batch Email Sending](./batch-email-sending).
 
 ## Troubleshooting
 

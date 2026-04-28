@@ -329,7 +329,7 @@ Templates are used in the batch email sending workflow:
 3. **Each recipient gets a personalized email**
 4. **AI can enhance** the template with Knowledge Library content
 
-For detailed instructions, see [Batch Email Sending](./batch-email-sending).
+For detailed instructions, see [Batch Email Sending](../lead-generation/batch-email-sending).
 
 ## Troubleshooting
 
@@ -399,8 +399,8 @@ For detailed instructions, see [Batch Email Sending](./batch-email-sending).
 
 After creating your templates:
 
-- [Configure email services (SMTP)](./batch-email-sending#configuring-email-services)
-- [Set up batch email sending](./batch-email-sending)
+- [Configure email services (SMTP)](../lead-generation/batch-email-sending#configuring-email-services)
+- [Set up batch email sending](../lead-generation/batch-email-sending)
 - [Use the AI Marketing Assistant](./ai-marketing-assistant) for strategy
 
 ---

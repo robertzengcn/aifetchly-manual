@@ -152,6 +152,60 @@ When a skill is used:
 - A small icon or badge indicates skill activation
 - Tool usage is shown in the conversation flow
 
+### Skill Permission Prompts
+
+Some skills require your explicit permission before execution. This is a security feature to protect your system.
+
+**When You'll See Permission Prompts:**
+
+Skills are categorized by their permission level:
+
+| Category | Permission Behavior | Examples |
+|----------|-------------------|----------|
+| **Pure** | Auto-approved, no prompt | Text processing, calculations, data formatting |
+| **Shell** | Always prompts before execution | Running system commands, file operations |
+| **Network** | May prompt for external calls | Web scraping, API calls to external services |
+| **Data** | May prompt for sensitive access | File system read/write, database access |
+
+**The Permission Prompt:**
+
+When a skill needs permission, you'll see a dialog in the AI chat:
+
+```
+┌─────────────────────────────────────────────┐
+│  Skill Permission Request                  │
+├─────────────────────────────────────────────┤
+│  Skill: shell_execute                       │
+│  Category: Shell                            │
+│                                             │
+│  This skill wants to run:                  │
+│  $ ls -la /path/to/directory               │
+│                                             │
+│  [Allow Once]  [Allow Always]  [Deny]      │
+└─────────────────────────────────────────────┘
+```
+
+**Permission Options:**
+
+- **Allow Once**: Grant permission for this single execution only
+- **Allow Always**: Remember this decision and auto-approve future requests from this skill
+- **Deny**: Block this execution (skill will fail gracefully)
+
+**Managing Saved Permissions:**
+
+To review or change saved permissions:
+
+1. Go to **Settings** → **AI Skills**
+2. Click on a skill to view its permission status
+3. Toggle "Always Allow" to change auto-approval behavior
+4. Disabled skills have their permissions temporarily suspended
+
+:::tip Security Best Practice
+
+Start with "Allow Once" for new skills. After verifying they work correctly and safely, you can switch to "Allow Always" for convenience.
+
+:::
+
 ## Skill Categories
 
 Skills are organized by functional category:

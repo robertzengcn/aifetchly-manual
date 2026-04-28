@@ -468,7 +468,7 @@ Now that you understand the AI Marketing Assistant:
 
 - [Build your Knowledge Library](./knowledge-library) for better context
 - [Create email templates](./ai-email-writer) with AI assistance
-- [Set up automated campaigns](./batch-email-sending)
+- [Set up automated campaigns](../lead-generation/batch-email-sending)
 
 ---
 

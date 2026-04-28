@@ -521,7 +521,7 @@ The Task Scheduler integrates with:
 - **[Search Engines](../lead-generation/search-engines)**: Schedule recurring searches
 - **[Contact Extraction](../lead-generation/contact-extraction)**: Auto-extract after searches
 - **[Yellow Pages](../lead-generation/yellow-pages)**: Regular directory scraping
-- **[Batch Email Sending](../ai-outreach/batch-email-sending)**: Automated campaigns
+- **[Batch Email Sending](../lead-generation/batch-email-sending)**: Automated campaigns
 
 ## Next Steps
 

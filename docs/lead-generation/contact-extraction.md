@@ -245,7 +245,7 @@ Extracted emails integrate directly with email marketing:
 2. Click **Use in Campaign** button
 3. Emails are automatically passed to email marketing workflow
 
-For detailed instructions, see [Batch Email Sending](../ai-outreach/batch-email-sending).
+For detailed instructions, see [Batch Email Sending](./batch-email-sending).
 
 ## Best Practices
 
@@ -477,7 +477,7 @@ Once you've extracted emails:
 4. **Personalize**: Use AI Email Writer for personalized content
 5. **Launch Campaign**: Send targeted outreach
 
-For detailed instructions on creating campaigns, see [Batch Email Sending](../ai-outreach/batch-email-sending).
+For detailed instructions on creating campaigns, see [Batch Email Sending](./batch-email-sending).
 
 ## Next Steps
 

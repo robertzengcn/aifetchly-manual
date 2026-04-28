@@ -404,7 +404,7 @@ Search results integrate seamlessly with:
 - **[Contact Extraction](./contact-extraction)** - Extract emails from URLs
 - **[Yellow Pages](./yellow-pages)** - Cross-reference with directory listings
 - **[AI Email Writer](../ai-outreach/ai-email-writer)** - Create personalized outreach
-- **[Batch Email Sending](../ai-outreach/batch-email-sending)** - Launch campaigns
+- **[Batch Email Sending](./batch-email-sending)** - Launch campaigns
 
 ## Next Steps
 
