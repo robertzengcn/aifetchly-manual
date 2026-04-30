@@ -2,12 +2,12 @@
 id: system-settings
 title: System Settings
 sidebar_label: System Settings
-description: Configure aiFetchly's AI models, browser paths, and system preferences.
+description: Configure aiFetchly's browser paths, captcha solving, and system preferences.
 ---
 
 # System Settings
 
-The System Settings section allows you to configure aiFetchly's core functionality, including AI model providers, browser paths for web automation, and system preferences. Proper configuration ensures optimal performance for all features.
+The System Settings section allows you to configure aiFetchly's core functionality, including browser paths for web automation, captcha solving, embedding models, and system preferences. Proper configuration ensures optimal performance for all features.
 
 ## Accessing System Settings
 
@@ -24,94 +24,6 @@ Most settings save automatically when modified. Look for save indicators or conf
 :::
 
 ## Settings Overview
-
-### AI Model Providers
-
-Configure one or more AI model providers to power aiFetchly's AI features. **At least one provider must be configured** for AI functionality to work.
-
-#### DeepSeek Local
-
-**Best for**: Offline usage, privacy, no API costs
-
-| Setting | Description | Default |
-|---------|-------------|---------|
-| **URL** | Local API endpoint | `http://localhost:11434` |
-| **Model** | Model name | `deepseek-r1:latest` |
-
-**Setup Required:**
-1. Install Ollama (https://ollama.ai)
-2. Pull DeepSeek model: `ollama pull deepseek-r1`
-3. Start Ollama service
-4. Keep URL as default if running locally
-
-:::tip Local AI Advantages
-
-- No API costs
-- Data stays on your machine
-- Works offline
-- Privacy-focused
-
-:::
-
-#### DeepSeek API
-
-**Best for**: Reliable performance, regular updates
-
-| Setting | Description | Default |
-|---------|-------------|---------|
-| **API URL** | DeepSeek API endpoint | `https://api.deepseek.com` |
-| **API Model** | Model to use | `deepseek-chat` |
-| **API Key** | Your API key | *(Required)* |
-
-**Setup Required:**
-1. Sign up at https://platform.deepseek.com
-2. Generate API key
-3. Enter API key in settings
-
-#### GrokAI
-
-**Best for**: X/Twitter integration, real-time data
-
-| Setting | Description | Default |
-|---------|-------------|---------|
-| **API URL** | GrokAI API endpoint | *(Configure)* |
-| **API Model** | Model to use | *(Configure)* |
-| **API Key** | Your API key | *(Configure)* |
-
-**Setup Required:**
-1. Sign up for X Premium+ (for Grok access)
-2. Obtain API credentials
-3. Configure URL, model, and API key
-
-#### OpenAI
-
-**Best for**: GPT models, reliable service
-
-| Setting | Description | Default |
-|---------|-------------|---------|
-| **API URL** | OpenAI API endpoint | `https://api.openai.com/v1` |
-| **API Model** | Model to use | `gpt-4`, `gpt-3.5-turbo`, etc. |
-| **API Key** | Your API key | *(Required)* |
-
-**Setup Required:**
-1. Sign up at https://platform.openai.com
-2. Create API key
-3. Enter key in settings
-
-#### Volcengine (Doubao)
-
-**Best for**: Chinese language support, cost-effective
-
-| Setting | Description | Default |
-|---------|-------------|---------|
-| **API URL** | Volcengine API endpoint | `https://ark.cn-beijing.volces.com/api/v3/` |
-| **API Model** | Model to use | `doubao-1.5-pro-32k-250115` |
-| **API Key** | Your API key | *(Configure)* |
-
-**Setup Required:**
-1. Sign up at Volcengine platform
-2. Enable Doubao API service
-3. Enter API credentials
 
 ### 2Captcha Service
 
@@ -237,19 +149,7 @@ For full documentation on configuring and using MCP servers, see [MCP Tools](../
 
 ## Configuration Best Practices
 
-### 1. AI Provider Setup
-
-**Primary Provider:**
-- Configure at least one provider fully
-- Test connectivity before using features
-- Keep API keys secure
-
-**Backup Providers:**
-- Configure 2-3 providers for redundancy
-- Use different providers for different use cases
-- Monitor API usage and costs
-
-### 2. Browser Configuration
+### 1. Browser Configuration
 
 **Chrome vs Firefox:**
 - Chrome: Better compatibility, more features
@@ -257,7 +157,7 @@ For full documentation on configuring and using MCP servers, see [MCP Tools](../
 
 **Recommendation:** Configure Chrome as primary, Firefox as backup.
 
-### 3. Captcha Solving
+### 2. Captcha Solving
 
 **When to Enable:**
 - Large-scale scraping operations (>1000 pages)
@@ -269,7 +169,7 @@ For full documentation on configuring and using MCP servers, see [MCP Tools](../
 - To save costs (2captcha has fees)
 - Rare captcha encounters
 
-### 4. Language Settings
+### 3. Language Settings
 
 **Choose Based On:**
 - Your native language
@@ -278,7 +178,7 @@ For full documentation on configuring and using MCP servers, see [MCP Tools](../
 
 **Note:** Language preference affects UI only. AI can process multiple languages regardless of setting.
 
-### 5. MCP Tools
+### 4. MCP Tools
 
 **Add Sparingly:**
 - Only add tools you'll use
@@ -291,19 +191,6 @@ For full documentation on configuring and using MCP servers, see [MCP Tools](../
 - Review tool permissions
 
 ## Troubleshooting
-
-### AI Features Not Working
-
-**Possible causes:**
-- No AI provider configured
-- API key invalid or expired
-- Local model not running
-
-**Solutions:**
-1. Verify at least one AI provider is configured
-2. Test API key with provider's test endpoint
-3. For local models, ensure service is running
-4. Check network connectivity for API providers
 
 ### Browser Integration Not Working
 
@@ -359,20 +246,6 @@ For full documentation on configuring and using MCP servers, see [MCP Tools](../
 
 ## Advanced Configuration
 
-### Custom API Endpoints
-
-For advanced users with self-hosted models:
-
-1. Select provider (e.g., OpenAI-compatible)
-2. Set API URL to your endpoint
-3. Configure model name
-4. Add authentication if required
-
-**Use Cases:**
-- Self-hosted LLaMA models
-- Private API deployments
-- Custom model fine-tunes
-
 ### Multiple Embedding Models
 
 Configure different embedding models for different purposes:
@@ -387,25 +260,14 @@ Configure different embedding models for different purposes:
 Different settings for different environments:
 
 **Development:**
-- Use local AI models
 - Disable captcha solving
 - Enable debug logging
 
 **Production:**
-- Use API providers for reliability
 - Enable captcha solving
 - Disable debug logging
 
 ## Security Considerations
-
-### API Key Management
-
-**Best Practices:**
-- Treat API keys like passwords
-- Don't share or commit to version control
-- Rotate keys periodically
-- Monitor usage for anomalies
-- Revoke compromised keys immediately
 
 ### Browser Paths
 
