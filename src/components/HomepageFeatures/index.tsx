@@ -1,8 +1,8 @@
-import type {ReactNode} from 'react';
-import clsx from 'clsx';
-import Heading from '@theme/Heading';
-import Translate, {translate} from '@docusaurus/Translate';
-import styles from './styles.module.css';
+import type { ReactNode } from "react";
+import clsx from "clsx";
+import Heading from "@theme/Heading";
+import Translate, { translate } from "@docusaurus/Translate";
+import styles from "./styles.module.css";
 
 type FeatureItem = {
   title: string;
@@ -13,24 +13,24 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: translate({
-      id: 'homepage.feature1.title',
-      message: 'Discover Leads Across Every Major Search Engine',
+      id: "homepage.feature1.title",
+      message: "Discover Leads Across Every Major Search Engine",
     }),
-    icon: '🔍',
+    icon: "🔍",
     description: (
       <Translate id="homepage.feature1.description">
-        Search Google, Bing, Yandex simultaneously with bulk
-        keywords. AI generates related keywords automatically and recovers from
-        scraping errors in real time, so you never miss a lead.
+        Search Google, Bing, Yandex simultaneously with bulk keywords. AI
+        generates related keywords automatically and recovers from scraping
+        errors in real time, so you never miss a lead.
       </Translate>
     ),
   },
   {
     title: translate({
-      id: 'homepage.feature2.title',
-      message: 'Extract Contact Data with AI Precision',
+      id: "homepage.feature2.title",
+      message: "Extract Contact Data with AI Precision",
     }),
-    icon: '🤖',
+    icon: "🤖",
     description: (
       <Translate id="homepage.feature2.description">
         Feed in any list of URLs and let AI find emails, phone numbers,
@@ -42,10 +42,10 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: translate({
-      id: 'homepage.feature3.title',
-      message: 'Run Email Campaigns That Convert',
+      id: "homepage.feature3.title",
+      message: "Run Email Campaigns That Convert",
     }),
-    icon: '📧',
+    icon: "📧",
     description: (
       <Translate id="homepage.feature3.description">
         Design campaigns with AI-generated templates tailored to your tone and
@@ -56,10 +56,10 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: translate({
-      id: 'homepage.feature4.title',
-      message: 'Unlock Business Data from Global Directories',
+      id: "homepage.feature4.title",
+      message: "Unlock Business Data from Global Directories",
     }),
-    icon: '📒',
+    icon: "📒",
     description: (
       <Translate id="homepage.feature4.description">
         Scrape business names, contact info, ratings, locations, and social
@@ -70,10 +70,10 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: translate({
-      id: 'homepage.feature5.title',
-      message: 'Manage and Grow Your Social Presence',
+      id: "homepage.feature5.title",
+      message: "Manage and Grow Your Social Presence",
     }),
-    icon: '📱',
+    icon: "📱",
     description: (
       <Translate id="homepage.feature5.description">
         Connect your Facebook, Twitter, YouTube, and TikTok accounts. Schedule
@@ -83,10 +83,10 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: translate({
-      id: 'homepage.feature6.title',
-      message: 'Put Your Workflow on Autopilot',
+      id: "homepage.feature6.title",
+      message: "Put Your Workflow on Autopilot",
     }),
-    icon: '⏱️',
+    icon: "⏱️",
     description: (
       <Translate id="homepage.feature6.description">
         Schedule any task — searches, email campaigns, scrapes — with flexible
@@ -97,10 +97,10 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: translate({
-      id: 'homepage.feature7.title',
-      message: 'Your Private AI Assistant, Powered by Your Own Data',
+      id: "homepage.feature7.title",
+      message: "Your Private AI Assistant, Powered by Your Own Data",
     }),
-    icon: '📚',
+    icon: "📚",
     description: (
       <Translate id="homepage.feature7.description">
         Upload documents (PDF, DOCX, TXT, MD) and chat with an AI that
@@ -111,10 +111,10 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: translate({
-      id: 'homepage.feature8.title',
-      message: 'Extend the Platform with Installable Skills',
+      id: "homepage.feature8.title",
+      message: "Extend the Platform with Installable Skills",
     }),
-    icon: '🧩',
+    icon: "🧩",
     description: (
       <Translate id="homepage.feature8.description">
         Import skill packages to add new AI capabilities on demand. From PDF
@@ -125,10 +125,10 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: translate({
-      id: 'homepage.feature9.title',
-      message: 'Stay Anonymous, Stay Unblocked',
+      id: "homepage.feature9.title",
+      message: "Stay Anonymous, Stay Unblocked",
     }),
-    icon: '🌐',
+    icon: "🌐",
     description: (
       <Translate id="homepage.feature9.description">
         Manage rotating HTTP, HTTPS, and SOCKS5 proxies with one click. Bulk
@@ -139,10 +139,10 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: translate({
-      id: 'homepage.feature10.title',
-      message: 'Track Every Metric That Matters',
+      id: "homepage.feature10.title",
+      message: "Track Every Metric That Matters",
     }),
-    icon: '📊',
+    icon: "📊",
     description: (
       <Translate id="homepage.feature10.description">
         Get a real-time overview of searches, emails extracted, campaigns sent,
@@ -153,10 +153,10 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: translate({
-      id: 'homepage.feature11.title',
-      message: 'Export Clean Data in One Click',
+      id: "homepage.feature11.title",
+      message: "Export Clean Data in One Click",
     }),
-    icon: '💾',
+    icon: "💾",
     description: (
       <Translate id="homepage.feature11.description">
         Download any dataset as CSV with custom formatting. Generate performance
@@ -167,10 +167,10 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: translate({
-      id: 'homepage.feature12.title',
-      message: 'Work in Your Language',
+      id: "homepage.feature12.title",
+      message: "Work in Your Language",
     }),
-    icon: '🌍',
+    icon: "🌍",
     description: (
       <Translate id="homepage.feature12.description">
         Full interface support for English, Chinese, Spanish, French, German,
@@ -181,9 +181,9 @@ const FeatureList: FeatureItem[] = [
   },
 ];
 
-function Feature({title, icon, description}: FeatureItem): ReactNode {
+function Feature({ title, icon, description }: FeatureItem): ReactNode {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx("col col--4")}>
       <div className={styles.featureCard}>
         <div className={styles.featureIcon}>{icon}</div>
         <Heading as="h3">{title}</Heading>
