@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="zh-CN" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-lead-generation/contact-extraction" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Contact Extraction | aiFetchly Manual</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://robertzengcn.github.io/aiFetchly/zh-CN/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://robertzengcn.github.io/aiFetchly/zh-CN/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://robertzengcn.github.io/aiFetchly/zh-CN/docs/lead-generation/contact-extraction"><meta data-rh="true" property="og:locale" content="zh_CN"><meta data-rh="true" property="og:locale:alternate" content="en"><meta data-rh="true" property="og:locale:alternate" content="es"><meta data-rh="true" property="og:locale:alternate" content="fr"><meta data-rh="true" property="og:locale:alternate" content="de"><meta data-rh="true" property="og:locale:alternate" content="ja"><meta data-rh="true" name="docusaurus_locale" content="zh-CN"><meta data-rh="true" name="docsearch:language" content="zh-CN"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Contact Extraction | aiFetchly Manual"><meta data-rh="true" name="description" content="Extract email addresses from websites and URLs in bulk with aiFetchly&#x27;s powerful extraction tool."><meta data-rh="true" property="og:description" content="Extract email addresses from websites and URLs in bulk with aiFetchly&#x27;s powerful extraction tool."><link data-rh="true" rel="icon" href="/aiFetchly/zh-CN/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://robertzengcn.github.io/aiFetchly/zh-CN/docs/lead-generation/contact-extraction"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/docs/lead-generation/contact-extraction" hreflang="en"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/zh-CN/docs/lead-generation/contact-extraction" hreflang="zh-CN"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/es/docs/lead-generation/contact-extraction" hreflang="es"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/fr/docs/lead-generation/contact-extraction" hreflang="fr"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/de/docs/lead-generation/contact-extraction" hreflang="de"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/ja/docs/lead-generation/contact-extraction" hreflang="ja"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/docs/lead-generation/contact-extraction" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Email Extraction","item":"https://robertzengcn.github.io/aiFetchly/zh-CN/docs/lead-generation/contact-extraction"}]}</script><link rel="stylesheet" href="/aiFetchly/zh-CN/assets/css/styles.ac14db2c.css">
+<script src="/aiFetchly/zh-CN/assets/js/runtime~main.2dab245c.js" defer="defer"></script>
+<script src="/aiFetchly/zh-CN/assets/js/main.ad64df97.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/aiFetchly/zh-CN/img/logo.svg"><div role="region" aria-label="跳到主要内容"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">跳到主要内容</a></div><nav aria-label="主导航" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="切换导航栏" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/aiFetchly/zh-CN/"><div class="navbar__logo"><img src="/aiFetchly/zh-CN/img/logo.svg" alt="aiFetchly Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/aiFetchly/zh-CN/img/logo.svg" alt="aiFetchly Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">aiFetchly Manual</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/aiFetchly/zh-CN/docs/getting-started/introduction">Docs</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/robertzengcn/aiFetchly" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="iconLanguage_nlXk"><path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></svg>中文（中国）</a><ul class="dropdown__menu"><li><a href="/aiFetchly/docs/lead-generation/contact-extraction" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="en">English</a></li><li><a href="/aiFetchly/zh-CN/docs/lead-generation/contact-extraction" target="_self" rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang="zh-CN">中文（中国）</a></li><li><a href="/aiFetchly/es/docs/lead-generation/contact-extraction" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="es">Español</a></li><li><a href="/aiFetchly/fr/docs/lead-generation/contact-extraction" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="fr">Français</a></li><li><a href="/aiFetchly/de/docs/lead-generation/contact-extraction" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="de">Deutsch</a></li><li><a href="/aiFetchly/ja/docs/lead-generation/contact-extraction" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="ja">日本語</a></li></ul></div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="切换浅色/暗黑模式（当前为system mode）"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="回到顶部" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="文档侧边栏" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/aiFetchly/zh-CN/docs/getting-started/introduction"><span title="Introduction" class="linkLabel_WmDU">Introduction</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="快速开始" class="categoryLinkLabel_W154">快速开始</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/zh-CN/docs/getting-started/installation"><span title="Installation" class="linkLabel_WmDU">Installation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/zh-CN/docs/getting-started/proxy-setup"><span title="Proxy Setup" class="linkLabel_WmDU">Proxy Setup</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--active"><span title="潜在客户开发" class="categoryLinkLabel_W154">潜在客户开发</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/zh-CN/docs/lead-generation/search-engines"><span title="Search Engines" class="linkLabel_WmDU">Search Engines</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/zh-CN/docs/lead-generation/yellow-pages"><span title="Yellow Pages" class="linkLabel_WmDU">Yellow Pages</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/aiFetchly/zh-CN/docs/lead-generation/contact-extraction"><span title="Email Extraction" class="linkLabel_WmDU">Email Extraction</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/zh-CN/docs/lead-generation/batch-email-sending"><span title="Batch Email Sending" class="linkLabel_WmDU">Batch Email Sending</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="AI 外联" class="categoryLinkLabel_W154">AI 外联</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/zh-CN/docs/ai-outreach/knowledge-library"><span title="Knowledge Library" class="linkLabel_WmDU">Knowledge Library</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/zh-CN/docs/ai-outreach/mcp-tools"><span title="MCP Tools" class="linkLabel_WmDU">MCP Tools</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/zh-CN/docs/ai-outreach/ai-skills"><span title="AI Skills" class="linkLabel_WmDU">AI Skills</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/zh-CN/docs/ai-outreach/ai-email-writer"><span title="AI Email Writer" class="linkLabel_WmDU">AI Email Writer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/zh-CN/docs/ai-outreach/ai-marketing-assistant"><span title="AI Marketing Assistant" class="linkLabel_WmDU">AI Marketing Assistant</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="自动化" class="categoryLinkLabel_W154">自动化</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/zh-CN/docs/automation/task-scheduling"><span title="Task Scheduler" class="linkLabel_WmDU">Task Scheduler</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="设置" class="categoryLinkLabel_W154">设置</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/zh-CN/docs/settings/system-settings"><span title="System Settings" class="linkLabel_WmDU">System Settings</span></a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="页面路径"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="主页面" class="breadcrumbs__link" href="/aiFetchly/zh-CN/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">潜在客户开发</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Email Extraction</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">本页总览</button></div><div class="theme-doc-markdown markdown"><header><h1>Email Extraction</h1></header>
+<p>aiFetchly&#x27;s Email Extraction feature allows you to harvest email addresses from websites at scale. Extract contact information from individual URLs or leverage your existing search results for targeted email collection.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="understanding-email-extraction">Understanding Email Extraction<a href="#understanding-email-extraction" class="hash-link" aria-label="Understanding Email Extraction的直接链接" title="Understanding Email Extraction的直接链接" translate="no">​</a></h2>
+<p>Email extraction works by:</p>
+<ol>
+<li class=""><strong>Visiting each URL</strong> you provide</li>
+<li class=""><strong>Scanning page content</strong> for email patterns</li>
+<li class=""><strong>Following internal links</strong> (optional)</li>
+<li class=""><strong>Compiling all discovered emails</strong> into a structured list</li>
+<li class=""><strong>Deduplicating</strong> results automatically</li>
+</ol>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Use Cases</div><div class="admonitionContent_BuS1"><p>Email extraction is perfect for:</p><ul>
+<li class="">Collecting emails from search results</li>
+<li class="">Building contact lists from industry directories</li>
+<li class="">Gathering contact info from member listings</li>
+<li class="">Extracting emails from resource pages</li>
+</ul></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="creating-an-extraction-task">Creating an Extraction Task<a href="#creating-an-extraction-task" class="hash-link" aria-label="Creating an Extraction Task的直接链接" title="Creating an Extraction Task的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-1-navigate-to-email-extraction">Step 1: Navigate to Email Extraction<a href="#step-1-navigate-to-email-extraction" class="hash-link" aria-label="Step 1: Navigate to Email Extraction的直接链接" title="Step 1: Navigate to Email Extraction的直接链接" translate="no">​</a></h3>
+<ol>
+<li class="">Click <strong>Email Extraction</strong> in the left navigation menu</li>
+<li class="">You&#x27;ll see the extraction task list</li>
+<li class="">Click <strong>Create New Task</strong> button</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-2-choose-url-input-method">Step 2: Choose URL Input Method<a href="#step-2-choose-url-input-method" class="hash-link" aria-label="Step 2: Choose URL Input Method的直接链接" title="Step 2: Choose URL Input Method的直接链接" translate="no">​</a></h3>
+<p>Select how you want to provide URLs for extraction:</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="method-1-manual-url-input">Method 1: Manual URL Input<a href="#method-1-manual-url-input" class="hash-link" aria-label="Method 1: Manual URL Input的直接链接" title="Method 1: Manual URL Input的直接链接" translate="no">​</a></h4>
+<p><strong>Best for</strong>: Custom URL lists, specific websites</p>
+<ol>
+<li class="">Select <strong>Manual Input</strong> from the source dropdown</li>
+<li class="">Enter your URLs in the text area</li>
+<li class=""><strong>Format</strong>: One URL per line</li>
+</ol>
+<p><strong>Example:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">https://example.com</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">https://www.business-site.com/contact</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">https://another-site.com/about-us</span><br></span></code></pre></div></div>
+<p><strong>Validation:</strong></p>
+<ul>
+<li class="">URLs must start with <code>http://</code> or <code>https://</code></li>
+<li class="">Invalid URLs will be flagged automatically</li>
+<li class="">Maximum URLs per task: 10,000</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="method-2-from-search-results">Method 2: From Search Results<a href="#method-2-from-search-results" class="hash-link" aria-label="Method 2: From Search Results的直接链接" title="Method 2: From Search Results的直接链接" translate="no">​</a></h4>
+<p><strong>Best for</strong>: Leveraging existing search campaigns</p>
+<ol>
+<li class="">Select <strong>Search Results</strong> from the source dropdown</li>
+<li class="">A table of your completed search tasks appears</li>
+<li class="">Select the search task containing URLs you want to extract from</li>
+<li class="">Click <strong>Confirm</strong></li>
+</ol>
+<p><strong>Benefits:</strong></p>
+<ul>
+<li class="">Seamless integration with search feature</li>
+<li class="">No manual URL entry needed</li>
+<li class="">Uses previously scraped URLs</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-3-configure-extraction-settings">Step 3: Configure Extraction Settings<a href="#step-3-configure-extraction-settings" class="hash-link" aria-label="Step 3: Configure Extraction Settings的直接链接" title="Step 3: Configure Extraction Settings的直接链接" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="page-length">Page Length<a href="#page-length" class="hash-link" aria-label="Page Length的直接链接" title="Page Length的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Default</strong>: 10 pages per URL</li>
+<li class=""><strong>Range</strong>: 1-1000 pages</li>
+<li class=""><strong>Purpose</strong>: How many pages deep to crawl each website</li>
+</ul>
+<p><strong>Guidelines:</strong></p>
+<ul>
+<li class=""><strong>Small sites</strong>: 5-10 pages</li>
+<li class=""><strong>Medium sites</strong>: 10-50 pages</li>
+<li class=""><strong>Large sites</strong>: 50-100 pages</li>
+<li class=""><strong>Very large sites</strong>: 100+ pages (use with caution)</li>
+</ul>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Pages vs. Time</div><div class="admonitionContent_BuS1"><p>Higher page length = longer extraction time. Start conservative and scale up.</p></div></div>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="concurrency">Concurrency<a href="#concurrency" class="hash-link" aria-label="Concurrency的直接链接" title="Concurrency的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Default</strong>: 1 concurrent process</li>
+<li class=""><strong>Range</strong>: 1-10 concurrent processes</li>
+<li class=""><strong>Purpose</strong>: How many URLs to process simultaneously</li>
+</ul>
+<p><strong>Recommendations:</strong></p>
+<ul>
+<li class=""><strong>Without proxies</strong>: 1-3 concurrent</li>
+<li class=""><strong>With proxies</strong>: 3-10 concurrent</li>
+<li class=""><strong>Start low</strong> and increase gradually</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="max-page-number">Max Page Number<a href="#max-page-number" class="hash-link" aria-label="Max Page Number的直接链接" title="Max Page Number的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Default</strong>: 100 pages</li>
+<li class=""><strong>Range</strong>: 0-1000 pages</li>
+<li class=""><strong>Purpose</strong>: Absolute maximum pages to process</li>
+</ul>
+<p><strong>Use Case</strong>: Prevent runaway extraction on very large sites.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="process-timeout">Process Timeout<a href="#process-timeout" class="hash-link" aria-label="Process Timeout的直接链接" title="Process Timeout的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Default</strong>: 10 minutes</li>
+<li class=""><strong>Range</strong>: 1-20 minutes</li>
+<li class=""><strong>Purpose</strong>: Maximum time per URL before timeout</li>
+</ul>
+<p><strong>Adjust if:</strong></p>
+<ul>
+<li class="">Sites load slowly → Increase timeout</li>
+<li class="">Want faster failure → Decrease timeout</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-4-display-options">Step 4: Display Options<a href="#step-4-display-options" class="hash-link" aria-label="Step 4: Display Options的直接链接" title="Step 4: Display Options的直接链接" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="show-in-browser">Show in Browser<a href="#show-in-browser" class="hash-link" aria-label="Show in Browser的直接链接" title="Show in Browser的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>No</strong> (default): Extraction runs invisibly (faster)</li>
+<li class=""><strong>Yes</strong>: Browser window visible (debugging mode)</li>
+</ul>
+<p><strong>Recommendation</strong>: Keep at &quot;No&quot; for production tasks.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-5-proxy-configuration-optional">Step 5: Proxy Configuration (Optional)<a href="#step-5-proxy-configuration-optional" class="hash-link" aria-label="Step 5: Proxy Configuration (Optional)的直接链接" title="Step 5: Proxy Configuration (Optional)的直接链接" translate="no">​</a></h3>
+<p>Add proxies for large-scale extraction:</p>
+<ol>
+<li class="">Toggle <strong>Use Proxy</strong></li>
+<li class="">Click <strong>Choose Proxy</strong></li>
+<li class="">Select one or more proxies</li>
+<li class="">Click <strong>Confirm</strong></li>
+</ol>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>When to Use Proxies</div><div class="admonitionContent_BuS1"><p>Use proxies when:</p><ul>
+<li class="">Extracting from 50+ URLs</li>
+<li class="">Running multiple concurrent processes</li>
+<li class="">Previous tasks were blocked</li>
+<li class="">Extracting from the same domains repeatedly</li>
+</ul></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-6-create-task">Step 6: Create Task<a href="#step-6-create-task" class="hash-link" aria-label="Step 6: Create Task的直接链接" title="Step 6: Create Task的直接链接" translate="no">​</a></h3>
+<p>Click <strong>Submit</strong> to create your extraction task. You can:</p>
+<ul>
+<li class=""><strong>Save Only</strong>: Save task without running</li>
+<li class=""><strong>Run Now</strong>: Start extraction immediately</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="managing-extraction-tasks">Managing Extraction Tasks<a href="#managing-extraction-tasks" class="hash-link" aria-label="Managing Extraction Tasks的直接链接" title="Managing Extraction Tasks的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="view-task-list">View Task List<a href="#view-task-list" class="hash-link" aria-label="View Task List的直接链接" title="View Task List的直接链接" translate="no">​</a></h3>
+<p>Navigate to <strong>Email Extraction</strong> to see all your tasks.</p>
+<p><strong>Task List Columns:</strong></p>
+<table><thead><tr><th>Column</th><th>Description</th></tr></thead><tbody><tr><td><strong>ID</strong></td><td>Unique task identifier</td></tr><tr><td><strong>Type</strong></td><td>Manual Input or Search Results</td></tr><tr><td><strong>Status</strong></td><td>Pending, Processing, Complete, Error</td></tr><tr><td><strong>Record Time</strong></td><td>When task was created</td></tr><tr><td><strong>Actions</strong></td><td>View, Edit, Delete, Download Logs</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="task-status">Task Status<a href="#task-status" class="hash-link" aria-label="Task Status的直接链接" title="Task Status的直接链接" translate="no">​</a></h3>
+<table><thead><tr><th>Status</th><th>Description</th><th>Action</th></tr></thead><tbody><tr><td><strong>Pending</strong></td><td>Task created but not started</td><td>Edit, Delete</td></tr><tr><td><strong>Processing</strong></td><td>Actively extracting emails</td><td>Monitor progress</td></tr><tr><td><strong>Complete</strong></td><td>Finished successfully</td><td>View results</td></tr><tr><td><strong>Error</strong></td><td>Failed with errors</td><td>View logs, Retry</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="task-actions">Task Actions<a href="#task-actions" class="hash-link" aria-label="Task Actions的直接链接" title="Task Actions的直接链接" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>View Results</strong> (folder icon): See extracted emails</li>
+<li class=""><strong>Edit</strong> (pencil icon): Modify task settings (only pending/error tasks)</li>
+<li class=""><strong>Delete</strong> (trash icon): Remove task</li>
+<li class=""><strong>Download Logs</strong> (download icon): Get error logs (failed tasks only)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="viewing-extracted-emails">Viewing Extracted Emails<a href="#viewing-extracted-emails" class="hash-link" aria-label="Viewing Extracted Emails的直接链接" title="Viewing Extracted Emails的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-1-access-results">Step 1: Access Results<a href="#step-1-access-results" class="hash-link" aria-label="Step 1: Access Results的直接链接" title="Step 1: Access Results的直接链接" translate="no">​</a></h3>
+<ol>
+<li class="">Go to <strong>Email Extraction</strong> task list</li>
+<li class="">Find the completed task</li>
+<li class="">Click <strong>View Results</strong></li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-2-results-table">Step 2: Results Table<a href="#step-2-results-table" class="hash-link" aria-label="Step 2: Results Table的直接链接" title="Step 2: Results Table的直接链接" translate="no">​</a></h3>
+<p>The results table displays:</p>
+<table><thead><tr><th>Column</th><th>Description</th></tr></thead><tbody><tr><td><strong>URL</strong></td><td>Source website</td></tr><tr><td><strong>Emails</strong></td><td>Extracted email addresses (expandable)</td></tr><tr><td><strong>Count</strong></td><td>Number of emails found</td></tr><tr><td><strong>Timestamp</strong></td><td>When extraction occurred</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-3-expand-details">Step 3: Expand Details<a href="#step-3-expand-details" class="hash-link" aria-label="Step 3: Expand Details的直接链接" title="Step 3: Expand Details的直接链接" translate="no">​</a></h3>
+<p>Click on a row to expand and see:</p>
+<ul>
+<li class="">All emails found on that URL</li>
+<li class="">Email list can be copied</li>
+<li class="">View individual email addresses</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-4-search-and-filter">Step 4: Search and Filter<a href="#step-4-search-and-filter" class="hash-link" aria-label="Step 4: Search and Filter的直接链接" title="Step 4: Search and Filter的直接链接" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Search</strong>: Filter by URL or email address</li>
+<li class=""><strong>Pagination</strong>: Navigate large result sets</li>
+<li class=""><strong>Auto-refresh</strong>: Results update every 10 seconds during processing</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="exporting-extracted-emails">Exporting Extracted Emails<a href="#exporting-extracted-emails" class="hash-link" aria-label="Exporting Extracted Emails的直接链接" title="Exporting Extracted Emails的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="export-as-csv">Export as CSV<a href="#export-as-csv" class="hash-link" aria-label="Export as CSV的直接链接" title="Export as CSV的直接链接" translate="no">​</a></h3>
+<ol>
+<li class="">Select results you want to export (or leave blank for all)</li>
+<li class="">Click <strong>Export</strong> → <strong>CSV</strong></li>
+<li class="">File downloads with all extracted emails</li>
+</ol>
+<p><strong>CSV Format:</strong></p>
+<div class="language-csv codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-csv codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">URL,Email,Timestamp</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">https://example.com,contact@example.com,2024-01-15 10:30:00</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">https://example.com,info@example.com,2024-01-15 10:30:00</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="use-in-email-campaigns">Use in Email Campaigns<a href="#use-in-email-campaigns" class="hash-link" aria-label="Use in Email Campaigns的直接链接" title="Use in Email Campaigns的直接链接" translate="no">​</a></h3>
+<p>Extracted emails integrate directly with email marketing:</p>
+<ol>
+<li class=""><strong>View Results</strong> of extraction task</li>
+<li class="">Click <strong>Use in Campaign</strong> button</li>
+<li class="">Emails are automatically passed to email marketing workflow</li>
+</ol>
+<p>For detailed instructions, see <a class="" href="/aiFetchly/zh-CN/docs/lead-generation/batch-email-sending">Batch Email Sending</a>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="best-practices">Best Practices<a href="#best-practices" class="hash-link" aria-label="Best Practices的直接链接" title="Best Practices的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-url-source-strategy">1. URL Source Strategy<a href="#1-url-source-strategy" class="hash-link" aria-label="1. URL Source Strategy的直接链接" title="1. URL Source Strategy的直接链接" translate="no">​</a></h3>
+<p><strong>High-Quality Sources:</strong></p>
+<ul>
+<li class="">Industry directories</li>
+<li class="">Member listings</li>
+<li class="">Association websites</li>
+<li class="">Resource pages</li>
+<li class="">&quot;Contact Us&quot; pages</li>
+</ul>
+<p><strong>Avoid:</strong></p>
+<ul>
+<li class="">Social media platforms (rarely have emails)</li>
+<li class="">News sites (low conversion)</li>
+<li class="">Very large portals (low quality)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-page-length-settings">2. Page Length Settings<a href="#2-page-length-settings" class="hash-link" aria-label="2. Page Length Settings的直接链接" title="2. Page Length Settings的直接链接" translate="no">​</a></h3>
+<p><strong>Conservative</strong> (Quality focus):</p>
+<ul>
+<li class="">Page length: 5-10</li>
+<li class="">Concurrency: 1-3</li>
+<li class="">Best for: Targeted lists, high-value contacts</li>
+</ul>
+<p><strong>Moderate</strong> (Balance):</p>
+<ul>
+<li class="">Page length: 10-50</li>
+<li class="">Concurrency: 3-5</li>
+<li class="">Best for: General outreach campaigns</li>
+</ul>
+<p><strong>Aggressive</strong> (Quantity focus):</p>
+<ul>
+<li class="">Page length: 50-100+</li>
+<li class="">Concurrency: 5-10</li>
+<li class="">Best for: Market research, broad coverage</li>
+</ul>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Quality vs. Quantity</div><div class="admonitionContent_BuS1"><p>Aggressive settings may extract more emails but lower quality. Focus on relevant sources for better campaign results.</p></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-proxy-usage">3. Proxy Usage<a href="#3-proxy-usage" class="hash-link" aria-label="3. Proxy Usage的直接链接" title="3. Proxy Usage的直接链接" translate="no">​</a></h3>
+<p><strong>Small Tasks</strong> (&lt; 100 URLs):</p>
+<ul>
+<li class="">Proxies not required</li>
+<li class="">Concurrency: 1-3</li>
+</ul>
+<p><strong>Medium Tasks</strong> (100-1000 URLs):</p>
+<ul>
+<li class="">Use 2-3 proxies</li>
+<li class="">Concurrency: 3-5</li>
+</ul>
+<p><strong>Large Tasks</strong> (1000+ URLs):</p>
+<ul>
+<li class="">Use 5+ proxies</li>
+<li class="">Concurrency: 5-10</li>
+<li class="">Rotate proxies regularly</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-deduplication">4. Deduplication<a href="#4-deduplication" class="hash-link" aria-label="4. Deduplication的直接链接" title="4. Deduplication的直接链接" translate="no">​</a></h3>
+<p>aiFetchly automatically deduplicates emails within a task. For additional deduplication:</p>
+<ul>
+<li class="">Export results to CSV</li>
+<li class="">Use spreadsheet software or scripts</li>
+<li class="">Compare with existing contact lists</li>
+<li class="">Remove duplicates before campaigns</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="5-email-verification">5. Email Verification<a href="#5-email-verification" class="hash-link" aria-label="5. Email Verification的直接链接" title="5. Email Verification的直接链接" translate="no">​</a></h3>
+<p>Extracted emails may not always be valid. Consider:</p>
+<ul>
+<li class=""><strong>Manual review</strong>: Spot-check email formats</li>
+<li class=""><strong>Email verification tools</strong>: Use third-party services</li>
+<li class=""><strong>Test campaigns</strong>: Send small batches first</li>
+<li class=""><strong>Track bounces</strong>: Remove undeliverable emails</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="integration-with-search-results">Integration with Search Results<a href="#integration-with-search-results" class="hash-link" aria-label="Integration with Search Results的直接链接" title="Integration with Search Results的直接链接" translate="no">​</a></h2>
+<p>The most powerful workflow combines search and extraction:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="complete-workflow">Complete Workflow<a href="#complete-workflow" class="hash-link" aria-label="Complete Workflow的直接链接" title="Complete Workflow的直接链接" translate="no">​</a></h3>
+<ol>
+<li class="">
+<p><strong>Run Search Task</strong>:</p>
+<ul>
+<li class="">Search for businesses in your target industry</li>
+<li class="">Use AI keyword generation for comprehensive coverage</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Extract Emails</strong>:</p>
+<ul>
+<li class="">Create extraction task from search results</li>
+<li class="">Extract emails from discovered URLs</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Quality Control</strong>:</p>
+<ul>
+<li class="">Review extracted emails</li>
+<li class="">Filter by source quality</li>
+<li class="">Remove duplicates</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Email Campaign</strong>:</p>
+<ul>
+<li class="">Import to email marketing</li>
+<li class="">Create personalized templates</li>
+<li class="">Launch campaign</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="advanced-techniques">Advanced Techniques<a href="#advanced-techniques" class="hash-link" aria-label="Advanced Techniques的直接链接" title="Advanced Techniques的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="technique-1-deep-extraction">Technique 1: Deep Extraction<a href="#technique-1-deep-extraction" class="hash-link" aria-label="Technique 1: Deep Extraction的直接链接" title="Technique 1: Deep Extraction的直接链接" translate="no">​</a></h3>
+<p>For comprehensive email collection:</p>
+<ol>
+<li class=""><strong>Set Page Length</strong>: 50-100 pages</li>
+<li class=""><strong>Enable Proxies</strong>: Use 3-5 proxies</li>
+<li class=""><strong>Moderate Concurrency</strong>: 3-5</li>
+<li class=""><strong>Monitor Progress</strong>: Check results regularly</li>
+<li class=""><strong>Stop Early</strong>: If quality drops, adjust settings</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="technique-2-pattern-based-extraction">Technique 2: Pattern-Based Extraction<a href="#technique-2-pattern-based-extraction" class="hash-link" aria-label="Technique 2: Pattern-Based Extraction的直接链接" title="Technique 2: Pattern-Based Extraction的直接链接" translate="no">​</a></h3>
+<p>Target specific types of pages:</p>
+<ul>
+<li class=""><strong>Contact pages</strong>: URLs containing <code>/contact</code></li>
+<li class=""><strong>About pages</strong>: URLs containing <code>/about</code></li>
+<li class=""><strong>Team pages</strong>: URLs containing <code>/team</code></li>
+<li class=""><strong>Member directories</strong>: Association websites</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="technique-3-competitor-analysis">Technique 3: Competitor Analysis<a href="#technique-3-competitor-analysis" class="hash-link" aria-label="Technique 3: Competitor Analysis的直接链接" title="Technique 3: Competitor Analysis的直接链接" translate="no">​</a></h3>
+<p>Extract emails from competitor websites:</p>
+<ol>
+<li class=""><strong>Identify competitors</strong> in your niche</li>
+<li class=""><strong>Extract their contact emails</strong></li>
+<li class=""><strong>Analyze their partnerships</strong> (link pages)</li>
+<li class=""><strong>Build partnership outreach list</strong></li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="troubleshooting">Troubleshooting<a href="#troubleshooting" class="hash-link" aria-label="Troubleshooting的直接链接" title="Troubleshooting的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="task-status-error">Task Status: &quot;Error&quot;<a href="#task-status-error" class="hash-link" aria-label="Task Status: &quot;Error&quot;的直接链接" title="Task Status: &quot;Error&quot;的直接链接" translate="no">​</a></h3>
+<p><strong>Possible causes:</strong></p>
+<ul>
+<li class="">Invalid URLs</li>
+<li class="">Network connectivity issues</li>
+<li class="">All proxies failed</li>
+<li class="">Website blocking</li>
+</ul>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li class="">Verify URL format (http:// or https://)</li>
+<li class="">Check internet connection</li>
+<li class="">Test proxy health</li>
+<li class="">Reduce concurrency</li>
+<li class="">Increase timeout settings</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="no-emails-extracted">No Emails Extracted<a href="#no-emails-extracted" class="hash-link" aria-label="No Emails Extracted的直接链接" title="No Emails Extracted的直接链接" translate="no">​</a></h3>
+<p><strong>Possible causes:</strong></p>
+<ul>
+<li class="">Websites don&#x27;t have publicly visible emails</li>
+<li class="">Emails are in images/JavaScript (not extracted)</li>
+<li class="">Websites use contact forms instead of emails</li>
+<li class="">Page length too low</li>
+</ul>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li class="">Increase page length setting</li>
+<li class="">Manually verify websites have emails</li>
+<li class="">Try different URL sources</li>
+<li class="">Check if sites use contact forms</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="slow-processing">Slow Processing<a href="#slow-processing" class="hash-link" aria-label="Slow Processing的直接链接" title="Slow Processing的直接链接" translate="no">​</a></h3>
+<p><strong>Possible causes:</strong></p>
+<ul>
+<li class="">High page length</li>
+<li class="">Many concurrent processes</li>
+<li class="">Slow websites</li>
+<li class="">Network latency</li>
+</ul>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li class="">Reduce page length</li>
+<li class="">Decrease concurrency</li>
+<li class="">Increase timeout</li>
+<li class="">Use faster proxies</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="duplicate-emails">Duplicate Emails<a href="#duplicate-emails" class="hash-link" aria-label="Duplicate Emails的直接链接" title="Duplicate Emails的直接链接" translate="no">​</a></h3>
+<p><strong>Possible causes:</strong></p>
+<ul>
+<li class="">Same email appears on multiple pages</li>
+<li class="">Multiple URLs from same domain</li>
+</ul>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li class="">aiFetchly auto-deduplicates within tasks</li>
+<li class="">Export and deduplicate across tasks</li>
+<li class="">Use spreadsheet software or scripts</li>
+<li class="">Use email verification tools</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="blocked-by-websites">Blocked by Websites<a href="#blocked-by-websites" class="hash-link" aria-label="Blocked by Websites的直接链接" title="Blocked by Websites的直接链接" translate="no">​</a></h3>
+<p><strong>Possible causes:</strong></p>
+<ul>
+<li class="">Too many concurrent requests</li>
+<li class="">No proxy rotation</li>
+<li class="">Aggressive settings</li>
+</ul>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li class="">Reduce concurrency to 1-3</li>
+<li class="">Use multiple proxies</li>
+<li class="">Increase delays between requests</li>
+<li class="">Respect website rate limits</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="legal-and-ethical-considerations">Legal and Ethical Considerations<a href="#legal-and-ethical-considerations" class="hash-link" aria-label="Legal and Ethical Considerations的直接链接" title="Legal and Ethical Considerations的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="compliance">Compliance<a href="#compliance" class="hash-link" aria-label="Compliance的直接链接" title="Compliance的直接链接" translate="no">​</a></h3>
+<p>When extracting emails, consider:</p>
+<ul>
+<li class=""><strong>GDPR</strong> (Europe): Strict regulations on email collection</li>
+<li class=""><strong>CAN-SPAM</strong> (USA): Requirements for commercial emails</li>
+<li class=""><strong>CASL</strong> (Canada): Consent requirements for electronic messages</li>
+</ul>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Legal Disclaimer</div><div class="admonitionContent_BuS1"><p>Always ensure you have legal rights to extract and contact the email addresses. Consult legal counsel for guidance on applicable laws.</p></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="best-practices-1">Best Practices<a href="#best-practices-1" class="hash-link" aria-label="Best Practices的直接链接" title="Best Practices的直接链接" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Public Sources Only</strong>: Extract from publicly available information</li>
+<li class=""><strong>Relevant Context</strong>: Extract from businesses/contacts relevant to your offering</li>
+<li class=""><strong>Respect Robots.txt</strong>: Honor website exclusion standards</li>
+<li class=""><strong>Provide Opt-Out</strong>: Include unsubscribe options in emails</li>
+<li class=""><strong>Value Proposition</strong>: Offer something of value in your outreach</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="integration-with-email-marketing">Integration with Email Marketing<a href="#integration-with-email-marketing" class="hash-link" aria-label="Integration with Email Marketing的直接链接" title="Integration with Email Marketing的直接链接" translate="no">​</a></h2>
+<p>Once you&#x27;ve extracted emails:</p>
+<ol>
+<li class=""><strong>Review Results</strong>: Quality check your extracted emails</li>
+<li class=""><strong>Export or Import</strong>: Direct to email marketing or export as CSV</li>
+<li class=""><strong>Select Template</strong>: Choose or create email template</li>
+<li class=""><strong>Personalize</strong>: Use AI Email Writer for personalized content</li>
+<li class=""><strong>Launch Campaign</strong>: Send targeted outreach</li>
+</ol>
+<p>For detailed instructions on creating campaigns, see <a class="" href="/aiFetchly/zh-CN/docs/lead-generation/batch-email-sending">Batch Email Sending</a>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="next-steps">Next Steps<a href="#next-steps" class="hash-link" aria-label="Next Steps的直接链接" title="Next Steps的直接链接" translate="no">​</a></h2>
+<ul>
+<li class=""><a class="" href="/aiFetchly/zh-CN/docs/ai-outreach/knowledge-library">Set up the Knowledge Library</a></li>
+<li class=""><a class="" href="/aiFetchly/zh-CN/docs/ai-outreach/ai-email-writer">Create AI-powered email campaigns</a></li>
+<li class=""><a class="" href="/aiFetchly/zh-CN/docs/ai-outreach/ai-marketing-assistant">Learn about the AI Marketing Assistant</a></li>
+</ul>
+<hr>
+<p><strong>Ready to extract emails?</strong> Start with a small batch of URLs to test your settings, then scale up your extraction operations.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="文件选项卡"><a class="pagination-nav__link pagination-nav__link--prev" href="/aiFetchly/zh-CN/docs/lead-generation/yellow-pages"><div class="pagination-nav__sublabel">上一页</div><div class="pagination-nav__label">Yellow Pages</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/aiFetchly/zh-CN/docs/lead-generation/batch-email-sending"><div class="pagination-nav__sublabel">下一页</div><div class="pagination-nav__label">Batch Email Sending</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#understanding-email-extraction" class="table-of-contents__link toc-highlight">Understanding Email Extraction</a></li><li><a href="#creating-an-extraction-task" class="table-of-contents__link toc-highlight">Creating an Extraction Task</a><ul><li><a href="#step-1-navigate-to-email-extraction" class="table-of-contents__link toc-highlight">Step 1: Navigate to Email Extraction</a></li><li><a href="#step-2-choose-url-input-method" class="table-of-contents__link toc-highlight">Step 2: Choose URL Input Method</a></li><li><a href="#step-3-configure-extraction-settings" class="table-of-contents__link toc-highlight">Step 3: Configure Extraction Settings</a></li><li><a href="#step-4-display-options" class="table-of-contents__link toc-highlight">Step 4: Display Options</a></li><li><a href="#step-5-proxy-configuration-optional" class="table-of-contents__link toc-highlight">Step 5: Proxy Configuration (Optional)</a></li><li><a href="#step-6-create-task" class="table-of-contents__link toc-highlight">Step 6: Create Task</a></li></ul></li><li><a href="#managing-extraction-tasks" class="table-of-contents__link toc-highlight">Managing Extraction Tasks</a><ul><li><a href="#view-task-list" class="table-of-contents__link toc-highlight">View Task List</a></li><li><a href="#task-status" class="table-of-contents__link toc-highlight">Task Status</a></li><li><a href="#task-actions" class="table-of-contents__link toc-highlight">Task Actions</a></li></ul></li><li><a href="#viewing-extracted-emails" class="table-of-contents__link toc-highlight">Viewing Extracted Emails</a><ul><li><a href="#step-1-access-results" class="table-of-contents__link toc-highlight">Step 1: Access Results</a></li><li><a href="#step-2-results-table" class="table-of-contents__link toc-highlight">Step 2: Results Table</a></li><li><a href="#step-3-expand-details" class="table-of-contents__link toc-highlight">Step 3: Expand Details</a></li><li><a href="#step-4-search-and-filter" class="table-of-contents__link toc-highlight">Step 4: Search and Filter</a></li></ul></li><li><a href="#exporting-extracted-emails" class="table-of-contents__link toc-highlight">Exporting Extracted Emails</a><ul><li><a href="#export-as-csv" class="table-of-contents__link toc-highlight">Export as CSV</a></li><li><a href="#use-in-email-campaigns" class="table-of-contents__link toc-highlight">Use in Email Campaigns</a></li></ul></li><li><a href="#best-practices" class="table-of-contents__link toc-highlight">Best Practices</a><ul><li><a href="#1-url-source-strategy" class="table-of-contents__link toc-highlight">1. URL Source Strategy</a></li><li><a href="#2-page-length-settings" class="table-of-contents__link toc-highlight">2. Page Length Settings</a></li><li><a href="#3-proxy-usage" class="table-of-contents__link toc-highlight">3. Proxy Usage</a></li><li><a href="#4-deduplication" class="table-of-contents__link toc-highlight">4. Deduplication</a></li><li><a href="#5-email-verification" class="table-of-contents__link toc-highlight">5. Email Verification</a></li></ul></li><li><a href="#integration-with-search-results" class="table-of-contents__link toc-highlight">Integration with Search Results</a><ul><li><a href="#complete-workflow" class="table-of-contents__link toc-highlight">Complete Workflow</a></li></ul></li><li><a href="#advanced-techniques" class="table-of-contents__link toc-highlight">Advanced Techniques</a><ul><li><a href="#technique-1-deep-extraction" class="table-of-contents__link toc-highlight">Technique 1: Deep Extraction</a></li><li><a href="#technique-2-pattern-based-extraction" class="table-of-contents__link toc-highlight">Technique 2: Pattern-Based Extraction</a></li><li><a href="#technique-3-competitor-analysis" class="table-of-contents__link toc-highlight">Technique 3: Competitor Analysis</a></li></ul></li><li><a href="#troubleshooting" class="table-of-contents__link toc-highlight">Troubleshooting</a><ul><li><a href="#task-status-error" class="table-of-contents__link toc-highlight">Task Status: &quot;Error&quot;</a></li><li><a href="#no-emails-extracted" class="table-of-contents__link toc-highlight">No Emails Extracted</a></li><li><a href="#slow-processing" class="table-of-contents__link toc-highlight">Slow Processing</a></li><li><a href="#duplicate-emails" class="table-of-contents__link toc-highlight">Duplicate Emails</a></li><li><a href="#blocked-by-websites" class="table-of-contents__link toc-highlight">Blocked by Websites</a></li></ul></li><li><a href="#legal-and-ethical-considerations" class="table-of-contents__link toc-highlight">Legal and Ethical Considerations</a><ul><li><a href="#compliance" class="table-of-contents__link toc-highlight">Compliance</a></li><li><a href="#best-practices-1" class="table-of-contents__link toc-highlight">Best Practices</a></li></ul></li><li><a href="#integration-with-email-marketing" class="table-of-contents__link toc-highlight">Integration with Email Marketing</a></li><li><a href="#next-steps" class="table-of-contents__link toc-highlight">Next Steps</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/zh-CN/docs/getting-started/introduction">Getting Started</a></li><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/zh-CN/docs/lead-generation/search-engines">Lead Generation</a></li><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/zh-CN/docs/ai-outreach/knowledge-library">AI Outreach</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/aifetchly" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/aifetchly" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/robertzengcn/aiFetchly" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 aiFetchly. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

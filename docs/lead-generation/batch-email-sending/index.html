@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-lead-generation/batch-email-sending" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Batch Email Sending | aiFetchly Manual</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://robertzengcn.github.io/aiFetchly/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://robertzengcn.github.io/aiFetchly/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://robertzengcn.github.io/aiFetchly/docs/lead-generation/batch-email-sending"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" property="og:locale:alternate" content="zh_CN"><meta data-rh="true" property="og:locale:alternate" content="es"><meta data-rh="true" property="og:locale:alternate" content="fr"><meta data-rh="true" property="og:locale:alternate" content="de"><meta data-rh="true" property="og:locale:alternate" content="ja"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Batch Email Sending | aiFetchly Manual"><meta data-rh="true" name="description" content="Send personalized email campaigns at scale using SMTP integration with aiFetchly."><meta data-rh="true" property="og:description" content="Send personalized email campaigns at scale using SMTP integration with aiFetchly."><link data-rh="true" rel="icon" href="/aiFetchly/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://robertzengcn.github.io/aiFetchly/docs/lead-generation/batch-email-sending"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/docs/lead-generation/batch-email-sending" hreflang="en"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/zh-CN/docs/lead-generation/batch-email-sending" hreflang="zh-CN"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/es/docs/lead-generation/batch-email-sending" hreflang="es"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/fr/docs/lead-generation/batch-email-sending" hreflang="fr"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/de/docs/lead-generation/batch-email-sending" hreflang="de"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/ja/docs/lead-generation/batch-email-sending" hreflang="ja"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/docs/lead-generation/batch-email-sending" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Batch Email Sending","item":"https://robertzengcn.github.io/aiFetchly/docs/lead-generation/batch-email-sending"}]}</script><link rel="stylesheet" href="/aiFetchly/assets/css/styles.ac14db2c.css">
+<script src="/aiFetchly/assets/js/runtime~main.11fb1243.js" defer="defer"></script>
+<script src="/aiFetchly/assets/js/main.e4c374e5.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/aiFetchly/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/aiFetchly/"><div class="navbar__logo"><img src="/aiFetchly/img/logo.svg" alt="aiFetchly Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/aiFetchly/img/logo.svg" alt="aiFetchly Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">aiFetchly Manual</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/aiFetchly/docs/getting-started/introduction">Docs</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/robertzengcn/aiFetchly" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="iconLanguage_nlXk"><path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></svg>English</a><ul class="dropdown__menu"><li><a href="/aiFetchly/docs/lead-generation/batch-email-sending" target="_self" rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang="en">English</a></li><li><a href="/aiFetchly/zh-CN/docs/lead-generation/batch-email-sending" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="zh-CN">中文（中国）</a></li><li><a href="/aiFetchly/es/docs/lead-generation/batch-email-sending" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="es">Español</a></li><li><a href="/aiFetchly/fr/docs/lead-generation/batch-email-sending" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="fr">Français</a></li><li><a href="/aiFetchly/de/docs/lead-generation/batch-email-sending" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="de">Deutsch</a></li><li><a href="/aiFetchly/ja/docs/lead-generation/batch-email-sending" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="ja">日本語</a></li></ul></div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between light and dark mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/aiFetchly/docs/getting-started/introduction"><span title="Introduction" class="linkLabel_WmDU">Introduction</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="Getting Started" class="categoryLinkLabel_W154">Getting Started</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/docs/getting-started/installation"><span title="Installation" class="linkLabel_WmDU">Installation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/docs/getting-started/proxy-setup"><span title="Proxy Setup" class="linkLabel_WmDU">Proxy Setup</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--active"><span title="Lead Generation" class="categoryLinkLabel_W154">Lead Generation</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/docs/lead-generation/search-engines"><span title="Search Engines" class="linkLabel_WmDU">Search Engines</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/docs/lead-generation/yellow-pages"><span title="Yellow Pages" class="linkLabel_WmDU">Yellow Pages</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/docs/lead-generation/contact-extraction"><span title="Email Extraction" class="linkLabel_WmDU">Email Extraction</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/aiFetchly/docs/lead-generation/batch-email-sending"><span title="Batch Email Sending" class="linkLabel_WmDU">Batch Email Sending</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="AI Outreach" class="categoryLinkLabel_W154">AI Outreach</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/docs/ai-outreach/knowledge-library"><span title="Knowledge Library" class="linkLabel_WmDU">Knowledge Library</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/docs/ai-outreach/mcp-tools"><span title="MCP Tools" class="linkLabel_WmDU">MCP Tools</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/docs/ai-outreach/ai-skills"><span title="AI Skills" class="linkLabel_WmDU">AI Skills</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/docs/ai-outreach/ai-email-writer"><span title="AI Email Writer" class="linkLabel_WmDU">AI Email Writer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/docs/ai-outreach/ai-marketing-assistant"><span title="AI Marketing Assistant" class="linkLabel_WmDU">AI Marketing Assistant</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="Automation" class="categoryLinkLabel_W154">Automation</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/docs/automation/task-scheduling"><span title="Task Scheduler" class="linkLabel_WmDU">Task Scheduler</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="Settings" class="categoryLinkLabel_W154">Settings</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/docs/settings/system-settings"><span title="System Settings" class="linkLabel_WmDU">System Settings</span></a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home" class="breadcrumbs__link" href="/aiFetchly/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Lead Generation</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Batch Email Sending</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Batch Email Sending</h1></header>
+<p>aiFetchly&#x27;s Batch Email Sending feature allows you to launch personalized email campaigns at scale. Import emails from your extraction tasks, use AI-generated templates, and send via your own SMTP server for complete control over your outreach.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="overview">Overview<a href="#overview" class="hash-link" aria-label="Direct link to Overview" title="Direct link to Overview" translate="no">​</a></h2>
+<p>The batch email sending process consists of <strong>4 steps</strong>:</p>
+<ol>
+<li class=""><strong>Choose Email Source</strong> - Select where your emails come from</li>
+<li class=""><strong>Choose Email Template</strong> - Select or create your message template</li>
+<li class=""><strong>Choose Email Filter</strong> (Optional) - Apply filters to your email list</li>
+<li class=""><strong>Choose Email Service</strong> - Configure SMTP and send</li>
+</ol>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Prerequisites</div><div class="admonitionContent_BuS1"><p>Before sending campaigns, ensure you have:</p><ul>
+<li class=""><a href="#configuring-email-services" class="">Configured an SMTP service</a></li>
+<li class=""><a class="" href="/aiFetchly/docs/ai-outreach/ai-email-writer">Created email templates</a></li>
+<li class=""><a class="" href="/aiFetchly/docs/lead-generation/contact-extraction">Extracted or imported email lists</a></li>
+</ul></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="configuring-email-services">Configuring Email Services<a href="#configuring-email-services" class="hash-link" aria-label="Direct link to Configuring Email Services" title="Direct link to Configuring Email Services" translate="no">​</a></h2>
+<p>Before sending emails, you must configure at least one SMTP service.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-is-smtp">What is SMTP?<a href="#what-is-smtp" class="hash-link" aria-label="Direct link to What is SMTP?" title="Direct link to What is SMTP?" translate="no">​</a></h3>
+<p><strong>SMTP</strong> (Simple Mail Transfer Protocol) is the standard for sending emails. aiFetchly uses SMTP to send emails through your own email server or email service provider.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-1-navigate-to-email-services">Step 1: Navigate to Email Services<a href="#step-1-navigate-to-email-services" class="hash-link" aria-label="Direct link to Step 1: Navigate to Email Services" title="Direct link to Step 1: Navigate to Email Services" translate="no">​</a></h3>
+<ol>
+<li class="">Click <strong>Email Marketing</strong> in the left navigation menu</li>
+<li class="">Select <strong>Email Services</strong> from the submenu</li>
+<li class="">Click <strong>Add New Service</strong></li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-2-smtp-configuration">Step 2: SMTP Configuration<a href="#step-2-smtp-configuration" class="hash-link" aria-label="Direct link to Step 2: SMTP Configuration" title="Direct link to Step 2: SMTP Configuration" translate="no">​</a></h3>
+<p>Enter the following SMTP details:</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="service-name">Service Name<a href="#service-name" class="hash-link" aria-label="Direct link to Service Name" title="Direct link to Service Name" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Purpose</strong>: Identify this SMTP configuration</li>
+<li class=""><strong>Example</strong>: &quot;Gmail SMTP&quot;, &quot;SendGrid&quot;, &quot;AWS SES&quot;</li>
+<li class=""><strong>Required</strong>: Yes</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="from-email">From Email<a href="#from-email" class="hash-link" aria-label="Direct link to From Email" title="Direct link to From Email" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Purpose</strong>: Email address that emails will be sent from</li>
+<li class=""><strong>Example</strong>: <code>outreach@yourcompany.com</code></li>
+<li class=""><strong>Required</strong>: Yes</li>
+</ul>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Sender Reputation</div><div class="admonitionContent_BuS1"><p>Use a dedicated email address for outreach. Avoid using personal email addresses for bulk sending.</p></div></div>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="password">Password<a href="#password" class="hash-link" aria-label="Direct link to Password" title="Direct link to Password" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Purpose</strong>: Email account password or application-specific password</li>
+<li class=""><strong>Required</strong>: Yes</li>
+<li class=""><strong>Security</strong>: Password is stored securely</li>
+</ul>
+<p><strong>Show/Hide Toggle</strong>: Click the eye icon to show/hide the password.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="host">Host<a href="#host" class="hash-link" aria-label="Direct link to Host" title="Direct link to Host" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Purpose</strong>: SMTP server hostname</li>
+<li class=""><strong>Examples</strong>:<!-- -->
+<ul>
+<li class="">Gmail: <code>smtp.gmail.com</code></li>
+<li class="">SendGrid: <code>smtp.sendgrid.net</code></li>
+<li class="">AWS SES: <code>email-smtp.us-east-1.amazonaws.com</code></li>
+</ul>
+</li>
+<li class=""><strong>Required</strong>: Yes</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="port">Port<a href="#port" class="hash-link" aria-label="Direct link to Port" title="Direct link to Port" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Purpose</strong>: SMTP server port</li>
+<li class=""><strong>Common Ports</strong>:<!-- -->
+<ul>
+<li class=""><strong>587</strong>: Submission (STARTTLS) - Recommended</li>
+<li class=""><strong>465</strong>: SMTPS (SSL/TLS)</li>
+<li class=""><strong>25</strong>: SMTP (not recommended, often blocked)</li>
+</ul>
+</li>
+<li class=""><strong>Required</strong>: Yes</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="ssltls">SSL/TLS<a href="#ssltls" class="hash-link" aria-label="Direct link to SSL/TLS" title="Direct link to SSL/TLS" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Toggle</strong>: Enable secure connection</li>
+<li class=""><strong>Recommended</strong>: Always keep enabled</li>
+<li class=""><strong>Purpose</strong>: Encrypts email transmission</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-3-test-configuration">Step 3: Test Configuration<a href="#step-3-test-configuration" class="hash-link" aria-label="Direct link to Step 3: Test Configuration" title="Direct link to Step 3: Test Configuration" translate="no">​</a></h3>
+<p>Before saving, test your SMTP settings:</p>
+<ol>
+<li class=""><strong>Click &quot;Test Connection&quot;</strong></li>
+<li class=""><strong>Enter test details</strong>:<!-- -->
+<ul>
+<li class=""><strong>Receiver</strong>: Test email address</li>
+<li class=""><strong>Title</strong>: Test subject line</li>
+<li class=""><strong>Content</strong>: Test email body</li>
+</ul>
+</li>
+<li class=""><strong>Click &quot;Send Test Email&quot;</strong></li>
+<li class=""><strong>Check your inbox</strong> for the test email</li>
+</ol>
+<div class="theme-admonition theme-admonition-important admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Test Before Sending</div><div class="admonitionContent_BuS1"><p>Always test your SMTP configuration before using it in campaigns. This prevents failed sends and wasted resources.</p></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-4-save-service">Step 4: Save Service<a href="#step-4-save-service" class="hash-link" aria-label="Direct link to Step 4: Save Service" title="Direct link to Step 4: Save Service" translate="no">​</a></h3>
+<ol>
+<li class="">If test successful, click <strong>Save</strong></li>
+<li class="">Service appears in your email services list</li>
+<li class="">Ready to use in campaigns</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="common-smtp-providers">Common SMTP Providers<a href="#common-smtp-providers" class="hash-link" aria-label="Direct link to Common SMTP Providers" title="Direct link to Common SMTP Providers" translate="no">​</a></h3>
+<table><thead><tr><th>Provider</th><th>Host</th><th>Port</th><th>Notes</th></tr></thead><tbody><tr><td><strong>Gmail</strong></td><td><code>smtp.gmail.com</code></td><td>587</td><td>Use App Password, not regular password</td></tr><tr><td><strong>Outlook</strong></td><td><code>smtp.office365.com</code></td><td>587</td><td>May require App Password</td></tr><tr><td><strong>SendGrid</strong></td><td><code>smtp.sendgrid.net</code></td><td>587</td><td>API key as password</td></tr><tr><td><strong>Mailgun</strong></td><td><code>smtp.mailgun.org</code></td><td>587</td><td>Use SMTP credentials</td></tr><tr><td><strong>AWS SES</strong></td><td>Region-specific</td><td>587</td><td>Requires SMTP credentials</td></tr><tr><td><strong>Postmark</strong></td><td><code>smtp.postmarkapp.com</code></td><td>587</td><td>API key as password</td></tr></tbody></table>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Gmail and Outlook</div><div class="admonitionContent_BuS1"><p>Gmail and Outlook require <strong>App Passwords</strong> for third-party SMTP access. You cannot use your regular password.</p><ol>
+<li class="">Enable 2-factor authentication</li>
+<li class="">Generate an App Password</li>
+<li class="">Use the App Password in aiFetchly</li>
+</ol></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="sending-batch-emails">Sending Batch Emails<a href="#sending-batch-emails" class="hash-link" aria-label="Direct link to Sending Batch Emails" title="Direct link to Sending Batch Emails" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-1-choose-email-source">Step 1: Choose Email Source<a href="#step-1-choose-email-source" class="hash-link" aria-label="Direct link to Step 1: Choose Email Source" title="Direct link to Step 1: Choose Email Source" translate="no">​</a></h3>
+<ol>
+<li class=""><strong>Navigate</strong> to <strong>Email Marketing</strong> → <strong>Send Bulk Emails</strong></li>
+<li class=""><strong>Select Email Source Type</strong> from the dropdown:<!-- -->
+<ul>
+<li class=""><strong>Email Task</strong>: Emails from extraction tasks</li>
+<li class=""><strong>Manual Input</strong>: Upload email list manually</li>
+<li class=""><strong>Search Results</strong>: Use search task results</li>
+</ul>
+</li>
+</ol>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="using-email-tasks-recommended">Using Email Tasks (Recommended)<a href="#using-email-tasks-recommended" class="hash-link" aria-label="Direct link to Using Email Tasks (Recommended)" title="Direct link to Using Email Tasks (Recommended)" translate="no">​</a></h4>
+<ol>
+<li class="">Select <strong>Email Task</strong> from dropdown</li>
+<li class=""><strong>Choose extraction task</strong> from the list</li>
+<li class=""><strong>Preview</strong> the email list</li>
+<li class=""><strong>Option</strong>: Enable &quot;Avoid Duplicates&quot; to skip already-contacted emails</li>
+</ol>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="using-manual-input">Using Manual Input<a href="#using-manual-input" class="hash-link" aria-label="Direct link to Using Manual Input" title="Direct link to Using Manual Input" translate="no">​</a></h4>
+<ol>
+<li class="">Select <strong>Manual Input</strong> from dropdown</li>
+<li class=""><strong>Enter emails</strong> in the text area</li>
+<li class=""><strong>Format</strong>: One email per line, or CSV format</li>
+<li class=""><strong>Click &quot;Parse&quot;</strong> to process the list</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-2-choose-email-template">Step 2: Choose Email Template<a href="#step-2-choose-email-template" class="hash-link" aria-label="Direct link to Step 2: Choose Email Template" title="Direct link to Step 2: Choose Email Template" translate="no">​</a></h3>
+<ol>
+<li class=""><strong>Select one or more templates</strong> from your template list</li>
+<li class=""><strong>Preview</strong> the template content</li>
+<li class=""><strong>Variables</strong> will be automatically populated:<!-- -->
+<ul>
+<li class=""><code>{$receiver_email}</code>: Recipient&#x27;s email address</li>
+<li class=""><code>{$url}</code>: Source URL (if available)</li>
+<li class=""><code>{$description}</code>: Description or context</li>
+<li class=""><code>{$sender}</code>: Sender name from SMTP config</li>
+<li class=""><code>{$send_time}</code>: Timestamp</li>
+</ul>
+</li>
+</ol>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Multiple Templates</div><div class="admonitionContent_BuS1"><p>You can select multiple templates to A/B test different messaging. The system will rotate through templates across recipients.</p></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-3-choose-email-filter-optional">Step 3: Choose Email Filter (Optional)<a href="#step-3-choose-email-filter-optional" class="hash-link" aria-label="Direct link to Step 3: Choose Email Filter (Optional)" title="Direct link to Step 3: Choose Email Filter (Optional)" translate="no">​</a></h3>
+<p>Apply filters to your email list:</p>
+<ol>
+<li class=""><strong>Select filter type</strong> from dropdown</li>
+<li class=""><strong>Configure filter rules</strong></li>
+<li class=""><strong>Preview filtered results</strong></li>
+<li class=""><strong>See count</strong> of filtered emails</li>
+</ol>
+<p><strong>Common Filters:</strong></p>
+<ul>
+<li class="">Remove duplicate emails</li>
+<li class="">Filter by domain</li>
+<li class="">Filter by industry/category</li>
+<li class="">Exclude previous recipients</li>
+</ul>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Filter Status</div><div class="admonitionContent_BuS1"><p>Email filters are currently a placeholder feature in this version. Duplicate prevention is available in Step 1.</p></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-4-choose-email-service">Step 4: Choose Email Service<a href="#step-4-choose-email-service" class="hash-link" aria-label="Direct link to Step 4: Choose Email Service" title="Direct link to Step 4: Choose Email Service" translate="no">​</a></h3>
+<ol>
+<li class="">
+<p><strong>Select SMTP service</strong> from your configured services</p>
+</li>
+<li class="">
+<p><strong>Review campaign summary</strong>:</p>
+<ul>
+<li class="">Email count</li>
+<li class="">Selected template(s)</li>
+<li class="">SMTP service</li>
+<li class="">Estimated send time</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Click &quot;Send Campaign&quot;</strong> to start sending</p>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="campaign-execution">Campaign Execution<a href="#campaign-execution" class="hash-link" aria-label="Direct link to Campaign Execution" title="Direct link to Campaign Execution" translate="no">​</a></h3>
+<p>After launching:</p>
+<ul>
+<li class=""><strong>Real-time Progress</strong>: Track sending progress</li>
+<li class=""><strong>Success/Fail Counts</strong>: See successful vs. failed sends</li>
+<li class=""><strong>Error Logs</strong>: View details for failed emails</li>
+<li class=""><strong>Pause/Resume</strong>: Control campaign execution</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="monitoring-campaigns">Monitoring Campaigns<a href="#monitoring-campaigns" class="hash-link" aria-label="Direct link to Monitoring Campaigns" title="Direct link to Monitoring Campaigns" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="campaign-list">Campaign List<a href="#campaign-list" class="hash-link" aria-label="Direct link to Campaign List" title="Direct link to Campaign List" translate="no">​</a></h3>
+<p>Navigate to <strong>Email Marketing</strong> → <strong>Campaigns</strong> to see all campaigns.</p>
+<p><strong>Campaign Information:</strong></p>
+<ul>
+<li class="">Campaign name</li>
+<li class="">Email count</li>
+<li class="">Template used</li>
+<li class="">SMTP service</li>
+<li class="">Status (Pending, Sending, Completed, Failed)</li>
+<li class="">Sent/Failed counts</li>
+<li class="">Start and end times</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="campaign-actions">Campaign Actions<a href="#campaign-actions" class="hash-link" aria-label="Direct link to Campaign Actions" title="Direct link to Campaign Actions" translate="no">​</a></h3>
+<table><thead><tr><th>Action</th><th>Description</th></tr></thead><tbody><tr><td><strong>View Details</strong></td><td>See individual email status</td></tr><tr><td><strong>Pause</strong></td><td>Pause running campaign</td></tr><tr><td><strong>Resume</strong></td><td>Continue paused campaign</td></tr><tr><td><strong>Stop</strong></td><td>Terminate campaign</td></tr><tr><td><strong>Download Logs</strong></td><td>Export campaign results</td></tr><tr><td><strong>Delete</strong></td><td>Remove campaign record</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="email-status">Email Status<a href="#email-status" class="hash-link" aria-label="Direct link to Email Status" title="Direct link to Email Status" translate="no">​</a></h3>
+<p>Individual emails can have these statuses:</p>
+<table><thead><tr><th>Status</th><th>Description</th></tr></thead><tbody><tr><td><strong>Pending</strong></td><td>Queued to send</td></tr><tr><td><strong>Sent</strong></td><td>Successfully delivered</td></tr><tr><td><strong>Failed</strong></td><td>Could not be delivered</td></tr><tr><td><strong>Bounced</strong></td><td>Rejected by recipient server</td></tr><tr><td><strong>Opened</strong></td><td>Recipient opened email</td></tr><tr><td><strong>Clicked</strong></td><td>Recipient clicked link</td></tr></tbody></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="best-practices">Best Practices<a href="#best-practices" class="hash-link" aria-label="Direct link to Best Practices" title="Direct link to Best Practices" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-smtp-configuration">1. SMTP Configuration<a href="#1-smtp-configuration" class="hash-link" aria-label="Direct link to 1. SMTP Configuration" title="Direct link to 1. SMTP Configuration" translate="no">​</a></h3>
+<p><strong>Use Dedicated IPs:</strong></p>
+<ul>
+<li class="">For high-volume sending, use dedicated IP addresses</li>
+<li class="">Build sender reputation gradually</li>
+<li class="">Monitor deliverability metrics</li>
+</ul>
+<p><strong>Warm Up New Accounts:</strong></p>
+<ul>
+<li class="">Start with 20-50 emails per day</li>
+<li class="">Gradually increase over 2-4 weeks</li>
+<li class="">Monitor bounce and spam rates</li>
+</ul>
+<p><strong>Multiple Services:</strong></p>
+<ul>
+<li class="">Configure 2-3 SMTP services</li>
+<li class="">Rotate between services to distribute load</li>
+<li class="">Prevent rate limiting by single provider</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-email-list-quality">2. Email List Quality<a href="#2-email-list-quality" class="hash-link" aria-label="Direct link to 2. Email List Quality" title="Direct link to 2. Email List Quality" translate="no">​</a></h3>
+<p><strong>Clean Your Lists:</strong></p>
+<ul>
+<li class="">Remove bounced emails</li>
+<li class="">Suppress unsubscribes and complaints</li>
+<li class="">Verify emails before sending</li>
+</ul>
+<p><strong>Segment Your Audience:</strong></p>
+<ul>
+<li class="">Group by industry, company size, or interest</li>
+<li class="">Create targeted campaigns for each segment</li>
+<li class="">Improve relevance and engagement</li>
+</ul>
+<p><strong>Avoid Duplicates:</strong></p>
+<ul>
+<li class="">Enable &quot;Avoid Duplicates&quot; option</li>
+<li class="">Suppression lists for previous recipients</li>
+<li class="">Regular list maintenance</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-template-optimization">3. Template Optimization<a href="#3-template-optimization" class="hash-link" aria-label="Direct link to 3. Template Optimization" title="Direct link to 3. Template Optimization" translate="no">​</a></h3>
+<p><strong>Personalize Content:</strong></p>
+<ul>
+<li class="">Use variables extensively</li>
+<li class="">Mention recipient-specific details</li>
+<li class="">Reference their website or work</li>
+</ul>
+<p><strong>Keep It Concise:</strong></p>
+<ul>
+<li class="">100-200 words ideal</li>
+<li class="">Clear subject lines</li>
+<li class="">Single call-to-action</li>
+</ul>
+<p><strong>Mobile-Friendly:</strong></p>
+<ul>
+<li class="">Short paragraphs</li>
+<li class="">Clear formatting</li>
+<li class="">Test on mobile devices</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-timing-and-frequency">4. Timing and Frequency<a href="#4-timing-and-frequency" class="hash-link" aria-label="Direct link to 4. Timing and Frequency" title="Direct link to 4. Timing and Frequency" translate="no">​</a></h3>
+<p><strong>Best Send Times:</strong></p>
+<ul>
+<li class="">Tuesday, Wednesday, Thursday: 10 AM - 2 PM</li>
+<li class="">Avoid Monday mornings and weekends</li>
+<li class="">Test times for your specific audience</li>
+</ul>
+<p><strong>Sending Frequency:</strong></p>
+<ul>
+<li class="">Don&#x27;t send to same recipient within 30 days</li>
+<li class="">Space out campaigns appropriately</li>
+<li class="">Monitor unsubscribe rates</li>
+</ul>
+<p><strong>Rate Limiting:</strong></p>
+<ul>
+<li class="">Respect SMTP provider limits</li>
+<li class="">Start slow: 10-20 emails per minute</li>
+<li class="">Monitor for blocks or bounces</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="5-compliance">5. Compliance<a href="#5-compliance" class="hash-link" aria-label="Direct link to 5. Compliance" title="Direct link to 5. Compliance" translate="no">​</a></h3>
+<p><strong>Include Required Elements:</strong></p>
+<ul>
+<li class="">Physical mailing address</li>
+<li class="">Clear unsubscribe mechanism</li>
+<li class="">Accurate header information</li>
+<li class="">Your identity in the email</li>
+</ul>
+<p><strong>Follow Regulations:</strong></p>
+<ul>
+<li class=""><strong>CAN-SPAM</strong> (USA): Commercial email requirements</li>
+<li class=""><strong>GDPR</strong> (EU): Consent and data protection</li>
+<li class=""><strong>CASL</strong> (Canada): Consent requirements</li>
+</ul>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Legal Compliance</div><div class="admonitionContent_BuS1"><p>Ensure your email campaigns comply with applicable laws in your recipients&#x27; jurisdictions. Consult legal counsel for guidance.</p></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="troubleshooting">Troubleshooting<a href="#troubleshooting" class="hash-link" aria-label="Direct link to Troubleshooting" title="Direct link to Troubleshooting" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="smtp-connection-failed">SMTP Connection Failed<a href="#smtp-connection-failed" class="hash-link" aria-label="Direct link to SMTP Connection Failed" title="Direct link to SMTP Connection Failed" translate="no">​</a></h3>
+<p><strong>Possible causes:</strong></p>
+<ul>
+<li class="">Incorrect SMTP settings</li>
+<li class="">Firewall blocking connection</li>
+<li class="">Authentication issues</li>
+</ul>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li class="">Verify host, port, and credentials</li>
+<li class="">Test with telnet: <code>telnet smtp.host.com port</code></li>
+<li class="">Check firewall/antivirus settings</li>
+<li class="">Try different port (587 vs 465)</li>
+<li class="">Verify App Password for Gmail/Outlook</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="high-bounce-rate">High Bounce Rate<a href="#high-bounce-rate" class="hash-link" aria-label="Direct link to High Bounce Rate" title="Direct link to High Bounce Rate" translate="no">​</a></h3>
+<p><strong>Possible causes:</strong></p>
+<ul>
+<li class="">Invalid email addresses</li>
+<li class="">Sender reputation issues</li>
+<li class="">Spam filter triggers</li>
+</ul>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li class="">Verify email list quality</li>
+<li class="">Check sender reputation (MXToolbox)</li>
+<li class="">Improve email content</li>
+<li class="">Warm up email account</li>
+<li class="">Use different SMTP service</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="emails-going-to-spam">Emails Going to Spam<a href="#emails-going-to-spam" class="hash-link" aria-label="Direct link to Emails Going to Spam" title="Direct link to Emails Going to Spam" translate="no">​</a></h3>
+<p><strong>Possible causes:</strong></p>
+<ul>
+<li class="">Poor sender reputation</li>
+<li class="">Spammy content</li>
+<li class="">Missing authentication</li>
+</ul>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li class="">Set up SPF, DKIM, and DMARC</li>
+<li class="">Improve email content quality</li>
+<li class="">Avoid spam trigger words</li>
+<li class="">Include physical address and unsubscribe</li>
+<li class="">Warm up sending domain</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="rate-limiting">Rate Limiting<a href="#rate-limiting" class="hash-link" aria-label="Direct link to Rate Limiting" title="Direct link to Rate Limiting" translate="no">​</a></h3>
+<p><strong>Possible causes:</strong></p>
+<ul>
+<li class="">Sending too fast</li>
+<li class="">SMTP provider limits exceeded</li>
+</ul>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li class="">Reduce sending speed (emails per minute)</li>
+<li class="">Configure multiple SMTP services</li>
+<li class="">Check provider rate limits</li>
+<li class="">Upgrade SMTP plan if needed</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="templates-not-personalizing">Templates Not Personalizing<a href="#templates-not-personalizing" class="hash-link" aria-label="Direct link to Templates Not Personalizing" title="Direct link to Templates Not Personalizing" translate="no">​</a></h3>
+<p><strong>Possible causes:</strong></p>
+<ul>
+<li class="">Variables not matching data</li>
+<li class="">Missing data in email list</li>
+</ul>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li class="">Verify variable names match exactly</li>
+<li class="">Check email list has required fields</li>
+<li class="">Test with preview before sending</li>
+<li class="">Use generic content as fallback</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="campaign-metrics-to-track">Campaign Metrics to Track<a href="#campaign-metrics-to-track" class="hash-link" aria-label="Direct link to Campaign Metrics to Track" title="Direct link to Campaign Metrics to Track" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="deliverability">Deliverability<a href="#deliverability" class="hash-link" aria-label="Direct link to Deliverability" title="Direct link to Deliverability" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Sent Rate</strong>: Emails successfully sent / Total emails</li>
+<li class=""><strong>Bounce Rate</strong>: Bounced emails / Sent emails</li>
+<li class=""><strong>Delivery Rate</strong>: Delivered emails / Sent emails</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="engagement">Engagement<a href="#engagement" class="hash-link" aria-label="Direct link to Engagement" title="Direct link to Engagement" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Open Rate</strong>: Opens / Delivered</li>
+<li class=""><strong>Click-Through Rate</strong>: Clicks / Opens</li>
+<li class=""><strong>Conversion Rate</strong>: Conversions / Clicks</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="sender-reputation">Sender Reputation<a href="#sender-reputation" class="hash-link" aria-label="Direct link to Sender Reputation" title="Direct link to Sender Reputation" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Complaint Rate</strong>: Spam complaints / Delivered</li>
+<li class=""><strong>Unsubscribe Rate</strong>: Unsubscribes / Delivered</li>
+<li class=""><strong>Spam Trap Hits</strong>: Emails to spam traps</li>
+</ul>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Benchmark Metrics</div><div class="admonitionContent_BuS1"><p>Industry averages:</p><ul>
+<li class="">Open Rate: 15-25%</li>
+<li class="">Click-Through Rate: 2-5%</li>
+<li class="">Bounce Rate: &lt; 2%</li>
+<li class="">Complaint Rate: &lt; 0.1%</li>
+</ul></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="advanced-workflows">Advanced Workflows<a href="#advanced-workflows" class="hash-link" aria-label="Direct link to Advanced Workflows" title="Direct link to Advanced Workflows" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflow-1-drip-campaign">Workflow 1: Drip Campaign<a href="#workflow-1-drip-campaign" class="hash-link" aria-label="Direct link to Workflow 1: Drip Campaign" title="Direct link to Workflow 1: Drip Campaign" translate="no">​</a></h3>
+<p>Set up automated multi-touch campaigns:</p>
+<ol>
+<li class=""><strong>Day 1</strong>: Initial outreach email</li>
+<li class=""><strong>Day 3</strong>: Follow-up if no response</li>
+<li class=""><strong>Day 7</strong>: Final follow-up with value add</li>
+<li class=""><strong>Day 14</strong>: Break-up email</li>
+</ol>
+<p>Use the <a class="" href="/aiFetchly/docs/automation/task-scheduling">Scheduler</a> to automate.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflow-2-ab-testing">Workflow 2: A/B Testing<a href="#workflow-2-ab-testing" class="hash-link" aria-label="Direct link to Workflow 2: A/B Testing" title="Direct link to Workflow 2: A/B Testing" translate="no">​</a></h3>
+<p>Test different approaches:</p>
+<ol>
+<li class=""><strong>Create 2-3 template variations</strong></li>
+<li class=""><strong>Split email list</strong> into segments</li>
+<li class=""><strong>Send different templates</strong> to each segment</li>
+<li class=""><strong>Measure results</strong> (open rate, response rate)</li>
+<li class=""><strong>Use winner</strong> for future campaigns</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflow-3-segmented-campaigns">Workflow 3: Segmented Campaigns<a href="#workflow-3-segmented-campaigns" class="hash-link" aria-label="Direct link to Workflow 3: Segmented Campaigns" title="Direct link to Workflow 3: Segmented Campaigns" translate="no">​</a></h3>
+<p>Target specific audiences:</p>
+<ol>
+<li class=""><strong>Extract emails</strong> by industry or location</li>
+<li class=""><strong>Create tailored templates</strong> for each segment</li>
+<li class=""><strong>Send targeted campaigns</strong> to each segment</li>
+<li class=""><strong>Analyze results</strong> by segment</li>
+<li class=""><strong>Optimize messaging</strong> based on response</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="integration-with-lead-generation">Integration with Lead Generation<a href="#integration-with-lead-generation" class="hash-link" aria-label="Direct link to Integration with Lead Generation" title="Direct link to Integration with Lead Generation" translate="no">​</a></h2>
+<p>The complete email outreach workflow:</p>
+<ol>
+<li class=""><strong><a class="" href="/aiFetchly/docs/lead-generation/search-engines">Search Engines</a></strong>: Find target websites</li>
+<li class=""><strong><a class="" href="/aiFetchly/docs/lead-generation/contact-extraction">Contact Extraction</a></strong>: Harvest emails</li>
+<li class=""><strong><a class="" href="/aiFetchly/docs/ai-outreach/ai-email-writer">AI Email Writer</a></strong>: Create personalized templates</li>
+<li class=""><strong><a class="" href="/aiFetchly/docs/ai-outreach/knowledge-library">Knowledge Library</a></strong>: Provide context for AI</li>
+<li class=""><strong>Batch Email Sending</strong>: Launch campaigns</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="next-steps">Next Steps<a href="#next-steps" class="hash-link" aria-label="Direct link to Next Steps" title="Direct link to Next Steps" translate="no">​</a></h2>
+<ul>
+<li class=""><a class="" href="/aiFetchly/docs/ai-outreach/ai-marketing-assistant">Set up the AI Marketing Assistant</a> for strategy</li>
+<li class=""><a class="" href="/aiFetchly/docs/automation/task-scheduling">Configure task scheduling</a> for automation</li>
+<li class=""><a class="" href="/aiFetchly/docs/settings/system-settings">Review system settings</a></li>
+</ul>
+<hr>
+<p><strong>Ready to send campaigns?</strong> Start with a small test batch (20-50 emails) to verify everything works, then scale up your outreach operations.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/aiFetchly/docs/lead-generation/contact-extraction"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Email Extraction</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/aiFetchly/docs/ai-outreach/knowledge-library"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Knowledge Library</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#overview" class="table-of-contents__link toc-highlight">Overview</a></li><li><a href="#configuring-email-services" class="table-of-contents__link toc-highlight">Configuring Email Services</a><ul><li><a href="#what-is-smtp" class="table-of-contents__link toc-highlight">What is SMTP?</a></li><li><a href="#step-1-navigate-to-email-services" class="table-of-contents__link toc-highlight">Step 1: Navigate to Email Services</a></li><li><a href="#step-2-smtp-configuration" class="table-of-contents__link toc-highlight">Step 2: SMTP Configuration</a></li><li><a href="#step-3-test-configuration" class="table-of-contents__link toc-highlight">Step 3: Test Configuration</a></li><li><a href="#step-4-save-service" class="table-of-contents__link toc-highlight">Step 4: Save Service</a></li><li><a href="#common-smtp-providers" class="table-of-contents__link toc-highlight">Common SMTP Providers</a></li></ul></li><li><a href="#sending-batch-emails" class="table-of-contents__link toc-highlight">Sending Batch Emails</a><ul><li><a href="#step-1-choose-email-source" class="table-of-contents__link toc-highlight">Step 1: Choose Email Source</a></li><li><a href="#step-2-choose-email-template" class="table-of-contents__link toc-highlight">Step 2: Choose Email Template</a></li><li><a href="#step-3-choose-email-filter-optional" class="table-of-contents__link toc-highlight">Step 3: Choose Email Filter (Optional)</a></li><li><a href="#step-4-choose-email-service" class="table-of-contents__link toc-highlight">Step 4: Choose Email Service</a></li><li><a href="#campaign-execution" class="table-of-contents__link toc-highlight">Campaign Execution</a></li></ul></li><li><a href="#monitoring-campaigns" class="table-of-contents__link toc-highlight">Monitoring Campaigns</a><ul><li><a href="#campaign-list" class="table-of-contents__link toc-highlight">Campaign List</a></li><li><a href="#campaign-actions" class="table-of-contents__link toc-highlight">Campaign Actions</a></li><li><a href="#email-status" class="table-of-contents__link toc-highlight">Email Status</a></li></ul></li><li><a href="#best-practices" class="table-of-contents__link toc-highlight">Best Practices</a><ul><li><a href="#1-smtp-configuration" class="table-of-contents__link toc-highlight">1. SMTP Configuration</a></li><li><a href="#2-email-list-quality" class="table-of-contents__link toc-highlight">2. Email List Quality</a></li><li><a href="#3-template-optimization" class="table-of-contents__link toc-highlight">3. Template Optimization</a></li><li><a href="#4-timing-and-frequency" class="table-of-contents__link toc-highlight">4. Timing and Frequency</a></li><li><a href="#5-compliance" class="table-of-contents__link toc-highlight">5. Compliance</a></li></ul></li><li><a href="#troubleshooting" class="table-of-contents__link toc-highlight">Troubleshooting</a><ul><li><a href="#smtp-connection-failed" class="table-of-contents__link toc-highlight">SMTP Connection Failed</a></li><li><a href="#high-bounce-rate" class="table-of-contents__link toc-highlight">High Bounce Rate</a></li><li><a href="#emails-going-to-spam" class="table-of-contents__link toc-highlight">Emails Going to Spam</a></li><li><a href="#rate-limiting" class="table-of-contents__link toc-highlight">Rate Limiting</a></li><li><a href="#templates-not-personalizing" class="table-of-contents__link toc-highlight">Templates Not Personalizing</a></li></ul></li><li><a href="#campaign-metrics-to-track" class="table-of-contents__link toc-highlight">Campaign Metrics to Track</a><ul><li><a href="#deliverability" class="table-of-contents__link toc-highlight">Deliverability</a></li><li><a href="#engagement" class="table-of-contents__link toc-highlight">Engagement</a></li><li><a href="#sender-reputation" class="table-of-contents__link toc-highlight">Sender Reputation</a></li></ul></li><li><a href="#advanced-workflows" class="table-of-contents__link toc-highlight">Advanced Workflows</a><ul><li><a href="#workflow-1-drip-campaign" class="table-of-contents__link toc-highlight">Workflow 1: Drip Campaign</a></li><li><a href="#workflow-2-ab-testing" class="table-of-contents__link toc-highlight">Workflow 2: A/B Testing</a></li><li><a href="#workflow-3-segmented-campaigns" class="table-of-contents__link toc-highlight">Workflow 3: Segmented Campaigns</a></li></ul></li><li><a href="#integration-with-lead-generation" class="table-of-contents__link toc-highlight">Integration with Lead Generation</a></li><li><a href="#next-steps" class="table-of-contents__link toc-highlight">Next Steps</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/docs/getting-started/introduction">Getting Started</a></li><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/docs/lead-generation/search-engines">Lead Generation</a></li><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/docs/ai-outreach/knowledge-library">AI Outreach</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/aifetchly" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/aifetchly" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/robertzengcn/aiFetchly" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 aiFetchly. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
