@@ -4,452 +4,452 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.9.2">
 <title data-rh="true">Batch Email Sending | aiFetchly Manual</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://robertzengcn.github.io/aiFetchly/ja/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://robertzengcn.github.io/aiFetchly/ja/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://robertzengcn.github.io/aiFetchly/ja/docs/lead-generation/batch-email-sending"><meta data-rh="true" property="og:locale" content="ja"><meta data-rh="true" property="og:locale:alternate" content="en"><meta data-rh="true" property="og:locale:alternate" content="zh_CN"><meta data-rh="true" property="og:locale:alternate" content="es"><meta data-rh="true" property="og:locale:alternate" content="fr"><meta data-rh="true" property="og:locale:alternate" content="de"><meta data-rh="true" name="docusaurus_locale" content="ja"><meta data-rh="true" name="docsearch:language" content="ja"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Batch Email Sending | aiFetchly Manual"><meta data-rh="true" name="description" content="Send personalized email campaigns at scale using SMTP integration with aiFetchly."><meta data-rh="true" property="og:description" content="Send personalized email campaigns at scale using SMTP integration with aiFetchly."><link data-rh="true" rel="icon" href="/aiFetchly/ja/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://robertzengcn.github.io/aiFetchly/ja/docs/lead-generation/batch-email-sending"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/docs/lead-generation/batch-email-sending" hreflang="en"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/zh-CN/docs/lead-generation/batch-email-sending" hreflang="zh-CN"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/es/docs/lead-generation/batch-email-sending" hreflang="es"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/fr/docs/lead-generation/batch-email-sending" hreflang="fr"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/de/docs/lead-generation/batch-email-sending" hreflang="de"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/ja/docs/lead-generation/batch-email-sending" hreflang="ja"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/docs/lead-generation/batch-email-sending" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Batch Email Sending","item":"https://robertzengcn.github.io/aiFetchly/ja/docs/lead-generation/batch-email-sending"}]}</script><link rel="stylesheet" href="/aiFetchly/ja/assets/css/styles.ac14db2c.css">
-<script src="/aiFetchly/ja/assets/js/runtime~main.941cb2e7.js" defer="defer"></script>
+<script src="/aiFetchly/ja/assets/js/runtime~main.9a112803.js" defer="defer"></script>
 <script src="/aiFetchly/ja/assets/js/main.62d68ba8.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
 <symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
 </defs></svg>
-<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/aiFetchly/ja/img/logo.svg"><div role="region" aria-label="メインコンテンツまでスキップ"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">メインコンテンツまでスキップ</a></div><nav aria-label="ナビゲーション" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="ナビゲーションバーを開く" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/aiFetchly/ja/"><div class="navbar__logo"><img src="/aiFetchly/ja/img/logo.svg" alt="aiFetchly ロゴ" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/aiFetchly/ja/img/logo.svg" alt="aiFetchly ロゴ" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">aiFetchly マニュアル</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/aiFetchly/ja/docs/getting-started/introduction">ドキュメント</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/robertzengcn/aiFetchly" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="iconLanguage_nlXk"><path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></svg>日本語</a><ul class="dropdown__menu"><li><a href="/aiFetchly/docs/lead-generation/batch-email-sending" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="en">English</a></li><li><a href="/aiFetchly/zh-CN/docs/lead-generation/batch-email-sending" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="zh-CN">中文（中国）</a></li><li><a href="/aiFetchly/es/docs/lead-generation/batch-email-sending" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="es">Español</a></li><li><a href="/aiFetchly/fr/docs/lead-generation/batch-email-sending" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="fr">Français</a></li><li><a href="/aiFetchly/de/docs/lead-generation/batch-email-sending" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="de">Deutsch</a></li><li><a href="/aiFetchly/ja/docs/lead-generation/batch-email-sending" target="_self" rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang="ja">日本語</a></li></ul></div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="システムモード" aria-label="ダークモードを切り替える(現在はシステムモード)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="先頭へ戻る" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="ドキュメントのサイドバー" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/aiFetchly/ja/docs/getting-started/introduction"><span title="Introduction" class="linkLabel_WmDU">Introduction</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="Getting Started" class="categoryLinkLabel_W154">Getting Started</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/getting-started/installation"><span title="Installation" class="linkLabel_WmDU">Installation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/getting-started/proxy-setup"><span title="Proxy Setup" class="linkLabel_WmDU">Proxy Setup</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--active"><span title="Lead Generation" class="categoryLinkLabel_W154">Lead Generation</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/lead-generation/search-engines"><span title="Search Engines" class="linkLabel_WmDU">Search Engines</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/lead-generation/yellow-pages"><span title="Yellow Pages" class="linkLabel_WmDU">Yellow Pages</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/lead-generation/contact-extraction"><span title="Email Extraction" class="linkLabel_WmDU">Email Extraction</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/aiFetchly/ja/docs/lead-generation/batch-email-sending"><span title="Batch Email Sending" class="linkLabel_WmDU">Batch Email Sending</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="AI Outreach" class="categoryLinkLabel_W154">AI Outreach</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/ai-outreach/knowledge-library"><span title="Knowledge Library" class="linkLabel_WmDU">Knowledge Library</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/ai-outreach/mcp-tools"><span title="MCP Tools" class="linkLabel_WmDU">MCP Tools</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/ai-outreach/ai-skills"><span title="AI Skills" class="linkLabel_WmDU">AI Skills</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/ai-outreach/ai-email-writer"><span title="AI Email Writer" class="linkLabel_WmDU">AI Email Writer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/ai-outreach/ai-marketing-assistant"><span title="AI Marketing Assistant" class="linkLabel_WmDU">AI Marketing Assistant</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="Automation" class="categoryLinkLabel_W154">Automation</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/automation/task-scheduling"><span title="Task Scheduler" class="linkLabel_WmDU">Task Scheduler</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="Settings" class="categoryLinkLabel_W154">Settings</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/settings/system-settings"><span title="System Settings" class="linkLabel_WmDU">System Settings</span></a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="パンくずリストのナビゲーション"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="ホームページ" class="breadcrumbs__link" href="/aiFetchly/ja/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Lead Generation</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Batch Email Sending</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">このページの見出し</button></div><div class="theme-doc-markdown markdown"><header><h1>Batch Email Sending</h1></header>
-<p>aiFetchly&#x27;s Batch Email Sending feature allows you to launch personalized email campaigns at scale. Import emails from your extraction tasks, use AI-generated templates, and send via your own SMTP server for complete control over your outreach.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="overview">Overview<a href="#overview" class="hash-link" aria-label="Overview への直接リンク" title="Overview への直接リンク" translate="no">​</a></h2>
-<p>The batch email sending process consists of <strong>4 steps</strong>:</p>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/aiFetchly/ja/img/logo.svg"><div role="region" aria-label="メインコンテンツまでスキップ"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">メインコンテンツまでスキップ</a></div><nav aria-label="ナビゲーション" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="ナビゲーションバーを開く" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/aiFetchly/ja/"><div class="navbar__logo"><img src="/aiFetchly/ja/img/logo.svg" alt="aiFetchly ロゴ" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/aiFetchly/ja/img/logo.svg" alt="aiFetchly ロゴ" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">aiFetchly マニュアル</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/aiFetchly/ja/docs/getting-started/introduction">ドキュメント</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/robertzengcn/aiFetchly" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="iconLanguage_nlXk"><path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></svg>日本語</a><ul class="dropdown__menu"><li><a href="/aiFetchly/docs/lead-generation/batch-email-sending" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="en">English</a></li><li><a href="/aiFetchly/zh-CN/docs/lead-generation/batch-email-sending" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="zh-CN">中文（中国）</a></li><li><a href="/aiFetchly/es/docs/lead-generation/batch-email-sending" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="es">Español</a></li><li><a href="/aiFetchly/fr/docs/lead-generation/batch-email-sending" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="fr">Français</a></li><li><a href="/aiFetchly/de/docs/lead-generation/batch-email-sending" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="de">Deutsch</a></li><li><a href="/aiFetchly/ja/docs/lead-generation/batch-email-sending" target="_self" rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang="ja">日本語</a></li></ul></div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="システムモード" aria-label="ダークモードを切り替える(現在はシステムモード)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="先頭へ戻る" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="ドキュメントのサイドバー" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/aiFetchly/ja/docs/getting-started/introduction"><span title="Introduction" class="linkLabel_WmDU">Introduction</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="Getting Started" class="categoryLinkLabel_W154">Getting Started</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/getting-started/installation"><span title="Installation" class="linkLabel_WmDU">Installation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/getting-started/proxy-setup"><span title="Proxy Setup" class="linkLabel_WmDU">Proxy Setup</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--active"><span title="Lead Generation" class="categoryLinkLabel_W154">Lead Generation</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/lead-generation/search-engines"><span title="Search Engines" class="linkLabel_WmDU">Search Engines</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/lead-generation/yellow-pages"><span title="Yellow Pages" class="linkLabel_WmDU">Yellow Pages</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/lead-generation/contact-extraction"><span title="Email Extraction" class="linkLabel_WmDU">Email Extraction</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/aiFetchly/ja/docs/lead-generation/batch-email-sending"><span title="Batch Email Sending" class="linkLabel_WmDU">Batch Email Sending</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="AI Outreach" class="categoryLinkLabel_W154">AI Outreach</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/ai-outreach/knowledge-library"><span title="Knowledge Library" class="linkLabel_WmDU">Knowledge Library</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/ai-outreach/mcp-tools"><span title="MCPツール" class="linkLabel_WmDU">MCPツール</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/ai-outreach/ai-skills"><span title="AI Skills" class="linkLabel_WmDU">AI Skills</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/ai-outreach/ai-email-writer"><span title="AI Email Writer" class="linkLabel_WmDU">AI Email Writer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/ai-outreach/ai-marketing-assistant"><span title="AI Marketing Assistant" class="linkLabel_WmDU">AI Marketing Assistant</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="Automation" class="categoryLinkLabel_W154">Automation</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/automation/task-scheduling"><span title="Task Scheduler" class="linkLabel_WmDU">Task Scheduler</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="Settings" class="categoryLinkLabel_W154">Settings</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/settings/system-settings"><span title="System Settings" class="linkLabel_WmDU">System Settings</span></a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="パンくずリストのナビゲーション"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="ホームページ" class="breadcrumbs__link" href="/aiFetchly/ja/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Lead Generation</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Batch Email Sending</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">このページの見出し</button></div><div class="theme-doc-markdown markdown"><header><h1>Batch Email Sending</h1></header>
+<p>aiFetchly の一括メール送信機能を使えば、パーソナライズされたメールキャンペーンを大規模に展開できます。抽出タスクからメールアドレスをインポートし、AI 生成テンプレートを利用して、独自の SMTP サーバー経由で送信することで、アウトリーチ活動を完全にコントロールできます。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="概要">概要<a href="#概要" class="hash-link" aria-label="概要 への直接リンク" title="概要 への直接リンク" translate="no">​</a></h2>
+<p>一括メール送信のプロセスは以下の <strong>4 ステップ</strong> で構成されます:</p>
 <ol>
-<li class=""><strong>Choose Email Source</strong> - Select where your emails come from</li>
-<li class=""><strong>Choose Email Template</strong> - Select or create your message template</li>
-<li class=""><strong>Choose Email Filter</strong> (Optional) - Apply filters to your email list</li>
-<li class=""><strong>Choose Email Service</strong> - Configure SMTP and send</li>
+<li class=""><strong>メールソースの選択</strong> - メールアドレスの取得元を選択</li>
+<li class=""><strong>メールテンプレートの選択</strong> - メッセージテンプレートを選択または作成</li>
+<li class=""><strong>メールフィルターの選択</strong> (任意) - メールリストにフィルターを適用</li>
+<li class=""><strong>メールサービスの選択</strong> - SMTP を設定して送信</li>
 </ol>
-<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Prerequisites</div><div class="admonitionContent_BuS1"><p>Before sending campaigns, ensure you have:</p><ul>
-<li class=""><a href="#configuring-email-services" class="">Configured an SMTP service</a></li>
-<li class=""><a class="" href="/aiFetchly/ja/docs/ai-outreach/ai-email-writer">Created email templates</a></li>
-<li class=""><a class="" href="/aiFetchly/ja/docs/lead-generation/contact-extraction">Extracted or imported email lists</a></li>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>前提条件</div><div class="admonitionContent_BuS1"><p>キャンペーンを送信する前に、以下の準備を完了してください:</p><ul>
+<li class=""><a href="#configuring-email-services" class="">SMTP サービスの設定</a></li>
+<li class=""><a class="" href="/aiFetchly/ja/docs/ai-outreach/ai-email-writer">メールテンプレートの作成</a></li>
+<li class=""><a class="" href="/aiFetchly/ja/docs/lead-generation/contact-extraction">メールリストの抽出またはインポート</a></li>
 </ul></div></div>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="configuring-email-services">Configuring Email Services<a href="#configuring-email-services" class="hash-link" aria-label="Configuring Email Services への直接リンク" title="Configuring Email Services への直接リンク" translate="no">​</a></h2>
-<p>Before sending emails, you must configure at least one SMTP service.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-is-smtp">What is SMTP?<a href="#what-is-smtp" class="hash-link" aria-label="What is SMTP? への直接リンク" title="What is SMTP? への直接リンク" translate="no">​</a></h3>
-<p><strong>SMTP</strong> (Simple Mail Transfer Protocol) is the standard for sending emails. aiFetchly uses SMTP to send emails through your own email server or email service provider.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-1-navigate-to-email-services">Step 1: Navigate to Email Services<a href="#step-1-navigate-to-email-services" class="hash-link" aria-label="Step 1: Navigate to Email Services への直接リンク" title="Step 1: Navigate to Email Services への直接リンク" translate="no">​</a></h3>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="メールサービスの設定">メールサービスの設定<a href="#メールサービスの設定" class="hash-link" aria-label="メールサービスの設定 への直接リンク" title="メールサービスの設定 への直接リンク" translate="no">​</a></h2>
+<p>メールを送信する前に、少なくとも 1 つの SMTP サービスを設定する必要があります。</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="smtp-とは">SMTP とは?<a href="#smtp-とは" class="hash-link" aria-label="SMTP とは? への直接リンク" title="SMTP とは? への直接リンク" translate="no">​</a></h3>
+<p><strong>SMTP</strong>（Simple Mail Transfer Protocol）は、メール送信の標準プロトコルです。aiFetchly は SMTP を使用して、ご自身のメールサーバーまたはメールサービスプロバイダー経由でメールを送信します。</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ステップ-1-メールサービスに移動">ステップ 1: メールサービスに移動<a href="#ステップ-1-メールサービスに移動" class="hash-link" aria-label="ステップ 1: メールサービスに移動 への直接リンク" title="ステップ 1: メールサービスに移動 への直接リンク" translate="no">​</a></h3>
 <ol>
-<li class="">Click <strong>Email Marketing</strong> in the left navigation menu</li>
-<li class="">Select <strong>Email Services</strong> from the submenu</li>
-<li class="">Click <strong>Add New Service</strong></li>
+<li class="">左側のナビゲーションメニューで <strong>Email Marketing</strong> をクリック</li>
+<li class="">サブメューから <strong>Email Services</strong> を選択</li>
+<li class=""><strong>Add New Service</strong> をクリック</li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-2-smtp-configuration">Step 2: SMTP Configuration<a href="#step-2-smtp-configuration" class="hash-link" aria-label="Step 2: SMTP Configuration への直接リンク" title="Step 2: SMTP Configuration への直接リンク" translate="no">​</a></h3>
-<p>Enter the following SMTP details:</p>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="service-name">Service Name<a href="#service-name" class="hash-link" aria-label="Service Name への直接リンク" title="Service Name への直接リンク" translate="no">​</a></h4>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ステップ-2-smtp-設定">ステップ 2: SMTP 設定<a href="#ステップ-2-smtp-設定" class="hash-link" aria-label="ステップ 2: SMTP 設定 への直接リンク" title="ステップ 2: SMTP 設定 への直接リンク" translate="no">​</a></h3>
+<p>以下の SMTP 詳細情報を入力します:</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="サービス名">サービス名<a href="#サービス名" class="hash-link" aria-label="サービス名 への直接リンク" title="サービス名 への直接リンク" translate="no">​</a></h4>
 <ul>
-<li class=""><strong>Purpose</strong>: Identify this SMTP configuration</li>
-<li class=""><strong>Example</strong>: &quot;Gmail SMTP&quot;, &quot;SendGrid&quot;, &quot;AWS SES&quot;</li>
-<li class=""><strong>Required</strong>: Yes</li>
+<li class=""><strong>目的</strong>: この SMTP 設定を識別するための名前</li>
+<li class=""><strong>例</strong>: &quot;Gmail SMTP&quot;、&quot;SendGrid&quot;、&quot;AWS SES&quot;</li>
+<li class=""><strong>必須</strong>: はい</li>
 </ul>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="from-email">From Email<a href="#from-email" class="hash-link" aria-label="From Email への直接リンク" title="From Email への直接リンク" translate="no">​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="送信元メールアドレス">送信元メールアドレス<a href="#送信元メールアドレス" class="hash-link" aria-label="送信元メールアドレス への直接リンク" title="送信元メールアドレス への直接リンク" translate="no">​</a></h4>
 <ul>
-<li class=""><strong>Purpose</strong>: Email address that emails will be sent from</li>
-<li class=""><strong>Example</strong>: <code>outreach@yourcompany.com</code></li>
-<li class=""><strong>Required</strong>: Yes</li>
+<li class=""><strong>目的</strong>: メールの送信元となるメールアドレス</li>
+<li class=""><strong>例</strong>: <code>outreach@yourcompany.com</code></li>
+<li class=""><strong>必須</strong>: はい</li>
 </ul>
-<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Sender Reputation</div><div class="admonitionContent_BuS1"><p>Use a dedicated email address for outreach. Avoid using personal email addresses for bulk sending.</p></div></div>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="password">Password<a href="#password" class="hash-link" aria-label="Password への直接リンク" title="Password への直接リンク" translate="no">​</a></h4>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>送信者レピュテーション</div><div class="admonitionContent_BuS1"><p>アウトリーチ用には専用のメールアドレスを使用してください。個人用メールアドレスを一括送信に使用しないでください。</p></div></div>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="パスワード">パスワード<a href="#パスワード" class="hash-link" aria-label="パスワード への直接リンク" title="パスワード への直接リンク" translate="no">​</a></h4>
 <ul>
-<li class=""><strong>Purpose</strong>: Email account password or application-specific password</li>
-<li class=""><strong>Required</strong>: Yes</li>
-<li class=""><strong>Security</strong>: Password is stored securely</li>
+<li class=""><strong>目的</strong>: メールアカウントのパスワードまたはアプリ固有のパスワード</li>
+<li class=""><strong>必須</strong>: はい</li>
+<li class=""><strong>セキュリティ</strong>: パスワードは安全に保存されます</li>
 </ul>
-<p><strong>Show/Hide Toggle</strong>: Click the eye icon to show/hide the password.</p>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="host">Host<a href="#host" class="hash-link" aria-label="Host への直接リンク" title="Host への直接リンク" translate="no">​</a></h4>
+<p><strong>表示/非表示の切替</strong>: 目のアイコンをクリックしてパスワードの表示/非表示を切り替えます。</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="ホスト">ホスト<a href="#ホスト" class="hash-link" aria-label="ホスト への直接リンク" title="ホスト への直接リンク" translate="no">​</a></h4>
 <ul>
-<li class=""><strong>Purpose</strong>: SMTP server hostname</li>
-<li class=""><strong>Examples</strong>:<!-- -->
+<li class=""><strong>目的</strong>: SMTP サーバーのホスト名</li>
+<li class=""><strong>例</strong>:<!-- -->
 <ul>
 <li class="">Gmail: <code>smtp.gmail.com</code></li>
 <li class="">SendGrid: <code>smtp.sendgrid.net</code></li>
 <li class="">AWS SES: <code>email-smtp.us-east-1.amazonaws.com</code></li>
 </ul>
 </li>
-<li class=""><strong>Required</strong>: Yes</li>
+<li class=""><strong>必須</strong>: はい</li>
 </ul>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="port">Port<a href="#port" class="hash-link" aria-label="Port への直接リンク" title="Port への直接リンク" translate="no">​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="ポート">ポート<a href="#ポート" class="hash-link" aria-label="ポート への直接リンク" title="ポート への直接リンク" translate="no">​</a></h4>
 <ul>
-<li class=""><strong>Purpose</strong>: SMTP server port</li>
-<li class=""><strong>Common Ports</strong>:<!-- -->
+<li class=""><strong>目的</strong>: SMTP サーバーのポート番号</li>
+<li class=""><strong>一般的なポート</strong>:<!-- -->
 <ul>
-<li class=""><strong>587</strong>: Submission (STARTTLS) - Recommended</li>
-<li class=""><strong>465</strong>: SMTPS (SSL/TLS)</li>
-<li class=""><strong>25</strong>: SMTP (not recommended, often blocked)</li>
+<li class=""><strong>587</strong>: Submission（STARTTLS）- 推奨</li>
+<li class=""><strong>465</strong>: SMTPS（SSL/TLS）</li>
+<li class=""><strong>25</strong>: SMTP（非推奨、多くの場合ブロックされます）</li>
 </ul>
 </li>
-<li class=""><strong>Required</strong>: Yes</li>
+<li class=""><strong>必須</strong>: はい</li>
 </ul>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="ssltls">SSL/TLS<a href="#ssltls" class="hash-link" aria-label="SSL/TLS への直接リンク" title="SSL/TLS への直接リンク" translate="no">​</a></h4>
 <ul>
-<li class=""><strong>Toggle</strong>: Enable secure connection</li>
-<li class=""><strong>Recommended</strong>: Always keep enabled</li>
-<li class=""><strong>Purpose</strong>: Encrypts email transmission</li>
+<li class=""><strong>切替</strong>: 安全な接続を有効化</li>
+<li class=""><strong>推奨</strong>: 常に有効にしておくことを推奨</li>
+<li class=""><strong>目的</strong>: メール送信を暗号化します</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-3-test-configuration">Step 3: Test Configuration<a href="#step-3-test-configuration" class="hash-link" aria-label="Step 3: Test Configuration への直接リンク" title="Step 3: Test Configuration への直接リンク" translate="no">​</a></h3>
-<p>Before saving, test your SMTP settings:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ステップ-3-設定のテスト">ステップ 3: 設定のテスト<a href="#ステップ-3-設定のテスト" class="hash-link" aria-label="ステップ 3: 設定のテスト への直接リンク" title="ステップ 3: 設定のテスト への直接リンク" translate="no">​</a></h3>
+<p>保存する前に、SMTP 設定をテストします:</p>
 <ol>
-<li class=""><strong>Click &quot;Test Connection&quot;</strong></li>
-<li class=""><strong>Enter test details</strong>:<!-- -->
+<li class=""><strong>&quot;Test Connection&quot; をクリック</strong></li>
+<li class=""><strong>テスト詳細を入力</strong>:<!-- -->
 <ul>
-<li class=""><strong>Receiver</strong>: Test email address</li>
-<li class=""><strong>Title</strong>: Test subject line</li>
-<li class=""><strong>Content</strong>: Test email body</li>
+<li class=""><strong>宛先</strong>: テスト用メールアドレス</li>
+<li class=""><strong>件名</strong>: テスト用件名</li>
+<li class=""><strong>本文</strong>: テスト用メール本文</li>
 </ul>
 </li>
-<li class=""><strong>Click &quot;Send Test Email&quot;</strong></li>
-<li class=""><strong>Check your inbox</strong> for the test email</li>
+<li class=""><strong>&quot;Send Test Email&quot; をクリック</strong></li>
+<li class=""><strong>受信トレイを確認</strong>してテストメールが届いたか確認</li>
 </ol>
-<div class="theme-admonition theme-admonition-important admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Test Before Sending</div><div class="admonitionContent_BuS1"><p>Always test your SMTP configuration before using it in campaigns. This prevents failed sends and wasted resources.</p></div></div>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-4-save-service">Step 4: Save Service<a href="#step-4-save-service" class="hash-link" aria-label="Step 4: Save Service への直接リンク" title="Step 4: Save Service への直接リンク" translate="no">​</a></h3>
+<div class="theme-admonition theme-admonition-important admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>送信前にテスト</div><div class="admonitionContent_BuS1"><p>キャンペーンで使用する前に、必ず SMTP 設定をテストしてください。これにより、送信失敗やリソースの無駄を防ぐことができます。</p></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ステップ-4-サービスの保存">ステップ 4: サービスの保存<a href="#ステップ-4-サービスの保存" class="hash-link" aria-label="ステップ 4: サービスの保存 への直接リンク" title="ステップ 4: サービスの保存 への直接リンク" translate="no">​</a></h3>
 <ol>
-<li class="">If test successful, click <strong>Save</strong></li>
-<li class="">Service appears in your email services list</li>
-<li class="">Ready to use in campaigns</li>
+<li class="">テストが成功したら、<strong>Save</strong> をクリック</li>
+<li class="">サービスがメールサービスリストに表示されます</li>
+<li class="">キャンペーンで使用できるようになります</li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="common-smtp-providers">Common SMTP Providers<a href="#common-smtp-providers" class="hash-link" aria-label="Common SMTP Providers への直接リンク" title="Common SMTP Providers への直接リンク" translate="no">​</a></h3>
-<table><thead><tr><th>Provider</th><th>Host</th><th>Port</th><th>Notes</th></tr></thead><tbody><tr><td><strong>Gmail</strong></td><td><code>smtp.gmail.com</code></td><td>587</td><td>Use App Password, not regular password</td></tr><tr><td><strong>Outlook</strong></td><td><code>smtp.office365.com</code></td><td>587</td><td>May require App Password</td></tr><tr><td><strong>SendGrid</strong></td><td><code>smtp.sendgrid.net</code></td><td>587</td><td>API key as password</td></tr><tr><td><strong>Mailgun</strong></td><td><code>smtp.mailgun.org</code></td><td>587</td><td>Use SMTP credentials</td></tr><tr><td><strong>AWS SES</strong></td><td>Region-specific</td><td>587</td><td>Requires SMTP credentials</td></tr><tr><td><strong>Postmark</strong></td><td><code>smtp.postmarkapp.com</code></td><td>587</td><td>API key as password</td></tr></tbody></table>
-<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Gmail and Outlook</div><div class="admonitionContent_BuS1"><p>Gmail and Outlook require <strong>App Passwords</strong> for third-party SMTP access. You cannot use your regular password.</p><ol>
-<li class="">Enable 2-factor authentication</li>
-<li class="">Generate an App Password</li>
-<li class="">Use the App Password in aiFetchly</li>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="主な-smtp-プロバイダー">主な SMTP プロバイダー<a href="#主な-smtp-プロバイダー" class="hash-link" aria-label="主な SMTP プロバイダー への直接リンク" title="主な SMTP プロバイダー への直接リンク" translate="no">​</a></h3>
+<table><thead><tr><th>プロバイダー</th><th>ホスト</th><th>ポート</th><th>備考</th></tr></thead><tbody><tr><td><strong>Gmail</strong></td><td><code>smtp.gmail.com</code></td><td>587</td><td>アプリパスワードを使用（通常のパスワードは不可）</td></tr><tr><td><strong>Outlook</strong></td><td><code>smtp.office365.com</code></td><td>587</td><td>アプリパスワードが必要な場合があります</td></tr><tr><td><strong>SendGrid</strong></td><td><code>smtp.sendgrid.net</code></td><td>587</td><td>API キーをパスワードとして使用</td></tr><tr><td><strong>Mailgun</strong></td><td><code>smtp.mailgun.org</code></td><td>587</td><td>SMTP 認証情報を使用</td></tr><tr><td><strong>AWS SES</strong></td><td>リージョン固有</td><td>587</td><td>SMTP 認証情報が必要</td></tr><tr><td><strong>Postmark</strong></td><td><code>smtp.postmarkapp.com</code></td><td>587</td><td>API キーをパスワードとして使用</td></tr></tbody></table>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Gmail と Outlook</div><div class="admonitionContent_BuS1"><p>Gmail と Outlook では、サードパーティの SMTP アクセスに <strong>アプリパスワード</strong> が必要です。通常のパスワードは使用できません。</p><ol>
+<li class="">二段階認証を有効にする</li>
+<li class="">アプリパスワードを生成する</li>
+<li class="">aiFetchly でアプリパスワードを使用する</li>
 </ol></div></div>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="sending-batch-emails">Sending Batch Emails<a href="#sending-batch-emails" class="hash-link" aria-label="Sending Batch Emails への直接リンク" title="Sending Batch Emails への直接リンク" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-1-choose-email-source">Step 1: Choose Email Source<a href="#step-1-choose-email-source" class="hash-link" aria-label="Step 1: Choose Email Source への直接リンク" title="Step 1: Choose Email Source への直接リンク" translate="no">​</a></h3>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="一括メールの送信">一括メールの送信<a href="#一括メールの送信" class="hash-link" aria-label="一括メールの送信 への直接リンク" title="一括メールの送信 への直接リンク" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ステップ-1-メールソースの選択">ステップ 1: メールソースの選択<a href="#ステップ-1-メールソースの選択" class="hash-link" aria-label="ステップ 1: メールソースの選択 への直接リンク" title="ステップ 1: メールソースの選択 への直接リンク" translate="no">​</a></h3>
 <ol>
-<li class=""><strong>Navigate</strong> to <strong>Email Marketing</strong> → <strong>Send Bulk Emails</strong></li>
-<li class=""><strong>Select Email Source Type</strong> from the dropdown:<!-- -->
+<li class=""><strong>Email Marketing</strong> → <strong>Send Bulk Emails</strong> に移動</li>
+<li class="">ドロップダウンから <strong>メールソースの種類</strong> を選択:<!-- -->
 <ul>
-<li class=""><strong>Email Task</strong>: Emails from extraction tasks</li>
-<li class=""><strong>Manual Input</strong>: Upload email list manually</li>
-<li class=""><strong>Search Results</strong>: Use search task results</li>
+<li class=""><strong>Email Task</strong>: 抽出タスクからのメール</li>
+<li class=""><strong>Manual Input</strong>: メールリストを手動でアップロード</li>
+<li class=""><strong>Search Results</strong>: 検索タスクの結果を使用</li>
 </ul>
 </li>
 </ol>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="using-email-tasks-recommended">Using Email Tasks (Recommended)<a href="#using-email-tasks-recommended" class="hash-link" aria-label="Using Email Tasks (Recommended) への直接リンク" title="Using Email Tasks (Recommended) への直接リンク" translate="no">​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="メールタスクを使用推奨">メールタスクを使用（推奨）<a href="#メールタスクを使用推奨" class="hash-link" aria-label="メールタスクを使用（推奨） への直接リンク" title="メールタスクを使用（推奨） への直接リンク" translate="no">​</a></h4>
 <ol>
-<li class="">Select <strong>Email Task</strong> from dropdown</li>
-<li class=""><strong>Choose extraction task</strong> from the list</li>
-<li class=""><strong>Preview</strong> the email list</li>
-<li class=""><strong>Option</strong>: Enable &quot;Avoid Duplicates&quot; to skip already-contacted emails</li>
+<li class="">ドロップダウンから <strong>Email Task</strong> を選択</li>
+<li class="">リストから <strong>抽出タスクを選択</strong></li>
+<li class="">メールリストを <strong>プレビュー</strong></li>
+<li class=""><strong>オプション</strong>: &quot;Avoid Duplicates&quot; を有効にして、既に連絡済みのメールをスキップ</li>
 </ol>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="using-manual-input">Using Manual Input<a href="#using-manual-input" class="hash-link" aria-label="Using Manual Input への直接リンク" title="Using Manual Input への直接リンク" translate="no">​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="手動入力を使用">手動入力を使用<a href="#手動入力を使用" class="hash-link" aria-label="手動入力を使用 への直接リンク" title="手動入力を使用 への直接リンク" translate="no">​</a></h4>
 <ol>
-<li class="">Select <strong>Manual Input</strong> from dropdown</li>
-<li class=""><strong>Enter emails</strong> in the text area</li>
-<li class=""><strong>Format</strong>: One email per line, or CSV format</li>
-<li class=""><strong>Click &quot;Parse&quot;</strong> to process the list</li>
+<li class="">ドロップダウンから <strong>Manual Input</strong> を選択</li>
+<li class="">テキストエリアに <strong>メールアドレスを入力</strong></li>
+<li class=""><strong>形式</strong>: 1 行に 1 つのメールアドレス、または CSV 形式</li>
+<li class=""><strong>&quot;Parse&quot; をクリック</strong>してリストを処理</li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-2-choose-email-template">Step 2: Choose Email Template<a href="#step-2-choose-email-template" class="hash-link" aria-label="Step 2: Choose Email Template への直接リンク" title="Step 2: Choose Email Template への直接リンク" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ステップ-2-メールテンプレートの選択">ステップ 2: メールテンプレートの選択<a href="#ステップ-2-メールテンプレートの選択" class="hash-link" aria-label="ステップ 2: メールテンプレートの選択 への直接リンク" title="ステップ 2: メールテンプレートの選択 への直接リンク" translate="no">​</a></h3>
 <ol>
-<li class=""><strong>Select one or more templates</strong> from your template list</li>
-<li class=""><strong>Preview</strong> the template content</li>
-<li class=""><strong>Variables</strong> will be automatically populated:<!-- -->
+<li class="">テンプレートリストから <strong>1 つ以上のテンプレートを選択</strong></li>
+<li class="">テンプレートの内容を <strong>プレビュー</strong></li>
+<li class=""><strong>変数</strong> は自動的に置換されます:<!-- -->
 <ul>
-<li class=""><code>{$receiver_email}</code>: Recipient&#x27;s email address</li>
-<li class=""><code>{$url}</code>: Source URL (if available)</li>
-<li class=""><code>{$description}</code>: Description or context</li>
-<li class=""><code>{$sender}</code>: Sender name from SMTP config</li>
-<li class=""><code>{$send_time}</code>: Timestamp</li>
+<li class=""><code>{$receiver_email}</code>: 受信者のメールアドレス</li>
+<li class=""><code>{$url}</code>: 送信元 URL（利用可能な場合）</li>
+<li class=""><code>{$description}</code>: 説明またはコンテキスト</li>
+<li class=""><code>{$sender}</code>: SMTP 設定からの送信者名</li>
+<li class=""><code>{$send_time}</code>: タイムスタンプ</li>
 </ul>
 </li>
 </ol>
-<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Multiple Templates</div><div class="admonitionContent_BuS1"><p>You can select multiple templates to A/B test different messaging. The system will rotate through templates across recipients.</p></div></div>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-3-choose-email-filter-optional">Step 3: Choose Email Filter (Optional)<a href="#step-3-choose-email-filter-optional" class="hash-link" aria-label="Step 3: Choose Email Filter (Optional) への直接リンク" title="Step 3: Choose Email Filter (Optional) への直接リンク" translate="no">​</a></h3>
-<p>Apply filters to your email list:</p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>複数テンプレート</div><div class="admonitionContent_BuS1"><p>複数のテンプレートを選択して、異なるメッセージの A/B テストを行うことができます。システムは受信者間でテンプレートをローテーションします。</p></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ステップ-3-メールフィルターの選択-任意">ステップ 3: メールフィルターの選択 (任意)<a href="#ステップ-3-メールフィルターの選択-任意" class="hash-link" aria-label="ステップ 3: メールフィルターの選択 (任意) への直接リンク" title="ステップ 3: メールフィルターの選択 (任意) への直接リンク" translate="no">​</a></h3>
+<p>メールリストにフィルターを適用します:</p>
 <ol>
-<li class=""><strong>Select filter type</strong> from dropdown</li>
-<li class=""><strong>Configure filter rules</strong></li>
-<li class=""><strong>Preview filtered results</strong></li>
-<li class=""><strong>See count</strong> of filtered emails</li>
+<li class="">ドロップダウンから <strong>フィルタータイプを選択</strong></li>
+<li class=""><strong>フィルタールールを設定</strong></li>
+<li class=""><strong>フィルタリング結果をプレビュー</strong></li>
+<li class="">フィルタリングされたメールの <strong>件数を確認</strong></li>
 </ol>
-<p><strong>Common Filters:</strong></p>
+<p><strong>一般的なフィルター:</strong></p>
 <ul>
-<li class="">Remove duplicate emails</li>
-<li class="">Filter by domain</li>
-<li class="">Filter by industry/category</li>
-<li class="">Exclude previous recipients</li>
+<li class="">重複メールの削除</li>
+<li class="">ドメインによるフィルター</li>
+<li class="">業界/カテゴリによるフィルター</li>
+<li class="">過去の受信者の除外</li>
 </ul>
-<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Filter Status</div><div class="admonitionContent_BuS1"><p>Email filters are currently a placeholder feature in this version. Duplicate prevention is available in Step 1.</p></div></div>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-4-choose-email-service">Step 4: Choose Email Service<a href="#step-4-choose-email-service" class="hash-link" aria-label="Step 4: Choose Email Service への直接リンク" title="Step 4: Choose Email Service への直接リンク" translate="no">​</a></h3>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>フィルターのステータス</div><div class="admonitionContent_BuS1"><p>メールフィルターは現在のバージョンではプレースホルダー機能です。重複防止はステップ 1 で利用可能です。</p></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ステップ-4-メールサービスの選択">ステップ 4: メールサービスの選択<a href="#ステップ-4-メールサービスの選択" class="hash-link" aria-label="ステップ 4: メールサービスの選択 への直接リンク" title="ステップ 4: メールサービスの選択 への直接リンク" translate="no">​</a></h3>
 <ol>
 <li class="">
-<p><strong>Select SMTP service</strong> from your configured services</p>
+<p>設定済みのサービスから <strong>SMTP サービスを選択</strong></p>
 </li>
 <li class="">
-<p><strong>Review campaign summary</strong>:</p>
+<p><strong>キャンペーン概要を確認</strong>:</p>
 <ul>
-<li class="">Email count</li>
-<li class="">Selected template(s)</li>
-<li class="">SMTP service</li>
-<li class="">Estimated send time</li>
+<li class="">メール件数</li>
+<li class="">選択したテンプレート</li>
+<li class="">SMTP サービス</li>
+<li class="">推定送信時間</li>
 </ul>
 </li>
 <li class="">
-<p><strong>Click &quot;Send Campaign&quot;</strong> to start sending</p>
+<p><strong>&quot;Send Campaign&quot; をクリック</strong>して送信を開始</p>
 </li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="campaign-execution">Campaign Execution<a href="#campaign-execution" class="hash-link" aria-label="Campaign Execution への直接リンク" title="Campaign Execution への直接リンク" translate="no">​</a></h3>
-<p>After launching:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="キャンペーンの実行">キャンペーンの実行<a href="#キャンペーンの実行" class="hash-link" aria-label="キャンペーンの実行 への直接リンク" title="キャンペーンの実行 への直接リンク" translate="no">​</a></h3>
+<p>開始後:</p>
 <ul>
-<li class=""><strong>Real-time Progress</strong>: Track sending progress</li>
-<li class=""><strong>Success/Fail Counts</strong>: See successful vs. failed sends</li>
-<li class=""><strong>Error Logs</strong>: View details for failed emails</li>
-<li class=""><strong>Pause/Resume</strong>: Control campaign execution</li>
+<li class=""><strong>リアルタイムの進行状況</strong>: 送信の進行状況を追跡</li>
+<li class=""><strong>成功/失敗件数</strong>: 成功と失敗の送信数を確認</li>
+<li class=""><strong>エラーログ</strong>: 失敗したメールの詳細を表示</li>
+<li class=""><strong>一時停止/再開</strong>: キャンペーンの実行を制御</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="monitoring-campaigns">Monitoring Campaigns<a href="#monitoring-campaigns" class="hash-link" aria-label="Monitoring Campaigns への直接リンク" title="Monitoring Campaigns への直接リンク" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="campaign-list">Campaign List<a href="#campaign-list" class="hash-link" aria-label="Campaign List への直接リンク" title="Campaign List への直接リンク" translate="no">​</a></h3>
-<p>Navigate to <strong>Email Marketing</strong> → <strong>Campaigns</strong> to see all campaigns.</p>
-<p><strong>Campaign Information:</strong></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="キャンペーンの監視">キャンペーンの監視<a href="#キャンペーンの監視" class="hash-link" aria-label="キャンペーンの監視 への直接リンク" title="キャンペーンの監視 への直接リンク" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="キャンペーンリスト">キャンペーンリスト<a href="#キャンペーンリスト" class="hash-link" aria-label="キャンペーンリスト への直接リンク" title="キャンペーンリスト への直接リンク" translate="no">​</a></h3>
+<p><strong>Email Marketing</strong> → <strong>Campaigns</strong> に移動してすべてのキャンペーンを表示します。</p>
+<p><strong>キャンペーン情報:</strong></p>
 <ul>
-<li class="">Campaign name</li>
-<li class="">Email count</li>
-<li class="">Template used</li>
-<li class="">SMTP service</li>
-<li class="">Status (Pending, Sending, Completed, Failed)</li>
-<li class="">Sent/Failed counts</li>
-<li class="">Start and end times</li>
+<li class="">キャンペーン名</li>
+<li class="">メール件数</li>
+<li class="">使用テンプレート</li>
+<li class="">SMTP サービス</li>
+<li class="">ステータス（Pending、Sending、Completed、Failed）</li>
+<li class="">送信済み/失敗件数</li>
+<li class="">開始時刻と終了時刻</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="campaign-actions">Campaign Actions<a href="#campaign-actions" class="hash-link" aria-label="Campaign Actions への直接リンク" title="Campaign Actions への直接リンク" translate="no">​</a></h3>
-<table><thead><tr><th>Action</th><th>Description</th></tr></thead><tbody><tr><td><strong>View Details</strong></td><td>See individual email status</td></tr><tr><td><strong>Pause</strong></td><td>Pause running campaign</td></tr><tr><td><strong>Resume</strong></td><td>Continue paused campaign</td></tr><tr><td><strong>Stop</strong></td><td>Terminate campaign</td></tr><tr><td><strong>Download Logs</strong></td><td>Export campaign results</td></tr><tr><td><strong>Delete</strong></td><td>Remove campaign record</td></tr></tbody></table>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="email-status">Email Status<a href="#email-status" class="hash-link" aria-label="Email Status への直接リンク" title="Email Status への直接リンク" translate="no">​</a></h3>
-<p>Individual emails can have these statuses:</p>
-<table><thead><tr><th>Status</th><th>Description</th></tr></thead><tbody><tr><td><strong>Pending</strong></td><td>Queued to send</td></tr><tr><td><strong>Sent</strong></td><td>Successfully delivered</td></tr><tr><td><strong>Failed</strong></td><td>Could not be delivered</td></tr><tr><td><strong>Bounced</strong></td><td>Rejected by recipient server</td></tr><tr><td><strong>Opened</strong></td><td>Recipient opened email</td></tr><tr><td><strong>Clicked</strong></td><td>Recipient clicked link</td></tr></tbody></table>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="best-practices">Best Practices<a href="#best-practices" class="hash-link" aria-label="Best Practices への直接リンク" title="Best Practices への直接リンク" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-smtp-configuration">1. SMTP Configuration<a href="#1-smtp-configuration" class="hash-link" aria-label="1. SMTP Configuration への直接リンク" title="1. SMTP Configuration への直接リンク" translate="no">​</a></h3>
-<p><strong>Use Dedicated IPs:</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="キャンペーンアクション">キャンペーンアクション<a href="#キャンペーンアクション" class="hash-link" aria-label="キャンペーンアクション への直接リンク" title="キャンペーンアクション への直接リンク" translate="no">​</a></h3>
+<table><thead><tr><th>アクション</th><th>説明</th></tr></thead><tbody><tr><td><strong>View Details</strong></td><td>個別のメールステータスを表示</td></tr><tr><td><strong>Pause</strong></td><td>実行中のキャンペーンを一時停止</td></tr><tr><td><strong>Resume</strong></td><td>一時停止中のキャンペーンを再開</td></tr><tr><td><strong>Stop</strong></td><td>キャンペーンを終了</td></tr><tr><td><strong>Download Logs</strong></td><td>キャンペーン結果をエクスポート</td></tr><tr><td><strong>Delete</strong></td><td>キャンペーン記録を削除</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="メールステータス">メールステータス<a href="#メールステータス" class="hash-link" aria-label="メールステータス への直接リンク" title="メールステータス への直接リンク" translate="no">​</a></h3>
+<p>個別のメールは以下のステータスを持ちます:</p>
+<table><thead><tr><th>ステータス</th><th>説明</th></tr></thead><tbody><tr><td><strong>Pending</strong></td><td>送信待ち</td></tr><tr><td><strong>Sent</strong></td><td>正常に配信済み</td></tr><tr><td><strong>Failed</strong></td><td>配信できなかった</td></tr><tr><td><strong>Bounced</strong></td><td>受信者サーバーに拒否された</td></tr><tr><td><strong>Opened</strong></td><td>受信者がメールを開封</td></tr><tr><td><strong>Clicked</strong></td><td>受信者がリンクをクリック</td></tr></tbody></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="ベストプラクティス">ベストプラクティス<a href="#ベストプラクティス" class="hash-link" aria-label="ベストプラクティス への直接リンク" title="ベストプラクティス への直接リンク" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-smtp-設定">1. SMTP 設定<a href="#1-smtp-設定" class="hash-link" aria-label="1. SMTP 設定 への直接リンク" title="1. SMTP 設定 への直接リンク" translate="no">​</a></h3>
+<p><strong>専用 IP の使用:</strong></p>
 <ul>
-<li class="">For high-volume sending, use dedicated IP addresses</li>
-<li class="">Build sender reputation gradually</li>
-<li class="">Monitor deliverability metrics</li>
+<li class="">大量送信には専用 IP アドレスを使用</li>
+<li class="">送信者レピュテーションを段階的に構築</li>
+<li class="">到達率指標を監視</li>
 </ul>
-<p><strong>Warm Up New Accounts:</strong></p>
+<p><strong>新規アカウントのウォームアップ:</strong></p>
 <ul>
-<li class="">Start with 20-50 emails per day</li>
-<li class="">Gradually increase over 2-4 weeks</li>
-<li class="">Monitor bounce and spam rates</li>
+<li class="">1 日 20〜50 通から開始</li>
+<li class="">2〜4 週間かけて段階的に増加</li>
+<li class="">バウンス率とスパム率を監視</li>
 </ul>
-<p><strong>Multiple Services:</strong></p>
+<p><strong>複数サービスの活用:</strong></p>
 <ul>
-<li class="">Configure 2-3 SMTP services</li>
-<li class="">Rotate between services to distribute load</li>
-<li class="">Prevent rate limiting by single provider</li>
+<li class="">2〜3 の SMTP サービスを設定</li>
+<li class="">サービス間でローテーションして負荷を分散</li>
+<li class="">単一プロバイダーによるレート制限を防止</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-email-list-quality">2. Email List Quality<a href="#2-email-list-quality" class="hash-link" aria-label="2. Email List Quality への直接リンク" title="2. Email List Quality への直接リンク" translate="no">​</a></h3>
-<p><strong>Clean Your Lists:</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-メールリストの品質">2. メールリストの品質<a href="#2-メールリストの品質" class="hash-link" aria-label="2. メールリストの品質 への直接リンク" title="2. メールリストの品質 への直接リンク" translate="no">​</a></h3>
+<p><strong>リストのクリーンアップ:</strong></p>
 <ul>
-<li class="">Remove bounced emails</li>
-<li class="">Suppress unsubscribes and complaints</li>
-<li class="">Verify emails before sending</li>
+<li class="">バウンスしたメールアドレスを削除</li>
+<li class="">配信停止と苦情を抑制</li>
+<li class="">送信前にメールアドレスを検証</li>
 </ul>
-<p><strong>Segment Your Audience:</strong></p>
+<p><strong>オーディエンスのセグメント化:</strong></p>
 <ul>
-<li class="">Group by industry, company size, or interest</li>
-<li class="">Create targeted campaigns for each segment</li>
-<li class="">Improve relevance and engagement</li>
+<li class="">業界、企業規模、または興味でグループ化</li>
+<li class="">各セグメント向けのターゲットキャンペーンを作成</li>
+<li class="">関連性とエンゲージメントを向上</li>
 </ul>
-<p><strong>Avoid Duplicates:</strong></p>
+<p><strong>重複の回避:</strong></p>
 <ul>
-<li class="">Enable &quot;Avoid Duplicates&quot; option</li>
-<li class="">Suppression lists for previous recipients</li>
-<li class="">Regular list maintenance</li>
+<li class="">&quot;Avoid Duplicates&quot; オプションを有効にする</li>
+<li class="">過去の受信者を抑制リストで管理</li>
+<li class="">定期的なリストメンテナンス</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-template-optimization">3. Template Optimization<a href="#3-template-optimization" class="hash-link" aria-label="3. Template Optimization への直接リンク" title="3. Template Optimization への直接リンク" translate="no">​</a></h3>
-<p><strong>Personalize Content:</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-テンプレートの最適化">3. テンプレートの最適化<a href="#3-テンプレートの最適化" class="hash-link" aria-label="3. テンプレートの最適化 への直接リンク" title="3. テンプレートの最適化 への直接リンク" translate="no">​</a></h3>
+<p><strong>コンテンツのパーソナライズ:</strong></p>
 <ul>
-<li class="">Use variables extensively</li>
-<li class="">Mention recipient-specific details</li>
-<li class="">Reference their website or work</li>
+<li class="">変数を積極的に活用</li>
+<li class="">受信者固有の詳細に言及</li>
+<li class="">相手のウェブサイトや仕事に触れる</li>
 </ul>
-<p><strong>Keep It Concise:</strong></p>
+<p><strong>簡潔にまとめる:</strong></p>
 <ul>
-<li class="">100-200 words ideal</li>
-<li class="">Clear subject lines</li>
-<li class="">Single call-to-action</li>
+<li class="">100〜200 語が理想</li>
+<li class="">明確な件名</li>
+<li class="">単一のコールトゥアクション</li>
 </ul>
-<p><strong>Mobile-Friendly:</strong></p>
+<p><strong>モバイルフレンドリー:</strong></p>
 <ul>
-<li class="">Short paragraphs</li>
-<li class="">Clear formatting</li>
-<li class="">Test on mobile devices</li>
+<li class="">短い段落</li>
+<li class="">明確なフォーマット</li>
+<li class="">モバイルデバイスでテスト</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-timing-and-frequency">4. Timing and Frequency<a href="#4-timing-and-frequency" class="hash-link" aria-label="4. Timing and Frequency への直接リンク" title="4. Timing and Frequency への直接リンク" translate="no">​</a></h3>
-<p><strong>Best Send Times:</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-タイミングと頻度">4. タイミングと頻度<a href="#4-タイミングと頻度" class="hash-link" aria-label="4. タイミングと頻度 への直接リンク" title="4. タイミングと頻度 への直接リンク" translate="no">​</a></h3>
+<p><strong>最適な送信時間:</strong></p>
 <ul>
-<li class="">Tuesday, Wednesday, Thursday: 10 AM - 2 PM</li>
-<li class="">Avoid Monday mornings and weekends</li>
-<li class="">Test times for your specific audience</li>
+<li class="">火曜日、水曜日、木曜日の 10 時〜14 時</li>
+<li class="">月曜日の朝と週末を避ける</li>
+<li class="">特定のオーディエンスに合わせて時間をテスト</li>
 </ul>
-<p><strong>Sending Frequency:</strong></p>
+<p><strong>送信頻度:</strong></p>
 <ul>
-<li class="">Don&#x27;t send to same recipient within 30 days</li>
-<li class="">Space out campaigns appropriately</li>
-<li class="">Monitor unsubscribe rates</li>
+<li class="">同一受信者への送信は 30 日以内に再度行わない</li>
+<li class="">キャンペーン間を適切に空ける</li>
+<li class="">配信停止率を監視</li>
 </ul>
-<p><strong>Rate Limiting:</strong></p>
+<p><strong>レート制限:</strong></p>
 <ul>
-<li class="">Respect SMTP provider limits</li>
-<li class="">Start slow: 10-20 emails per minute</li>
-<li class="">Monitor for blocks or bounces</li>
+<li class="">SMTP プロバイダーの制限を遵守</li>
+<li class="">ゆっくり開始: 1 分間に 10〜20 通</li>
+<li class="">ブロックやバウンスを監視</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="5-compliance">5. Compliance<a href="#5-compliance" class="hash-link" aria-label="5. Compliance への直接リンク" title="5. Compliance への直接リンク" translate="no">​</a></h3>
-<p><strong>Include Required Elements:</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="5-コンプライアンス">5. コンプライアンス<a href="#5-コンプライアンス" class="hash-link" aria-label="5. コンプライアンス への直接リンク" title="5. コンプライアンス への直接リンク" translate="no">​</a></h3>
+<p><strong>必須要素の包含:</strong></p>
 <ul>
-<li class="">Physical mailing address</li>
-<li class="">Clear unsubscribe mechanism</li>
-<li class="">Accurate header information</li>
-<li class="">Your identity in the email</li>
+<li class="">物理的な郵送先住所</li>
+<li class="">明確な配信停止の仕組み</li>
+<li class="">正確なヘッダー情報</li>
+<li class="">メール内の送信者情報</li>
 </ul>
-<p><strong>Follow Regulations:</strong></p>
+<p><strong>規制の遵守:</strong></p>
 <ul>
-<li class=""><strong>CAN-SPAM</strong> (USA): Commercial email requirements</li>
-<li class=""><strong>GDPR</strong> (EU): Consent and data protection</li>
-<li class=""><strong>CASL</strong> (Canada): Consent requirements</li>
+<li class=""><strong>CAN-SPAM</strong>（米国）: 商業メールの要件</li>
+<li class=""><strong>GDPR</strong>（EU）: 同意とデータ保護</li>
+<li class=""><strong>CASL</strong>（カナダ）: 同意の要件</li>
 </ul>
-<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Legal Compliance</div><div class="admonitionContent_BuS1"><p>Ensure your email campaigns comply with applicable laws in your recipients&#x27; jurisdictions. Consult legal counsel for guidance.</p></div></div>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="troubleshooting">Troubleshooting<a href="#troubleshooting" class="hash-link" aria-label="Troubleshooting への直接リンク" title="Troubleshooting への直接リンク" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="smtp-connection-failed">SMTP Connection Failed<a href="#smtp-connection-failed" class="hash-link" aria-label="SMTP Connection Failed への直接リンク" title="SMTP Connection Failed への直接リンク" translate="no">​</a></h3>
-<p><strong>Possible causes:</strong></p>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>法的コンプライアンス</div><div class="admonitionContent_BuS1"><p>メールキャンペーンが受信者の管轄区域の適用法令に準拠していることを確認してください。指針については法律の専門家にご相談ください。</p></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="トラブルシューティング">トラブルシューティング<a href="#トラブルシューティング" class="hash-link" aria-label="トラブルシューティング への直接リンク" title="トラブルシューティング への直接リンク" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="smtp-接続失敗">SMTP 接続失敗<a href="#smtp-接続失敗" class="hash-link" aria-label="SMTP 接続失敗 への直接リンク" title="SMTP 接続失敗 への直接リンク" translate="no">​</a></h3>
+<p><strong>考えられる原因:</strong></p>
 <ul>
-<li class="">Incorrect SMTP settings</li>
-<li class="">Firewall blocking connection</li>
-<li class="">Authentication issues</li>
+<li class="">SMTP 設定が正しくない</li>
+<li class="">ファイアウォールが接続をブロックしている</li>
+<li class="">認証の問題</li>
 </ul>
-<p><strong>Solutions:</strong></p>
+<p><strong>解決策:</strong></p>
 <ol>
-<li class="">Verify host, port, and credentials</li>
-<li class="">Test with telnet: <code>telnet smtp.host.com port</code></li>
-<li class="">Check firewall/antivirus settings</li>
-<li class="">Try different port (587 vs 465)</li>
-<li class="">Verify App Password for Gmail/Outlook</li>
+<li class="">ホスト、ポート、認証情報を確認</li>
+<li class="">telnet でテスト: <code>telnet smtp.host.com port</code></li>
+<li class="">ファイアウォール/ウイルス対策設定を確認</li>
+<li class="">別のポートを試す（587 と 465）</li>
+<li class="">Gmail/Outlook のアプリパスワードを確認</li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="high-bounce-rate">High Bounce Rate<a href="#high-bounce-rate" class="hash-link" aria-label="High Bounce Rate への直接リンク" title="High Bounce Rate への直接リンク" translate="no">​</a></h3>
-<p><strong>Possible causes:</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="バウンス率が高い">バウンス率が高い<a href="#バウンス率が高い" class="hash-link" aria-label="バウンス率が高い への直接リンク" title="バウンス率が高い への直接リンク" translate="no">​</a></h3>
+<p><strong>考えられる原因:</strong></p>
 <ul>
-<li class="">Invalid email addresses</li>
-<li class="">Sender reputation issues</li>
-<li class="">Spam filter triggers</li>
+<li class="">無効なメールアドレス</li>
+<li class="">送信者レピュテーションの問題</li>
+<li class="">スパムフィルターのトリガー</li>
 </ul>
-<p><strong>Solutions:</strong></p>
+<p><strong>解決策:</strong></p>
 <ol>
-<li class="">Verify email list quality</li>
-<li class="">Check sender reputation (MXToolbox)</li>
-<li class="">Improve email content</li>
-<li class="">Warm up email account</li>
-<li class="">Use different SMTP service</li>
+<li class="">メールリストの品質を検証</li>
+<li class="">送信者レピュテーションを確認（MXToolbox）</li>
+<li class="">メールの内容を改善</li>
+<li class="">メールアカウントをウォームアップ</li>
+<li class="">別の SMTP サービスを使用</li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="emails-going-to-spam">Emails Going to Spam<a href="#emails-going-to-spam" class="hash-link" aria-label="Emails Going to Spam への直接リンク" title="Emails Going to Spam への直接リンク" translate="no">​</a></h3>
-<p><strong>Possible causes:</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="メールがスパムに入る">メールがスパムに入る<a href="#メールがスパムに入る" class="hash-link" aria-label="メールがスパムに入る への直接リンク" title="メールがスパムに入る への直接リンク" translate="no">​</a></h3>
+<p><strong>考えられる原因:</strong></p>
 <ul>
-<li class="">Poor sender reputation</li>
-<li class="">Spammy content</li>
-<li class="">Missing authentication</li>
+<li class="">送信者レピュテーションが低い</li>
+<li class="">スパム的なコンテンツ</li>
+<li class="">認証が不足</li>
 </ul>
-<p><strong>Solutions:</strong></p>
+<p><strong>解決策:</strong></p>
 <ol>
-<li class="">Set up SPF, DKIM, and DMARC</li>
-<li class="">Improve email content quality</li>
-<li class="">Avoid spam trigger words</li>
-<li class="">Include physical address and unsubscribe</li>
-<li class="">Warm up sending domain</li>
+<li class="">SPF、DKIM、DMARC を設定</li>
+<li class="">メールのコンテンツ品質を改善</li>
+<li class="">スパムトリガーワードを避ける</li>
+<li class="">住所と配信停止リンクを含める</li>
+<li class="">送信ドメインをウォームアップ</li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="rate-limiting">Rate Limiting<a href="#rate-limiting" class="hash-link" aria-label="Rate Limiting への直接リンク" title="Rate Limiting への直接リンク" translate="no">​</a></h3>
-<p><strong>Possible causes:</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="レート制限">レート制限<a href="#レート制限" class="hash-link" aria-label="レート制限 への直接リンク" title="レート制限 への直接リンク" translate="no">​</a></h3>
+<p><strong>考えられる原因:</strong></p>
 <ul>
-<li class="">Sending too fast</li>
-<li class="">SMTP provider limits exceeded</li>
+<li class="">送信速度が速すぎる</li>
+<li class="">SMTP プロバイダーの制限を超過</li>
 </ul>
-<p><strong>Solutions:</strong></p>
+<p><strong>解決策:</strong></p>
 <ol>
-<li class="">Reduce sending speed (emails per minute)</li>
-<li class="">Configure multiple SMTP services</li>
-<li class="">Check provider rate limits</li>
-<li class="">Upgrade SMTP plan if needed</li>
+<li class="">送信速度（1 分あたりのメール数）を下げる</li>
+<li class="">複数の SMTP サービスを設定</li>
+<li class="">プロバイダーのレート制限を確認</li>
+<li class="">必要に応じて SMTP プランをアップグレード</li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="templates-not-personalizing">Templates Not Personalizing<a href="#templates-not-personalizing" class="hash-link" aria-label="Templates Not Personalizing への直接リンク" title="Templates Not Personalizing への直接リンク" translate="no">​</a></h3>
-<p><strong>Possible causes:</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="テンプレートがパーソナライズされない">テンプレートがパーソナライズされない<a href="#テンプレートがパーソナライズされない" class="hash-link" aria-label="テンプレートがパーソナライズされない への直接リンク" title="テンプレートがパーソナライズされない への直接リンク" translate="no">​</a></h3>
+<p><strong>考えられる原因:</strong></p>
 <ul>
-<li class="">Variables not matching data</li>
-<li class="">Missing data in email list</li>
+<li class="">変数がデータと一致していない</li>
+<li class="">メールリストに必要なフィールドがない</li>
 </ul>
-<p><strong>Solutions:</strong></p>
+<p><strong>解決策:</strong></p>
 <ol>
-<li class="">Verify variable names match exactly</li>
-<li class="">Check email list has required fields</li>
-<li class="">Test with preview before sending</li>
-<li class="">Use generic content as fallback</li>
+<li class="">変数名が正確に一致しているか確認</li>
+<li class="">メールリストに必要なフィールドがあるか確認</li>
+<li class="">送信前にプレビューでテスト</li>
+<li class="">フォールバックとして汎用コンテンツを使用</li>
 </ol>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="campaign-metrics-to-track">Campaign Metrics to Track<a href="#campaign-metrics-to-track" class="hash-link" aria-label="Campaign Metrics to Track への直接リンク" title="Campaign Metrics to Track への直接リンク" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="deliverability">Deliverability<a href="#deliverability" class="hash-link" aria-label="Deliverability への直接リンク" title="Deliverability への直接リンク" translate="no">​</a></h3>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="追跡すべきキャンペーン指標">追跡すべきキャンペーン指標<a href="#追跡すべきキャンペーン指標" class="hash-link" aria-label="追跡すべきキャンペーン指標 への直接リンク" title="追跡すべきキャンペーン指標 への直接リンク" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="到達率">到達率<a href="#到達率" class="hash-link" aria-label="到達率 への直接リンク" title="到達率 への直接リンク" translate="no">​</a></h3>
 <ul>
-<li class=""><strong>Sent Rate</strong>: Emails successfully sent / Total emails</li>
-<li class=""><strong>Bounce Rate</strong>: Bounced emails / Sent emails</li>
-<li class=""><strong>Delivery Rate</strong>: Delivered emails / Sent emails</li>
+<li class=""><strong>送信率</strong>: 正常に送信されたメール数 / 総メール数</li>
+<li class=""><strong>バウンス率</strong>: バウンスしたメール数 / 送信したメール数</li>
+<li class=""><strong>配信率</strong>: 配信されたメール数 / 送信したメール数</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="engagement">Engagement<a href="#engagement" class="hash-link" aria-label="Engagement への直接リンク" title="Engagement への直接リンク" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="エンゲージメント">エンゲージメント<a href="#エンゲージメント" class="hash-link" aria-label="エンゲージメント への直接リンク" title="エンゲージメント への直接リンク" translate="no">​</a></h3>
 <ul>
-<li class=""><strong>Open Rate</strong>: Opens / Delivered</li>
-<li class=""><strong>Click-Through Rate</strong>: Clicks / Opens</li>
-<li class=""><strong>Conversion Rate</strong>: Conversions / Clicks</li>
+<li class=""><strong>開封率</strong>: 開封数 / 配信数</li>
+<li class=""><strong>クリック率</strong>: クリック数 / 開封数</li>
+<li class=""><strong>コンバージョン率</strong>: コンバージョン数 / クリック数</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="sender-reputation">Sender Reputation<a href="#sender-reputation" class="hash-link" aria-label="Sender Reputation への直接リンク" title="Sender Reputation への直接リンク" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="送信者レピュテーション">送信者レピュテーション<a href="#送信者レピュテーション" class="hash-link" aria-label="送信者レピュテーション への直接リンク" title="送信者レピュテーション への直接リンク" translate="no">​</a></h3>
 <ul>
-<li class=""><strong>Complaint Rate</strong>: Spam complaints / Delivered</li>
-<li class=""><strong>Unsubscribe Rate</strong>: Unsubscribes / Delivered</li>
-<li class=""><strong>Spam Trap Hits</strong>: Emails to spam traps</li>
+<li class=""><strong>苦情率</strong>: スパム苦情数 / 配信数</li>
+<li class=""><strong>配信停止率</strong>: 配信停止数 / 配信数</li>
+<li class=""><strong>スパムトラップヒット</strong>: スパムトラップへのメール送信</li>
 </ul>
-<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Benchmark Metrics</div><div class="admonitionContent_BuS1"><p>Industry averages:</p><ul>
-<li class="">Open Rate: 15-25%</li>
-<li class="">Click-Through Rate: 2-5%</li>
-<li class="">Bounce Rate: &lt; 2%</li>
-<li class="">Complaint Rate: &lt; 0.1%</li>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>ベンチマーク指標</div><div class="admonitionContent_BuS1"><p>業界平均値:</p><ul>
+<li class="">開封率: 15〜25%</li>
+<li class="">クリック率: 2〜5%</li>
+<li class="">バウンス率: &lt; 2%</li>
+<li class="">苦情率: &lt; 0.1%</li>
 </ul></div></div>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="advanced-workflows">Advanced Workflows<a href="#advanced-workflows" class="hash-link" aria-label="Advanced Workflows への直接リンク" title="Advanced Workflows への直接リンク" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflow-1-drip-campaign">Workflow 1: Drip Campaign<a href="#workflow-1-drip-campaign" class="hash-link" aria-label="Workflow 1: Drip Campaign への直接リンク" title="Workflow 1: Drip Campaign への直接リンク" translate="no">​</a></h3>
-<p>Set up automated multi-touch campaigns:</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="高度なワークフロー">高度なワークフロー<a href="#高度なワークフロー" class="hash-link" aria-label="高度なワークフロー への直接リンク" title="高度なワークフロー への直接リンク" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ワークフロー-1-ドリップキャンペーン">ワークフロー 1: ドリップキャンペーン<a href="#ワークフロー-1-ドリップキャンペーン" class="hash-link" aria-label="ワークフロー 1: ドリップキャンペーン への直接リンク" title="ワークフロー 1: ドリップキャンペーン への直接リンク" translate="no">​</a></h3>
+<p>自動化されたマルチタッチキャンペーンを設定します:</p>
 <ol>
-<li class=""><strong>Day 1</strong>: Initial outreach email</li>
-<li class=""><strong>Day 3</strong>: Follow-up if no response</li>
-<li class=""><strong>Day 7</strong>: Final follow-up with value add</li>
-<li class=""><strong>Day 14</strong>: Break-up email</li>
+<li class=""><strong>1 日目</strong>: 初回アウトリーチメール</li>
+<li class=""><strong>3 日目</strong>: 返信がない場合のフォローアップ</li>
+<li class=""><strong>7 日目</strong>: 価値を提供する最終フォローアップ</li>
+<li class=""><strong>14 日目</strong>: クロージングメール</li>
 </ol>
-<p>Use the <a class="" href="/aiFetchly/ja/docs/automation/task-scheduling">Scheduler</a> to automate.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflow-2-ab-testing">Workflow 2: A/B Testing<a href="#workflow-2-ab-testing" class="hash-link" aria-label="Workflow 2: A/B Testing への直接リンク" title="Workflow 2: A/B Testing への直接リンク" translate="no">​</a></h3>
-<p>Test different approaches:</p>
+<p>自動化には<a class="" href="/aiFetchly/ja/docs/automation/task-scheduling">スケジューラー</a>を使用してください。</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ワークフロー-2-ab-テスト">ワークフロー 2: A/B テスト<a href="#ワークフロー-2-ab-テスト" class="hash-link" aria-label="ワークフロー 2: A/B テスト への直接リンク" title="ワークフロー 2: A/B テスト への直接リンク" translate="no">​</a></h3>
+<p>異なるアプローチをテストします:</p>
 <ol>
-<li class=""><strong>Create 2-3 template variations</strong></li>
-<li class=""><strong>Split email list</strong> into segments</li>
-<li class=""><strong>Send different templates</strong> to each segment</li>
-<li class=""><strong>Measure results</strong> (open rate, response rate)</li>
-<li class=""><strong>Use winner</strong> for future campaigns</li>
+<li class=""><strong>2〜3 のテンプレートバリエーションを作成</strong></li>
+<li class=""><strong>メールリストをセグメントに分割</strong></li>
+<li class=""><strong>各セグメントに異なるテンプレートを送信</strong></li>
+<li class=""><strong>結果を測定</strong>（開封率、返信率）</li>
+<li class=""><strong>最良のテンプレートを</strong>今後のキャンペーンに使用</li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflow-3-segmented-campaigns">Workflow 3: Segmented Campaigns<a href="#workflow-3-segmented-campaigns" class="hash-link" aria-label="Workflow 3: Segmented Campaigns への直接リンク" title="Workflow 3: Segmented Campaigns への直接リンク" translate="no">​</a></h3>
-<p>Target specific audiences:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ワークフロー-3-セグメント別キャンペーン">ワークフロー 3: セグメント別キャンペーン<a href="#ワークフロー-3-セグメント別キャンペーン" class="hash-link" aria-label="ワークフロー 3: セグメント別キャンペーン への直接リンク" title="ワークフロー 3: セグメント別キャンペーン への直接リンク" translate="no">​</a></h3>
+<p>特定のオーディエンスをターゲットにします:</p>
 <ol>
-<li class=""><strong>Extract emails</strong> by industry or location</li>
-<li class=""><strong>Create tailored templates</strong> for each segment</li>
-<li class=""><strong>Send targeted campaigns</strong> to each segment</li>
-<li class=""><strong>Analyze results</strong> by segment</li>
-<li class=""><strong>Optimize messaging</strong> based on response</li>
+<li class=""><strong>業界や地域別にメールを抽出</strong></li>
+<li class=""><strong>各セグメント向けのカスタマイズテンプレートを作成</strong></li>
+<li class=""><strong>各セグメントにターゲットキャンペーンを送信</strong></li>
+<li class=""><strong>セグメント別に結果を分析</strong></li>
+<li class=""><strong>反応に基づいてメッセージを最適化</strong></li>
 </ol>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="integration-with-lead-generation">Integration with Lead Generation<a href="#integration-with-lead-generation" class="hash-link" aria-label="Integration with Lead Generation への直接リンク" title="Integration with Lead Generation への直接リンク" translate="no">​</a></h2>
-<p>The complete email outreach workflow:</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="リードジェネレーションとの連携">リードジェネレーションとの連携<a href="#リードジェネレーションとの連携" class="hash-link" aria-label="リードジェネレーションとの連携 への直接リンク" title="リードジェネレーションとの連携 への直接リンク" translate="no">​</a></h2>
+<p>完全なメールアウトリーチワークフロー:</p>
 <ol>
-<li class=""><strong><a class="" href="/aiFetchly/ja/docs/lead-generation/search-engines">Search Engines</a></strong>: Find target websites</li>
-<li class=""><strong><a class="" href="/aiFetchly/ja/docs/lead-generation/contact-extraction">Contact Extraction</a></strong>: Harvest emails</li>
-<li class=""><strong><a class="" href="/aiFetchly/ja/docs/ai-outreach/ai-email-writer">AI Email Writer</a></strong>: Create personalized templates</li>
-<li class=""><strong><a class="" href="/aiFetchly/ja/docs/ai-outreach/knowledge-library">Knowledge Library</a></strong>: Provide context for AI</li>
-<li class=""><strong>Batch Email Sending</strong>: Launch campaigns</li>
+<li class=""><strong><a class="" href="/aiFetchly/ja/docs/lead-generation/search-engines">検索エンジン</a></strong>: ターゲットウェブサイトを見つける</li>
+<li class=""><strong><a class="" href="/aiFetchly/ja/docs/lead-generation/contact-extraction">コンタクト抽出</a></strong>: メールアドレスを収集</li>
+<li class=""><strong><a class="" href="/aiFetchly/ja/docs/ai-outreach/ai-email-writer">AI メールライター</a></strong>: パーソナライズされたテンプレートを作成</li>
+<li class=""><strong><a class="" href="/aiFetchly/ja/docs/ai-outreach/knowledge-library">ナレッジライブラリ</a></strong>: AI にコンテキストを提供</li>
+<li class=""><strong>一括メール送信</strong>: キャンペーンを開始</li>
 </ol>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="next-steps">Next Steps<a href="#next-steps" class="hash-link" aria-label="Next Steps への直接リンク" title="Next Steps への直接リンク" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="次のステップ">次のステップ<a href="#次のステップ" class="hash-link" aria-label="次のステップ への直接リンク" title="次のステップ への直接リンク" translate="no">​</a></h2>
 <ul>
-<li class=""><a class="" href="/aiFetchly/ja/docs/ai-outreach/ai-marketing-assistant">Set up the AI Marketing Assistant</a> for strategy</li>
-<li class=""><a class="" href="/aiFetchly/ja/docs/automation/task-scheduling">Configure task scheduling</a> for automation</li>
-<li class=""><a class="" href="/aiFetchly/ja/docs/settings/system-settings">Review system settings</a></li>
+<li class=""><a class="" href="/aiFetchly/ja/docs/ai-outreach/ai-marketing-assistant">AI マーケティングアシスタント</a>を設定して戦略を立てる</li>
+<li class=""><a class="" href="/aiFetchly/ja/docs/automation/task-scheduling">タスクスケジューリング</a>を設定して自動化</li>
+<li class=""><a class="" href="/aiFetchly/ja/docs/settings/system-settings">システム設定</a>を確認</li>
 </ul>
 <hr>
-<p><strong>Ready to send campaigns?</strong> Start with a small test batch (20-50 emails) to verify everything works, then scale up your outreach operations.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="ドキュメントページ"><a class="pagination-nav__link pagination-nav__link--prev" href="/aiFetchly/ja/docs/lead-generation/contact-extraction"><div class="pagination-nav__sublabel">前へ</div><div class="pagination-nav__label">Email Extraction</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/aiFetchly/ja/docs/ai-outreach/knowledge-library"><div class="pagination-nav__sublabel">次へ</div><div class="pagination-nav__label">Knowledge Library</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#overview" class="table-of-contents__link toc-highlight">Overview</a></li><li><a href="#configuring-email-services" class="table-of-contents__link toc-highlight">Configuring Email Services</a><ul><li><a href="#what-is-smtp" class="table-of-contents__link toc-highlight">What is SMTP?</a></li><li><a href="#step-1-navigate-to-email-services" class="table-of-contents__link toc-highlight">Step 1: Navigate to Email Services</a></li><li><a href="#step-2-smtp-configuration" class="table-of-contents__link toc-highlight">Step 2: SMTP Configuration</a></li><li><a href="#step-3-test-configuration" class="table-of-contents__link toc-highlight">Step 3: Test Configuration</a></li><li><a href="#step-4-save-service" class="table-of-contents__link toc-highlight">Step 4: Save Service</a></li><li><a href="#common-smtp-providers" class="table-of-contents__link toc-highlight">Common SMTP Providers</a></li></ul></li><li><a href="#sending-batch-emails" class="table-of-contents__link toc-highlight">Sending Batch Emails</a><ul><li><a href="#step-1-choose-email-source" class="table-of-contents__link toc-highlight">Step 1: Choose Email Source</a></li><li><a href="#step-2-choose-email-template" class="table-of-contents__link toc-highlight">Step 2: Choose Email Template</a></li><li><a href="#step-3-choose-email-filter-optional" class="table-of-contents__link toc-highlight">Step 3: Choose Email Filter (Optional)</a></li><li><a href="#step-4-choose-email-service" class="table-of-contents__link toc-highlight">Step 4: Choose Email Service</a></li><li><a href="#campaign-execution" class="table-of-contents__link toc-highlight">Campaign Execution</a></li></ul></li><li><a href="#monitoring-campaigns" class="table-of-contents__link toc-highlight">Monitoring Campaigns</a><ul><li><a href="#campaign-list" class="table-of-contents__link toc-highlight">Campaign List</a></li><li><a href="#campaign-actions" class="table-of-contents__link toc-highlight">Campaign Actions</a></li><li><a href="#email-status" class="table-of-contents__link toc-highlight">Email Status</a></li></ul></li><li><a href="#best-practices" class="table-of-contents__link toc-highlight">Best Practices</a><ul><li><a href="#1-smtp-configuration" class="table-of-contents__link toc-highlight">1. SMTP Configuration</a></li><li><a href="#2-email-list-quality" class="table-of-contents__link toc-highlight">2. Email List Quality</a></li><li><a href="#3-template-optimization" class="table-of-contents__link toc-highlight">3. Template Optimization</a></li><li><a href="#4-timing-and-frequency" class="table-of-contents__link toc-highlight">4. Timing and Frequency</a></li><li><a href="#5-compliance" class="table-of-contents__link toc-highlight">5. Compliance</a></li></ul></li><li><a href="#troubleshooting" class="table-of-contents__link toc-highlight">Troubleshooting</a><ul><li><a href="#smtp-connection-failed" class="table-of-contents__link toc-highlight">SMTP Connection Failed</a></li><li><a href="#high-bounce-rate" class="table-of-contents__link toc-highlight">High Bounce Rate</a></li><li><a href="#emails-going-to-spam" class="table-of-contents__link toc-highlight">Emails Going to Spam</a></li><li><a href="#rate-limiting" class="table-of-contents__link toc-highlight">Rate Limiting</a></li><li><a href="#templates-not-personalizing" class="table-of-contents__link toc-highlight">Templates Not Personalizing</a></li></ul></li><li><a href="#campaign-metrics-to-track" class="table-of-contents__link toc-highlight">Campaign Metrics to Track</a><ul><li><a href="#deliverability" class="table-of-contents__link toc-highlight">Deliverability</a></li><li><a href="#engagement" class="table-of-contents__link toc-highlight">Engagement</a></li><li><a href="#sender-reputation" class="table-of-contents__link toc-highlight">Sender Reputation</a></li></ul></li><li><a href="#advanced-workflows" class="table-of-contents__link toc-highlight">Advanced Workflows</a><ul><li><a href="#workflow-1-drip-campaign" class="table-of-contents__link toc-highlight">Workflow 1: Drip Campaign</a></li><li><a href="#workflow-2-ab-testing" class="table-of-contents__link toc-highlight">Workflow 2: A/B Testing</a></li><li><a href="#workflow-3-segmented-campaigns" class="table-of-contents__link toc-highlight">Workflow 3: Segmented Campaigns</a></li></ul></li><li><a href="#integration-with-lead-generation" class="table-of-contents__link toc-highlight">Integration with Lead Generation</a></li><li><a href="#next-steps" class="table-of-contents__link toc-highlight">Next Steps</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">ドキュメント</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/ja/docs/getting-started/introduction">はじめに</a></li><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/ja/docs/lead-generation/search-engines">リードジェネレーション</a></li><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/ja/docs/ai-outreach/knowledge-library">AI アウトリーチ</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">コミュニティ</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/aifetchly" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/aifetchly" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">その他</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/robertzengcn/aiFetchly" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 aiFetchly. Docusaurus で構築。</div></div></div></footer></div>
+<p><strong>キャンペーンを送信する準備はできましたか？</strong> 小規模なテストバッチ（20〜50 通）で全てが正常に機能することを確認してから、アウトリーチ活動を拡大してください。</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="ドキュメントページ"><a class="pagination-nav__link pagination-nav__link--prev" href="/aiFetchly/ja/docs/lead-generation/contact-extraction"><div class="pagination-nav__sublabel">前へ</div><div class="pagination-nav__label">Email Extraction</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/aiFetchly/ja/docs/ai-outreach/knowledge-library"><div class="pagination-nav__sublabel">次へ</div><div class="pagination-nav__label">Knowledge Library</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#概要" class="table-of-contents__link toc-highlight">概要</a></li><li><a href="#メールサービスの設定" class="table-of-contents__link toc-highlight">メールサービスの設定</a><ul><li><a href="#smtp-とは" class="table-of-contents__link toc-highlight">SMTP とは?</a></li><li><a href="#ステップ-1-メールサービスに移動" class="table-of-contents__link toc-highlight">ステップ 1: メールサービスに移動</a></li><li><a href="#ステップ-2-smtp-設定" class="table-of-contents__link toc-highlight">ステップ 2: SMTP 設定</a></li><li><a href="#ステップ-3-設定のテスト" class="table-of-contents__link toc-highlight">ステップ 3: 設定のテスト</a></li><li><a href="#ステップ-4-サービスの保存" class="table-of-contents__link toc-highlight">ステップ 4: サービスの保存</a></li><li><a href="#主な-smtp-プロバイダー" class="table-of-contents__link toc-highlight">主な SMTP プロバイダー</a></li></ul></li><li><a href="#一括メールの送信" class="table-of-contents__link toc-highlight">一括メールの送信</a><ul><li><a href="#ステップ-1-メールソースの選択" class="table-of-contents__link toc-highlight">ステップ 1: メールソースの選択</a></li><li><a href="#ステップ-2-メールテンプレートの選択" class="table-of-contents__link toc-highlight">ステップ 2: メールテンプレートの選択</a></li><li><a href="#ステップ-3-メールフィルターの選択-任意" class="table-of-contents__link toc-highlight">ステップ 3: メールフィルターの選択 (任意)</a></li><li><a href="#ステップ-4-メールサービスの選択" class="table-of-contents__link toc-highlight">ステップ 4: メールサービスの選択</a></li><li><a href="#キャンペーンの実行" class="table-of-contents__link toc-highlight">キャンペーンの実行</a></li></ul></li><li><a href="#キャンペーンの監視" class="table-of-contents__link toc-highlight">キャンペーンの監視</a><ul><li><a href="#キャンペーンリスト" class="table-of-contents__link toc-highlight">キャンペーンリスト</a></li><li><a href="#キャンペーンアクション" class="table-of-contents__link toc-highlight">キャンペーンアクション</a></li><li><a href="#メールステータス" class="table-of-contents__link toc-highlight">メールステータス</a></li></ul></li><li><a href="#ベストプラクティス" class="table-of-contents__link toc-highlight">ベストプラクティス</a><ul><li><a href="#1-smtp-設定" class="table-of-contents__link toc-highlight">1. SMTP 設定</a></li><li><a href="#2-メールリストの品質" class="table-of-contents__link toc-highlight">2. メールリストの品質</a></li><li><a href="#3-テンプレートの最適化" class="table-of-contents__link toc-highlight">3. テンプレートの最適化</a></li><li><a href="#4-タイミングと頻度" class="table-of-contents__link toc-highlight">4. タイミングと頻度</a></li><li><a href="#5-コンプライアンス" class="table-of-contents__link toc-highlight">5. コンプライアンス</a></li></ul></li><li><a href="#トラブルシューティング" class="table-of-contents__link toc-highlight">トラブルシューティング</a><ul><li><a href="#smtp-接続失敗" class="table-of-contents__link toc-highlight">SMTP 接続失敗</a></li><li><a href="#バウンス率が高い" class="table-of-contents__link toc-highlight">バウンス率が高い</a></li><li><a href="#メールがスパムに入る" class="table-of-contents__link toc-highlight">メールがスパムに入る</a></li><li><a href="#レート制限" class="table-of-contents__link toc-highlight">レート制限</a></li><li><a href="#テンプレートがパーソナライズされない" class="table-of-contents__link toc-highlight">テンプレートがパーソナライズされない</a></li></ul></li><li><a href="#追跡すべきキャンペーン指標" class="table-of-contents__link toc-highlight">追跡すべきキャンペーン指標</a><ul><li><a href="#到達率" class="table-of-contents__link toc-highlight">到達率</a></li><li><a href="#エンゲージメント" class="table-of-contents__link toc-highlight">エンゲージメント</a></li><li><a href="#送信者レピュテーション" class="table-of-contents__link toc-highlight">送信者レピュテーション</a></li></ul></li><li><a href="#高度なワークフロー" class="table-of-contents__link toc-highlight">高度なワークフロー</a><ul><li><a href="#ワークフロー-1-ドリップキャンペーン" class="table-of-contents__link toc-highlight">ワークフロー 1: ドリップキャンペーン</a></li><li><a href="#ワークフロー-2-ab-テスト" class="table-of-contents__link toc-highlight">ワークフロー 2: A/B テスト</a></li><li><a href="#ワークフロー-3-セグメント別キャンペーン" class="table-of-contents__link toc-highlight">ワークフロー 3: セグメント別キャンペーン</a></li></ul></li><li><a href="#リードジェネレーションとの連携" class="table-of-contents__link toc-highlight">リードジェネレーションとの連携</a></li><li><a href="#次のステップ" class="table-of-contents__link toc-highlight">次のステップ</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">ドキュメント</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/ja/docs/getting-started/introduction">はじめに</a></li><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/ja/docs/lead-generation/search-engines">リードジェネレーション</a></li><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/ja/docs/ai-outreach/knowledge-library">AI アウトリーチ</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">コミュニティ</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/aifetchly" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/aifetchly" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">その他</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/robertzengcn/aiFetchly" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 aiFetchly. Docusaurus で構築。</div></div></div></footer></div>
 </body>
 </html>

@@ -3,355 +3,398 @@
 <head>
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.9.2">
-<title data-rh="true">Search Engine Scraping | aiFetchly Manual</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://robertzengcn.github.io/aiFetchly/es/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://robertzengcn.github.io/aiFetchly/es/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://robertzengcn.github.io/aiFetchly/es/docs/lead-generation/search-engines"><meta data-rh="true" property="og:locale" content="es"><meta data-rh="true" property="og:locale:alternate" content="en"><meta data-rh="true" property="og:locale:alternate" content="zh_CN"><meta data-rh="true" property="og:locale:alternate" content="fr"><meta data-rh="true" property="og:locale:alternate" content="de"><meta data-rh="true" property="og:locale:alternate" content="ja"><meta data-rh="true" name="docusaurus_locale" content="es"><meta data-rh="true" name="docsearch:language" content="es"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Search Engine Scraping | aiFetchly Manual"><meta data-rh="true" name="description" content="Learn how to scrape search results from Google, Bing, and Yandex to generate leads with AI-powered analysis."><meta data-rh="true" property="og:description" content="Learn how to scrape search results from Google, Bing, and Yandex to generate leads with AI-powered analysis."><link data-rh="true" rel="icon" href="/aiFetchly/es/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://robertzengcn.github.io/aiFetchly/es/docs/lead-generation/search-engines"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/docs/lead-generation/search-engines" hreflang="en"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/zh-CN/docs/lead-generation/search-engines" hreflang="zh-CN"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/es/docs/lead-generation/search-engines" hreflang="es"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/fr/docs/lead-generation/search-engines" hreflang="fr"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/de/docs/lead-generation/search-engines" hreflang="de"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/ja/docs/lead-generation/search-engines" hreflang="ja"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/docs/lead-generation/search-engines" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Search Engines","item":"https://robertzengcn.github.io/aiFetchly/es/docs/lead-generation/search-engines"}]}</script><link rel="stylesheet" href="/aiFetchly/es/assets/css/styles.ac14db2c.css">
-<script src="/aiFetchly/es/assets/js/runtime~main.d9397f9e.js" defer="defer"></script>
+<title data-rh="true">Search Engine Scraping | aiFetchly Manual</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://robertzengcn.github.io/aiFetchly/es/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://robertzengcn.github.io/aiFetchly/es/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://robertzengcn.github.io/aiFetchly/es/docs/lead-generation/search-engines"><meta data-rh="true" property="og:locale" content="es"><meta data-rh="true" property="og:locale:alternate" content="en"><meta data-rh="true" property="og:locale:alternate" content="zh_CN"><meta data-rh="true" property="og:locale:alternate" content="fr"><meta data-rh="true" property="og:locale:alternate" content="de"><meta data-rh="true" property="og:locale:alternate" content="ja"><meta data-rh="true" name="docusaurus_locale" content="es"><meta data-rh="true" name="docsearch:language" content="es"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Search Engine Scraping | aiFetchly Manual"><meta data-rh="true" name="description" content="Aprende a extraer resultados de búsqueda de Google, Bing y Yandex para generar leads con análisis impulsado por IA."><meta data-rh="true" property="og:description" content="Aprende a extraer resultados de búsqueda de Google, Bing y Yandex para generar leads con análisis impulsado por IA."><link data-rh="true" rel="icon" href="/aiFetchly/es/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://robertzengcn.github.io/aiFetchly/es/docs/lead-generation/search-engines"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/docs/lead-generation/search-engines" hreflang="en"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/zh-CN/docs/lead-generation/search-engines" hreflang="zh-CN"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/es/docs/lead-generation/search-engines" hreflang="es"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/fr/docs/lead-generation/search-engines" hreflang="fr"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/de/docs/lead-generation/search-engines" hreflang="de"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/ja/docs/lead-generation/search-engines" hreflang="ja"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/docs/lead-generation/search-engines" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Search Engines","item":"https://robertzengcn.github.io/aiFetchly/es/docs/lead-generation/search-engines"}]}</script><link rel="stylesheet" href="/aiFetchly/es/assets/css/styles.ac14db2c.css">
+<script src="/aiFetchly/es/assets/js/runtime~main.b67fc082.js" defer="defer"></script>
 <script src="/aiFetchly/es/assets/js/main.9657e0e3.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
 <symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
 </defs></svg>
-<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/aiFetchly/es/img/logo.svg"><div role="region" aria-label="Saltar al contenido principal"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Saltar al contenido principal</a></div><nav aria-label="Principal" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Alternar barra lateral" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/aiFetchly/es/"><div class="navbar__logo"><img src="/aiFetchly/es/img/logo.svg" alt="Logo de aiFetchly" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/aiFetchly/es/img/logo.svg" alt="Logo de aiFetchly" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">aiFetchly Manual</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/aiFetchly/es/docs/getting-started/introduction">Documentación</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/robertzengcn/aiFetchly" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="iconLanguage_nlXk"><path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></svg>Español</a><ul class="dropdown__menu"><li><a href="/aiFetchly/docs/lead-generation/search-engines" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="en">English</a></li><li><a href="/aiFetchly/zh-CN/docs/lead-generation/search-engines" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="zh-CN">中文（中国）</a></li><li><a href="/aiFetchly/es/docs/lead-generation/search-engines" target="_self" rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang="es">Español</a></li><li><a href="/aiFetchly/fr/docs/lead-generation/search-engines" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="fr">Français</a></li><li><a href="/aiFetchly/de/docs/lead-generation/search-engines" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="de">Deutsch</a></li><li><a href="/aiFetchly/ja/docs/lead-generation/search-engines" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="ja">日本語</a></li></ul></div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Cambiar entre modo oscuro y claro (actualmente system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Volver al principio" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Barra lateral de Documentos" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/aiFetchly/es/docs/getting-started/introduction"><span title="Introducción" class="linkLabel_WmDU">Introducción</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="Primeros Pasos" class="categoryLinkLabel_W154">Primeros Pasos</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/es/docs/getting-started/installation"><span title="Instalación" class="linkLabel_WmDU">Instalación</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/es/docs/getting-started/proxy-setup"><span title="Configuración de Proxy" class="linkLabel_WmDU">Configuración de Proxy</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--active"><span title="Generación de Leads" class="categoryLinkLabel_W154">Generación de Leads</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/aiFetchly/es/docs/lead-generation/search-engines"><span title="Search Engines" class="linkLabel_WmDU">Search Engines</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/es/docs/lead-generation/yellow-pages"><span title="Yellow Pages" class="linkLabel_WmDU">Yellow Pages</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/es/docs/lead-generation/contact-extraction"><span title="Email Extraction" class="linkLabel_WmDU">Email Extraction</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/es/docs/lead-generation/batch-email-sending"><span title="Batch Email Sending" class="linkLabel_WmDU">Batch Email Sending</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="Contacto con IA" class="categoryLinkLabel_W154">Contacto con IA</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/es/docs/ai-outreach/knowledge-library"><span title="Knowledge Library" class="linkLabel_WmDU">Knowledge Library</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/es/docs/ai-outreach/mcp-tools"><span title="MCP Tools" class="linkLabel_WmDU">MCP Tools</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/es/docs/ai-outreach/ai-skills"><span title="AI Skills" class="linkLabel_WmDU">AI Skills</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/es/docs/ai-outreach/ai-email-writer"><span title="AI Email Writer" class="linkLabel_WmDU">AI Email Writer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/es/docs/ai-outreach/ai-marketing-assistant"><span title="AI Marketing Assistant" class="linkLabel_WmDU">AI Marketing Assistant</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="Automatización" class="categoryLinkLabel_W154">Automatización</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/es/docs/automation/task-scheduling"><span title="Task Scheduler" class="linkLabel_WmDU">Task Scheduler</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="Configuración" class="categoryLinkLabel_W154">Configuración</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/es/docs/settings/system-settings"><span title="System Settings" class="linkLabel_WmDU">System Settings</span></a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Rastro de navegación"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Página de Inicio" class="breadcrumbs__link" href="/aiFetchly/es/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Generación de Leads</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Search Engines</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">En esta página</button></div><div class="theme-doc-markdown markdown"><header><h1>Search Engine Scraping</h1></header>
-<p>aiFetchly&#x27;s multi-engine search scraping feature allows you to collect leads from multiple search engines simultaneously. Extract business information, URLs, and contact details from search results automatically.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="supported-search-engines">Supported Search Engines<a href="#supported-search-engines" class="hash-link" aria-label="Enlace directo al Supported Search Engines" title="Enlace directo al Supported Search Engines" translate="no">​</a></h2>
-<table><thead><tr><th>Engine</th><th>Best For</th><th>Account Required</th><th>Local Browser</th></tr></thead><tbody><tr><td><strong>Google</strong></td><td>General searches, global reach</td><td>Recommended</td><td>Optional</td></tr><tr><td><strong>Bing</strong></td><td>Microsoft ecosystem, US market</td><td>Optional</td><td>Optional</td></tr><tr><td><strong>Yandex</strong></td><td>Russian market, Cyrillic content</td><td>Recommended</td><td><strong>Required</strong></td></tr></tbody></table>
-<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Yandex Requirement</div><div class="admonitionContent_BuS1"><p>Yandex scraping requires <strong>local browser integration</strong> for proper operation. Enable this option when creating Yandex tasks.</p></div></div>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="creating-a-search-task">Creating a Search Task<a href="#creating-a-search-task" class="hash-link" aria-label="Enlace directo al Creating a Search Task" title="Enlace directo al Creating a Search Task" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-1-navigate-to-search">Step 1: Navigate to Search<a href="#step-1-navigate-to-search" class="hash-link" aria-label="Enlace directo al Step 1: Navigate to Search" title="Enlace directo al Step 1: Navigate to Search" translate="no">​</a></h3>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/aiFetchly/es/img/logo.svg"><div role="region" aria-label="Saltar al contenido principal"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Saltar al contenido principal</a></div><nav aria-label="Principal" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Alternar barra lateral" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/aiFetchly/es/"><div class="navbar__logo"><img src="/aiFetchly/es/img/logo.svg" alt="Logo de aiFetchly" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/aiFetchly/es/img/logo.svg" alt="Logo de aiFetchly" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">aiFetchly Manual</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/aiFetchly/es/docs/getting-started/introduction">Documentación</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/robertzengcn/aiFetchly" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="iconLanguage_nlXk"><path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></svg>Español</a><ul class="dropdown__menu"><li><a href="/aiFetchly/docs/lead-generation/search-engines" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="en">English</a></li><li><a href="/aiFetchly/zh-CN/docs/lead-generation/search-engines" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="zh-CN">中文（中国）</a></li><li><a href="/aiFetchly/es/docs/lead-generation/search-engines" target="_self" rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang="es">Español</a></li><li><a href="/aiFetchly/fr/docs/lead-generation/search-engines" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="fr">Français</a></li><li><a href="/aiFetchly/de/docs/lead-generation/search-engines" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="de">Deutsch</a></li><li><a href="/aiFetchly/ja/docs/lead-generation/search-engines" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="ja">日本語</a></li></ul></div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Cambiar entre modo oscuro y claro (actualmente system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Volver al principio" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Barra lateral de Documentos" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/aiFetchly/es/docs/getting-started/introduction"><span title="Introducción" class="linkLabel_WmDU">Introducción</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="Primeros Pasos" class="categoryLinkLabel_W154">Primeros Pasos</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/es/docs/getting-started/installation"><span title="Instalación" class="linkLabel_WmDU">Instalación</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/es/docs/getting-started/proxy-setup"><span title="Configuración de Proxy" class="linkLabel_WmDU">Configuración de Proxy</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--active"><span title="Generación de Leads" class="categoryLinkLabel_W154">Generación de Leads</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/aiFetchly/es/docs/lead-generation/search-engines"><span title="Search Engines" class="linkLabel_WmDU">Search Engines</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/es/docs/lead-generation/yellow-pages"><span title="Yellow Pages" class="linkLabel_WmDU">Yellow Pages</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/es/docs/lead-generation/contact-extraction"><span title="Email Extraction" class="linkLabel_WmDU">Email Extraction</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/es/docs/lead-generation/batch-email-sending"><span title="Batch Email Sending" class="linkLabel_WmDU">Batch Email Sending</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="Contacto con IA" class="categoryLinkLabel_W154">Contacto con IA</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/es/docs/ai-outreach/knowledge-library"><span title="Knowledge Library" class="linkLabel_WmDU">Knowledge Library</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/es/docs/ai-outreach/mcp-tools"><span title="MCP Tools" class="linkLabel_WmDU">MCP Tools</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/es/docs/ai-outreach/ai-skills"><span title="AI Skills" class="linkLabel_WmDU">AI Skills</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/es/docs/ai-outreach/ai-email-writer"><span title="AI Email Writer" class="linkLabel_WmDU">AI Email Writer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/es/docs/ai-outreach/ai-marketing-assistant"><span title="AI Marketing Assistant" class="linkLabel_WmDU">AI Marketing Assistant</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="Automatización" class="categoryLinkLabel_W154">Automatización</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/es/docs/automation/task-scheduling"><span title="Task Scheduler" class="linkLabel_WmDU">Task Scheduler</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="Configuración" class="categoryLinkLabel_W154">Configuración</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/es/docs/settings/system-settings"><span title="System Settings" class="linkLabel_WmDU">System Settings</span></a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Rastro de navegación"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Página de Inicio" class="breadcrumbs__link" href="/aiFetchly/es/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Generación de Leads</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Search Engines</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">En esta página</button></div><div class="theme-doc-markdown markdown"><header><h1>Extracción de motores de búsqueda</h1></header>
+<p>La función de extracción multi-motor de aiFetchly te permite recopilar leads de múltiples motores de búsqueda simultáneamente. Extrae información empresarial, URL y datos de contacto de los resultados de búsqueda automáticamente. Impulsado por análisis de IA, puedes puntuar leads, clasificar industrias y extraer información de contacto — todo desde tus resultados de búsqueda.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="motores-de-búsqueda-compatibles">Motores de búsqueda compatibles<a href="#motores-de-búsqueda-compatibles" class="hash-link" aria-label="Enlace directo al Motores de búsqueda compatibles" title="Enlace directo al Motores de búsqueda compatibles" translate="no">​</a></h2>
+<table><thead><tr><th>Motor</th><th>Ideal para</th><th>Cuenta requerida</th><th>Navegador local</th></tr></thead><tbody><tr><td><strong>Google</strong></td><td>Búsquedas generales, alcance global</td><td>Recomendado</td><td>Opcional</td></tr><tr><td><strong>Bing</strong></td><td>Ecosistema Microsoft, mercado estadounidense</td><td>Opcional</td><td>Opcional</td></tr><tr><td><strong>Yandex</strong></td><td>Mercado ruso, contenido cirílico</td><td>Recomendado</td><td><strong>Requerido</strong></td></tr></tbody></table>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Requisito de Yandex</div><div class="admonitionContent_BuS1"><p>La extracción de Yandex requiere <strong>integración con navegador local</strong> para su correcto funcionamiento. Habilita esta opción al crear tareas de Yandex.</p></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="crear-una-tarea-de-búsqueda">Crear una tarea de búsqueda<a href="#crear-una-tarea-de-búsqueda" class="hash-link" aria-label="Enlace directo al Crear una tarea de búsqueda" title="Enlace directo al Crear una tarea de búsqueda" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="paso-1-ir-a-búsqueda">Paso 1: Ir a Búsqueda<a href="#paso-1-ir-a-búsqueda" class="hash-link" aria-label="Enlace directo al Paso 1: Ir a Búsqueda" title="Enlace directo al Paso 1: Ir a Búsqueda" translate="no">​</a></h3>
 <ol>
-<li class="">Click <strong>Search</strong> in the left navigation menu</li>
-<li class="">You&#x27;ll see the <strong>Search Form</strong> page</li>
+<li class="">Haz clic en <strong>Search</strong> en el menú de navegación izquierdo</li>
+<li class="">Verás la página del <strong>Formulario de búsqueda</strong></li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-2-basic-search-configuration">Step 2: Basic Search Configuration<a href="#step-2-basic-search-configuration" class="hash-link" aria-label="Enlace directo al Step 2: Basic Search Configuration" title="Enlace directo al Step 2: Basic Search Configuration" translate="no">​</a></h3>
-<p>Enter the following required information:</p>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="keywords">Keywords<a href="#keywords" class="hash-link" aria-label="Enlace directo al Keywords" title="Enlace directo al Keywords" translate="no">​</a></h4>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="paso-2-configuración-básica-de-búsqueda">Paso 2: Configuración básica de búsqueda<a href="#paso-2-configuración-básica-de-búsqueda" class="hash-link" aria-label="Enlace directo al Paso 2: Configuración básica de búsqueda" title="Enlace directo al Paso 2: Configuración básica de búsqueda" translate="no">​</a></h3>
+<p>Introduce la siguiente información requerida:</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="palabras-clave">Palabras clave<a href="#palabras-clave" class="hash-link" aria-label="Enlace directo al Palabras clave" title="Enlace directo al Palabras clave" translate="no">​</a></h4>
 <ol>
 <li class="">
-<p><strong>Enter Your Keywords</strong>: Type or paste your search keywords in the text area</p>
+<p><strong>Introduce tus palabras clave</strong>: Escribe o pega tus palabras clave de búsqueda en el área de texto</p>
 <ul>
-<li class="">One keyword per line</li>
-<li class="">Use specific, targeted keywords for better results</li>
+<li class="">Una palabra clave por línea</li>
+<li class="">Usa palabras clave específicas y dirigidas para mejores resultados</li>
 </ul>
 </li>
 <li class="">
-<p><strong>Generate Related Keywords</strong> (Optional):</p>
+<p><strong>Generar palabras clave relacionadas</strong> (Opcional):</p>
 <ul>
-<li class="">Click the <strong>Generate Related Keywords</strong> button</li>
-<li class="">aiFetchly uses AI to generate related search terms</li>
-<li class="">Expands your keyword list for broader coverage</li>
-<li class="">Removes duplicates automatically</li>
+<li class="">Haz clic en el botón <strong>Generate Related Keywords</strong></li>
+<li class="">aiFetchly usa IA para generar términos de búsqueda relacionados</li>
+<li class="">Amplía tu lista de palabras clave para una cobertura más amplia</li>
+<li class="">Elimina duplicados automáticamente</li>
 </ul>
 </li>
 </ol>
-<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Keyword Strategy</div><div class="admonitionContent_BuS1"><p>Start with 5-10 seed keywords, then use AI generation to expand to 20-50 related keywords for comprehensive coverage.</p></div></div>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="search-engine">Search Engine<a href="#search-engine" class="hash-link" aria-label="Enlace directo al Search Engine" title="Enlace directo al Search Engine" translate="no">​</a></h4>
-<p>Select the search engine from the dropdown:</p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Estrategia de palabras clave</div><div class="admonitionContent_BuS1"><p>Comienza con 5-10 palabras clave semilla, luego usa la generación por IA para ampliar a 20-50 palabras clave relacionadas para una cobertura integral.</p></div></div>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="motor-de-búsqueda">Motor de búsqueda<a href="#motor-de-búsqueda" class="hash-link" aria-label="Enlace directo al Motor de búsqueda" title="Enlace directo al Motor de búsqueda" translate="no">​</a></h4>
+<p>Selecciona el motor de búsqueda en el menú desplegable:</p>
 <ul>
-<li class="">Google (default)</li>
+<li class="">Google (predeterminado)</li>
 <li class="">Bing</li>
 <li class="">Yandex</li>
 </ul>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="page-number">Page Number<a href="#page-number" class="hash-link" aria-label="Enlace directo al Page Number" title="Enlace directo al Page Number" translate="no">​</a></h4>
-<p>Specify which page to start scraping from:</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="número-de-página">Número de página<a href="#número-de-página" class="hash-link" aria-label="Enlace directo al Número de página" title="Enlace directo al Número de página" translate="no">​</a></h4>
+<p>Especifica desde qué página comenzar la extracción:</p>
 <ul>
-<li class=""><strong>Start at page 1</strong> for fresh searches</li>
-<li class=""><strong>Resume from page X</strong> if continuing a previous task</li>
+<li class=""><strong>Comenzar en la página 1</strong> para búsquedas nuevas</li>
+<li class=""><strong>Continuar desde la página X</strong> si retomas una tarea anterior</li>
 </ul>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="concurrent-quantity">Concurrent Quantity<a href="#concurrent-quantity" class="hash-link" aria-label="Enlace directo al Concurrent Quantity" title="Enlace directo al Concurrent Quantity" translate="no">​</a></h4>
-<p>Set the number of concurrent searches:</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="cantidad-concurrente">Cantidad concurrente<a href="#cantidad-concurrente" class="hash-link" aria-label="Enlace directo al Cantidad concurrente" title="Enlace directo al Cantidad concurrente" translate="no">​</a></h4>
+<p>Establece el número de búsquedas concurrentes:</p>
 <ul>
-<li class=""><strong>1</strong> (default): Safest, slowest</li>
-<li class=""><strong>3-5</strong>: Moderate speed, good for most use cases</li>
-<li class=""><strong>10+</strong>: Fastest, requires more proxies</li>
+<li class=""><strong>1</strong> (predeterminado): Más seguro, más lento</li>
+<li class=""><strong>3-5</strong>: Velocidad moderada, bueno para la mayoría de los casos</li>
+<li class=""><strong>10+</strong>: Más rápido, requiere más proxies</li>
 </ul>
-<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Concurrency Limits</div><div class="admonitionContent_BuS1"><p>Higher concurrency increases the risk of being blocked. Start with 1-3 and increase gradually.</p></div></div>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-3-advanced-options">Step 3: Advanced Options<a href="#step-3-advanced-options" class="hash-link" aria-label="Enlace directo al Step 3: Advanced Options" title="Enlace directo al Step 3: Advanced Options" translate="no">​</a></h3>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="proxy-configuration">Proxy Configuration<a href="#proxy-configuration" class="hash-link" aria-label="Enlace directo al Proxy Configuration" title="Enlace directo al Proxy Configuration" translate="no">​</a></h4>
-<p><strong>Option A: Use Saved Proxies</strong></p>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Límites de concurrencia</div><div class="admonitionContent_BuS1"><p>Una mayor concurrencia aumenta el riesgo de ser bloqueado. Comienza con 1-3 y aumenta gradualmente.</p></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="paso-3-opciones-avanzadas">Paso 3: Opciones avanzadas<a href="#paso-3-opciones-avanzadas" class="hash-link" aria-label="Enlace directo al Paso 3: Opciones avanzadas" title="Enlace directo al Paso 3: Opciones avanzadas" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="configuración-de-proxy">Configuración de proxy<a href="#configuración-de-proxy" class="hash-link" aria-label="Enlace directo al Configuración de proxy" title="Enlace directo al Configuración de proxy" translate="no">​</a></h4>
+<p><strong>Opción A: Usar proxies guardados</strong></p>
 <ol>
-<li class="">Click the <strong>Choose Proxy</strong> button</li>
-<li class="">Select one or more proxies from your list</li>
-<li class="">Click <strong>Confirm</strong> to add them to the task</li>
+<li class="">Haz clic en el botón <strong>Choose Proxy</strong></li>
+<li class="">Selecciona uno o más proxies de tu lista</li>
+<li class="">Haz clic en <strong>Confirm</strong> para añadirlos a la tarea</li>
 </ol>
-<p><strong>Option B: Manual Proxy Entry</strong></p>
+<p><strong>Opción B: Entrada manual de proxy</strong></p>
 <ol>
-<li class="">Toggle the proxy option</li>
-<li class="">Enter proxy details manually:<!-- -->
+<li class="">Activa la opción de proxy</li>
+<li class="">Introduce los datos del proxy manualmente:<!-- -->
 <ul>
-<li class="">Host/IP address</li>
-<li class="">Port number</li>
-<li class="">Username (if required)</li>
-<li class="">Password (if required)</li>
+<li class="">Host/Dirección IP</li>
+<li class="">Número de puerto</li>
+<li class="">Usuario (si es necesario)</li>
+<li class="">Contraseña (si es necesario)</li>
 </ul>
 </li>
 </ol>
-<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Proxy Best Practices</div><div class="admonitionContent_BuS1"><p>Use multiple proxies for high-concurrency tasks to distribute load and avoid blocks.</p></div></div>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="local-browser-integration">Local Browser Integration<a href="#local-browser-integration" class="hash-link" aria-label="Enlace directo al Local Browser Integration" title="Enlace directo al Local Browser Integration" translate="no">​</a></h4>
-<p>Enable local browser scraping for more human-like behavior:</p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Mejores prácticas de proxies</div><div class="admonitionContent_BuS1"><p>Usa múltiples proxies para tareas de alta concurrencia para distribuir la carga y evitar bloqueos.</p></div></div>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="integración-con-navegador-local">Integración con navegador local<a href="#integración-con-navegador-local" class="hash-link" aria-label="Enlace directo al Integración con navegador local" title="Enlace directo al Integración con navegador local" translate="no">​</a></h4>
+<p>Habilita la extracción con navegador local para un comportamiento más humano:</p>
 <ol>
-<li class="">Toggle <strong>Local Browser</strong> to enable</li>
-<li class="">Select your Chrome browser from the list</li>
-<li class=""><strong>Required for</strong>: Yandex scraping</li>
-<li class=""><strong>Recommended for</strong>: Google at scale</li>
+<li class="">Activa <strong>Local Browser</strong> para habilitar</li>
+<li class="">Selecciona tu navegador Chrome de la lista</li>
+<li class=""><strong>Requerido para</strong>: Extracción de Yandex</li>
+<li class=""><strong>Recomendado para</strong>: Google a gran escala</li>
 </ol>
-<p><strong>Benefits:</strong></p>
+<p><strong>Beneficios:</strong></p>
 <ul>
-<li class="">Lower detection rates</li>
-<li class="">Better success with anti-bot protections</li>
-<li class="">More consistent results</li>
+<li class="">Menores tasas de detección</li>
+<li class="">Mejor éxito con protecciones anti-bot</li>
+<li class="">Resultados más consistentes</li>
 </ul>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="search-account-usage">Search Account Usage<a href="#search-account-usage" class="hash-link" aria-label="Enlace directo al Search Account Usage" title="Enlace directo al Search Account Usage" translate="no">​</a></h4>
-<p>Use authenticated accounts for better success rates:</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="mostrar-en-el-navegador">Mostrar en el navegador<a href="#mostrar-en-el-navegador" class="hash-link" aria-label="Enlace directo al Mostrar en el navegador" title="Enlace directo al Mostrar en el navegador" translate="no">​</a></h4>
+<p>Activa <strong>Show in Browser</strong> para controlar la visibilidad del navegador durante la extracción:</p>
+<ul>
+<li class=""><strong>Habilitado</strong>: La ventana del navegador es visible durante la extracción — útil para depuración o monitoreo del progreso</li>
+<li class=""><strong>Deshabilitado</strong> (predeterminado): El navegador se ejecuta en modo headless para una operación más rápida y en segundo plano</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="habilitar-recuperación-por-ia">Habilitar recuperación por IA<a href="#habilitar-recuperación-por-ia" class="hash-link" aria-label="Enlace directo al Habilitar recuperación por IA" title="Enlace directo al Habilitar recuperación por IA" translate="no">​</a></h4>
+<p>Activa <strong>Enable AI Recovery</strong> para permitir que la IA se recupere automáticamente de errores de extracción:</p>
+<ul>
+<li class="">Cuando está habilitado, aiFetchly usa IA para diagnosticar y recuperarse de errores encontrados durante la extracción</li>
+<li class="">El sistema puede analizar capturas de pantalla de errores y ajustar su estrategia</li>
+<li class="">Los intentos de recuperación están limitados para evitar un uso excesivo de recursos</li>
+</ul>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Cuándo usar recuperación por IA</div><div class="admonitionContent_BuS1"><p>Habilita la recuperación por IA al extraer de motores con fuerte protección anti-bot (como Google) o al ejecutar tareas a gran escala donde se esperan errores ocasionales.</p></div></div>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="uso-de-cuenta-de-búsqueda">Uso de cuenta de búsqueda<a href="#uso-de-cuenta-de-búsqueda" class="hash-link" aria-label="Enlace directo al Uso de cuenta de búsqueda" title="Enlace directo al Uso de cuenta de búsqueda" translate="no">​</a></h4>
+<p>Usa cuentas autenticadas para mejores tasas de éxito:</p>
 <ol>
-<li class="">Toggle <strong>Search Account</strong> to enable</li>
-<li class="">Click <strong>Choose Account</strong> to select saved credentials</li>
-<li class="">Select accounts matching your search engine</li>
-<li class="">Click <strong>Confirm</strong></li>
+<li class="">Activa <strong>Search Account</strong> para habilitar</li>
+<li class="">Haz clic en <strong>Choose Account</strong> para seleccionar credenciales guardadas</li>
+<li class="">Selecciona cuentas que coincidan con tu motor de búsqueda</li>
+<li class="">Haz clic en <strong>Confirm</strong></li>
 </ol>
-<p><strong>Recommendations:</strong></p>
+<p><strong>Recomendaciones:</strong></p>
 <ul>
-<li class=""><strong>Google</strong>: Use accounts for large-scale scraping</li>
-<li class=""><strong>Yandex</strong>: Use accounts for better access</li>
-<li class=""><strong>Bing</strong>: Optional, less critical</li>
+<li class=""><strong>Google</strong>: Usa cuentas para extracción a gran escala</li>
+<li class=""><strong>Yandex</strong>: Usa cuentas para mejor acceso</li>
+<li class=""><strong>Bing</strong>: Opcional, menos crítico</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-4-execute-or-save">Step 4: Execute or Save<a href="#step-4-execute-or-save" class="hash-link" aria-label="Enlace directo al Step 4: Execute or Save" title="Enlace directo al Step 4: Execute or Save" translate="no">​</a></h3>
-<p>Choose one of the following options:</p>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="save-only">Save Only<a href="#save-only" class="hash-link" aria-label="Enlace directo al Save Only" title="Enlace directo al Save Only" translate="no">​</a></h4>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="paso-4-ejecutar-o-guardar">Paso 4: Ejecutar o guardar<a href="#paso-4-ejecutar-o-guardar" class="hash-link" aria-label="Enlace directo al Paso 4: Ejecutar o guardar" title="Enlace directo al Paso 4: Ejecutar o guardar" translate="no">​</a></h3>
+<p>Elige una de las siguientes opciones:</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="solo-guardar">Solo guardar<a href="#solo-guardar" class="hash-link" aria-label="Enlace directo al Solo guardar" title="Enlace directo al Solo guardar" translate="no">​</a></h4>
 <ul>
-<li class="">Creates the task without running it</li>
-<li class="">Useful for scheduling or batch task creation</li>
-<li class="">Task status: &quot;Not Start&quot;</li>
+<li class="">Crea la tarea sin ejecutarla</li>
+<li class="">Útil para programación o creación de tareas por lotes</li>
+<li class="">Estado de la tarea: &quot;Not Start&quot;</li>
 </ul>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="run-task">Run Task<a href="#run-task" class="hash-link" aria-label="Enlace directo al Run Task" title="Enlace directo al Run Task" translate="no">​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="ejecutar-tarea">Ejecutar tarea<a href="#ejecutar-tarea" class="hash-link" aria-label="Enlace directo al Ejecutar tarea" title="Enlace directo al Ejecutar tarea" translate="no">​</a></h4>
 <ul>
-<li class="">Creates and executes the task immediately</li>
-<li class="">Status changes to &quot;Processing&quot;</li>
-<li class="">Results appear in real-time</li>
+<li class="">Crea y ejecuta la tarea inmediatamente</li>
+<li class="">El estado cambia a &quot;Processing&quot;</li>
+<li class="">Los resultados aparecen en tiempo real</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="managing-search-tasks">Managing Search Tasks<a href="#managing-search-tasks" class="hash-link" aria-label="Enlace directo al Managing Search Tasks" title="Enlace directo al Managing Search Tasks" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="view-task-list">View Task List<a href="#view-task-list" class="hash-link" aria-label="Enlace directo al View Task List" title="Enlace directo al View Task List" translate="no">​</a></h3>
-<p>Navigate to <strong>Search</strong> → <strong>Result List</strong> to see all your search tasks.</p>
-<p><strong>Task List Columns:</strong></p>
-<table><thead><tr><th>Column</th><th>Description</th></tr></thead><tbody><tr><td><strong>ID</strong></td><td>Unique task identifier</td></tr><tr><td><strong>Keywords</strong></td><td>Keywords used in the search</td></tr><tr><td><strong>Search Engine</strong></td><td>Engine used (Google, Bing, etc.)</td></tr><tr><td><strong>Status</strong></td><td>Not Start, Processing, Complete, Error</td></tr><tr><td><strong>Created</strong></td><td>Date and time created</td></tr><tr><td><strong>Actions</strong></td><td>Run, Edit, Delete, View Results</td></tr></tbody></table>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="task-actions">Task Actions<a href="#task-actions" class="hash-link" aria-label="Enlace directo al Task Actions" title="Enlace directo al Task Actions" translate="no">​</a></h3>
-<table><thead><tr><th>Action</th><th>Description</th><th>When Available</th></tr></thead><tbody><tr><td><strong>Run</strong></td><td>Start a &quot;Not Start&quot; task</td><td>Task not started</td></tr><tr><td><strong>Retry</strong></td><td>Restart a failed task</td><td>Task has &quot;Error&quot; status</td></tr><tr><td><strong>Edit</strong></td><td>Modify task parameters</td><td>Any task</td></tr><tr><td><strong>Kill Process</strong></td><td>Stop a running task</td><td>Task is &quot;Processing&quot;</td></tr><tr><td><strong>View Results</strong></td><td>See detailed results</td><td>Task has results</td></tr><tr><td><strong>Download Logs</strong></td><td>Export error logs</td><td>Task has errors</td></tr></tbody></table>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="viewing-search-results">Viewing Search Results<a href="#viewing-search-results" class="hash-link" aria-label="Enlace directo al Viewing Search Results" title="Enlace directo al Viewing Search Results" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-1-open-results">Step 1: Open Results<a href="#step-1-open-results" class="hash-link" aria-label="Enlace directo al Step 1: Open Results" title="Enlace directo al Step 1: Open Results" translate="no">​</a></h3>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="gestión-de-tareas-de-búsqueda">Gestión de tareas de búsqueda<a href="#gestión-de-tareas-de-búsqueda" class="hash-link" aria-label="Enlace directo al Gestión de tareas de búsqueda" title="Enlace directo al Gestión de tareas de búsqueda" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ver-lista-de-tareas">Ver lista de tareas<a href="#ver-lista-de-tareas" class="hash-link" aria-label="Enlace directo al Ver lista de tareas" title="Enlace directo al Ver lista de tareas" translate="no">​</a></h3>
+<p>Navega a <strong>Search</strong> → <strong>Result List</strong> para ver todas tus tareas de búsqueda.</p>
+<p><strong>Columnas de la lista de tareas:</strong></p>
+<table><thead><tr><th>Columna</th><th>Descripción</th></tr></thead><tbody><tr><td><strong>ID</strong></td><td>Identificador único de la tarea</td></tr><tr><td><strong>Keywords</strong></td><td>Palabras clave utilizadas en la búsqueda</td></tr><tr><td><strong>Search Engine</strong></td><td>Motor utilizado (Google, Bing, etc.)</td></tr><tr><td><strong>Status</strong></td><td>Not Start, Processing, Complete, Error</td></tr><tr><td><strong>Record Time</strong></td><td>Fecha y hora de creación</td></tr><tr><td><strong>Actions</strong></td><td>Run, Edit, View Results, Kill Process, Retry, Download Logs</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="acciones-de-tarea">Acciones de tarea<a href="#acciones-de-tarea" class="hash-link" aria-label="Enlace directo al Acciones de tarea" title="Enlace directo al Acciones de tarea" translate="no">​</a></h3>
+<table><thead><tr><th>Acción</th><th>Descripción</th><th>Cuándo está disponible</th></tr></thead><tbody><tr><td><strong>Run</strong></td><td>Iniciar una tarea &quot;Not Start&quot;</td><td>Tarea no iniciada</td></tr><tr><td><strong>Retry</strong></td><td>Reiniciar una tarea fallida</td><td>Tarea con estado &quot;Error&quot;</td></tr><tr><td><strong>Edit</strong></td><td>Modificar parámetros de la tarea</td><td>Cualquier tarea</td></tr><tr><td><strong>Kill Process</strong></td><td>Detener una tarea en ejecución</td><td>Tarea en estado &quot;Processing&quot;</td></tr><tr><td><strong>View Results</strong></td><td>Ver resultados detallados</td><td>La tarea tiene resultados</td></tr><tr><td><strong>Download Logs</strong></td><td>Exportar registros de errores</td><td>La tarea tiene errores</td></tr></tbody></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="ver-resultados-de-búsqueda">Ver resultados de búsqueda<a href="#ver-resultados-de-búsqueda" class="hash-link" aria-label="Enlace directo al Ver resultados de búsqueda" title="Enlace directo al Ver resultados de búsqueda" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="paso-1-abrir-resultados">Paso 1: Abrir resultados<a href="#paso-1-abrir-resultados" class="hash-link" aria-label="Enlace directo al Paso 1: Abrir resultados" title="Enlace directo al Paso 1: Abrir resultados" translate="no">​</a></h3>
 <ol>
-<li class="">Go to <strong>Search</strong> → <strong>Result List</strong></li>
-<li class="">Find your task</li>
-<li class="">Click <strong>View Results</strong> to see detailed results</li>
+<li class="">Ve a <strong>Search</strong> → <strong>Result List</strong></li>
+<li class="">Encuentra tu tarea</li>
+<li class="">Haz clic en <strong>View Results</strong> para ver los resultados detallados</li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-2-results-table">Step 2: Results Table<a href="#step-2-results-table" class="hash-link" aria-label="Enlace directo al Step 2: Results Table" title="Enlace directo al Step 2: Results Table" translate="no">​</a></h3>
-<p>The results table displays:</p>
-<table><thead><tr><th>Column</th><th>Description</th></tr></thead><tbody><tr><td><strong>ID</strong></td><td>Result identifier</td></tr><tr><td><strong>Title</strong></td><td>Page title from search result</td></tr><tr><td><strong>Link</strong></td><td>URL of the search result</td></tr><tr><td><strong>Keyword</strong></td><td>Keyword that generated this result</td></tr><tr><td><strong>Timestamp</strong></td><td>When the result was scraped</td></tr><tr><td><strong>AI Industry</strong></td><td>Industry classification (if analyzed)</td></tr><tr><td><strong>AI Match Score</strong></td><td>Lead quality score (if analyzed)</td></tr><tr><td><strong>Analysis Status</strong></td><td>Analysis completion status</td></tr></tbody></table>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-3-interact-with-results">Step 3: Interact with Results<a href="#step-3-interact-with-results" class="hash-link" aria-label="Enlace directo al Step 3: Interact with Results" title="Enlace directo al Step 3: Interact with Results" translate="no">​</a></h3>
-<p><strong>Individual Actions:</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="paso-2-tabla-de-resultados">Paso 2: Tabla de resultados<a href="#paso-2-tabla-de-resultados" class="hash-link" aria-label="Enlace directo al Paso 2: Tabla de resultados" title="Enlace directo al Paso 2: Tabla de resultados" translate="no">​</a></h3>
+<p>La tabla de resultados muestra:</p>
+<table><thead><tr><th>Columna</th><th>Descripción</th></tr></thead><tbody><tr><td><strong>ID</strong></td><td>Identificador del resultado</td></tr><tr><td><strong>Title</strong></td><td>Título de la página del resultado de búsqueda</td></tr><tr><td><strong>Link</strong></td><td>URL del resultado de búsqueda</td></tr><tr><td><strong>Keyword</strong></td><td>Palabra clave que generó este resultado</td></tr><tr><td><strong>Record Time</strong></td><td>Cuándo se extrajo el resultado</td></tr><tr><td><strong>Customer Industry</strong></td><td>Industria clasificada por IA (si se analizó)</td></tr><tr><td><strong>Probability</strong></td><td>Puntuación de calidad del lead 0-100% (si se analizó)</td></tr><tr><td><strong>Analysis Status</strong></td><td>Estado de finalización del análisis (pending/analyzing/completed/failed)</td></tr><tr><td><strong>Contact Extraction</strong></td><td>Estado de extracción de información de contacto</td></tr><tr><td><strong>Email</strong></td><td>Dirección de correo extraída (si se extrajo)</td></tr><tr><td><strong>Phone</strong></td><td>Número de teléfono extraído (si se extrajo)</td></tr><tr><td><strong>Address</strong></td><td>Dirección física extraída (si se extrajo)</td></tr></tbody></table>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Visibilidad de columnas</div><div class="admonitionContent_BuS1"><p>Puedes personalizar qué columnas se muestran usando el menú de <strong>visibilidad de columnas</strong>. Haz clic en el selector de columnas para mostrar u ocultar columnas específicas según las necesidades de tu flujo de trabajo.</p></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="paso-3-interactuar-con-los-resultados">Paso 3: Interactuar con los resultados<a href="#paso-3-interactuar-con-los-resultados" class="hash-link" aria-label="Enlace directo al Paso 3: Interactuar con los resultados" title="Enlace directo al Paso 3: Interactuar con los resultados" translate="no">​</a></h3>
+<p><strong>Acciones individuales:</strong></p>
 <ul>
-<li class=""><strong>Copy Link</strong>: Copy URL to clipboard</li>
-<li class=""><strong>Open Link</strong>: Open URL in your browser</li>
+<li class=""><strong>Copy Link</strong>: Copiar la URL al portapapeles</li>
+<li class=""><strong>Copy Contact Info</strong>: Copiar directamente el correo, teléfono o dirección extraídos</li>
 </ul>
-<p><strong>Batch Actions:</strong></p>
+<p><strong>Acciones por lotes:</strong></p>
 <ul>
-<li class="">Select multiple results using checkboxes</li>
-<li class=""><strong>AI Analysis</strong>: Analyze selected results for lead scoring</li>
-<li class=""><strong>Extract Emails</strong>: Extract email addresses from selected URLs</li>
-<li class=""><strong>Export</strong>: Download results as CSV</li>
+<li class="">Selecciona múltiples resultados usando casillas de verificación</li>
+<li class=""><strong>AI Analyze</strong>: Analizar los resultados seleccionados para puntuación de leads y clasificación de industria</li>
+<li class=""><strong>AI Extract Contact Info</strong>: Extraer información de contacto (correo, teléfono, dirección) de las URL seleccionadas</li>
+<li class=""><strong>Extract Emails</strong>: Navegar a la función de Extracción de correos con las URL seleccionadas</li>
+<li class=""><strong>Export</strong>: Descargar resultados como CSV (incluye campos de análisis de IA)</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="ai-website-analysis">AI Website Analysis<a href="#ai-website-analysis" class="hash-link" aria-label="Enlace directo al AI Website Analysis" title="Enlace directo al AI Website Analysis" translate="no">​</a></h2>
-<p>Enhance your search results with AI-powered analysis:</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-1-select-results">Step 1: Select Results<a href="#step-1-select-results" class="hash-link" aria-label="Enlace directo al Step 1: Select Results" title="Enlace directo al Step 1: Select Results" translate="no">​</a></h3>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="análisis-de-sitios-web-con-ia">Análisis de sitios web con IA<a href="#análisis-de-sitios-web-con-ia" class="hash-link" aria-label="Enlace directo al Análisis de sitios web con IA" title="Enlace directo al Análisis de sitios web con IA" translate="no">​</a></h2>
+<p>Mejora tus resultados de búsqueda con análisis impulsado por IA:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="paso-1-seleccionar-resultados">Paso 1: Seleccionar resultados<a href="#paso-1-seleccionar-resultados" class="hash-link" aria-label="Enlace directo al Paso 1: Seleccionar resultados" title="Enlace directo al Paso 1: Seleccionar resultados" translate="no">​</a></h3>
 <ol>
-<li class="">Check the boxes next to results you want to analyze</li>
-<li class="">Click the <strong>AI Analysis</strong> button</li>
+<li class="">Marca las casillas junto a los resultados que deseas analizar</li>
+<li class="">Haz clic en el botón <strong>AI Analyze</strong></li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-2-configure-analysis">Step 2: Configure Analysis<a href="#step-2-configure-analysis" class="hash-link" aria-label="Enlace directo al Step 2: Configure Analysis" title="Enlace directo al Step 2: Configure Analysis" translate="no">​</a></h3>
-<ul>
-<li class=""><strong>Industry Classification</strong>: Categorize businesses by industry</li>
-<li class=""><strong>Lead Scoring</strong>: Rate lead quality (0-100)</li>
-<li class=""><strong>Business Context</strong>: Extract business information</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-3-monitor-progress">Step 3: Monitor Progress<a href="#step-3-monitor-progress" class="hash-link" aria-label="Enlace directo al Step 3: Monitor Progress" title="Enlace directo al Step 3: Monitor Progress" translate="no">​</a></h3>
-<ul>
-<li class="">Progress bar shows completion status</li>
-<li class="">Results update in real-time</li>
-<li class="">AI Match Score indicates lead quality</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-4-filter-by-score">Step 4: Filter by Score<a href="#step-4-filter-by-score" class="hash-link" aria-label="Enlace directo al Step 4: Filter by Score" title="Enlace directo al Step 4: Filter by Score" translate="no">​</a></h3>
-<p>After analysis:</p>
-<ul>
-<li class="">Use the AI Match Score to prioritize leads</li>
-<li class="">Filter results by industry</li>
-<li class="">Focus on high-score leads for outreach</li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="email-extraction-from-search-results">Email Extraction from Search Results<a href="#email-extraction-from-search-results" class="hash-link" aria-label="Enlace directo al Email Extraction from Search Results" title="Enlace directo al Email Extraction from Search Results" translate="no">​</a></h2>
-<p>Extract emails directly from your search results:</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-1-select-results-1">Step 1: Select Results<a href="#step-1-select-results-1" class="hash-link" aria-label="Enlace directo al Step 1: Select Results" title="Enlace directo al Step 1: Select Results" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="paso-2-proporcionar-contexto-empresarial">Paso 2: Proporcionar contexto empresarial<a href="#paso-2-proporcionar-contexto-empresarial" class="hash-link" aria-label="Enlace directo al Paso 2: Proporcionar contexto empresarial" title="Enlace directo al Paso 2: Proporcionar contexto empresarial" translate="no">​</a></h3>
+<p>Aparecerá un diálogo solicitando tu información empresarial:</p>
 <ol>
-<li class="">Check boxes next to results containing URLs you want to extract emails from</li>
-<li class="">Click <strong>Extract Emails</strong> button</li>
+<li class=""><strong>Introduce la descripción de tu negocio</strong> en el área de texto — esto ayuda a la IA a entender qué tipo de leads estás buscando</li>
+<li class=""><strong>Guardar para futuro</strong> (opcional): Marca esta casilla para guardar tu descripción de negocio para análisis futuros</li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-2-configure-extraction">Step 2: Configure Extraction<a href="#step-2-configure-extraction" class="hash-link" aria-label="Enlace directo al Step 2: Configure Extraction" title="Enlace directo al Step 2: Configure Extraction" translate="no">​</a></h3>
-<p>The selected URLs are automatically passed to the <a class="" href="/aiFetchly/es/docs/lead-generation/contact-extraction">Email Extraction</a> feature.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-3-view-extracted-emails">Step 3: View Extracted Emails<a href="#step-3-view-extracted-emails" class="hash-link" aria-label="Enlace directo al Step 3: View Extracted Emails" title="Enlace directo al Step 3: View Extracted Emails" translate="no">​</a></h3>
-<p>Navigate to the Email Extraction section to view collected emails.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="exporting-search-results">Exporting Search Results<a href="#exporting-search-results" class="hash-link" aria-label="Enlace directo al Exporting Search Results" title="Enlace directo al Exporting Search Results" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="export-as-csv">Export as CSV<a href="#export-as-csv" class="hash-link" aria-label="Enlace directo al Export as CSV" title="Enlace directo al Export as CSV" translate="no">​</a></h3>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Contexto empresarial</div><div class="admonitionContent_BuS1"><p>Proporciona una descripción clara y específica de tu negocio y clientes objetivo. Cuanto más contexto proporciones, más precisa será la puntuación de la IA. Por ejemplo: &quot;Somos una empresa B2B SaaS que vende herramientas de automatización de marketing a pequeñas y medianas empresas del sector retail.&quot;</p></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="paso-3-revisar-resultados-del-análisis">Paso 3: Revisar resultados del análisis<a href="#paso-3-revisar-resultados-del-análisis" class="hash-link" aria-label="Enlace directo al Paso 3: Revisar resultados del análisis" title="Enlace directo al Paso 3: Revisar resultados del análisis" translate="no">​</a></h3>
+<p>La IA produce lo siguiente para cada resultado analizado:</p>
+<table><thead><tr><th>Campo</th><th>Descripción</th></tr></thead><tbody><tr><td><strong>Customer Industry</strong></td><td>Categoría de industria clasificada por IA</td></tr><tr><td><strong>Probability</strong></td><td>Puntuación de calidad del lead de 0-100%</td></tr><tr><td><strong>AI Reasoning</strong></td><td>Explicación de por qué este lead recibió esta puntuación</td></tr><tr><td><strong>Client Business</strong></td><td>Tipo de negocio identificado del sitio web</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="paso-4-monitorear-progreso">Paso 4: Monitorear progreso<a href="#paso-4-monitorear-progreso" class="hash-link" aria-label="Enlace directo al Paso 4: Monitorear progreso" title="Enlace directo al Paso 4: Monitorear progreso" translate="no">​</a></h3>
+<ul>
+<li class="">La barra de progreso muestra el estado de finalización de las operaciones por lotes</li>
+<li class="">Los resultados se actualizan en tiempo real a medida que se analiza cada sitio web</li>
+<li class="">El estado de análisis rastrea cada resultado: pending → analyzing → completed/failed</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="paso-5-filtrar-por-puntuación">Paso 5: Filtrar por puntuación<a href="#paso-5-filtrar-por-puntuación" class="hash-link" aria-label="Enlace directo al Paso 5: Filtrar por puntuación" title="Enlace directo al Paso 5: Filtrar por puntuación" translate="no">​</a></h3>
+<p>Después del análisis:</p>
+<ul>
+<li class="">Usa la puntuación de probabilidad para priorizar leads</li>
+<li class="">Concéntrate en leads con puntuación de 70%+ para comunicación</li>
+<li class="">Filtra resultados por clasificación de industria</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="extracción-de-información-de-contacto-con-ia">Extracción de información de contacto con IA<a href="#extracción-de-información-de-contacto-con-ia" class="hash-link" aria-label="Enlace directo al Extracción de información de contacto con IA" title="Enlace directo al Extracción de información de contacto con IA" translate="no">​</a></h2>
+<p>Extrae detalles de contacto directamente de tus resultados de búsqueda usando IA:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="paso-1-seleccionar-resultados-1">Paso 1: Seleccionar resultados<a href="#paso-1-seleccionar-resultados-1" class="hash-link" aria-label="Enlace directo al Paso 1: Seleccionar resultados" title="Enlace directo al Paso 1: Seleccionar resultados" translate="no">​</a></h3>
 <ol>
-<li class="">Select results you want to export (or leave blank for all)</li>
-<li class="">Click <strong>Export</strong> → <strong>CSV</strong></li>
-<li class="">Choose save location</li>
-<li class="">File includes all columns from the results table</li>
+<li class="">Marca las casillas junto a los resultados de los que deseas extraer información de contacto</li>
+<li class="">Haz clic en el botón <strong>AI Extract Contact Info</strong></li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="export-error-logs">Export Error Logs<a href="#export-error-logs" class="hash-link" aria-label="Enlace directo al Export Error Logs" title="Enlace directo al Export Error Logs" translate="no">​</a></h3>
-<p>If a task fails:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="paso-2-monitorear-extracción">Paso 2: Monitorear extracción<a href="#paso-2-monitorear-extracción" class="hash-link" aria-label="Enlace directo al Paso 2: Monitorear extracción" title="Enlace directo al Paso 2: Monitorear extracción" translate="no">​</a></h3>
+<ul>
+<li class="">El sistema visita cada URL seleccionada y extrae información de contacto</li>
+<li class="">La extracción se ejecuta en segundo plano con actualizaciones de progreso en tiempo real</li>
+<li class="">El estado rastrea cada resultado: pending → analyzing → completed/failed</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="paso-3-ver-contactos-extraídos">Paso 3: Ver contactos extraídos<a href="#paso-3-ver-contactos-extraídos" class="hash-link" aria-label="Enlace directo al Paso 3: Ver contactos extraídos" title="Enlace directo al Paso 3: Ver contactos extraídos" translate="no">​</a></h3>
+<p>La información extraída se muestra directamente en la tabla de resultados:</p>
+<table><thead><tr><th>Campo</th><th>Descripción</th></tr></thead><tbody><tr><td><strong>Email</strong></td><td>Direcciones de correo extraídas</td></tr><tr><td><strong>Phone</strong></td><td>Números de teléfono extraídos</td></tr><tr><td><strong>Address</strong></td><td>Direcciones físicas extraídas</td></tr></tbody></table>
+<p>Puedes copiar campos de contacto individuales directamente desde la tabla usando los botones de copia.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="extracción-de-correos-desde-resultados-de-búsqueda">Extracción de correos desde resultados de búsqueda<a href="#extracción-de-correos-desde-resultados-de-búsqueda" class="hash-link" aria-label="Enlace directo al Extracción de correos desde resultados de búsqueda" title="Enlace directo al Extracción de correos desde resultados de búsqueda" translate="no">​</a></h2>
+<p>Extrae correos directamente de tus resultados de búsqueda:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="paso-1-seleccionar-resultados-2">Paso 1: Seleccionar resultados<a href="#paso-1-seleccionar-resultados-2" class="hash-link" aria-label="Enlace directo al Paso 1: Seleccionar resultados" title="Enlace directo al Paso 1: Seleccionar resultados" translate="no">​</a></h3>
 <ol>
-<li class="">Go to <strong>Search</strong> → <strong>Result List</strong></li>
-<li class="">Find the failed task</li>
-<li class="">Click <strong>Download Logs</strong></li>
-<li class="">Review logs to diagnose issues</li>
+<li class="">Marca las casillas junto a los resultados que contienen URL de las que deseas extraer correos</li>
+<li class="">Haz clic en el botón <strong>Extract Emails</strong></li>
 </ol>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="best-practices">Best Practices<a href="#best-practices" class="hash-link" aria-label="Enlace directo al Best Practices" title="Enlace directo al Best Practices" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-start-small">1. Start Small<a href="#1-start-small" class="hash-link" aria-label="Enlace directo al 1. Start Small" title="Enlace directo al 1. Start Small" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="paso-2-configurar-extracción">Paso 2: Configurar extracción<a href="#paso-2-configurar-extracción" class="hash-link" aria-label="Enlace directo al Paso 2: Configurar extracción" title="Enlace directo al Paso 2: Configurar extracción" translate="no">​</a></h3>
+<p>Las URL seleccionadas se transfieren automáticamente a la función de <a class="" href="/aiFetchly/es/docs/lead-generation/contact-extraction">Extracción de correos</a>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="paso-3-ver-correos-extraídos">Paso 3: Ver correos extraídos<a href="#paso-3-ver-correos-extraídos" class="hash-link" aria-label="Enlace directo al Paso 3: Ver correos extraídos" title="Enlace directo al Paso 3: Ver correos extraídos" translate="no">​</a></h3>
+<p>Navega a la sección de Extracción de correos para ver los correos recopilados.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="exportar-resultados-de-búsqueda">Exportar resultados de búsqueda<a href="#exportar-resultados-de-búsqueda" class="hash-link" aria-label="Enlace directo al Exportar resultados de búsqueda" title="Enlace directo al Exportar resultados de búsqueda" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="exportar-como-csv">Exportar como CSV<a href="#exportar-como-csv" class="hash-link" aria-label="Enlace directo al Exportar como CSV" title="Enlace directo al Exportar como CSV" translate="no">​</a></h3>
+<ol>
+<li class="">Selecciona los resultados que deseas exportar (o deja en blanco para todos)</li>
+<li class="">Haz clic en <strong>Export</strong> → <strong>CSV</strong></li>
+<li class="">Elige la ubicación de guardado</li>
+<li class="">El archivo incluye todas las columnas de la tabla de resultados, incluyendo campos de análisis de IA (industria, puntuación, razonamiento) e información de contacto (correo, teléfono, dirección)</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="exportar-registros-de-errores">Exportar registros de errores<a href="#exportar-registros-de-errores" class="hash-link" aria-label="Enlace directo al Exportar registros de errores" title="Enlace directo al Exportar registros de errores" translate="no">​</a></h3>
+<p>Si una tarea falla:</p>
+<ol>
+<li class="">Ve a <strong>Search</strong> → <strong>Result List</strong></li>
+<li class="">Encuentra la tarea fallida</li>
+<li class="">Haz clic en <strong>Download Logs</strong></li>
+<li class="">Revisa los registros para diagnosticar problemas</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="mejores-prácticas">Mejores prácticas<a href="#mejores-prácticas" class="hash-link" aria-label="Enlace directo al Mejores prácticas" title="Enlace directo al Mejores prácticas" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-comienza-en-pequeño">1. Comienza en pequeño<a href="#1-comienza-en-pequeño" class="hash-link" aria-label="Enlace directo al 1. Comienza en pequeño" title="Enlace directo al 1. Comienza en pequeño" translate="no">​</a></h3>
 <ul>
-<li class="">Begin with 5-10 keywords</li>
-<li class="">Use low concurrency (1-3)</li>
-<li class="">Monitor results before scaling up</li>
+<li class="">Comienza con 5-10 palabras clave</li>
+<li class="">Usa baja concurrencia (1-3)</li>
+<li class="">Monitorea los resultados antes de escalar</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-use-proxies">2. Use Proxies<a href="#2-use-proxies" class="hash-link" aria-label="Enlace directo al 2. Use Proxies" title="Enlace directo al 2. Use Proxies" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-usa-proxies">2. Usa proxies<a href="#2-usa-proxies" class="hash-link" aria-label="Enlace directo al 2. Usa proxies" title="Enlace directo al 2. Usa proxies" translate="no">​</a></h3>
 <ul>
-<li class="">Always use proxies for more than 10 pages</li>
-<li class="">Rotate proxies to distribute load</li>
-<li class="">Test proxies before running large tasks</li>
+<li class="">Siempre usa proxies para más de 10 páginas</li>
+<li class="">Rota los proxies para distribuir la carga</li>
+<li class="">Prueba los proxies antes de ejecutar tareas grandes</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-leverage-ai-features">3. Leverage AI Features<a href="#3-leverage-ai-features" class="hash-link" aria-label="Enlace directo al 3. Leverage AI Features" title="Enlace directo al 3. Leverage AI Features" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-aprovecha-las-funciones-de-ia">3. Aprovecha las funciones de IA<a href="#3-aprovecha-las-funciones-de-ia" class="hash-link" aria-label="Enlace directo al 3. Aprovecha las funciones de IA" title="Enlace directo al 3. Aprovecha las funciones de IA" translate="no">​</a></h3>
 <ul>
-<li class="">Use keyword generation to expand coverage</li>
-<li class="">Run AI analysis to score leads</li>
-<li class="">Focus on high-score results for outreach</li>
+<li class="">Usa la generación de palabras clave para ampliar la cobertura</li>
+<li class="">Proporciona un contexto empresarial claro para una puntuación de IA más precisa</li>
+<li class="">Ejecuta análisis de IA para puntuar y clasificar leads</li>
+<li class="">Usa la extracción de contactos por IA para obtener correo, teléfono y dirección</li>
+<li class="">Concéntrate en resultados con puntuación alta para comunicación</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-engine-specific-tips">4. Engine-Specific Tips<a href="#4-engine-specific-tips" class="hash-link" aria-label="Enlace directo al 4. Engine-Specific Tips" title="Enlace directo al 4. Engine-Specific Tips" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-consejos-específicos-por-motor">4. Consejos específicos por motor<a href="#4-consejos-específicos-por-motor" class="hash-link" aria-label="Enlace directo al 4. Consejos específicos por motor" title="Enlace directo al 4. Consejos específicos por motor" translate="no">​</a></h3>
 <p><strong>Google:</strong></p>
 <ul>
-<li class="">Use authenticated accounts</li>
-<li class="">Enable local browser for large tasks</li>
-<li class="">Respect rate limits (start with 1 concurrent)</li>
+<li class="">Usa cuentas autenticadas</li>
+<li class="">Habilita el navegador local para tareas grandes</li>
+<li class="">Habilita la recuperación por IA para un manejo robusto de errores</li>
+<li class="">Respeta los límites de velocidad (comienza con 1 concurrente)</li>
 </ul>
 <p><strong>Bing:</strong></p>
 <ul>
-<li class="">More forgiving than Google</li>
-<li class="">Can use higher concurrency</li>
-<li class="">Good for US-focused searches</li>
+<li class="">Más tolerante que Google</li>
+<li class="">Puede usar mayor concurrencia</li>
+<li class="">Bueno para búsquedas enfocadas en EE.UU.</li>
 </ul>
 <p><strong>Yandex:</strong></p>
 <ul>
-<li class=""><strong>Must use local browser</strong></li>
-<li class="">Use accounts for better access</li>
-<li class="">Essential for Russian/Cyrillic content</li>
+<li class=""><strong>Debe usar navegador local</strong></li>
+<li class="">Usa cuentas para mejor acceso</li>
+<li class="">Esencial para contenido ruso/cirílico</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="5-monitor-task-status">5. Monitor Task Status<a href="#5-monitor-task-status" class="hash-link" aria-label="Enlace directo al 5. Monitor Task Status" title="Enlace directo al 5. Monitor Task Status" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="5-monitorea-el-estado-de-las-tareas">5. Monitorea el estado de las tareas<a href="#5-monitorea-el-estado-de-las-tareas" class="hash-link" aria-label="Enlace directo al 5. Monitorea el estado de las tareas" title="Enlace directo al 5. Monitorea el estado de las tareas" translate="no">​</a></h3>
 <ul>
-<li class="">Check task list regularly</li>
-<li class="">Review error logs for failures</li>
-<li class="">Adjust settings based on results</li>
+<li class="">Revisa la lista de tareas regularmente</li>
+<li class="">Revisa los registros de errores para fallos</li>
+<li class="">Ajusta los ajustes según los resultados</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="6-organize-results">6. Organize Results<a href="#6-organize-results" class="hash-link" aria-label="Enlace directo al 6. Organize Results" title="Enlace directo al 6. Organize Results" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="6-organiza-los-resultados">6. Organiza los resultados<a href="#6-organiza-los-resultados" class="hash-link" aria-label="Enlace directo al 6. Organiza los resultados" title="Enlace directo al 6. Organiza los resultados" translate="no">​</a></h3>
 <ul>
-<li class="">Use descriptive task names</li>
-<li class="">Export results regularly</li>
-<li class="">Clean up old tasks</li>
+<li class="">Usa nombres descriptivos para las tareas</li>
+<li class="">Exporta los resultados regularmente</li>
+<li class="">Limpia tareas antiguas</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="troubleshooting">Troubleshooting<a href="#troubleshooting" class="hash-link" aria-label="Enlace directo al Troubleshooting" title="Enlace directo al Troubleshooting" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="task-status-error">Task Status: &quot;Error&quot;<a href="#task-status-error" class="hash-link" aria-label="Enlace directo al Task Status: &quot;Error&quot;" title="Enlace directo al Task Status: &quot;Error&quot;" translate="no">​</a></h3>
-<p><strong>Possible causes:</strong></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="solución-de-problemas">Solución de problemas<a href="#solución-de-problemas" class="hash-link" aria-label="Enlace directo al Solución de problemas" title="Enlace directo al Solución de problemas" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="estado-de-la-tarea-error">Estado de la tarea: &quot;Error&quot;<a href="#estado-de-la-tarea-error" class="hash-link" aria-label="Enlace directo al Estado de la tarea: &quot;Error&quot;" title="Enlace directo al Estado de la tarea: &quot;Error&quot;" translate="no">​</a></h3>
+<p><strong>Posibles causas:</strong></p>
 <ul>
-<li class="">All proxies failed</li>
-<li class="">Network connectivity issues</li>
-<li class="">Search engine blocked requests</li>
+<li class="">Todos los proxies fallaron</li>
+<li class="">Problemas de conectividad de red</li>
+<li class="">El motor de búsqueda bloqueó las solicitudes</li>
 </ul>
-<p><strong>Solutions:</strong></p>
+<p><strong>Soluciones:</strong></p>
 <ol>
-<li class="">Check proxy health in Proxy section</li>
-<li class="">Verify internet connection</li>
-<li class="">Reduce concurrency</li>
-<li class="">Enable local browser</li>
-<li class="">Use authenticated accounts</li>
+<li class="">Comprueba la salud de los proxies en la sección de Proxy</li>
+<li class="">Verifica la conexión a internet</li>
+<li class="">Reduce la concurrencia</li>
+<li class="">Habilita el navegador local</li>
+<li class="">Usa cuentas autenticadas</li>
+<li class="">Habilita la recuperación por IA para el manejo automático de errores</li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="no-results-returned">No Results Returned<a href="#no-results-returned" class="hash-link" aria-label="Enlace directo al No Results Returned" title="Enlace directo al No Results Returned" translate="no">​</a></h3>
-<p><strong>Possible causes:</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="no-se-devolvieron-resultados">No se devolvieron resultados<a href="#no-se-devolvieron-resultados" class="hash-link" aria-label="Enlace directo al No se devolvieron resultados" title="Enlace directo al No se devolvieron resultados" translate="no">​</a></h3>
+<p><strong>Posibles causas:</strong></p>
 <ul>
-<li class="">Keywords too specific</li>
-<li class="">Search engine returned no results</li>
-<li class="">Pagination out of range</li>
+<li class="">Palabras clave demasiado específicas</li>
+<li class="">El motor de búsqueda no devolvió resultados</li>
+<li class="">Paginación fuera de rango</li>
 </ul>
-<p><strong>Solutions:</strong></p>
+<p><strong>Soluciones:</strong></p>
 <ol>
-<li class="">Try broader keywords</li>
-<li class="">Start from page 1</li>
-<li class="">Verify keywords work in manual search</li>
+<li class="">Prueba con palabras clave más amplias</li>
+<li class="">Comienza desde la página 1</li>
+<li class="">Verifica que las palabras clave funcionen en una búsqueda manual</li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="slow-processing">Slow Processing<a href="#slow-processing" class="hash-link" aria-label="Enlace directo al Slow Processing" title="Enlace directo al Slow Processing" translate="no">​</a></h3>
-<p><strong>Possible causes:</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="procesamiento-lento">Procesamiento lento<a href="#procesamiento-lento" class="hash-link" aria-label="Enlace directo al Procesamiento lento" title="Enlace directo al Procesamiento lento" translate="no">​</a></h3>
+<p><strong>Posibles causas:</strong></p>
 <ul>
-<li class="">High concurrency without enough proxies</li>
-<li class="">Local browser enabled (slower but safer)</li>
-<li class="">Network latency</li>
+<li class="">Alta concurrencia sin suficientes proxies</li>
+<li class="">Navegador local habilitado (más lento pero más seguro)</li>
+<li class="">Latencia de red</li>
 </ul>
-<p><strong>Solutions:</strong></p>
+<p><strong>Soluciones:</strong></p>
 <ol>
-<li class="">Add more proxies</li>
-<li class="">Reduce concurrency</li>
-<li class="">Consider disabling local browser for speed (with caution)</li>
+<li class="">Añade más proxies</li>
+<li class="">Reduce la concurrencia</li>
+<li class="">Considera deshabilitar el navegador local para velocidad (con precaución)</li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="captcha-or-block-detected">Captcha or Block Detected<a href="#captcha-or-block-detected" class="hash-link" aria-label="Enlace directo al Captcha or Block Detected" title="Enlace directo al Captcha or Block Detected" translate="no">​</a></h3>
-<p><strong>Solutions:</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="captcha-o-bloqueo-detectado">Captcha o bloqueo detectado<a href="#captcha-o-bloqueo-detectado" class="hash-link" aria-label="Enlace directo al Captcha o bloqueo detectado" title="Enlace directo al Captcha o bloqueo detectado" translate="no">​</a></h3>
+<p><strong>Soluciones:</strong></p>
 <ol>
-<li class="">Enable local browser integration</li>
-<li class="">Use authenticated accounts</li>
-<li class="">Add more proxies</li>
-<li class="">Reduce request frequency</li>
-<li class="">Take breaks between large tasks</li>
+<li class="">Habilita la integración con navegador local</li>
+<li class="">Usa cuentas autenticadas</li>
+<li class="">Añade más proxies</li>
+<li class="">Reduce la frecuencia de solicitudes</li>
+<li class="">Toma descansos entre tareas grandes</li>
+<li class="">Habilita la recuperación por IA para manejar bloqueos automáticamente</li>
 </ol>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="advanced-workflows">Advanced Workflows<a href="#advanced-workflows" class="hash-link" aria-label="Enlace directo al Advanced Workflows" title="Enlace directo al Advanced Workflows" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflow-1-comprehensive-lead-generation">Workflow 1: Comprehensive Lead Generation<a href="#workflow-1-comprehensive-lead-generation" class="hash-link" aria-label="Enlace directo al Workflow 1: Comprehensive Lead Generation" title="Enlace directo al Workflow 1: Comprehensive Lead Generation" translate="no">​</a></h3>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="flujos-de-trabajo-avanzados">Flujos de trabajo avanzados<a href="#flujos-de-trabajo-avanzados" class="hash-link" aria-label="Enlace directo al Flujos de trabajo avanzados" title="Enlace directo al Flujos de trabajo avanzados" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="flujo-de-trabajo-1-generación-integral-de-leads">Flujo de trabajo 1: Generación integral de leads<a href="#flujo-de-trabajo-1-generación-integral-de-leads" class="hash-link" aria-label="Enlace directo al Flujo de trabajo 1: Generación integral de leads" title="Enlace directo al Flujo de trabajo 1: Generación integral de leads" translate="no">​</a></h3>
 <ol>
-<li class=""><strong>Create search task</strong> with broad keywords</li>
-<li class=""><strong>Generate related keywords</strong> using AI</li>
-<li class=""><strong>Run with moderate concurrency</strong> (3-5)</li>
-<li class=""><strong>AI analyze</strong> all results</li>
-<li class=""><strong>Filter by match score</strong> (focus on 70+)</li>
-<li class=""><strong>Extract emails</strong> from high-score results</li>
-<li class=""><strong>Export</strong> for email campaigns</li>
+<li class=""><strong>Crea tarea de búsqueda</strong> con palabras clave amplias</li>
+<li class=""><strong>Genera palabras clave relacionadas</strong> usando IA</li>
+<li class=""><strong>Ejecuta con concurrencia moderada</strong> (3-5)</li>
+<li class=""><strong>Habilita recuperación por IA</strong> para manejo robusto de errores</li>
+<li class=""><strong>Analiza con IA</strong> todos los resultados con tu contexto empresarial</li>
+<li class=""><strong>Filtra por puntuación de probabilidad</strong> (concéntrate en 70%+)</li>
+<li class=""><strong>Extrae contactos con IA</strong> de los resultados con puntuación alta</li>
+<li class=""><strong>Exporta</strong> para campañas de correo</li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflow-2-competitive-analysis">Workflow 2: Competitive Analysis<a href="#workflow-2-competitive-analysis" class="hash-link" aria-label="Enlace directo al Workflow 2: Competitive Analysis" title="Enlace directo al Workflow 2: Competitive Analysis" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="flujo-de-trabajo-2-análisis-competitivo">Flujo de trabajo 2: Análisis competitivo<a href="#flujo-de-trabajo-2-análisis-competitivo" class="hash-link" aria-label="Enlace directo al Flujo de trabajo 2: Análisis competitivo" title="Enlace directo al Flujo de trabajo 2: Análisis competitivo" translate="no">​</a></h3>
 <ol>
-<li class=""><strong>Search competitor names</strong> + industry keywords</li>
-<li class=""><strong>Use local browser</strong> to avoid detection</li>
-<li class=""><strong>AI analyze</strong> for industry classification</li>
-<li class=""><strong>Export</strong> for market research</li>
+<li class=""><strong>Busca nombres de competidores</strong> + palabras clave de la industria</li>
+<li class=""><strong>Usa navegador local</strong> para evitar detección</li>
+<li class=""><strong>Analiza con IA</strong> para clasificación de industria</li>
+<li class=""><strong>Exporta</strong> para investigación de mercado</li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflow-3-local-business-discovery">Workflow 3: Local Business Discovery<a href="#workflow-3-local-business-discovery" class="hash-link" aria-label="Enlace directo al Workflow 3: Local Business Discovery" title="Enlace directo al Workflow 3: Local Business Discovery" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="flujo-de-trabajo-3-descubrimiento-de-negocios-locales">Flujo de trabajo 3: Descubrimiento de negocios locales<a href="#flujo-de-trabajo-3-descubrimiento-de-negocios-locales" class="hash-link" aria-label="Enlace directo al Flujo de trabajo 3: Descubrimiento de negocios locales" title="Enlace directo al Flujo de trabajo 3: Descubrimiento de negocios locales" translate="no">​</a></h3>
 <ol>
-<li class=""><strong>Search local keywords</strong> (e.g., &quot;plumbers in Chicago&quot;)</li>
-<li class=""><strong>Extract emails</strong> from results</li>
-<li class=""><strong>Batch analyze</strong> websites</li>
-<li class=""><strong>Create targeted outreach</strong> campaigns</li>
+<li class=""><strong>Busca palabras clave locales</strong> (ej., &quot;plomeros en Chicago&quot;)</li>
+<li class=""><strong>Extrae contactos con IA</strong> de los resultados (correo, teléfono, dirección)</li>
+<li class=""><strong>Analiza por lotes</strong> los sitios web con tu contexto empresarial</li>
+<li class=""><strong>Crea campañas</strong> de comunicación dirigidas</li>
 </ol>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="integration-with-other-features">Integration with Other Features<a href="#integration-with-other-features" class="hash-link" aria-label="Enlace directo al Integration with Other Features" title="Enlace directo al Integration with Other Features" translate="no">​</a></h2>
-<p>Search results integrate seamlessly with:</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="integración-con-otras-funciones">Integración con otras funciones<a href="#integración-con-otras-funciones" class="hash-link" aria-label="Enlace directo al Integración con otras funciones" title="Enlace directo al Integración con otras funciones" translate="no">​</a></h2>
+<p>Los resultados de búsqueda se integran perfectamente con:</p>
 <ul>
-<li class=""><strong><a class="" href="/aiFetchly/es/docs/lead-generation/contact-extraction">Contact Extraction</a></strong> - Extract emails from URLs</li>
-<li class=""><strong><a class="" href="/aiFetchly/es/docs/lead-generation/yellow-pages">Yellow Pages</a></strong> - Cross-reference with directory listings</li>
-<li class=""><strong><a class="" href="/aiFetchly/es/docs/ai-outreach/ai-email-writer">AI Email Writer</a></strong> - Create personalized outreach</li>
-<li class=""><strong><a class="" href="/aiFetchly/es/docs/lead-generation/batch-email-sending">Batch Email Sending</a></strong> - Launch campaigns</li>
+<li class=""><strong><a class="" href="/aiFetchly/es/docs/lead-generation/contact-extraction">Extracción de contactos</a></strong> - Extrae correos de URL</li>
+<li class=""><strong><a class="" href="/aiFetchly/es/docs/lead-generation/yellow-pages">Páginas amarillas</a></strong> - Referencia cruzada con listados de directorios</li>
+<li class=""><strong><a class="" href="/aiFetchly/es/docs/ai-outreach/ai-email-writer">AI Email Writer</a></strong> - Crea comunicaciones personalizadas</li>
+<li class=""><strong><a class="" href="/aiFetchly/es/docs/lead-generation/batch-email-sending">Envío masivo de correos</a></strong> - Lanza campañas</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="next-steps">Next Steps<a href="#next-steps" class="hash-link" aria-label="Enlace directo al Next Steps" title="Enlace directo al Next Steps" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="próximos-pasos">Próximos pasos<a href="#próximos-pasos" class="hash-link" aria-label="Enlace directo al Próximos pasos" title="Enlace directo al Próximos pasos" translate="no">​</a></h2>
 <ul>
-<li class=""><a class="" href="/aiFetchly/es/docs/lead-generation/yellow-pages">Learn about Yellow Pages scraping</a></li>
-<li class=""><a class="" href="/aiFetchly/es/docs/lead-generation/contact-extraction">Set up contact extraction</a></li>
-<li class=""><a class="" href="/aiFetchly/es/docs/ai-outreach/ai-email-writer">Create AI-powered email campaigns</a></li>
+<li class=""><a class="" href="/aiFetchly/es/docs/lead-generation/yellow-pages">Conoce la extracción de Páginas amarillas</a></li>
+<li class=""><a class="" href="/aiFetchly/es/docs/lead-generation/contact-extraction">Configura la extracción de contactos</a></li>
+<li class=""><a class="" href="/aiFetchly/es/docs/ai-outreach/ai-email-writer">Crea campañas de correo impulsadas por IA</a></li>
 </ul>
 <hr>
-<p><strong>Ready to find leads?</strong> Start with a small search task and scale up as you become familiar with the system.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Página del documento"><a class="pagination-nav__link pagination-nav__link--prev" href="/aiFetchly/es/docs/getting-started/proxy-setup"><div class="pagination-nav__sublabel">Anterior</div><div class="pagination-nav__label">Configuración de Proxy</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/aiFetchly/es/docs/lead-generation/yellow-pages"><div class="pagination-nav__sublabel">Siguiente</div><div class="pagination-nav__label">Yellow Pages</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#supported-search-engines" class="table-of-contents__link toc-highlight">Supported Search Engines</a></li><li><a href="#creating-a-search-task" class="table-of-contents__link toc-highlight">Creating a Search Task</a><ul><li><a href="#step-1-navigate-to-search" class="table-of-contents__link toc-highlight">Step 1: Navigate to Search</a></li><li><a href="#step-2-basic-search-configuration" class="table-of-contents__link toc-highlight">Step 2: Basic Search Configuration</a></li><li><a href="#step-3-advanced-options" class="table-of-contents__link toc-highlight">Step 3: Advanced Options</a></li><li><a href="#step-4-execute-or-save" class="table-of-contents__link toc-highlight">Step 4: Execute or Save</a></li></ul></li><li><a href="#managing-search-tasks" class="table-of-contents__link toc-highlight">Managing Search Tasks</a><ul><li><a href="#view-task-list" class="table-of-contents__link toc-highlight">View Task List</a></li><li><a href="#task-actions" class="table-of-contents__link toc-highlight">Task Actions</a></li></ul></li><li><a href="#viewing-search-results" class="table-of-contents__link toc-highlight">Viewing Search Results</a><ul><li><a href="#step-1-open-results" class="table-of-contents__link toc-highlight">Step 1: Open Results</a></li><li><a href="#step-2-results-table" class="table-of-contents__link toc-highlight">Step 2: Results Table</a></li><li><a href="#step-3-interact-with-results" class="table-of-contents__link toc-highlight">Step 3: Interact with Results</a></li></ul></li><li><a href="#ai-website-analysis" class="table-of-contents__link toc-highlight">AI Website Analysis</a><ul><li><a href="#step-1-select-results" class="table-of-contents__link toc-highlight">Step 1: Select Results</a></li><li><a href="#step-2-configure-analysis" class="table-of-contents__link toc-highlight">Step 2: Configure Analysis</a></li><li><a href="#step-3-monitor-progress" class="table-of-contents__link toc-highlight">Step 3: Monitor Progress</a></li><li><a href="#step-4-filter-by-score" class="table-of-contents__link toc-highlight">Step 4: Filter by Score</a></li></ul></li><li><a href="#email-extraction-from-search-results" class="table-of-contents__link toc-highlight">Email Extraction from Search Results</a><ul><li><a href="#step-1-select-results-1" class="table-of-contents__link toc-highlight">Step 1: Select Results</a></li><li><a href="#step-2-configure-extraction" class="table-of-contents__link toc-highlight">Step 2: Configure Extraction</a></li><li><a href="#step-3-view-extracted-emails" class="table-of-contents__link toc-highlight">Step 3: View Extracted Emails</a></li></ul></li><li><a href="#exporting-search-results" class="table-of-contents__link toc-highlight">Exporting Search Results</a><ul><li><a href="#export-as-csv" class="table-of-contents__link toc-highlight">Export as CSV</a></li><li><a href="#export-error-logs" class="table-of-contents__link toc-highlight">Export Error Logs</a></li></ul></li><li><a href="#best-practices" class="table-of-contents__link toc-highlight">Best Practices</a><ul><li><a href="#1-start-small" class="table-of-contents__link toc-highlight">1. Start Small</a></li><li><a href="#2-use-proxies" class="table-of-contents__link toc-highlight">2. Use Proxies</a></li><li><a href="#3-leverage-ai-features" class="table-of-contents__link toc-highlight">3. Leverage AI Features</a></li><li><a href="#4-engine-specific-tips" class="table-of-contents__link toc-highlight">4. Engine-Specific Tips</a></li><li><a href="#5-monitor-task-status" class="table-of-contents__link toc-highlight">5. Monitor Task Status</a></li><li><a href="#6-organize-results" class="table-of-contents__link toc-highlight">6. Organize Results</a></li></ul></li><li><a href="#troubleshooting" class="table-of-contents__link toc-highlight">Troubleshooting</a><ul><li><a href="#task-status-error" class="table-of-contents__link toc-highlight">Task Status: &quot;Error&quot;</a></li><li><a href="#no-results-returned" class="table-of-contents__link toc-highlight">No Results Returned</a></li><li><a href="#slow-processing" class="table-of-contents__link toc-highlight">Slow Processing</a></li><li><a href="#captcha-or-block-detected" class="table-of-contents__link toc-highlight">Captcha or Block Detected</a></li></ul></li><li><a href="#advanced-workflows" class="table-of-contents__link toc-highlight">Advanced Workflows</a><ul><li><a href="#workflow-1-comprehensive-lead-generation" class="table-of-contents__link toc-highlight">Workflow 1: Comprehensive Lead Generation</a></li><li><a href="#workflow-2-competitive-analysis" class="table-of-contents__link toc-highlight">Workflow 2: Competitive Analysis</a></li><li><a href="#workflow-3-local-business-discovery" class="table-of-contents__link toc-highlight">Workflow 3: Local Business Discovery</a></li></ul></li><li><a href="#integration-with-other-features" class="table-of-contents__link toc-highlight">Integration with Other Features</a></li><li><a href="#next-steps" class="table-of-contents__link toc-highlight">Next Steps</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Documentación</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/es/docs/getting-started/introduction">Primeros Pasos</a></li><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/es/docs/lead-generation/search-engines">Generación de Leads</a></li><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/es/docs/ai-outreach/knowledge-library">Contacto con IA</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Comunidad</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/aifetchly" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/aifetchly" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Más</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/robertzengcn/aiFetchly" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 aiFetchly. Construido con Docusaurus.</div></div></div></footer></div>
+<p><strong>¿Listo para encontrar leads?</strong> Comienza con una tarea de búsqueda pequeña y escala a medida que te familiarices con el sistema.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Página del documento"><a class="pagination-nav__link pagination-nav__link--prev" href="/aiFetchly/es/docs/getting-started/proxy-setup"><div class="pagination-nav__sublabel">Anterior</div><div class="pagination-nav__label">Configuración de Proxy</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/aiFetchly/es/docs/lead-generation/yellow-pages"><div class="pagination-nav__sublabel">Siguiente</div><div class="pagination-nav__label">Yellow Pages</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#motores-de-búsqueda-compatibles" class="table-of-contents__link toc-highlight">Motores de búsqueda compatibles</a></li><li><a href="#crear-una-tarea-de-búsqueda" class="table-of-contents__link toc-highlight">Crear una tarea de búsqueda</a><ul><li><a href="#paso-1-ir-a-búsqueda" class="table-of-contents__link toc-highlight">Paso 1: Ir a Búsqueda</a></li><li><a href="#paso-2-configuración-básica-de-búsqueda" class="table-of-contents__link toc-highlight">Paso 2: Configuración básica de búsqueda</a></li><li><a href="#paso-3-opciones-avanzadas" class="table-of-contents__link toc-highlight">Paso 3: Opciones avanzadas</a></li><li><a href="#paso-4-ejecutar-o-guardar" class="table-of-contents__link toc-highlight">Paso 4: Ejecutar o guardar</a></li></ul></li><li><a href="#gestión-de-tareas-de-búsqueda" class="table-of-contents__link toc-highlight">Gestión de tareas de búsqueda</a><ul><li><a href="#ver-lista-de-tareas" class="table-of-contents__link toc-highlight">Ver lista de tareas</a></li><li><a href="#acciones-de-tarea" class="table-of-contents__link toc-highlight">Acciones de tarea</a></li></ul></li><li><a href="#ver-resultados-de-búsqueda" class="table-of-contents__link toc-highlight">Ver resultados de búsqueda</a><ul><li><a href="#paso-1-abrir-resultados" class="table-of-contents__link toc-highlight">Paso 1: Abrir resultados</a></li><li><a href="#paso-2-tabla-de-resultados" class="table-of-contents__link toc-highlight">Paso 2: Tabla de resultados</a></li><li><a href="#paso-3-interactuar-con-los-resultados" class="table-of-contents__link toc-highlight">Paso 3: Interactuar con los resultados</a></li></ul></li><li><a href="#análisis-de-sitios-web-con-ia" class="table-of-contents__link toc-highlight">Análisis de sitios web con IA</a><ul><li><a href="#paso-1-seleccionar-resultados" class="table-of-contents__link toc-highlight">Paso 1: Seleccionar resultados</a></li><li><a href="#paso-2-proporcionar-contexto-empresarial" class="table-of-contents__link toc-highlight">Paso 2: Proporcionar contexto empresarial</a></li><li><a href="#paso-3-revisar-resultados-del-análisis" class="table-of-contents__link toc-highlight">Paso 3: Revisar resultados del análisis</a></li><li><a href="#paso-4-monitorear-progreso" class="table-of-contents__link toc-highlight">Paso 4: Monitorear progreso</a></li><li><a href="#paso-5-filtrar-por-puntuación" class="table-of-contents__link toc-highlight">Paso 5: Filtrar por puntuación</a></li></ul></li><li><a href="#extracción-de-información-de-contacto-con-ia" class="table-of-contents__link toc-highlight">Extracción de información de contacto con IA</a><ul><li><a href="#paso-1-seleccionar-resultados-1" class="table-of-contents__link toc-highlight">Paso 1: Seleccionar resultados</a></li><li><a href="#paso-2-monitorear-extracción" class="table-of-contents__link toc-highlight">Paso 2: Monitorear extracción</a></li><li><a href="#paso-3-ver-contactos-extraídos" class="table-of-contents__link toc-highlight">Paso 3: Ver contactos extraídos</a></li></ul></li><li><a href="#extracción-de-correos-desde-resultados-de-búsqueda" class="table-of-contents__link toc-highlight">Extracción de correos desde resultados de búsqueda</a><ul><li><a href="#paso-1-seleccionar-resultados-2" class="table-of-contents__link toc-highlight">Paso 1: Seleccionar resultados</a></li><li><a href="#paso-2-configurar-extracción" class="table-of-contents__link toc-highlight">Paso 2: Configurar extracción</a></li><li><a href="#paso-3-ver-correos-extraídos" class="table-of-contents__link toc-highlight">Paso 3: Ver correos extraídos</a></li></ul></li><li><a href="#exportar-resultados-de-búsqueda" class="table-of-contents__link toc-highlight">Exportar resultados de búsqueda</a><ul><li><a href="#exportar-como-csv" class="table-of-contents__link toc-highlight">Exportar como CSV</a></li><li><a href="#exportar-registros-de-errores" class="table-of-contents__link toc-highlight">Exportar registros de errores</a></li></ul></li><li><a href="#mejores-prácticas" class="table-of-contents__link toc-highlight">Mejores prácticas</a><ul><li><a href="#1-comienza-en-pequeño" class="table-of-contents__link toc-highlight">1. Comienza en pequeño</a></li><li><a href="#2-usa-proxies" class="table-of-contents__link toc-highlight">2. Usa proxies</a></li><li><a href="#3-aprovecha-las-funciones-de-ia" class="table-of-contents__link toc-highlight">3. Aprovecha las funciones de IA</a></li><li><a href="#4-consejos-específicos-por-motor" class="table-of-contents__link toc-highlight">4. Consejos específicos por motor</a></li><li><a href="#5-monitorea-el-estado-de-las-tareas" class="table-of-contents__link toc-highlight">5. Monitorea el estado de las tareas</a></li><li><a href="#6-organiza-los-resultados" class="table-of-contents__link toc-highlight">6. Organiza los resultados</a></li></ul></li><li><a href="#solución-de-problemas" class="table-of-contents__link toc-highlight">Solución de problemas</a><ul><li><a href="#estado-de-la-tarea-error" class="table-of-contents__link toc-highlight">Estado de la tarea: &quot;Error&quot;</a></li><li><a href="#no-se-devolvieron-resultados" class="table-of-contents__link toc-highlight">No se devolvieron resultados</a></li><li><a href="#procesamiento-lento" class="table-of-contents__link toc-highlight">Procesamiento lento</a></li><li><a href="#captcha-o-bloqueo-detectado" class="table-of-contents__link toc-highlight">Captcha o bloqueo detectado</a></li></ul></li><li><a href="#flujos-de-trabajo-avanzados" class="table-of-contents__link toc-highlight">Flujos de trabajo avanzados</a><ul><li><a href="#flujo-de-trabajo-1-generación-integral-de-leads" class="table-of-contents__link toc-highlight">Flujo de trabajo 1: Generación integral de leads</a></li><li><a href="#flujo-de-trabajo-2-análisis-competitivo" class="table-of-contents__link toc-highlight">Flujo de trabajo 2: Análisis competitivo</a></li><li><a href="#flujo-de-trabajo-3-descubrimiento-de-negocios-locales" class="table-of-contents__link toc-highlight">Flujo de trabajo 3: Descubrimiento de negocios locales</a></li></ul></li><li><a href="#integración-con-otras-funciones" class="table-of-contents__link toc-highlight">Integración con otras funciones</a></li><li><a href="#próximos-pasos" class="table-of-contents__link toc-highlight">Próximos pasos</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Documentación</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/es/docs/getting-started/introduction">Primeros Pasos</a></li><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/es/docs/lead-generation/search-engines">Generación de Leads</a></li><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/es/docs/ai-outreach/knowledge-library">Contacto con IA</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Comunidad</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/aifetchly" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/aifetchly" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Más</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/robertzengcn/aiFetchly" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 aiFetchly. Construido con Docusaurus.</div></div></div></footer></div>
 </body>
 </html>

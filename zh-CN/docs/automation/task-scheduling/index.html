@@ -3,399 +3,399 @@
 <head>
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.9.2">
-<title data-rh="true">Task Scheduling | aiFetchly Manual</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://robertzengcn.github.io/aiFetchly/zh-CN/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://robertzengcn.github.io/aiFetchly/zh-CN/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://robertzengcn.github.io/aiFetchly/zh-CN/docs/automation/task-scheduling"><meta data-rh="true" property="og:locale" content="zh_CN"><meta data-rh="true" property="og:locale:alternate" content="en"><meta data-rh="true" property="og:locale:alternate" content="es"><meta data-rh="true" property="og:locale:alternate" content="fr"><meta data-rh="true" property="og:locale:alternate" content="de"><meta data-rh="true" property="og:locale:alternate" content="ja"><meta data-rh="true" name="docusaurus_locale" content="zh-CN"><meta data-rh="true" name="docsearch:language" content="zh-CN"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Task Scheduling | aiFetchly Manual"><meta data-rh="true" name="description" content="Automate your workflows with aiFetchly&#x27;s powerful task scheduling system."><meta data-rh="true" property="og:description" content="Automate your workflows with aiFetchly&#x27;s powerful task scheduling system."><link data-rh="true" rel="icon" href="/aiFetchly/zh-CN/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://robertzengcn.github.io/aiFetchly/zh-CN/docs/automation/task-scheduling"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/docs/automation/task-scheduling" hreflang="en"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/zh-CN/docs/automation/task-scheduling" hreflang="zh-CN"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/es/docs/automation/task-scheduling" hreflang="es"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/fr/docs/automation/task-scheduling" hreflang="fr"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/de/docs/automation/task-scheduling" hreflang="de"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/ja/docs/automation/task-scheduling" hreflang="ja"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/docs/automation/task-scheduling" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Task Scheduler","item":"https://robertzengcn.github.io/aiFetchly/zh-CN/docs/automation/task-scheduling"}]}</script><link rel="stylesheet" href="/aiFetchly/zh-CN/assets/css/styles.ac14db2c.css">
-<script src="/aiFetchly/zh-CN/assets/js/runtime~main.ebaa3b8b.js" defer="defer"></script>
+<title data-rh="true">任务调度 | aiFetchly Manual</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://robertzengcn.github.io/aiFetchly/zh-CN/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://robertzengcn.github.io/aiFetchly/zh-CN/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://robertzengcn.github.io/aiFetchly/zh-CN/docs/automation/task-scheduling"><meta data-rh="true" property="og:locale" content="zh_CN"><meta data-rh="true" property="og:locale:alternate" content="en"><meta data-rh="true" property="og:locale:alternate" content="es"><meta data-rh="true" property="og:locale:alternate" content="fr"><meta data-rh="true" property="og:locale:alternate" content="de"><meta data-rh="true" property="og:locale:alternate" content="ja"><meta data-rh="true" name="docusaurus_locale" content="zh-CN"><meta data-rh="true" name="docsearch:language" content="zh-CN"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="任务调度 | aiFetchly Manual"><meta data-rh="true" name="description" content="使用 aiFetchly 强大的任务调度系统自动化您的工作流程。"><meta data-rh="true" property="og:description" content="使用 aiFetchly 强大的任务调度系统自动化您的工作流程。"><link data-rh="true" rel="icon" href="/aiFetchly/zh-CN/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://robertzengcn.github.io/aiFetchly/zh-CN/docs/automation/task-scheduling"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/docs/automation/task-scheduling" hreflang="en"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/zh-CN/docs/automation/task-scheduling" hreflang="zh-CN"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/es/docs/automation/task-scheduling" hreflang="es"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/fr/docs/automation/task-scheduling" hreflang="fr"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/de/docs/automation/task-scheduling" hreflang="de"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/ja/docs/automation/task-scheduling" hreflang="ja"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/docs/automation/task-scheduling" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"任务调度器","item":"https://robertzengcn.github.io/aiFetchly/zh-CN/docs/automation/task-scheduling"}]}</script><link rel="stylesheet" href="/aiFetchly/zh-CN/assets/css/styles.ac14db2c.css">
+<script src="/aiFetchly/zh-CN/assets/js/runtime~main.8f1b4b1e.js" defer="defer"></script>
 <script src="/aiFetchly/zh-CN/assets/js/main.0f3bc167.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
 <symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
 </defs></svg>
-<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/aiFetchly/zh-CN/img/logo.svg"><div role="region" aria-label="跳到主要内容"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">跳到主要内容</a></div><nav aria-label="主导航" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="切换导航栏" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/aiFetchly/zh-CN/"><div class="navbar__logo"><img src="/aiFetchly/zh-CN/img/logo.svg" alt="aiFetchly Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/aiFetchly/zh-CN/img/logo.svg" alt="aiFetchly Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">aiFetchly Manual</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/aiFetchly/zh-CN/docs/getting-started/introduction">Docs</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/robertzengcn/aiFetchly" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="iconLanguage_nlXk"><path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></svg>中文（中国）</a><ul class="dropdown__menu"><li><a href="/aiFetchly/docs/automation/task-scheduling" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="en">English</a></li><li><a href="/aiFetchly/zh-CN/docs/automation/task-scheduling" target="_self" rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang="zh-CN">中文（中国）</a></li><li><a href="/aiFetchly/es/docs/automation/task-scheduling" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="es">Español</a></li><li><a href="/aiFetchly/fr/docs/automation/task-scheduling" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="fr">Français</a></li><li><a href="/aiFetchly/de/docs/automation/task-scheduling" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="de">Deutsch</a></li><li><a href="/aiFetchly/ja/docs/automation/task-scheduling" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="ja">日本語</a></li></ul></div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="切换浅色/暗黑模式（当前为system mode）"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="回到顶部" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="文档侧边栏" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/aiFetchly/zh-CN/docs/getting-started/introduction"><span title="Introduction" class="linkLabel_WmDU">Introduction</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="快速开始" class="categoryLinkLabel_W154">快速开始</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/zh-CN/docs/getting-started/installation"><span title="Installation" class="linkLabel_WmDU">Installation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/zh-CN/docs/getting-started/proxy-setup"><span title="Proxy Setup" class="linkLabel_WmDU">Proxy Setup</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="潜在客户开发" class="categoryLinkLabel_W154">潜在客户开发</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/zh-CN/docs/lead-generation/search-engines"><span title="Search Engines" class="linkLabel_WmDU">Search Engines</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/zh-CN/docs/lead-generation/yellow-pages"><span title="Yellow Pages" class="linkLabel_WmDU">Yellow Pages</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/zh-CN/docs/lead-generation/contact-extraction"><span title="Email Extraction" class="linkLabel_WmDU">Email Extraction</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/zh-CN/docs/lead-generation/batch-email-sending"><span title="Batch Email Sending" class="linkLabel_WmDU">Batch Email Sending</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="AI 外联" class="categoryLinkLabel_W154">AI 外联</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/zh-CN/docs/ai-outreach/knowledge-library"><span title="Knowledge Library" class="linkLabel_WmDU">Knowledge Library</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/zh-CN/docs/ai-outreach/mcp-tools"><span title="MCP Tools" class="linkLabel_WmDU">MCP Tools</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/zh-CN/docs/ai-outreach/ai-skills"><span title="AI Skills" class="linkLabel_WmDU">AI Skills</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/zh-CN/docs/ai-outreach/ai-email-writer"><span title="AI Email Writer" class="linkLabel_WmDU">AI Email Writer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/zh-CN/docs/ai-outreach/ai-marketing-assistant"><span title="AI Marketing Assistant" class="linkLabel_WmDU">AI Marketing Assistant</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--active"><span title="自动化" class="categoryLinkLabel_W154">自动化</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/aiFetchly/zh-CN/docs/automation/task-scheduling"><span title="Task Scheduler" class="linkLabel_WmDU">Task Scheduler</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="设置" class="categoryLinkLabel_W154">设置</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/zh-CN/docs/settings/system-settings"><span title="System Settings" class="linkLabel_WmDU">System Settings</span></a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="页面路径"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="主页面" class="breadcrumbs__link" href="/aiFetchly/zh-CN/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">自动化</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Task Scheduler</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">本页总览</button></div><div class="theme-doc-markdown markdown"><header><h1>Task Scheduling</h1></header>
-<p>aiFetchly&#x27;s Task Scheduler allows you to automate your marketing workflows by running tasks automatically at specified times or in response to other tasks. Set up recurring searches, automated email campaigns, and complex multi-step workflows.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="understanding-scheduling">Understanding Scheduling<a href="#understanding-scheduling" class="hash-link" aria-label="Understanding Scheduling的直接链接" title="Understanding Scheduling的直接链接" translate="no">​</a></h2>
-<p>The Task Scheduler supports three types of task triggers:</p>
-<table><thead><tr><th>Trigger Type</th><th>Description</th><th>Best For</th></tr></thead><tbody><tr><td><strong>Cron</strong></td><td>Time-based scheduling using cron expressions</td><td>Recurring tasks, daily/weekly/monthly jobs</td></tr><tr><td><strong>Dependency</strong></td><td>Triggered by completion of another task</td><td>Multi-step workflows, task chains</td></tr><tr><td><strong>Manual</strong></td><td>Execute only when manually triggered</td><td>On-demand tasks, testing</td></tr></tbody></table>
-<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Automate Everything</div><div class="admonitionContent_BuS1"><p>From lead generation to email campaigns, scheduling automation saves time and ensures consistent execution of your marketing workflows.</p></div></div>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="creating-a-scheduled-task">Creating a Scheduled Task<a href="#creating-a-scheduled-task" class="hash-link" aria-label="Creating a Scheduled Task的直接链接" title="Creating a Scheduled Task的直接链接" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-1-navigate-to-scheduler">Step 1: Navigate to Scheduler<a href="#step-1-navigate-to-scheduler" class="hash-link" aria-label="Step 1: Navigate to Scheduler的直接链接" title="Step 1: Navigate to Scheduler的直接链接" translate="no">​</a></h3>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/aiFetchly/zh-CN/img/logo.svg"><div role="region" aria-label="跳到主要内容"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">跳到主要内容</a></div><nav aria-label="主导航" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="切换导航栏" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/aiFetchly/zh-CN/"><div class="navbar__logo"><img src="/aiFetchly/zh-CN/img/logo.svg" alt="aiFetchly Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/aiFetchly/zh-CN/img/logo.svg" alt="aiFetchly Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">aiFetchly Manual</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/aiFetchly/zh-CN/docs/getting-started/introduction">Docs</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/robertzengcn/aiFetchly" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="iconLanguage_nlXk"><path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></svg>中文（中国）</a><ul class="dropdown__menu"><li><a href="/aiFetchly/docs/automation/task-scheduling" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="en">English</a></li><li><a href="/aiFetchly/zh-CN/docs/automation/task-scheduling" target="_self" rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang="zh-CN">中文（中国）</a></li><li><a href="/aiFetchly/es/docs/automation/task-scheduling" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="es">Español</a></li><li><a href="/aiFetchly/fr/docs/automation/task-scheduling" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="fr">Français</a></li><li><a href="/aiFetchly/de/docs/automation/task-scheduling" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="de">Deutsch</a></li><li><a href="/aiFetchly/ja/docs/automation/task-scheduling" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="ja">日本語</a></li></ul></div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="切换浅色/暗黑模式（当前为system mode）"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="回到顶部" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="文档侧边栏" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/aiFetchly/zh-CN/docs/getting-started/introduction"><span title="Introduction" class="linkLabel_WmDU">Introduction</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="快速开始" class="categoryLinkLabel_W154">快速开始</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/zh-CN/docs/getting-started/installation"><span title="Installation" class="linkLabel_WmDU">Installation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/zh-CN/docs/getting-started/proxy-setup"><span title="Proxy Setup" class="linkLabel_WmDU">Proxy Setup</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="潜在客户开发" class="categoryLinkLabel_W154">潜在客户开发</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/zh-CN/docs/lead-generation/search-engines"><span title="搜索引擎" class="linkLabel_WmDU">搜索引擎</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/zh-CN/docs/lead-generation/yellow-pages"><span title="黄页" class="linkLabel_WmDU">黄页</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/zh-CN/docs/lead-generation/contact-extraction"><span title="Email Extraction" class="linkLabel_WmDU">Email Extraction</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/zh-CN/docs/lead-generation/batch-email-sending"><span title="Batch Email Sending" class="linkLabel_WmDU">Batch Email Sending</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="AI 外联" class="categoryLinkLabel_W154">AI 外联</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/zh-CN/docs/ai-outreach/knowledge-library"><span title="Knowledge Library" class="linkLabel_WmDU">Knowledge Library</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/zh-CN/docs/ai-outreach/mcp-tools"><span title="MCP Tools" class="linkLabel_WmDU">MCP Tools</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/zh-CN/docs/ai-outreach/ai-skills"><span title="AI 技能" class="linkLabel_WmDU">AI 技能</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/zh-CN/docs/ai-outreach/ai-email-writer"><span title="AI Email Writer" class="linkLabel_WmDU">AI Email Writer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/zh-CN/docs/ai-outreach/ai-marketing-assistant"><span title="AI 营销助手" class="linkLabel_WmDU">AI 营销助手</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--active"><span title="自动化" class="categoryLinkLabel_W154">自动化</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/aiFetchly/zh-CN/docs/automation/task-scheduling"><span title="任务调度器" class="linkLabel_WmDU">任务调度器</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="设置" class="categoryLinkLabel_W154">设置</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/zh-CN/docs/settings/system-settings"><span title="System Settings" class="linkLabel_WmDU">System Settings</span></a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="页面路径"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="主页面" class="breadcrumbs__link" href="/aiFetchly/zh-CN/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">自动化</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">任务调度器</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">本页总览</button></div><div class="theme-doc-markdown markdown"><header><h1>任务调度</h1></header>
+<p>aiFetchly 的任务调度器允许您通过在指定时间自动运行任务或响应其他任务来自动化您的营销工作流程。设置定期搜索、自动电子邮件营销活动和复杂的多步骤工作流程。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="了解调度">了解调度<a href="#了解调度" class="hash-link" aria-label="了解调度的直接链接" title="了解调度的直接链接" translate="no">​</a></h2>
+<p>任务调度器支持三种类型的任务触发器：</p>
+<table><thead><tr><th>触发器类型</th><th>描述</th><th>适用场景</th></tr></thead><tbody><tr><td><strong>Cron</strong></td><td>使用 cron 表达式进行基于时间的调度</td><td>循环任务、每日/每周/每月任务</td></tr><tr><td><strong>依赖</strong></td><td>由另一个任务的完成触发</td><td>多步骤工作流程、任务链</td></tr><tr><td><strong>手动</strong></td><td>仅在手动触发时执行</td><td>按需任务、测试</td></tr></tbody></table>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>全自动运行</div><div class="admonitionContent_BuS1"><p>从潜在客户获取到电子邮件营销活动，调度自动化可以节省时间并确保您的营销工作流程一致执行。</p></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="创建计划任务">创建计划任务<a href="#创建计划任务" class="hash-link" aria-label="创建计划任务的直接链接" title="创建计划任务的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="第-1-步进入调度器">第 1 步：进入调度器<a href="#第-1-步进入调度器" class="hash-link" aria-label="第 1 步：进入调度器的直接链接" title="第 1 步：进入调度器的直接链接" translate="no">​</a></h3>
 <ol>
-<li class="">Click <strong>Schedule</strong> in the left navigation menu</li>
-<li class="">Click <strong>New Schedule</strong> button</li>
+<li class="">点击左侧导航菜单中的 <strong>Schedule</strong></li>
+<li class="">点击 <strong>New Schedule</strong> 按钮</li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-2-basic-information">Step 2: Basic Information<a href="#step-2-basic-information" class="hash-link" aria-label="Step 2: Basic Information的直接链接" title="Step 2: Basic Information的直接链接" translate="no">​</a></h3>
-<p>Enter the following required information:</p>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="schedule-name">Schedule Name<a href="#schedule-name" class="hash-link" aria-label="Schedule Name的直接链接" title="Schedule Name的直接链接" translate="no">​</a></h4>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="第-2-步基本信息">第 2 步：基本信息<a href="#第-2-步基本信息" class="hash-link" aria-label="第 2 步：基本信息的直接链接" title="第 2 步：基本信息的直接链接" translate="no">​</a></h3>
+<p>输入以下必填信息：</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="调度名称">调度名称<a href="#调度名称" class="hash-link" aria-label="调度名称的直接链接" title="调度名称的直接链接" translate="no">​</a></h4>
 <ul>
-<li class=""><strong>Purpose</strong>: Identify the schedule in your list</li>
-<li class=""><strong>Example</strong>: &quot;Daily Google Search&quot;, &quot;Weekly Email Campaign&quot;</li>
-<li class=""><strong>Required</strong>: Yes</li>
+<li class=""><strong>用途</strong>：在列表中标识该调度</li>
+<li class=""><strong>示例</strong>：&quot;每日 Google 搜索&quot;、&quot;每周电子邮件营销活动&quot;</li>
+<li class=""><strong>必填</strong>：是</li>
 </ul>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="task-type">Task Type<a href="#task-type" class="hash-link" aria-label="Task Type的直接链接" title="Task Type的直接链接" translate="no">​</a></h4>
-<p>Select the type of task to schedule:</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="任务类型">任务类型<a href="#任务类型" class="hash-link" aria-label="任务类型的直接链接" title="任务类型的直接链接" translate="no">​</a></h4>
+<p>选择要调度的任务类型：</p>
 <ul>
-<li class=""><strong>Search</strong>: Search engine scraping tasks</li>
-<li class=""><strong>Email Extract</strong>: Email extraction tasks</li>
-<li class=""><strong>Bulk Email</strong>: Email marketing campaigns</li>
-<li class=""><strong>Yellow Pages</strong>: Directory scraping tasks</li>
-<li class=""><strong>Video Download</strong>: Video downloading tasks</li>
+<li class=""><strong>Search</strong>：搜索引擎抓取任务</li>
+<li class=""><strong>Email Extract</strong>：电子邮件提取任务</li>
+<li class=""><strong>Bulk Email</strong>：电子邮件营销活动</li>
+<li class=""><strong>Yellow Pages</strong>：目录抓取任务</li>
+<li class=""><strong>Video Download</strong>：视频下载任务</li>
 </ul>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="task-id">Task ID<a href="#task-id" class="hash-link" aria-label="Task ID的直接链接" title="Task ID的直接链接" translate="no">​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="任务-id">任务 ID<a href="#任务-id" class="hash-link" aria-label="任务 ID的直接链接" title="任务 ID的直接链接" translate="no">​</a></h4>
 <ul>
-<li class=""><strong>Purpose</strong>: Link to the specific task instance</li>
-<li class=""><strong>Selection</strong>: Choose from existing tasks of the selected type</li>
-<li class=""><strong>Required</strong>: Yes</li>
+<li class=""><strong>用途</strong>：关联到特定的任务实例</li>
+<li class=""><strong>选择</strong>：从所选类型的现有任务中选择</li>
+<li class=""><strong>必填</strong>：是</li>
 </ul>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="description">Description<a href="#description" class="hash-link" aria-label="Description的直接链接" title="Description的直接链接" translate="no">​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="描述">描述<a href="#描述" class="hash-link" aria-label="描述的直接链接" title="描述的直接链接" translate="no">​</a></h4>
 <ul>
-<li class=""><strong>Purpose</strong>: Provide context about the schedule&#x27;s purpose</li>
-<li class=""><strong>Example</strong>: &quot;Daily search for new marketing agencies in target cities&quot;</li>
-<li class=""><strong>Optional</strong>: Yes</li>
+<li class=""><strong>用途</strong>：提供有关调度目的的上下文信息</li>
+<li class=""><strong>示例</strong>：&quot;每日搜索目标城市中的新营销机构&quot;</li>
+<li class=""><strong>选填</strong>：是</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-3-configure-trigger">Step 3: Configure Trigger<a href="#step-3-configure-trigger" class="hash-link" aria-label="Step 3: Configure Trigger的直接链接" title="Step 3: Configure Trigger的直接链接" translate="no">​</a></h3>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="cron-scheduling-time-based">Cron Scheduling (Time-Based)<a href="#cron-scheduling-time-based" class="hash-link" aria-label="Cron Scheduling (Time-Based)的直接链接" title="Cron Scheduling (Time-Based)的直接链接" translate="no">​</a></h4>
-<p><strong>Enable Cron</strong> and configure the schedule:</p>
-<p><strong>Preset Options:</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="第-3-步配置触发器">第 3 步：配置触发器<a href="#第-3-步配置触发器" class="hash-link" aria-label="第 3 步：配置触发器的直接链接" title="第 3 步：配置触发器的直接链接" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="cron-调度基于时间">Cron 调度（基于时间）<a href="#cron-调度基于时间" class="hash-link" aria-label="Cron 调度（基于时间）的直接链接" title="Cron 调度（基于时间）的直接链接" translate="no">​</a></h4>
+<p>启用 <strong>Cron</strong> 并配置调度计划：</p>
+<p><strong>预设选项：</strong></p>
 <ul>
-<li class="">Every minute</li>
-<li class="">Every hour</li>
-<li class="">Daily (midnight)</li>
-<li class="">Weekly (Sunday midnight)</li>
-<li class="">Monthly (1st of month, midnight)</li>
-<li class="">Every 15 minutes</li>
-<li class="">Every 30 minutes</li>
-<li class="">Every 2 hours</li>
-<li class="">Every 6 hours</li>
-<li class="">Every 12 hours</li>
-<li class="">Weekdays 9 AM</li>
-<li class="">Weekends 10 AM</li>
+<li class="">每分钟</li>
+<li class="">每小时</li>
+<li class="">每天（午夜）</li>
+<li class="">每周（周日午夜）</li>
+<li class="">每月（每月 1 日午夜）</li>
+<li class="">每 15 分钟</li>
+<li class="">每 30 分钟</li>
+<li class="">每 2 小时</li>
+<li class="">每 6 小时</li>
+<li class="">每 12 小时</li>
+<li class="">工作日上午 9 点</li>
+<li class="">周末上午 10 点</li>
 </ul>
-<p><strong>Custom Cron Builder:</strong></p>
-<table><thead><tr><th>Field</th><th>Options</th><th>Description</th></tr></thead><tbody><tr><td><strong>Minutes</strong></td><td><code>*/5</code>, <code>*/15</code>, <code>*/30</code>, or specific minutes</td><td>Every 5/15/30 min or specific</td></tr><tr><td><strong>Hours</strong></td><td><code>*/2</code>, <code>*/6</code>, <code>*/12</code>, or specific hours</td><td>Every 2/6/12 hours or specific</td></tr><tr><td><strong>Days</strong></td><td><code>*/2</code> or specific days</td><td>Every 2 days or specific days</td></tr><tr><td><strong>Months</strong></td><td><code>*/3</code>, <code>*/6</code>, or specific months</td><td>Every 3/6 months or specific</td></tr><tr><td><strong>Weekdays</strong></td><td><code>1-5</code> (weekdays), <code>0,6</code> (weekends), or specific</td><td>Weekdays, weekends, or specific</td></tr></tbody></table>
-<p><strong>Cron Expression Format:</strong></p>
+<p><strong>自定义 Cron 构建器：</strong></p>
+<table><thead><tr><th>字段</th><th>选项</th><th>描述</th></tr></thead><tbody><tr><td><strong>分钟</strong></td><td><code>*/5</code>、<code>*/15</code>、<code>*/30</code> 或特定分钟</td><td>每 5/15/30 分钟或特定时间</td></tr><tr><td><strong>小时</strong></td><td><code>*/2</code>、<code>*/6</code>、<code>*/12</code> 或特定小时</td><td>每 2/6/12 小时或特定时间</td></tr><tr><td><strong>日</strong></td><td><code>*/2</code> 或特定日期</td><td>每 2 天或特定日期</td></tr><tr><td><strong>月</strong></td><td><code>*/3</code>、<code>*/6</code> 或特定月份</td><td>每 3/6 个月或特定月份</td></tr><tr><td><strong>星期</strong></td><td><code>1-5</code>（工作日）、<code>0,6</code>（周末）或特定日期</td><td>工作日、周末或特定日期</td></tr></tbody></table>
+<p><strong>Cron 表达式格式：</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">┌───────────── minute (0 - 59)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│ ┌───────────── hour (0 - 23)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│ │ ┌───────────── day of month (1 - 31)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│ │ │ ┌───────────── month (1 - 12)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│ │ │ │ ┌───────────── day of week (0 - 6) (Sunday to Saturday)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│ │ │ │ │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">* * * * *</span><br></span></code></pre></div></div>
-<p><strong>Examples:</strong></p>
-<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">0 9 * * 1-5      # Weekdays at 9:00 AM</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">*/30 * * * *     # Every 30 minutes</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">0 0 * * 1        # Every Monday at midnight</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">0 9,15 * * *     # Daily at 9:00 AM and 3:00 PM</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">0 0 1 * *        # 1st of every month at midnight</span><br></span></code></pre></div></div>
-<p><strong>Next Run Time:</strong></p>
+<p><strong>示例：</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">0 9 * * 1-5      # 工作日上午 9:00</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">*/30 * * * *     # 每 30 分钟</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">0 0 * * 1        # 每周一午夜</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">0 9,15 * * *     # 每天上午 9:00 和下午 3:00</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">0 0 1 * *        # 每月 1 日午夜</span><br></span></code></pre></div></div>
+<p><strong>下次运行时间：</strong></p>
 <ul>
-<li class="">System automatically calculates and displays the next execution time</li>
-<li class="">Helpful for verifying your cron expression</li>
+<li class="">系统自动计算并显示下次执行时间</li>
+<li class="">有助于验证您的 cron 表达式</li>
 </ul>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="dependency-scheduling-task-based">Dependency Scheduling (Task-Based)<a href="#dependency-scheduling-task-based" class="hash-link" aria-label="Dependency Scheduling (Task-Based)的直接链接" title="Dependency Scheduling (Task-Based)的直接链接" translate="no">​</a></h4>
-<p><strong>Enable Dependency</strong> to trigger this task when another task completes.</p>
-<p><strong>Configuration:</strong></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="依赖调度基于任务">依赖调度（基于任务）<a href="#依赖调度基于任务" class="hash-link" aria-label="依赖调度（基于任务）的直接链接" title="依赖调度（基于任务）的直接链接" translate="no">​</a></h4>
+<p>启用 <strong>Dependency</strong> 以在另一个任务完成时触发此任务。</p>
+<p><strong>配置：</strong></p>
 <ol>
 <li class="">
-<p><strong>Parent Schedule</strong>: Select the schedule that will trigger this task</p>
+<p><strong>父调度</strong>：选择将触发此任务的调度</p>
 </li>
 <li class="">
-<p><strong>Dependency Condition</strong>:</p>
+<p><strong>依赖条件</strong>：</p>
 <ul>
-<li class=""><strong>On Success</strong>: Run only if parent task succeeds</li>
-<li class=""><strong>On Completion</strong>: Run after parent completes (success or failure)</li>
-<li class=""><strong>On Failure</strong>: Run only if parent task fails</li>
+<li class=""><strong>On Success</strong>：仅在父任务成功时运行</li>
+<li class=""><strong>On Completion</strong>：在父任务完成后运行（无论成功或失败）</li>
+<li class=""><strong>On Failure</strong>：仅在父任务失败时运行</li>
 </ul>
 </li>
 <li class="">
-<p><strong>Delay (minutes)</strong>: Wait time after parent completes before running this task</p>
+<p><strong>延迟（分钟）</strong>：父任务完成后等待多长时间再运行此任务</p>
 <ul>
-<li class=""><code>0</code> minutes: Run immediately</li>
-<li class=""><code>5</code> minutes: Wait 5 minutes before starting</li>
-<li class=""><code>60</code> minutes: Wait 1 hour before starting</li>
+<li class=""><code>0</code> 分钟：立即运行</li>
+<li class=""><code>5</code> 分钟：等待 5 分钟后开始</li>
+<li class=""><code>60</code> 分钟：等待 1 小时后开始</li>
 </ul>
 </li>
 </ol>
-<p><strong>Use Cases:</strong></p>
+<p><strong>使用场景：</strong></p>
 <ul>
-<li class=""><strong>Email after Extraction</strong>: Extract emails, then send campaign when complete</li>
-<li class=""><strong>Analysis after Scraping</strong>: Scrape data, then run AI analysis</li>
-<li class=""><strong>Multi-stage Campaigns</strong>: Initial outreach → Follow-up 1 → Follow-up 2</li>
+<li class=""><strong>提取后发送邮件</strong>：提取电子邮件，完成后发送营销活动</li>
+<li class=""><strong>抓取后分析</strong>：抓取数据，然后运行 AI 分析</li>
+<li class=""><strong>多阶段营销活动</strong>：初始联系 → 跟进 1 → 跟进 2</li>
 </ul>
-<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Dependency Chains</div><div class="admonitionContent_BuS1"><p>You can create multi-level dependency chains:</p><ul>
-<li class="">Task A (Cron) → Task B (Dependency) → Task C (Dependency)</li>
-</ul><p>This creates powerful automated workflows.</p></div></div>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="manual-execution">Manual Execution<a href="#manual-execution" class="hash-link" aria-label="Manual Execution的直接链接" title="Manual Execution的直接链接" translate="no">​</a></h4>
-<p><strong>Enable Manual</strong> to run tasks only when triggered:</p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>依赖链</div><div class="admonitionContent_BuS1"><p>您可以创建多层依赖链：</p><ul>
+<li class="">任务 A（Cron）→ 任务 B（依赖）→ 任务 C（依赖）</li>
+</ul><p>这将创建强大的自动化工作流程。</p></div></div>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="手动执行">手动执行<a href="#手动执行" class="hash-link" aria-label="手动执行的直接链接" title="手动执行的直接链接" translate="no">​</a></h4>
+<p>启用 <strong>Manual</strong> 以仅在触发时运行任务：</p>
 <ul>
-<li class="">No automatic scheduling</li>
-<li class="">Execute on-demand via &quot;Run Now&quot; button</li>
-<li class="">Useful for testing or infrequent tasks</li>
+<li class="">无自动调度</li>
+<li class="">通过 &quot;Run Now&quot; 按钮按需执行</li>
+<li class="">适用于测试或不频繁的任务</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-4-active-status">Step 4: Active Status<a href="#step-4-active-status" class="hash-link" aria-label="Step 4: Active Status的直接链接" title="Step 4: Active Status的直接链接" translate="no">​</a></h3>
-<p>Toggle the schedule as:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="第-4-步激活状态">第 4 步：激活状态<a href="#第-4-步激活状态" class="hash-link" aria-label="第 4 步：激活状态的直接链接" title="第 4 步：激活状态的直接链接" translate="no">​</a></h3>
+<p>切换调度的状态：</p>
 <ul>
-<li class=""><strong>Active</strong>: Schedule will run according to trigger settings</li>
-<li class=""><strong>Inactive</strong>: Schedule is disabled and won&#x27;t run</li>
+<li class=""><strong>Active</strong>：调度将根据触发器设置运行</li>
+<li class=""><strong>Inactive</strong>：调度已禁用，不会运行</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-5-save-schedule">Step 5: Save Schedule<a href="#step-5-save-schedule" class="hash-link" aria-label="Step 5: Save Schedule的直接链接" title="Step 5: Save Schedule的直接链接" translate="no">​</a></h3>
-<p>Click <strong>Save</strong> to create the schedule. You can:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="第-5-步保存调度">第 5 步：保存调度<a href="#第-5-步保存调度" class="hash-link" aria-label="第 5 步：保存调度的直接链接" title="第 5 步：保存调度的直接链接" translate="no">​</a></h3>
+<p>点击 <strong>Save</strong> 以创建调度。您可以：</p>
 <ul>
-<li class=""><strong>Edit</strong> the schedule later</li>
-<li class=""><strong>Enable/Disable</strong> as needed</li>
-<li class=""><strong>Run Now</strong> to test immediately</li>
+<li class="">稍后 <strong>Edit</strong>（编辑）调度</li>
+<li class="">根据需要 <strong>Enable/Disable</strong>（启用/禁用）</li>
+<li class=""><strong>Run Now</strong> 立即测试</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="managing-scheduled-tasks">Managing Scheduled Tasks<a href="#managing-scheduled-tasks" class="hash-link" aria-label="Managing Scheduled Tasks的直接链接" title="Managing Scheduled Tasks的直接链接" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="view-schedule-list">View Schedule List<a href="#view-schedule-list" class="hash-link" aria-label="View Schedule List的直接链接" title="View Schedule List的直接链接" translate="no">​</a></h3>
-<p>Navigate to <strong>Schedule</strong> to see all your scheduled tasks.</p>
-<p><strong>Schedule Overview:</strong></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="管理计划任务">管理计划任务<a href="#管理计划任务" class="hash-link" aria-label="管理计划任务的直接链接" title="管理计划任务的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="查看调度列表">查看调度列表<a href="#查看调度列表" class="hash-link" aria-label="查看调度列表的直接链接" title="查看调度列表的直接链接" translate="no">​</a></h3>
+<p>导航到 <strong>Schedule</strong> 查看所有计划任务。</p>
+<p><strong>调度概览：</strong></p>
 <ul>
-<li class=""><strong>Status Card</strong>: Shows total, active, inactive, and paused schedules</li>
-<li class=""><strong>Filters</strong>: Search by name, status, task type, trigger type</li>
+<li class=""><strong>状态卡片</strong>：显示总数、活跃、非活跃和已暂停的调度</li>
+<li class=""><strong>过滤器</strong>：按名称、状态、任务类型、触发器类型搜索</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="schedule-table">Schedule Table<a href="#schedule-table" class="hash-link" aria-label="Schedule Table的直接链接" title="Schedule Table的直接链接" translate="no">​</a></h3>
-<p>The schedule list displays:</p>
-<table><thead><tr><th>Column</th><th>Description</th></tr></thead><tbody><tr><td><strong>Name</strong></td><td>Schedule name with task type indicator</td></tr><tr><td><strong>Status</strong></td><td>Active (green), Inactive (grey), Paused (yellow)</td></tr><tr><td><strong>Trigger Type</strong></td><td>Cron, Dependency, or Manual</td></tr><tr><td><strong>Schedule</strong></td><td>Cron expression or dependency description</td></tr><tr><td><strong>Next Run</strong></td><td>Next execution time with countdown</td></tr><tr><td><strong>Last Run</strong></td><td>Most recent execution with elapsed time</td></tr><tr><td><strong>Executions</strong></td><td>Success count / Failure count</td></tr><tr><td><strong>Actions</strong></td><td>Edit, Delete, Pause/Resume, Run Now</td></tr></tbody></table>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="schedule-actions">Schedule Actions<a href="#schedule-actions" class="hash-link" aria-label="Schedule Actions的直接链接" title="Schedule Actions的直接链接" translate="no">​</a></h3>
-<table><thead><tr><th>Action</th><th>Description</th><th>When Available</th></tr></thead><tbody><tr><td><strong>Edit</strong></td><td>Modify schedule configuration</td><td>Always</td></tr><tr><td><strong>Delete</strong></td><td>Remove schedule</td><td>Always</td></tr><tr><td><strong>Enable</strong></td><td>Activate an inactive schedule</td><td>Inactive schedules</td></tr><tr><td><strong>Disable</strong></td><td>Deactivate a schedule</td><td>Active schedules</td></tr><tr><td><strong>Pause</strong></td><td>Temporarily halt execution</td><td>Active schedules</td></tr><tr><td><strong>Resume</strong></td><td>Restart paused schedule</td><td>Paused schedules</td></tr><tr><td><strong>Run Now</strong></td><td>Execute immediately</td><td>Always</td></tr></tbody></table>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="monitoring-execution">Monitoring Execution<a href="#monitoring-execution" class="hash-link" aria-label="Monitoring Execution的直接链接" title="Monitoring Execution的直接链接" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="view-execution-history">View Execution History<a href="#view-execution-history" class="hash-link" aria-label="View Execution History的直接链接" title="View Execution History的直接链接" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="调度表格">调度表格<a href="#调度表格" class="hash-link" aria-label="调度表格的直接链接" title="调度表格的直接链接" translate="no">​</a></h3>
+<p>调度列表显示以下信息：</p>
+<table><thead><tr><th>列</th><th>描述</th></tr></thead><tbody><tr><td><strong>Name</strong></td><td>带有任务类型指示器的调度名称</td></tr><tr><td><strong>Status</strong></td><td>Active（绿色）、Inactive（灰色）、Paused（黄色）</td></tr><tr><td><strong>Trigger Type</strong></td><td>Cron、Dependency 或 Manual</td></tr><tr><td><strong>Schedule</strong></td><td>Cron 表达式或依赖描述</td></tr><tr><td><strong>Next Run</strong></td><td>下次执行时间及倒计时</td></tr><tr><td><strong>Last Run</strong></td><td>最近执行时间及已用时间</td></tr><tr><td><strong>Executions</strong></td><td>成功次数 / 失败次数</td></tr><tr><td><strong>Actions</strong></td><td>编辑、删除、暂停/恢复、立即运行</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="调度操作">调度操作<a href="#调度操作" class="hash-link" aria-label="调度操作的直接链接" title="调度操作的直接链接" translate="no">​</a></h3>
+<table><thead><tr><th>操作</th><th>描述</th><th>可用条件</th></tr></thead><tbody><tr><td><strong>Edit</strong></td><td>修改调度配置</td><td>始终可用</td></tr><tr><td><strong>Delete</strong></td><td>删除调度</td><td>始终可用</td></tr><tr><td><strong>Enable</strong></td><td>激活非活跃的调度</td><td>非活跃调度</td></tr><tr><td><strong>Disable</strong></td><td>停用调度</td><td>活跃调度</td></tr><tr><td><strong>Pause</strong></td><td>暂时停止执行</td><td>活跃调度</td></tr><tr><td><strong>Resume</strong></td><td>恢复已暂停的调度</td><td>已暂停的调度</td></tr><tr><td><strong>Run Now</strong></td><td>立即执行</td><td>始终可用</td></tr></tbody></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="监控执行">监控执行<a href="#监控执行" class="hash-link" aria-label="监控执行的直接链接" title="监控执行的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="查看执行历史">查看执行历史<a href="#查看执行历史" class="hash-link" aria-label="查看执行历史的直接链接" title="查看执行历史的直接链接" translate="no">​</a></h3>
 <ol>
-<li class="">Click <strong>View Details</strong> on a schedule</li>
-<li class="">See the execution history table</li>
+<li class="">在调度上点击 <strong>View Details</strong></li>
+<li class="">查看执行历史表格</li>
 </ol>
-<p><strong>Execution Information:</strong></p>
-<table><thead><tr><th>Column</th><th>Description</th></tr></thead><tbody><tr><td><strong>Start Time</strong></td><td>When the execution started</td></tr><tr><td><strong>End Time</strong></td><td>When execution completed (or &quot;Running...&quot;)</td></tr><tr><td><strong>Duration</strong></td><td>How long the execution took (or live counter)</td></tr><tr><td><strong>Status</strong></td><td>Success (green), Failed (red), Running (blue)</td></tr><tr><td><strong>Result</strong></td><td>Summary of execution results</td></tr><tr><td><strong>Error</strong></td><td>Error message (if execution failed)</td></tr><tr><td><strong>Actions</strong></td><td>View details, cancel running</td></tr></tbody></table>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="execution-statistics">Execution Statistics<a href="#execution-statistics" class="hash-link" aria-label="Execution Statistics的直接链接" title="Execution Statistics的直接链接" translate="no">​</a></h3>
-<p>The detail view shows:</p>
+<p><strong>执行信息：</strong></p>
+<table><thead><tr><th>列</th><th>描述</th></tr></thead><tbody><tr><td><strong>Start Time</strong></td><td>执行开始时间</td></tr><tr><td><strong>End Time</strong></td><td>执行完成时间（或显示 &quot;Running...&quot;）</td></tr><tr><td><strong>Duration</strong></td><td>执行耗时（或实时计数器）</td></tr><tr><td><strong>Status</strong></td><td>Success（绿色）、Failed（红色）、Running（蓝色）</td></tr><tr><td><strong>Result</strong></td><td>执行结果摘要</td></tr><tr><td><strong>Error</strong></td><td>错误信息（如果执行失败）</td></tr><tr><td><strong>Actions</strong></td><td>查看详情、取消运行中的任务</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="执行统计">执行统计<a href="#执行统计" class="hash-link" aria-label="执行统计的直接链接" title="执行统计的直接链接" translate="no">​</a></h3>
+<p>详情视图显示：</p>
 <ul>
-<li class=""><strong>Success Rate</strong>: Percentage of successful executions</li>
-<li class=""><strong>Average Duration</strong>: Typical execution time</li>
-<li class=""><strong>Total Executions</strong>: Overall count and breakdown</li>
-<li class=""><strong>Last Error</strong>: Most recent failure message</li>
-<li class=""><strong>Next Run</strong>: Countdown to next execution</li>
+<li class=""><strong>成功率</strong>：成功执行的百分比</li>
+<li class=""><strong>平均耗时</strong>：典型执行时间</li>
+<li class=""><strong>总执行次数</strong>：总计数及明细</li>
+<li class=""><strong>最近错误</strong>：最近的失败信息</li>
+<li class=""><strong>下次运行</strong>：距离下次执行的倒计时</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="real-time-monitoring">Real-Time Monitoring<a href="#real-time-monitoring" class="hash-link" aria-label="Real-Time Monitoring的直接链接" title="Real-Time Monitoring的直接链接" translate="no">​</a></h3>
-<p>For running tasks:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="实时监控">实时监控<a href="#实时监控" class="hash-link" aria-label="实时监控的直接链接" title="实时监控的直接链接" translate="no">​</a></h3>
+<p>对于运行中的任务：</p>
 <ul>
-<li class=""><strong>Live Duration</strong>: Counter shows elapsed time</li>
-<li class=""><strong>Cancel Button</strong>: Stop the execution if needed</li>
-<li class=""><strong>Auto-Refresh</strong>: Status updates every few seconds</li>
+<li class=""><strong>实时耗时</strong>：计数器显示已用时间</li>
+<li class=""><strong>取消按钮</strong>：如需停止执行</li>
+<li class=""><strong>自动刷新</strong>：状态每隔几秒更新</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="common-scheduling-patterns">Common Scheduling Patterns<a href="#common-scheduling-patterns" class="hash-link" aria-label="Common Scheduling Patterns的直接链接" title="Common Scheduling Patterns的直接链接" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="pattern-1-daily-lead-generation">Pattern 1: Daily Lead Generation<a href="#pattern-1-daily-lead-generation" class="hash-link" aria-label="Pattern 1: Daily Lead Generation的直接链接" title="Pattern 1: Daily Lead Generation的直接链接" translate="no">​</a></h3>
-<p><strong>Schedule</strong>: Every weekday at 9:00 AM</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="常见调度模式">常见调度模式<a href="#常见调度模式" class="hash-link" aria-label="常见调度模式的直接链接" title="常见调度模式的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="模式-1每日潜在客户获取">模式 1：每日潜在客户获取<a href="#模式-1每日潜在客户获取" class="hash-link" aria-label="模式 1：每日潜在客户获取的直接链接" title="模式 1：每日潜在客户获取的直接链接" translate="no">​</a></h3>
+<p><strong>调度</strong>：每个工作日上午 9:00</p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Cron: 0 9 * * 1-5</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Task: Search Engine Scraping</span><br></span></code></pre></div></div>
-<p><strong>Use Case</strong>: Fresh leads every morning for your sales team.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="pattern-2-hourly-monitoring">Pattern 2: Hourly Monitoring<a href="#pattern-2-hourly-monitoring" class="hash-link" aria-label="Pattern 2: Hourly Monitoring的直接链接" title="Pattern 2: Hourly Monitoring的直接链接" translate="no">​</a></h3>
-<p><strong>Schedule</strong>: Every hour during business hours</p>
+<p><strong>使用场景</strong>：每天早上为您的销售团队获取新的潜在客户。</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="模式-2每小时监控">模式 2：每小时监控<a href="#模式-2每小时监控" class="hash-link" aria-label="模式 2：每小时监控的直接链接" title="模式 2：每小时监控的直接链接" translate="no">​</a></h3>
+<p><strong>调度</strong>：工作时间内的每小时</p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Cron: 0 9-17 * * 1-5</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Task: Search / Yellow Pages</span><br></span></code></pre></div></div>
-<p><strong>Use Case</strong>: Monitor for new business listings during work hours.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="pattern-3-weekly-campaign">Pattern 3: Weekly Campaign<a href="#pattern-3-weekly-campaign" class="hash-link" aria-label="Pattern 3: Weekly Campaign的直接链接" title="Pattern 3: Weekly Campaign的直接链接" translate="no">​</a></h3>
-<p><strong>Schedule</strong>: Every Monday at 10:00 AM</p>
+<p><strong>使用场景</strong>：在工作时间内监控新的商家列表。</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="模式-3每周营销活动">模式 3：每周营销活动<a href="#模式-3每周营销活动" class="hash-link" aria-label="模式 3：每周营销活动的直接链接" title="模式 3：每周营销活动的直接链接" translate="no">​</a></h3>
+<p><strong>调度</strong>：每周一上午 10:00</p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Cron: 0 10 * * 1</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Task: Bulk Email Sending</span><br></span></code></pre></div></div>
-<p><strong>Use Case</strong>: Weekly email newsletter or outreach campaign.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="pattern-4-multi-step-workflow">Pattern 4: Multi-Step Workflow<a href="#pattern-4-multi-step-workflow" class="hash-link" aria-label="Pattern 4: Multi-Step Workflow的直接链接" title="Pattern 4: Multi-Step Workflow的直接链接" translate="no">​</a></h3>
-<p><strong>Task A</strong> (Cron): Daily at 9:00 AM - Search for leads
-<strong>Task B</strong> (Dependency): After A succeeds - Extract emails
-<strong>Task C</strong> (Dependency): After B succeeds (30 min delay) - Send emails</p>
-<p><strong>Use Case</strong>: Automated lead generation and outreach pipeline.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="pattern-5-maintenance-tasks">Pattern 5: Maintenance Tasks<a href="#pattern-5-maintenance-tasks" class="hash-link" aria-label="Pattern 5: Maintenance Tasks的直接链接" title="Pattern 5: Maintenance Tasks的直接链接" translate="no">​</a></h3>
-<p><strong>Schedule</strong>: Every Sunday at 3:00 AM</p>
+<p><strong>使用场景</strong>：每周电子邮件简报或推广活动。</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="模式-4多步骤工作流程">模式 4：多步骤工作流程<a href="#模式-4多步骤工作流程" class="hash-link" aria-label="模式 4：多步骤工作流程的直接链接" title="模式 4：多步骤工作流程的直接链接" translate="no">​</a></h3>
+<p><strong>任务 A</strong>（Cron）：每天上午 9:00 - 搜索潜在客户
+<strong>任务 B</strong>（依赖）：A 成功后 - 提取电子邮件
+<strong>任务 C</strong>（依赖）：B 成功后（延迟 30 分钟）- 发送电子邮件</p>
+<p><strong>使用场景</strong>：自动化的潜在客户获取和推广流程。</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="模式-5维护任务">模式 5：维护任务<a href="#模式-5维护任务" class="hash-link" aria-label="模式 5：维护任务的直接链接" title="模式 5：维护任务的直接链接" translate="no">​</a></h3>
+<p><strong>调度</strong>：每周日凌晨 3:00</p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Cron: 0 3 * * 0</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Task: Data cleanup or backup</span><br></span></code></pre></div></div>
-<p><strong>Use Case</strong>: Routine maintenance during low-traffic periods.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="best-practices">Best Practices<a href="#best-practices" class="hash-link" aria-label="Best Practices的直接链接" title="Best Practices的直接链接" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-schedule-design">1. Schedule Design<a href="#1-schedule-design" class="hash-link" aria-label="1. Schedule Design的直接链接" title="1. Schedule Design的直接链接" translate="no">​</a></h3>
-<p><strong>Avoid Overlapping:</strong></p>
+<p><strong>使用场景</strong>：低流量时段的日常维护。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="最佳实践">最佳实践<a href="#最佳实践" class="hash-link" aria-label="最佳实践的直接链接" title="最佳实践的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-调度设计">1. 调度设计<a href="#1-调度设计" class="hash-link" aria-label="1. 调度设计的直接链接" title="1. 调度设计的直接链接" translate="no">​</a></h3>
+<p><strong>避免重叠：</strong></p>
 <ul>
-<li class="">Ensure tasks complete before next scheduled run</li>
-<li class="">Consider average execution time when setting frequency</li>
-<li class="">Use dependencies to sequence overlapping tasks</li>
+<li class="">确保任务在下一次计划运行之前完成</li>
+<li class="">在设置频率时考虑平均执行时间</li>
+<li class="">使用依赖来排序重叠的任务</li>
 </ul>
-<p><strong>Off-Peak Hours:</strong></p>
+<p><strong>非高峰时段：</strong></p>
 <ul>
-<li class="">Schedule resource-intensive tasks during off-hours</li>
-<li class="">Avoid competing with user activity</li>
-<li class="">Consider time zones for global operations</li>
+<li class="">在非工作时间调度资源密集型任务</li>
+<li class="">避免与用户活动竞争</li>
+<li class="">考虑全球运营的时区问题</li>
 </ul>
-<p><strong>Buffer Time:</strong></p>
+<p><strong>缓冲时间：</strong></p>
 <ul>
-<li class="">Add buffer between dependent tasks</li>
-<li class="">Account for variable execution times</li>
-<li class="">Prevent cascading delays</li>
+<li class="">在依赖任务之间添加缓冲</li>
+<li class="">考虑可变的执行时间</li>
+<li class="">防止级联延迟</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-error-handling">2. Error Handling<a href="#2-error-handling" class="hash-link" aria-label="2. Error Handling的直接链接" title="2. Error Handling的直接链接" translate="no">​</a></h3>
-<p><strong>Monitor Failures:</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-错误处理">2. 错误处理<a href="#2-错误处理" class="hash-link" aria-label="2. 错误处理的直接链接" title="2. 错误处理的直接链接" translate="no">​</a></h3>
+<p><strong>监控失败：</strong></p>
 <ul>
-<li class="">Check execution history regularly</li>
-<li class="">Investigate repeated failures</li>
-<li class="">Adjust schedules or tasks as needed</li>
+<li class="">定期检查执行历史</li>
+<li class="">调查重复失败</li>
+<li class="">根据需要调整调度或任务</li>
 </ul>
-<p><strong>Set Up Alerts:</strong></p>
+<p><strong>设置警报：</strong></p>
 <ul>
-<li class="">Review schedules weekly</li>
-<li class="">Check for stuck or paused tasks</li>
-<li class="">Verify dependencies are firing correctly</li>
+<li class="">每周审查调度</li>
+<li class="">检查卡住或暂停的任务</li>
+<li class="">验证依赖是否正常触发</li>
 </ul>
-<p><strong>Graceful Degradation:</strong></p>
+<p><strong>优雅降级：</strong></p>
 <ul>
-<li class="">Use &quot;On Completion&quot; dependencies to continue chain even if one task fails</li>
-<li class="">Create alternative schedules for critical tasks</li>
-<li class="">Document escalation procedures</li>
+<li class="">使用 &quot;On Completion&quot; 依赖，即使某个任务失败也能继续链路</li>
+<li class="">为关键任务创建替代调度</li>
+<li class="">记录升级处理程序</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-resource-management">3. Resource Management<a href="#3-resource-management" class="hash-link" aria-label="3. Resource Management的直接链接" title="3. Resource Management的直接链接" translate="no">​</a></h3>
-<p><strong>Concurrent Tasks:</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-资源管理">3. 资源管理<a href="#3-资源管理" class="hash-link" aria-label="3. 资源管理的直接链接" title="3. 资源管理的直接链接" translate="no">​</a></h3>
+<p><strong>并发任务：</strong></p>
 <ul>
-<li class="">Avoid scheduling too many tasks simultaneously</li>
-<li class="">Consider system resources (CPU, memory, network)</li>
-<li class="">Stagger similar tasks to prevent conflicts</li>
+<li class="">避免同时调度过多任务</li>
+<li class="">考虑系统资源（CPU、内存、网络）</li>
+<li class="">错开类似任务以防止冲突</li>
 </ul>
-<p><strong>Proxy Rotation:</strong></p>
+<p><strong>代理轮换：</strong></p>
 <ul>
-<li class="">Ensure sufficient proxies for concurrent scheduled tasks</li>
-<li class="">Distribute load across proxy pool</li>
-<li class="">Monitor proxy health for scheduled tasks</li>
+<li class="">确保有足够的代理用于并发的计划任务</li>
+<li class="">在代理池中分配负载</li>
+<li class="">监控计划任务的代理健康状况</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-testing">4. Testing<a href="#4-testing" class="hash-link" aria-label="4. Testing的直接链接" title="4. Testing的直接链接" translate="no">​</a></h3>
-<p><strong>Test Schedules:</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-测试">4. 测试<a href="#4-测试" class="hash-link" aria-label="4. 测试的直接链接" title="4. 测试的直接链接" translate="no">​</a></h3>
+<p><strong>测试调度：</strong></p>
 <ul>
-<li class="">Use &quot;Run Now&quot; to test before scheduling</li>
-<li class="">Verify with one-time execution first</li>
-<li class="">Check logs for any issues</li>
+<li class="">在正式调度前使用 &quot;Run Now&quot; 进行测试</li>
+<li class="">先通过一次性执行进行验证</li>
+<li class="">检查日志中的任何问题</li>
 </ul>
-<p><strong>Validate Cron Expressions:</strong></p>
+<p><strong>验证 Cron 表达式：</strong></p>
 <ul>
-<li class="">Use the &quot;Next Run Time&quot; preview to verify</li>
-<li class="">Test with shorter intervals first</li>
-<li class="">Confirm timezone settings are correct</li>
+<li class="">使用 &quot;Next Run Time&quot; 预览进行验证</li>
+<li class="">先用较短的间隔测试</li>
+<li class="">确认时区设置正确</li>
 </ul>
-<p><strong>Test Dependencies:</strong></p>
+<p><strong>测试依赖：</strong></p>
 <ul>
-<li class="">Verify parent tasks complete successfully</li>
-<li class="">Test delay settings</li>
-<li class="">Ensure chains work as expected</li>
+<li class="">验证父任务是否成功完成</li>
+<li class="">测试延迟设置</li>
+<li class="">确保链路按预期工作</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="5-documentation">5. Documentation<a href="#5-documentation" class="hash-link" aria-label="5. Documentation的直接链接" title="5. Documentation的直接链接" translate="no">​</a></h3>
-<p><strong>Name Schedules Clearly:</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="5-文档记录">5. 文档记录<a href="#5-文档记录" class="hash-link" aria-label="5. 文档记录的直接链接" title="5. 文档记录的直接链接" translate="no">​</a></h3>
+<p><strong>清晰命名调度：</strong></p>
 <ul>
-<li class="">Descriptive names with purpose and frequency</li>
-<li class="">Include task type and target</li>
-<li class="">Example: &quot;Daily Google Search - Marketing Agencies&quot;</li>
+<li class="">使用描述性名称，包含用途和频率</li>
+<li class="">包含任务类型和目标</li>
+<li class="">示例：&quot;每日 Google 搜索 - 营销机构&quot;</li>
 </ul>
-<p><strong>Use Descriptions:</strong></p>
+<p><strong>使用描述：</strong></p>
 <ul>
-<li class="">Document purpose and expected outcomes</li>
-<li class="">Note dependencies and relationships</li>
-<li class="">Include any special considerations</li>
+<li class="">记录目的和预期结果</li>
+<li class="">注明依赖和关系</li>
+<li class="">包含任何特殊注意事项</li>
 </ul>
-<p><strong>Label Task Purposes:</strong></p>
+<p><strong>标记任务用途：</strong></p>
 <ul>
-<li class="">Tag or categorize related schedules</li>
-<li class="">Group by project or campaign</li>
-<li class="">Make identification easy</li>
+<li class="">对相关调度进行标记或分类</li>
+<li class="">按项目或营销活动分组</li>
+<li class="">便于识别</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="troubleshooting">Troubleshooting<a href="#troubleshooting" class="hash-link" aria-label="Troubleshooting的直接链接" title="Troubleshooting的直接链接" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="schedule-not-running">Schedule Not Running<a href="#schedule-not-running" class="hash-link" aria-label="Schedule Not Running的直接链接" title="Schedule Not Running的直接链接" translate="no">​</a></h3>
-<p><strong>Possible causes:</strong></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="故障排除">故障排除<a href="#故障排除" class="hash-link" aria-label="故障排除的直接链接" title="故障排除的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="调度未运行">调度未运行<a href="#调度未运行" class="hash-link" aria-label="调度未运行的直接链接" title="调度未运行的直接链接" translate="no">​</a></h3>
+<p><strong>可能原因：</strong></p>
 <ul>
-<li class="">Schedule is inactive or paused</li>
-<li class="">Cron expression misconfigured</li>
-<li class="">Scheduler service not running</li>
-<li class="">System time/timezone issues</li>
+<li class="">调度处于非活跃或已暂停状态</li>
+<li class="">Cron 表达式配置错误</li>
+<li class="">调度器服务未运行</li>
+<li class="">系统时间/时区问题</li>
 </ul>
-<p><strong>Solutions:</strong></p>
+<p><strong>解决方案：</strong></p>
 <ol>
-<li class="">Verify schedule status is &quot;Active&quot;</li>
-<li class="">Check cron expression syntax</li>
-<li class="">Confirm scheduler service is running</li>
-<li class="">Verify system time and timezone settings</li>
-<li class="">Check execution logs for errors</li>
+<li class="">验证调度状态为 &quot;Active&quot;</li>
+<li class="">检查 cron 表达式语法</li>
+<li class="">确认调度器服务正在运行</li>
+<li class="">验证系统时间和时区设置</li>
+<li class="">检查执行日志中的错误</li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="task-executing-too-frequently">Task Executing Too Frequently<a href="#task-executing-too-frequently" class="hash-link" aria-label="Task Executing Too Frequently的直接链接" title="Task Executing Too Frequently的直接链接" translate="no">​</a></h3>
-<p><strong>Possible causes:</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="任务执行过于频繁">任务执行过于频繁<a href="#任务执行过于频繁" class="hash-link" aria-label="任务执行过于频繁的直接链接" title="任务执行过于频繁的直接链接" translate="no">​</a></h3>
+<p><strong>可能原因：</strong></p>
 <ul>
-<li class="">Cron expression incorrect</li>
-<li class="">Multiple schedules for same task</li>
-<li class="">Misunderstood cron syntax</li>
+<li class="">Cron 表达式不正确</li>
+<li class="">同一任务有多个调度</li>
+<li class="">对 cron 语法的误解</li>
 </ul>
-<p><strong>Solutions:</strong></p>
+<p><strong>解决方案：</strong></p>
 <ol>
-<li class="">Review cron expression carefully</li>
-<li class="">Check for duplicate schedules</li>
-<li class="">Use &quot;Next Run Time&quot; preview to verify</li>
-<li class="">Test with longer intervals first</li>
+<li class="">仔细审查 cron 表达式</li>
+<li class="">检查是否有重复调度</li>
+<li class="">使用 &quot;Next Run Time&quot; 预览进行验证</li>
+<li class="">先用较长的间隔测试</li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="dependencies-not-firing">Dependencies Not Firing<a href="#dependencies-not-firing" class="hash-link" aria-label="Dependencies Not Firing的直接链接" title="Dependencies Not Firing的直接链接" translate="no">​</a></h3>
-<p><strong>Possible causes:</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="依赖未触发">依赖未触发<a href="#依赖未触发" class="hash-link" aria-label="依赖未触发的直接链接" title="依赖未触发的直接链接" translate="no">​</a></h3>
+<p><strong>可能原因：</strong></p>
 <ul>
-<li class="">Parent task not completing</li>
-<li class="">Wrong dependency condition</li>
-<li class="">Delay too long or too short</li>
+<li class="">父任务未完成</li>
+<li class="">依赖条件设置错误</li>
+<li class="">延迟过长或过短</li>
 </ul>
-<p><strong>Solutions:</strong></p>
+<p><strong>解决方案：</strong></p>
 <ol>
-<li class="">Check parent task execution history</li>
-<li class="">Verify dependency condition matches desired behavior</li>
-<li class="">Adjust delay settings</li>
-<li class="">Check for circular dependencies</li>
+<li class="">检查父任务执行历史</li>
+<li class="">验证依赖条件是否符合预期行为</li>
+<li class="">调整延迟设置</li>
+<li class="">检查是否存在循环依赖</li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="tasks-taking-too-long">Tasks Taking Too Long<a href="#tasks-taking-too-long" class="hash-link" aria-label="Tasks Taking Too Long的直接链接" title="Tasks Taking Too Long的直接链接" translate="no">​</a></h3>
-<p><strong>Possible causes:</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="任务耗时过长">任务耗时过长<a href="#任务耗时过长" class="hash-link" aria-label="任务耗时过长的直接链接" title="任务耗时过长的直接链接" translate="no">​</a></h3>
+<p><strong>可能原因：</strong></p>
 <ul>
-<li class="">Task configuration too aggressive</li>
-<li class="">System resources insufficient</li>
-<li class="">Network bottlenecks</li>
+<li class="">任务配置过于激进</li>
+<li class="">系统资源不足</li>
+<li class="">网络瓶颈</li>
 </ul>
-<p><strong>Solutions:</strong></p>
+<p><strong>解决方案：</strong></p>
 <ol>
-<li class="">Reduce task scope (pages, concurrency, etc.)</li>
-<li class="">Schedule during off-peak hours</li>
-<li class="">Increase interval between runs</li>
-<li class="">Check system performance</li>
+<li class="">减少任务范围（页面数、并发数等）</li>
+<li class="">在非高峰时段调度</li>
+<li class="">增加运行间隔</li>
+<li class="">检查系统性能</li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="execution-history-not-showing">Execution History Not Showing<a href="#execution-history-not-showing" class="hash-link" aria-label="Execution History Not Showing的直接链接" title="Execution History Not Showing的直接链接" translate="no">​</a></h3>
-<p><strong>Possible causes:</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="执行历史未显示">执行历史未显示<a href="#执行历史未显示" class="hash-link" aria-label="执行历史未显示的直接链接" title="执行历史未显示的直接链接" translate="no">​</a></h3>
+<p><strong>可能原因：</strong></p>
 <ul>
-<li class="">Task never executed</li>
-<li class="">History cleared</li>
-<li class="">Database issues</li>
+<li class="">任务从未执行过</li>
+<li class="">历史记录已清除</li>
+<li class="">数据库问题</li>
 </ul>
-<p><strong>Solutions:</strong></p>
+<p><strong>解决方案：</strong></p>
 <ol>
-<li class="">Run task manually to test</li>
-<li class="">Check if task has ever executed</li>
-<li class="">Verify database connectivity</li>
-<li class="">Restart scheduler service if needed</li>
+<li class="">手动运行任务进行测试</li>
+<li class="">检查任务是否曾经执行过</li>
+<li class="">验证数据库连接</li>
+<li class="">如需要，重启调度器服务</li>
 </ol>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="advanced-workflows">Advanced Workflows<a href="#advanced-workflows" class="hash-link" aria-label="Advanced Workflows的直接链接" title="Advanced Workflows的直接链接" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflow-1-automated-lead-generation-pipeline">Workflow 1: Automated Lead Generation Pipeline<a href="#workflow-1-automated-lead-generation-pipeline" class="hash-link" aria-label="Workflow 1: Automated Lead Generation Pipeline的直接链接" title="Workflow 1: Automated Lead Generation Pipeline的直接链接" translate="no">​</a></h3>
-<p><strong>Schedule 1</strong>: Daily Search</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="高级工作流程">高级工作流程<a href="#高级工作流程" class="hash-link" aria-label="高级工作流程的直接链接" title="高级工作流程的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="工作流程-1自动化潜在客户获取流程">工作流程 1：自动化潜在客户获取流程<a href="#工作流程-1自动化潜在客户获取流程" class="hash-link" aria-label="工作流程 1：自动化潜在客户获取流程的直接链接" title="工作流程 1：自动化潜在客户获取流程的直接链接" translate="no">​</a></h3>
+<p><strong>调度 1</strong>：每日搜索</p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Cron: 0 9 * * 1-5 (Weekdays 9 AM)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Task: Google Search for &quot;marketing agencies [city]&quot;</span><br></span></code></pre></div></div>
-<p><strong>Schedule 2</strong>: Email Extraction (Dependency)</p>
+<p><strong>调度 2</strong>：电子邮件提取（依赖）</p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Trigger: After Schedule 1 succeeds</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Delay: 0 minutes</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Task: Extract emails from Schedule 1 results</span><br></span></code></pre></div></div>
-<p><strong>Schedule 3</strong>: Email Campaign (Dependency)</p>
+<p><strong>调度 3</strong>：电子邮件营销活动（依赖）</p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Trigger: After Schedule 2 completes</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Delay: 60 minutes (allow time for extraction)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Task: Send welcome email campaign</span><br></span></code></pre></div></div>
-<p><strong>Result</strong>: Automated daily lead generation and outreach.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflow-2-weekly-maintenance">Workflow 2: Weekly Maintenance<a href="#workflow-2-weekly-maintenance" class="hash-link" aria-label="Workflow 2: Weekly Maintenance的直接链接" title="Workflow 2: Weekly Maintenance的直接链接" translate="no">​</a></h3>
-<p><strong>Schedule 1</strong>: Database Cleanup</p>
+<p><strong>结果</strong>：自动化的每日潜在客户获取和推广。</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="工作流程-2每周维护">工作流程 2：每周维护<a href="#工作流程-2每周维护" class="hash-link" aria-label="工作流程 2：每周维护的直接链接" title="工作流程 2：每周维护的直接链接" translate="no">​</a></h3>
+<p><strong>调度 1</strong>：数据库清理</p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Cron: 0 3 * * 0 (Sunday 3 AM)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Task: Remove old completed tasks</span><br></span></code></pre></div></div>
-<p><strong>Schedule 2</strong>: Proxy Health Check (Dependency)</p>
+<p><strong>调度 2</strong>：代理健康检查（依赖）</p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Trigger: After Schedule 1 completes</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Task: Test all proxies and remove failed</span><br></span></code></pre></div></div>
-<p><strong>Schedule 3</strong>: Report Generation (Dependency)</p>
+<p><strong>调度 3</strong>：报告生成（依赖）</p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Trigger: After Schedule 2 completes</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Task: Generate weekly usage report</span><br></span></code></pre></div></div>
-<p><strong>Result</strong>: Automated weekly maintenance and reporting.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflow-3-multi-regional-monitoring">Workflow 3: Multi-Regional Monitoring<a href="#workflow-3-multi-regional-monitoring" class="hash-link" aria-label="Workflow 3: Multi-Regional Monitoring的直接链接" title="Workflow 3: Multi-Regional Monitoring的直接链接" translate="no">​</a></h3>
-<p><strong>Schedule 1</strong>: US East Monitoring</p>
+<p><strong>结果</strong>：自动化的每周维护和报告。</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="工作流程-3多区域监控">工作流程 3：多区域监控<a href="#工作流程-3多区域监控" class="hash-link" aria-label="工作流程 3：多区域监控的直接链接" title="工作流程 3：多区域监控的直接链接" translate="no">​</a></h3>
+<p><strong>调度 1</strong>：美国东部监控</p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Cron: 0 */2 * * * (Every 2 hours)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Task: Search US East keywords</span><br></span></code></pre></div></div>
-<p><strong>Schedule 2</strong>: US West Monitoring</p>
+<p><strong>调度 2</strong>：美国西部监控</p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Cron: 0 */2 * * * (Every 2 hours, offset)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Task: Search US West keywords</span><br></span></code></pre></div></div>
-<p><strong>Schedule 3</strong>: Europe Monitoring</p>
+<p><strong>调度 3</strong>：欧洲监控</p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Cron: 0 */2 * * * (Every 2 hours, offset)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Task: Search European keywords</span><br></span></code></pre></div></div>
-<p><strong>Result</strong>: Continuous global monitoring with staggered schedules.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="integration-with-other-features">Integration with Other Features<a href="#integration-with-other-features" class="hash-link" aria-label="Integration with Other Features的直接链接" title="Integration with Other Features的直接链接" translate="no">​</a></h2>
-<p>The Task Scheduler integrates with:</p>
+<p><strong>结果</strong>：通过错开调度实现持续的全局监控。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="与其他功能的集成">与其他功能的集成<a href="#与其他功能的集成" class="hash-link" aria-label="与其他功能的集成的直接链接" title="与其他功能的集成的直接链接" translate="no">​</a></h2>
+<p>任务调度器与以下功能集成：</p>
 <ul>
-<li class=""><strong><a class="" href="/aiFetchly/zh-CN/docs/lead-generation/search-engines">Search Engines</a></strong>: Schedule recurring searches</li>
-<li class=""><strong><a class="" href="/aiFetchly/zh-CN/docs/lead-generation/contact-extraction">Contact Extraction</a></strong>: Auto-extract after searches</li>
-<li class=""><strong><a class="" href="/aiFetchly/zh-CN/docs/lead-generation/yellow-pages">Yellow Pages</a></strong>: Regular directory scraping</li>
-<li class=""><strong><a class="" href="/aiFetchly/zh-CN/docs/lead-generation/batch-email-sending">Batch Email Sending</a></strong>: Automated campaigns</li>
+<li class=""><strong><a class="" href="/aiFetchly/zh-CN/docs/lead-generation/search-engines">搜索引擎</a></strong>：调度定期搜索</li>
+<li class=""><strong><a class="" href="/aiFetchly/zh-CN/docs/lead-generation/contact-extraction">联系方式提取</a></strong>：搜索后自动提取</li>
+<li class=""><strong><a class="" href="/aiFetchly/zh-CN/docs/lead-generation/yellow-pages">黄页</a></strong>：定期目录抓取</li>
+<li class=""><strong><a class="" href="/aiFetchly/zh-CN/docs/lead-generation/batch-email-sending">批量邮件发送</a></strong>：自动化营销活动</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="next-steps">Next Steps<a href="#next-steps" class="hash-link" aria-label="Next Steps的直接链接" title="Next Steps的直接链接" translate="no">​</a></h2>
-<p>Now that you understand scheduling:</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="下一步">下一步<a href="#下一步" class="hash-link" aria-label="下一步的直接链接" title="下一步的直接链接" translate="no">​</a></h2>
+<p>现在您已经了解了调度功能：</p>
 <ul>
-<li class=""><a class="" href="/aiFetchly/zh-CN/docs/settings/system-settings">Configure system settings</a></li>
-<li class=""><a class="" href="/aiFetchly/zh-CN/docs/getting-started/introduction">Review the complete user manual</a></li>
+<li class=""><a class="" href="/aiFetchly/zh-CN/docs/settings/system-settings">配置系统设置</a></li>
+<li class=""><a class="" href="/aiFetchly/zh-CN/docs/getting-started/introduction">查看完整用户手册</a></li>
 </ul>
 <hr>
-<p><strong>Ready to automate?</strong> Start by scheduling a simple daily search task, then gradually build more complex automated workflows as you become familiar with the system.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="文件选项卡"><a class="pagination-nav__link pagination-nav__link--prev" href="/aiFetchly/zh-CN/docs/ai-outreach/ai-marketing-assistant"><div class="pagination-nav__sublabel">上一页</div><div class="pagination-nav__label">AI Marketing Assistant</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/aiFetchly/zh-CN/docs/settings/system-settings"><div class="pagination-nav__sublabel">下一页</div><div class="pagination-nav__label">System Settings</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#understanding-scheduling" class="table-of-contents__link toc-highlight">Understanding Scheduling</a></li><li><a href="#creating-a-scheduled-task" class="table-of-contents__link toc-highlight">Creating a Scheduled Task</a><ul><li><a href="#step-1-navigate-to-scheduler" class="table-of-contents__link toc-highlight">Step 1: Navigate to Scheduler</a></li><li><a href="#step-2-basic-information" class="table-of-contents__link toc-highlight">Step 2: Basic Information</a></li><li><a href="#step-3-configure-trigger" class="table-of-contents__link toc-highlight">Step 3: Configure Trigger</a></li><li><a href="#step-4-active-status" class="table-of-contents__link toc-highlight">Step 4: Active Status</a></li><li><a href="#step-5-save-schedule" class="table-of-contents__link toc-highlight">Step 5: Save Schedule</a></li></ul></li><li><a href="#managing-scheduled-tasks" class="table-of-contents__link toc-highlight">Managing Scheduled Tasks</a><ul><li><a href="#view-schedule-list" class="table-of-contents__link toc-highlight">View Schedule List</a></li><li><a href="#schedule-table" class="table-of-contents__link toc-highlight">Schedule Table</a></li><li><a href="#schedule-actions" class="table-of-contents__link toc-highlight">Schedule Actions</a></li></ul></li><li><a href="#monitoring-execution" class="table-of-contents__link toc-highlight">Monitoring Execution</a><ul><li><a href="#view-execution-history" class="table-of-contents__link toc-highlight">View Execution History</a></li><li><a href="#execution-statistics" class="table-of-contents__link toc-highlight">Execution Statistics</a></li><li><a href="#real-time-monitoring" class="table-of-contents__link toc-highlight">Real-Time Monitoring</a></li></ul></li><li><a href="#common-scheduling-patterns" class="table-of-contents__link toc-highlight">Common Scheduling Patterns</a><ul><li><a href="#pattern-1-daily-lead-generation" class="table-of-contents__link toc-highlight">Pattern 1: Daily Lead Generation</a></li><li><a href="#pattern-2-hourly-monitoring" class="table-of-contents__link toc-highlight">Pattern 2: Hourly Monitoring</a></li><li><a href="#pattern-3-weekly-campaign" class="table-of-contents__link toc-highlight">Pattern 3: Weekly Campaign</a></li><li><a href="#pattern-4-multi-step-workflow" class="table-of-contents__link toc-highlight">Pattern 4: Multi-Step Workflow</a></li><li><a href="#pattern-5-maintenance-tasks" class="table-of-contents__link toc-highlight">Pattern 5: Maintenance Tasks</a></li></ul></li><li><a href="#best-practices" class="table-of-contents__link toc-highlight">Best Practices</a><ul><li><a href="#1-schedule-design" class="table-of-contents__link toc-highlight">1. Schedule Design</a></li><li><a href="#2-error-handling" class="table-of-contents__link toc-highlight">2. Error Handling</a></li><li><a href="#3-resource-management" class="table-of-contents__link toc-highlight">3. Resource Management</a></li><li><a href="#4-testing" class="table-of-contents__link toc-highlight">4. Testing</a></li><li><a href="#5-documentation" class="table-of-contents__link toc-highlight">5. Documentation</a></li></ul></li><li><a href="#troubleshooting" class="table-of-contents__link toc-highlight">Troubleshooting</a><ul><li><a href="#schedule-not-running" class="table-of-contents__link toc-highlight">Schedule Not Running</a></li><li><a href="#task-executing-too-frequently" class="table-of-contents__link toc-highlight">Task Executing Too Frequently</a></li><li><a href="#dependencies-not-firing" class="table-of-contents__link toc-highlight">Dependencies Not Firing</a></li><li><a href="#tasks-taking-too-long" class="table-of-contents__link toc-highlight">Tasks Taking Too Long</a></li><li><a href="#execution-history-not-showing" class="table-of-contents__link toc-highlight">Execution History Not Showing</a></li></ul></li><li><a href="#advanced-workflows" class="table-of-contents__link toc-highlight">Advanced Workflows</a><ul><li><a href="#workflow-1-automated-lead-generation-pipeline" class="table-of-contents__link toc-highlight">Workflow 1: Automated Lead Generation Pipeline</a></li><li><a href="#workflow-2-weekly-maintenance" class="table-of-contents__link toc-highlight">Workflow 2: Weekly Maintenance</a></li><li><a href="#workflow-3-multi-regional-monitoring" class="table-of-contents__link toc-highlight">Workflow 3: Multi-Regional Monitoring</a></li></ul></li><li><a href="#integration-with-other-features" class="table-of-contents__link toc-highlight">Integration with Other Features</a></li><li><a href="#next-steps" class="table-of-contents__link toc-highlight">Next Steps</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/zh-CN/docs/getting-started/introduction">Getting Started</a></li><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/zh-CN/docs/lead-generation/search-engines">Lead Generation</a></li><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/zh-CN/docs/ai-outreach/knowledge-library">AI Outreach</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/aifetchly" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/aifetchly" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/robertzengcn/aiFetchly" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 aiFetchly. Built with Docusaurus.</div></div></div></footer></div>
+<p><strong>准备好自动化的了吗？</strong> 从调度一个简单的每日搜索任务开始，然后随着您对系统的熟悉，逐步构建更复杂的自动化工作流程。</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="文件选项卡"><a class="pagination-nav__link pagination-nav__link--prev" href="/aiFetchly/zh-CN/docs/ai-outreach/ai-marketing-assistant"><div class="pagination-nav__sublabel">上一页</div><div class="pagination-nav__label">AI 营销助手</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/aiFetchly/zh-CN/docs/settings/system-settings"><div class="pagination-nav__sublabel">下一页</div><div class="pagination-nav__label">System Settings</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#了解调度" class="table-of-contents__link toc-highlight">了解调度</a></li><li><a href="#创建计划任务" class="table-of-contents__link toc-highlight">创建计划任务</a><ul><li><a href="#第-1-步进入调度器" class="table-of-contents__link toc-highlight">第 1 步：进入调度器</a></li><li><a href="#第-2-步基本信息" class="table-of-contents__link toc-highlight">第 2 步：基本信息</a></li><li><a href="#第-3-步配置触发器" class="table-of-contents__link toc-highlight">第 3 步：配置触发器</a></li><li><a href="#第-4-步激活状态" class="table-of-contents__link toc-highlight">第 4 步：激活状态</a></li><li><a href="#第-5-步保存调度" class="table-of-contents__link toc-highlight">第 5 步：保存调度</a></li></ul></li><li><a href="#管理计划任务" class="table-of-contents__link toc-highlight">管理计划任务</a><ul><li><a href="#查看调度列表" class="table-of-contents__link toc-highlight">查看调度列表</a></li><li><a href="#调度表格" class="table-of-contents__link toc-highlight">调度表格</a></li><li><a href="#调度操作" class="table-of-contents__link toc-highlight">调度操作</a></li></ul></li><li><a href="#监控执行" class="table-of-contents__link toc-highlight">监控执行</a><ul><li><a href="#查看执行历史" class="table-of-contents__link toc-highlight">查看执行历史</a></li><li><a href="#执行统计" class="table-of-contents__link toc-highlight">执行统计</a></li><li><a href="#实时监控" class="table-of-contents__link toc-highlight">实时监控</a></li></ul></li><li><a href="#常见调度模式" class="table-of-contents__link toc-highlight">常见调度模式</a><ul><li><a href="#模式-1每日潜在客户获取" class="table-of-contents__link toc-highlight">模式 1：每日潜在客户获取</a></li><li><a href="#模式-2每小时监控" class="table-of-contents__link toc-highlight">模式 2：每小时监控</a></li><li><a href="#模式-3每周营销活动" class="table-of-contents__link toc-highlight">模式 3：每周营销活动</a></li><li><a href="#模式-4多步骤工作流程" class="table-of-contents__link toc-highlight">模式 4：多步骤工作流程</a></li><li><a href="#模式-5维护任务" class="table-of-contents__link toc-highlight">模式 5：维护任务</a></li></ul></li><li><a href="#最佳实践" class="table-of-contents__link toc-highlight">最佳实践</a><ul><li><a href="#1-调度设计" class="table-of-contents__link toc-highlight">1. 调度设计</a></li><li><a href="#2-错误处理" class="table-of-contents__link toc-highlight">2. 错误处理</a></li><li><a href="#3-资源管理" class="table-of-contents__link toc-highlight">3. 资源管理</a></li><li><a href="#4-测试" class="table-of-contents__link toc-highlight">4. 测试</a></li><li><a href="#5-文档记录" class="table-of-contents__link toc-highlight">5. 文档记录</a></li></ul></li><li><a href="#故障排除" class="table-of-contents__link toc-highlight">故障排除</a><ul><li><a href="#调度未运行" class="table-of-contents__link toc-highlight">调度未运行</a></li><li><a href="#任务执行过于频繁" class="table-of-contents__link toc-highlight">任务执行过于频繁</a></li><li><a href="#依赖未触发" class="table-of-contents__link toc-highlight">依赖未触发</a></li><li><a href="#任务耗时过长" class="table-of-contents__link toc-highlight">任务耗时过长</a></li><li><a href="#执行历史未显示" class="table-of-contents__link toc-highlight">执行历史未显示</a></li></ul></li><li><a href="#高级工作流程" class="table-of-contents__link toc-highlight">高级工作流程</a><ul><li><a href="#工作流程-1自动化潜在客户获取流程" class="table-of-contents__link toc-highlight">工作流程 1：自动化潜在客户获取流程</a></li><li><a href="#工作流程-2每周维护" class="table-of-contents__link toc-highlight">工作流程 2：每周维护</a></li><li><a href="#工作流程-3多区域监控" class="table-of-contents__link toc-highlight">工作流程 3：多区域监控</a></li></ul></li><li><a href="#与其他功能的集成" class="table-of-contents__link toc-highlight">与其他功能的集成</a></li><li><a href="#下一步" class="table-of-contents__link toc-highlight">下一步</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/zh-CN/docs/getting-started/introduction">Getting Started</a></li><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/zh-CN/docs/lead-generation/search-engines">Lead Generation</a></li><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/zh-CN/docs/ai-outreach/knowledge-library">AI Outreach</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/aifetchly" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/aifetchly" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/robertzengcn/aiFetchly" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 aiFetchly. Built with Docusaurus.</div></div></div></footer></div>
 </body>
 </html>

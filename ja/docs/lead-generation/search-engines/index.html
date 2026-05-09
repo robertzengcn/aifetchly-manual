@@ -4,354 +4,397 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.9.2">
 <title data-rh="true">Search Engine Scraping | aiFetchly Manual</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://robertzengcn.github.io/aiFetchly/ja/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://robertzengcn.github.io/aiFetchly/ja/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://robertzengcn.github.io/aiFetchly/ja/docs/lead-generation/search-engines"><meta data-rh="true" property="og:locale" content="ja"><meta data-rh="true" property="og:locale:alternate" content="en"><meta data-rh="true" property="og:locale:alternate" content="zh_CN"><meta data-rh="true" property="og:locale:alternate" content="es"><meta data-rh="true" property="og:locale:alternate" content="fr"><meta data-rh="true" property="og:locale:alternate" content="de"><meta data-rh="true" name="docusaurus_locale" content="ja"><meta data-rh="true" name="docsearch:language" content="ja"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Search Engine Scraping | aiFetchly Manual"><meta data-rh="true" name="description" content="Learn how to scrape search results from Google, Bing, and Yandex to generate leads with AI-powered analysis."><meta data-rh="true" property="og:description" content="Learn how to scrape search results from Google, Bing, and Yandex to generate leads with AI-powered analysis."><link data-rh="true" rel="icon" href="/aiFetchly/ja/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://robertzengcn.github.io/aiFetchly/ja/docs/lead-generation/search-engines"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/docs/lead-generation/search-engines" hreflang="en"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/zh-CN/docs/lead-generation/search-engines" hreflang="zh-CN"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/es/docs/lead-generation/search-engines" hreflang="es"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/fr/docs/lead-generation/search-engines" hreflang="fr"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/de/docs/lead-generation/search-engines" hreflang="de"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/ja/docs/lead-generation/search-engines" hreflang="ja"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/docs/lead-generation/search-engines" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Search Engines","item":"https://robertzengcn.github.io/aiFetchly/ja/docs/lead-generation/search-engines"}]}</script><link rel="stylesheet" href="/aiFetchly/ja/assets/css/styles.ac14db2c.css">
-<script src="/aiFetchly/ja/assets/js/runtime~main.941cb2e7.js" defer="defer"></script>
+<script src="/aiFetchly/ja/assets/js/runtime~main.9a112803.js" defer="defer"></script>
 <script src="/aiFetchly/ja/assets/js/main.62d68ba8.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
 <symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
 </defs></svg>
-<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/aiFetchly/ja/img/logo.svg"><div role="region" aria-label="メインコンテンツまでスキップ"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">メインコンテンツまでスキップ</a></div><nav aria-label="ナビゲーション" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="ナビゲーションバーを開く" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/aiFetchly/ja/"><div class="navbar__logo"><img src="/aiFetchly/ja/img/logo.svg" alt="aiFetchly ロゴ" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/aiFetchly/ja/img/logo.svg" alt="aiFetchly ロゴ" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">aiFetchly マニュアル</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/aiFetchly/ja/docs/getting-started/introduction">ドキュメント</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/robertzengcn/aiFetchly" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="iconLanguage_nlXk"><path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></svg>日本語</a><ul class="dropdown__menu"><li><a href="/aiFetchly/docs/lead-generation/search-engines" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="en">English</a></li><li><a href="/aiFetchly/zh-CN/docs/lead-generation/search-engines" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="zh-CN">中文（中国）</a></li><li><a href="/aiFetchly/es/docs/lead-generation/search-engines" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="es">Español</a></li><li><a href="/aiFetchly/fr/docs/lead-generation/search-engines" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="fr">Français</a></li><li><a href="/aiFetchly/de/docs/lead-generation/search-engines" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="de">Deutsch</a></li><li><a href="/aiFetchly/ja/docs/lead-generation/search-engines" target="_self" rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang="ja">日本語</a></li></ul></div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="システムモード" aria-label="ダークモードを切り替える(現在はシステムモード)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="先頭へ戻る" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="ドキュメントのサイドバー" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/aiFetchly/ja/docs/getting-started/introduction"><span title="Introduction" class="linkLabel_WmDU">Introduction</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="Getting Started" class="categoryLinkLabel_W154">Getting Started</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/getting-started/installation"><span title="Installation" class="linkLabel_WmDU">Installation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/getting-started/proxy-setup"><span title="Proxy Setup" class="linkLabel_WmDU">Proxy Setup</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--active"><span title="Lead Generation" class="categoryLinkLabel_W154">Lead Generation</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/aiFetchly/ja/docs/lead-generation/search-engines"><span title="Search Engines" class="linkLabel_WmDU">Search Engines</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/lead-generation/yellow-pages"><span title="Yellow Pages" class="linkLabel_WmDU">Yellow Pages</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/lead-generation/contact-extraction"><span title="Email Extraction" class="linkLabel_WmDU">Email Extraction</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/lead-generation/batch-email-sending"><span title="Batch Email Sending" class="linkLabel_WmDU">Batch Email Sending</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="AI Outreach" class="categoryLinkLabel_W154">AI Outreach</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/ai-outreach/knowledge-library"><span title="Knowledge Library" class="linkLabel_WmDU">Knowledge Library</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/ai-outreach/mcp-tools"><span title="MCP Tools" class="linkLabel_WmDU">MCP Tools</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/ai-outreach/ai-skills"><span title="AI Skills" class="linkLabel_WmDU">AI Skills</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/ai-outreach/ai-email-writer"><span title="AI Email Writer" class="linkLabel_WmDU">AI Email Writer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/ai-outreach/ai-marketing-assistant"><span title="AI Marketing Assistant" class="linkLabel_WmDU">AI Marketing Assistant</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="Automation" class="categoryLinkLabel_W154">Automation</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/automation/task-scheduling"><span title="Task Scheduler" class="linkLabel_WmDU">Task Scheduler</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="Settings" class="categoryLinkLabel_W154">Settings</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/settings/system-settings"><span title="System Settings" class="linkLabel_WmDU">System Settings</span></a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="パンくずリストのナビゲーション"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="ホームページ" class="breadcrumbs__link" href="/aiFetchly/ja/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Lead Generation</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Search Engines</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">このページの見出し</button></div><div class="theme-doc-markdown markdown"><header><h1>Search Engine Scraping</h1></header>
-<p>aiFetchly&#x27;s multi-engine search scraping feature allows you to collect leads from multiple search engines simultaneously. Extract business information, URLs, and contact details from search results automatically.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="supported-search-engines">Supported Search Engines<a href="#supported-search-engines" class="hash-link" aria-label="Supported Search Engines への直接リンク" title="Supported Search Engines への直接リンク" translate="no">​</a></h2>
-<table><thead><tr><th>Engine</th><th>Best For</th><th>Account Required</th><th>Local Browser</th></tr></thead><tbody><tr><td><strong>Google</strong></td><td>General searches, global reach</td><td>Recommended</td><td>Optional</td></tr><tr><td><strong>Bing</strong></td><td>Microsoft ecosystem, US market</td><td>Optional</td><td>Optional</td></tr><tr><td><strong>Yandex</strong></td><td>Russian market, Cyrillic content</td><td>Recommended</td><td><strong>Required</strong></td></tr></tbody></table>
-<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Yandex Requirement</div><div class="admonitionContent_BuS1"><p>Yandex scraping requires <strong>local browser integration</strong> for proper operation. Enable this option when creating Yandex tasks.</p></div></div>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="creating-a-search-task">Creating a Search Task<a href="#creating-a-search-task" class="hash-link" aria-label="Creating a Search Task への直接リンク" title="Creating a Search Task への直接リンク" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-1-navigate-to-search">Step 1: Navigate to Search<a href="#step-1-navigate-to-search" class="hash-link" aria-label="Step 1: Navigate to Search への直接リンク" title="Step 1: Navigate to Search への直接リンク" translate="no">​</a></h3>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/aiFetchly/ja/img/logo.svg"><div role="region" aria-label="メインコンテンツまでスキップ"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">メインコンテンツまでスキップ</a></div><nav aria-label="ナビゲーション" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="ナビゲーションバーを開く" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/aiFetchly/ja/"><div class="navbar__logo"><img src="/aiFetchly/ja/img/logo.svg" alt="aiFetchly ロゴ" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/aiFetchly/ja/img/logo.svg" alt="aiFetchly ロゴ" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">aiFetchly マニュアル</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/aiFetchly/ja/docs/getting-started/introduction">ドキュメント</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/robertzengcn/aiFetchly" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="iconLanguage_nlXk"><path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></svg>日本語</a><ul class="dropdown__menu"><li><a href="/aiFetchly/docs/lead-generation/search-engines" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="en">English</a></li><li><a href="/aiFetchly/zh-CN/docs/lead-generation/search-engines" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="zh-CN">中文（中国）</a></li><li><a href="/aiFetchly/es/docs/lead-generation/search-engines" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="es">Español</a></li><li><a href="/aiFetchly/fr/docs/lead-generation/search-engines" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="fr">Français</a></li><li><a href="/aiFetchly/de/docs/lead-generation/search-engines" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="de">Deutsch</a></li><li><a href="/aiFetchly/ja/docs/lead-generation/search-engines" target="_self" rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang="ja">日本語</a></li></ul></div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="システムモード" aria-label="ダークモードを切り替える(現在はシステムモード)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="先頭へ戻る" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="ドキュメントのサイドバー" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/aiFetchly/ja/docs/getting-started/introduction"><span title="Introduction" class="linkLabel_WmDU">Introduction</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="Getting Started" class="categoryLinkLabel_W154">Getting Started</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/getting-started/installation"><span title="Installation" class="linkLabel_WmDU">Installation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/getting-started/proxy-setup"><span title="Proxy Setup" class="linkLabel_WmDU">Proxy Setup</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--active"><span title="Lead Generation" class="categoryLinkLabel_W154">Lead Generation</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/aiFetchly/ja/docs/lead-generation/search-engines"><span title="Search Engines" class="linkLabel_WmDU">Search Engines</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/lead-generation/yellow-pages"><span title="Yellow Pages" class="linkLabel_WmDU">Yellow Pages</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/lead-generation/contact-extraction"><span title="Email Extraction" class="linkLabel_WmDU">Email Extraction</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/lead-generation/batch-email-sending"><span title="Batch Email Sending" class="linkLabel_WmDU">Batch Email Sending</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="AI Outreach" class="categoryLinkLabel_W154">AI Outreach</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/ai-outreach/knowledge-library"><span title="Knowledge Library" class="linkLabel_WmDU">Knowledge Library</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/ai-outreach/mcp-tools"><span title="MCPツール" class="linkLabel_WmDU">MCPツール</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/ai-outreach/ai-skills"><span title="AI Skills" class="linkLabel_WmDU">AI Skills</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/ai-outreach/ai-email-writer"><span title="AI Email Writer" class="linkLabel_WmDU">AI Email Writer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/ai-outreach/ai-marketing-assistant"><span title="AI Marketing Assistant" class="linkLabel_WmDU">AI Marketing Assistant</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="Automation" class="categoryLinkLabel_W154">Automation</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/automation/task-scheduling"><span title="Task Scheduler" class="linkLabel_WmDU">Task Scheduler</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="Settings" class="categoryLinkLabel_W154">Settings</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/ja/docs/settings/system-settings"><span title="System Settings" class="linkLabel_WmDU">System Settings</span></a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="パンくずリストのナビゲーション"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="ホームページ" class="breadcrumbs__link" href="/aiFetchly/ja/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Lead Generation</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Search Engines</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">このページの見出し</button></div><div class="theme-doc-markdown markdown"><header><h1>検索エンジンスクレイピング</h1></header>
+<p>aiFetchly のマルチエンジン検索スクレイピング機能を使えば、複数の検索エンジンから同時にリードを収集できます。検索結果からビジネス情報、URL、連絡先の詳細を自動的に抽出します。AI 分析により、リードのスコアリング、業界分類、連絡先情報の抽出がすべて検索結果から行えます。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="対応検索エンジン">対応検索エンジン<a href="#対応検索エンジン" class="hash-link" aria-label="対応検索エンジン への直接リンク" title="対応検索エンジン への直接リンク" translate="no">​</a></h2>
+<table><thead><tr><th>エンジン</th><th>最適な用途</th><th>アカウント必須</th><th>ローカルブラウザ</th></tr></thead><tbody><tr><td><strong>Google</strong></td><td>一般検索、グローバルリーチ</td><td>推奨</td><td>任意</td></tr><tr><td><strong>Bing</strong></td><td>Microsoft エコシステム、米国市場</td><td>任意</td><td>任意</td></tr><tr><td><strong>Yandex</strong></td><td>ロシア市場、キリル文字コンテンツ</td><td>推奨</td><td><strong>必須</strong></td></tr></tbody></table>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Yandex の要件</div><div class="admonitionContent_BuS1"><p>Yandex スクレイピングを正常に動作させるには、<strong>ローカルブラウザ統合</strong> が必要です。Yandex タスクを作成する際にこのオプションを有効にしてください。</p></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="検索タスクの作成">検索タスクの作成<a href="#検索タスクの作成" class="hash-link" aria-label="検索タスクの作成 への直接リンク" title="検索タスクの作成 への直接リンク" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ステップ-1-検索に移動">ステップ 1: 検索に移動<a href="#ステップ-1-検索に移動" class="hash-link" aria-label="ステップ 1: 検索に移動 への直接リンク" title="ステップ 1: 検索に移動 への直接リンク" translate="no">​</a></h3>
 <ol>
-<li class="">Click <strong>Search</strong> in the left navigation menu</li>
-<li class="">You&#x27;ll see the <strong>Search Form</strong> page</li>
+<li class="">左側のナビゲーションメニューで <strong>Search</strong> をクリック</li>
+<li class=""><strong>Search Form</strong> ページが表示されます</li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-2-basic-search-configuration">Step 2: Basic Search Configuration<a href="#step-2-basic-search-configuration" class="hash-link" aria-label="Step 2: Basic Search Configuration への直接リンク" title="Step 2: Basic Search Configuration への直接リンク" translate="no">​</a></h3>
-<p>Enter the following required information:</p>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="keywords">Keywords<a href="#keywords" class="hash-link" aria-label="Keywords への直接リンク" title="Keywords への直接リンク" translate="no">​</a></h4>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ステップ-2-基本検索設定">ステップ 2: 基本検索設定<a href="#ステップ-2-基本検索設定" class="hash-link" aria-label="ステップ 2: 基本検索設定 への直接リンク" title="ステップ 2: 基本検索設定 への直接リンク" translate="no">​</a></h3>
+<p>以下の必須情報を入力します:</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="キーワード">キーワード<a href="#キーワード" class="hash-link" aria-label="キーワード への直接リンク" title="キーワード への直接リンク" translate="no">​</a></h4>
 <ol>
 <li class="">
-<p><strong>Enter Your Keywords</strong>: Type or paste your search keywords in the text area</p>
+<p><strong>キーワードの入力</strong>: テキストエリアに検索キーワードを入力または貼り付け</p>
 <ul>
-<li class="">One keyword per line</li>
-<li class="">Use specific, targeted keywords for better results</li>
+<li class="">1 行に 1 つのキーワード</li>
+<li class="">より良い結果を得るために、具体的でターゲットを絞ったキーワードを使用</li>
 </ul>
 </li>
 <li class="">
-<p><strong>Generate Related Keywords</strong> (Optional):</p>
+<p><strong>関連キーワードの生成</strong>（任意）:</p>
 <ul>
-<li class="">Click the <strong>Generate Related Keywords</strong> button</li>
-<li class="">aiFetchly uses AI to generate related search terms</li>
-<li class="">Expands your keyword list for broader coverage</li>
-<li class="">Removes duplicates automatically</li>
+<li class=""><strong>Generate Related Keywords</strong> ボタンをクリック</li>
+<li class="">aiFetchly が AI を使用して関連検索語を生成</li>
+<li class="">より幅広いカバレッジのためにキーワードリストを拡張</li>
+<li class="">重複は自動的に削除</li>
 </ul>
 </li>
 </ol>
-<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Keyword Strategy</div><div class="admonitionContent_BuS1"><p>Start with 5-10 seed keywords, then use AI generation to expand to 20-50 related keywords for comprehensive coverage.</p></div></div>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="search-engine">Search Engine<a href="#search-engine" class="hash-link" aria-label="Search Engine への直接リンク" title="Search Engine への直接リンク" translate="no">​</a></h4>
-<p>Select the search engine from the dropdown:</p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>キーワード戦略</div><div class="admonitionContent_BuS1"><p>まず 5〜10 のシードキーワードで始め、AI 生成を使って 20〜50 の関連キーワードに拡張し、包括的なカバレッジを確保してください。</p></div></div>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="検索エンジン">検索エンジン<a href="#検索エンジン" class="hash-link" aria-label="検索エンジン への直接リンク" title="検索エンジン への直接リンク" translate="no">​</a></h4>
+<p>ドロップダウンから検索エンジンを選択:</p>
 <ul>
-<li class="">Google (default)</li>
+<li class="">Google（デフォルト）</li>
 <li class="">Bing</li>
 <li class="">Yandex</li>
 </ul>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="page-number">Page Number<a href="#page-number" class="hash-link" aria-label="Page Number への直接リンク" title="Page Number への直接リンク" translate="no">​</a></h4>
-<p>Specify which page to start scraping from:</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="ページ番号">ページ番号<a href="#ページ番号" class="hash-link" aria-label="ページ番号 への直接リンク" title="ページ番号 への直接リンク" translate="no">​</a></h4>
+<p>スクレイピングを開始するページを指定:</p>
 <ul>
-<li class=""><strong>Start at page 1</strong> for fresh searches</li>
-<li class=""><strong>Resume from page X</strong> if continuing a previous task</li>
+<li class="">新規検索の場合は <strong>ページ 1 から開始</strong></li>
+<li class="">以前のタスクを続行する場合は <strong>ページ X から再開</strong></li>
 </ul>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="concurrent-quantity">Concurrent Quantity<a href="#concurrent-quantity" class="hash-link" aria-label="Concurrent Quantity への直接リンク" title="Concurrent Quantity への直接リンク" translate="no">​</a></h4>
-<p>Set the number of concurrent searches:</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="同時実行数">同時実行数<a href="#同時実行数" class="hash-link" aria-label="同時実行数 への直接リンク" title="同時実行数 への直接リンク" translate="no">​</a></h4>
+<p>同時検索の数を設定:</p>
 <ul>
-<li class=""><strong>1</strong> (default): Safest, slowest</li>
-<li class=""><strong>3-5</strong>: Moderate speed, good for most use cases</li>
-<li class=""><strong>10+</strong>: Fastest, requires more proxies</li>
+<li class=""><strong>1</strong>（デフォルト）: 最も安全、最も遅い</li>
+<li class=""><strong>3〜5</strong>: 中程度の速度、ほとんどの用途に適している</li>
+<li class=""><strong>10 以上</strong>: 最速、より多くのプロキシが必要</li>
 </ul>
-<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Concurrency Limits</div><div class="admonitionContent_BuS1"><p>Higher concurrency increases the risk of being blocked. Start with 1-3 and increase gradually.</p></div></div>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-3-advanced-options">Step 3: Advanced Options<a href="#step-3-advanced-options" class="hash-link" aria-label="Step 3: Advanced Options への直接リンク" title="Step 3: Advanced Options への直接リンク" translate="no">​</a></h3>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="proxy-configuration">Proxy Configuration<a href="#proxy-configuration" class="hash-link" aria-label="Proxy Configuration への直接リンク" title="Proxy Configuration への直接リンク" translate="no">​</a></h4>
-<p><strong>Option A: Use Saved Proxies</strong></p>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>同時実行数の制限</div><div class="admonitionContent_BuS1"><p>同時実行数が高いほどブロックされるリスクが高まります。1〜3 から始め、段階的に増やしてください。</p></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ステップ-3-詳細オプション">ステップ 3: 詳細オプション<a href="#ステップ-3-詳細オプション" class="hash-link" aria-label="ステップ 3: 詳細オプション への直接リンク" title="ステップ 3: 詳細オプション への直接リンク" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="プロキシ設定">プロキシ設定<a href="#プロキシ設定" class="hash-link" aria-label="プロキシ設定 への直接リンク" title="プロキシ設定 への直接リンク" translate="no">​</a></h4>
+<p><strong>オプション A: 保存済みプロキシの使用</strong></p>
 <ol>
-<li class="">Click the <strong>Choose Proxy</strong> button</li>
-<li class="">Select one or more proxies from your list</li>
-<li class="">Click <strong>Confirm</strong> to add them to the task</li>
+<li class=""><strong>Choose Proxy</strong> ボタンをクリック</li>
+<li class="">リストから 1 つ以上のプロキシを選択</li>
+<li class=""><strong>Confirm</strong> をクリックしてタスクに追加</li>
 </ol>
-<p><strong>Option B: Manual Proxy Entry</strong></p>
+<p><strong>オプション B: 手動プロキシ入力</strong></p>
 <ol>
-<li class="">Toggle the proxy option</li>
-<li class="">Enter proxy details manually:<!-- -->
+<li class="">プロキシオプションを切替</li>
+<li class="">プロキシの詳細を手動で入力:<!-- -->
 <ul>
-<li class="">Host/IP address</li>
-<li class="">Port number</li>
-<li class="">Username (if required)</li>
-<li class="">Password (if required)</li>
+<li class="">ホスト/IP アドレス</li>
+<li class="">ポート番号</li>
+<li class="">ユーザー名（必要な場合）</li>
+<li class="">パスワード（必要な場合）</li>
 </ul>
 </li>
 </ol>
-<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Proxy Best Practices</div><div class="admonitionContent_BuS1"><p>Use multiple proxies for high-concurrency tasks to distribute load and avoid blocks.</p></div></div>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="local-browser-integration">Local Browser Integration<a href="#local-browser-integration" class="hash-link" aria-label="Local Browser Integration への直接リンク" title="Local Browser Integration への直接リンク" translate="no">​</a></h4>
-<p>Enable local browser scraping for more human-like behavior:</p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>プロキシのベストプラクティス</div><div class="admonitionContent_BuS1"><p>高同時実行のタスクでは複数のプロキシを使用して、負荷を分散しブロックを回避してください。</p></div></div>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="ローカルブラウザ統合">ローカルブラウザ統合<a href="#ローカルブラウザ統合" class="hash-link" aria-label="ローカルブラウザ統合 への直接リンク" title="ローカルブラウザ統合 への直接リンク" translate="no">​</a></h4>
+<p>より人間に近い動作のためにローカルブラウザスクレイピングを有効にします:</p>
 <ol>
-<li class="">Toggle <strong>Local Browser</strong> to enable</li>
-<li class="">Select your Chrome browser from the list</li>
-<li class=""><strong>Required for</strong>: Yandex scraping</li>
-<li class=""><strong>Recommended for</strong>: Google at scale</li>
+<li class=""><strong>Local Browser</strong> を切替えて有効化</li>
+<li class="">リストから Chrome ブラウザを選択</li>
+<li class=""><strong>必須</strong>: Yandex スクレイピング</li>
+<li class=""><strong>推奨</strong>: 大規模な Google スクレイピング</li>
 </ol>
-<p><strong>Benefits:</strong></p>
+<p><strong>メリット:</strong></p>
 <ul>
-<li class="">Lower detection rates</li>
-<li class="">Better success with anti-bot protections</li>
-<li class="">More consistent results</li>
+<li class="">検出率の低下</li>
+<li class="">アンチボット対策に対する高い成功率</li>
+<li class="">より安定した結果</li>
 </ul>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="search-account-usage">Search Account Usage<a href="#search-account-usage" class="hash-link" aria-label="Search Account Usage への直接リンク" title="Search Account Usage への直接リンク" translate="no">​</a></h4>
-<p>Use authenticated accounts for better success rates:</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="ブラウザで表示">ブラウザで表示<a href="#ブラウザで表示" class="hash-link" aria-label="ブラウザで表示 への直接リンク" title="ブラウザで表示 への直接リンク" translate="no">​</a></h4>
+<p><strong>Show in Browser</strong> を切替えて、スクレイピング中のブラウザの表示を制御:</p>
+<ul>
+<li class=""><strong>有効</strong>: スクレイピング中にブラウザウィンドウが表示される — デバッグや進行状況の監視に便利</li>
+<li class=""><strong>無効</strong>（デフォルト）: ブラウザはヘッドレスモードで高速にバックグラウンド動作</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="ai-リカバリーの有効化">AI リカバリーの有効化<a href="#ai-リカバリーの有効化" class="hash-link" aria-label="AI リカバリーの有効化 への直接リンク" title="AI リカバリーの有効化 への直接リンク" translate="no">​</a></h4>
+<p><strong>Enable AI Recovery</strong> を切替えて、AI にスクレイピングエラーからの自動回復を許可:</p>
+<ul>
+<li class="">有効にすると、aiFetchly は AI を使用してスクレイピング中に発生したエラーを診断・回復</li>
+<li class="">システムはエラーのスクリーンショットを分析し、戦略を調整可能</li>
+<li class="">過剰なリソース消費を避けるため、リカバリー試行はレート制限あり</li>
+</ul>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>AI リカバリーを使用すべきケース</div><div class="admonitionContent_BuS1"><p>強力なアンチボット保護を持つエンジン（Google など）のスクレイピング時や、大規模タスクで時折エラーが予想される場合に AI リカバリーを有効にしてください。</p></div></div>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="検索アカウントの使用">検索アカウントの使用<a href="#検索アカウントの使用" class="hash-link" aria-label="検索アカウントの使用 への直接リンク" title="検索アカウントの使用 への直接リンク" translate="no">​</a></h4>
+<p>認証済みアカウントを使用して成功率を向上:</p>
 <ol>
-<li class="">Toggle <strong>Search Account</strong> to enable</li>
-<li class="">Click <strong>Choose Account</strong> to select saved credentials</li>
-<li class="">Select accounts matching your search engine</li>
-<li class="">Click <strong>Confirm</strong></li>
+<li class=""><strong>Search Account</strong> を切替えて有効化</li>
+<li class=""><strong>Choose Account</strong> をクリックして保存済みの認証情報を選択</li>
+<li class="">検索エンジンに一致するアカウントを選択</li>
+<li class=""><strong>Confirm</strong> をクリック</li>
 </ol>
-<p><strong>Recommendations:</strong></p>
+<p><strong>推奨:</strong></p>
 <ul>
-<li class=""><strong>Google</strong>: Use accounts for large-scale scraping</li>
-<li class=""><strong>Yandex</strong>: Use accounts for better access</li>
-<li class=""><strong>Bing</strong>: Optional, less critical</li>
+<li class=""><strong>Google</strong>: 大規模スクレイピングにはアカウントを使用</li>
+<li class=""><strong>Yandex</strong>: より良いアクセスのためにアカウントを使用</li>
+<li class=""><strong>Bing</strong>: 任意、それほど重要ではない</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-4-execute-or-save">Step 4: Execute or Save<a href="#step-4-execute-or-save" class="hash-link" aria-label="Step 4: Execute or Save への直接リンク" title="Step 4: Execute or Save への直接リンク" translate="no">​</a></h3>
-<p>Choose one of the following options:</p>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="save-only">Save Only<a href="#save-only" class="hash-link" aria-label="Save Only への直接リンク" title="Save Only への直接リンク" translate="no">​</a></h4>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ステップ-4-実行または保存">ステップ 4: 実行または保存<a href="#ステップ-4-実行または保存" class="hash-link" aria-label="ステップ 4: 実行または保存 への直接リンク" title="ステップ 4: 実行または保存 への直接リンク" translate="no">​</a></h3>
+<p>以下のいずれかのオプションを選択:</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="保存のみ">保存のみ<a href="#保存のみ" class="hash-link" aria-label="保存のみ への直接リンク" title="保存のみ への直接リンク" translate="no">​</a></h4>
 <ul>
-<li class="">Creates the task without running it</li>
-<li class="">Useful for scheduling or batch task creation</li>
-<li class="">Task status: &quot;Not Start&quot;</li>
+<li class="">タスクを実行せずに作成</li>
+<li class="">スケジューリングやバッチタスク作成に便利</li>
+<li class="">タスクステータス: &quot;Not Start&quot;</li>
 </ul>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="run-task">Run Task<a href="#run-task" class="hash-link" aria-label="Run Task への直接リンク" title="Run Task への直接リンク" translate="no">​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="タスクの実行">タスクの実行<a href="#タスクの実行" class="hash-link" aria-label="タスクの実行 への直接リンク" title="タスクの実行 への直接リンク" translate="no">​</a></h4>
 <ul>
-<li class="">Creates and executes the task immediately</li>
-<li class="">Status changes to &quot;Processing&quot;</li>
-<li class="">Results appear in real-time</li>
+<li class="">タスクを作成して直ちに実行</li>
+<li class="">ステータスが &quot;Processing&quot; に変更</li>
+<li class="">リアルタイムで結果が表示</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="managing-search-tasks">Managing Search Tasks<a href="#managing-search-tasks" class="hash-link" aria-label="Managing Search Tasks への直接リンク" title="Managing Search Tasks への直接リンク" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="view-task-list">View Task List<a href="#view-task-list" class="hash-link" aria-label="View Task List への直接リンク" title="View Task List への直接リンク" translate="no">​</a></h3>
-<p>Navigate to <strong>Search</strong> → <strong>Result List</strong> to see all your search tasks.</p>
-<p><strong>Task List Columns:</strong></p>
-<table><thead><tr><th>Column</th><th>Description</th></tr></thead><tbody><tr><td><strong>ID</strong></td><td>Unique task identifier</td></tr><tr><td><strong>Keywords</strong></td><td>Keywords used in the search</td></tr><tr><td><strong>Search Engine</strong></td><td>Engine used (Google, Bing, etc.)</td></tr><tr><td><strong>Status</strong></td><td>Not Start, Processing, Complete, Error</td></tr><tr><td><strong>Created</strong></td><td>Date and time created</td></tr><tr><td><strong>Actions</strong></td><td>Run, Edit, Delete, View Results</td></tr></tbody></table>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="task-actions">Task Actions<a href="#task-actions" class="hash-link" aria-label="Task Actions への直接リンク" title="Task Actions への直接リンク" translate="no">​</a></h3>
-<table><thead><tr><th>Action</th><th>Description</th><th>When Available</th></tr></thead><tbody><tr><td><strong>Run</strong></td><td>Start a &quot;Not Start&quot; task</td><td>Task not started</td></tr><tr><td><strong>Retry</strong></td><td>Restart a failed task</td><td>Task has &quot;Error&quot; status</td></tr><tr><td><strong>Edit</strong></td><td>Modify task parameters</td><td>Any task</td></tr><tr><td><strong>Kill Process</strong></td><td>Stop a running task</td><td>Task is &quot;Processing&quot;</td></tr><tr><td><strong>View Results</strong></td><td>See detailed results</td><td>Task has results</td></tr><tr><td><strong>Download Logs</strong></td><td>Export error logs</td><td>Task has errors</td></tr></tbody></table>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="viewing-search-results">Viewing Search Results<a href="#viewing-search-results" class="hash-link" aria-label="Viewing Search Results への直接リンク" title="Viewing Search Results への直接リンク" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-1-open-results">Step 1: Open Results<a href="#step-1-open-results" class="hash-link" aria-label="Step 1: Open Results への直接リンク" title="Step 1: Open Results への直接リンク" translate="no">​</a></h3>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="検索タスクの管理">検索タスクの管理<a href="#検索タスクの管理" class="hash-link" aria-label="検索タスクの管理 への直接リンク" title="検索タスクの管理 への直接リンク" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="タスクリストの表示">タスクリストの表示<a href="#タスクリストの表示" class="hash-link" aria-label="タスクリストの表示 への直接リンク" title="タスクリストの表示 への直接リンク" translate="no">​</a></h3>
+<p><strong>Search</strong> → <strong>Result List</strong> に移動してすべての検索タスクを表示します。</p>
+<p><strong>タスクリストの列:</strong></p>
+<table><thead><tr><th>列</th><th>説明</th></tr></thead><tbody><tr><td><strong>ID</strong></td><td>一意のタスク識別子</td></tr><tr><td><strong>Keywords</strong></td><td>検索に使用されたキーワード</td></tr><tr><td><strong>Search Engine</strong></td><td>使用エンジン（Google、Bing など）</td></tr><tr><td><strong>Status</strong></td><td>Not Start、Processing、Complete、Error</td></tr><tr><td><strong>Record Time</strong></td><td>作成日時</td></tr><tr><td><strong>Actions</strong></td><td>実行、編集、結果表示、プロセス強制終了、リトライ、ログダウンロード</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="タスクアクション">タスクアクション<a href="#タスクアクション" class="hash-link" aria-label="タスクアクション への直接リンク" title="タスクアクション への直接リンク" translate="no">​</a></h3>
+<table><thead><tr><th>アクション</th><th>説明</th><th>利用可能なタイミング</th></tr></thead><tbody><tr><td><strong>Run</strong></td><td>&quot;Not Start&quot; のタスクを開始</td><td>タスク未開始時</td></tr><tr><td><strong>Retry</strong></td><td>失敗したタスクを再実行</td><td>タスクが &quot;Error&quot; ステータスの場合</td></tr><tr><td><strong>Edit</strong></td><td>タスクパラメータを変更</td><td>すべてのタスク</td></tr><tr><td><strong>Kill Process</strong></td><td>実行中のタスクを停止</td><td>タスクが &quot;Processing&quot; の場合</td></tr><tr><td><strong>View Results</strong></td><td>詳細な結果を表示</td><td>タスクに結果がある場合</td></tr><tr><td><strong>Download Logs</strong></td><td>エラーログをエクスポート</td><td>タスクにエラーがある場合</td></tr></tbody></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="検索結果の表示">検索結果の表示<a href="#検索結果の表示" class="hash-link" aria-label="検索結果の表示 への直接リンク" title="検索結果の表示 への直接リンク" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ステップ-1-結果を開く">ステップ 1: 結果を開く<a href="#ステップ-1-結果を開く" class="hash-link" aria-label="ステップ 1: 結果を開く への直接リンク" title="ステップ 1: 結果を開く への直接リンク" translate="no">​</a></h3>
 <ol>
-<li class="">Go to <strong>Search</strong> → <strong>Result List</strong></li>
-<li class="">Find your task</li>
-<li class="">Click <strong>View Results</strong> to see detailed results</li>
+<li class=""><strong>Search</strong> → <strong>Result List</strong> に移動</li>
+<li class="">タスクを見つける</li>
+<li class=""><strong>View Results</strong> をクリックして詳細な結果を表示</li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-2-results-table">Step 2: Results Table<a href="#step-2-results-table" class="hash-link" aria-label="Step 2: Results Table への直接リンク" title="Step 2: Results Table への直接リンク" translate="no">​</a></h3>
-<p>The results table displays:</p>
-<table><thead><tr><th>Column</th><th>Description</th></tr></thead><tbody><tr><td><strong>ID</strong></td><td>Result identifier</td></tr><tr><td><strong>Title</strong></td><td>Page title from search result</td></tr><tr><td><strong>Link</strong></td><td>URL of the search result</td></tr><tr><td><strong>Keyword</strong></td><td>Keyword that generated this result</td></tr><tr><td><strong>Timestamp</strong></td><td>When the result was scraped</td></tr><tr><td><strong>AI Industry</strong></td><td>Industry classification (if analyzed)</td></tr><tr><td><strong>AI Match Score</strong></td><td>Lead quality score (if analyzed)</td></tr><tr><td><strong>Analysis Status</strong></td><td>Analysis completion status</td></tr></tbody></table>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-3-interact-with-results">Step 3: Interact with Results<a href="#step-3-interact-with-results" class="hash-link" aria-label="Step 3: Interact with Results への直接リンク" title="Step 3: Interact with Results への直接リンク" translate="no">​</a></h3>
-<p><strong>Individual Actions:</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ステップ-2-結果テーブル">ステップ 2: 結果テーブル<a href="#ステップ-2-結果テーブル" class="hash-link" aria-label="ステップ 2: 結果テーブル への直接リンク" title="ステップ 2: 結果テーブル への直接リンク" translate="no">​</a></h3>
+<p>結果テーブルには以下が表示されます:</p>
+<table><thead><tr><th>列</th><th>説明</th></tr></thead><tbody><tr><td><strong>ID</strong></td><td>結果識別子</td></tr><tr><td><strong>Title</strong></td><td>検索結果のページタイトル</td></tr><tr><td><strong>Link</strong></td><td>検索結果の URL</td></tr><tr><td><strong>Keyword</strong></td><td>この結果を生成したキーワード</td></tr><tr><td><strong>Record Time</strong></td><td>結果がスクレイピングされた日時</td></tr><tr><td><strong>Customer Industry</strong></td><td>AI 分類された業界（分析済みの場合）</td></tr><tr><td><strong>Probability</strong></td><td>AI リード品質スコア 0〜100%（分析済みの場合）</td></tr><tr><td><strong>Analysis Status</strong></td><td>分析の完了ステータス（pending/analyzing/completed/failed）</td></tr><tr><td><strong>Contact Extraction</strong></td><td>連絡先情報の抽出ステータス</td></tr><tr><td><strong>Email</strong></td><td>抽出されたメールアドレス（抽出済みの場合）</td></tr><tr><td><strong>Phone</strong></td><td>抽出された電話番号（抽出済みの場合）</td></tr><tr><td><strong>Address</strong></td><td>抽出された住所（抽出済みの場合）</td></tr></tbody></table>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>列の表示設定</div><div class="admonitionContent_BuS1"><p><strong>列表示メニュー</strong>を使用して、表示する列をカスタマイズできます。列セレクターをクリックして、ワークフローのニーズに応じて特定の列の表示/非表示を切り替えてください。</p></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ステップ-3-結果の操作">ステップ 3: 結果の操作<a href="#ステップ-3-結果の操作" class="hash-link" aria-label="ステップ 3: 結果の操作 への直接リンク" title="ステップ 3: 結果の操作 への直接リンク" translate="no">​</a></h3>
+<p><strong>個別アクション:</strong></p>
 <ul>
-<li class=""><strong>Copy Link</strong>: Copy URL to clipboard</li>
-<li class=""><strong>Open Link</strong>: Open URL in your browser</li>
+<li class=""><strong>Copy Link</strong>: URL をクリップボードにコピー</li>
+<li class=""><strong>Copy Contact Info</strong>: 抽出されたメール、電話番号、または住所を直接コピー</li>
 </ul>
-<p><strong>Batch Actions:</strong></p>
+<p><strong>一括アクション:</strong></p>
 <ul>
-<li class="">Select multiple results using checkboxes</li>
-<li class=""><strong>AI Analysis</strong>: Analyze selected results for lead scoring</li>
-<li class=""><strong>Extract Emails</strong>: Extract email addresses from selected URLs</li>
-<li class=""><strong>Export</strong>: Download results as CSV</li>
+<li class="">チェックボックスで複数の結果を選択</li>
+<li class=""><strong>AI Analyze</strong>: 選択した結果を分析してリードスコアリングと業界分類</li>
+<li class=""><strong>AI Extract Contact Info</strong>: 選択した URL から連絡先情報（メール、電話、住所）を抽出</li>
+<li class=""><strong>Extract Emails</strong>: 選択した URL をメール抽出機能に渡す</li>
+<li class=""><strong>Export</strong>: 結果を CSV としてダウンロード（AI 分析フィールドを含む）</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="ai-website-analysis">AI Website Analysis<a href="#ai-website-analysis" class="hash-link" aria-label="AI Website Analysis への直接リンク" title="AI Website Analysis への直接リンク" translate="no">​</a></h2>
-<p>Enhance your search results with AI-powered analysis:</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-1-select-results">Step 1: Select Results<a href="#step-1-select-results" class="hash-link" aria-label="Step 1: Select Results への直接リンク" title="Step 1: Select Results への直接リンク" translate="no">​</a></h3>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="ai-ウェブサイト分析">AI ウェブサイト分析<a href="#ai-ウェブサイト分析" class="hash-link" aria-label="AI ウェブサイト分析 への直接リンク" title="AI ウェブサイト分析 への直接リンク" translate="no">​</a></h2>
+<p>AI 搭載分析で検索結果を強化します:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ステップ-1-結果を選択">ステップ 1: 結果を選択<a href="#ステップ-1-結果を選択" class="hash-link" aria-label="ステップ 1: 結果を選択 への直接リンク" title="ステップ 1: 結果を選択 への直接リンク" translate="no">​</a></h3>
 <ol>
-<li class="">Check the boxes next to results you want to analyze</li>
-<li class="">Click the <strong>AI Analysis</strong> button</li>
+<li class="">分析したい結果のチェックボックスをオン</li>
+<li class=""><strong>AI Analyze</strong> ボタンをクリック</li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-2-configure-analysis">Step 2: Configure Analysis<a href="#step-2-configure-analysis" class="hash-link" aria-label="Step 2: Configure Analysis への直接リンク" title="Step 2: Configure Analysis への直接リンク" translate="no">​</a></h3>
-<ul>
-<li class=""><strong>Industry Classification</strong>: Categorize businesses by industry</li>
-<li class=""><strong>Lead Scoring</strong>: Rate lead quality (0-100)</li>
-<li class=""><strong>Business Context</strong>: Extract business information</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-3-monitor-progress">Step 3: Monitor Progress<a href="#step-3-monitor-progress" class="hash-link" aria-label="Step 3: Monitor Progress への直接リンク" title="Step 3: Monitor Progress への直接リンク" translate="no">​</a></h3>
-<ul>
-<li class="">Progress bar shows completion status</li>
-<li class="">Results update in real-time</li>
-<li class="">AI Match Score indicates lead quality</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-4-filter-by-score">Step 4: Filter by Score<a href="#step-4-filter-by-score" class="hash-link" aria-label="Step 4: Filter by Score への直接リンク" title="Step 4: Filter by Score への直接リンク" translate="no">​</a></h3>
-<p>After analysis:</p>
-<ul>
-<li class="">Use the AI Match Score to prioritize leads</li>
-<li class="">Filter results by industry</li>
-<li class="">Focus on high-score leads for outreach</li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="email-extraction-from-search-results">Email Extraction from Search Results<a href="#email-extraction-from-search-results" class="hash-link" aria-label="Email Extraction from Search Results への直接リンク" title="Email Extraction from Search Results への直接リンク" translate="no">​</a></h2>
-<p>Extract emails directly from your search results:</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-1-select-results-1">Step 1: Select Results<a href="#step-1-select-results-1" class="hash-link" aria-label="Step 1: Select Results への直接リンク" title="Step 1: Select Results への直接リンク" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ステップ-2-ビジネスコンテキストの入力">ステップ 2: ビジネスコンテキストの入力<a href="#ステップ-2-ビジネスコンテキストの入力" class="hash-link" aria-label="ステップ 2: ビジネスコンテキストの入力 への直接リンク" title="ステップ 2: ビジネスコンテキストの入力 への直接リンク" translate="no">​</a></h3>
+<p>ビジネス情報の入力を求めるダイアログが表示されます:</p>
 <ol>
-<li class="">Check boxes next to results containing URLs you want to extract emails from</li>
-<li class="">Click <strong>Extract Emails</strong> button</li>
+<li class="">テキストエリアに <strong>ビジネスの説明を入力</strong> — AI が求めているリードの種類を理解するのに役立ちます</li>
+<li class=""><strong>今後のために保存</strong>（任意）: このチェックボックスをオンにすると、ビジネスの説明が今後の分析用に保存されます</li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-2-configure-extraction">Step 2: Configure Extraction<a href="#step-2-configure-extraction" class="hash-link" aria-label="Step 2: Configure Extraction への直接リンク" title="Step 2: Configure Extraction への直接リンク" translate="no">​</a></h3>
-<p>The selected URLs are automatically passed to the <a class="" href="/aiFetchly/ja/docs/lead-generation/contact-extraction">Email Extraction</a> feature.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-3-view-extracted-emails">Step 3: View Extracted Emails<a href="#step-3-view-extracted-emails" class="hash-link" aria-label="Step 3: View Extracted Emails への直接リンク" title="Step 3: View Extracted Emails への直接リンク" translate="no">​</a></h3>
-<p>Navigate to the Email Extraction section to view collected emails.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="exporting-search-results">Exporting Search Results<a href="#exporting-search-results" class="hash-link" aria-label="Exporting Search Results への直接リンク" title="Exporting Search Results への直接リンク" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="export-as-csv">Export as CSV<a href="#export-as-csv" class="hash-link" aria-label="Export as CSV への直接リンク" title="Export as CSV への直接リンク" translate="no">​</a></h3>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>ビジネスコンテキスト</div><div class="admonitionContent_BuS1"><p>ビジネスとターゲット顧客について明確で具体的な説明を入力してください。コンテキストが多いほど、AI のスコアリングが正確になります。例:「小売業界の中小企業向けにマーケティング自動化ツールを販売する B2B SaaS 企業です。」</p></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ステップ-3-分析結果の確認">ステップ 3: 分析結果の確認<a href="#ステップ-3-分析結果の確認" class="hash-link" aria-label="ステップ 3: 分析結果の確認 への直接リンク" title="ステップ 3: 分析結果の確認 への直接リンク" translate="no">​</a></h3>
+<p>AI は分析された各結果に対して以下を生成します:</p>
+<table><thead><tr><th>フィールド</th><th>説明</th></tr></thead><tbody><tr><td><strong>Customer Industry</strong></td><td>AI 分類された業界カテゴリ</td></tr><tr><td><strong>Probability</strong></td><td>0〜100% のリード品質スコア</td></tr><tr><td><strong>AI Reasoning</strong></td><td>このリードのスコアリング理由の説明</td></tr><tr><td><strong>Client Business</strong></td><td>ウェブサイトのビジネスタイプ</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ステップ-4-進行状況の監視">ステップ 4: 進行状況の監視<a href="#ステップ-4-進行状況の監視" class="hash-link" aria-label="ステップ 4: 進行状況の監視 への直接リンク" title="ステップ 4: 進行状況の監視 への直接リンク" translate="no">​</a></h3>
+<ul>
+<li class="">バッチ操作の完了ステータスがプログレスバーで表示</li>
+<li class="">各ウェブサイトの分析が完了するたびにリアルタイムで結果が更新</li>
+<li class="">各結果の分析ステータスを追跡: pending → analyzing → completed/failed</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ステップ-5-スコアでフィルター">ステップ 5: スコアでフィルター<a href="#ステップ-5-スコアでフィルター" class="hash-link" aria-label="ステップ 5: スコアでフィルター への直接リンク" title="ステップ 5: スコアでフィルター への直接リンク" translate="no">​</a></h3>
+<p>分析後:</p>
+<ul>
+<li class="">Probability スコアを使用してリードの優先順位を決定</li>
+<li class="">アウトリーチには 70% 以上のスコアのリードに注目</li>
+<li class="">業界分類で結果をフィルター</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="ai-連絡先情報抽出">AI 連絡先情報抽出<a href="#ai-連絡先情報抽出" class="hash-link" aria-label="AI 連絡先情報抽出 への直接リンク" title="AI 連絡先情報抽出 への直接リンク" translate="no">​</a></h2>
+<p>AI を使用して検索結果から直接連絡先の詳細を抽出します:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ステップ-1-結果を選択-1">ステップ 1: 結果を選択<a href="#ステップ-1-結果を選択-1" class="hash-link" aria-label="ステップ 1: 結果を選択 への直接リンク" title="ステップ 1: 結果を選択 への直接リンク" translate="no">​</a></h3>
 <ol>
-<li class="">Select results you want to export (or leave blank for all)</li>
-<li class="">Click <strong>Export</strong> → <strong>CSV</strong></li>
-<li class="">Choose save location</li>
-<li class="">File includes all columns from the results table</li>
+<li class="">連絡先情報を抽出したい結果のチェックボックスをオン</li>
+<li class=""><strong>AI Extract Contact Info</strong> ボタンをクリック</li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="export-error-logs">Export Error Logs<a href="#export-error-logs" class="hash-link" aria-label="Export Error Logs への直接リンク" title="Export Error Logs への直接リンク" translate="no">​</a></h3>
-<p>If a task fails:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ステップ-2-抽出の監視">ステップ 2: 抽出の監視<a href="#ステップ-2-抽出の監視" class="hash-link" aria-label="ステップ 2: 抽出の監視 への直接リンク" title="ステップ 2: 抽出の監視 への直接リンク" translate="no">​</a></h3>
+<ul>
+<li class="">システムが選択された各 URL にアクセスし連絡先情報を抽出</li>
+<li class="">抽出はバックグラウンドで実行され、リアルタイムの進行状況が更新</li>
+<li class="">各結果のステータスを追跡: pending → analyzing → completed/failed</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ステップ-3-抽出された連絡先の表示">ステップ 3: 抽出された連絡先の表示<a href="#ステップ-3-抽出された連絡先の表示" class="hash-link" aria-label="ステップ 3: 抽出された連絡先の表示 への直接リンク" title="ステップ 3: 抽出された連絡先の表示 への直接リンク" translate="no">​</a></h3>
+<p>抽出された情報は結果テーブルに直接表示されます:</p>
+<table><thead><tr><th>フィールド</th><th>説明</th></tr></thead><tbody><tr><td><strong>Email</strong></td><td>抽出されたメールアドレス</td></tr><tr><td><strong>Phone</strong></td><td>抽出された電話番号</td></tr><tr><td><strong>Address</strong></td><td>抽出された住所</td></tr></tbody></table>
+<p>コピーボタンを使用して、テーブルから個別の連絡先フィールドを直接コピーできます。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="検索結果からのメール抽出">検索結果からのメール抽出<a href="#検索結果からのメール抽出" class="hash-link" aria-label="検索結果からのメール抽出 への直接リンク" title="検索結果からのメール抽出 への直接リンク" translate="no">​</a></h2>
+<p>検索結果から直接メールを抽出します:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ステップ-1-結果を選択-2">ステップ 1: 結果を選択<a href="#ステップ-1-結果を選択-2" class="hash-link" aria-label="ステップ 1: 結果を選択 への直接リンク" title="ステップ 1: 結果を選択 への直接リンク" translate="no">​</a></h3>
 <ol>
-<li class="">Go to <strong>Search</strong> → <strong>Result List</strong></li>
-<li class="">Find the failed task</li>
-<li class="">Click <strong>Download Logs</strong></li>
-<li class="">Review logs to diagnose issues</li>
+<li class="">メールを抽出したい URL を含む結果のチェックボックスをオン</li>
+<li class=""><strong>Extract Emails</strong> ボタンをクリック</li>
 </ol>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="best-practices">Best Practices<a href="#best-practices" class="hash-link" aria-label="Best Practices への直接リンク" title="Best Practices への直接リンク" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-start-small">1. Start Small<a href="#1-start-small" class="hash-link" aria-label="1. Start Small への直接リンク" title="1. Start Small への直接リンク" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ステップ-2-抽出の設定">ステップ 2: 抽出の設定<a href="#ステップ-2-抽出の設定" class="hash-link" aria-label="ステップ 2: 抽出の設定 への直接リンク" title="ステップ 2: 抽出の設定 への直接リンク" translate="no">​</a></h3>
+<p>選択された URL は自動的に<a class="" href="/aiFetchly/ja/docs/lead-generation/contact-extraction">メール抽出</a>機能に渡されます。</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ステップ-3-抽出メールの表示">ステップ 3: 抽出メールの表示<a href="#ステップ-3-抽出メールの表示" class="hash-link" aria-label="ステップ 3: 抽出メールの表示 への直接リンク" title="ステップ 3: 抽出メールの表示 への直接リンク" translate="no">​</a></h3>
+<p>メール抽出セクションに移動して収集されたメールを表示します。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="検索結果のエクスポート">検索結果のエクスポート<a href="#検索結果のエクスポート" class="hash-link" aria-label="検索結果のエクスポート への直接リンク" title="検索結果のエクスポート への直接リンク" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="csv-としてエクスポート">CSV としてエクスポート<a href="#csv-としてエクスポート" class="hash-link" aria-label="CSV としてエクスポート への直接リンク" title="CSV としてエクスポート への直接リンク" translate="no">​</a></h3>
+<ol>
+<li class="">エクスポートしたい結果を選択（または空欄のままですべて）</li>
+<li class=""><strong>Export</strong> → <strong>CSV</strong> をクリック</li>
+<li class="">保存場所を選択</li>
+<li class="">結果テーブルのすべての列を含むファイルがダウンロードされます（AI 分析フィールド（業界、スコア、推論）と連絡先情報（メール、電話、住所）を含む）</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="エラーログのエクスポート">エラーログのエクスポート<a href="#エラーログのエクスポート" class="hash-link" aria-label="エラーログのエクスポート への直接リンク" title="エラーログのエクスポート への直接リンク" translate="no">​</a></h3>
+<p>タスクが失敗した場合:</p>
+<ol>
+<li class=""><strong>Search</strong> → <strong>Result List</strong> に移動</li>
+<li class="">失敗したタスクを見つける</li>
+<li class=""><strong>Download Logs</strong> をクリック</li>
+<li class="">ログを確認して問題を診断</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="ベストプラクティス">ベストプラクティス<a href="#ベストプラクティス" class="hash-link" aria-label="ベストプラクティス への直接リンク" title="ベストプラクティス への直接リンク" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-小規模で開始">1. 小規模で開始<a href="#1-小規模で開始" class="hash-link" aria-label="1. 小規模で開始 への直接リンク" title="1. 小規模で開始 への直接リンク" translate="no">​</a></h3>
 <ul>
-<li class="">Begin with 5-10 keywords</li>
-<li class="">Use low concurrency (1-3)</li>
-<li class="">Monitor results before scaling up</li>
+<li class="">5〜10 のキーワードから始める</li>
+<li class="">低い同時実行数（1〜3）を使用</li>
+<li class="">スケールアップする前に結果を監視</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-use-proxies">2. Use Proxies<a href="#2-use-proxies" class="hash-link" aria-label="2. Use Proxies への直接リンク" title="2. Use Proxies への直接リンク" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-プロキシの使用">2. プロキシの使用<a href="#2-プロキシの使用" class="hash-link" aria-label="2. プロキシの使用 への直接リンク" title="2. プロキシの使用 への直接リンク" translate="no">​</a></h3>
 <ul>
-<li class="">Always use proxies for more than 10 pages</li>
-<li class="">Rotate proxies to distribute load</li>
-<li class="">Test proxies before running large tasks</li>
+<li class="">10 ページを超える場合は常にプロキシを使用</li>
+<li class="">負荷分散のためにプロキシをローテーション</li>
+<li class="">大規模タスクの実行前にプロキシをテスト</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-leverage-ai-features">3. Leverage AI Features<a href="#3-leverage-ai-features" class="hash-link" aria-label="3. Leverage AI Features への直接リンク" title="3. Leverage AI Features への直接リンク" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-ai-機能の活用">3. AI 機能の活用<a href="#3-ai-機能の活用" class="hash-link" aria-label="3. AI 機能の活用 への直接リンク" title="3. AI 機能の活用 への直接リンク" translate="no">​</a></h3>
 <ul>
-<li class="">Use keyword generation to expand coverage</li>
-<li class="">Run AI analysis to score leads</li>
-<li class="">Focus on high-score results for outreach</li>
+<li class="">キーワード生成でカバレッジを拡大</li>
+<li class="">より正確な AI スコアリングのために明確なビジネスコンテキストを提供</li>
+<li class="">AI 分析を実行してリードをスコアリング・分類</li>
+<li class="">AI 連絡先抽出でメール、電話番号、住所を取得</li>
+<li class="">高スコアの結果をアウトリーチに活用</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-engine-specific-tips">4. Engine-Specific Tips<a href="#4-engine-specific-tips" class="hash-link" aria-label="4. Engine-Specific Tips への直接リンク" title="4. Engine-Specific Tips への直接リンク" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-エンジン別のヒント">4. エンジン別のヒント<a href="#4-エンジン別のヒント" class="hash-link" aria-label="4. エンジン別のヒント への直接リンク" title="4. エンジン別のヒント への直接リンク" translate="no">​</a></h3>
 <p><strong>Google:</strong></p>
 <ul>
-<li class="">Use authenticated accounts</li>
-<li class="">Enable local browser for large tasks</li>
-<li class="">Respect rate limits (start with 1 concurrent)</li>
+<li class="">認証済みアカウントを使用</li>
+<li class="">大規模タスクではローカルブラウザを有効化</li>
+<li class="">堅牢なエラー処理のために AI リカバリーを有効化</li>
+<li class="">レート制限を尊重（1 同時実行から開始）</li>
 </ul>
 <p><strong>Bing:</strong></p>
 <ul>
-<li class="">More forgiving than Google</li>
-<li class="">Can use higher concurrency</li>
-<li class="">Good for US-focused searches</li>
+<li class="">Google よりも制限が緩い</li>
+<li class="">より高い同時実行数が可能</li>
+<li class="">米国向け検索に適している</li>
 </ul>
 <p><strong>Yandex:</strong></p>
 <ul>
-<li class=""><strong>Must use local browser</strong></li>
-<li class="">Use accounts for better access</li>
-<li class="">Essential for Russian/Cyrillic content</li>
+<li class=""><strong>ローカルブラウザが必須</strong></li>
+<li class="">より良いアクセスのためにアカウントを使用</li>
+<li class="">ロシア語/キリル文字コンテンツに不可欠</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="5-monitor-task-status">5. Monitor Task Status<a href="#5-monitor-task-status" class="hash-link" aria-label="5. Monitor Task Status への直接リンク" title="5. Monitor Task Status への直接リンク" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="5-タスクステータスの監視">5. タスクステータスの監視<a href="#5-タスクステータスの監視" class="hash-link" aria-label="5. タスクステータスの監視 への直接リンク" title="5. タスクステータスの監視 への直接リンク" translate="no">​</a></h3>
 <ul>
-<li class="">Check task list regularly</li>
-<li class="">Review error logs for failures</li>
-<li class="">Adjust settings based on results</li>
+<li class="">定期的にタスクリストを確認</li>
+<li class="">失敗のエラーログを確認</li>
+<li class="">結果に基づいて設定を調整</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="6-organize-results">6. Organize Results<a href="#6-organize-results" class="hash-link" aria-label="6. Organize Results への直接リンク" title="6. Organize Results への直接リンク" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="6-結果の整理">6. 結果の整理<a href="#6-結果の整理" class="hash-link" aria-label="6. 結果の整理 への直接リンク" title="6. 結果の整理 への直接リンク" translate="no">​</a></h3>
 <ul>
-<li class="">Use descriptive task names</li>
-<li class="">Export results regularly</li>
-<li class="">Clean up old tasks</li>
+<li class="">わかりやすいタスク名を使用</li>
+<li class="">定期的に結果をエクスポート</li>
+<li class="">古いタスクをクリーンアップ</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="troubleshooting">Troubleshooting<a href="#troubleshooting" class="hash-link" aria-label="Troubleshooting への直接リンク" title="Troubleshooting への直接リンク" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="task-status-error">Task Status: &quot;Error&quot;<a href="#task-status-error" class="hash-link" aria-label="Task Status: &quot;Error&quot; への直接リンク" title="Task Status: &quot;Error&quot; への直接リンク" translate="no">​</a></h3>
-<p><strong>Possible causes:</strong></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="トラブルシューティング">トラブルシューティング<a href="#トラブルシューティング" class="hash-link" aria-label="トラブルシューティング への直接リンク" title="トラブルシューティング への直接リンク" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="タスクステータス-error">タスクステータス: &quot;Error&quot;<a href="#タスクステータス-error" class="hash-link" aria-label="タスクステータス: &quot;Error&quot; への直接リンク" title="タスクステータス: &quot;Error&quot; への直接リンク" translate="no">​</a></h3>
+<p><strong>考えられる原因:</strong></p>
 <ul>
-<li class="">All proxies failed</li>
-<li class="">Network connectivity issues</li>
-<li class="">Search engine blocked requests</li>
+<li class="">すべてのプロキシが失敗</li>
+<li class="">ネットワーク接続の問題</li>
+<li class="">検索エンジンがリクエストをブロック</li>
 </ul>
-<p><strong>Solutions:</strong></p>
+<p><strong>解決策:</strong></p>
 <ol>
-<li class="">Check proxy health in Proxy section</li>
-<li class="">Verify internet connection</li>
-<li class="">Reduce concurrency</li>
-<li class="">Enable local browser</li>
-<li class="">Use authenticated accounts</li>
+<li class="">プロキシセクションでプロキシの稼働状態を確認</li>
+<li class="">インターネット接続を確認</li>
+<li class="">同時実行数を減らす</li>
+<li class="">ローカルブラウザを有効化</li>
+<li class="">認証済みアカウントを使用</li>
+<li class="">自動エラー処理のために AI リカバリーを有効化</li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="no-results-returned">No Results Returned<a href="#no-results-returned" class="hash-link" aria-label="No Results Returned への直接リンク" title="No Results Returned への直接リンク" translate="no">​</a></h3>
-<p><strong>Possible causes:</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="結果が返されない">結果が返されない<a href="#結果が返されない" class="hash-link" aria-label="結果が返されない への直接リンク" title="結果が返されない への直接リンク" translate="no">​</a></h3>
+<p><strong>考えられる原因:</strong></p>
 <ul>
-<li class="">Keywords too specific</li>
-<li class="">Search engine returned no results</li>
-<li class="">Pagination out of range</li>
+<li class="">キーワードが特定すぎる</li>
+<li class="">検索エンジンが結果を返さなかった</li>
+<li class="">ページ範囲外</li>
 </ul>
-<p><strong>Solutions:</strong></p>
+<p><strong>解決策:</strong></p>
 <ol>
-<li class="">Try broader keywords</li>
-<li class="">Start from page 1</li>
-<li class="">Verify keywords work in manual search</li>
+<li class="">より広範なキーワードを試す</li>
+<li class="">ページ 1 から開始</li>
+<li class="">キーワードが手動検索で機能するか確認</li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="slow-processing">Slow Processing<a href="#slow-processing" class="hash-link" aria-label="Slow Processing への直接リンク" title="Slow Processing への直接リンク" translate="no">​</a></h3>
-<p><strong>Possible causes:</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="処理が遅い">処理が遅い<a href="#処理が遅い" class="hash-link" aria-label="処理が遅い への直接リンク" title="処理が遅い への直接リンク" translate="no">​</a></h3>
+<p><strong>考えられる原因:</strong></p>
 <ul>
-<li class="">High concurrency without enough proxies</li>
-<li class="">Local browser enabled (slower but safer)</li>
-<li class="">Network latency</li>
+<li class="">プロキシ不足で高同時実行</li>
+<li class="">ローカルブラウザが有効（遅いが安全）</li>
+<li class="">ネットワークレイテンシ</li>
 </ul>
-<p><strong>Solutions:</strong></p>
+<p><strong>解決策:</strong></p>
 <ol>
-<li class="">Add more proxies</li>
-<li class="">Reduce concurrency</li>
-<li class="">Consider disabling local browser for speed (with caution)</li>
+<li class="">プロキシを追加</li>
+<li class="">同時実行数を減らす</li>
+<li class="">速度を優先する場合はローカルブラウザを無効化（注意して使用）</li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="captcha-or-block-detected">Captcha or Block Detected<a href="#captcha-or-block-detected" class="hash-link" aria-label="Captcha or Block Detected への直接リンク" title="Captcha or Block Detected への直接リンク" translate="no">​</a></h3>
-<p><strong>Solutions:</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="captcha-またはブロックの検出">CAPTCHA またはブロックの検出<a href="#captcha-またはブロックの検出" class="hash-link" aria-label="CAPTCHA またはブロックの検出 への直接リンク" title="CAPTCHA またはブロックの検出 への直接リンク" translate="no">​</a></h3>
+<p><strong>解決策:</strong></p>
 <ol>
-<li class="">Enable local browser integration</li>
-<li class="">Use authenticated accounts</li>
-<li class="">Add more proxies</li>
-<li class="">Reduce request frequency</li>
-<li class="">Take breaks between large tasks</li>
+<li class="">ローカルブラウザ統合を有効化</li>
+<li class="">認証済みアカウントを使用</li>
+<li class="">プロキシを追加</li>
+<li class="">リクエスト頻度を下げる</li>
+<li class="">大規模タスクの間に休憩を挟む</li>
+<li class="">AI リカバリーを有効にしてブロックを自動処理</li>
 </ol>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="advanced-workflows">Advanced Workflows<a href="#advanced-workflows" class="hash-link" aria-label="Advanced Workflows への直接リンク" title="Advanced Workflows への直接リンク" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflow-1-comprehensive-lead-generation">Workflow 1: Comprehensive Lead Generation<a href="#workflow-1-comprehensive-lead-generation" class="hash-link" aria-label="Workflow 1: Comprehensive Lead Generation への直接リンク" title="Workflow 1: Comprehensive Lead Generation への直接リンク" translate="no">​</a></h3>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="高度なワークフロー">高度なワークフロー<a href="#高度なワークフロー" class="hash-link" aria-label="高度なワークフロー への直接リンク" title="高度なワークフロー への直接リンク" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ワークフロー-1-包括的リードジェネレーション">ワークフロー 1: 包括的リードジェネレーション<a href="#ワークフロー-1-包括的リードジェネレーション" class="hash-link" aria-label="ワークフロー 1: 包括的リードジェネレーション への直接リンク" title="ワークフロー 1: 包括的リードジェネレーション への直接リンク" translate="no">​</a></h3>
 <ol>
-<li class=""><strong>Create search task</strong> with broad keywords</li>
-<li class=""><strong>Generate related keywords</strong> using AI</li>
-<li class=""><strong>Run with moderate concurrency</strong> (3-5)</li>
-<li class=""><strong>AI analyze</strong> all results</li>
-<li class=""><strong>Filter by match score</strong> (focus on 70+)</li>
-<li class=""><strong>Extract emails</strong> from high-score results</li>
-<li class=""><strong>Export</strong> for email campaigns</li>
+<li class="">広範なキーワードで <strong>検索タスクを作成</strong></li>
+<li class="">AI を使用して <strong>関連キーワードを生成</strong></li>
+<li class="">中程度の同時実行数（3〜5）で <strong>実行</strong></li>
+<li class="">堅牢なエラー処理のために <strong>AI リカバリーを有効化</strong></li>
+<li class="">ビジネスコンテキストを入力してすべての結果を <strong>AI 分析</strong></li>
+<li class=""><strong>確率スコアでフィルター</strong>（70% 以上に注目）</li>
+<li class="">高スコアの結果から <strong>AI 連絡先抽出</strong></li>
+<li class="">メールキャンペーン用に <strong>エクスポート</strong></li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflow-2-competitive-analysis">Workflow 2: Competitive Analysis<a href="#workflow-2-competitive-analysis" class="hash-link" aria-label="Workflow 2: Competitive Analysis への直接リンク" title="Workflow 2: Competitive Analysis への直接リンク" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ワークフロー-2-競合分析">ワークフロー 2: 競合分析<a href="#ワークフロー-2-競合分析" class="hash-link" aria-label="ワークフロー 2: 競合分析 への直接リンク" title="ワークフロー 2: 競合分析 への直接リンク" translate="no">​</a></h3>
 <ol>
-<li class=""><strong>Search competitor names</strong> + industry keywords</li>
-<li class=""><strong>Use local browser</strong> to avoid detection</li>
-<li class=""><strong>AI analyze</strong> for industry classification</li>
-<li class=""><strong>Export</strong> for market research</li>
+<li class="">競合名 + 業界キーワードで <strong>検索</strong></li>
+<li class="">検出を回避するために <strong>ローカルブラウザを使用</strong></li>
+<li class="">業界分類のために <strong>AI 分析</strong></li>
+<li class="">市場調査のために <strong>エクスポート</strong></li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflow-3-local-business-discovery">Workflow 3: Local Business Discovery<a href="#workflow-3-local-business-discovery" class="hash-link" aria-label="Workflow 3: Local Business Discovery への直接リンク" title="Workflow 3: Local Business Discovery への直接リンク" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ワークフロー-3-ローカルビジネスの発見">ワークフロー 3: ローカルビジネスの発見<a href="#ワークフロー-3-ローカルビジネスの発見" class="hash-link" aria-label="ワークフロー 3: ローカルビジネスの発見 への直接リンク" title="ワークフロー 3: ローカルビジネスの発見 への直接リンク" translate="no">​</a></h3>
 <ol>
-<li class=""><strong>Search local keywords</strong> (e.g., &quot;plumbers in Chicago&quot;)</li>
-<li class=""><strong>Extract emails</strong> from results</li>
-<li class=""><strong>Batch analyze</strong> websites</li>
-<li class=""><strong>Create targeted outreach</strong> campaigns</li>
+<li class="">ローカルキーワードで <strong>検索</strong>（例：「シカゴの配管工」）</li>
+<li class="">結果から <strong>AI 連絡先抽出</strong>（メール、電話、住所）</li>
+<li class="">ビジネスコンテキストを入力してウェブサイトを <strong>一括分析</strong></li>
+<li class=""><strong>ターゲットを絞ったアウトリーチ</strong> キャンペーンを作成</li>
 </ol>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="integration-with-other-features">Integration with Other Features<a href="#integration-with-other-features" class="hash-link" aria-label="Integration with Other Features への直接リンク" title="Integration with Other Features への直接リンク" translate="no">​</a></h2>
-<p>Search results integrate seamlessly with:</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="他の機能との連携">他の機能との連携<a href="#他の機能との連携" class="hash-link" aria-label="他の機能との連携 への直接リンク" title="他の機能との連携 への直接リンク" translate="no">​</a></h2>
+<p>検索結果は以下とシームレスに連携します:</p>
 <ul>
-<li class=""><strong><a class="" href="/aiFetchly/ja/docs/lead-generation/contact-extraction">Contact Extraction</a></strong> - Extract emails from URLs</li>
-<li class=""><strong><a class="" href="/aiFetchly/ja/docs/lead-generation/yellow-pages">Yellow Pages</a></strong> - Cross-reference with directory listings</li>
-<li class=""><strong><a class="" href="/aiFetchly/ja/docs/ai-outreach/ai-email-writer">AI Email Writer</a></strong> - Create personalized outreach</li>
-<li class=""><strong><a class="" href="/aiFetchly/ja/docs/lead-generation/batch-email-sending">Batch Email Sending</a></strong> - Launch campaigns</li>
+<li class=""><strong><a class="" href="/aiFetchly/ja/docs/lead-generation/contact-extraction">コンタクト抽出</a></strong> - URL からメールを抽出</li>
+<li class=""><strong><a class="" href="/aiFetchly/ja/docs/lead-generation/yellow-pages">イエローページ</a></strong> - ディレクトリリストとクロスリファレンス</li>
+<li class=""><strong><a class="" href="/aiFetchly/ja/docs/ai-outreach/ai-email-writer">AI メールライター</a></strong> - パーソナライズされたアウトリーチを作成</li>
+<li class=""><strong><a class="" href="/aiFetchly/ja/docs/lead-generation/batch-email-sending">一括メール送信</a></strong> - キャンペーンを開始</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="next-steps">Next Steps<a href="#next-steps" class="hash-link" aria-label="Next Steps への直接リンク" title="Next Steps への直接リンク" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="次のステップ">次のステップ<a href="#次のステップ" class="hash-link" aria-label="次のステップ への直接リンク" title="次のステップ への直接リンク" translate="no">​</a></h2>
 <ul>
-<li class=""><a class="" href="/aiFetchly/ja/docs/lead-generation/yellow-pages">Learn about Yellow Pages scraping</a></li>
-<li class=""><a class="" href="/aiFetchly/ja/docs/lead-generation/contact-extraction">Set up contact extraction</a></li>
-<li class=""><a class="" href="/aiFetchly/ja/docs/ai-outreach/ai-email-writer">Create AI-powered email campaigns</a></li>
+<li class=""><a class="" href="/aiFetchly/ja/docs/lead-generation/yellow-pages">イエローページスクレイピングについて</a></li>
+<li class=""><a class="" href="/aiFetchly/ja/docs/lead-generation/contact-extraction">コンタクト抽出の設定</a></li>
+<li class=""><a class="" href="/aiFetchly/ja/docs/ai-outreach/ai-email-writer">AI 搭載メールキャンペーンの作成</a></li>
 </ul>
 <hr>
-<p><strong>Ready to find leads?</strong> Start with a small search task and scale up as you become familiar with the system.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="ドキュメントページ"><a class="pagination-nav__link pagination-nav__link--prev" href="/aiFetchly/ja/docs/getting-started/proxy-setup"><div class="pagination-nav__sublabel">前へ</div><div class="pagination-nav__label">Proxy Setup</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/aiFetchly/ja/docs/lead-generation/yellow-pages"><div class="pagination-nav__sublabel">次へ</div><div class="pagination-nav__label">Yellow Pages</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#supported-search-engines" class="table-of-contents__link toc-highlight">Supported Search Engines</a></li><li><a href="#creating-a-search-task" class="table-of-contents__link toc-highlight">Creating a Search Task</a><ul><li><a href="#step-1-navigate-to-search" class="table-of-contents__link toc-highlight">Step 1: Navigate to Search</a></li><li><a href="#step-2-basic-search-configuration" class="table-of-contents__link toc-highlight">Step 2: Basic Search Configuration</a></li><li><a href="#step-3-advanced-options" class="table-of-contents__link toc-highlight">Step 3: Advanced Options</a></li><li><a href="#step-4-execute-or-save" class="table-of-contents__link toc-highlight">Step 4: Execute or Save</a></li></ul></li><li><a href="#managing-search-tasks" class="table-of-contents__link toc-highlight">Managing Search Tasks</a><ul><li><a href="#view-task-list" class="table-of-contents__link toc-highlight">View Task List</a></li><li><a href="#task-actions" class="table-of-contents__link toc-highlight">Task Actions</a></li></ul></li><li><a href="#viewing-search-results" class="table-of-contents__link toc-highlight">Viewing Search Results</a><ul><li><a href="#step-1-open-results" class="table-of-contents__link toc-highlight">Step 1: Open Results</a></li><li><a href="#step-2-results-table" class="table-of-contents__link toc-highlight">Step 2: Results Table</a></li><li><a href="#step-3-interact-with-results" class="table-of-contents__link toc-highlight">Step 3: Interact with Results</a></li></ul></li><li><a href="#ai-website-analysis" class="table-of-contents__link toc-highlight">AI Website Analysis</a><ul><li><a href="#step-1-select-results" class="table-of-contents__link toc-highlight">Step 1: Select Results</a></li><li><a href="#step-2-configure-analysis" class="table-of-contents__link toc-highlight">Step 2: Configure Analysis</a></li><li><a href="#step-3-monitor-progress" class="table-of-contents__link toc-highlight">Step 3: Monitor Progress</a></li><li><a href="#step-4-filter-by-score" class="table-of-contents__link toc-highlight">Step 4: Filter by Score</a></li></ul></li><li><a href="#email-extraction-from-search-results" class="table-of-contents__link toc-highlight">Email Extraction from Search Results</a><ul><li><a href="#step-1-select-results-1" class="table-of-contents__link toc-highlight">Step 1: Select Results</a></li><li><a href="#step-2-configure-extraction" class="table-of-contents__link toc-highlight">Step 2: Configure Extraction</a></li><li><a href="#step-3-view-extracted-emails" class="table-of-contents__link toc-highlight">Step 3: View Extracted Emails</a></li></ul></li><li><a href="#exporting-search-results" class="table-of-contents__link toc-highlight">Exporting Search Results</a><ul><li><a href="#export-as-csv" class="table-of-contents__link toc-highlight">Export as CSV</a></li><li><a href="#export-error-logs" class="table-of-contents__link toc-highlight">Export Error Logs</a></li></ul></li><li><a href="#best-practices" class="table-of-contents__link toc-highlight">Best Practices</a><ul><li><a href="#1-start-small" class="table-of-contents__link toc-highlight">1. Start Small</a></li><li><a href="#2-use-proxies" class="table-of-contents__link toc-highlight">2. Use Proxies</a></li><li><a href="#3-leverage-ai-features" class="table-of-contents__link toc-highlight">3. Leverage AI Features</a></li><li><a href="#4-engine-specific-tips" class="table-of-contents__link toc-highlight">4. Engine-Specific Tips</a></li><li><a href="#5-monitor-task-status" class="table-of-contents__link toc-highlight">5. Monitor Task Status</a></li><li><a href="#6-organize-results" class="table-of-contents__link toc-highlight">6. Organize Results</a></li></ul></li><li><a href="#troubleshooting" class="table-of-contents__link toc-highlight">Troubleshooting</a><ul><li><a href="#task-status-error" class="table-of-contents__link toc-highlight">Task Status: &quot;Error&quot;</a></li><li><a href="#no-results-returned" class="table-of-contents__link toc-highlight">No Results Returned</a></li><li><a href="#slow-processing" class="table-of-contents__link toc-highlight">Slow Processing</a></li><li><a href="#captcha-or-block-detected" class="table-of-contents__link toc-highlight">Captcha or Block Detected</a></li></ul></li><li><a href="#advanced-workflows" class="table-of-contents__link toc-highlight">Advanced Workflows</a><ul><li><a href="#workflow-1-comprehensive-lead-generation" class="table-of-contents__link toc-highlight">Workflow 1: Comprehensive Lead Generation</a></li><li><a href="#workflow-2-competitive-analysis" class="table-of-contents__link toc-highlight">Workflow 2: Competitive Analysis</a></li><li><a href="#workflow-3-local-business-discovery" class="table-of-contents__link toc-highlight">Workflow 3: Local Business Discovery</a></li></ul></li><li><a href="#integration-with-other-features" class="table-of-contents__link toc-highlight">Integration with Other Features</a></li><li><a href="#next-steps" class="table-of-contents__link toc-highlight">Next Steps</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">ドキュメント</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/ja/docs/getting-started/introduction">はじめに</a></li><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/ja/docs/lead-generation/search-engines">リードジェネレーション</a></li><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/ja/docs/ai-outreach/knowledge-library">AI アウトリーチ</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">コミュニティ</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/aifetchly" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/aifetchly" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">その他</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/robertzengcn/aiFetchly" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 aiFetchly. Docusaurus で構築。</div></div></div></footer></div>
+<p><strong>リードを見つける準備はできましたか？</strong> 小規模な検索タスクから始め、システムに慣れてきたら徐々に拡大してください。</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="ドキュメントページ"><a class="pagination-nav__link pagination-nav__link--prev" href="/aiFetchly/ja/docs/getting-started/proxy-setup"><div class="pagination-nav__sublabel">前へ</div><div class="pagination-nav__label">Proxy Setup</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/aiFetchly/ja/docs/lead-generation/yellow-pages"><div class="pagination-nav__sublabel">次へ</div><div class="pagination-nav__label">Yellow Pages</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#対応検索エンジン" class="table-of-contents__link toc-highlight">対応検索エンジン</a></li><li><a href="#検索タスクの作成" class="table-of-contents__link toc-highlight">検索タスクの作成</a><ul><li><a href="#ステップ-1-検索に移動" class="table-of-contents__link toc-highlight">ステップ 1: 検索に移動</a></li><li><a href="#ステップ-2-基本検索設定" class="table-of-contents__link toc-highlight">ステップ 2: 基本検索設定</a></li><li><a href="#ステップ-3-詳細オプション" class="table-of-contents__link toc-highlight">ステップ 3: 詳細オプション</a></li><li><a href="#ステップ-4-実行または保存" class="table-of-contents__link toc-highlight">ステップ 4: 実行または保存</a></li></ul></li><li><a href="#検索タスクの管理" class="table-of-contents__link toc-highlight">検索タスクの管理</a><ul><li><a href="#タスクリストの表示" class="table-of-contents__link toc-highlight">タスクリストの表示</a></li><li><a href="#タスクアクション" class="table-of-contents__link toc-highlight">タスクアクション</a></li></ul></li><li><a href="#検索結果の表示" class="table-of-contents__link toc-highlight">検索結果の表示</a><ul><li><a href="#ステップ-1-結果を開く" class="table-of-contents__link toc-highlight">ステップ 1: 結果を開く</a></li><li><a href="#ステップ-2-結果テーブル" class="table-of-contents__link toc-highlight">ステップ 2: 結果テーブル</a></li><li><a href="#ステップ-3-結果の操作" class="table-of-contents__link toc-highlight">ステップ 3: 結果の操作</a></li></ul></li><li><a href="#ai-ウェブサイト分析" class="table-of-contents__link toc-highlight">AI ウェブサイト分析</a><ul><li><a href="#ステップ-1-結果を選択" class="table-of-contents__link toc-highlight">ステップ 1: 結果を選択</a></li><li><a href="#ステップ-2-ビジネスコンテキストの入力" class="table-of-contents__link toc-highlight">ステップ 2: ビジネスコンテキストの入力</a></li><li><a href="#ステップ-3-分析結果の確認" class="table-of-contents__link toc-highlight">ステップ 3: 分析結果の確認</a></li><li><a href="#ステップ-4-進行状況の監視" class="table-of-contents__link toc-highlight">ステップ 4: 進行状況の監視</a></li><li><a href="#ステップ-5-スコアでフィルター" class="table-of-contents__link toc-highlight">ステップ 5: スコアでフィルター</a></li></ul></li><li><a href="#ai-連絡先情報抽出" class="table-of-contents__link toc-highlight">AI 連絡先情報抽出</a><ul><li><a href="#ステップ-1-結果を選択-1" class="table-of-contents__link toc-highlight">ステップ 1: 結果を選択</a></li><li><a href="#ステップ-2-抽出の監視" class="table-of-contents__link toc-highlight">ステップ 2: 抽出の監視</a></li><li><a href="#ステップ-3-抽出された連絡先の表示" class="table-of-contents__link toc-highlight">ステップ 3: 抽出された連絡先の表示</a></li></ul></li><li><a href="#検索結果からのメール抽出" class="table-of-contents__link toc-highlight">検索結果からのメール抽出</a><ul><li><a href="#ステップ-1-結果を選択-2" class="table-of-contents__link toc-highlight">ステップ 1: 結果を選択</a></li><li><a href="#ステップ-2-抽出の設定" class="table-of-contents__link toc-highlight">ステップ 2: 抽出の設定</a></li><li><a href="#ステップ-3-抽出メールの表示" class="table-of-contents__link toc-highlight">ステップ 3: 抽出メールの表示</a></li></ul></li><li><a href="#検索結果のエクスポート" class="table-of-contents__link toc-highlight">検索結果のエクスポート</a><ul><li><a href="#csv-としてエクスポート" class="table-of-contents__link toc-highlight">CSV としてエクスポート</a></li><li><a href="#エラーログのエクスポート" class="table-of-contents__link toc-highlight">エラーログのエクスポート</a></li></ul></li><li><a href="#ベストプラクティス" class="table-of-contents__link toc-highlight">ベストプラクティス</a><ul><li><a href="#1-小規模で開始" class="table-of-contents__link toc-highlight">1. 小規模で開始</a></li><li><a href="#2-プロキシの使用" class="table-of-contents__link toc-highlight">2. プロキシの使用</a></li><li><a href="#3-ai-機能の活用" class="table-of-contents__link toc-highlight">3. AI 機能の活用</a></li><li><a href="#4-エンジン別のヒント" class="table-of-contents__link toc-highlight">4. エンジン別のヒント</a></li><li><a href="#5-タスクステータスの監視" class="table-of-contents__link toc-highlight">5. タスクステータスの監視</a></li><li><a href="#6-結果の整理" class="table-of-contents__link toc-highlight">6. 結果の整理</a></li></ul></li><li><a href="#トラブルシューティング" class="table-of-contents__link toc-highlight">トラブルシューティング</a><ul><li><a href="#タスクステータス-error" class="table-of-contents__link toc-highlight">タスクステータス: &quot;Error&quot;</a></li><li><a href="#結果が返されない" class="table-of-contents__link toc-highlight">結果が返されない</a></li><li><a href="#処理が遅い" class="table-of-contents__link toc-highlight">処理が遅い</a></li><li><a href="#captcha-またはブロックの検出" class="table-of-contents__link toc-highlight">CAPTCHA またはブロックの検出</a></li></ul></li><li><a href="#高度なワークフロー" class="table-of-contents__link toc-highlight">高度なワークフロー</a><ul><li><a href="#ワークフロー-1-包括的リードジェネレーション" class="table-of-contents__link toc-highlight">ワークフロー 1: 包括的リードジェネレーション</a></li><li><a href="#ワークフロー-2-競合分析" class="table-of-contents__link toc-highlight">ワークフロー 2: 競合分析</a></li><li><a href="#ワークフロー-3-ローカルビジネスの発見" class="table-of-contents__link toc-highlight">ワークフロー 3: ローカルビジネスの発見</a></li></ul></li><li><a href="#他の機能との連携" class="table-of-contents__link toc-highlight">他の機能との連携</a></li><li><a href="#次のステップ" class="table-of-contents__link toc-highlight">次のステップ</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">ドキュメント</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/ja/docs/getting-started/introduction">はじめに</a></li><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/ja/docs/lead-generation/search-engines">リードジェネレーション</a></li><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/ja/docs/ai-outreach/knowledge-library">AI アウトリーチ</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">コミュニティ</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/aifetchly" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/aifetchly" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">その他</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/robertzengcn/aiFetchly" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 aiFetchly. Docusaurus で構築。</div></div></div></footer></div>
 </body>
 </html>

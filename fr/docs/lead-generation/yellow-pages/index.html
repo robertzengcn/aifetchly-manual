@@ -3,614 +3,614 @@
 <head>
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.9.2">
-<title data-rh="true">Yellow Pages Scraping | aiFetchly Manual</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://robertzengcn.github.io/aiFetchly/fr/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://robertzengcn.github.io/aiFetchly/fr/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://robertzengcn.github.io/aiFetchly/fr/docs/lead-generation/yellow-pages"><meta data-rh="true" property="og:locale" content="fr"><meta data-rh="true" property="og:locale:alternate" content="en"><meta data-rh="true" property="og:locale:alternate" content="zh_CN"><meta data-rh="true" property="og:locale:alternate" content="es"><meta data-rh="true" property="og:locale:alternate" content="de"><meta data-rh="true" property="og:locale:alternate" content="ja"><meta data-rh="true" name="docusaurus_locale" content="fr"><meta data-rh="true" name="docsearch:language" content="fr"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Yellow Pages Scraping | aiFetchly Manual"><meta data-rh="true" name="description" content="Extract business information from Yellow Pages, Yelp, and other online directories worldwide."><meta data-rh="true" property="og:description" content="Extract business information from Yellow Pages, Yelp, and other online directories worldwide."><link data-rh="true" rel="icon" href="/aiFetchly/fr/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://robertzengcn.github.io/aiFetchly/fr/docs/lead-generation/yellow-pages"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/docs/lead-generation/yellow-pages" hreflang="en"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/zh-CN/docs/lead-generation/yellow-pages" hreflang="zh-CN"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/es/docs/lead-generation/yellow-pages" hreflang="es"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/fr/docs/lead-generation/yellow-pages" hreflang="fr"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/de/docs/lead-generation/yellow-pages" hreflang="de"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/ja/docs/lead-generation/yellow-pages" hreflang="ja"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/docs/lead-generation/yellow-pages" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Yellow Pages","item":"https://robertzengcn.github.io/aiFetchly/fr/docs/lead-generation/yellow-pages"}]}</script><link rel="stylesheet" href="/aiFetchly/fr/assets/css/styles.ac14db2c.css">
-<script src="/aiFetchly/fr/assets/js/runtime~main.cf9cf000.js" defer="defer"></script>
+<title data-rh="true">Scraping des Pages Jaunes | aiFetchly Manual</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://robertzengcn.github.io/aiFetchly/fr/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://robertzengcn.github.io/aiFetchly/fr/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://robertzengcn.github.io/aiFetchly/fr/docs/lead-generation/yellow-pages"><meta data-rh="true" property="og:locale" content="fr"><meta data-rh="true" property="og:locale:alternate" content="en"><meta data-rh="true" property="og:locale:alternate" content="zh_CN"><meta data-rh="true" property="og:locale:alternate" content="es"><meta data-rh="true" property="og:locale:alternate" content="de"><meta data-rh="true" property="og:locale:alternate" content="ja"><meta data-rh="true" name="docusaurus_locale" content="fr"><meta data-rh="true" name="docsearch:language" content="fr"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Scraping des Pages Jaunes | aiFetchly Manual"><meta data-rh="true" name="description" content="Extrayez des informations commerciales des Pages Jaunes, Yelp et d&#x27;autres annuaires en ligne dans le monde entier."><meta data-rh="true" property="og:description" content="Extrayez des informations commerciales des Pages Jaunes, Yelp et d&#x27;autres annuaires en ligne dans le monde entier."><link data-rh="true" rel="icon" href="/aiFetchly/fr/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://robertzengcn.github.io/aiFetchly/fr/docs/lead-generation/yellow-pages"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/docs/lead-generation/yellow-pages" hreflang="en"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/zh-CN/docs/lead-generation/yellow-pages" hreflang="zh-CN"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/es/docs/lead-generation/yellow-pages" hreflang="es"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/fr/docs/lead-generation/yellow-pages" hreflang="fr"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/de/docs/lead-generation/yellow-pages" hreflang="de"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/ja/docs/lead-generation/yellow-pages" hreflang="ja"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/docs/lead-generation/yellow-pages" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Pages Jaunes","item":"https://robertzengcn.github.io/aiFetchly/fr/docs/lead-generation/yellow-pages"}]}</script><link rel="stylesheet" href="/aiFetchly/fr/assets/css/styles.ac14db2c.css">
+<script src="/aiFetchly/fr/assets/js/runtime~main.3d940041.js" defer="defer"></script>
 <script src="/aiFetchly/fr/assets/js/main.6aacf6dd.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
 <symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
 </defs></svg>
-<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/aiFetchly/fr/img/logo.svg"><div role="region" aria-label="Aller au contenu principal"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Aller au contenu principal</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Ouvrir/fermer la barre de navigation" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/aiFetchly/fr/"><div class="navbar__logo"><img src="/aiFetchly/fr/img/logo.svg" alt="Logo aiFetchly" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/aiFetchly/fr/img/logo.svg" alt="Logo aiFetchly" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Manuel aiFetchly</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/aiFetchly/fr/docs/getting-started/introduction">Documentation</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/robertzengcn/aiFetchly" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="iconLanguage_nlXk"><path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></svg>Français</a><ul class="dropdown__menu"><li><a href="/aiFetchly/docs/lead-generation/yellow-pages" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="en">English</a></li><li><a href="/aiFetchly/zh-CN/docs/lead-generation/yellow-pages" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="zh-CN">中文（中国）</a></li><li><a href="/aiFetchly/es/docs/lead-generation/yellow-pages" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="es">Español</a></li><li><a href="/aiFetchly/fr/docs/lead-generation/yellow-pages" target="_self" rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang="fr">Français</a></li><li><a href="/aiFetchly/de/docs/lead-generation/yellow-pages" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="de">Deutsch</a></li><li><a href="/aiFetchly/ja/docs/lead-generation/yellow-pages" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="ja">日本語</a></li></ul></div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Basculer entre le mode sombre et clair (actuellement system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Retour au début de la page" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/aiFetchly/fr/docs/getting-started/introduction"><span title="Introduction" class="linkLabel_WmDU">Introduction</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="Getting Started" class="categoryLinkLabel_W154">Getting Started</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/fr/docs/getting-started/installation"><span title="Installation" class="linkLabel_WmDU">Installation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/fr/docs/getting-started/proxy-setup"><span title="Proxy Setup" class="linkLabel_WmDU">Proxy Setup</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--active"><span title="Lead Generation" class="categoryLinkLabel_W154">Lead Generation</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/fr/docs/lead-generation/search-engines"><span title="Search Engines" class="linkLabel_WmDU">Search Engines</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/aiFetchly/fr/docs/lead-generation/yellow-pages"><span title="Yellow Pages" class="linkLabel_WmDU">Yellow Pages</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/fr/docs/lead-generation/contact-extraction"><span title="Email Extraction" class="linkLabel_WmDU">Email Extraction</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/fr/docs/lead-generation/batch-email-sending"><span title="Batch Email Sending" class="linkLabel_WmDU">Batch Email Sending</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="AI Outreach" class="categoryLinkLabel_W154">AI Outreach</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/fr/docs/ai-outreach/knowledge-library"><span title="Knowledge Library" class="linkLabel_WmDU">Knowledge Library</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/fr/docs/ai-outreach/mcp-tools"><span title="MCP Tools" class="linkLabel_WmDU">MCP Tools</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/fr/docs/ai-outreach/ai-skills"><span title="AI Skills" class="linkLabel_WmDU">AI Skills</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/fr/docs/ai-outreach/ai-email-writer"><span title="AI Email Writer" class="linkLabel_WmDU">AI Email Writer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/fr/docs/ai-outreach/ai-marketing-assistant"><span title="AI Marketing Assistant" class="linkLabel_WmDU">AI Marketing Assistant</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="Automation" class="categoryLinkLabel_W154">Automation</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/fr/docs/automation/task-scheduling"><span title="Task Scheduler" class="linkLabel_WmDU">Task Scheduler</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="Settings" class="categoryLinkLabel_W154">Settings</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/fr/docs/settings/system-settings"><span title="System Settings" class="linkLabel_WmDU">System Settings</span></a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Fil d&#x27;Ariane"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Page d&#x27;accueil" class="breadcrumbs__link" href="/aiFetchly/fr/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Lead Generation</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Yellow Pages</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">Sur cette page</button></div><div class="theme-doc-markdown markdown"><header><h1>Yellow Pages Scraping</h1></header>
-<p>aiFetchly&#x27;s Yellow Pages scraping feature allows you to extract comprehensive business information from multiple online directories. Collect leads from local business listings with detailed contact information, ratings, reviews, and more. Powered by AI support, you can enhance scraping accuracy and generate related keywords automatically.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="supported-directories">Supported Directories<a href="#supported-directories" class="hash-link" aria-label="Lien direct vers Supported Directories" title="Lien direct vers Supported Directories" translate="no">​</a></h2>
-<table><thead><tr><th>Directory</th><th>Region</th><th>Language</th><th>Rate Limit</th><th>Features</th></tr></thead><tbody><tr><td><strong>YellowPages.com</strong></td><td>USA</td><td>English</td><td>100 req/hour</td><td>Business details, ratings, reviews, hours</td></tr><tr><td><strong>Yelp.com</strong></td><td>USA</td><td>English</td><td>60 req/hour</td><td>Reviews, ratings, photos, detailed extraction</td></tr><tr><td><strong>YellowPages.ca</strong></td><td>Canada</td><td>English</td><td>100 req/hour</td><td>Canadian business directory, address parsing</td></tr><tr><td><strong>YellowPages.com.sg</strong></td><td>Singapore</td><td>English</td><td>100 req/hour</td><td>Singapore business listings</td></tr><tr><td><strong>192.com</strong></td><td>UK</td><td>English</td><td>100 req/hour</td><td>UK-specific business directory</td></tr><tr><td><strong>11880.com</strong></td><td>Germany</td><td>German</td><td>100 req/hour</td><td>German directory, cookie consent handling</td></tr><tr><td><strong>Gelbeseiten.de</strong></td><td>Germany</td><td>German</td><td>100 req/hour</td><td>German Yellow Pages, shadow root handling</td></tr><tr><td><strong>PagesJaunes.fr</strong></td><td>France</td><td>French</td><td>100 req/hour</td><td>French Yellow Pages, location required</td></tr><tr><td><strong>PagineGialle.it</strong></td><td>Italy</td><td>Italian</td><td>100 req/hour</td><td>Italian Yellow Pages, cookie consent</td></tr><tr><td><strong>iTownPage</strong></td><td>Japan</td><td>Japanese</td><td>60 req/hour</td><td>Japanese directory, dialog handling</td></tr><tr><td><strong>uSonar Yellow Page</strong></td><td>Japan</td><td>Japanese</td><td>60 req/hour</td><td>Japanese business listings</td></tr><tr><td><strong>KoreaLocalPages</strong></td><td>South Korea</td><td>Korean</td><td>60 req/hour</td><td>Korean local business directory</td></tr></tbody></table>
-<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Rate Limits</div><div class="admonitionContent_BuS1"><p>Each directory has specific rate limits. aiFetchly automatically manages request delays to comply with these limits.</p></div></div>
-<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Platform Information</div><div class="admonitionContent_BuS1"><p>When creating a task, select a platform from the dropdown. As you select each platform, you&#x27;ll see a sidebar showing:</p><ul>
-<li class="">Country/Language support</li>
-<li class="">Rate limits</li>
-<li class="">Authentication requirements</li>
-<li class="">Whether location is required</li>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/aiFetchly/fr/img/logo.svg"><div role="region" aria-label="Aller au contenu principal"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Aller au contenu principal</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Ouvrir/fermer la barre de navigation" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/aiFetchly/fr/"><div class="navbar__logo"><img src="/aiFetchly/fr/img/logo.svg" alt="Logo aiFetchly" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/aiFetchly/fr/img/logo.svg" alt="Logo aiFetchly" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Manuel aiFetchly</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/aiFetchly/fr/docs/getting-started/introduction">Documentation</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/robertzengcn/aiFetchly" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="iconLanguage_nlXk"><path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></svg>Français</a><ul class="dropdown__menu"><li><a href="/aiFetchly/docs/lead-generation/yellow-pages" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="en">English</a></li><li><a href="/aiFetchly/zh-CN/docs/lead-generation/yellow-pages" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="zh-CN">中文（中国）</a></li><li><a href="/aiFetchly/es/docs/lead-generation/yellow-pages" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="es">Español</a></li><li><a href="/aiFetchly/fr/docs/lead-generation/yellow-pages" target="_self" rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang="fr">Français</a></li><li><a href="/aiFetchly/de/docs/lead-generation/yellow-pages" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="de">Deutsch</a></li><li><a href="/aiFetchly/ja/docs/lead-generation/yellow-pages" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="ja">日本語</a></li></ul></div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Basculer entre le mode sombre et clair (actuellement system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Retour au début de la page" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/aiFetchly/fr/docs/getting-started/introduction"><span title="Introduction" class="linkLabel_WmDU">Introduction</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="Getting Started" class="categoryLinkLabel_W154">Getting Started</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/fr/docs/getting-started/installation"><span title="Installation" class="linkLabel_WmDU">Installation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/fr/docs/getting-started/proxy-setup"><span title="Proxy Setup" class="linkLabel_WmDU">Proxy Setup</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--active"><span title="Lead Generation" class="categoryLinkLabel_W154">Lead Generation</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/fr/docs/lead-generation/search-engines"><span title="Moteurs de recherche" class="linkLabel_WmDU">Moteurs de recherche</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/aiFetchly/fr/docs/lead-generation/yellow-pages"><span title="Pages Jaunes" class="linkLabel_WmDU">Pages Jaunes</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/fr/docs/lead-generation/contact-extraction"><span title="Extraction d&#x27;e-mails" class="linkLabel_WmDU">Extraction d&#x27;e-mails</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/fr/docs/lead-generation/batch-email-sending"><span title="Envoi d&#x27;e-mails par lot" class="linkLabel_WmDU">Envoi d&#x27;e-mails par lot</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="AI Outreach" class="categoryLinkLabel_W154">AI Outreach</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/fr/docs/ai-outreach/knowledge-library"><span title="Knowledge Library" class="linkLabel_WmDU">Knowledge Library</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/fr/docs/ai-outreach/mcp-tools"><span title="Outils MCP" class="linkLabel_WmDU">Outils MCP</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/fr/docs/ai-outreach/ai-skills"><span title="AI Skills" class="linkLabel_WmDU">AI Skills</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/fr/docs/ai-outreach/ai-email-writer"><span title="AI Email Writer" class="linkLabel_WmDU">AI Email Writer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/fr/docs/ai-outreach/ai-marketing-assistant"><span title="Assistant Marketing IA" class="linkLabel_WmDU">Assistant Marketing IA</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="Automation" class="categoryLinkLabel_W154">Automation</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/fr/docs/automation/task-scheduling"><span title="Planificateur de taches" class="linkLabel_WmDU">Planificateur de taches</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link"><span title="Settings" class="categoryLinkLabel_W154">Settings</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/aiFetchly/fr/docs/settings/system-settings"><span title="System Settings" class="linkLabel_WmDU">System Settings</span></a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Fil d&#x27;Ariane"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Page d&#x27;accueil" class="breadcrumbs__link" href="/aiFetchly/fr/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Lead Generation</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Pages Jaunes</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">Sur cette page</button></div><div class="theme-doc-markdown markdown"><header><h1>Scraping des Pages Jaunes</h1></header>
+<p>La fonctionnalité de scraping des Pages Jaunes d&#x27;aiFetchly vous permet d&#x27;extraire des informations commerciales complètes à partir de plusieurs annuaires en ligne. Collectez des prospects à partir d&#x27;annonces d&#x27;entreprises locales avec des coordonnées détaillées, des notes, des avis et bien plus encore. Grâce au support IA, vous pouvez améliorer la précision du scraping et générer automatiquement des mots-clés associés.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="annuaires-pris-en-charge">Annuaires pris en charge<a href="#annuaires-pris-en-charge" class="hash-link" aria-label="Lien direct vers Annuaires pris en charge" title="Lien direct vers Annuaires pris en charge" translate="no">​</a></h2>
+<table><thead><tr><th>Annuaire</th><th>Région</th><th>Langue</th><th>Limite de débit</th><th>Fonctionnalités</th></tr></thead><tbody><tr><td><strong>YellowPages.com</strong></td><td>États-Unis</td><td>Anglais</td><td>100 requêtes/heure</td><td>Détails d&#x27;entreprise, notes, avis, horaires</td></tr><tr><td><strong>Yelp.com</strong></td><td>États-Unis</td><td>Anglais</td><td>60 requêtes/heure</td><td>Avis, notes, photos, extraction détaillée</td></tr><tr><td><strong>YellowPages.ca</strong></td><td>Canada</td><td>Anglais</td><td>100 requêtes/heure</td><td>Annuaire canadien, analyse d&#x27;adresse</td></tr><tr><td><strong>YellowPages.com.sg</strong></td><td>Singapour</td><td>Anglais</td><td>100 requêtes/heure</td><td>Annonces d&#x27;entreprises singapouriennes</td></tr><tr><td><strong>192.com</strong></td><td>Royaume-Uni</td><td>Anglais</td><td>100 requêtes/heure</td><td>Annuaire d&#x27;entreprises britannique</td></tr><tr><td><strong>11880.com</strong></td><td>Allemagne</td><td>Allemand</td><td>100 requêtes/heure</td><td>Annuaire allemand, gestion du consentement aux cookies</td></tr><tr><td><strong>Gelbeseiten.de</strong></td><td>Allemagne</td><td>Allemand</td><td>100 requêtes/heure</td><td>Pages Jaunes allemandes, gestion du shadow root</td></tr><tr><td><strong>PagesJaunes.fr</strong></td><td>France</td><td>Français</td><td>100 requêtes/heure</td><td>Pages Jaunes françaises, lieu requis</td></tr><tr><td><strong>PagineGialle.it</strong></td><td>Italie</td><td>Italien</td><td>100 requêtes/heure</td><td>Pages Jaunes italiennes, consentement aux cookies</td></tr><tr><td><strong>iTownPage</strong></td><td>Japon</td><td>Japonais</td><td>60 requêtes/heure</td><td>Annuaire japonais, gestion des boîtes de dialogue</td></tr><tr><td><strong>uSonar Yellow Page</strong></td><td>Japon</td><td>Japonais</td><td>60 requêtes/heure</td><td>Annonces d&#x27;entreprises japonaises</td></tr><tr><td><strong>KoreaLocalPages</strong></td><td>Corée du Sud</td><td>Coréen</td><td>60 requêtes/heure</td><td>Annuaire local coréen</td></tr></tbody></table>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Limites de débit</div><div class="admonitionContent_BuS1"><p>Chaque annuaire a des limites de débit spécifiques. aiFetchly gère automatiquement les délais entre les requêtes pour respecter ces limites.</p></div></div>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Informations sur la plateforme</div><div class="admonitionContent_BuS1"><p>Lors de la création d&#x27;une tâche, sélectionnez une plateforme dans le menu déroulant. En sélectionnant chaque plateforme, vous verrez une barre latérale affichant :</p><ul>
+<li class="">La prise en charge des pays/langues</li>
+<li class="">Les limites de débit</li>
+<li class="">Les exigences d&#x27;authentification</li>
+<li class="">Si un lieu est requis</li>
 </ul></div></div>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="creating-a-yellow-pages-task">Creating a Yellow Pages Task<a href="#creating-a-yellow-pages-task" class="hash-link" aria-label="Lien direct vers Creating a Yellow Pages Task" title="Lien direct vers Creating a Yellow Pages Task" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-1-navigate-to-yellow-pages">Step 1: Navigate to Yellow Pages<a href="#step-1-navigate-to-yellow-pages" class="hash-link" aria-label="Lien direct vers Step 1: Navigate to Yellow Pages" title="Lien direct vers Step 1: Navigate to Yellow Pages" translate="no">​</a></h3>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="création-dune-tâche-pages-jaunes">Création d&#x27;une tâche Pages Jaunes<a href="#création-dune-tâche-pages-jaunes" class="hash-link" aria-label="Lien direct vers Création d&#x27;une tâche Pages Jaunes" title="Lien direct vers Création d&#x27;une tâche Pages Jaunes" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="étape-1--accéder-aux-pages-jaunes">Étape 1 : Accéder aux Pages Jaunes<a href="#étape-1--accéder-aux-pages-jaunes" class="hash-link" aria-label="Lien direct vers Étape 1 : Accéder aux Pages Jaunes" title="Lien direct vers Étape 1 : Accéder aux Pages Jaunes" translate="no">​</a></h3>
 <ol>
-<li class="">Click <strong>Yellow Pages</strong> in the left navigation menu</li>
-<li class="">You&#x27;ll see the Yellow Pages task list</li>
-<li class="">Click <strong>Create New Task</strong> button</li>
+<li class="">Cliquez sur <strong>Yellow Pages</strong> dans le menu de navigation de gauche</li>
+<li class="">Vous verrez la liste des tâches des Pages Jaunes</li>
+<li class="">Cliquez sur le bouton <strong>Create New Task</strong></li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-2-basic-information">Step 2: Basic Information<a href="#step-2-basic-information" class="hash-link" aria-label="Lien direct vers Step 2: Basic Information" title="Lien direct vers Step 2: Basic Information" translate="no">​</a></h3>
-<p>Enter the following required information:</p>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="task-name">Task Name<a href="#task-name" class="hash-link" aria-label="Lien direct vers Task Name" title="Lien direct vers Task Name" translate="no">​</a></h4>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="étape-2--informations-de-base">Étape 2 : Informations de base<a href="#étape-2--informations-de-base" class="hash-link" aria-label="Lien direct vers Étape 2 : Informations de base" title="Lien direct vers Étape 2 : Informations de base" translate="no">​</a></h3>
+<p>Entrez les informations obligatoires suivantes :</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="nom-de-la-tâche">Nom de la tâche<a href="#nom-de-la-tâche" class="hash-link" aria-label="Lien direct vers Nom de la tâche" title="Lien direct vers Nom de la tâche" translate="no">​</a></h4>
 <ul>
-<li class="">Give your task a descriptive name</li>
-<li class="">Example: &quot;Restaurants in Chicago&quot; or &quot;Plumbers in Miami&quot;</li>
+<li class="">Donnez un nom descriptif à votre tâche</li>
+<li class="">Exemple : &quot;Restaurants à Chicago&quot; ou &quot;Plombiers à Miami&quot;</li>
 </ul>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="platform-selection">Platform Selection<a href="#platform-selection" class="hash-link" aria-label="Lien direct vers Platform Selection" title="Lien direct vers Platform Selection" translate="no">​</a></h4>
-<p>Select the directory you want to scrape from the dropdown:</p>
-<p><strong>Americas:</strong></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="sélection-de-la-plateforme">Sélection de la plateforme<a href="#sélection-de-la-plateforme" class="hash-link" aria-label="Lien direct vers Sélection de la plateforme" title="Lien direct vers Sélection de la plateforme" translate="no">​</a></h4>
+<p>Sélectionnez l&#x27;annuaire que vous souhaitez scraper dans le menu déroulant :</p>
+<p><strong>Amériques :</strong></p>
 <ul>
-<li class="">YellowPages.com (USA)</li>
-<li class="">Yelp.com (USA)</li>
+<li class="">YellowPages.com (États-Unis)</li>
+<li class="">Yelp.com (États-Unis)</li>
 <li class="">YellowPages.ca (Canada)</li>
 </ul>
-<p><strong>Europe:</strong></p>
+<p><strong>Europe :</strong></p>
 <ul>
-<li class="">192.com (UK)</li>
-<li class="">11880.com (Germany)</li>
-<li class="">Gelbeseiten.de (Germany)</li>
-<li class="">PagesJaunes.fr (France) — location required</li>
-<li class="">PagineGialle.it (Italy)</li>
+<li class="">192.com (Royaume-Uni)</li>
+<li class="">11880.com (Allemagne)</li>
+<li class="">Gelbeseiten.de (Allemagne)</li>
+<li class="">PagesJaunes.fr (France) — lieu requis</li>
+<li class="">PagineGialle.it (Italie)</li>
 </ul>
-<p><strong>Asia-Pacific:</strong></p>
+<p><strong>Asie-Pacifique :</strong></p>
 <ul>
-<li class="">YellowPages.com.sg (Singapore)</li>
-<li class="">iTownPage (Japan)</li>
-<li class="">uSonar Yellow Page (Japan)</li>
-<li class="">KoreaLocalPages (South Korea)</li>
+<li class="">YellowPages.com.sg (Singapour)</li>
+<li class="">iTownPage (Japon)</li>
+<li class="">uSonar Yellow Page (Japon)</li>
+<li class="">KoreaLocalPages (Corée du Sud)</li>
 </ul>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="keywords">Keywords<a href="#keywords" class="hash-link" aria-label="Lien direct vers Keywords" title="Lien direct vers Keywords" translate="no">​</a></h4>
-<p>Enter your search keywords:</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="mots-clés">Mots-clés<a href="#mots-clés" class="hash-link" aria-label="Lien direct vers Mots-clés" title="Lien direct vers Mots-clés" translate="no">​</a></h4>
+<p>Entrez vos mots-clés de recherche :</p>
 <ul>
-<li class=""><strong>Format</strong>: Comma-separated or one per line</li>
-<li class=""><strong>Examples</strong>: <code>restaurant, plumber, dentist, marketing agency</code></li>
-<li class=""><strong>Tip</strong>: Use specific business types or categories for better results</li>
+<li class=""><strong>Format</strong> : Séparés par des virgules ou un par ligne</li>
+<li class=""><strong>Exemples</strong> : <code>restaurant, plumber, dentist, marketing agency</code></li>
+<li class=""><strong>Conseil</strong> : Utilisez des types d&#x27;entreprises ou des catégories spécifiques pour de meilleurs résultats</li>
 </ul>
-<p><strong>AI Query Keywords</strong> (Optional):</p>
+<p><strong>Requête IA de mots-clés</strong> (Facultatif) :</p>
 <ul>
-<li class="">Click the <strong>AI Query Keywords</strong> button (purple, robot icon) inside the keywords field</li>
-<li class="">aiFetchly uses AI to generate related search terms based on your existing keywords</li>
-<li class="">Generated keywords are combined with your originals, duplicates removed automatically</li>
-<li class="">If no keywords are entered, AI generates suggestions from a default seed term</li>
+<li class="">Cliquez sur le bouton <strong>AI Query Keywords</strong> (violet, icône de robot) dans le champ des mots-clés</li>
+<li class="">aiFetchly utilise l&#x27;IA pour générer des termes de recherche associés basés sur vos mots-clés existants</li>
+<li class="">Les mots-clés générés sont combinés avec vos originaux, les doublons sont supprimés automatiquement</li>
+<li class="">Si aucun mot-clé n&#x27;est saisi, l&#x27;IA génère des suggestions à partir d&#x27;un terme de départ par défaut</li>
 </ul>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="location">Location<a href="#location" class="hash-link" aria-label="Lien direct vers Location" title="Lien direct vers Location" translate="no">​</a></h4>
-<p>Enter the geographic location for your search:</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="lieu">Lieu<a href="#lieu" class="hash-link" aria-label="Lien direct vers Lieu" title="Lien direct vers Lieu" translate="no">​</a></h4>
+<p>Entrez le lieu géographique pour votre recherche :</p>
 <ul>
-<li class=""><strong>Examples</strong>: <code>New York, NY</code>, <code>Los Angeles, CA</code>, <code>Miami, Florida</code></li>
-<li class=""><strong>Format</strong>: City, State or City, Region</li>
-<li class=""><strong>Required</strong>: For most platforms</li>
+<li class=""><strong>Exemples</strong> : <code>New York, NY</code>, <code>Los Angeles, CA</code>, <code>Miami, Florida</code></li>
+<li class=""><strong>Format</strong> : Ville, État ou Ville, Région</li>
+<li class=""><strong>Obligatoire</strong> : Pour la plupart des plateformes</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-3-performance-settings">Step 3: Performance Settings<a href="#step-3-performance-settings" class="hash-link" aria-label="Lien direct vers Step 3: Performance Settings" title="Lien direct vers Step 3: Performance Settings" translate="no">​</a></h3>
-<p>Configure how the scraping task runs:</p>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="max-pages">Max Pages<a href="#max-pages" class="hash-link" aria-label="Lien direct vers Max Pages" title="Lien direct vers Max Pages" translate="no">​</a></h4>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="étape-3--paramètres-de-performance">Étape 3 : Paramètres de performance<a href="#étape-3--paramètres-de-performance" class="hash-link" aria-label="Lien direct vers Étape 3 : Paramètres de performance" title="Lien direct vers Étape 3 : Paramètres de performance" translate="no">​</a></h3>
+<p>Configurez le mode d&#x27;exécution de la tâche de scraping :</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="pages-maximum">Pages maximum<a href="#pages-maximum" class="hash-link" aria-label="Lien direct vers Pages maximum" title="Lien direct vers Pages maximum" translate="no">​</a></h4>
 <ul>
-<li class=""><strong>Range</strong>: 1-100 pages</li>
-<li class=""><strong>Default</strong>: 10 pages</li>
-<li class=""><strong>Recommendation</strong>: Start with 10-20 pages for testing</li>
+<li class=""><strong>Plage</strong> : 1-100 pages</li>
+<li class=""><strong>Par défaut</strong> : 10 pages</li>
+<li class=""><strong>Recommandation</strong> : Commencez par 10-20 pages pour les tests</li>
 </ul>
-<p><strong>What this means:</strong></p>
+<p><strong>Ce que cela signifie :</strong></p>
 <ul>
-<li class="">Each page typically contains 20-30 business listings</li>
-<li class="">10 pages = 200-300 potential leads</li>
-<li class="">More pages = longer processing time</li>
+<li class="">Chaque page contient généralement 20-30 annonces d&#x27;entreprises</li>
+<li class="">10 pages = 200-300 prospects potentiels</li>
+<li class="">Plus de pages = temps de traitement plus long</li>
 </ul>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="concurrency">Concurrency<a href="#concurrency" class="hash-link" aria-label="Lien direct vers Concurrency" title="Lien direct vers Concurrency" translate="no">​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="concurrence">Concurrence<a href="#concurrence" class="hash-link" aria-label="Lien direct vers Concurrence" title="Lien direct vers Concurrence" translate="no">​</a></h4>
 <ul>
-<li class=""><strong>Range</strong>: 1-10 concurrent requests</li>
-<li class=""><strong>Default</strong>: 2 concurrent requests</li>
-<li class=""><strong>Higher values</strong>: Faster but higher risk of being blocked</li>
+<li class=""><strong>Plage</strong> : 1-10 requêtes simultanées</li>
+<li class=""><strong>Par défaut</strong> : 2 requêtes simultanées</li>
+<li class=""><strong>Valeurs élevées</strong> : Plus rapide mais risque de blocage plus élevé</li>
 </ul>
-<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Concurrency Guidelines</div><div class="admonitionContent_BuS1"><ul>
-<li class="">Start with 1-3 concurrent requests</li>
-<li class="">Increase gradually if using proxies</li>
-<li class="">Respect platform rate limits</li>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Directives de concurrence</div><div class="admonitionContent_BuS1"><ul>
+<li class="">Commencez par 1-3 requêtes simultanées</li>
+<li class="">Augmentez progressivement si vous utilisez des proxies</li>
+<li class="">Respectez les limites de débit de la plateforme</li>
 </ul></div></div>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="delay-between-requests">Delay Between Requests<a href="#delay-between-requests" class="hash-link" aria-label="Lien direct vers Delay Between Requests" title="Lien direct vers Delay Between Requests" translate="no">​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="délai-entre-les-requêtes">Délai entre les requêtes<a href="#délai-entre-les-requêtes" class="hash-link" aria-label="Lien direct vers Délai entre les requêtes" title="Lien direct vers Délai entre les requêtes" translate="no">​</a></h4>
 <ul>
-<li class=""><strong>Range</strong>: 0-10,000 milliseconds</li>
-<li class=""><strong>Default</strong>: 2000ms (2 seconds)</li>
-<li class=""><strong>Purpose</strong>: Prevents rate limiting and blocking</li>
+<li class=""><strong>Plage</strong> : 0-10 000 millisecondes</li>
+<li class=""><strong>Par défaut</strong> : 2000 ms (2 secondes)</li>
+<li class=""><strong>Objectif</strong> : Prévient la limitation de débit et le blocage</li>
 </ul>
-<p><strong>Recommended delays:</strong></p>
+<p><strong>Délais recommandés :</strong></p>
 <ul>
-<li class=""><strong>Yelp.com</strong>: 3000ms (stricter rate limits)</li>
-<li class=""><strong>Japanese platforms</strong> (iTownPage, uSonar): 2500ms</li>
-<li class=""><strong>Korean platforms</strong> (KoreaLocalPages): 2500ms</li>
-<li class=""><strong>All others</strong>: 2000ms</li>
+<li class=""><strong>Yelp.com</strong> : 3000 ms (limites de débit plus strictes)</li>
+<li class=""><strong>Plateformes japonaises</strong> (iTownPage, uSonar) : 2500 ms</li>
+<li class=""><strong>Plateformes coréennes</strong> (KoreaLocalPages) : 2500 ms</li>
+<li class=""><strong>Toutes les autres</strong> : 2000 ms</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-4-browser-configuration">Step 4: Browser Configuration<a href="#step-4-browser-configuration" class="hash-link" aria-label="Lien direct vers Step 4: Browser Configuration" title="Lien direct vers Step 4: Browser Configuration" translate="no">​</a></h3>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="headless-mode">Headless Mode<a href="#headless-mode" class="hash-link" aria-label="Lien direct vers Headless Mode" title="Lien direct vers Headless Mode" translate="no">​</a></h4>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="étape-4--configuration-du-navigateur">Étape 4 : Configuration du navigateur<a href="#étape-4--configuration-du-navigateur" class="hash-link" aria-label="Lien direct vers Étape 4 : Configuration du navigateur" title="Lien direct vers Étape 4 : Configuration du navigateur" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="mode-headless">Mode headless<a href="#mode-headless" class="hash-link" aria-label="Lien direct vers Mode headless" title="Lien direct vers Mode headless" translate="no">​</a></h4>
 <ul>
-<li class=""><strong>Enabled</strong> (default): Browser runs invisibly (faster, recommended)</li>
-<li class=""><strong>Disabled</strong>: Browser window visible (useful for debugging)</li>
+<li class=""><strong>Activé</strong> (par défaut) : Le navigateur fonctionne de manière invisible (plus rapide, recommandé)</li>
+<li class=""><strong>Désactivé</strong> : La fenêtre du navigateur est visible (utile pour le débogage)</li>
 </ul>
-<p><strong>Recommendation</strong>: Keep headless mode enabled for production tasks.</p>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="ai-support">AI Support<a href="#ai-support" class="hash-link" aria-label="Lien direct vers AI Support" title="Lien direct vers AI Support" translate="no">​</a></h4>
-<p>Toggle <strong>AI Support</strong> to enable AI-powered scraping assistance:</p>
+<p><strong>Recommandation</strong> : Gardez le mode headless activé pour les tâches de production.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="support-ia">Support IA<a href="#support-ia" class="hash-link" aria-label="Lien direct vers Support IA" title="Lien direct vers Support IA" translate="no">​</a></h4>
+<p>Activez <strong>AI Support</strong> pour bénéficier de l&#x27;assistance de scraping propulsée par l&#x27;IA :</p>
 <ul>
-<li class="">When enabled, AI helps improve scraping accuracy and handle edge cases</li>
-<li class="">Enabled by default if your account has AI features enabled</li>
-<li class="">Look for the purple robot icon next to the toggle</li>
+<li class="">Lorsqu&#x27;il est activé, l&#x27;IA aide à améliorer la précision du scraping et à gérer les cas limites</li>
+<li class="">Activé par défaut si votre compte dispose des fonctionnalités IA</li>
+<li class="">Recherchez l&#x27;icône de robot violet à côté du bouton bascule</li>
 </ul>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="local-browser">Local Browser<a href="#local-browser" class="hash-link" aria-label="Lien direct vers Local Browser" title="Lien direct vers Local Browser" translate="no">​</a></h4>
-<p>Toggle <strong>Use Local Browser</strong> to use your local Chrome or Firefox installation for scraping:</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="navigateur-local">Navigateur local<a href="#navigateur-local" class="hash-link" aria-label="Lien direct vers Navigateur local" title="Lien direct vers Navigateur local" translate="no">​</a></h4>
+<p>Activez <strong>Use Local Browser</strong> pour utiliser votre installation locale de Chrome ou Firefox pour le scraping :</p>
 <ol>
-<li class="">Toggle <strong>Local Browser</strong> to enable</li>
-<li class="">Select <strong>Chrome</strong> or <strong>Firefox</strong> from the dropdown</li>
-<li class=""><strong>Benefits</strong>: Lower detection rates, better success with anti-bot protections</li>
+<li class="">Activez <strong>Local Browser</strong></li>
+<li class="">Sélectionnez <strong>Chrome</strong> ou <strong>Firefox</strong> dans le menu déroulant</li>
+<li class=""><strong>Avantages</strong> : Taux de détection plus faible, meilleur succès contre les protections anti-bot</li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-5-optional-features">Step 5: Optional Features<a href="#step-5-optional-features" class="hash-link" aria-label="Lien direct vers Step 5: Optional Features" title="Lien direct vers Step 5: Optional Features" translate="no">​</a></h3>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="account-selection">Account Selection<a href="#account-selection" class="hash-link" aria-label="Lien direct vers Account Selection" title="Lien direct vers Account Selection" translate="no">​</a></h4>
-<p>Some platforms support authenticated scraping:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="étape-5--fonctionnalités-facultatives">Étape 5 : Fonctionnalités facultatives<a href="#étape-5--fonctionnalités-facultatives" class="hash-link" aria-label="Lien direct vers Étape 5 : Fonctionnalités facultatives" title="Lien direct vers Étape 5 : Fonctionnalités facultatives" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="sélection-du-compte">Sélection du compte<a href="#sélection-du-compte" class="hash-link" aria-label="Lien direct vers Sélection du compte" title="Lien direct vers Sélection du compte" translate="no">​</a></h4>
+<p>Certaines plateformes prennent en charge le scraping authentifié :</p>
 <ol>
-<li class="">Toggle <strong>Use Account</strong> if available</li>
-<li class="">Select an account from your saved accounts</li>
-<li class="">Benefits:<!-- -->
+<li class="">Activez <strong>Use Account</strong> si disponible</li>
+<li class="">Sélectionnez un compte parmi vos comptes enregistrés</li>
+<li class="">Avantages :<!-- -->
 <ul>
-<li class="">Higher success rate</li>
-<li class="">Access to member-only content</li>
-<li class="">Reduced risk of blocking</li>
+<li class="">Taux de succès plus élevé</li>
+<li class="">Accès au contenu réservé aux membres</li>
+<li class="">Risque de blocage réduit</li>
 </ul>
 </li>
 </ol>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="proxy-configuration">Proxy Configuration<a href="#proxy-configuration" class="hash-link" aria-label="Lien direct vers Proxy Configuration" title="Lien direct vers Proxy Configuration" translate="no">​</a></h4>
-<p>Add proxies for large-scale scraping:</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="configuration-du-proxy">Configuration du proxy<a href="#configuration-du-proxy" class="hash-link" aria-label="Lien direct vers Configuration du proxy" title="Lien direct vers Configuration du proxy" translate="no">​</a></h4>
+<p>Ajoutez des proxies pour le scraping à grande échelle :</p>
 <ol>
-<li class="">Toggle <strong>Use Proxy</strong></li>
-<li class="">Click <strong>Choose Proxy</strong></li>
-<li class="">Select one or more proxies from your list</li>
-<li class="">Click <strong>Confirm</strong></li>
+<li class="">Activez <strong>Use Proxy</strong></li>
+<li class="">Cliquez sur <strong>Choose Proxy</strong></li>
+<li class="">Sélectionnez un ou plusieurs proxies dans votre liste</li>
+<li class="">Cliquez sur <strong>Confirm</strong></li>
 </ol>
-<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>When to Use Proxies</div><div class="admonitionContent_BuS1"><p>Use proxies when:</p><ul>
-<li class="">Scraping more than 50 pages</li>
-<li class="">Running concurrent tasks</li>
-<li class="">Previous tasks were blocked</li>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Quand utiliser des proxies</div><div class="admonitionContent_BuS1"><p>Utilisez des proxies lorsque :</p><ul>
+<li class="">Vous scrapez plus de 50 pages</li>
+<li class="">Vous exécutez des tâches simultanées</li>
+<li class="">Des tâches précédentes ont été bloquées</li>
 </ul></div></div>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-6-scheduling-optional">Step 6: Scheduling (Optional)<a href="#step-6-scheduling-optional" class="hash-link" aria-label="Lien direct vers Step 6: Scheduling (Optional)" title="Lien direct vers Step 6: Scheduling (Optional)" translate="no">​</a></h3>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="one-time-scheduling">One-Time Scheduling<a href="#one-time-scheduling" class="hash-link" aria-label="Lien direct vers One-Time Scheduling" title="Lien direct vers One-Time Scheduling" translate="no">​</a></h4>
-<p>Set a specific date and time for the task to run:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="étape-6--planification-facultatif">Étape 6 : Planification (Facultatif)<a href="#étape-6--planification-facultatif" class="hash-link" aria-label="Lien direct vers Étape 6 : Planification (Facultatif)" title="Lien direct vers Étape 6 : Planification (Facultatif)" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="planification-unique">Planification unique<a href="#planification-unique" class="hash-link" aria-label="Lien direct vers Planification unique" title="Lien direct vers Planification unique" translate="no">​</a></h4>
+<p>Définissez une date et une heure spécifiques pour l&#x27;exécution de la tâche :</p>
 <ul>
-<li class="">Click <strong>Schedule</strong></li>
-<li class="">Select date and time</li>
-<li class="">Task runs automatically at scheduled time</li>
+<li class="">Cliquez sur <strong>Schedule</strong></li>
+<li class="">Sélectionnez la date et l&#x27;heure</li>
+<li class="">La tâche s&#x27;exécute automatiquement à l&#x27;heure planifiée</li>
 </ul>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="recurring-scheduling">Recurring Scheduling<a href="#recurring-scheduling" class="hash-link" aria-label="Lien direct vers Recurring Scheduling" title="Lien direct vers Recurring Scheduling" translate="no">​</a></h4>
-<p>Set up automated recurring tasks:</p>
-<p><strong>Preset Options:</strong></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="planification-récurrente">Planification récurrente<a href="#planification-récurrente" class="hash-link" aria-label="Lien direct vers Planification récurrente" title="Lien direct vers Planification récurrente" translate="no">​</a></h4>
+<p>Configurez des tâches récurrentes automatisées :</p>
+<p><strong>Options prédéfinies :</strong></p>
 <ul>
-<li class="">Every 15 minutes</li>
-<li class="">Every 30 minutes</li>
-<li class="">Every hour</li>
-<li class="">Every 2 hours</li>
-<li class="">Every 6 hours</li>
-<li class="">Every 12 hours</li>
-<li class="">Daily</li>
-<li class="">Weekly</li>
-<li class="">Monthly</li>
+<li class="">Toutes les 15 minutes</li>
+<li class="">Toutes les 30 minutes</li>
+<li class="">Toutes les heures</li>
+<li class="">Toutes les 2 heures</li>
+<li class="">Toutes les 6 heures</li>
+<li class="">Toutes les 12 heures</li>
+<li class="">Quotidiennement</li>
+<li class="">Hebdomadairement</li>
+<li class="">Mensuellement</li>
 </ul>
-<p><strong>Custom Scheduling:</strong></p>
+<p><strong>Planification personnalisée :</strong></p>
 <ul>
-<li class="">Use cron expressions for advanced scheduling</li>
-<li class="">Example: <code>0 9 * * 1-5</code> (9 AM Monday-Friday)</li>
+<li class="">Utilisez des expressions cron pour une planification avancée</li>
+<li class="">Exemple : <code>0 9 * * 1-5</code> (9h du lundi au vendredi)</li>
 </ul>
-<p><strong>Schedule Preview:</strong></p>
+<p><strong>Aperçu de la planification :</strong></p>
 <ul>
-<li class="">Shows next run time</li>
-<li class="">Displays configuration summary</li>
+<li class="">Affiche la prochaine heure d&#x27;exécution</li>
+<li class="">Affiche un résumé de la configuration</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-7-create-task">Step 7: Create Task<a href="#step-7-create-task" class="hash-link" aria-label="Lien direct vers Step 7: Create Task" title="Lien direct vers Step 7: Create Task" translate="no">​</a></h3>
-<p>Click one of the action buttons in the sidebar:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="étape-7--créer-la-tâche">Étape 7 : Créer la tâche<a href="#étape-7--créer-la-tâche" class="hash-link" aria-label="Lien direct vers Étape 7 : Créer la tâche" title="Lien direct vers Étape 7 : Créer la tâche" translate="no">​</a></h3>
+<p>Cliquez sur l&#x27;un des boutons d&#x27;action dans la barre latérale :</p>
 <ul>
-<li class=""><strong>Create &amp; Start Task</strong> (primary button): Creates the task and starts execution immediately</li>
-<li class=""><strong>Create Task Only</strong>: Saves the task without running it — status will be &quot;Pending&quot;</li>
+<li class=""><strong>Create &amp; Start Task</strong> (bouton principal) : Crée la tâche et démarre l&#x27;exécution immédiatement</li>
+<li class=""><strong>Create Task Only</strong> : Enregistre la tâche sans l&#x27;exécuter — le statut sera &quot;Pending&quot;</li>
 </ul>
-<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Task Preview</div><div class="admonitionContent_BuS1"><p>As you fill in the form, the <strong>Task Preview</strong> sidebar shows a live summary of your configuration including task name, platform, keywords count, location, max pages, concurrency, headless mode, and local browser selection. Review this before creating the task.</p></div></div>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="editing-a-task">Editing a Task<a href="#editing-a-task" class="hash-link" aria-label="Lien direct vers Editing a Task" title="Lien direct vers Editing a Task" translate="no">​</a></h3>
-<p>To modify an existing task:</p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Aperçu de la tâche</div><div class="admonitionContent_BuS1"><p>Lorsque vous remplissez le formulaire, la barre latérale <strong>Task Preview</strong> affiche un résumé en temps réel de votre configuration, y compris le nom de la tâche, la plateforme, le nombre de mots-clés, le lieu, les pages maximum, la concurrence, le mode headless et la sélection du navigateur local. Vérifiez ceci avant de créer la tâche.</p></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="modifier-une-tâche">Modifier une tâche<a href="#modifier-une-tâche" class="hash-link" aria-label="Lien direct vers Modifier une tâche" title="Lien direct vers Modifier une tâche" translate="no">​</a></h3>
+<p>Pour modifier une tâche existante :</p>
 <ol>
-<li class="">Go to <strong>Yellow Pages</strong> task list</li>
-<li class="">Click the <strong>Edit</strong> (pencil) icon on the task</li>
-<li class="">Modify the configuration in the form</li>
-<li class="">Click <strong>Update Task</strong> to save changes</li>
+<li class="">Allez à la liste des tâches <strong>Yellow Pages</strong></li>
+<li class="">Cliquez sur l&#x27;icône <strong>Edit</strong> (crayon) de la tâche</li>
+<li class="">Modifiez la configuration dans le formulaire</li>
+<li class="">Cliquez sur <strong>Update Task</strong> pour enregistrer les modifications</li>
 </ol>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="managing-yellow-pages-tasks">Managing Yellow Pages Tasks<a href="#managing-yellow-pages-tasks" class="hash-link" aria-label="Lien direct vers Managing Yellow Pages Tasks" title="Lien direct vers Managing Yellow Pages Tasks" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="view-task-list">View Task List<a href="#view-task-list" class="hash-link" aria-label="Lien direct vers View Task List" title="Lien direct vers View Task List" translate="no">​</a></h3>
-<p>Navigate to <strong>Yellow Pages</strong> to see all your tasks.</p>
-<p><strong>Task List Overview:</strong></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="gestion-des-tâches-pages-jaunes">Gestion des tâches Pages Jaunes<a href="#gestion-des-tâches-pages-jaunes" class="hash-link" aria-label="Lien direct vers Gestion des tâches Pages Jaunes" title="Lien direct vers Gestion des tâches Pages Jaunes" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="afficher-la-liste-des-tâches">Afficher la liste des tâches<a href="#afficher-la-liste-des-tâches" class="hash-link" aria-label="Lien direct vers Afficher la liste des tâches" title="Lien direct vers Afficher la liste des tâches" translate="no">​</a></h3>
+<p>Naviguez vers <strong>Yellow Pages</strong> pour voir toutes vos tâches.</p>
+<p><strong>Aperçu de la liste des tâches :</strong></p>
 <ul>
-<li class=""><strong>Real-time Statistics</strong>: Total, running, pending, completed, failed tasks with success rate</li>
-<li class=""><strong>Auto-refresh</strong>: Updates every 5 seconds; toggle on/off with the refresh button</li>
-<li class=""><strong>Smart Pause</strong>: Auto-refresh pauses automatically when you switch browser tabs and resumes when you return</li>
+<li class=""><strong>Statistiques en temps réel</strong> : Total, en cours, en attente, terminées, échouées avec le taux de succès</li>
+<li class=""><strong>Actualisation automatique</strong> : Mise à jour toutes les 5 secondes ; activez/désactivez avec le bouton d&#x27;actualisation</li>
+<li class=""><strong>Pause intelligente</strong> : L&#x27;actualisation automatique se met en pause lorsque vous changez d&#x27;onglet et reprend lorsque vous revenez</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="filtering-and-search">Filtering and Search<a href="#filtering-and-search" class="hash-link" aria-label="Lien direct vers Filtering and Search" title="Lien direct vers Filtering and Search" translate="no">​</a></h3>
-<p>Use the filter bar to narrow down tasks:</p>
-<table><thead><tr><th>Filter</th><th>Description</th></tr></thead><tbody><tr><td><strong>Search</strong></td><td>Search by task name or platform</td></tr><tr><td><strong>Status</strong></td><td>Filter by Pending, Running, Completed, Failed, Paused</td></tr><tr><td><strong>Platform</strong></td><td>Filter by directory platform</td></tr><tr><td><strong>Priority</strong></td><td>Filter by High, Medium, Low priority</td></tr></tbody></table>
-<p>Active filters are displayed as removable chips below the filter bar. Click <strong>Clear Filters</strong> to reset all filters.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="task-status">Task Status<a href="#task-status" class="hash-link" aria-label="Lien direct vers Task Status" title="Lien direct vers Task Status" translate="no">​</a></h3>
-<table><thead><tr><th>Status</th><th>Description</th><th>Action</th></tr></thead><tbody><tr><td><strong>Pending</strong></td><td>Task created but not started</td><td>Start, Edit, Delete</td></tr><tr><td><strong>Running</strong></td><td>Task is currently processing</td><td>Pause, Stop, View Progress</td></tr><tr><td><strong>Paused</strong></td><td>Temporarily suspended</td><td>Resume, Stop</td></tr><tr><td><strong>Completed</strong></td><td>Finished successfully</td><td>View Results, Delete</td></tr><tr><td><strong>Failed</strong></td><td>Ended with errors</td><td>View Logs, Retry, Delete</td></tr></tbody></table>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="task-actions">Task Actions<a href="#task-actions" class="hash-link" aria-label="Lien direct vers Task Actions" title="Lien direct vers Task Actions" translate="no">​</a></h3>
-<table><thead><tr><th>Action</th><th>Description</th></tr></thead><tbody><tr><td><strong>Start</strong></td><td>Begin task execution</td></tr><tr><td><strong>Stop</strong></td><td>Terminate running task</td></tr><tr><td><strong>Pause</strong></td><td>Temporarily suspend task</td></tr><tr><td><strong>Resume</strong></td><td>Continue paused task</td></tr><tr><td><strong>Edit</strong></td><td>Modify task configuration</td></tr><tr><td><strong>Delete</strong></td><td>Remove task from system</td></tr><tr><td><strong>View Results</strong></td><td>See extracted business data</td></tr></tbody></table>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="cloudflare-protection-alert">Cloudflare Protection Alert<a href="#cloudflare-protection-alert" class="hash-link" aria-label="Lien direct vers Cloudflare Protection Alert" title="Lien direct vers Cloudflare Protection Alert" translate="no">​</a></h3>
-<p>If a task encounters Cloudflare protection, aiFetchly displays a warning notification at the top of the task list. This alert indicates that the target directory has activated anti-bot measures. To resolve this, try enabling local browser, using authenticated accounts, or adding proxies.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="bulk-operations">Bulk Operations<a href="#bulk-operations" class="hash-link" aria-label="Lien direct vers Bulk Operations" title="Lien direct vers Bulk Operations" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="filtrage-et-recherche">Filtrage et recherche<a href="#filtrage-et-recherche" class="hash-link" aria-label="Lien direct vers Filtrage et recherche" title="Lien direct vers Filtrage et recherche" translate="no">​</a></h3>
+<p>Utilisez la barre de filtre pour affiner les tâches :</p>
+<table><thead><tr><th>Filtre</th><th>Description</th></tr></thead><tbody><tr><td><strong>Search</strong></td><td>Rechercher par nom de tâche ou plateforme</td></tr><tr><td><strong>Status</strong></td><td>Filtrer par Pending, Running, Completed, Failed, Paused</td></tr><tr><td><strong>Platform</strong></td><td>Filtrer par plateforme d&#x27;annuaire</td></tr><tr><td><strong>Priority</strong></td><td>Filtrer par priorité Haute, Moyenne, Basse</td></tr></tbody></table>
+<p>Les filtres actifs sont affichés sous forme de puces supprimables sous la barre de filtre. Cliquez sur <strong>Clear Filters</strong> pour réinitialiser tous les filtres.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="statut-des-tâches">Statut des tâches<a href="#statut-des-tâches" class="hash-link" aria-label="Lien direct vers Statut des tâches" title="Lien direct vers Statut des tâches" translate="no">​</a></h3>
+<table><thead><tr><th>Statut</th><th>Description</th><th>Action</th></tr></thead><tbody><tr><td><strong>Pending</strong></td><td>Tâche créée mais non démarrée</td><td>Démarrer, Modifier, Supprimer</td></tr><tr><td><strong>Running</strong></td><td>Tâche en cours de traitement</td><td>Mettre en pause, Arrêter, Voir la progression</td></tr><tr><td><strong>Paused</strong></td><td>Temporairement suspendue</td><td>Reprendre, Arrêter</td></tr><tr><td><strong>Completed</strong></td><td>Terminée avec succès</td><td>Voir les résultats, Supprimer</td></tr><tr><td><strong>Failed</strong></td><td>Terminée avec des erreurs</td><td>Voir les journaux, Réessayer, Supprimer</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="actions-sur-les-tâches">Actions sur les tâches<a href="#actions-sur-les-tâches" class="hash-link" aria-label="Lien direct vers Actions sur les tâches" title="Lien direct vers Actions sur les tâches" translate="no">​</a></h3>
+<table><thead><tr><th>Action</th><th>Description</th></tr></thead><tbody><tr><td><strong>Start</strong></td><td>Démarrer l&#x27;exécution de la tâche</td></tr><tr><td><strong>Stop</strong></td><td>Terminer la tâche en cours</td></tr><tr><td><strong>Pause</strong></td><td>Suspendre temporairement la tâche</td></tr><tr><td><strong>Resume</strong></td><td>Reprendre la tâche en pause</td></tr><tr><td><strong>Edit</strong></td><td>Modifier la configuration de la tâche</td></tr><tr><td><strong>Delete</strong></td><td>Supprimer la tâche du système</td></tr><tr><td><strong>View Results</strong></td><td>Voir les données d&#x27;entreprises extraites</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="alerte-de-protection-cloudflare">Alerte de protection Cloudflare<a href="#alerte-de-protection-cloudflare" class="hash-link" aria-label="Lien direct vers Alerte de protection Cloudflare" title="Lien direct vers Alerte de protection Cloudflare" translate="no">​</a></h3>
+<p>Si une tâche rencontre une protection Cloudflare, aiFetchly affiche une notification d&#x27;avertissement en haut de la liste des tâches. Cette alerte indique que l&#x27;annuaire cible a activé des mesures anti-bot. Pour résoudre ce problème, essayez d&#x27;activer le navigateur local, d&#x27;utiliser des comptes authentifiés ou d&#x27;ajouter des proxies.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="opérations-en-masse">Opérations en masse<a href="#opérations-en-masse" class="hash-link" aria-label="Lien direct vers Opérations en masse" title="Lien direct vers Opérations en masse" translate="no">​</a></h3>
 <ul>
-<li class=""><strong>Start Multiple</strong>: Select and start multiple paused/failed tasks</li>
-<li class=""><strong>Stop Tasks</strong>: Stop multiple running tasks</li>
-<li class=""><strong>Delete Tasks</strong>: Remove multiple completed/failed tasks</li>
+<li class=""><strong>Start Multiple</strong> : Sélectionner et démarrer plusieurs tâches en pause/échouées</li>
+<li class=""><strong>Stop Tasks</strong> : Arrêter plusieurs tâches en cours</li>
+<li class=""><strong>Delete Tasks</strong> : Supprimer plusieurs tâches terminées/échouées</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="viewing-results">Viewing Results<a href="#viewing-results" class="hash-link" aria-label="Lien direct vers Viewing Results" title="Lien direct vers Viewing Results" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-1-access-results">Step 1: Access Results<a href="#step-1-access-results" class="hash-link" aria-label="Lien direct vers Step 1: Access Results" title="Lien direct vers Step 1: Access Results" translate="no">​</a></h3>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="affichage-des-résultats">Affichage des résultats<a href="#affichage-des-résultats" class="hash-link" aria-label="Lien direct vers Affichage des résultats" title="Lien direct vers Affichage des résultats" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="étape-1--accéder-aux-résultats">Étape 1 : Accéder aux résultats<a href="#étape-1--accéder-aux-résultats" class="hash-link" aria-label="Lien direct vers Étape 1 : Accéder aux résultats" title="Lien direct vers Étape 1 : Accéder aux résultats" translate="no">​</a></h3>
 <ol>
-<li class="">Go to <strong>Yellow Pages</strong> task list</li>
-<li class="">Find the completed task</li>
-<li class="">Click <strong>View Results</strong> to open the results page</li>
+<li class="">Allez à la liste des tâches <strong>Yellow Pages</strong></li>
+<li class="">Trouvez la tâche terminée</li>
+<li class="">Cliquez sur <strong>View Results</strong> pour ouvrir la page des résultats</li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-2-task-summary-card">Step 2: Task Summary Card<a href="#step-2-task-summary-card" class="hash-link" aria-label="Lien direct vers Step 2: Task Summary Card" title="Lien direct vers Step 2: Task Summary Card" translate="no">​</a></h3>
-<p>The results page shows a <strong>Task Summary Card</strong> at the top with:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="étape-2--carte-récapitulative-de-la-tâche">Étape 2 : Carte récapitulative de la tâche<a href="#étape-2--carte-récapitulative-de-la-tâche" class="hash-link" aria-label="Lien direct vers Étape 2 : Carte récapitulative de la tâche" title="Lien direct vers Étape 2 : Carte récapitulative de la tâche" translate="no">​</a></h3>
+<p>La page des résultats affiche une <strong>Task Summary Card</strong> en haut avec :</p>
 <ul>
-<li class=""><strong>Platform</strong>: Which directory was scraped</li>
-<li class=""><strong>Total Results</strong>: Number of businesses extracted</li>
-<li class=""><strong>Status</strong>: Current task status (color-coded)</li>
-<li class=""><strong>Created Time</strong>: When the task was created</li>
-<li class=""><strong>Keywords</strong>: Displayed as chips for easy review</li>
-<li class=""><strong>Location</strong>: The geographic area searched</li>
+<li class=""><strong>Platform</strong> : Quel annuaire a été scrappé</li>
+<li class=""><strong>Total Results</strong> : Nombre d&#x27;entreprises extraites</li>
+<li class=""><strong>Status</strong> : Statut actuel de la tâche (codé par couleur)</li>
+<li class=""><strong>Created Time</strong> : Date de création de la tâche</li>
+<li class=""><strong>Keywords</strong> : Affichés sous forme de puces pour une consultation facile</li>
+<li class=""><strong>Location</strong> : La zone géographique recherchée</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-4-results-table">Step 4: Results Table<a href="#step-4-results-table" class="hash-link" aria-label="Lien direct vers Step 4: Results Table" title="Lien direct vers Step 4: Results Table" translate="no">​</a></h3>
-<p>The results table displays comprehensive business information:</p>
-<table><thead><tr><th>Column</th><th>Description</th></tr></thead><tbody><tr><td><strong>Business Name</strong></td><td>Name of the business</td></tr><tr><td><strong>Categories</strong></td><td>Business categories (visual chips)</td></tr><tr><td><strong>Email</strong></td><td>Email address with copy button</td></tr><tr><td><strong>Phone</strong></td><td>Phone number with copy button</td></tr><tr><td><strong>Website</strong></td><td>Clickable link to website</td></tr><tr><td><strong>Address</strong></td><td>Full address with map icon</td></tr><tr><td><strong>Ratings</strong></td><td>Star rating with review count</td></tr><tr><td><strong>Description</strong></td><td>Business description</td></tr><tr><td><strong>Hours</strong></td><td>Business hours (if available)</td></tr><tr><td><strong>Year Established</strong></td><td>Year business was founded</td></tr><tr><td><strong>Employee Count</strong></td><td>Number of employees</td></tr><tr><td><strong>Scraped At</strong></td><td>Timestamp of data extraction</td></tr></tbody></table>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-5-interact-with-results">Step 5: Interact with Results<a href="#step-5-interact-with-results" class="hash-link" aria-label="Lien direct vers Step 5: Interact with Results" title="Lien direct vers Step 5: Interact with Results" translate="no">​</a></h3>
-<p><strong>Individual Actions:</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="étape-4--tableau-des-résultats">Étape 4 : Tableau des résultats<a href="#étape-4--tableau-des-résultats" class="hash-link" aria-label="Lien direct vers Étape 4 : Tableau des résultats" title="Lien direct vers Étape 4 : Tableau des résultats" translate="no">​</a></h3>
+<p>Le tableau des résultats affiche des informations commerciales complètes :</p>
+<table><thead><tr><th>Colonne</th><th>Description</th></tr></thead><tbody><tr><td><strong>Business Name</strong></td><td>Nom de l&#x27;entreprise</td></tr><tr><td><strong>Categories</strong></td><td>Catégories d&#x27;entreprise (puces visuelles)</td></tr><tr><td><strong>Email</strong></td><td>Adresse e-mail avec bouton de copie</td></tr><tr><td><strong>Phone</strong></td><td>Numéro de téléphone avec bouton de copie</td></tr><tr><td><strong>Website</strong></td><td>Lien cliquable vers le site web</td></tr><tr><td><strong>Address</strong></td><td>Adresse complète avec icône de carte</td></tr><tr><td><strong>Ratings</strong></td><td>Note en étoiles avec nombre d&#x27;avis</td></tr><tr><td><strong>Description</strong></td><td>Description de l&#x27;entreprise</td></tr><tr><td><strong>Hours</strong></td><td>Horaires d&#x27;ouverture (si disponibles)</td></tr><tr><td><strong>Year Established</strong></td><td>Année de fondation de l&#x27;entreprise</td></tr><tr><td><strong>Employee Count</strong></td><td>Nombre d&#x27;employés</td></tr><tr><td><strong>Scraped At</strong></td><td>Horodatage de l&#x27;extraction des données</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="étape-5--interagir-avec-les-résultats">Étape 5 : Interagir avec les résultats<a href="#étape-5--interagir-avec-les-résultats" class="hash-link" aria-label="Lien direct vers Étape 5 : Interagir avec les résultats" title="Lien direct vers Étape 5 : Interagir avec les résultats" translate="no">​</a></h3>
+<p><strong>Actions individuelles :</strong></p>
 <ul>
-<li class=""><strong>Copy Email</strong>: Copy email address to clipboard</li>
-<li class=""><strong>Copy Phone</strong>: Copy phone number to clipboard</li>
-<li class=""><strong>Open Website</strong>: Open business website in new tab</li>
-<li class=""><strong>View Details</strong>: See full business record in modal</li>
+<li class=""><strong>Copy Email</strong> : Copier l&#x27;adresse e-mail dans le presse-papiers</li>
+<li class=""><strong>Copy Phone</strong> : Copier le numéro de téléphone dans le presse-papiers</li>
+<li class=""><strong>Open Website</strong> : Ouvrir le site web de l&#x27;entreprise dans un nouvel onglet</li>
+<li class=""><strong>View Details</strong> : Voir l&#x27;enregistrement complet de l&#x27;entreprise dans une fenêtre modale</li>
 </ul>
-<p><strong>Search &amp; Filter:</strong></p>
+<p><strong>Recherche et filtre :</strong></p>
 <ul>
-<li class=""><strong>Search</strong>: Filter by business name, email, phone, website, or address</li>
-<li class=""><strong>Category Filter</strong>: Filter results by business categories</li>
-<li class=""><strong>Pagination</strong>: Navigate through large result sets</li>
+<li class=""><strong>Search</strong> : Filtrer par nom d&#x27;entreprise, e-mail, téléphone, site web ou adresse</li>
+<li class=""><strong>Category Filter</strong> : Filtrer les résultats par catégories d&#x27;entreprise</li>
+<li class=""><strong>Pagination</strong> : Naviguer dans de grands ensembles de résultats</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="exporting-results">Exporting Results<a href="#exporting-results" class="hash-link" aria-label="Lien direct vers Exporting Results" title="Lien direct vers Exporting Results" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="export-as-csv">Export as CSV<a href="#export-as-csv" class="hash-link" aria-label="Lien direct vers Export as CSV" title="Lien direct vers Export as CSV" translate="no">​</a></h3>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="exportation-des-résultats">Exportation des résultats<a href="#exportation-des-résultats" class="hash-link" aria-label="Lien direct vers Exportation des résultats" title="Lien direct vers Exportation des résultats" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="exporter-en-csv">Exporter en CSV<a href="#exporter-en-csv" class="hash-link" aria-label="Lien direct vers Exporter en CSV" title="Lien direct vers Exporter en CSV" translate="no">​</a></h3>
 <ol>
-<li class="">Click <strong>Export</strong> button in the results view</li>
-<li class="">File downloads automatically in CSV format</li>
-<li class="">Filename includes task ID and date</li>
+<li class="">Cliquez sur le bouton <strong>Export</strong> dans la vue des résultats</li>
+<li class="">Le fichier se télécharge automatiquement au format CSV</li>
+<li class="">Le nom du fichier inclut l&#x27;ID de la tâche et la date</li>
 </ol>
-<p><strong>Exported Data Includes:</strong></p>
+<p><strong>Données exportées incluses :</strong></p>
 <ul>
-<li class="">Business name and categories</li>
-<li class="">Contact details (email, phone, website)</li>
-<li class="">Address and location</li>
-<li class="">Ratings and reviews</li>
-<li class="">Business hours</li>
-<li class="">Additional metadata</li>
+<li class="">Nom et catégories de l&#x27;entreprise</li>
+<li class="">Coordonnées (e-mail, téléphone, site web)</li>
+<li class="">Adresse et lieu</li>
+<li class="">Notes et avis</li>
+<li class="">Horaires d&#x27;ouverture</li>
+<li class="">Métadonnées supplémentaires</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="best-practices">Best Practices<a href="#best-practices" class="hash-link" aria-label="Lien direct vers Best Practices" title="Lien direct vers Best Practices" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-keyword-strategy">1. Keyword Strategy<a href="#1-keyword-strategy" class="hash-link" aria-label="Lien direct vers 1. Keyword Strategy" title="Lien direct vers 1. Keyword Strategy" translate="no">​</a></h3>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="bonnes-pratiques">Bonnes pratiques<a href="#bonnes-pratiques" class="hash-link" aria-label="Lien direct vers Bonnes pratiques" title="Lien direct vers Bonnes pratiques" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-stratégie-de-mots-clés">1. Stratégie de mots-clés<a href="#1-stratégie-de-mots-clés" class="hash-link" aria-label="Lien direct vers 1. Stratégie de mots-clés" title="Lien direct vers 1. Stratégie de mots-clés" translate="no">​</a></h3>
 <ul>
 <li class="">
-<p><strong>Be Specific</strong>: Use specific business types instead of generic terms</p>
+<p><strong>Soyez spécifique</strong> : Utilisez des types d&#x27;entreprises spécifiques plutôt que des termes génériques</p>
 <ul>
 <li class="">❌ &quot;services&quot;</li>
-<li class="">✅ &quot;marketing agency&quot; or &quot;plumbing services&quot;</li>
+<li class="">✅ &quot;agence marketing&quot; ou &quot;services de plomberie&quot;</li>
 </ul>
 </li>
 <li class="">
-<p><strong>Use Synonyms</strong>: Try different terms for the same business type</p>
+<p><strong>Utilisez des synonymes</strong> : Essayez différents termes pour le même type d&#x27;entreprise</p>
 <ul>
-<li class="">&quot;restaurant&quot; and &quot;eatery&quot;</li>
-<li class="">&quot;plumber&quot; and &quot;plumbing service&quot;</li>
+<li class="">&quot;restaurant&quot; et &quot;brasserie&quot;</li>
+<li class="">&quot;plombier&quot; et &quot;service de plomberie&quot;</li>
 </ul>
 </li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-location-targeting">2. Location Targeting<a href="#2-location-targeting" class="hash-link" aria-label="Lien direct vers 2. Location Targeting" title="Lien direct vers 2. Location Targeting" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-ciblage-géographique">2. Ciblage géographique<a href="#2-ciblage-géographique" class="hash-link" aria-label="Lien direct vers 2. Ciblage géographique" title="Lien direct vers 2. Ciblage géographique" translate="no">​</a></h3>
 <ul>
 <li class="">
-<p><strong>Be Precise</strong>: Use &quot;City, State&quot; format</p>
+<p><strong>Soyez précis</strong> : Utilisez le format &quot;Ville, État&quot;</p>
 <ul>
 <li class="">✅ &quot;Chicago, IL&quot;</li>
 <li class="">✅ &quot;Los Angeles, CA&quot;</li>
-<li class="">❌ &quot;Chicago&quot; (might return ambiguous results)</li>
+<li class="">❌ &quot;Chicago&quot; (peut renvoyer des résultats ambigus)</li>
 </ul>
 </li>
 <li class="">
-<p><strong>Start Broad, Then Narrow</strong>:</p>
+<p><strong>Commencez large, puis affinez</strong> :</p>
 <ol>
-<li class="">Search in a large city (thousands of results)</li>
-<li class="">Export results</li>
-<li class="">Search in specific neighborhoods</li>
+<li class="">Recherchez dans une grande ville (des milliers de résultats)</li>
+<li class="">Exportez les résultats</li>
+<li class="">Recherchez dans des quartiers spécifiques</li>
 </ol>
 </li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-performance-optimization">3. Performance Optimization<a href="#3-performance-optimization" class="hash-link" aria-label="Lien direct vers 3. Performance Optimization" title="Lien direct vers 3. Performance Optimization" translate="no">​</a></h3>
-<p><strong>For Small Tasks</strong> (&lt; 100 pages):</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-optimisation-des-performances">3. Optimisation des performances<a href="#3-optimisation-des-performances" class="hash-link" aria-label="Lien direct vers 3. Optimisation des performances" title="Lien direct vers 3. Optimisation des performances" translate="no">​</a></h3>
+<p><strong>Pour les petites tâches</strong> (&lt; 100 pages) :</p>
 <ul>
-<li class="">Concurrency: 1-3</li>
-<li class="">Delay: 2000ms</li>
-<li class="">No proxy needed</li>
+<li class="">Concurrence : 1-3</li>
+<li class="">Délai : 2000 ms</li>
+<li class="">Pas de proxy nécessaire</li>
 </ul>
-<p><strong>For Medium Tasks</strong> (100-500 pages):</p>
+<p><strong>Pour les tâches moyennes</strong> (100-500 pages) :</p>
 <ul>
-<li class="">Concurrency: 3-5</li>
-<li class="">Delay: 2000ms</li>
-<li class="">Use 2-3 proxies</li>
+<li class="">Concurrence : 3-5</li>
+<li class="">Délai : 2000 ms</li>
+<li class="">Utilisez 2-3 proxies</li>
 </ul>
-<p><strong>For Large Tasks</strong> (500+ pages):</p>
+<p><strong>Pour les grandes tâches</strong> (500+ pages) :</p>
 <ul>
-<li class="">Concurrency: 5-10</li>
-<li class="">Delay: 2000ms</li>
-<li class="">Use 5+ proxies</li>
-<li class="">Consider splitting into multiple tasks</li>
+<li class="">Concurrence : 5-10</li>
+<li class="">Délai : 2000 ms</li>
+<li class="">Utilisez 5+ proxies</li>
+<li class="">Envisagez de diviser en plusieurs tâches</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-avoiding-blocks">4. Avoiding Blocks<a href="#4-avoiding-blocks" class="hash-link" aria-label="Lien direct vers 4. Avoiding Blocks" title="Lien direct vers 4. Avoiding Blocks" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-éviter-les-blocages">4. Éviter les blocages<a href="#4-éviter-les-blocages" class="hash-link" aria-label="Lien direct vers 4. Éviter les blocages" title="Lien direct vers 4. Éviter les blocages" translate="no">​</a></h3>
 <ol>
-<li class=""><strong>Respect Rate Limits</strong>: Don&#x27;t exceed recommended concurrency</li>
-<li class=""><strong>Use Delays</strong>: Keep request delays at 2000ms or higher</li>
-<li class=""><strong>Rotate Proxies</strong>: Distribute requests across multiple IPs</li>
-<li class=""><strong>Use Accounts</strong>: Authenticated scraping has higher limits</li>
-<li class=""><strong>Take Breaks</strong>: Don&#x27;t run large tasks continuously</li>
-<li class=""><strong>Enable AI Support</strong>: AI can help handle anti-bot protections</li>
-<li class=""><strong>Use Local Browser</strong>: Real browser fingerprint reduces detection risk</li>
+<li class=""><strong>Respectez les limites de débit</strong> : Ne dépassez pas la concurrence recommandée</li>
+<li class=""><strong>Utilisez des délais</strong> : Maintenez les délais entre les requêtes à 2000 ms ou plus</li>
+<li class=""><strong>Faites tourner les proxies</strong> : Répartissez les requêtes sur plusieurs adresses IP</li>
+<li class=""><strong>Utilisez des comptes</strong> : Le scraping authentifié a des limites plus élevées</li>
+<li class=""><strong>Faites des pauses</strong> : N&#x27;exécutez pas de grandes tâches en continu</li>
+<li class=""><strong>Activez le support IA</strong> : L&#x27;IA peut aider à gérer les protections anti-bot</li>
+<li class=""><strong>Utilisez le navigateur local</strong> : L&#x27;empreinte d&#x27;un vrai navigateur réduit le risque de détection</li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="5-data-quality">5. Data Quality<a href="#5-data-quality" class="hash-link" aria-label="Lien direct vers 5. Data Quality" title="Lien direct vers 5. Data Quality" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="5-qualité-des-données">5. Qualité des données<a href="#5-qualité-des-données" class="hash-link" aria-label="Lien direct vers 5. Qualité des données" title="Lien direct vers 5. Qualité des données" translate="no">​</a></h3>
 <ul>
-<li class=""><strong>Verify Results</strong>: Spot-check extracted data for accuracy</li>
-<li class=""><strong>Filter Categories</strong>: Use category filters to remove irrelevant results</li>
-<li class=""><strong>Cross-Reference</strong>: Combine data from multiple platforms</li>
-<li class=""><strong>Regular Updates</strong>: Business information changes, refresh data regularly</li>
+<li class=""><strong>Vérifiez les résultats</strong> : Vérifiez par échantillonnage l&#x27;exactitude des données extraites</li>
+<li class=""><strong>Filtrez les catégories</strong> : Utilisez les filtres de catégorie pour supprimer les résultats non pertinents</li>
+<li class=""><strong>Croisez les références</strong> : Combinez les données de plusieurs plateformes</li>
+<li class=""><strong>Mises à jour régulières</strong> : Les informations commerciales changent, actualisez les données régulièrement</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="platform-specific-tips">Platform-Specific Tips<a href="#platform-specific-tips" class="hash-link" aria-label="Lien direct vers Platform-Specific Tips" title="Lien direct vers Platform-Specific Tips" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="yellowpagescom-usa">YellowPages.com (USA)<a href="#yellowpagescom-usa" class="hash-link" aria-label="Lien direct vers YellowPages.com (USA)" title="Lien direct vers YellowPages.com (USA)" translate="no">​</a></h3>
-<p><strong>Strengths:</strong></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="conseils-spécifiques-aux-plateformes">Conseils spécifiques aux plateformes<a href="#conseils-spécifiques-aux-plateformes" class="hash-link" aria-label="Lien direct vers Conseils spécifiques aux plateformes" title="Lien direct vers Conseils spécifiques aux plateformes" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="yellowpagescom-états-unis">YellowPages.com (États-Unis)<a href="#yellowpagescom-états-unis" class="hash-link" aria-label="Lien direct vers YellowPages.com (États-Unis)" title="Lien direct vers YellowPages.com (États-Unis)" translate="no">​</a></h3>
+<p><strong>Points forts :</strong></p>
 <ul>
-<li class="">Comprehensive business listings</li>
-<li class="">Accurate contact information</li>
-<li class="">Good coverage across all states</li>
+<li class="">Annonces d&#x27;entreprises complètes</li>
+<li class="">Coordonnées précises</li>
+<li class="">Bonne couverture dans tous les États</li>
 </ul>
-<p><strong>Tips:</strong></p>
+<p><strong>Conseils :</strong></p>
 <ul>
-<li class="">Use city + state for best results</li>
-<li class="">Includes business hours and services</li>
-<li class="">Good for B2C businesses</li>
+<li class="">Utilisez ville + État pour de meilleurs résultats</li>
+<li class="">Inclut les horaires d&#x27;ouverture et les services</li>
+<li class="">Bon pour les entreprises B2C</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="yelpcom-usa">Yelp.com (USA)<a href="#yelpcom-usa" class="hash-link" aria-label="Lien direct vers Yelp.com (USA)" title="Lien direct vers Yelp.com (USA)" translate="no">​</a></h3>
-<p><strong>Strengths:</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="yelpcom-états-unis">Yelp.com (États-Unis)<a href="#yelpcom-états-unis" class="hash-link" aria-label="Lien direct vers Yelp.com (États-Unis)" title="Lien direct vers Yelp.com (États-Unis)" translate="no">​</a></h3>
+<p><strong>Points forts :</strong></p>
 <ul>
-<li class="">Rich review data</li>
-<li class="">Photos and detailed descriptions</li>
-<li class="">User-generated content</li>
+<li class="">Données d&#x27;avis riches</li>
+<li class="">Photos et descriptions détaillées</li>
+<li class="">Contenu généré par les utilisateurs</li>
 </ul>
-<p><strong>Tips:</strong></p>
+<p><strong>Conseils :</strong></p>
 <ul>
-<li class="">Stricter rate limits (use 3000ms delay)</li>
-<li class="">Great for service businesses</li>
-<li class="">Review data helps qualify leads</li>
+<li class="">Limites de débit plus strictes (utilisez un délai de 3000 ms)</li>
+<li class="">Excellent pour les entreprises de services</li>
+<li class="">Les données d&#x27;avis aident à qualifier les prospects</li>
 </ul>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="yellowpagesca-canada">YellowPages.ca (Canada)<a href="#yellowpagesca-canada" class="hash-link" aria-label="Lien direct vers YellowPages.ca (Canada)" title="Lien direct vers YellowPages.ca (Canada)" translate="no">​</a></h3>
-<p><strong>Strengths:</strong></p>
+<p><strong>Points forts :</strong></p>
 <ul>
-<li class="">Canada-specific listings</li>
-<li class="">Canadian business verification</li>
+<li class="">Annonces spécifiques au Canada</li>
+<li class="">Vérification des entreprises canadiennes</li>
 </ul>
-<p><strong>Tips:</strong></p>
+<p><strong>Conseils :</strong></p>
 <ul>
-<li class="">Essential for Canadian market</li>
-<li class="">Use &quot;City, Province&quot; format</li>
+<li class="">Indispensable pour le marché canadien</li>
+<li class="">Utilisez le format &quot;Ville, Province&quot;</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="yellowpagescomsg-singapore">YellowPages.com.sg (Singapore)<a href="#yellowpagescomsg-singapore" class="hash-link" aria-label="Lien direct vers YellowPages.com.sg (Singapore)" title="Lien direct vers YellowPages.com.sg (Singapore)" translate="no">​</a></h3>
-<p><strong>Strengths:</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="yellowpagescomsg-singapour">YellowPages.com.sg (Singapour)<a href="#yellowpagescomsg-singapour" class="hash-link" aria-label="Lien direct vers YellowPages.com.sg (Singapour)" title="Lien direct vers YellowPages.com.sg (Singapour)" translate="no">​</a></h3>
+<p><strong>Points forts :</strong></p>
 <ul>
-<li class="">Singapore business directory</li>
-<li class="">Comprehensive local listings</li>
+<li class="">Annuaire d&#x27;entreprises singapouriennes</li>
+<li class="">Annonces locales complètes</li>
 </ul>
-<p><strong>Tips:</strong></p>
+<p><strong>Conseils :</strong></p>
 <ul>
-<li class="">Use city or district names for location</li>
-<li class="">Good for Southeast Asian market research</li>
+<li class="">Utilisez des noms de ville ou de quartier comme lieu</li>
+<li class="">Bon pour la recherche de marché en Asie du Sud-Est</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="192com-uk">192.com (UK)<a href="#192com-uk" class="hash-link" aria-label="Lien direct vers 192.com (UK)" title="Lien direct vers 192.com (UK)" translate="no">​</a></h3>
-<p><strong>Strengths:</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="192com-royaume-uni">192.com (Royaume-Uni)<a href="#192com-royaume-uni" class="hash-link" aria-label="Lien direct vers 192.com (Royaume-Uni)" title="Lien direct vers 192.com (Royaume-Uni)" translate="no">​</a></h3>
+<p><strong>Points forts :</strong></p>
 <ul>
-<li class="">UK-specific business and people directory</li>
-<li class="">Good coverage across United Kingdom</li>
+<li class="">Annuaire d&#x27;entreprises et de personnes britannique</li>
+<li class="">Bonne couverture au Royaume-Uni</li>
 </ul>
-<p><strong>Tips:</strong></p>
+<p><strong>Conseils :</strong></p>
 <ul>
-<li class="">Use UK city and postcode format</li>
-<li class="">Good for UK B2B outreach</li>
+<li class="">Utilisez le format ville et code postal britannique</li>
+<li class="">Bon pour le outreach B2B au Royaume-Uni</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="11880com-germany">11880.com (Germany)<a href="#11880com-germany" class="hash-link" aria-label="Lien direct vers 11880.com (Germany)" title="Lien direct vers 11880.com (Germany)" translate="no">​</a></h3>
-<p><strong>Strengths:</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="11880com-allemagne">11880.com (Allemagne)<a href="#11880com-allemagne" class="hash-link" aria-label="Lien direct vers 11880.com (Allemagne)" title="Lien direct vers 11880.com (Allemagne)" translate="no">​</a></h3>
+<p><strong>Points forts :</strong></p>
 <ul>
-<li class="">German business directory</li>
-<li class="">Handles cookie consent automatically</li>
+<li class="">Annuaire d&#x27;entreprises allemand</li>
+<li class="">Gère automatiquement le consentement aux cookies</li>
 </ul>
-<p><strong>Tips:</strong></p>
+<p><strong>Conseils :</strong></p>
 <ul>
-<li class="">Use German city names for best results</li>
-<li class="">Good for DACH market research</li>
+<li class="">Utilisez des noms de villes allemandes pour de meilleurs résultats</li>
+<li class="">Bon pour la recherche de marché DACH</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="gelbeseitende-germany">Gelbeseiten.de (Germany)<a href="#gelbeseitende-germany" class="hash-link" aria-label="Lien direct vers Gelbeseiten.de (Germany)" title="Lien direct vers Gelbeseiten.de (Germany)" translate="no">​</a></h3>
-<p><strong>Strengths:</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="gelbeseitende-allemagne">Gelbeseiten.de (Allemagne)<a href="#gelbeseitende-allemagne" class="hash-link" aria-label="Lien direct vers Gelbeseiten.de (Allemagne)" title="Lien direct vers Gelbeseiten.de (Allemagne)" translate="no">​</a></h3>
+<p><strong>Points forts :</strong></p>
 <ul>
-<li class="">German Yellow Pages</li>
-<li class="">Comprehensive business listings in Germany</li>
-<li class="">Handles complex cookie consent dialogs</li>
+<li class="">Pages Jaunes allemandes</li>
+<li class="">Annonces d&#x27;entreprises complètes en Allemagne</li>
+<li class="">Gère les boîtes de dialogue de consentement aux cookies complexes</li>
 </ul>
-<p><strong>Tips:</strong></p>
+<p><strong>Conseils :</strong></p>
 <ul>
-<li class="">Use German keywords for best results</li>
-<li class="">Essential for German market</li>
+<li class="">Utilisez des mots-clés allemands pour de meilleurs résultats</li>
+<li class="">Indispensable pour le marché allemand</li>
 </ul>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="pagesjaunesfr-france">PagesJaunes.fr (France)<a href="#pagesjaunesfr-france" class="hash-link" aria-label="Lien direct vers PagesJaunes.fr (France)" title="Lien direct vers PagesJaunes.fr (France)" translate="no">​</a></h3>
-<p><strong>Strengths:</strong></p>
+<p><strong>Points forts :</strong></p>
 <ul>
-<li class="">French Yellow Pages</li>
-<li class="">Phone number reveal feature</li>
-<li class="">Comprehensive French business listings</li>
+<li class="">Pages Jaunes françaises</li>
+<li class="">Fonctionnalité de révélation du numéro de téléphone</li>
+<li class="">Annonces d&#x27;entreprises françaises complètes</li>
 </ul>
-<p><strong>Tips:</strong></p>
+<p><strong>Conseils :</strong></p>
 <ul>
-<li class=""><strong>Location is required</strong> for this platform</li>
-<li class="">Use French city names and postal codes</li>
-<li class="">Good for French market outreach</li>
+<li class=""><strong>Le lieu est obligatoire</strong> pour cette plateforme</li>
+<li class="">Utilisez des noms de villes françaises et des codes postaux</li>
+<li class="">Bon pour l&#x27;outreach sur le marché français</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="paginegialleit-italy">PagineGialle.it (Italy)<a href="#paginegialleit-italy" class="hash-link" aria-label="Lien direct vers PagineGialle.it (Italy)" title="Lien direct vers PagineGialle.it (Italy)" translate="no">​</a></h3>
-<p><strong>Strengths:</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="paginegialleit-italie">PagineGialle.it (Italie)<a href="#paginegialleit-italie" class="hash-link" aria-label="Lien direct vers PagineGialle.it (Italie)" title="Lien direct vers PagineGialle.it (Italie)" translate="no">​</a></h3>
+<p><strong>Points forts :</strong></p>
 <ul>
-<li class="">Italian Yellow Pages</li>
-<li class="">Comprehensive Italian business directory</li>
-<li class="">Handles cookie consent automatically</li>
+<li class="">Pages Jaunes italiennes</li>
+<li class="">Annuaire d&#x27;entreprises italien complet</li>
+<li class="">Gère automatiquement le consentement aux cookies</li>
 </ul>
-<p><strong>Tips:</strong></p>
+<p><strong>Conseils :</strong></p>
 <ul>
-<li class="">Use Italian city names for location</li>
-<li class="">Good for Italian market research</li>
+<li class="">Utilisez des noms de villes italiennes comme lieu</li>
+<li class="">Bon pour la recherche de marché en Italie</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="itownpage-japan">iTownPage (Japan)<a href="#itownpage-japan" class="hash-link" aria-label="Lien direct vers iTownPage (Japan)" title="Lien direct vers iTownPage (Japan)" translate="no">​</a></h3>
-<p><strong>Strengths:</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="itownpage-japon">iTownPage (Japon)<a href="#itownpage-japon" class="hash-link" aria-label="Lien direct vers iTownPage (Japon)" title="Lien direct vers iTownPage (Japon)" translate="no">​</a></h3>
+<p><strong>Points forts :</strong></p>
 <ul>
-<li class="">Japanese business directory</li>
-<li class="">Handles dialog popups automatically</li>
-<li class="">Japanese cookie consent management</li>
+<li class="">Annuaire d&#x27;entreprises japonais</li>
+<li class="">Gère automatiquement les popups de dialogue</li>
+<li class="">Gestion du consentement aux cookies en japonais</li>
 </ul>
-<p><strong>Tips:</strong></p>
+<p><strong>Conseils :</strong></p>
 <ul>
-<li class="">Use Japanese keywords for best results</li>
-<li class="">Essential for Japanese local business discovery</li>
-<li class="">Use 2500ms delay (60 req/hour rate limit)</li>
+<li class="">Utilisez des mots-clés japonais pour de meilleurs résultats</li>
+<li class="">Indispensable pour la découverte d&#x27;entreprises locales japonaises</li>
+<li class="">Utilisez un délai de 2500 ms (limite de 60 requêtes/heure)</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="usonar-yellow-page-japan">uSonar Yellow Page (Japan)<a href="#usonar-yellow-page-japan" class="hash-link" aria-label="Lien direct vers uSonar Yellow Page (Japan)" title="Lien direct vers uSonar Yellow Page (Japan)" translate="no">​</a></h3>
-<p><strong>Strengths:</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="usonar-yellow-page-japon">uSonar Yellow Page (Japon)<a href="#usonar-yellow-page-japon" class="hash-link" aria-label="Lien direct vers uSonar Yellow Page (Japon)" title="Lien direct vers uSonar Yellow Page (Japon)" translate="no">​</a></h3>
+<p><strong>Points forts :</strong></p>
 <ul>
-<li class="">Alternative Japanese business directory</li>
-<li class="">Good for cross-referencing with iTownPage</li>
+<li class="">Annuaire d&#x27;entreprises japonais alternatif</li>
+<li class="">Bon pour la cross-référence avec iTownPage</li>
 </ul>
-<p><strong>Tips:</strong></p>
+<p><strong>Conseils :</strong></p>
 <ul>
-<li class="">Use alongside iTownPage for broader coverage</li>
-<li class="">Use 2500ms delay</li>
+<li class="">Utilisez conjointement avec iTownPage pour une couverture plus large</li>
+<li class="">Utilisez un délai de 2500 ms</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="korealocalpages-south-korea">KoreaLocalPages (South Korea)<a href="#korealocalpages-south-korea" class="hash-link" aria-label="Lien direct vers KoreaLocalPages (South Korea)" title="Lien direct vers KoreaLocalPages (South Korea)" translate="no">​</a></h3>
-<p><strong>Strengths:</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="korealocalpages-corée-du-sud">KoreaLocalPages (Corée du Sud)<a href="#korealocalpages-corée-du-sud" class="hash-link" aria-label="Lien direct vers KoreaLocalPages (Corée du Sud)" title="Lien direct vers KoreaLocalPages (Corée du Sud)" translate="no">​</a></h3>
+<p><strong>Points forts :</strong></p>
 <ul>
-<li class="">Korean local business directory</li>
-<li class="">Good for Korean market entry research</li>
+<li class="">Annuaire local d&#x27;entreprises coréennes</li>
+<li class="">Bon pour la recherche d&#x27;entrée sur le marché coréen</li>
 </ul>
-<p><strong>Tips:</strong></p>
+<p><strong>Conseils :</strong></p>
 <ul>
-<li class="">Use Korean keywords for best results</li>
-<li class="">Use 2500ms delay (60 req/hour rate limit)</li>
-<li class="">Good for discovering Korean businesses</li>
+<li class="">Utilisez des mots-clés coréens pour de meilleurs résultats</li>
+<li class="">Utilisez un délai de 2500 ms (limite de 60 requêtes/heure)</li>
+<li class="">Bon pour découvrir les entreprises coréennes</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="integration-with-email-marketing">Integration with Email Marketing<a href="#integration-with-email-marketing" class="hash-link" aria-label="Lien direct vers Integration with Email Marketing" title="Lien direct vers Integration with Email Marketing" translate="no">​</a></h2>
-<p>Extracted business emails can be used directly in email campaigns:</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="intégration-avec-le-marketing-par-e-mail">Intégration avec le marketing par e-mail<a href="#intégration-avec-le-marketing-par-e-mail" class="hash-link" aria-label="Lien direct vers Intégration avec le marketing par e-mail" title="Lien direct vers Intégration avec le marketing par e-mail" translate="no">​</a></h2>
+<p>Les e-mails d&#x27;entreprises extraits peuvent être utilisés directement dans les campagnes d&#x27;e-mail :</p>
 <ol>
-<li class=""><strong>Export Results</strong> from Yellow Pages task</li>
-<li class=""><strong>Navigate to Email Marketing</strong> → <strong>Send Bulk Emails</strong></li>
-<li class=""><strong>Import CSV</strong> with extracted emails</li>
-<li class=""><strong>Create Template</strong> for your outreach</li>
-<li class=""><strong>Launch Campaign</strong></li>
+<li class=""><strong>Exportez les résultats</strong> de la tâche Pages Jaunes</li>
+<li class="">Naviguez vers <strong>Email Marketing</strong> → <strong>Send Bulk Emails</strong></li>
+<li class=""><strong>Importez le CSV</strong> avec les e-mails extraits</li>
+<li class=""><strong>Créez un modèle</strong> pour votre outreach</li>
+<li class=""><strong>Lancez la campagne</strong></li>
 </ol>
-<p>For detailed instructions, see <a class="" href="/aiFetchly/fr/docs/lead-generation/batch-email-sending">Batch Email Sending</a>.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="troubleshooting">Troubleshooting<a href="#troubleshooting" class="hash-link" aria-label="Lien direct vers Troubleshooting" title="Lien direct vers Troubleshooting" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="task-status-failed">Task Status: &quot;Failed&quot;<a href="#task-status-failed" class="hash-link" aria-label="Lien direct vers Task Status: &quot;Failed&quot;" title="Lien direct vers Task Status: &quot;Failed&quot;" translate="no">​</a></h3>
-<p><strong>Possible causes:</strong></p>
+<p>Pour des instructions détaillées, consultez <a class="" href="/aiFetchly/fr/docs/lead-generation/batch-email-sending">Envoi d&#x27;e-mails en lot</a>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="dépannage">Dépannage<a href="#dépannage" class="hash-link" aria-label="Lien direct vers Dépannage" title="Lien direct vers Dépannage" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="statut-de-la-tâche--failed">Statut de la tâche : &quot;Failed&quot;<a href="#statut-de-la-tâche--failed" class="hash-link" aria-label="Lien direct vers Statut de la tâche : &quot;Failed&quot;" title="Lien direct vers Statut de la tâche : &quot;Failed&quot;" translate="no">​</a></h3>
+<p><strong>Causes possibles :</strong></p>
 <ul>
-<li class="">All proxies failed</li>
-<li class="">Network connectivity issues</li>
-<li class="">Platform blocked requests</li>
-<li class="">Invalid keywords or location</li>
+<li class="">Tous les proxies ont échoué</li>
+<li class="">Problèmes de connectivité réseau</li>
+<li class="">La plateforme a bloqué les requêtes</li>
+<li class="">Mots-clés ou lieu invalides</li>
 </ul>
-<p><strong>Solutions:</strong></p>
+<p><strong>Solutions :</strong></p>
 <ol>
-<li class="">Check proxy health</li>
-<li class="">Verify internet connection</li>
-<li class="">Reduce concurrency and increase delay</li>
-<li class="">Try different keywords/location</li>
-<li class="">Enable account authentication</li>
-<li class="">Enable AI Support for smarter error handling</li>
-<li class="">Use Local Browser to bypass anti-bot protections</li>
+<li class="">Vérifiez l&#x27;état des proxies</li>
+<li class="">Vérifiez la connexion Internet</li>
+<li class="">Réduisez la concurrence et augmentez le délai</li>
+<li class="">Essayez différents mots-clés/lieux</li>
+<li class="">Activez l&#x27;authentification par compte</li>
+<li class="">Activez le support IA pour une gestion plus intelligente des erreurs</li>
+<li class="">Utilisez le navigateur local pour contourner les protections anti-bot</li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="no-results-returned">No Results Returned<a href="#no-results-returned" class="hash-link" aria-label="Lien direct vers No Results Returned" title="Lien direct vers No Results Returned" translate="no">​</a></h3>
-<p><strong>Possible causes:</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="aucun-résultat-renvoyé">Aucun résultat renvoyé<a href="#aucun-résultat-renvoyé" class="hash-link" aria-label="Lien direct vers Aucun résultat renvoyé" title="Lien direct vers Aucun résultat renvoyé" translate="no">​</a></h3>
+<p><strong>Causes possibles :</strong></p>
 <ul>
-<li class="">Keywords too specific</li>
-<li class="">Location has no matching businesses</li>
-<li class="">Platform returned no results</li>
+<li class="">Mots-clés trop spécifiques</li>
+<li class="">Le lieu n&#x27;a pas d&#x27;entreprises correspondantes</li>
+<li class="">La plateforme n&#x27;a renvoyé aucun résultat</li>
 </ul>
-<p><strong>Solutions:</strong></p>
+<p><strong>Solutions :</strong></p>
 <ol>
-<li class="">Try broader keywords</li>
-<li class="">Verify location spelling</li>
-<li class="">Check if businesses exist on the platform manually</li>
-<li class="">Try nearby locations</li>
+<li class="">Essayez des mots-clés plus larges</li>
+<li class="">Vérifiez l&#x27;orthographe du lieu</li>
+<li class="">Vérifiez manuellement si des entreprises existent sur la plateforme</li>
+<li class="">Essayez des lieux proches</li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="slow-processing">Slow Processing<a href="#slow-processing" class="hash-link" aria-label="Lien direct vers Slow Processing" title="Lien direct vers Slow Processing" translate="no">​</a></h3>
-<p><strong>Possible causes:</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="traitement-lent">Traitement lent<a href="#traitement-lent" class="hash-link" aria-label="Lien direct vers Traitement lent" title="Lien direct vers Traitement lent" translate="no">​</a></h3>
+<p><strong>Causes possibles :</strong></p>
 <ul>
-<li class="">High max pages setting</li>
-<li class="">Conservative delay settings</li>
-<li class="">Platform rate limits</li>
+<li class="">Paramètre de pages maximum élevé</li>
+<li class="">Paramètres de délai conservateurs</li>
+<li class="">Limites de débit de la plateforme</li>
 </ul>
-<p><strong>Solutions:</strong></p>
+<p><strong>Solutions :</strong></p>
 <ol>
-<li class="">Reduce max pages</li>
-<li class="">Slightly reduce delay (with caution)</li>
-<li class="">Increase concurrency (if using proxies)</li>
+<li class="">Réduisez le nombre maximum de pages</li>
+<li class="">Réduisez légèrement le délai (avec prudence)</li>
+<li class="">Augmentez la concurrence (si vous utilisez des proxies)</li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="incomplete-data">Incomplete Data<a href="#incomplete-data" class="hash-link" aria-label="Lien direct vers Incomplete Data" title="Lien direct vers Incomplete Data" translate="no">​</a></h3>
-<p><strong>Possible causes:</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="données-incomplètes">Données incomplètes<a href="#données-incomplètes" class="hash-link" aria-label="Lien direct vers Données incomplètes" title="Lien direct vers Données incomplètes" translate="no">​</a></h3>
+<p><strong>Causes possibles :</strong></p>
 <ul>
-<li class="">Business listings missing information</li>
-<li class="">Platform layout changes</li>
+<li class="">Les annonces d&#x27;entreprises manquent d&#x27;informations</li>
+<li class="">Changements de mise en page de la plateforme</li>
 </ul>
-<p><strong>Solutions:</strong></p>
+<p><strong>Solutions :</strong></p>
 <ol>
-<li class="">Some businesses naturally lack certain data</li>
-<li class="">Cross-reference with other platforms</li>
-<li class="">Report platform issues to support</li>
+<li class="">Certaines entreprises manquent naturellement de certaines données</li>
+<li class="">Croisez les références avec d&#x27;autres plateformes</li>
+<li class="">Signalez les problèmes de plateforme au support</li>
 </ol>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="advanced-workflows">Advanced Workflows<a href="#advanced-workflows" class="hash-link" aria-label="Lien direct vers Advanced Workflows" title="Lien direct vers Advanced Workflows" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflow-1-local-business-outreach">Workflow 1: Local Business Outreach<a href="#workflow-1-local-business-outreach" class="hash-link" aria-label="Lien direct vers Workflow 1: Local Business Outreach" title="Lien direct vers Workflow 1: Local Business Outreach" translate="no">​</a></h3>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="flux-de-travail-avancés">Flux de travail avancés<a href="#flux-de-travail-avancés" class="hash-link" aria-label="Lien direct vers Flux de travail avancés" title="Lien direct vers Flux de travail avancés" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="flux-de-travail-1--outreach-dentreprises-locales">Flux de travail 1 : Outreach d&#x27;entreprises locales<a href="#flux-de-travail-1--outreach-dentreprises-locales" class="hash-link" aria-label="Lien direct vers Flux de travail 1 : Outreach d&#x27;entreprises locales" title="Lien direct vers Flux de travail 1 : Outreach d&#x27;entreprises locales" translate="no">​</a></h3>
 <ol>
-<li class=""><strong>Search</strong> for businesses in your target location</li>
-<li class=""><strong>Filter</strong> by category and ratings</li>
-<li class=""><strong>Export</strong> high-quality leads</li>
-<li class=""><strong>Import</strong> to email marketing</li>
-<li class=""><strong>Create personalized campaign</strong> using AI Email Writer</li>
+<li class=""><strong>Recherchez</strong> des entreprises dans votre zone cible</li>
+<li class=""><strong>Filtrez</strong> par catégorie et notes</li>
+<li class=""><strong>Exportez</strong> des prospects de qualité</li>
+<li class=""><strong>Importez</strong> dans le marketing par e-mail</li>
+<li class=""><strong>Créez une campagne personnalisée</strong> en utilisant le rédacteur d&#x27;e-mails IA</li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflow-2-competitive-analysis">Workflow 2: Competitive Analysis<a href="#workflow-2-competitive-analysis" class="hash-link" aria-label="Lien direct vers Workflow 2: Competitive Analysis" title="Lien direct vers Workflow 2: Competitive Analysis" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="flux-de-travail-2--analyse-concurrentielle">Flux de travail 2 : Analyse concurrentielle<a href="#flux-de-travail-2--analyse-concurrentielle" class="hash-link" aria-label="Lien direct vers Flux de travail 2 : Analyse concurrentielle" title="Lien direct vers Flux de travail 2 : Analyse concurrentielle" translate="no">​</a></h3>
 <ol>
-<li class=""><strong>Scrape competitors</strong> in multiple locations</li>
-<li class=""><strong>Analyze ratings and reviews</strong></li>
-<li class=""><strong>Identify service gaps</strong></li>
-<li class=""><strong>Target underserved areas</strong></li>
+<li class=""><strong>Scrapez les concurrents</strong> dans plusieurs zones</li>
+<li class=""><strong>Analysez les notes et les avis</strong></li>
+<li class=""><strong>Identifiez les lacunes de service</strong></li>
+<li class=""><strong>Ciblez les zones mal desservies</strong></li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflow-3-market-research">Workflow 3: Market Research<a href="#workflow-3-market-research" class="hash-link" aria-label="Lien direct vers Workflow 3: Market Research" title="Lien direct vers Workflow 3: Market Research" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="flux-de-travail-3--étude-de-marché">Flux de travail 3 : Étude de marché<a href="#flux-de-travail-3--étude-de-marché" class="hash-link" aria-label="Lien direct vers Flux de travail 3 : Étude de marché" title="Lien direct vers Flux de travail 3 : Étude de marché" translate="no">​</a></h3>
 <ol>
-<li class=""><strong>Extract</strong> all businesses in an industry</li>
-<li class=""><strong>Analyze</strong> distribution and patterns</li>
-<li class=""><strong>Identify</strong> market opportunities</li>
-<li class=""><strong>Plan</strong> expansion strategy</li>
+<li class=""><strong>Extrayez</strong> toutes les entreprises d&#x27;un secteur</li>
+<li class=""><strong>Analysez</strong> la distribution et les modèles</li>
+<li class=""><strong>Identifiez</strong> les opportunités de marché</li>
+<li class=""><strong>Planifiez</strong> la stratégie d&#x27;expansion</li>
 </ol>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="comparison-search-engines-vs-yellow-pages">Comparison: Search Engines vs. Yellow Pages<a href="#comparison-search-engines-vs-yellow-pages" class="hash-link" aria-label="Lien direct vers Comparison: Search Engines vs. Yellow Pages" title="Lien direct vers Comparison: Search Engines vs. Yellow Pages" translate="no">​</a></h2>
-<table><thead><tr><th>Feature</th><th>Search Engines</th><th>Yellow Pages</th></tr></thead><tbody><tr><td><strong>Best For</strong></td><td>Finding websites, general research</td><td>Local businesses, verified listings</td></tr><tr><td><strong>Data Quality</strong></td><td>Varies</td><td>Structured, verified</td></tr><tr><td><strong>Contact Info</strong></td><td>Requires extraction</td><td>Pre-extracted emails/phones</td></tr><tr><td><strong>Geographic Targeting</strong></td><td>Keyword-based</td><td>Location-based</td></tr><tr><td><strong>Ratings/Reviews</strong></td><td>Sometimes</td><td>Always (Yelp)</td></tr><tr><td><strong>Business Hours</strong></td><td>Rarely</td><td>Commonly</td></tr></tbody></table>
-<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Use Both Strategies</div><div class="admonitionContent_BuS1"><p>Combine both approaches:</p><ol>
-<li class="">Use <strong>Search Engines</strong> to find industry-specific websites</li>
-<li class="">Use <strong>Yellow Pages</strong> to find local businesses</li>
-<li class="">Cross-reference for comprehensive coverage</li>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="comparaison--moteurs-de-recherche-vs-pages-jaunes">Comparaison : Moteurs de recherche vs Pages Jaunes<a href="#comparaison--moteurs-de-recherche-vs-pages-jaunes" class="hash-link" aria-label="Lien direct vers Comparaison : Moteurs de recherche vs Pages Jaunes" title="Lien direct vers Comparaison : Moteurs de recherche vs Pages Jaunes" translate="no">​</a></h2>
+<table><thead><tr><th>Fonctionnalité</th><th>Moteurs de recherche</th><th>Pages Jaunes</th></tr></thead><tbody><tr><td><strong>Idéal pour</strong></td><td>Trouver des sites web, recherche générale</td><td>Entreprises locales, annonces vérifiées</td></tr><tr><td><strong>Qualité des données</strong></td><td>Variable</td><td>Structurées, vérifiées</td></tr><tr><td><strong>Coordonnées</strong></td><td>Nécessite une extraction</td><td>E-mails/téléphones pré-extraits</td></tr><tr><td><strong>Ciblage géographique</strong></td><td>Basé sur les mots-clés</td><td>Basé sur le lieu</td></tr><tr><td><strong>Notes/Avis</strong></td><td>Parfois</td><td>Toujours (Yelp)</td></tr><tr><td><strong>Horaires d&#x27;ouverture</strong></td><td>Rarement</td><td>Couramment</td></tr></tbody></table>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Combinez les deux stratégies</div><div class="admonitionContent_BuS1"><p>Combinez les deux approches :</p><ol>
+<li class="">Utilisez les <strong>moteurs de recherche</strong> pour trouver des sites web spécifiques à un secteur</li>
+<li class="">Utilisez les <strong>Pages Jaunes</strong> pour trouver des entreprises locales</li>
+<li class="">Croisez les références pour une couverture complète</li>
 </ol></div></div>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="next-steps">Next Steps<a href="#next-steps" class="hash-link" aria-label="Lien direct vers Next Steps" title="Lien direct vers Next Steps" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="prochaines-étapes">Prochaines étapes<a href="#prochaines-étapes" class="hash-link" aria-label="Lien direct vers Prochaines étapes" title="Lien direct vers Prochaines étapes" translate="no">​</a></h2>
 <ul>
-<li class=""><a class="" href="/aiFetchly/fr/docs/lead-generation/contact-extraction">Learn about email extraction</a></li>
-<li class=""><a class="" href="/aiFetchly/fr/docs/ai-outreach/ai-email-writer">Set up AI-powered email campaigns</a></li>
-<li class=""><a class="" href="/aiFetchly/fr/docs/automation/task-scheduling">Configure task scheduling</a></li>
+<li class=""><a class="" href="/aiFetchly/fr/docs/lead-generation/contact-extraction">En savoir plus sur l&#x27;extraction d&#x27;e-mails</a></li>
+<li class=""><a class="" href="/aiFetchly/fr/docs/ai-outreach/ai-email-writer">Configurer des campagnes d&#x27;e-mails IA</a></li>
+<li class=""><a class="" href="/aiFetchly/fr/docs/automation/task-scheduling">Configurer la planification des tâches</a></li>
 </ul>
 <hr>
-<p><strong>Ready to find local businesses?</strong> Start with a small task to familiarize yourself with the process, then scale up your operations.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Pages de documentation"><a class="pagination-nav__link pagination-nav__link--prev" href="/aiFetchly/fr/docs/lead-generation/search-engines"><div class="pagination-nav__sublabel">Précédent</div><div class="pagination-nav__label">Search Engines</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/aiFetchly/fr/docs/lead-generation/contact-extraction"><div class="pagination-nav__sublabel">Suivant</div><div class="pagination-nav__label">Email Extraction</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#supported-directories" class="table-of-contents__link toc-highlight">Supported Directories</a></li><li><a href="#creating-a-yellow-pages-task" class="table-of-contents__link toc-highlight">Creating a Yellow Pages Task</a><ul><li><a href="#step-1-navigate-to-yellow-pages" class="table-of-contents__link toc-highlight">Step 1: Navigate to Yellow Pages</a></li><li><a href="#step-2-basic-information" class="table-of-contents__link toc-highlight">Step 2: Basic Information</a></li><li><a href="#step-3-performance-settings" class="table-of-contents__link toc-highlight">Step 3: Performance Settings</a></li><li><a href="#step-4-browser-configuration" class="table-of-contents__link toc-highlight">Step 4: Browser Configuration</a></li><li><a href="#step-5-optional-features" class="table-of-contents__link toc-highlight">Step 5: Optional Features</a></li><li><a href="#step-6-scheduling-optional" class="table-of-contents__link toc-highlight">Step 6: Scheduling (Optional)</a></li><li><a href="#step-7-create-task" class="table-of-contents__link toc-highlight">Step 7: Create Task</a></li><li><a href="#editing-a-task" class="table-of-contents__link toc-highlight">Editing a Task</a></li></ul></li><li><a href="#managing-yellow-pages-tasks" class="table-of-contents__link toc-highlight">Managing Yellow Pages Tasks</a><ul><li><a href="#view-task-list" class="table-of-contents__link toc-highlight">View Task List</a></li><li><a href="#filtering-and-search" class="table-of-contents__link toc-highlight">Filtering and Search</a></li><li><a href="#task-status" class="table-of-contents__link toc-highlight">Task Status</a></li><li><a href="#task-actions" class="table-of-contents__link toc-highlight">Task Actions</a></li><li><a href="#cloudflare-protection-alert" class="table-of-contents__link toc-highlight">Cloudflare Protection Alert</a></li><li><a href="#bulk-operations" class="table-of-contents__link toc-highlight">Bulk Operations</a></li></ul></li><li><a href="#viewing-results" class="table-of-contents__link toc-highlight">Viewing Results</a><ul><li><a href="#step-1-access-results" class="table-of-contents__link toc-highlight">Step 1: Access Results</a></li><li><a href="#step-2-task-summary-card" class="table-of-contents__link toc-highlight">Step 2: Task Summary Card</a></li><li><a href="#step-4-results-table" class="table-of-contents__link toc-highlight">Step 4: Results Table</a></li><li><a href="#step-5-interact-with-results" class="table-of-contents__link toc-highlight">Step 5: Interact with Results</a></li></ul></li><li><a href="#exporting-results" class="table-of-contents__link toc-highlight">Exporting Results</a><ul><li><a href="#export-as-csv" class="table-of-contents__link toc-highlight">Export as CSV</a></li></ul></li><li><a href="#best-practices" class="table-of-contents__link toc-highlight">Best Practices</a><ul><li><a href="#1-keyword-strategy" class="table-of-contents__link toc-highlight">1. Keyword Strategy</a></li><li><a href="#2-location-targeting" class="table-of-contents__link toc-highlight">2. Location Targeting</a></li><li><a href="#3-performance-optimization" class="table-of-contents__link toc-highlight">3. Performance Optimization</a></li><li><a href="#4-avoiding-blocks" class="table-of-contents__link toc-highlight">4. Avoiding Blocks</a></li><li><a href="#5-data-quality" class="table-of-contents__link toc-highlight">5. Data Quality</a></li></ul></li><li><a href="#platform-specific-tips" class="table-of-contents__link toc-highlight">Platform-Specific Tips</a><ul><li><a href="#yellowpagescom-usa" class="table-of-contents__link toc-highlight">YellowPages.com (USA)</a></li><li><a href="#yelpcom-usa" class="table-of-contents__link toc-highlight">Yelp.com (USA)</a></li><li><a href="#yellowpagesca-canada" class="table-of-contents__link toc-highlight">YellowPages.ca (Canada)</a></li><li><a href="#yellowpagescomsg-singapore" class="table-of-contents__link toc-highlight">YellowPages.com.sg (Singapore)</a></li><li><a href="#192com-uk" class="table-of-contents__link toc-highlight">192.com (UK)</a></li><li><a href="#11880com-germany" class="table-of-contents__link toc-highlight">11880.com (Germany)</a></li><li><a href="#gelbeseitende-germany" class="table-of-contents__link toc-highlight">Gelbeseiten.de (Germany)</a></li><li><a href="#pagesjaunesfr-france" class="table-of-contents__link toc-highlight">PagesJaunes.fr (France)</a></li><li><a href="#paginegialleit-italy" class="table-of-contents__link toc-highlight">PagineGialle.it (Italy)</a></li><li><a href="#itownpage-japan" class="table-of-contents__link toc-highlight">iTownPage (Japan)</a></li><li><a href="#usonar-yellow-page-japan" class="table-of-contents__link toc-highlight">uSonar Yellow Page (Japan)</a></li><li><a href="#korealocalpages-south-korea" class="table-of-contents__link toc-highlight">KoreaLocalPages (South Korea)</a></li></ul></li><li><a href="#integration-with-email-marketing" class="table-of-contents__link toc-highlight">Integration with Email Marketing</a></li><li><a href="#troubleshooting" class="table-of-contents__link toc-highlight">Troubleshooting</a><ul><li><a href="#task-status-failed" class="table-of-contents__link toc-highlight">Task Status: &quot;Failed&quot;</a></li><li><a href="#no-results-returned" class="table-of-contents__link toc-highlight">No Results Returned</a></li><li><a href="#slow-processing" class="table-of-contents__link toc-highlight">Slow Processing</a></li><li><a href="#incomplete-data" class="table-of-contents__link toc-highlight">Incomplete Data</a></li></ul></li><li><a href="#advanced-workflows" class="table-of-contents__link toc-highlight">Advanced Workflows</a><ul><li><a href="#workflow-1-local-business-outreach" class="table-of-contents__link toc-highlight">Workflow 1: Local Business Outreach</a></li><li><a href="#workflow-2-competitive-analysis" class="table-of-contents__link toc-highlight">Workflow 2: Competitive Analysis</a></li><li><a href="#workflow-3-market-research" class="table-of-contents__link toc-highlight">Workflow 3: Market Research</a></li></ul></li><li><a href="#comparison-search-engines-vs-yellow-pages" class="table-of-contents__link toc-highlight">Comparison: Search Engines vs. Yellow Pages</a></li><li><a href="#next-steps" class="table-of-contents__link toc-highlight">Next Steps</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Documentation</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/fr/docs/getting-started/introduction">Démarrage Rapide</a></li><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/fr/docs/lead-generation/search-engines">Génération de Leads</a></li><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/fr/docs/ai-outreach/knowledge-library">Prospection IA</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Communauté</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/aifetchly" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/aifetchly" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Plus</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/robertzengcn/aiFetchly" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 aiFetchly. Construit avec Docusaurus.</div></div></div></footer></div>
+<p><strong>Prêt à trouver des entreprises locales ?</strong> Commencez par une petite tâche pour vous familiariser avec le processus, puis augmentez progressivement vos opérations.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Pages de documentation"><a class="pagination-nav__link pagination-nav__link--prev" href="/aiFetchly/fr/docs/lead-generation/search-engines"><div class="pagination-nav__sublabel">Précédent</div><div class="pagination-nav__label">Moteurs de recherche</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/aiFetchly/fr/docs/lead-generation/contact-extraction"><div class="pagination-nav__sublabel">Suivant</div><div class="pagination-nav__label">Extraction d&#x27;e-mails</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#annuaires-pris-en-charge" class="table-of-contents__link toc-highlight">Annuaires pris en charge</a></li><li><a href="#création-dune-tâche-pages-jaunes" class="table-of-contents__link toc-highlight">Création d&#39;une tâche Pages Jaunes</a><ul><li><a href="#étape-1--accéder-aux-pages-jaunes" class="table-of-contents__link toc-highlight">Étape 1 : Accéder aux Pages Jaunes</a></li><li><a href="#étape-2--informations-de-base" class="table-of-contents__link toc-highlight">Étape 2 : Informations de base</a></li><li><a href="#étape-3--paramètres-de-performance" class="table-of-contents__link toc-highlight">Étape 3 : Paramètres de performance</a></li><li><a href="#étape-4--configuration-du-navigateur" class="table-of-contents__link toc-highlight">Étape 4 : Configuration du navigateur</a></li><li><a href="#étape-5--fonctionnalités-facultatives" class="table-of-contents__link toc-highlight">Étape 5 : Fonctionnalités facultatives</a></li><li><a href="#étape-6--planification-facultatif" class="table-of-contents__link toc-highlight">Étape 6 : Planification (Facultatif)</a></li><li><a href="#étape-7--créer-la-tâche" class="table-of-contents__link toc-highlight">Étape 7 : Créer la tâche</a></li><li><a href="#modifier-une-tâche" class="table-of-contents__link toc-highlight">Modifier une tâche</a></li></ul></li><li><a href="#gestion-des-tâches-pages-jaunes" class="table-of-contents__link toc-highlight">Gestion des tâches Pages Jaunes</a><ul><li><a href="#afficher-la-liste-des-tâches" class="table-of-contents__link toc-highlight">Afficher la liste des tâches</a></li><li><a href="#filtrage-et-recherche" class="table-of-contents__link toc-highlight">Filtrage et recherche</a></li><li><a href="#statut-des-tâches" class="table-of-contents__link toc-highlight">Statut des tâches</a></li><li><a href="#actions-sur-les-tâches" class="table-of-contents__link toc-highlight">Actions sur les tâches</a></li><li><a href="#alerte-de-protection-cloudflare" class="table-of-contents__link toc-highlight">Alerte de protection Cloudflare</a></li><li><a href="#opérations-en-masse" class="table-of-contents__link toc-highlight">Opérations en masse</a></li></ul></li><li><a href="#affichage-des-résultats" class="table-of-contents__link toc-highlight">Affichage des résultats</a><ul><li><a href="#étape-1--accéder-aux-résultats" class="table-of-contents__link toc-highlight">Étape 1 : Accéder aux résultats</a></li><li><a href="#étape-2--carte-récapitulative-de-la-tâche" class="table-of-contents__link toc-highlight">Étape 2 : Carte récapitulative de la tâche</a></li><li><a href="#étape-4--tableau-des-résultats" class="table-of-contents__link toc-highlight">Étape 4 : Tableau des résultats</a></li><li><a href="#étape-5--interagir-avec-les-résultats" class="table-of-contents__link toc-highlight">Étape 5 : Interagir avec les résultats</a></li></ul></li><li><a href="#exportation-des-résultats" class="table-of-contents__link toc-highlight">Exportation des résultats</a><ul><li><a href="#exporter-en-csv" class="table-of-contents__link toc-highlight">Exporter en CSV</a></li></ul></li><li><a href="#bonnes-pratiques" class="table-of-contents__link toc-highlight">Bonnes pratiques</a><ul><li><a href="#1-stratégie-de-mots-clés" class="table-of-contents__link toc-highlight">1. Stratégie de mots-clés</a></li><li><a href="#2-ciblage-géographique" class="table-of-contents__link toc-highlight">2. Ciblage géographique</a></li><li><a href="#3-optimisation-des-performances" class="table-of-contents__link toc-highlight">3. Optimisation des performances</a></li><li><a href="#4-éviter-les-blocages" class="table-of-contents__link toc-highlight">4. Éviter les blocages</a></li><li><a href="#5-qualité-des-données" class="table-of-contents__link toc-highlight">5. Qualité des données</a></li></ul></li><li><a href="#conseils-spécifiques-aux-plateformes" class="table-of-contents__link toc-highlight">Conseils spécifiques aux plateformes</a><ul><li><a href="#yellowpagescom-états-unis" class="table-of-contents__link toc-highlight">YellowPages.com (États-Unis)</a></li><li><a href="#yelpcom-états-unis" class="table-of-contents__link toc-highlight">Yelp.com (États-Unis)</a></li><li><a href="#yellowpagesca-canada" class="table-of-contents__link toc-highlight">YellowPages.ca (Canada)</a></li><li><a href="#yellowpagescomsg-singapour" class="table-of-contents__link toc-highlight">YellowPages.com.sg (Singapour)</a></li><li><a href="#192com-royaume-uni" class="table-of-contents__link toc-highlight">192.com (Royaume-Uni)</a></li><li><a href="#11880com-allemagne" class="table-of-contents__link toc-highlight">11880.com (Allemagne)</a></li><li><a href="#gelbeseitende-allemagne" class="table-of-contents__link toc-highlight">Gelbeseiten.de (Allemagne)</a></li><li><a href="#pagesjaunesfr-france" class="table-of-contents__link toc-highlight">PagesJaunes.fr (France)</a></li><li><a href="#paginegialleit-italie" class="table-of-contents__link toc-highlight">PagineGialle.it (Italie)</a></li><li><a href="#itownpage-japon" class="table-of-contents__link toc-highlight">iTownPage (Japon)</a></li><li><a href="#usonar-yellow-page-japon" class="table-of-contents__link toc-highlight">uSonar Yellow Page (Japon)</a></li><li><a href="#korealocalpages-corée-du-sud" class="table-of-contents__link toc-highlight">KoreaLocalPages (Corée du Sud)</a></li></ul></li><li><a href="#intégration-avec-le-marketing-par-e-mail" class="table-of-contents__link toc-highlight">Intégration avec le marketing par e-mail</a></li><li><a href="#dépannage" class="table-of-contents__link toc-highlight">Dépannage</a><ul><li><a href="#statut-de-la-tâche--failed" class="table-of-contents__link toc-highlight">Statut de la tâche : &quot;Failed&quot;</a></li><li><a href="#aucun-résultat-renvoyé" class="table-of-contents__link toc-highlight">Aucun résultat renvoyé</a></li><li><a href="#traitement-lent" class="table-of-contents__link toc-highlight">Traitement lent</a></li><li><a href="#données-incomplètes" class="table-of-contents__link toc-highlight">Données incomplètes</a></li></ul></li><li><a href="#flux-de-travail-avancés" class="table-of-contents__link toc-highlight">Flux de travail avancés</a><ul><li><a href="#flux-de-travail-1--outreach-dentreprises-locales" class="table-of-contents__link toc-highlight">Flux de travail 1 : Outreach d&#39;entreprises locales</a></li><li><a href="#flux-de-travail-2--analyse-concurrentielle" class="table-of-contents__link toc-highlight">Flux de travail 2 : Analyse concurrentielle</a></li><li><a href="#flux-de-travail-3--étude-de-marché" class="table-of-contents__link toc-highlight">Flux de travail 3 : Étude de marché</a></li></ul></li><li><a href="#comparaison--moteurs-de-recherche-vs-pages-jaunes" class="table-of-contents__link toc-highlight">Comparaison : Moteurs de recherche vs Pages Jaunes</a></li><li><a href="#prochaines-étapes" class="table-of-contents__link toc-highlight">Prochaines étapes</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Documentation</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/fr/docs/getting-started/introduction">Démarrage Rapide</a></li><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/fr/docs/lead-generation/search-engines">Génération de Leads</a></li><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/fr/docs/ai-outreach/knowledge-library">Prospection IA</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Communauté</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/aifetchly" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/aifetchly" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Plus</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/robertzengcn/aiFetchly" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 aiFetchly. Construit avec Docusaurus.</div></div></div></footer></div>
 </body>
 </html>
