@@ -3,8 +3,7 @@
   publish = "build"
 
 # Ignore the master branch on Netlify to avoid conflict with GitHub Pages
-[build.ignore]
-  command = "git rev-parse --abbrev-ref HEAD | grep -q 'master'"
+  ignore = "git rev-parse --abbrev-ref HEAD | grep -q 'master'"
 
 # Settings specifically for the test branch
 [context.test]
