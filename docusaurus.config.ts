@@ -4,21 +4,46 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
+// Detect deployment environment
+const isNetlify = process.env.NETLIFY === "true";
+const isGitHubActions = process.env.GITHUB_ACTIONS === "true";
+
+// Detect production (master branch on either platform)
+const isProduction =
+  (isNetlify && process.env.CONTEXT === "production") ||
+  (isGitHubActions && process.env.GITHUB_REF === "refs/heads/master");
+
 const config: Config = {
   title: "aiFetchly Manual",
   tagline: "AI-Powered Marketing Automation for Lead Generation and Outreach",
   favicon: "img/favicon.ico",
 
-  // Set the production url of your site here
-  url: "https://your-docusaurus-site.example.com",
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/",
+  // Set URL based on deployment environment
+  url: isNetlify
+    ? process.env.DEPLOY_PRIME_URL || "https://aifetchly-manual.netlify.app"
+    : "https://robertzengcn.github.io",
+
+  // GitHub Pages needs repo name as baseUrl; Netlify uses root
+  baseUrl: isGitHubActions ? "/aiFetchly/" : "/",
 
   // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
   organizationName: "robertzengcn", // Usually your GitHub org/user name.
   projectName: "aiFetchly", // Usually your repo name.
+
+  // Block search engines on non-production (Netlify test) deploys
+  headTags: [
+    ...(!isProduction
+      ? [
+          {
+            tagName: "meta",
+            attributes: {
+              name: "robots",
+              content: "noindex, nofollow",
+            },
+          },
+        ]
+      : []),
+  ],
 
   onBrokenLinks: "throw",
 
@@ -67,6 +92,10 @@ const config: Config = {
   ],
 
   themeConfig: {
+    // Block search engines on non-production deploys via internal metadata
+    metadata: !isProduction
+      ? [{ name: "robots", content: "noindex, nofollow" }]
+      : [],
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
     colorMode: {

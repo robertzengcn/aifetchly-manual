@@ -1,8 +1,8 @@
-name: Deploy to GitHub Pages
+name: Deploy Production to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [master]
 
 permissions:
   contents: write

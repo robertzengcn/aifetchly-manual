@@ -1,0 +1,19 @@
+[build]
+  command = "npm run build"
+  publish = "build"
+
+# Ignore the master branch on Netlify to avoid conflict with GitHub Pages
+[build.ignore]
+  command = "git rev-parse --abbrev-ref HEAD | grep -q 'master'"
+
+# Settings specifically for the test branch
+[context.test]
+  command = "npm run build"
+  [context.test.environment]
+    NODE_ENV = "development"
+
+# Add the security header to all Netlify deploys
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"

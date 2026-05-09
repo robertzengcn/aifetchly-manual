@@ -371,7 +371,7 @@ Now that you've built your Knowledge Library:
 
 - [Create AI-generated email campaigns](./ai-email-writer)
 - [Use the AI Marketing Assistant](./ai-marketing-assistant)
-- [Set up batch email sending](./batch-email-sending)
+- [Set up batch email sending](../lead-generation/batch-email-sending)
 
 ---
 
