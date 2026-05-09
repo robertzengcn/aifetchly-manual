@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build"
+  command = "yarn build"
   publish = "build"
 
 # Ignore the master branch on Netlify to avoid conflict with GitHub Pages
@@ -8,9 +8,10 @@
 
 # Settings specifically for the test branch
 [context.test]
-  command = "npm run build"
+  command = "yarn build"
   [context.test.environment]
     NODE_ENV = "development"
+    YARN_FLAGS = "--immutable"
 
 # Add the security header to all Netlify deploys
 [[headers]]
