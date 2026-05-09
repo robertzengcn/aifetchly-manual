@@ -5,98 +5,116 @@ sidebar_label: Proxy Setup
 description: Learn how to configure and manage proxies for safe and efficient web scraping in aiFetchly.
 ---
 
-# Proxy Setup Guide
+# Guide de configuration des proxys
 
-Using proxies is essential for safe and efficient web scraping with aiFetchly. Proxies help you:
+L'utilisation de proxys est **facultative** avec aiFetchly. Vous pouvez exécuter des tâches de recherche sans proxy, mais en ajouter vous permet de :
 
-- **Avoid IP blocks** from search engines and websites
-- **Scrape at scale** by distributing requests across multiple IPs
-- **Maintain anonymity** while collecting leads
-- **Access geo-restricted content** from different regions
+- **Éviter les blocages d'IP** de la part des moteurs de recherche et des sites web
+- **Extraire des données à grande échelle** en répartissant les requêtes sur plusieurs adresses IP
+- **Préserver votre anonymat** lors de la collecte de prospects
+- **Accéder au contenu géo-restreint** depuis différentes régions
 
-## Understanding Proxies
+:::info Fonctionnalité facultative
 
-A proxy server acts as an intermediary between your computer and the websites you scrape. Instead of the website seeing your IP address, they see the proxy's IP address.
+Les proxys ne sont pas obligatoires pour utiliser aiFetchly. Vous pouvez commencer à extraire des données immédiatement sans configurer de proxys. Ajoutez-en uniquement si vous souhaitez éviter les limitations de débit ou accéder à du contenu spécifique à une région.
 
-### Proxy Types Supported
+:::
 
-aiFetchly supports three proxy protocols:
+## Comprendre les proxys
 
-| Protocol | Description | Use Case |
+Un serveur proxy agit comme un intermédiaire entre votre ordinateur et les sites web que vous consultez. Au lieu de voir votre adresse IP, les sites web voient l'adresse IP du proxy.
+
+### Types de proxys pris en charge
+
+aiFetchly prend en charge trois protocoles de proxy :
+
+| Protocole | Description | Cas d'utilisation |
 |----------|-------------|----------|
-| **HTTP** | Basic HTTP proxy | General web scraping, non-SSL sites |
-| **HTTPS** | Secure HTTP proxy | Secure websites (HTTPS), recommended for most scraping |
-| **SOCKS5** | Socket Secure 5 | Advanced users, supports more protocols, better performance |
+| **HTTP** | Proxy HTTP basique | Extraction web générale, sites non-SSL |
+| **HTTPS** | Proxy HTTP sécurisé | Sites web sécurisés (HTTPS), recommandé pour la plupart des extractions |
+| **SOCKS5** | Socket Secure 5 | Utilisateurs avancés, prend en charge davantage de protocoles, meilleures performances |
 
-:::tip Recommended Protocol
+:::tip Protocole recommandé
 
-For most use cases, **HTTPS** proxies are recommended as they work with both HTTP and HTTPS websites.
-
-:::
-
-### Proxy Format
-
-Each proxy requires the following information:
-
-- **Host/IP** - The proxy server address (e.g., `192.168.1.1` or `proxy.example.com`)
-- **Port** - The port number (e.g., `8080`, `3128`, `1080`)
-- **Protocol** - http, https, or socks5
-- **Username** (optional) - For authentication
-- **Password** (optional) - For authentication
-
-Example: `192.168.1.1:8080` with username `user1` and password `pass123`
-
-## Adding Proxies Manually
-
-### Step 1: Open Proxy Management
-
-1. Launch aiFetchly
-2. Navigate to **Proxy** in the left navigation menu
-3. You'll see the proxy management page with a list of your proxies
-
-### Step 2: Add a Single Proxy
-
-1. Click the **Add Proxy** button (+ icon) in the top-right corner
-2. Fill in the required fields:
-
-   - **Host/IP**: Enter the proxy server address or IP
-   - **Port**: Enter the port number
-   - **Protocol**: Select from the dropdown (HTTP, HTTPS, or SOCKS5)
-   - **Username**: (Optional) Enter if authentication is required
-   - **Password**: (Optional) Enter if authentication is required
-
-3. Click **Submit** to save the proxy
-
-:::info Authentication
-
-If your proxy provider requires authentication, you must enter the username and password. Unauthenticated proxies will fail when tested.
+Pour la plupart des cas d'utilisation, les proxys **HTTPS** sont recommandés car ils fonctionnent avec les sites web HTTP et HTTPS.
 
 :::
 
-### Step 3: Test the Proxy
+### Format du proxy
 
-After adding proxies, you should verify they work:
+Chaque proxy nécessite les informations suivantes :
 
-1. Select the proxy(s) you want to test
-2. Click the **Check Proxy** button
-3. aiFetchly will test each proxy and update the status:
-   - ✅ **Pass** (green) - Proxy is working correctly
-   - ❌ **Failure** (pink) - Proxy is not working
-   - ⚪ **Unknown** (grey) - Proxy hasn't been tested yet
+- **Hôte/IP** - L'adresse du serveur proxy (par ex., `192.168.1.1` ou `proxy.example.com`)
+- **Port** - Le numéro de port (par ex., `8080`, `3128`, `1080`)
+- **Protocole** - http, https ou socks5
+- **Nom d'utilisateur** (facultatif) - Pour l'authentification
+- **Mot de passe** (facultatif) - Pour l'authentification
 
-## Batch Importing Proxies
+Exemple : `192.168.1.1:8080` avec le nom d'utilisateur `user1` et le mot de passe `pass123`
 
-If you have multiple proxies, you can import them all at once using a CSV file.
+## Ajouter des proxys manuellement
 
-### Step 1: Download Template
+### Étape 1 : Ouvrir la gestion des proxys
 
-1. Go to **Proxy** in the navigation menu
-2. Click **Batch Upload Proxy**
-3. Click **Download Template** to get the CSV template
+1. Lancez aiFetchly
+2. Accédez à **Proxy** dans le menu de navigation de gauche
+3. Vous verrez la page de gestion des proxys avec la liste de vos proxys
 
-### Step 2: Prepare Your CSV File
+### Étape 2 : Ajouter un proxy individuel
 
-The CSV template has the following structure:
+1. Cliquez sur le bouton **Add Proxy** (icône +) dans le coin supérieur droit
+2. Remplissez les champs requis :
+
+   - **Host/IP** : Saisissez l'adresse ou l'IP du serveur proxy
+   - **Port** : Saisissez le numéro de port
+   - **Protocol** : Sélectionnez dans le menu déroulant (HTTP, HTTPS ou SOCKS5)
+   - **Username** : (Facultatif) Saisissez si une authentification est requise
+   - **Password** : (Facultatif) Saisissez si une authentification est requise
+
+3. Cliquez sur **Submit** pour enregistrer le proxy
+
+:::info Authentification
+
+Si votre fournisseur de proxy exige une authentification, vous devez saisir le nom d'utilisateur et le mot de passe. Les proxys non authentifiés échoueront lors des tests.
+
+:::
+
+### Étape 3 : Tester le proxy
+
+Après avoir ajouté des proxys, vous devriez vérifier qu'ils fonctionnent :
+
+1. Définissez facultativement **Check timeout** dans la barre d'outils (1 à 60 secondes par proxy ; 10 secondes par défaut). Cette limite s'applique à la fois au test de connectivité et à la vérification Google.
+2. Sélectionnez le ou les proxys que vous souhaitez tester (cases à cocher sur les lignes).
+3. Cliquez sur **Check Proxy**.
+4. aiFetchly met à jour deux types de résultats :
+
+**Status (connectivité)** — indique si le proxy peut relayer le trafic (par exemple, un tunnel vers un point de terminaison de test) :
+
+- **Pass** — Le test basique du proxy a réussi.
+- **Failure** — Le test basique a échoué (hôte/port incorrect, authentification ou réseau).
+- **Unknown** — Pas encore testé.
+
+**Google Pass** — indique si le même proxy peut atteindre **Google** sans être bloqué en tant que trafic automatisé. Après que **Status** affiche **Pass**, l'application exécute une vérification distincte (navigateur headless vers Google). Cette colonne peut se mettre à jour avec un léger délai :
+
+- **Pass** — La vérification Google a réussi ; l'IP a plus de chances de fonctionner pour l'extraction reposant sur Google.
+- **Fail** — Google a bloqué, mis au défi, ou la vérification a échoué (courant pour les IPs de datacenter ou les proxys surexploités).
+- **Not Checked** — Aucun résultat Google pour le moment (le proxy n'a jamais réussi le test basique, ou non vérifié depuis l'ajout de cette fonctionnalité).
+
+Si **Status** est **Failure**, **Google Pass** reste **Not Checked** (l'étape Google ne s'exécute que lorsque le test basique réussit).
+
+## Importer des proxys par lot
+
+Si vous disposez de plusieurs proxys, vous pouvez les importer tous en une seule fois à l'aide d'un fichier CSV.
+
+### Étape 1 : Télécharger le modèle
+
+1. Accédez à **Proxy** dans le menu de navigation
+2. Cliquez sur **Batch Upload Proxy**
+3. Cliquez sur **Download Template** pour obtenir le modèle CSV
+
+### Étape 2 : Préparer votre fichier CSV
+
+Le modèle CSV présente la structure suivante :
 
 ```csv
 host,port,protocols,user,pass
@@ -106,236 +124,253 @@ host,port,protocols,user,pass
 192.168.1.4,8080,http,,
 ```
 
-**CSV Format Guidelines:**
+**Directives de formatage CSV :**
 
-- **host** - Required: Proxy IP address or hostname
-- **port** - Required: Port number
-- **protocols** - Required: Must be "http", "https", or "socks5"
-- **user** - Optional: Username (leave empty if no authentication)
-- **pass** - Optional: Password (leave empty if no authentication)
+- **host** - Obligatoire : Adresse IP ou nom d'hôte du proxy
+- **port** - Obligatoire : Numéro de port
+- **protocols** - Obligatoire : Doit être « http », « https » ou « socks5 »
+- **user** - Facultatif : Nom d'utilisateur (laissez vide si aucune authentification)
+- **pass** - Facultatif : Mot de passe (laissez vide si aucune authentification)
 
-:::tip CSV Formatting
+:::tip Mise en forme CSV
 
-- Don't include headers in your import file (only data rows)
-- Use commas to separate fields
-- Leave user/pass fields empty if your proxy doesn't require authentication
-- Save the file as `.csv` (comma-separated values)
+- Votre fichier peut utiliser les mêmes en-têtes de colonnes que le modèle (`host`, `port`, `protocols`, `user`, `pass`) ou omettre la ligne d'en-tête si vos colonnes sont dans cet ordre
+- Utilisez des virgules pour séparer les champs
+- Laissez les champs user/pass vides si votre proxy ne nécessite pas d'authentification
+- Enregistrez le fichier au format `.csv` (valeurs séparées par des virgules)
 
 :::
 
-### Step 3: Import the CSV
+### Étape 3 : Importer le CSV
 
-1. Click **Batch Upload Proxy**
-2. Click the file upload area or drag and drop your CSV file
-3. The proxies will be displayed in a table
-4. Click **Check Proxy** to validate all imported proxies
-5. Click **Save to My Proxy** to add valid proxies to your account
-6. Click **Remove fail Proxy** to delete any proxies that failed the health check
+1. Cliquez sur **Batch Upload**
+2. Sur **Upload File**, sélectionnez votre CSV (ou utilisez **Paste Text** pour un proxy par ligne)
+3. Les proxys analysés apparaissent dans le tableau de prévisualisation
+4. Facultatif : cliquez sur **Check Proxies** pour exécuter un **test rapide de connectivité** sur la liste de prévisualisation (ceci n'est pas identique au test complet **Google Pass** sur les proxys enregistrés)
+5. Cliquez sur **Import proxy** (affiché comme **Import All** dans certains paramètres régionaux) pour les ajouter à votre bibliothèque
+6. Après l'importation, ouvrez la liste principale des proxys, sélectionnez les nouvelles lignes et cliquez sur **Check Proxy** pour enregistrer **Status** et **Google Pass** pour les tâches utilisant Google
 
-## Managing Your Proxy List
+Pour nettoyer la liste principale après les vérifications, utilisez **remove failure proxy** (supprime les lignes dont le **Status** est **Failure**).
 
-### Viewing Proxies
+## Gérer votre liste de proxys
 
-The proxy list shows all your proxies with the following information:
+### Afficher les proxys
 
-| Column | Description |
+La liste des proxys affiche tous vos proxys avec les informations suivantes :
+
+| Colonne | Description |
 |--------|-------------|
-| **ID** | Unique identifier |
-| **Host** | Proxy server IP/hostname |
-| **Username** | Authentication username (if any) |
-| **Password** | Authentication password (masked) |
-| **Protocol** | HTTP, HTTPS, or SOCKS5 |
-| **Status** | Pass, Failure, or Unknown |
-| **Check Time** | Last time the proxy was tested |
-| **Actions** | Edit or delete buttons |
+| **ID** | Identifiant unique |
+| **Host** | IP/nom d'hôte du serveur proxy |
+| **Port** | Port du proxy |
+| **Username** | Nom d'utilisateur d'authentification (le cas échéant) |
+| **Password** | Mot de passe d'authentification (masqué par défaut ; utilisez **Columns** pour l'afficher) |
+| **Protocol** | HTTP, HTTPS ou SOCKS5 |
+| **Status** | Test basique : Pass, Failure ou Unknown |
+| **Check Time** | Dernière date de test du proxy |
+| **Google Pass** | Vérification spécifique Google : Pass, Fail ou Not Checked (voir [Vérification Google Pass](#google-pass-check)) |
+| **Actions** | Boutons de modification ou de suppression |
 
-### Editing Proxies
+Utilisez le contrôle **Columns** dans la barre d'outils pour afficher ou masquer des colonnes (par exemple, le mot de passe est masqué par défaut pour des raisons de sécurité).
 
-1. Find the proxy you want to modify in the list
-2. Click the **Edit** button (pencil icon)
-3. Modify the fields as needed
-4. Click **Submit** to save changes
+### Modifier les proxys
 
-### Deleting Proxies
+1. Recherchez le proxy que vous souhaitez modifier dans la liste
+2. Cliquez sur le bouton **Edit** (icône crayon)
+3. Modifiez les champs selon vos besoins
+4. Cliquez sur **Submit** pour enregistrer les modifications
 
-1. Find the proxy you want to remove
-2. Click the **Delete** button (trash icon)
-3. Confirm the deletion
+### Supprimer des proxys
 
-### Bulk Operations
+1. Recherchez le proxy que vous souhaitez supprimer
+2. Cliquez sur le bouton **Delete** (icône corbeille)
+3. Confirmez la suppression
 
-- **Check All Proxies** - Test all proxies in your list simultaneously
-- **Remove Failed Proxies** - Delete all proxies with "Failure" status at once
+### Opérations en masse
 
-## Using Proxies in Search Tasks
+- **Check Proxy** — Avec une ou plusieurs lignes sélectionnées, exécute le test complet (**Status** plus **Google Pass** lorsque le test basique réussit). Rien n'est vérifié tant que vous n'avez pas sélectionné au moins un proxy.
+- **remove failure proxy** — Supprime en une seule action tous les proxys enregistrés dont le **Status** est **Failure**
 
-Once you've added and tested your proxies, you can use them in search and scraping tasks.
+## Utiliser les proxys dans les tâches de recherche
 
-### Step 1: Create or Edit a Search Task
+Une fois vos proxys ajoutés et testés, vous pouvez les utiliser dans vos tâches de recherche et d'extraction.
 
-1. Navigate to **Search** → **Search Form**
-2. Create a new search task or edit an existing one
+### Étape 1 : Créer ou modifier une tâche de recherche
 
-### Step 2: Select Proxies
+1. Accédez à **Search** → **Search Form**
+2. Créez une nouvelle tâche de recherche ou modifiez une tâche existante
 
-1. Find the **Proxy** section in the task configuration
-2. Click the **Choose Proxy** button
-3. A proxy selection dialog will appear showing all your proxies
-4. Select one or more proxies from the list:
-   - Only proxies with "Pass" status are recommended
-   - You can select multiple proxies for load balancing
+### Étape 2 : Sélectionner des proxys
 
-5. Click **Confirm** to add selected proxies to your task
+1. Recherchez la section **Proxy** dans la configuration de la tâche
+2. Cliquez sur le bouton **Choose Proxy**
+3. Une boîte de dialogue de sélection de proxy apparaîtra avec tous vos proxys
+4. Sélectionnez un ou plusieurs proxys dans la liste :
+   - Privilégiez les proxys avec **Status** **Pass** et **Google Pass** **Pass** lorsque votre tâche utilise Google ou des flux reposant fortement sur Google
+   - Vous pouvez sélectionner plusieurs proxys pour l'équilibrage de charge
 
-### Step 3: Run Your Task
+5. Cliquez sur **Confirm** pour ajouter les proxys sélectionnés à votre tâche
 
-When you run the search task, aiFetchly will:
+### Étape 3 : Exécuter votre tâche
 
-- Distribute requests across your selected proxies
-- Automatically rotate through proxies
-- Handle proxy failures gracefully
-- Continue scraping even if some proxies fail
+Lorsque vous exécutez la tâche de recherche, aiFetchly va :
 
-:::info Proxy Rotation
+- Répartir les requêtes entre vos proxys sélectionnés
+- Effectuer une rotation automatique des proxys
+- Gérer les défaillances de proxy de manière appropriée
+- Continuer l'extraction même si certains proxys échouent
 
-When using multiple proxies, aiFetchly automatically rotates through them to distribute the load and avoid rate limiting.
+:::info Rotation des proxys
+
+Lorsque vous utilisez plusieurs proxys, aiFetchly effectue automatiquement une rotation entre eux pour répartir la charge et éviter les limitations de débit.
 
 :::
 
-## Proxy Health Monitoring
+## Surveillance de l'état des proxys
 
-Regular health checks ensure your proxies are working properly.
+Des vérifications régulières garantissent que vos proxys fonctionnent correctement.
 
-### Automatic Health Checks
+### Quand les vérifications s'exécutent
 
-- Proxies are tested when you click **Check Proxy** or **Check All**
-- Check results update the status column
-- Check time is recorded for each proxy
+- **Proxys enregistrés :** Utilisez **Check Proxy** après avoir sélectionné des lignes. La liste se rafraîchit pendant l'exécution des vérifications ; lorsque la progression atteint 100 %, les résultats sont à jour pour **Status** ; **Google Pass** peut se terminer légèrement plus tard pour les proxys ayant réussi l'étape basique.
+- **Boîte de dialogue d'importation par lot :** **Check Proxies** valide uniquement la connectivité pour les lignes de prévisualisation avant l'importation. Exécutez **Check Proxy** sur la liste principale après l'importation pour **Google Pass**.
 
-### Health Check Timeout
+### Délai d'expiration des vérifications
 
-By default, proxy tests timeout after **10 seconds**. This can be adjusted in system settings if needed.
+Sur la page **Proxy**, définissez **Check timeout** (1 à 60 secondes, **10** par défaut). La même valeur s'applique au test basique et au test navigateur Google pour les proxys enregistrés.
 
-### Interpreting Status Results
+### Interpréter les résultats de statut
 
-| Status | Meaning | Action |
+| Statut | Signification | Action |
 |--------|---------|--------|
-| **Pass** (green) | Proxy is working | Ready to use |
-| **Failure** (pink) | Proxy is not working | Remove or replace |
-| **Unknown** (grey) | Not tested yet | Run health check |
+| **Pass** (vert) | Le test basique du proxy a réussi | Prêt pour une utilisation générale ; confirmez **Google Pass** si vous avez besoin de Google |
+| **Failure** (rose) | Le proxy ne fonctionne pas | Supprimer ou remplacer |
+| **Unknown** (gris) | Pas encore testé | Exécuter une vérification |
 
-## Best Practices
+## Vérification Google Pass
 
-### 1. Use Reliable Proxy Providers
+**Google Pass** répond à la question : « Via ce proxy, pouvons-nous charger Google sans blocage évident ? » Il utilise une session de navigateur headless (similaire à la navigation réelle), ce qui est plus strict qu'un simple test de ping ou de tunnel HTTP.
 
-Invest in quality proxy services. Free proxies are often slow, unreliable, or already blocked by major websites.
+- **Pass** — Signal utile pour l'extraction orientée Google ; ne constitue pas une garantie pour chaque surface ou volume Google.
+- **Fail** — Souvent des IPs de datacenter, des proxys recyclés ou des IPs déjà signalées ; essayez un autre proxy ou fournisseur.
+- **Not Checked** — Exécutez **Check Proxy** sur les proxys enregistrés, ou le proxy n'a pas encore réussi le test basique.
 
-### 2. Regular Health Checks
+**Google Pass** peut être **Fail** même lorsque **Status** est **Pass**, car Google applique des signaux supplémentaires de détection de bots et d'abus au-delà de la simple connectivité.
 
-Test your proxies regularly, especially before running large scraping tasks.
+## Bonnes pratiques
 
-### 3. Remove Failed Proxies
+### 1. Utiliser des fournisseurs de proxy fiables
 
-Keep your proxy list clean by removing failed proxies promptly.
+Investissez dans des services de proxy de qualité. Les proxys gratuits sont souvent lents, peu fiables ou déjà bloqués par les sites web majeurs.
 
-### 4. Use Multiple Proxies
+### 2. Effectuer des vérifications régulières
 
-For large-scale scraping, use multiple proxies to:
-- Distribute the load
-- Reduce the risk of IP blocks
-- Increase scraping speed
+Testez vos proxys régulièrement, en particulier avant d'exécuter des tâches d'extraction à grande échelle.
 
-### 5. Match Proxy Location to Target
+### 3. Supprimer les proxys défaillants
 
-If scraping geo-specific content, use proxies from the same region as your target audience.
+Maintenez votre liste de proxys propre en supprimant rapidement les proxys défaillants.
 
-### 6. Monitor Proxy Performance
+### 4. Utiliser plusieurs proxys
 
-Keep track of which proxies perform best and prioritize them in your tasks.
+Pour l'extraction à grande échelle, utilisez plusieurs proxys pour :
+- Répartir la charge
+- Réduire le risque de blocages d'IP
+- Augmenter la vitesse d'extraction
 
-### 7. Don't Overuse Single Proxies
+### 5. Faire correspondre la localisation du proxy à la cible
 
-Even working proxies can get blocked if overused. Rotate them regularly.
+Si vous extrayez du contenu spécifique à une région, utilisez des proxys situés dans la même région que votre audience cible.
 
-## Troubleshooting Proxy Issues
+### 6. Surveiller les performances des proxys
 
-### All Proxies Show "Failure"
+Suivez les proxys les plus performants et privilégiez-les dans vos tâches.
 
-**Possible causes:**
-- Network connectivity issues
-- Incorrect proxy credentials
-- Proxy provider service is down
+### 7. Ne pas surutiliser un seul proxy
 
-**Solutions:**
-- Check your internet connection
-- Verify username/password with your proxy provider
-- Contact your proxy provider
+Même les proxys fonctionnels peuvent être bloqués s'ils sont surutilisés. Effectuez une rotation régulière.
 
-### Some Proxies Fail Intermittently
+## Résoudre les problèmes de proxy
 
-**Possible causes:**
-- Proxy server is overloaded
-- Unstable proxy service
+### Tous les proxys affichent « Failure »
 
-**Solutions:**
-- Remove unreliable proxies
-- Use health check results to identify stable proxies
-- Consider upgrading your proxy service
+**Causes possibles :**
+- Problèmes de connectivité réseau
+- Identifiants de proxy incorrects
+- Le service du fournisseur de proxy est indisponible
 
-### Proxies Work in Tests but Fail During Scraping
+**Solutions :**
+- Vérifiez votre connexion internet
+- Confirmez le nom d'utilisateur et le mot de passe auprès de votre fournisseur de proxy
+- Contactez votre fournisseur de proxy
 
-**Possible causes:**
-- Target website has stricter anti-scraping measures
-- Proxy is rate-limited by the target
+### Certains proxys échouent de manière intermittente
 
-**Solutions:**
-- Use more proxies to distribute requests
-- Slow down request frequency
-- Try different proxy providers
+**Causes possibles :**
+- Le serveur proxy est surchargé
+- Service de proxy instable
 
-### Can't Connect to Proxy
+**Solutions :**
+- Supprimez les proxys peu fiables
+- Utilisez les résultats des vérifications pour identifier les proxys stables
+- Envisagez de passer à un service de proxy supérieur
 
-**Possible causes:**
-- Firewall blocking proxy connection
-- Incorrect proxy settings
-- Proxy server is offline
+### Les proxys fonctionnent lors des tests mais échouent pendant l'extraction
 
-**Solutions:**
-- Check firewall settings
-- Verify proxy host and port
-- Test proxy in a browser or with curl
+**Causes possibles :**
+- Le site cible dispose de mesures anti-extraction plus strictes
+- Le proxy est soumis à une limitation de débit par la cible
+- **Status** est **Pass** mais **Google Pass** est **Fail** alors que la tâche repose sur Google
 
-## Security Considerations
+**Solutions :**
+- Utilisez davantage de proxys pour répartir les requêtes
+- Réduisez la fréquence des requêtes
+- Essayez différents fournisseurs de proxy
+- Pour les flux de travail reposant fortement sur Google, privilégiez les proxys avec **Google Pass** **Pass**
 
-### Protect Your Proxy Credentials
+### Impossible de se connecter au proxy
 
-- Treat proxy usernames and passwords like sensitive data
-- Don't share proxy lists with unauthorized users
-- Use secure methods to transfer proxy information
+**Causes possibles :**
+- Le pare-feu bloque la connexion au proxy
+- Paramètres de proxy incorrects
+- Le serveur proxy est hors ligne
 
-### Use HTTPS Proxies
+**Solutions :**
+- Vérifiez les paramètres du pare-feu
+- Confirmez l'hôte et le port du proxy
+- Testez le proxy dans un navigateur ou avec curl
 
-HTTPS proxies encrypt traffic between you and the proxy server, providing better security.
+## Considérations de sécurité
 
-### Rotate Proxies Regularly
+### Protéger vos identifiants de proxy
 
-Regularly change your proxy pool to maintain security and avoid detection.
+- Traitez les noms d'utilisateur et mots de passe de proxy comme des données sensibles
+- Ne partagez pas vos listes de proxys avec des utilisateurs non autorisés
+- Utilisez des méthodes sécurisées pour transférer les informations de proxy
 
-## Next Steps
+### Utiliser des proxys HTTPS
 
-Now that you've configured your proxies:
+Les proxys HTTPS chiffrent le trafic entre vous et le serveur proxy, offrant une meilleure sécurité.
 
-- [Learn about search engine scraping](../lead-generation/search-engines)
-- [Set up contact extraction](../lead-generation/contact-extraction)
-- [Configure the Knowledge Library](../ai-outreach/knowledge-library)
+### Effectuer une rotation régulière des proxys
+
+Changez régulièrement votre pool de proxys pour maintenir la sécurité et éviter la détection.
+
+## Prochaines étapes
+
+Maintenant que vous avez configuré vos proxys :
+
+- [En savoir plus sur l'extraction des moteurs de recherche](../lead-generation/search-engines)
+- [Configurer l'extraction de contacts](../lead-generation/contact-extraction)
+- [Configurer la bibliothèque de connaissances](../ai-outreach/knowledge-library)
 
 ---
 
-**Need proxies?** Consider these popular proxy providers:
-- Bright Data (formerly Luminati)
+**Besoin de proxys ?** Envisagez ces fournisseurs de proxy populaires :
+- Bright Data (anciennement Luminati)
 - Smartproxy
 - Oxylabs
 - Storm Proxies
 - ProxyMesh
 
-*Note: This is not an endorsement. Research and choose based on your specific needs.*
+*Remarque : Il ne s'agit pas d'une recommandation. Faites vos propres recherches et choisissez en fonction de vos besoins spécifiques.*

@@ -7,125 +7,125 @@ description: An overview of aiFetchly - your AI-powered marketing automation too
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# Welcome to aiFetchly
+# aiFetchly へようこそ
 
-**aiFetchly** is a powerful desktop application that combines AI technology with marketing automation to help you generate leads, extract contacts, and run personalized email outreach campaigns at scale.
+**aiFetchly** は、AI技術とマーケティングオートメーションを組み合わせた強力なデスクトップアプリケーションで、リード獲得、連絡先抽出、大規模なパーソナライズドメールアウトリーチキャンペーンの実行を支援します。
 
-## What is aiFetchly?
+## aiFetchly とは？
 
-aiFetchly is an all-in-one marketing automation platform designed for businesses and marketers who need to:
+aiFetchly は、以下のニーズを持つ企業やマーケター向けのオールインワンマーケティングオートメーションプラットフォームです：
 
-- **Find leads** across multiple search engines and online directories
-- **Extract contact information** from websites and business listings
-- **Generate personalized emails** using AI with context from your own documents
-- **Automate campaigns** with scheduling and batch email sending
-- **Get AI assistance** for marketing strategies and content creation
+- **複数の検索エンジンとオンラインディレクトリからリードを見つける**
+- **ウェブサイトやビジネスリストから連絡先情報を抽出する**
+- **AIと独自ドキュメントのコンテキストを使用してパーソナライズドメールを生成する**
+- **スケジューリングとバッチメール送信でキャンペーンを自動化する**
+- **マーケティング戦略とコンテンツ作成のAIアシスタンスを得る**
 
-## Key Features
+## 主な機能
 
-### 🔍 Multi-Engine Search & Scraping
+### 🔍 マルチエンジン検索＆スクレイピング
 
-Search and scrape leads from multiple search engines simultaneously:
+複数の検索エンジンから同時にリードを検索・スクレイピング：
 
-- **Google** - The world's largest search engine
-- **Bing** - Microsoft's search engine
-- **Yandex** - Popular Russian search engine
+- **Google** - 世界最大の検索エンジン
+- **Bing** - Microsoft の検索エンジン
+- **Yandex** - 人気のロシア語検索エンジン
 
-:::tip Concurrent Scraping
+:::tip 同時スクレイピング
 
-Run multiple search tasks at the same time to maximize your lead generation efficiency.
-
-:::
-
-### 📧 Contact Extraction
-
-Extract email addresses and contact information from:
-
-- **Website URLs** - Bulk extract emails from lists of websites
-- **Yellow Pages** - Scrape business directories for local leads
-- **Search Results** - Directly extract from your search campaigns
-
-### 🤖 AI-Powered Email Writer
-
-Create personalized outreach emails using advanced AI:
-
-- **Knowledge Library Integration** - Upload your own documents (PDF, Word, HTML) to provide context for AI-generated emails
-- **Template System** - Save and reuse email templates with variable substitution
-- **RAG Technology** - Retrieval-Augmented Generation ensures contextually relevant content
-
-### ✉️ Batch Email Sending
-
-Send personalized email campaigns at scale:
-
-- **SMTP Integration** - Use your own email server for full control
-- **Filter & Target** - Apply filters to reach the right audience
-- **Duplicate Prevention** - Avoid sending to the same contact multiple times
-- **Campaign Management** - Track and manage your email campaigns
-
-### 🎯 AI Marketing Assistant
-
-Get strategic marketing guidance through AI-powered chat:
-
-- **Marketing Strategy** - Plan campaigns and strategies with AI assistance
-- **Content Ideas** - Generate ideas for marketing content
-- **Knowledge Integration** - AI draws from your Knowledge Library for personalized advice
-
-### ⏰ Task Scheduling
-
-Automate your workflows with powerful scheduling:
-
-- **Cron-Based Scheduling** - Flexible scheduling with cron expressions
-- **Task Dependencies** - Chain tasks together for complex workflows
-- **Pause/Resume** - Control when tasks run
-- **Execution History** - Track scheduled task performance
-
-### 🌐 Proxy Support
-
-Protect your identity and scale your operations:
-
-- **Proxy Management** - Add and manage multiple proxies
-- **Health Checking** - Verify proxy performance before use
-- **Batch Import** - Import proxy lists in bulk
-- **Integration** - Use proxies with all scraping and extraction features
-
-## System Requirements
-
-aiFetchly is a desktop application built with **Electron**, available for:
-
-- **Windows** 10 or later
-- **macOS** 10.15 or later
-- **Linux** (Ubuntu 20.04+, Debian, Fedora, etc.)
-
-### Technical Specifications
-
-- **Memory**: 4GB RAM minimum (8GB recommended)
-- **Storage**: 500MB for application + additional space for data
-- **Network**: Stable internet connection for search, AI features, and email sending
-
-## Current Version Status
-
-:::info Feature Availability
-
-All features described in this manual are currently available to all users. Future versions may introduce tiered plans (Community/Pro) with differentiated feature sets.
+複数の検索タスクを同時に実行して、リード獲得効率を最大化しましょう。
 
 :::
 
-## Next Steps
+### 📧 連絡先抽出
 
-- [Install aiFetchly](./installation) on your computer
-- [Configure proxies](./proxy-setup) for safe scraping
-- [Learn about lead generation](../lead-generation/search-engines)
-- [Set up the Knowledge Library](../ai-outreach/knowledge-library)
-- [Start your first email campaign](../lead-generation/batch-email-sending)
+以下のソースからメールアドレスと連絡先情報を抽出：
 
-## Support & Documentation
+- **ウェブサイトURL** - ウェブサイトリストからメールを一括抽出
+- **イエローページ** - ビジネスディレクトリからローカルリードをスクレイピング
+- **検索結果** - 検索キャンペーンから直接抽出
 
-This manual covers all aspects of using aiFetchly. If you need additional help:
+### 🤖 AI搭載メールライター
 
-- Browse the documentation sections using the sidebar
-- Check our FAQ for common questions
-- Contact support through our official channels
+高度なAIを使用してパーソナライズドアウトリーチメールを作成：
+
+- **ナレッジライブラリ統合** - 独自のドキュメント（PDF、Word、HTML）をアップロードしてAI生成メールのコンテキストを提供
+- **テンプレートシステム** - 変数置換でメールテンプレートを保存・再利用
+- **RAG技術** - 検索拡張生成でコンテキストに関連するコンテンツを確保
+
+### ✉️ バッチメール送信
+
+大規模なパーソナライズドメールキャンペーンを送信：
+
+- **SMTP統合** - 独自のメールサーバーを使用してフルコントロール
+- **フィルター＆ターゲティング** - フィルターを適用して適切なオーディエンスにリーチ
+- **重複防止** - 同一連絡先への複数送信を回避
+- **キャンペーン管理** - メールキャンペーンを追跡・管理
+
+### 🎯 AIマーケティングアシスタント
+
+AI搭載チャットで戦略的マーケティングガイダンスを取得：
+
+- **マーケティング戦略** - AIアシスタンスでキャンペーンと戦略を計画
+- **コンテンツアイデア** - マーケティングコンテンツのアイデアを生成
+- **ナレッジ統合** - AIがナレッジライブラリからパーソナライズドアドバイスを提供
+
+### ⏰ タスクスケジューリング
+
+強力なスケジューリングでワークフローを自動化：
+
+- **Cronベーススケジューリング** - Cron式による柔軟なスケジューリング
+- **タスク依存関係** - タスクをチェーンして複雑なワークフローを構築
+- **一時停止/再開** - タスクの実行タイミングを制御
+- **実行履歴** - スケジュールされたタスクのパフォーマンスを追跡
+
+### 🌐 プロキシサポート
+
+IDを保護し、オペレーションをスケール：
+
+- **プロキシ管理** - 複数のプロキシを追加・管理
+- **ヘルスチェック** - 使用前にプロキシパフォーマンスを検証
+- **一括インポート** - プロキシリストを一括インポート
+- **統合** - すべてのスクレイピングと抽出機能でプロキシを使用
+
+## システム要件
+
+aiFetchly は **Electron** で構築されたデスクトップアプリケーションで、以下に対応：
+
+- **Windows** 10 以降
+- **macOS** 10.15 以降
+- **Linux**（Ubuntu 20.04+、Debian、Fedora など）
+
+### 技術仕様
+
+- **メモリ**：最小4GB RAM（推奨8GB）
+- **ストレージ**：アプリケーション500MB + データ用の追加スペース
+- **ネットワーク**：検索、AI機能、メール送信用の安定したインターネット接続
+
+## 現在のバージョンステータス
+
+:::info 機能の可用性
+
+このマニュアルで説明されているすべての機能は、現在すべてのユーザーが利用できます。将来のバージョンでは、差別化された機能セットを持つ階層型プラン（コミュニティ/プロ）が導入される可能性があります。
+
+:::
+
+## 次のステップ
+
+- コンピューターに[aiFetchlyをインストール](./installation)
+- 安全なスクレイピングのために[プロキシを設定](./proxy-setup)
+- [リード獲得について学ぶ](../lead-generation/search-engines)
+- [ナレッジライブラリを設定](../ai-outreach/knowledge-library)
+- [最初のメールキャンペーンを開始](../lead-generation/batch-email-sending)
+
+## サポートとドキュメント
+
+このマニュアルはaiFetchlyの使用に関するすべての側面をカバーしています。追加のヘルプが必要な場合：
+
+- サイドバーを使用してドキュメントセクションを閲覧
+- よくある質問についてはFAQを確認
+- 公式チャンネルからサポートに連絡
 
 ---
 
-**Ready to get started?** Let's begin with [installation](./installation).
+**始める準備はできましたか？** [インストール](./installation)から始めましょう。

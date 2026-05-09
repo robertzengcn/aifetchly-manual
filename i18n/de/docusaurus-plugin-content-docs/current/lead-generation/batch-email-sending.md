@@ -1,502 +1,502 @@
 ---
 id: batch-email-sending
-title: Batch Email Sending
-sidebar_label: Batch Email Sending
-description: Send personalized email campaigns at scale using SMTP integration with aiFetchly.
+title: Batch-E-Mail-Versand
+sidebar_label: Batch-E-Mail-Versand
+description: Senden Sie personalisierte E-Mail-Kampagnen im Maßstab mit SMTP-Integration über aiFetchly.
 ---
 
-# Batch Email Sending
+# Batch-E-Mail-Versand
 
-aiFetchly's Batch Email Sending feature allows you to launch personalized email campaigns at scale. Import emails from your extraction tasks, use AI-generated templates, and send via your own SMTP server for complete control over your outreach.
+Die Batch-E-Mail-Versandfunktion von aiFetchly ermöglicht es Ihnen, personalisierte E-Mail-Kampagnen im großen Maßstab zu starten. Importieren Sie E-Mails aus Ihren Extraktionsaufgaben, verwenden Sie KI-generierte Vorlagen und senden Sie über Ihren eigenen SMTP-Server für die volle Kontrolle über Ihre Kommunikation.
 
-## Overview
+## Übersicht
 
-The batch email sending process consists of **4 steps**:
+Der Batch-E-Mail-Versand besteht aus **4 Schritten**:
 
-1. **Choose Email Source** - Select where your emails come from
-2. **Choose Email Template** - Select or create your message template
-3. **Choose Email Filter** (Optional) - Apply filters to your email list
-4. **Choose Email Service** - Configure SMTP and send
+1. **E-Mail-Quelle wählen** — Wählen Sie, woher Ihre E-Mails stammen
+2. **E-Mail-Vorlage wählen** — Wählen oder erstellen Sie Ihre Nachrichtenvorlage
+3. **E-Mail-Filter wählen** (Optional) — Wenden Sie Filter auf Ihre E-Mail-Liste an
+4. **E-Mail-Dienst wählen** — SMTP konfigurieren und senden
 
-:::info Prerequisites
+:::info Voraussetzungen
 
-Before sending campaigns, ensure you have:
-- [Configured an SMTP service](#configuring-email-services)
-- [Created email templates](../ai-outreach/ai-email-writer)
-- [Extracted or imported email lists](./contact-extraction)
-
-:::
-
-## Configuring Email Services
-
-Before sending emails, you must configure at least one SMTP service.
-
-### What is SMTP?
-
-**SMTP** (Simple Mail Transfer Protocol) is the standard for sending emails. aiFetchly uses SMTP to send emails through your own email server or email service provider.
-
-### Step 1: Navigate to Email Services
-
-1. Click **Email Marketing** in the left navigation menu
-2. Select **Email Services** from the submenu
-3. Click **Add New Service**
-
-### Step 2: SMTP Configuration
-
-Enter the following SMTP details:
-
-#### Service Name
-
-- **Purpose**: Identify this SMTP configuration
-- **Example**: "Gmail SMTP", "SendGrid", "AWS SES"
-- **Required**: Yes
-
-#### From Email
-
-- **Purpose**: Email address that emails will be sent from
-- **Example**: `outreach@yourcompany.com`
-- **Required**: Yes
-
-:::tip Sender Reputation
-
-Use a dedicated email address for outreach. Avoid using personal email addresses for bulk sending.
+Stellen Sie vor dem Senden von Kampagnen sicher, dass Sie:
+- Einen [SMTP-Dienst konfiguriert](#e-mail-dienste-konfigurieren) haben
+- [E-Mail-Vorlagen erstellt](../ai-outreach/ai-email-writer) haben
+- [E-Mail-Listen extrahiert oder importiert](./contact-extraction) haben
 
 :::
 
-#### Password
+## E-Mail-Dienste konfigurieren
 
-- **Purpose**: Email account password or application-specific password
-- **Required**: Yes
-- **Security**: Password is stored securely
+Bevor Sie E-Mails senden, müssen Sie mindestens einen SMTP-Dienst konfigurieren.
 
-**Show/Hide Toggle**: Click the eye icon to show/hide the password.
+### Was ist SMTP?
+
+**SMTP** (Simple Mail Transfer Protocol) ist der Standard zum Versenden von E-Mails. aiFetchly verwendet SMTP, um E-Mails über Ihren eigenen E-Mail-Server oder E-Mail-Dienstleister zu senden.
+
+### Schritt 1: Zu E-Mail-Diensten navigieren
+
+1. Klicken Sie auf **E-Mail-Marketing** im linken Navigationsmenü
+2. Wählen Sie **E-Mail-Dienste** aus dem Untermenü
+3. Klicken Sie auf **Neuen Dienst hinzufügen**
+
+### Schritt 2: SMTP-Konfiguration
+
+Geben Sie die folgenden SMTP-Details ein:
+
+#### Dienstname
+
+- **Zweck**: Identifiziert diese SMTP-Konfiguration
+- **Beispiel**: "Gmail SMTP", "SendGrid", "AWS SES"
+- **Erforderlich**: Ja
+
+#### Absender-E-Mail
+
+- **Zweck**: E-Mail-Adresse, von der aus E-Mails gesendet werden
+- **Beispiel**: `kontakt@ihrunternehmen.de`
+- **Erforderlich**: Ja
+
+:::tip Absender-Reputation
+
+Verwenden Sie eine dedizierte E-Mail-Adresse für Ihre Akquise. Vermeiden Sie es, persönliche E-Mail-Adressen für den Massenversand zu verwenden.
+
+:::
+
+#### Passwort
+
+- **Zweck**: E-Mail-Kontopasswort oder App-spezifisches Passwort
+- **Erforderlich**: Ja
+- **Sicherheit**: Passwort wird sicher gespeichert
+
+**Anzeigen/Verbergen-Schalter**: Klicken Sie auf das Augensymbol, um das Passwort anzuzeigen oder zu verbergen.
 
 #### Host
 
-- **Purpose**: SMTP server hostname
-- **Examples**:
+- **Zweck**: SMTP-Server-Hostname
+- **Beispiele**:
   - Gmail: `smtp.gmail.com`
   - SendGrid: `smtp.sendgrid.net`
   - AWS SES: `email-smtp.us-east-1.amazonaws.com`
-- **Required**: Yes
+- **Erforderlich**: Ja
 
 #### Port
 
-- **Purpose**: SMTP server port
-- **Common Ports**:
-  - **587**: Submission (STARTTLS) - Recommended
+- **Zweck**: SMTP-Server-Port
+- **Gängige Ports**:
+  - **587**: Submission (STARTTLS) — Empfohlen
   - **465**: SMTPS (SSL/TLS)
-  - **25**: SMTP (not recommended, often blocked)
-- **Required**: Yes
+  - **25**: SMTP (nicht empfohlen, oft blockiert)
+- **Erforderlich**: Ja
 
 #### SSL/TLS
 
-- **Toggle**: Enable secure connection
-- **Recommended**: Always keep enabled
-- **Purpose**: Encrypts email transmission
+- **Schalter**: Sichere Verbindung aktivieren
+- **Empfehlung**: Immer aktiviert lassen
+- **Zweck**: Verschlüsselt die E-Mail-Übertragung
 
-### Step 3: Test Configuration
+### Schritt 3: Konfiguration testen
 
-Before saving, test your SMTP settings:
+Testen Sie Ihre SMTP-Einstellungen vor dem Speichern:
 
-1. **Click "Test Connection"**
-2. **Enter test details**:
-   - **Receiver**: Test email address
-   - **Title**: Test subject line
-   - **Content**: Test email body
-3. **Click "Send Test Email"**
-4. **Check your inbox** for the test email
+1. **Klicken Sie auf "Verbindung testen"**
+2. **Testdetails eingeben**:
+   - **Empfänger**: Test-E-Mail-Adresse
+   - **Betreff**: Test-Betreffzeile
+   - **Inhalt**: Test-E-Mail-Text
+3. **Klicken Sie auf "Test-E-Mail senden"**
+4. **Überprüfen Sie Ihren Posteingang** auf die Test-E-Mail
 
-:::important Test Before Sending
+:::important Vor dem Senden testen
 
-Always test your SMTP configuration before using it in campaigns. This prevents failed sends and wasted resources.
+Testen Sie Ihre SMTP-Konfiguration immer vor der Verwendung in Kampagnen. Dies verhindert fehlgeschlagene Sendungen und verschwendete Ressourcen.
 
 :::
 
-### Step 4: Save Service
+### Schritt 4: Dienst speichern
 
-1. If test successful, click **Save**
-2. Service appears in your email services list
-3. Ready to use in campaigns
+1. Wenn der Test erfolgreich war, klicken Sie auf **Speichern**
+2. Der Dienst erscheint in Ihrer E-Mail-Dienste-Liste
+3. Bereit zur Verwendung in Kampagnen
 
-### Common SMTP Providers
+### Gängige SMTP-Anbieter
 
-| Provider | Host | Port | Notes |
+| Anbieter | Host | Port | Hinweise |
 |----------|------|------|-------|
-| **Gmail** | `smtp.gmail.com` | 587 | Use App Password, not regular password |
-| **Outlook** | `smtp.office365.com` | 587 | May require App Password |
-| **SendGrid** | `smtp.sendgrid.net` | 587 | API key as password |
-| **Mailgun** | `smtp.mailgun.org` | 587 | Use SMTP credentials |
-| **AWS SES** | Region-specific | 587 | Requires SMTP credentials |
-| **Postmark** | `smtp.postmarkapp.com` | 587 | API key as password |
+| **Gmail** | `smtp.gmail.com` | 587 | App-Passwort verwenden, nicht das reguläre Passwort |
+| **Outlook** | `smtp.office365.com` | 587 | Kann App-Passwort erfordern |
+| **SendGrid** | `smtp.sendgrid.net` | 587 | API-Schlüssel als Passwort |
+| **Mailgun** | `smtp.mailgun.org` | 587 | SMTP-Zugangsdaten verwenden |
+| **AWS SES** | Regionsspezifisch | 587 | Erfordert SMTP-Zugangsdaten |
+| **Postmark** | `smtp.postmarkapp.com` | 587 | API-Schlüssel als Passwort |
 
-:::warning Gmail and Outlook
+:::warning Gmail und Outlook
 
-Gmail and Outlook require **App Passwords** for third-party SMTP access. You cannot use your regular password.
+Gmail und Outlook erfordern **App-Passwörter** für den SMTP-Zugriff durch Drittanbieter. Sie können Ihr reguläres Passwort nicht verwenden.
 
-1. Enable 2-factor authentication
-2. Generate an App Password
-3. Use the App Password in aiFetchly
-
-:::
-
-## Sending Batch Emails
-
-### Step 1: Choose Email Source
-
-1. **Navigate** to **Email Marketing** → **Send Bulk Emails**
-2. **Select Email Source Type** from the dropdown:
-   - **Email Task**: Emails from extraction tasks
-   - **Manual Input**: Upload email list manually
-   - **Search Results**: Use search task results
-
-#### Using Email Tasks (Recommended)
-
-1. Select **Email Task** from dropdown
-2. **Choose extraction task** from the list
-3. **Preview** the email list
-4. **Option**: Enable "Avoid Duplicates" to skip already-contacted emails
-
-#### Using Manual Input
-
-1. Select **Manual Input** from dropdown
-2. **Enter emails** in the text area
-3. **Format**: One email per line, or CSV format
-4. **Click "Parse"** to process the list
-
-### Step 2: Choose Email Template
-
-1. **Select one or more templates** from your template list
-2. **Preview** the template content
-3. **Variables** will be automatically populated:
-   - `{$receiver_email}`: Recipient's email address
-   - `{$url}`: Source URL (if available)
-   - `{$description}`: Description or context
-   - `{$sender}`: Sender name from SMTP config
-   - `{$send_time}`: Timestamp
-
-:::tip Multiple Templates
-
-You can select multiple templates to A/B test different messaging. The system will rotate through templates across recipients.
+1. Zwei-Faktor-Authentifizierung aktivieren
+2. Ein App-Passwort generieren
+3. Das App-Passwort in aiFetchly verwenden
 
 :::
 
-### Step 3: Choose Email Filter (Optional)
+## Batch-E-Mails senden
 
-Apply filters to your email list:
+### Schritt 1: E-Mail-Quelle wählen
 
-1. **Select filter type** from dropdown
-2. **Configure filter rules**
-3. **Preview filtered results**
-4. **See count** of filtered emails
+1. **Navigieren** Sie zu **E-Mail-Marketing** → **Massen-E-Mails senden**
+2. **E-Mail-Quelltyp** aus dem Dropdown auswählen:
+   - **E-Mail-Aufgabe**: E-Mails aus Extraktionsaufgaben
+   - **Manuelle Eingabe**: E-Mail-Liste manuell hochladen
+   - **Suchergebnisse**: Suchaufgabenergebnisse verwenden
 
-**Common Filters:**
-- Remove duplicate emails
-- Filter by domain
-- Filter by industry/category
-- Exclude previous recipients
+#### E-Mail-Aufgaben verwenden (Empfohlen)
 
-:::info Filter Status
+1. **E-Mail-Aufgabe** aus Dropdown auswählen
+2. **Extraktionsaufgabe** aus der Liste wählen
+3. **Vorschau** der E-Mail-Liste anzeigen
+4. **Option**: "Duplikate vermeiden" aktivieren, um bereits kontaktierte E-Mails zu überspringen
 
-Email filters are currently a placeholder feature in this version. Duplicate prevention is available in Step 1.
+#### Manuelle Eingabe verwenden
+
+1. **Manuelle Eingabe** aus Dropdown auswählen
+2. **E-Mails** in das Textfeld eingeben
+3. **Format**: Eine E-Mail pro Zeile oder CSV-Format
+4. **Klicken Sie auf "Analysieren"**, um die Liste zu verarbeiten
+
+### Schritt 2: E-Mail-Vorlage wählen
+
+1. **Wählen Sie eine oder mehrere Vorlagen** aus Ihrer Vorlagenliste
+2. **Vorschau** des Vorlageninhalts anzeigen
+3. **Variablen** werden automatisch ausgefüllt:
+   - `{$receiver_email}`: E-Mail-Adresse des Empfängers
+   - `{$url}`: Quell-URL (falls verfügbar)
+   - `{$description}`: Beschreibung oder Kontext
+   - `{$sender}`: Absendername aus SMTP-Konfiguration
+   - `{$send_time}`: Zeitstempel
+
+:::tip Mehrere Vorlagen
+
+Sie können mehrere Vorlagen auswählen, um verschiedene Nachrichten für A/B-Tests zu verwenden. Das System rotiert die Vorlagen über die Empfänger.
 
 :::
 
-### Step 4: Choose Email Service
+### Schritt 3: E-Mail-Filter wählen (Optional)
 
-1. **Select SMTP service** from your configured services
-2. **Review campaign summary**:
-   - Email count
-   - Selected template(s)
-   - SMTP service
-   - Estimated send time
+Wenden Sie Filter auf Ihre E-Mail-Liste an:
 
-3. **Click "Send Campaign"** to start sending
+1. **Filtertyp** aus Dropdown auswählen
+2. **Filterregeln konfigurieren**
+3. **Gefilterte Ergebnisse anzeigen**
+4. **Anzahl** der gefilterten E-Mails sehen
 
-### Campaign Execution
+**Gängige Filter:**
+- Doppelte E-Mails entfernen
+- Nach Domain filtern
+- Nach Branche/Kategorie filtern
+- Vorherige Empfänger ausschließen
 
-After launching:
+:::info Filter-Status
 
-- **Real-time Progress**: Track sending progress
-- **Success/Fail Counts**: See successful vs. failed sends
-- **Error Logs**: View details for failed emails
-- **Pause/Resume**: Control campaign execution
+E-Mail-Filter sind in dieser Version derzeit eine Platzhalterfunktion. Duplikatvermeidung ist in Schritt 1 verfügbar.
 
-## Monitoring Campaigns
+:::
 
-### Campaign List
+### Schritt 4: E-Mail-Dienst wählen
 
-Navigate to **Email Marketing** → **Campaigns** to see all campaigns.
+1. **SMTP-Dienst** aus Ihren konfigurierten Diensten auswählen
+2. **Kampagnenzusammenfassung überprüfen**:
+   - E-Mail-Anzahl
+   - Ausgewählte Vorlage(n)
+   - SMTP-Dienst
+   - Geschätzte Sendezeit
 
-**Campaign Information:**
-- Campaign name
-- Email count
-- Template used
-- SMTP service
-- Status (Pending, Sending, Completed, Failed)
-- Sent/Failed counts
-- Start and end times
+3. **Klicken Sie auf "Kampagne senden"**, um den Versand zu starten
 
-### Campaign Actions
+### Kampagnenausführung
 
-| Action | Description |
+Nach dem Start:
+
+- **Echtzeit-Fortschritt**: Sendefortschritt verfolgen
+- **Erfolgs-/Fehler-Zähler**: Erfolgreiche vs. fehlgeschlagene Sendungen sehen
+- **Fehlerprotokolle**: Details für fehlgeschlagene E-Mails anzeigen
+- **Pausieren/Fortsetzen**: Kampagnenausführung steuern
+
+## Kampagnen überwachen
+
+### Kampagnenliste
+
+Navigieren Sie zu **E-Mail-Marketing** → **Kampagnen**, um alle Kampagnen zu sehen.
+
+**Kampagneninformationen:**
+- Kampagnenname
+- E-Mail-Anzahl
+- Verwendete Vorlage
+- SMTP-Dienst
+- Status (Ausstehend, Senden, Abgeschlossen, Fehlgeschlagen)
+- Sende-/Fehler-Zähler
+- Start- und Endzeiten
+
+### Kampagnenaktionen
+
+| Aktion | Beschreibung |
 |--------|-------------|
-| **View Details** | See individual email status |
-| **Pause** | Pause running campaign |
-| **Resume** | Continue paused campaign |
-| **Stop** | Terminate campaign |
-| **Download Logs** | Export campaign results |
-| **Delete** | Remove campaign record |
+| **Details anzeigen** | Einzelnen E-Mail-Status sehen |
+| **Pausieren** | Laufende Kampagne pausieren |
+| **Fortsetzen** | Pausierte Kampagne fortsetzen |
+| **Stoppen** | Kampagne beenden |
+| **Protokolle herunterladen** | Kampagnenergebnisse exportieren |
+| **Löschen** | Kampagnendatensatz entfernen |
 
-### Email Status
+### E-Mail-Status
 
-Individual emails can have these statuses:
+Einzelne E-Mails können folgende Status haben:
 
-| Status | Description |
+| Status | Beschreibung |
 |--------|-------------|
-| **Pending** | Queued to send |
-| **Sent** | Successfully delivered |
-| **Failed** | Could not be delivered |
-| **Bounced** | Rejected by recipient server |
-| **Opened** | Recipient opened email |
-| **Clicked** | Recipient clicked link |
+| **Ausstehend** | Zum Senden eingereiht |
+| **Gesendet** | Erfolgreich zugestellt |
+| **Fehlgeschlagen** | Konnte nicht zugestellt werden |
+| **Bounced** | Vom Empfängerserver abgelehnt |
+| **Geöffnet** | Empfänger hat E-Mail geöffnet |
+| **Geklickt** | Empfänger hat Link geklickt |
 
-## Best Practices
+## Bewährte Praktiken
 
-### 1. SMTP Configuration
+### 1. SMTP-Konfiguration
 
-**Use Dedicated IPs:**
-- For high-volume sending, use dedicated IP addresses
-- Build sender reputation gradually
-- Monitor deliverability metrics
+**Dedizierte IPs verwenden:**
+- Für hochvolumigen Versand dedizierte IP-Adressen verwenden
+- Absender-Reputation schrittweise aufbauen
+- Zustellbarkeitsmetriken überwachen
 
-**Warm Up New Accounts:**
-- Start with 20-50 emails per day
-- Gradually increase over 2-4 weeks
-- Monitor bounce and spam rates
+**Neue Konten aufwärmen:**
+- Mit 20-50 E-Mails pro Tag beginnen
+- Über 2-4 Wochen schrittweise erhöhen
+- Bounce- und Spam-Raten überwachen
 
-**Multiple Services:**
-- Configure 2-3 SMTP services
-- Rotate between services to distribute load
-- Prevent rate limiting by single provider
+**Mehrere Dienste:**
+- 2-3 SMTP-Dienste konfigurieren
+- Zwischen Diensten rotieren, um die Last zu verteilen
+- Ratenbegrenzung durch einen einzelnen Anbieter verhindern
 
-### 2. Email List Quality
+### 2. E-Mail-Listenqualität
 
-**Clean Your Lists:**
-- Remove bounced emails
-- Suppress unsubscribes and complaints
-- Verify emails before sending
+**Listen bereinigen:**
+- Bounced E-Mails entfernen
+- Abmeldungen und Beschwerden unterdrücken
+- E-Mails vor dem Senden verifizieren
 
-**Segment Your Audience:**
-- Group by industry, company size, or interest
-- Create targeted campaigns for each segment
-- Improve relevance and engagement
+**Zielgruppe segmentieren:**
+- Nach Branche, Unternehmensgröße oder Interesse gruppieren
+- Gezielte Kampagnen für jedes Segment erstellen
+- Relevanz und Engagement verbessern
 
-**Avoid Duplicates:**
-- Enable "Avoid Duplicates" option
-- Suppression lists for previous recipients
-- Regular list maintenance
+**Duplikate vermeiden:**
+- Option "Duplikate vermeiden" aktivieren
+- Unterdrückungslisten für vorherige Empfänger
+- Regelmäßige Listenpflege
 
-### 3. Template Optimization
+### 3. Vorlagenoptimierung
 
-**Personalize Content:**
-- Use variables extensively
-- Mention recipient-specific details
-- Reference their website or work
+**Inhalte personalisieren:**
+- Variablen umfangreich verwenden
+- Empfängerspezifische Details erwähnen
+- Auf ihre Website oder Arbeit verweisen
 
-**Keep It Concise:**
-- 100-200 words ideal
-- Clear subject lines
-- Single call-to-action
+**Kurz und prägnant halten:**
+- 100-200 Wörter ideal
+- Klare Betreffzeilen
+- Ein einziger Call-to-Action
 
-**Mobile-Friendly:**
-- Short paragraphs
-- Clear formatting
-- Test on mobile devices
+**Mobile-freundlich:**
+- Kurze Absätze
+- Klare Formatierung
+- Auf mobilen Geräten testen
 
-### 4. Timing and Frequency
+### 4. Timing und Häufigkeit
 
-**Best Send Times:**
-- Tuesday, Wednesday, Thursday: 10 AM - 2 PM
-- Avoid Monday mornings and weekends
-- Test times for your specific audience
+**Beste Sendezeiten:**
+- Dienstag, Mittwoch, Donnerstag: 10:00 - 14:00 Uhr
+- Montagmorgens und Wochenenden vermeiden
+- Zeiten für Ihre spezifische Zielgruppe testen
 
-**Sending Frequency:**
-- Don't send to same recipient within 30 days
-- Space out campaigns appropriately
-- Monitor unsubscribe rates
+**Sende-Häufigkeit:**
+- Nicht an denselben Empfänger innerhalb von 30 Tagen senden
+- Kampagnen angemessen zeitlich auseinanderlegen
+- Abmelderaten überwachen
 
-**Rate Limiting:**
-- Respect SMTP provider limits
-- Start slow: 10-20 emails per minute
-- Monitor for blocks or bounces
+**Ratenbegrenzung:**
+- SMTP-Anbieter-Limits beachten
+- Langsam beginnen: 10-20 E-Mails pro Minute
+- Auf Blockaden oder Bounces überwachen
 
 ### 5. Compliance
 
-**Include Required Elements:**
-- Physical mailing address
-- Clear unsubscribe mechanism
-- Accurate header information
-- Your identity in the email
+**Erforderliche Elemente einbeziehen:**
+- Physische Postanschrift
+- Klaren Abmeldemechanismus
+- Korrekte Header-Informationen
+- Ihre Identität in der E-Mail
 
-**Follow Regulations:**
-- **CAN-SPAM** (USA): Commercial email requirements
-- **GDPR** (EU): Consent and data protection
-- **CASL** (Canada): Consent requirements
+**Vorschriften beachten:**
+- **CAN-SPAM** (USA): Anforderungen für kommerzielle E-Mails
+- **DSGVO** (EU): Einwilligung und Datenschutz
+- **CASL** (Kanada): Einwilligungsanforderungen
 
-:::warning Legal Compliance
+:::warning Rechtliche Compliance
 
-Ensure your email campaigns comply with applicable laws in your recipients' jurisdictions. Consult legal counsel for guidance.
+Stellen Sie sicher, dass Ihre E-Mail-Kampagnen den geltenden Gesetzen in den Rechtssystemen Ihrer Empfänger entsprechen. Konsultieren Sie einen Rechtsbeistand für eine Beratung.
 
 :::
 
-## Troubleshooting
+## Fehlerbehebung
 
-### SMTP Connection Failed
+### SMTP-Verbindung fehlgeschlagen
 
-**Possible causes:**
-- Incorrect SMTP settings
-- Firewall blocking connection
-- Authentication issues
+**Mögliche Ursachen:**
+- Falsche SMTP-Einstellungen
+- Firewall blockiert Verbindung
+- Authentifizierungsprobleme
 
-**Solutions:**
-1. Verify host, port, and credentials
-2. Test with telnet: `telnet smtp.host.com port`
-3. Check firewall/antivirus settings
-4. Try different port (587 vs 465)
-5. Verify App Password for Gmail/Outlook
+**Lösungen:**
+1. Host, Port und Zugangsdaten überprüfen
+2. Mit telnet testen: `telnet smtp.host.com port`
+3. Firewall-/Antiviren-Einstellungen prüfen
+4. Anderen Port versuchen (587 vs. 465)
+5. App-Passwort für Gmail/Outlook überprüfen
 
-### High Bounce Rate
+### Hohe Bounce-Rate
 
-**Possible causes:**
-- Invalid email addresses
-- Sender reputation issues
-- Spam filter triggers
+**Mögliche Ursachen:**
+- Ungültige E-Mail-Adressen
+- Absender-Reputationsprobleme
+- Spam-Filter-Auslöser
 
-**Solutions:**
-1. Verify email list quality
-2. Check sender reputation (MXToolbox)
-3. Improve email content
-4. Warm up email account
-5. Use different SMTP service
+**Lösungen:**
+1. E-Mail-Listenqualität überprüfen
+2. Absender-Reputation prüfen (MXToolbox)
+3. E-Mail-Inhalt verbessern
+4. E-Mail-Konto aufwärmen
+5. Anderen SMTP-Dienst verwenden
 
-### Emails Going to Spam
+### E-Mails landen im Spam
 
-**Possible causes:**
-- Poor sender reputation
-- Spammy content
-- Missing authentication
+**Mögliche Ursachen:**
+- Schlechte Absender-Reputation
+- Spammy Inhalt
+- Fehlende Authentifizierung
 
-**Solutions:**
-1. Set up SPF, DKIM, and DMARC
-2. Improve email content quality
-3. Avoid spam trigger words
-4. Include physical address and unsubscribe
-5. Warm up sending domain
+**Lösungen:**
+1. SPF, DKIM und DMARC einrichten
+2. E-Mail-Inhaltsqualität verbessern
+3. Spam-Auslöserwörter vermeiden
+4. Physische Adresse und Abmeldelink einfügen
+5. Sendedomain aufwärmen
 
-### Rate Limiting
+### Ratenbegrenzung
 
-**Possible causes:**
-- Sending too fast
-- SMTP provider limits exceeded
+**Mögliche Ursachen:**
+- Zu schnell gesendet
+- SMTP-Anbieter-Limits überschritten
 
-**Solutions:**
-1. Reduce sending speed (emails per minute)
-2. Configure multiple SMTP services
-3. Check provider rate limits
-4. Upgrade SMTP plan if needed
+**Lösungen:**
+1. Sendegeschwindigkeit reduzieren (E-Mails pro Minute)
+2. Mehrere SMTP-Dienste konfigurieren
+3. Anbieter-Ratenlimits prüfen
+4. SMTP-Plan bei Bedarf upgraden
 
-### Templates Not Personalizing
+### Vorlagen werden nicht personalisiert
 
-**Possible causes:**
-- Variables not matching data
-- Missing data in email list
+**Mögliche Ursachen:**
+- Variablen stimmen nicht mit Daten überein
+- Fehlende Daten in der E-Mail-Liste
 
-**Solutions:**
-1. Verify variable names match exactly
-2. Check email list has required fields
-3. Test with preview before sending
-4. Use generic content as fallback
+**Lösungen:**
+1. Überprüfen Sie, ob die Variablennamen genau übereinstimmen
+2. Prüfen Sie, ob die E-Mail-Liste die erforderlichen Felder enthält
+3. Vor dem Senden mit Vorschau testen
+4. Generischen Inhalt als Fallback verwenden
 
-## Campaign Metrics to Track
+## Kampagnenmetriken zum Verfolgen
 
-### Deliverability
+### Zustellbarkeit
 
-- **Sent Rate**: Emails successfully sent / Total emails
-- **Bounce Rate**: Bounced emails / Sent emails
-- **Delivery Rate**: Delivered emails / Sent emails
+- **Sende-Rate**: Erfolgreich gesendete E-Mails / Gesamtanzahl E-Mails
+- **Bounce-Rate**: Bounced E-Mails / Gesendete E-Mails
+- **Zustellrate**: Zugestellte E-Mails / Gesendete E-Mails
 
 ### Engagement
 
-- **Open Rate**: Opens / Delivered
-- **Click-Through Rate**: Clicks / Opens
-- **Conversion Rate**: Conversions / Clicks
+- **Öffnungsrate**: Öffnungen / Zugestellte
+- **Klickrate**: Klicks / Öffnungen
+- **Konversionsrate**: Konversionen / Klicks
 
-### Sender Reputation
+### Absender-Reputation
 
-- **Complaint Rate**: Spam complaints / Delivered
-- **Unsubscribe Rate**: Unsubscribes / Delivered
-- **Spam Trap Hits**: Emails to spam traps
+- **Beschwerderate**: Spam-Beschwerden / Zugestellte
+- **Abmelderate**: Abmeldungen / Zugestellte
+- **Spam-Fallen-Treffer**: E-Mails an Spam-Fallen
 
-:::tip Benchmark Metrics
+:::tip Benchmark-Metriken
 
-Industry averages:
-- Open Rate: 15-25%
-- Click-Through Rate: 2-5%
-- Bounce Rate: < 2%
-- Complaint Rate: < 0.1%
+Branchendurchschnitte:
+- Öffnungsrate: 15-25%
+- Klickrate: 2-5%
+- Bounce-Rate: < 2%
+- Beschwerderate: < 0,1%
 
 :::
 
-## Advanced Workflows
+## Erweiterte Workflows
 
-### Workflow 1: Drip Campaign
+### Workflow 1: Drip-Kampagne
 
-Set up automated multi-touch campaigns:
+Automatisierte Mehrfach-Kontakt-Kampagnen einrichten:
 
-1. **Day 1**: Initial outreach email
-2. **Day 3**: Follow-up if no response
-3. **Day 7**: Final follow-up with value add
-4. **Day 14**: Break-up email
+1. **Tag 1**: Erste Akquise-E-Mail
+2. **Tag 3**: Nachfassen bei keiner Antwort
+3. **Tag 7**: Letztes Nachfassen mit Mehrwert
+4. **Tag 14**: Abschluss-E-Mail
 
-Use the [Scheduler](../automation/task-scheduling) to automate.
+Verwenden Sie den [Scheduler](../automation/task-scheduling) zur Automatisierung.
 
-### Workflow 2: A/B Testing
+### Workflow 2: A/B-Testing
 
-Test different approaches:
+Verschiedene Ansätze testen:
 
-1. **Create 2-3 template variations**
-2. **Split email list** into segments
-3. **Send different templates** to each segment
-4. **Measure results** (open rate, response rate)
-5. **Use winner** for future campaigns
+1. **2-3 Vorlagenvarianten erstellen**
+2. **E-Mail-Liste** in Segmente aufteilen
+3. **Verschiedene Vorlagen** an jedes Segment senden
+4. **Ergebnisse messen** (Öffnungsrate, Antwortrate)
+5. **Gewinner** für zukünftige Kampagnen verwenden
 
-### Workflow 3: Segmented Campaigns
+### Workflow 3: Segmentierte Kampagnen
 
-Target specific audiences:
+Spezifische Zielgruppen ansprechen:
 
-1. **Extract emails** by industry or location
-2. **Create tailored templates** for each segment
-3. **Send targeted campaigns** to each segment
-4. **Analyze results** by segment
-5. **Optimize messaging** based on response
+1. **E-Mails extrahieren** nach Branche oder Standort
+2. **Maßgeschneiderte Vorlagen** für jedes Segment erstellen
+3. **Gezielte Kampagnen** an jedes Segment senden
+4. **Ergebnisse nach Segment analysieren**
+5. **Nachrichten basierend auf Antworten optimieren**
 
-## Integration with Lead Generation
+## Integration mit Lead-Generierung
 
-The complete email outreach workflow:
+Der vollständige E-Mail-Akquise-Workflow:
 
-1. **[Search Engines](./search-engines)**: Find target websites
-2. **[Contact Extraction](./contact-extraction)**: Harvest emails
-3. **[AI Email Writer](../ai-outreach/ai-email-writer)**: Create personalized templates
-4. **[Knowledge Library](../ai-outreach/knowledge-library)**: Provide context for AI
-5. **Batch Email Sending**: Launch campaigns
+1. **[Suchmaschinen](./search-engines)**: Ziel-Websites finden
+2. **[Kontaktextraktion](./contact-extraction)**: E-Mails sammeln
+3. **[KI-E-Mail-Writer](../ai-outreach/ai-email-writer)**: Personalisierte Vorlagen erstellen
+4. **[Wissensbibliothek](../ai-outreach/knowledge-library)**: Kontext für die KI bereitstellen
+5. **Batch-E-Mail-Versand**: Kampagnen starten
 
-## Next Steps
+## Nächste Schritte
 
-- [Set up the AI Marketing Assistant](../ai-outreach/ai-marketing-assistant) for strategy
-- [Configure task scheduling](../automation/task-scheduling) for automation
-- [Review system settings](../settings/system-settings)
+- [Den KI-Marketing-Assistenten einrichten](../ai-outreach/ai-marketing-assistant) für Strategie
+- [Aufgabenplanung konfigurieren](../automation/task-scheduling) für Automatisierung
+- [Systemeinstellungen überprüfen](../settings/system-settings)
 
 ---
 
-**Ready to send campaigns?** Start with a small test batch (20-50 emails) to verify everything works, then scale up your outreach operations.
+**Bereit, Kampagnen zu senden?** Beginnen Sie mit einem kleinen Test-Batch (20-50 E-Mails), um zu überprüfen, ob alles funktioniert, und skalieren Sie dann Ihre Akquise-Aktivitäten.

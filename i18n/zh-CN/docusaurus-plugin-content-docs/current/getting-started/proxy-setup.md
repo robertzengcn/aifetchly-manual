@@ -5,98 +5,116 @@ sidebar_label: Proxy Setup
 description: Learn how to configure and manage proxies for safe and efficient web scraping in aiFetchly.
 ---
 
-# Proxy Setup Guide
+# 代理设置指南
 
-Using proxies is essential for safe and efficient web scraping with aiFetchly. Proxies help you:
+在 aiFetchly 中使用代理是**可选的**。您可以在不使用代理的情况下运行搜索任务，但添加代理可以帮助您：
 
-- **Avoid IP blocks** from search engines and websites
-- **Scrape at scale** by distributing requests across multiple IPs
-- **Maintain anonymity** while collecting leads
-- **Access geo-restricted content** from different regions
+- **避免 IP 封锁** — 防止被搜索引擎和网站屏蔽
+- **大规模抓取** — 通过在多个 IP 之间分配请求来实现
+- **保持匿名性** — 在收集潜在客户时保护您的身份
+- **访问地域限制内容** — 从不同地区获取数据
 
-## Understanding Proxies
+:::info 可选功能
 
-A proxy server acts as an intermediary between your computer and the websites you scrape. Instead of the website seeing your IP address, they see the proxy's IP address.
+使用 aiFetchly 不需要代理。您可以立即开始抓取，无需配置代理。仅在需要避免速率限制或访问特定地区内容时才添加代理。
 
-### Proxy Types Supported
+:::
 
-aiFetchly supports three proxy protocols:
+## 了解代理
 
-| Protocol | Description | Use Case |
+代理服务器充当您的计算机与目标网站之间的中间人。网站看到的不是您的 IP 地址，而是代理的 IP 地址。
+
+### 支持的代理类型
+
+aiFetchly 支持三种代理协议：
+
+| 协议 | 描述 | 适用场景 |
 |----------|-------------|----------|
-| **HTTP** | Basic HTTP proxy | General web scraping, non-SSL sites |
-| **HTTPS** | Secure HTTP proxy | Secure websites (HTTPS), recommended for most scraping |
-| **SOCKS5** | Socket Secure 5 | Advanced users, supports more protocols, better performance |
+| **HTTP** | 基本 HTTP 代理 | 一般网页抓取，非 SSL 网站 |
+| **HTTPS** | 安全 HTTP 代理 | 安全网站（HTTPS），推荐用于大多数抓取场景 |
+| **SOCKS5** | Socket Secure 5 | 高级用户，支持更多协议，性能更好 |
 
-:::tip Recommended Protocol
+:::tip 推荐协议
 
-For most use cases, **HTTPS** proxies are recommended as they work with both HTTP and HTTPS websites.
-
-:::
-
-### Proxy Format
-
-Each proxy requires the following information:
-
-- **Host/IP** - The proxy server address (e.g., `192.168.1.1` or `proxy.example.com`)
-- **Port** - The port number (e.g., `8080`, `3128`, `1080`)
-- **Protocol** - http, https, or socks5
-- **Username** (optional) - For authentication
-- **Password** (optional) - For authentication
-
-Example: `192.168.1.1:8080` with username `user1` and password `pass123`
-
-## Adding Proxies Manually
-
-### Step 1: Open Proxy Management
-
-1. Launch aiFetchly
-2. Navigate to **Proxy** in the left navigation menu
-3. You'll see the proxy management page with a list of your proxies
-
-### Step 2: Add a Single Proxy
-
-1. Click the **Add Proxy** button (+ icon) in the top-right corner
-2. Fill in the required fields:
-
-   - **Host/IP**: Enter the proxy server address or IP
-   - **Port**: Enter the port number
-   - **Protocol**: Select from the dropdown (HTTP, HTTPS, or SOCKS5)
-   - **Username**: (Optional) Enter if authentication is required
-   - **Password**: (Optional) Enter if authentication is required
-
-3. Click **Submit** to save the proxy
-
-:::info Authentication
-
-If your proxy provider requires authentication, you must enter the username and password. Unauthenticated proxies will fail when tested.
+对于大多数使用场景，推荐使用 **HTTPS** 代理，因为它们同时兼容 HTTP 和 HTTPS 网站。
 
 :::
 
-### Step 3: Test the Proxy
+### 代理格式
 
-After adding proxies, you should verify they work:
+每个代理需要以下信息：
 
-1. Select the proxy(s) you want to test
-2. Click the **Check Proxy** button
-3. aiFetchly will test each proxy and update the status:
-   - ✅ **Pass** (green) - Proxy is working correctly
-   - ❌ **Failure** (pink) - Proxy is not working
-   - ⚪ **Unknown** (grey) - Proxy hasn't been tested yet
+- **主机/IP** — 代理服务器地址（例如 `192.168.1.1` 或 `proxy.example.com`）
+- **端口** — 端口号（例如 `8080`、`3128`、`1080`）
+- **协议** — http、https 或 socks5
+- **用户名**（可选）— 用于身份验证
+- **密码**（可选）— 用于身份验证
 
-## Batch Importing Proxies
+示例：`192.168.1.1:8080`，用户名 `user1`，密码 `pass123`
 
-If you have multiple proxies, you can import them all at once using a CSV file.
+## 手动添加代理
 
-### Step 1: Download Template
+### 第 1 步：打开代理管理页面
 
-1. Go to **Proxy** in the navigation menu
-2. Click **Batch Upload Proxy**
-3. Click **Download Template** to get the CSV template
+1. 启动 aiFetchly
+2. 在左侧导航菜单中点击 **Proxy**
+3. 您将看到代理管理页面，其中列出了您的所有代理
 
-### Step 2: Prepare Your CSV File
+### 第 2 步：添加单个代理
 
-The CSV template has the following structure:
+1. 点击右上角的 **Add Proxy** 按钮（+ 图标）
+2. 填写所需字段：
+
+   - **Host/IP**：输入代理服务器地址或 IP
+   - **Port**：输入端口号
+   - **Protocol**：从下拉菜单中选择（HTTP、HTTPS 或 SOCKS5）
+   - **Username**：（可选）如果需要身份验证则填写
+   - **Password**：（可选）如果需要身份验证则填写
+
+3. 点击 **Submit** 保存代理
+
+:::info 身份验证
+
+如果您的代理提供商要求身份验证，您必须输入用户名和密码。未经验证的代理在测试时会失败。
+
+:::
+
+### 第 3 步：测试代理
+
+添加代理后，您应该验证它们是否正常工作：
+
+1. 可选：在工具栏上设置 **Check timeout**（每个代理 1–60 秒；默认 10 秒）。此限制同时适用于连通性测试和 Google 检查。
+2. 选择要测试的代理（勾选行复选框）。
+3. 点击 **Check Proxy**。
+4. aiFetchly 会更新两种检查结果：
+
+**Status（连通性）** — 代理是否能够转发流量（例如，建立到测试端点的隧道）：
+
+- **Pass** — 基本代理检查通过。
+- **Failure** — 基本检查失败（主机/端口错误、身份验证问题或网络故障）。
+- **Unknown** — 尚未测试。
+
+**Google Pass** — 同一代理是否能够在不被识别为自动化流量而阻止的情况下访问 **Google**。当 **Status** 显示 **Pass** 后，应用会运行单独的检查（通过无头浏览器访问 Google）。该列可能会稍后更新：
+
+- **Pass** — Google 检查通过；该 IP 更有可能用于依赖 Google 的抓取任务。
+- **Fail** — Google 已屏蔽、发出质询或检查出错（数据中心 IP 或过度使用的代理常见）。
+- **Not Checked** — 尚无 Google 结果（代理从未通过基本检查，或自该功能添加以来未检查过）。
+
+如果 **Status** 为 **Failure**，**Google Pass** 将保持 **Not Checked**（Google 检查步骤仅在基本检查通过时运行）。
+
+## 批量导入代理
+
+如果您有多个代理，可以使用 CSV 文件一次性导入。
+
+### 第 1 步：下载模板
+
+1. 在导航菜单中进入 **Proxy**
+2. 点击 **Batch Upload Proxy**
+3. 点击 **Download Template** 获取 CSV 模板
+
+### 第 2 步：准备 CSV 文件
+
+CSV 模板具有以下结构：
 
 ```csv
 host,port,protocols,user,pass
@@ -106,236 +124,253 @@ host,port,protocols,user,pass
 192.168.1.4,8080,http,,
 ```
 
-**CSV Format Guidelines:**
+**CSV 格式说明：**
 
-- **host** - Required: Proxy IP address or hostname
-- **port** - Required: Port number
-- **protocols** - Required: Must be "http", "https", or "socks5"
-- **user** - Optional: Username (leave empty if no authentication)
-- **pass** - Optional: Password (leave empty if no authentication)
+- **host** — 必填：代理 IP 地址或主机名
+- **port** — 必填：端口号
+- **protocols** — 必填：必须为 "http"、"https" 或 "socks5"
+- **user** — 可选：用户名（如无身份验证则留空）
+- **pass** — 可选：密码（如无身份验证则留空）
 
-:::tip CSV Formatting
+:::tip CSV 格式提示
 
-- Don't include headers in your import file (only data rows)
-- Use commas to separate fields
-- Leave user/pass fields empty if your proxy doesn't require authentication
-- Save the file as `.csv` (comma-separated values)
+- 您的文件可以使用与模板相同的列标题（`host`、`port`、`protocols`、`user`、`pass`），也可以省略标题行（前提是列顺序一致）
+- 使用逗号分隔字段
+- 如果代理不需要身份验证，请将 user/pass 字段留空
+- 将文件保存为 `.csv` 格式（逗号分隔值）
 
 :::
 
-### Step 3: Import the CSV
+### 第 3 步：导入 CSV
 
-1. Click **Batch Upload Proxy**
-2. Click the file upload area or drag and drop your CSV file
-3. The proxies will be displayed in a table
-4. Click **Check Proxy** to validate all imported proxies
-5. Click **Save to My Proxy** to add valid proxies to your account
-6. Click **Remove fail Proxy** to delete any proxies that failed the health check
+1. 点击 **Batch Upload**
+2. 在 **Upload File** 上，选择您的 CSV 文件（或使用 **Paste Text** 逐行粘贴代理）
+3. 解析后的代理将显示在预览表中
+4. 可选：点击 **Check Proxies** 对预览列表运行**快速连通性**测试（这与已保存代理上的完整 **Google Pass** 检查不同）
+5. 点击 **Import proxy**（在某些语言环境中显示为 **Import All**）将它们添加到您的代理库
+6. 导入后，打开主代理列表，选择新添加的行，然后点击 **Check Proxy** 以记录用于访问 Google 的任务的 **Status** 和 **Google Pass**
 
-## Managing Your Proxy List
+检查完成后要清理主列表，使用 **remove failure proxy**（删除 **Status** 为 **Failure** 的行）。
 
-### Viewing Proxies
+## 管理代理列表
 
-The proxy list shows all your proxies with the following information:
+### 查看代理
 
-| Column | Description |
+代理列表显示您所有代理的以下信息：
+
+| 列 | 描述 |
 |--------|-------------|
-| **ID** | Unique identifier |
-| **Host** | Proxy server IP/hostname |
-| **Username** | Authentication username (if any) |
-| **Password** | Authentication password (masked) |
-| **Protocol** | HTTP, HTTPS, or SOCKS5 |
-| **Status** | Pass, Failure, or Unknown |
-| **Check Time** | Last time the proxy was tested |
-| **Actions** | Edit or delete buttons |
+| **ID** | 唯一标识符 |
+| **Host** | 代理服务器 IP/主机名 |
+| **Port** | 代理端口 |
+| **Username** | 身份验证用户名（如有） |
+| **Password** | 身份验证密码（默认隐藏；使用 **Columns** 显示） |
+| **Protocol** | HTTP、HTTPS 或 SOCKS5 |
+| **Status** | 基本检查：Pass、Failure 或 Unknown |
+| **Check Time** | 上次测试代理的时间 |
+| **Google Pass** | Google 专项检查：Pass、Fail 或 Not Checked（参见 [Google Pass 检查](#google-pass-check)） |
+| **Actions** | 编辑或删除按钮 |
 
-### Editing Proxies
+使用工具栏上的 **Columns** 控件来显示或隐藏列（例如，密码默认关闭以保护安全）。
 
-1. Find the proxy you want to modify in the list
-2. Click the **Edit** button (pencil icon)
-3. Modify the fields as needed
-4. Click **Submit** to save changes
+### 编辑代理
 
-### Deleting Proxies
+1. 在列表中找到要修改的代理
+2. 点击 **Edit** 按钮（铅笔图标）
+3. 根据需要修改字段
+4. 点击 **Submit** 保存更改
 
-1. Find the proxy you want to remove
-2. Click the **Delete** button (trash icon)
-3. Confirm the deletion
+### 删除代理
 
-### Bulk Operations
+1. 找到要删除的代理
+2. 点击 **Delete** 按钮（垃圾桶图标）
+3. 确认删除
 
-- **Check All Proxies** - Test all proxies in your list simultaneously
-- **Remove Failed Proxies** - Delete all proxies with "Failure" status at once
+### 批量操作
 
-## Using Proxies in Search Tasks
+- **Check Proxy** — 选中一行或多行后，运行完整检查（**Status** 加上基本检查通过时的 **Google Pass**）。在选择至少一个代理之前，不会执行任何检查。
+- **remove failure proxy** — 一次性删除所有 **Status** 为 **Failure** 的已保存代理
 
-Once you've added and tested your proxies, you can use them in search and scraping tasks.
+## 在搜索任务中使用代理
 
-### Step 1: Create or Edit a Search Task
+添加并测试代理后，您可以在搜索和抓取任务中使用它们。
 
-1. Navigate to **Search** → **Search Form**
-2. Create a new search task or edit an existing one
+### 第 1 步：创建或编辑搜索任务
 
-### Step 2: Select Proxies
+1. 导航到 **Search** → **Search Form**
+2. 创建新的搜索任务或编辑现有任务
 
-1. Find the **Proxy** section in the task configuration
-2. Click the **Choose Proxy** button
-3. A proxy selection dialog will appear showing all your proxies
-4. Select one or more proxies from the list:
-   - Only proxies with "Pass" status are recommended
-   - You can select multiple proxies for load balancing
+### 第 2 步：选择代理
 
-5. Click **Confirm** to add selected proxies to your task
+1. 在任务配置中找到 **Proxy** 部分
+2. 点击 **Choose Proxy** 按钮
+3. 将出现代理选择对话框，显示您所有的代理
+4. 从列表中选择一个或多个代理：
+   - 当您的任务使用 Google 或大量依赖 Google 的流程时，优先选择 **Status** 为 **Pass** 且 **Google Pass** 为 **Pass** 的代理
+   - 您可以选择多个代理以实现负载均衡
 
-### Step 3: Run Your Task
+5. 点击 **Confirm** 将所选代理添加到您的任务
 
-When you run the search task, aiFetchly will:
+### 第 3 步：运行任务
 
-- Distribute requests across your selected proxies
-- Automatically rotate through proxies
-- Handle proxy failures gracefully
-- Continue scraping even if some proxies fail
+当您运行搜索任务时，aiFetchly 将：
 
-:::info Proxy Rotation
+- 在所选代理之间分配请求
+- 自动轮换代理
+- 优雅地处理代理故障
+- 即使部分代理失败也继续抓取
 
-When using multiple proxies, aiFetchly automatically rotates through them to distribute the load and avoid rate limiting.
+:::info 代理轮换
+
+使用多个代理时，aiFetchly 会自动在它们之间轮换，以分配负载并避免速率限制。
 
 :::
 
-## Proxy Health Monitoring
+## 代理健康监控
 
-Regular health checks ensure your proxies are working properly.
+定期健康检查可确保您的代理正常工作。
 
-### Automatic Health Checks
+### 检查运行时机
 
-- Proxies are tested when you click **Check Proxy** or **Check All**
-- Check results update the status column
-- Check time is recorded for each proxy
+- **已保存的代理：** 选中行后使用 **Check Proxy**。列表在检查运行时刷新；当进度达到 100% 时，**Status** 的结果已更新；**Google Pass** 对于通过基本检查的代理可能会稍后完成。
+- **批量上传对话框：** **Check Proxies** 仅在导入前验证预览行的连通性。导入后请在主列表上运行 **Check Proxy** 以获取 **Google Pass**。
 
-### Health Check Timeout
+### 健康检查超时
 
-By default, proxy tests timeout after **10 seconds**. This can be adjusted in system settings if needed.
+在 **Proxy** 页面上，设置 **Check timeout**（1–60 秒，默认 **10**）。该值同时适用于已保存代理的基本检查和 Google 浏览器检查。
 
-### Interpreting Status Results
+### 解读状态结果
 
-| Status | Meaning | Action |
+| 状态 | 含义 | 操作 |
 |--------|---------|--------|
-| **Pass** (green) | Proxy is working | Ready to use |
-| **Failure** (pink) | Proxy is not working | Remove or replace |
-| **Unknown** (grey) | Not tested yet | Run health check |
+| **Pass**（绿色） | 基本代理检查通过 | 可用于一般用途；如需使用 Google 请确认 **Google Pass** |
+| **Failure**（粉色） | 代理不工作 | 移除或替换 |
+| **Unknown**（灰色） | 尚未测试 | 运行健康检查 |
 
-## Best Practices
+## Google Pass 检查
 
-### 1. Use Reliable Proxy Providers
+**Google Pass** 回答的问题是："通过此代理，我们能否在不被明显屏蔽的情况下加载 Google？"它使用无头浏览器会话（类似于真实浏览），比简单的 ping 或 HTTP 隧道测试更严格。
 
-Invest in quality proxy services. Free proxies are often slow, unreliable, or already blocked by major websites.
+- **Pass** — 对于面向 Google 的抓取是有用的信号；但不保证适用于所有 Google 服务或大流量场景。
+- **Fail** — 通常是数据中心 IP、回收代理或已被标记的 IP；请尝试其他代理或提供商。
+- **Not Checked** — 对已保存的代理运行 **Check Proxy**，或代理尚未通过基本检查。
 
-### 2. Regular Health Checks
+即使 **Status** 为 **Pass**，**Google Pass** 也可能为 **Fail**，因为 Google 在通用连通性之外还应用了额外的机器人和滥用检测信号。
 
-Test your proxies regularly, especially before running large scraping tasks.
+## 最佳实践
 
-### 3. Remove Failed Proxies
+### 1. 使用可靠的代理提供商
 
-Keep your proxy list clean by removing failed proxies promptly.
+投资优质的代理服务。免费代理通常速度慢、不稳定或已被主要网站屏蔽。
 
-### 4. Use Multiple Proxies
+### 2. 定期健康检查
 
-For large-scale scraping, use multiple proxies to:
-- Distribute the load
-- Reduce the risk of IP blocks
-- Increase scraping speed
+定期测试您的代理，尤其是在运行大规模抓取任务之前。
 
-### 5. Match Proxy Location to Target
+### 3. 移除失败的代理
 
-If scraping geo-specific content, use proxies from the same region as your target audience.
+及时移除失败的代理，保持代理列表清洁。
 
-### 6. Monitor Proxy Performance
+### 4. 使用多个代理
 
-Keep track of which proxies perform best and prioritize them in your tasks.
+对于大规模抓取，使用多个代理以：
+- 分配负载
+- 降低 IP 封锁风险
+- 提高抓取速度
 
-### 7. Don't Overuse Single Proxies
+### 5. 代理位置与目标匹配
 
-Even working proxies can get blocked if overused. Rotate them regularly.
+如果抓取特定地区的内容，请使用与目标受众相同地区的代理。
 
-## Troubleshooting Proxy Issues
+### 6. 监控代理性能
 
-### All Proxies Show "Failure"
+跟踪哪些代理表现最佳，并在任务中优先使用它们。
 
-**Possible causes:**
-- Network connectivity issues
-- Incorrect proxy credentials
-- Proxy provider service is down
+### 7. 不要过度使用单个代理
 
-**Solutions:**
-- Check your internet connection
-- Verify username/password with your proxy provider
-- Contact your proxy provider
+即使是正常工作的代理也可能因过度使用而被封禁。请定期轮换。
 
-### Some Proxies Fail Intermittently
+## 代理问题排查
 
-**Possible causes:**
-- Proxy server is overloaded
-- Unstable proxy service
+### 所有代理显示 "Failure"
 
-**Solutions:**
-- Remove unreliable proxies
-- Use health check results to identify stable proxies
-- Consider upgrading your proxy service
+**可能原因：**
+- 网络连接问题
+- 代理凭据不正确
+- 代理提供商服务中断
 
-### Proxies Work in Tests but Fail During Scraping
+**解决方案：**
+- 检查您的网络连接
+- 向代理提供商核实用户名/密码
+- 联系您的代理提供商
 
-**Possible causes:**
-- Target website has stricter anti-scraping measures
-- Proxy is rate-limited by the target
+### 部分代理间歇性失败
 
-**Solutions:**
-- Use more proxies to distribute requests
-- Slow down request frequency
-- Try different proxy providers
+**可能原因：**
+- 代理服务器过载
+- 代理服务不稳定
 
-### Can't Connect to Proxy
+**解决方案：**
+- 移除不可靠的代理
+- 使用健康检查结果识别稳定的代理
+- 考虑升级您的代理服务
 
-**Possible causes:**
-- Firewall blocking proxy connection
-- Incorrect proxy settings
-- Proxy server is offline
+### 代理在测试中正常但抓取时失败
 
-**Solutions:**
-- Check firewall settings
-- Verify proxy host and port
-- Test proxy in a browser or with curl
+**可能原因：**
+- 目标网站有更严格的反抓取措施
+- 代理被目标网站限速
+- **Status** 为 **Pass** 但 **Google Pass** 为 **Fail**，而任务依赖 Google
 
-## Security Considerations
+**解决方案：**
+- 使用更多代理来分配请求
+- 降低请求频率
+- 尝试不同的代理提供商
+- 对于大量依赖 Google 的工作流，优先选择 **Google Pass** 为 **Pass** 的代理
 
-### Protect Your Proxy Credentials
+### 无法连接到代理
 
-- Treat proxy usernames and passwords like sensitive data
-- Don't share proxy lists with unauthorized users
-- Use secure methods to transfer proxy information
+**可能原因：**
+- 防火墙阻止代理连接
+- 代理设置不正确
+- 代理服务器离线
 
-### Use HTTPS Proxies
+**解决方案：**
+- 检查防火墙设置
+- 验证代理主机和端口
+- 在浏览器或使用 curl 测试代理
 
-HTTPS proxies encrypt traffic between you and the proxy server, providing better security.
+## 安全注意事项
 
-### Rotate Proxies Regularly
+### 保护代理凭据
 
-Regularly change your proxy pool to maintain security and avoid detection.
+- 将代理用户名和密码视为敏感数据
+- 不要与未授权用户分享代理列表
+- 使用安全方式传输代理信息
 
-## Next Steps
+### 使用 HTTPS 代理
 
-Now that you've configured your proxies:
+HTTPS 代理会加密您与代理服务器之间的流量，提供更好的安全性。
 
-- [Learn about search engine scraping](../lead-generation/search-engines)
-- [Set up contact extraction](../lead-generation/contact-extraction)
-- [Configure the Knowledge Library](../ai-outreach/knowledge-library)
+### 定期轮换代理
+
+定期更换代理池以维护安全性并避免被检测。
+
+## 下一步
+
+配置好代理后：
+
+- [了解搜索引擎抓取](../lead-generation/search-engines)
+- [设置联系信息提取](../lead-generation/contact-extraction)
+- [配置知识库](../ai-outreach/knowledge-library)
 
 ---
 
-**Need proxies?** Consider these popular proxy providers:
-- Bright Data (formerly Luminati)
+**需要代理？** 可以考虑以下流行的代理提供商：
+- Bright Data（原 Luminati）
 - Smartproxy
 - Oxylabs
 - Storm Proxies
 - ProxyMesh
 
-*Note: This is not an endorsement. Research and choose based on your specific needs.*
+*注：以上并非推荐。请根据您的具体需求进行研究并选择。*

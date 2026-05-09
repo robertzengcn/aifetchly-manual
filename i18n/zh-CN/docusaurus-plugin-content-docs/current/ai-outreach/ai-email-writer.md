@@ -5,77 +5,77 @@ sidebar_label: AI Email Writer
 description: Create personalized, AI-generated email templates with variable substitution and Knowledge Library integration.
 ---
 
-# AI Email Writer
+# AI 邮件撰写器
 
-The AI Email Writer is aiFetchly's intelligent email creation system. Generate personalized outreach emails, create reusable templates with dynamic variables, and leverage your Knowledge Library for context-aware messaging.
+AI 邮件撰写器是 aiFetchly 的智能邮件创建系统。它可以生成个性化的推广邮件、创建带有动态变量的可复用模板，并利用知识库实现具有上下文感知能力的邮件内容。
 
-## Understanding AI Email Generation
+## 了解 AI 邮件生成
 
-Traditional email templates are static and generic. aiFetchly's AI Email Writer:
+传统的邮件模板是静态且通用的。aiFetchly 的 AI 邮件撰写器：
 
-- **Generates unique content** for each recipient
-- **Incorporates your knowledge base** through RAG integration
-- **Personalizes at scale** while maintaining quality
-- **Adapts to different contexts** and recipient types
+- **为每位收件人生成独特的内容**
+- **通过 RAG 集成整合您的知识库**
+- **在保持质量的同时实现大规模个性化**
+- **适应不同的场景和收件人类型**
 
-:::info AI + Knowledge Library
+:::info AI + 知识库
 
-For best results, [upload relevant documents](./knowledge-library) to your Knowledge Library before generating emails. The AI will reference your specific products, services, and value propositions.
+为了获得最佳效果，请在生成邮件之前将[相关文档上传](./knowledge-library)至您的知识库。AI 将引用您特定的产品、服务和价值主张。
 
 :::
 
-## Email Templates Overview
+## 邮件模板概览
 
-Templates are the foundation of your email campaigns. They contain:
+模板是邮件营销活动的基础。它们包含：
 
-1. **Static Content**: Base message that stays consistent
-2. **Dynamic Variables**: Placeholders that get replaced with recipient-specific data
-3. **AI Generation**: Optional AI-powered content creation
-4. **Rich Formatting**: Support for various text styles
+1. **静态内容**：保持一致的基础信息
+2. **动态变量**：会被替换为收件人特定数据的占位符
+3. **AI 生成**：可选的 AI 驱动内容创建
+4. **富文本格式**：支持多种文本样式
 
-## Creating Email Templates
+## 创建邮件模板
 
-### Step 1: Navigate to Email Marketing
+### 第一步：进入邮件营销
 
-1. Click **Email Marketing** in the left navigation menu
-2. Select **Templates** from the submenu
-3. Click **Create New Template**
+1. 点击左侧导航菜单中的 **Email Marketing**
+2. 从子菜单中选择 **Templates**
+3. 点击 **Create New Template**
 
-### Step 2: Template Information
+### 第二步：模板信息
 
-Enter the following details:
+输入以下详细信息：
 
-#### Title (Required)
+#### 标题（必填）
 
-- **Purpose**: Identify the template in your list
-- **Example**: "Product Launch Outreach", "Partnership Proposal"
-- **Guideline**: Use descriptive, specific names
+- **用途**：在列表中标识模板
+- **示例**："产品发布推广"、"合作提案"
+- **建议**：使用具有描述性的具体名称
 
-#### Description (Optional)
+#### 描述（可选）
 
-- **Purpose**: Provide context about the template's use case
-- **Example**: "Initial outreach for new product launch to qualified leads"
-- **Guideline**: Include when to use, target audience, and key messaging
+- **用途**：提供模板使用场景的上下文信息
+- **示例**："面向合格潜在客户的新产品发布初始推广"
+- **建议**：包含使用时机、目标受众和关键信息
 
-### Step 3: Template Content
+### 第三步：模板内容
 
-Write your email content in the rich text editor.
+在富文本编辑器中编写您的邮件内容。
 
-#### Using Variables
+#### 使用变量
 
-Variables are placeholders that get replaced with actual data when sending emails.
+变量是在发送邮件时会被实际数据替换的占位符。
 
-**Available Variables:**
+**可用变量：**
 
-| Variable | Description | Example Output |
+| 变量 | 描述 | 示例输出 |
 |----------|-------------|----------------|
-| `{$send_time}` | Current timestamp | "2024-01-15 10:30 AM" |
-| `{$sender}` | Sender name | "John Smith" |
-| `{$receiver_email}` | Recipient's email | "contact@company.com" |
-| `{$url}` | Source URL | "https://company.com" |
-| `{$description}` | Description text | "Software company in New York" |
+| `{$send_time}` | 当前时间戳 | "2024-01-15 10:30 AM" |
+| `{$sender}` | 发件人姓名 | "John Smith" |
+| `{$receiver_email}` | 收件人邮箱 | "contact@company.com" |
+| `{$url}` | 来源网址 | "https://company.com" |
+| `{$description}` | 描述文本 | "Software company in New York" |
 
-**Example Template with Variables:**
+**使用变量的模板示例：**
 
 ```
 Subject: Partnership Opportunity from {$sender}
@@ -94,7 +94,7 @@ Best regards,
 Sent: {$send_time}
 ```
 
-**After Variable Substitution:**
+**变量替换后：**
 
 ```
 Subject: Partnership Opportunity from John Smith
@@ -113,93 +113,93 @@ John Smith
 Sent: 2024-01-15 10:30 AM
 ```
 
-### Step 4: AI-Generated Content (Optional)
+### 第四步：AI 生成内容（可选）
 
-For AI-powered content generation:
+使用 AI 驱动的内容生成：
 
-1. **Toggle "Use AI Generation"**
-2. **Provide a prompt** describing what you want
-3. **Enable RAG Context** to use Knowledge Library
-4. **Click Generate** to create content
+1. **开启"Use AI Generation"开关**
+2. **提供提示词**描述您想要的内容
+3. **启用 RAG 上下文**以使用知识库
+4. **点击 Generate** 生成内容
 
-**Example Prompts:**
-- "Write a friendly introduction email for our marketing services"
-- "Create a personalized outreach mentioning our SaaS platform features"
-- "Generate a partnership proposal email"
+**提示词示例：**
+- "撰写一封关于我们营销服务的友好介绍邮件"
+- "创建一封提及我们 SaaS 平台功能的个性化推广邮件"
+- "生成一封合作提案邮件"
 
-:::tip AI + RAG Integration
+:::tip AI + RAG 集成
 
-When RAG context is enabled, the AI will automatically reference your Knowledge Library to include accurate information about your products, services, and value propositions.
+当启用 RAG 上下文时，AI 将自动参考您的知识库，包含关于您的产品、服务和价值主张的准确信息。
 
 :::
 
-### Step 5: Preview and Test
+### 第五步：预览和测试
 
-1. **Click "Preview"** to see the template with sample variables
-2. **Test different variable combinations**
-3. **Edit content** as needed
-4. **Save Template** when satisfied
+1. **点击"Preview"** 查看带有示例变量的模板
+2. **测试不同的变量组合**
+3. **根据需要编辑内容**
+4. 满意后 **Save Template**
 
-## Managing Templates
+## 管理模板
 
-### Template List
+### 模板列表
 
-Navigate to **Email Marketing** → **Templates** to see all templates.
+导航至 **Email Marketing** → **Templates** 查看所有模板。
 
-**Template Information:**
-- Title
-- Description
-- Creation date
-- Last modified date
-- Usage count
+**模板信息：**
+- 标题
+- 描述
+- 创建日期
+- 最后修改日期
+- 使用次数
 
-### Template Actions
+### 模板操作
 
-| Action | Description |
+| 操作 | 描述 |
 |--------|-------------|
-| **Edit** | Modify template content and variables |
-| **Duplicate** | Create a copy of the template |
-| **Delete** | Remove template (confirm required) |
-| **Preview** | See template with sample variables |
-| **Use in Campaign** | Select for batch email sending |
+| **Edit** | 修改模板内容和变量 |
+| **Duplicate** | 创建模板副本 |
+| **Delete** | 删除模板（需确认） |
+| **Preview** | 查看带有示例变量的模板 |
+| **Use in Campaign** | 选择用于批量邮件发送 |
 
-### Best Practices for Templates
+### 模板最佳实践
 
-#### 1. Clear Subject Lines
+#### 1. 清晰的主题行
 
-- ✅ "Partnership Opportunity: [Their Company] + [Your Company]"
-- ✅ "Quick Question About [Their Industry]"
-- ❌ "Hello" or "Hi"
+- ✅ "合作机会：[对方公司] + [您的公司]"
+- ✅ "关于[对方行业]的一个问题"
+- ❌ "你好" 或 "嗨"
 
-#### 2. Personalization
+#### 2. 个性化
 
-- Use variables to personalize content
-- Mention specific details about the recipient
-- Reference their website, industry, or work
+- 使用变量来个性化内容
+- 提及收件人的具体细节
+- 引用他们的网站、行业或业务
 
-#### 3. Value-First Approach
+#### 3. 价值优先
 
-- Lead with value, not just a pitch
-- Explain benefits, not just features
-- Be clear about what's in it for them
+- 以价值为导向，而不仅仅是推销
+- 解释利益，而不仅仅是功能
+- 明确对方能获得什么
 
-#### 4. Clear Call-to-Action
+#### 4. 明确的行动号召
 
-- Single, clear next step
-- Easy to understand
-- Low friction (e.g., "Reply to this email")
+- 单一、清晰的下一步
+- 易于理解
+- 低门槛（例如，"回复此邮件"）
 
-#### 5. Professional Tone
+#### 5. 专业的语气
 
-- Proofread for grammar and spelling
-- Maintain professional language
-- Avoid overly casual or salesy language
+- 检查语法和拼写
+- 保持专业用语
+- 避免过于随意或过度推销的语言
 
-## Template Examples
+## 模板示例
 
-### Example 1: Product Outreach
+### 示例一：产品推广
 
-**Subject:** Improve Your [Industry] Workflow with [Product Name]
+**主题：** 用 [产品名称] 提升您的 [行业] 工作流程
 
 ```
 Hi,
@@ -215,9 +215,9 @@ Best,
 {$sender}
 ```
 
-### Example 2: Partnership Proposal
+### 示例二：合作提案
 
-**Subject:** Partnership Opportunity Between [Their Company] & [Your Company]
+**主题：** [对方公司] 与 [您的公司] 的合作机会
 
 ```
 
@@ -236,9 +236,9 @@ Best regards,
 {$sender}
 ```
 
-### Example 3: Content Collaboration
+### 示例三：内容合作
 
-**Subject:** Content Collaboration Opportunity
+**主题：** 内容合作机会
 
 ```
 Hi,
@@ -256,9 +256,9 @@ Best,
 {$sender}
 ```
 
-### Example 4: Service Introduction
+### 示例四：服务介绍
 
-**Subject:** [Service Type] for [Their Company]
+**主题：** 为 [对方公司] 提供 [服务类型]
 
 ```
 Hi,
@@ -277,11 +277,11 @@ Best regards,
 {$sender}
 ```
 
-## Advanced Features
+## 高级功能
 
-### Conditional Content
+### 条件内容
 
-Create variations based on recipient data:
+根据收件人数据创建不同版本：
 
 ```
 {$if_industry}
@@ -293,26 +293,26 @@ Adjust messaging based on company size
 {$endif}
 ```
 
-### Multi-Language Support
+### 多语言支持
 
-Create templates in multiple languages:
+创建多语言模板：
 
-1. **Duplicate template** for each language
-2. **Translate content** maintaining variable structure
-3. **Use appropriate template** based on recipient location
+1. **复制模板**用于每种语言
+2. **翻译内容**，保持变量结构不变
+3. **根据收件人所在地区使用相应模板**
 
-### A/B Testing
+### A/B 测试
 
-Create multiple template variations:
+创建多个模板变体：
 
-1. **Duplicate template** 2-3 times
-2. **Make one change** per version (subject line, opening, CTA)
-3. **Test with small batches** first
-4. **Measure results** and use winning version
+1. **复制模板** 2-3 次
+2. **每个版本仅修改一处**（主题行、开头、行动号召）
+3. **先用小批量测试**
+4. **衡量结果**并使用最佳版本
 
-### Dynamic Content Blocks
+### 动态内容块
 
-Use different content sections based on variables:
+根据变量使用不同的内容片段：
 
 ```
 {$value_proposition_1}
@@ -320,89 +320,89 @@ Alternative: {$value_proposition_2}
 Alternative: {$value_proposition_3}
 ```
 
-## Integration with Batch Email Sending
+## 与批量邮件发送的集成
 
-Templates are used in the batch email sending workflow:
+模板在批量邮件发送工作流中使用：
 
-1. **Choose Template** in Step 2 of the batch email process
-2. **Variables are automatically populated** from your email list
-3. **Each recipient gets a personalized email**
-4. **AI can enhance** the template with Knowledge Library content
+1. **选择模板**在批量邮件流程的第二步
+2. **变量自动填充**来自您的邮件列表
+3. **每位收件人收到个性化邮件**
+4. **AI 可以增强**模板，融入知识库内容
 
-For detailed instructions, see [Batch Email Sending](../lead-generation/batch-email-sending).
+详细说明请参阅[批量邮件发送](../lead-generation/batch-email-sending)。
 
-## Troubleshooting
+## 故障排除
 
-### Variables Not Replaced
+### 变量未被替换
 
-**Possible causes:**
-- Variable names misspelled
-- Missing data in email list
-- Incorrect variable syntax
+**可能原因：**
+- 变量名拼写错误
+- 邮件列表中缺少数据
+- 变量语法不正确
 
-**Solutions:**
-1. Check variable syntax: `{$variable_name}`
-2. Verify data exists for all variables
-3. Test with preview before sending
+**解决方案：**
+1. 检查变量语法：`{$variable_name}`
+2. 确认所有变量的数据都存在
+3. 发送前使用预览进行测试
 
-### AI Generation Not Working
+### AI 生成不工作
 
-**Possible causes:**
-- AI service not configured
-- RAG context enabled but no documents in Knowledge Library
-- Prompt too vague
+**可能原因：**
+- AI 服务未配置
+- RAG 上下文已启用但知识库中没有文档
+- 提示词过于模糊
 
-**Solutions:**
-1. Check AI settings in system configuration
-2. Upload relevant documents to Knowledge Library
-3. Provide specific, detailed prompts
-4. Try with RAG disabled first
+**解决方案：**
+1. 检查系统配置中的 AI 设置
+2. 将相关文档上传至知识库
+3. 提供具体、详细的提示词
+4. 先尝试在禁用 RAG 的情况下使用
 
-### Template Too Generic
+### 模板过于通用
 
-**Possible causes:**
-- Overuse of static text
-- Not enough variables
-- AI generation disabled
+**可能原因：**
+- 过多使用静态文本
+- 变量不足
+- AI 生成已禁用
 
-**Solutions:**
-1. Add more variables for personalization
-2. Enable AI generation for dynamic content
-3. Use RAG context for specific information
-4. Create multiple templates for different use cases
+**解决方案：**
+1. 添加更多变量以实现个性化
+2. 启用 AI 生成以获取动态内容
+3. 使用 RAG 上下文获取具体信息
+4. 为不同使用场景创建多个模板
 
-## Best Practices Summary
+## 最佳实践总结
 
-### DO ✅
+### 应该做 ✅
 
-- **Personalize content** with variables
-- **Test thoroughly** before campaigns
-- **Keep subject lines** clear and compelling
-- **Provide value** upfront
-- **Use clear CTAs**
-- **Proofread** all templates
-- **Create variations** for different audiences
-- **Leverage AI** with RAG context
+- **使用变量**实现内容个性化
+- **在营销活动前充分测试**
+- **保持主题行**清晰且有吸引力
+- ** upfront 提供价值**
+- **使用明确的行动号召**
+- **校对所有模板**
+- **为不同受众创建变体**
+- **结合 RAG 上下文使用 AI**
 
-### DON'T ❌
+### 不应该做 ❌
 
-- **Don't be overly salesy**
-- **Don't use vague subject lines**
-- **Don't send without testing**
-- **Don't ignore recipient context**
-- **Don't make emails too long**
-- **Don't use excessive formatting**
-- **Don't forget call-to-action**
-- **Don't send from "no-reply" addresses**
+- **不要过度推销**
+- **不要使用模糊的主题行**
+- **不要未经测试就发送**
+- **不要忽略收件人上下文**
+- **不要让邮件过长**
+- **不要使用过多格式**
+- **不要忘记行动号召**
+- **不要使用"no-reply"地址发送**
 
-## Next Steps
+## 下一步
 
-After creating your templates:
+创建模板后：
 
-- [Configure email services (SMTP)](../lead-generation/batch-email-sending#configuring-email-services)
-- [Set up batch email sending](../lead-generation/batch-email-sending)
-- [Use the AI Marketing Assistant](./ai-marketing-assistant) for strategy
+- [配置邮件服务 (SMTP)](../lead-generation/batch-email-sending#configuring-email-services)
+- [设置批量邮件发送](../lead-generation/batch-email-sending)
+- [使用 AI 营销助手](./ai-marketing-assistant) 制定策略
 
 ---
 
-**Ready to create templates?** Start with a simple outreach template and gradually add more personalization and AI-generated content as you become familiar with the system.
+**准备好创建模板了吗？** 从一个简单的推广模板开始，随着您对系统的熟悉，逐步添加更多个性化和 AI 生成内容。

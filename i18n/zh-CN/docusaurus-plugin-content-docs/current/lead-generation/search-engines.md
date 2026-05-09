@@ -1,417 +1,500 @@
 ---
 id: search-engines
-title: Search Engine Scraping
-sidebar_label: Search Engines
-description: Learn how to scrape search results from Google, Bing, and Yandex to generate leads with AI-powered analysis.
+title: 搜索引擎抓取
+sidebar_label: 搜索引擎
+description: 了解如何从 Google、Bing 和 Yandex 抓取搜索结果，通过 AI 驱动的分析来生成潜在客户。
 ---
 
-# Search Engine Scraping
+# 搜索引擎抓取
 
-aiFetchly's multi-engine search scraping feature allows you to collect leads from multiple search engines simultaneously. Extract business information, URLs, and contact details from search results automatically.
+aiFetchly 的多引擎搜索抓取功能允许您同时从多个搜索引擎收集潜在客户。自动从搜索结果中提取企业信息、URL 和联系方式。借助 AI 分析功能，您可以对潜在客户进行评分、行业分类并提取联系信息——全部从搜索结果中完成。
 
-## Supported Search Engines
+## 支持的搜索引擎
 
-| Engine | Best For | Account Required | Local Browser |
+| 引擎 | 最佳用途 | 是否需要账号 | 本地浏览器 |
 |--------|----------|------------------|---------------|
-| **Google** | General searches, global reach | Recommended | Optional |
-| **Bing** | Microsoft ecosystem, US market | Optional | Optional |
-| **Yandex** | Russian market, Cyrillic content | Recommended | **Required** |
+| **Google** | 通用搜索，全球覆盖 | 推荐 | 可选 |
+| **Bing** | 微软生态系统，美国市场 | 可选 | 可选 |
+| **Yandex** | 俄罗斯市场，西里尔文内容 | 推荐 | **必需** |
 
-:::info Yandex Requirement
+:::info Yandex 要求
 
-Yandex scraping requires **local browser integration** for proper operation. Enable this option when creating Yandex tasks.
-
-:::
-
-## Creating a Search Task
-
-### Step 1: Navigate to Search
-
-1. Click **Search** in the left navigation menu
-2. You'll see the **Search Form** page
-
-### Step 2: Basic Search Configuration
-
-Enter the following required information:
-
-#### Keywords
-
-1. **Enter Your Keywords**: Type or paste your search keywords in the text area
-   - One keyword per line
-   - Use specific, targeted keywords for better results
-
-2. **Generate Related Keywords** (Optional):
-   - Click the **Generate Related Keywords** button
-   - aiFetchly uses AI to generate related search terms
-   - Expands your keyword list for broader coverage
-   - Removes duplicates automatically
-
-:::tip Keyword Strategy
-
-Start with 5-10 seed keywords, then use AI generation to expand to 20-50 related keywords for comprehensive coverage.
+Yandex 抓取需要**本地浏览器集成**才能正常运行。在创建 Yandex 任务时请启用此选项。
 
 :::
 
-#### Search Engine
+## 创建搜索任务
 
-Select the search engine from the dropdown:
-- Google (default)
+### 第 1 步：进入搜索
+
+1. 点击左侧导航菜单中的 **Search**
+2. 您将看到 **Search Form** 页面
+
+### 第 2 步：基本搜索配置
+
+输入以下必填信息：
+
+#### 关键词
+
+1. **输入关键词**：在文本区域中输入或粘贴您的搜索关键词
+   - 每行一个关键词
+   - 使用具体、有针对性的关键词以获得更好的结果
+
+2. **生成相关关键词**（可选）：
+   - 点击 **Generate Related Keywords** 按钮
+   - aiFetchly 使用 AI 生成相关搜索词
+   - 扩展您的关键词列表以获得更广泛的覆盖
+   - 自动去除重复项
+
+:::tip 关键词策略
+
+从 5-10 个种子关键词开始，然后使用 AI 生成功能扩展到 20-50 个相关关键词，以实现全面覆盖。
+
+:::
+
+#### 搜索引擎
+
+从下拉菜单中选择搜索引擎：
+- Google（默认）
 - Bing
 - Yandex
 
-#### Page Number
+#### 页码
 
-Specify which page to start scraping from:
-- **Start at page 1** for fresh searches
-- **Resume from page X** if continuing a previous task
+指定从哪一页开始抓取：
+- **从第 1 页开始**进行全新搜索
+- **从第 X 页继续**，如果是继续之前的任务
 
-#### Concurrent Quantity
+#### 并发数量
 
-Set the number of concurrent searches:
-- **1** (default): Safest, slowest
-- **3-5**: Moderate speed, good for most use cases
-- **10+**: Fastest, requires more proxies
+设置并发搜索的数量：
+- **1**（默认）：最安全，最慢
+- **3-5**：中等速度，适合大多数使用场景
+- **10+**：最快，需要更多代理
 
-:::warning Concurrency Limits
+:::warning 并发限制
 
-Higher concurrency increases the risk of being blocked. Start with 1-3 and increase gradually.
-
-:::
-
-### Step 3: Advanced Options
-
-#### Proxy Configuration
-
-**Option A: Use Saved Proxies**
-
-1. Click the **Choose Proxy** button
-2. Select one or more proxies from your list
-3. Click **Confirm** to add them to the task
-
-**Option B: Manual Proxy Entry**
-
-1. Toggle the proxy option
-2. Enter proxy details manually:
-   - Host/IP address
-   - Port number
-   - Username (if required)
-   - Password (if required)
-
-:::tip Proxy Best Practices
-
-Use multiple proxies for high-concurrency tasks to distribute load and avoid blocks.
+较高的并发会增加被封锁的风险。从 1-3 开始，然后逐渐增加。
 
 :::
 
-#### Local Browser Integration
+### 第 3 步：高级选项
 
-Enable local browser scraping for more human-like behavior:
+#### 代理配置
 
-1. Toggle **Local Browser** to enable
-2. Select your Chrome browser from the list
-3. **Required for**: Yandex scraping
-4. **Recommended for**: Google at scale
+**选项 A：使用已保存的代理**
 
-**Benefits:**
-- Lower detection rates
-- Better success with anti-bot protections
-- More consistent results
+1. 点击 **Choose Proxy** 按钮
+2. 从列表中选择一个或多个代理
+3. 点击 **Confirm** 将其添加到任务中
 
-#### Search Account Usage
+**选项 B：手动输入代理**
 
-Use authenticated accounts for better success rates:
+1. 切换代理选项
+2. 手动输入代理详情：
+   - 主机/IP 地址
+   - 端口号
+   - 用户名（如需要）
+   - 密码（如需要）
 
-1. Toggle **Search Account** to enable
-2. Click **Choose Account** to select saved credentials
-3. Select accounts matching your search engine
-4. Click **Confirm**
+:::tip 代理最佳实践
 
-**Recommendations:**
-- **Google**: Use accounts for large-scale scraping
-- **Yandex**: Use accounts for better access
-- **Bing**: Optional, less critical
+在高并发任务中使用多个代理，以分散负载并避免被封锁。
 
-### Step 4: Execute or Save
+:::
 
-Choose one of the following options:
+#### 本地浏览器集成
 
-#### Save Only
+启用本地浏览器抓取以获得更接近真人的行为：
 
-- Creates the task without running it
-- Useful for scheduling or batch task creation
-- Task status: "Not Start"
+1. 切换 **Local Browser** 以启用
+2. 从列表中选择您的 Chrome 浏览器
+3. **适用于**：Yandex 抓取
+4. **推荐用于**：大规模 Google 抓取
 
-#### Run Task
+**优势：**
+- 更低的检测率
+- 更好地应对反爬虫保护
+- 更稳定的结果
 
-- Creates and executes the task immediately
-- Status changes to "Processing"
-- Results appear in real-time
+#### 在浏览器中显示
 
-## Managing Search Tasks
+切换 **Show in Browser** 以控制抓取过程中的浏览器可见性：
 
-### View Task List
+- **启用**：抓取时浏览器窗口可见——适合调试或监控进度
+- **禁用**（默认）：浏览器以无头模式运行，速度更快，在后台操作
 
-Navigate to **Search** → **Result List** to see all your search tasks.
+#### 启用 AI 恢复
 
-**Task List Columns:**
+切换 **Enable AI Recovery** 让 AI 自动从抓取错误中恢复：
 
-| Column | Description |
+- 启用后，aiFetchly 使用 AI 诊断并恢复抓取过程中遇到的错误
+- 系统可以分析错误截图并调整策略
+- 恢复尝试有速率限制，以避免过度消耗资源
+
+:::tip 何时使用 AI 恢复
+
+在抓取具有强反爬虫保护的引擎（如 Google）或运行大规模任务时（可能出现偶发错误），请启用 AI 恢复。
+
+:::
+
+#### 搜索账号使用
+
+使用已认证的账号以获得更高的成功率：
+
+1. 切换 **Search Account** 以启用
+2. 点击 **Choose Account** 选择已保存的凭据
+3. 选择与您使用的搜索引擎匹配的账号
+4. 点击 **Confirm**
+
+**建议：**
+- **Google**：大规模抓取时使用账号
+- **Yandex**：使用账号以获得更好的访问权限
+- **Bing**：可选，不那么关键
+
+### 第 4 步：执行或保存
+
+选择以下选项之一：
+
+#### 仅保存
+
+- 创建任务但不运行
+- 适合安排计划或批量创建任务
+- 任务状态："Not Start"
+
+#### 运行任务
+
+- 立即创建并执行任务
+- 状态变为"Processing"
+- 结果实时显示
+
+## 管理搜索任务
+
+### 查看任务列表
+
+导航至 **Search** → **Result List** 查看所有搜索任务。
+
+**任务列表列：**
+
+| 列 | 描述 |
 |--------|-------------|
-| **ID** | Unique task identifier |
-| **Keywords** | Keywords used in the search |
-| **Search Engine** | Engine used (Google, Bing, etc.) |
-| **Status** | Not Start, Processing, Complete, Error |
-| **Created** | Date and time created |
-| **Actions** | Run, Edit, Delete, View Results |
+| **ID** | 唯一任务标识符 |
+| **Keywords** | 搜索中使用的关键词 |
+| **Search Engine** | 使用的引擎（Google、Bing 等） |
+| **Status** | Not Start、Processing、Complete、Error |
+| **Record Time** | 创建日期和时间 |
+| **Actions** | Run、Edit、View Results、Kill Process、Retry、Download Logs |
 
-### Task Actions
+### 任务操作
 
-| Action | Description | When Available |
+| 操作 | 描述 | 何时可用 |
 |--------|-------------|----------------|
-| **Run** | Start a "Not Start" task | Task not started |
-| **Retry** | Restart a failed task | Task has "Error" status |
-| **Edit** | Modify task parameters | Any task |
-| **Kill Process** | Stop a running task | Task is "Processing" |
-| **View Results** | See detailed results | Task has results |
-| **Download Logs** | Export error logs | Task has errors |
+| **Run** | 启动"Not Start"状态的任务 | 任务未启动 |
+| **Retry** | 重新启动失败的任务 | 任务处于"Error"状态 |
+| **Edit** | 修改任务参数 | 任何任务 |
+| **Kill Process** | 停止正在运行的任务 | 任务处于"Processing"状态 |
+| **View Results** | 查看详细结果 | 任务有结果 |
+| **Download Logs** | 导出错误日志 | 任务有错误 |
 
-## Viewing Search Results
+## 查看搜索结果
 
-### Step 1: Open Results
+### 第 1 步：打开结果
 
-1. Go to **Search** → **Result List**
-2. Find your task
-3. Click **View Results** to see detailed results
+1. 进入 **Search** → **Result List**
+2. 找到您的任务
+3. 点击 **View Results** 查看详细结果
 
-### Step 2: Results Table
+### 第 2 步：结果表格
 
-The results table displays:
+结果表格显示：
 
-| Column | Description |
+| 列 | 描述 |
 |--------|-------------|
-| **ID** | Result identifier |
-| **Title** | Page title from search result |
-| **Link** | URL of the search result |
-| **Keyword** | Keyword that generated this result |
-| **Timestamp** | When the result was scraped |
-| **AI Industry** | Industry classification (if analyzed) |
-| **AI Match Score** | Lead quality score (if analyzed) |
-| **Analysis Status** | Analysis completion status |
+| **ID** | 结果标识符 |
+| **Title** | 搜索结果中的页面标题 |
+| **Link** | 搜索结果的 URL |
+| **Keyword** | 生成此结果的关键词 |
+| **Record Time** | 结果被抓取的时间 |
+| **Customer Industry** | AI 分类的行业（如已分析） |
+| **Probability** | AI 潜在客户质量评分 0-100%（如已分析） |
+| **Analysis Status** | 分析完成状态（pending/analyzing/completed/failed） |
+| **Contact Extraction** | 联系信息提取状态 |
+| **Email** | 提取的电子邮件地址（如已提取） |
+| **Phone** | 提取的电话号码（如已提取） |
+| **Address** | 提取的物理地址（如已提取） |
 
-### Step 3: Interact with Results
+:::tip 列可见性
 
-**Individual Actions:**
-- **Copy Link**: Copy URL to clipboard
-- **Open Link**: Open URL in your browser
+您可以使用**列可见性**菜单自定义显示哪些列。点击列选择器可根据您的工作流程需求显示或隐藏特定列。
 
-**Batch Actions:**
-- Select multiple results using checkboxes
-- **AI Analysis**: Analyze selected results for lead scoring
-- **Extract Emails**: Extract email addresses from selected URLs
-- **Export**: Download results as CSV
+:::
 
-## AI Website Analysis
+### 第 3 步：与结果交互
 
-Enhance your search results with AI-powered analysis:
+**单个操作：**
+- **Copy Link**：将 URL 复制到剪贴板
+- **Copy Contact Info**：直接复制提取的电子邮件、电话或地址
 
-### Step 1: Select Results
+**批量操作：**
+- 使用复选框选择多个结果
+- **AI Analyze**：分析选定结果的潜在客户评分和行业分类
+- **AI Extract Contact Info**：从选定 URL 提取联系信息（电子邮件、电话、地址）
+- **Extract Emails**：使用选定的 URL 跳转到电子邮件提取功能
+- **Export**：将结果下载为 CSV（包含 AI 分析字段）
 
-1. Check the boxes next to results you want to analyze
-2. Click the **AI Analysis** button
+## AI 网站分析
 
-### Step 2: Configure Analysis
+使用 AI 驱动的分析增强您的搜索结果：
 
-- **Industry Classification**: Categorize businesses by industry
-- **Lead Scoring**: Rate lead quality (0-100)
-- **Business Context**: Extract business information
+### 第 1 步：选择结果
 
-### Step 3: Monitor Progress
+1. 勾选您要分析的结果旁边的复选框
+2. 点击 **AI Analyze** 按钮
 
-- Progress bar shows completion status
-- Results update in real-time
-- AI Match Score indicates lead quality
+### 第 2 步：提供业务背景
 
-### Step 4: Filter by Score
+将弹出一个对话框，要求您提供业务信息：
 
-After analysis:
-- Use the AI Match Score to prioritize leads
-- Filter results by industry
-- Focus on high-score leads for outreach
+1. **在文本区域中输入您的业务描述**——这有助于 AI 了解您正在寻找什么样的潜在客户
+2. **保存以备将来使用**（可选）：勾选此框以保存您的业务描述供将来分析使用
 
-## Email Extraction from Search Results
+:::tip 业务背景
 
-Extract emails directly from your search results:
+提供清晰、具体的业务和目标客户描述。您提供的背景信息越多，AI 评分就越准确。例如："我们是一家 B2B SaaS 公司，向零售行业的中小型企业销售营销自动化工具。"
 
-### Step 1: Select Results
+:::
 
-1. Check boxes next to results containing URLs you want to extract emails from
-2. Click **Extract Emails** button
+### 第 3 步：查看分析结果
 
-### Step 2: Configure Extraction
+AI 为每个分析结果生成以下内容：
 
-The selected URLs are automatically passed to the [Email Extraction](./contact-extraction) feature.
+| 字段 | 描述 |
+|-------|-------------|
+| **Customer Industry** | AI 分类的行业类别 |
+| **Probability** | 潜在客户质量评分 0-100% |
+| **AI Reasoning** | 解释为何对该潜在客户给出此评分 |
+| **Client Business** | 识别出的网站业务类型 |
 
-### Step 3: View Extracted Emails
+### 第 4 步：监控进度
 
-Navigate to the Email Extraction section to view collected emails.
+- 进度条显示批量操作的完成状态
+- 每个网站分析完成后结果实时更新
+- 分析状态追踪每个结果：pending → analyzing → completed/failed
 
-## Exporting Search Results
+### 第 5 步：按评分筛选
 
-### Export as CSV
+分析完成后：
+- 使用 Probability 评分来确定潜在客户的优先级
+- 重点关注评分 70% 以上的潜在客户进行推广
+- 按行业分类筛选结果
 
-1. Select results you want to export (or leave blank for all)
-2. Click **Export** → **CSV**
-3. Choose save location
-4. File includes all columns from the results table
+## AI 联系信息提取
 
-### Export Error Logs
+使用 AI 直接从搜索结果中提取联系方式：
 
-If a task fails:
+### 第 1 步：选择结果
 
-1. Go to **Search** → **Result List**
-2. Find the failed task
-3. Click **Download Logs**
-4. Review logs to diagnose issues
+1. 勾选您要提取联系信息的结果旁边的复选框
+2. 点击 **AI Extract Contact Info** 按钮
 
-## Best Practices
+### 第 2 步：监控提取过程
 
-### 1. Start Small
+- 系统访问每个选定的 URL 并提取联系信息
+- 提取在后台运行，实时更新进度
+- 状态追踪每个结果：pending → analyzing → completed/failed
 
-- Begin with 5-10 keywords
-- Use low concurrency (1-3)
-- Monitor results before scaling up
+### 第 3 步：查看提取的联系人
 
-### 2. Use Proxies
+提取的信息直接显示在结果表格中：
 
-- Always use proxies for more than 10 pages
-- Rotate proxies to distribute load
-- Test proxies before running large tasks
+| 字段 | 描述 |
+|-------|-------------|
+| **Email** | 提取的电子邮件地址 |
+| **Phone** | 提取的电话号码 |
+| **Address** | 提取的物理地址 |
 
-### 3. Leverage AI Features
+您可以使用复制按钮直接从表格中复制单个联系字段。
 
-- Use keyword generation to expand coverage
-- Run AI analysis to score leads
-- Focus on high-score results for outreach
+## 从搜索结果中提取电子邮件
 
-### 4. Engine-Specific Tips
+直接从搜索结果中提取电子邮件：
 
-**Google:**
-- Use authenticated accounts
-- Enable local browser for large tasks
-- Respect rate limits (start with 1 concurrent)
+### 第 1 步：选择结果
 
-**Bing:**
-- More forgiving than Google
-- Can use higher concurrency
-- Good for US-focused searches
+1. 勾选包含要提取电子邮件的 URL 的结果旁边的复选框
+2. 点击 **Extract Emails** 按钮
 
-**Yandex:**
-- **Must use local browser**
-- Use accounts for better access
-- Essential for Russian/Cyrillic content
+### 第 2 步：配置提取
 
-### 5. Monitor Task Status
+选定的 URL 会自动传递到[电子邮件提取](./contact-extraction)功能。
 
-- Check task list regularly
-- Review error logs for failures
-- Adjust settings based on results
+### 第 3 步：查看提取的电子邮件
 
-### 6. Organize Results
+导航到电子邮件提取部分查看收集到的电子邮件。
 
-- Use descriptive task names
-- Export results regularly
-- Clean up old tasks
+## 导出搜索结果
 
-## Troubleshooting
+### 导出为 CSV
 
-### Task Status: "Error"
+1. 选择要导出的结果（或留空选择全部）
+2. 点击 **Export** → **CSV**
+3. 选择保存位置
+4. 文件包含结果表格中的所有列，包括 AI 分析字段（行业、评分、推理）和联系信息（电子邮件、电话、地址）
 
-**Possible causes:**
-- All proxies failed
-- Network connectivity issues
-- Search engine blocked requests
+### 导出错误日志
 
-**Solutions:**
-1. Check proxy health in Proxy section
-2. Verify internet connection
-3. Reduce concurrency
-4. Enable local browser
-5. Use authenticated accounts
+如果任务失败：
 
-### No Results Returned
+1. 进入 **Search** → **Result List**
+2. 找到失败的任务
+3. 点击 **Download Logs**
+4. 查看日志以诊断问题
 
-**Possible causes:**
-- Keywords too specific
-- Search engine returned no results
-- Pagination out of range
+## 最佳实践
 
-**Solutions:**
-1. Try broader keywords
-2. Start from page 1
-3. Verify keywords work in manual search
+### 1. 从小规模开始
 
-### Slow Processing
+- 从 5-10 个关键词开始
+- 使用低并发（1-3）
+- 在扩大规模之前先监控结果
 
-**Possible causes:**
-- High concurrency without enough proxies
-- Local browser enabled (slower but safer)
-- Network latency
+### 2. 使用代理
 
-**Solutions:**
-1. Add more proxies
-2. Reduce concurrency
-3. Consider disabling local browser for speed (with caution)
+- 超过 10 页时务必使用代理
+- 轮换代理以分散负载
+- 在运行大型任务之前测试代理
 
-### Captcha or Block Detected
+### 3. 利用 AI 功能
 
-**Solutions:**
-1. Enable local browser integration
-2. Use authenticated accounts
-3. Add more proxies
-4. Reduce request frequency
-5. Take breaks between large tasks
+- 使用关键词生成扩展覆盖范围
+- 提供清晰的业务背景以获得更准确的 AI 评分
+- 运行 AI 分析以评分和分类潜在客户
+- 使用 AI 联系提取获取电子邮件、电话和地址
+- 重点关注高评分结果进行推广
 
-## Advanced Workflows
+### 4. 各引擎技巧
 
-### Workflow 1: Comprehensive Lead Generation
+**Google：**
+- 使用已认证的账号
+- 大型任务启用本地浏览器
+- 启用 AI 恢复以实现稳健的错误处理
+- 遵守速率限制（从 1 个并发开始）
 
-1. **Create search task** with broad keywords
-2. **Generate related keywords** using AI
-3. **Run with moderate concurrency** (3-5)
-4. **AI analyze** all results
-5. **Filter by match score** (focus on 70+)
-6. **Extract emails** from high-score results
-7. **Export** for email campaigns
+**Bing：**
+- 比 Google 更宽松
+- 可以使用更高的并发
+- 适合以美国为重点的搜索
 
-### Workflow 2: Competitive Analysis
+**Yandex：**
+- **必须使用本地浏览器**
+- 使用账号以获得更好的访问权限
+- 俄罗斯/西里尔文内容必不可少
 
-1. **Search competitor names** + industry keywords
-2. **Use local browser** to avoid detection
-3. **AI analyze** for industry classification
-4. **Export** for market research
+### 5. 监控任务状态
 
-### Workflow 3: Local Business Discovery
+- 定期检查任务列表
+- 查看失败任务的错误日志
+- 根据结果调整设置
 
-1. **Search local keywords** (e.g., "plumbers in Chicago")
-2. **Extract emails** from results
-3. **Batch analyze** websites
-4. **Create targeted outreach** campaigns
+### 6. 整理结果
 
-## Integration with Other Features
+- 使用描述性的任务名称
+- 定期导出结果
+- 清理旧任务
 
-Search results integrate seamlessly with:
+## 故障排除
 
-- **[Contact Extraction](./contact-extraction)** - Extract emails from URLs
-- **[Yellow Pages](./yellow-pages)** - Cross-reference with directory listings
-- **[AI Email Writer](../ai-outreach/ai-email-writer)** - Create personalized outreach
-- **[Batch Email Sending](./batch-email-sending)** - Launch campaigns
+### 任务状态："Error"
 
-## Next Steps
+**可能原因：**
+- 所有代理失败
+- 网络连接问题
+- 搜索引擎封锁了请求
 
-- [Learn about Yellow Pages scraping](./yellow-pages)
-- [Set up contact extraction](./contact-extraction)
-- [Create AI-powered email campaigns](../ai-outreach/ai-email-writer)
+**解决方案：**
+1. 在代理部分检查代理健康状况
+2. 验证互联网连接
+3. 降低并发数
+4. 启用本地浏览器
+5. 使用已认证的账号
+6. 启用 AI 恢复以进行自动错误处理
+
+### 未返回结果
+
+**可能原因：**
+- 关键词过于具体
+- 搜索引擎未返回结果
+- 分页超出范围
+
+**解决方案：**
+1. 尝试更广泛的关键词
+2. 从第 1 页开始
+3. 验证关键词在手动搜索中是否有效
+
+### 处理速度慢
+
+**可能原因：**
+- 高并发但代理不足
+- 本地浏览器已启用（较慢但更安全）
+- 网络延迟
+
+**解决方案：**
+1. 添加更多代理
+2. 降低并发数
+3. 考虑禁用本地浏览器以提高速度（需谨慎）
+
+### 检测到验证码或封锁
+
+**解决方案：**
+1. 启用本地浏览器集成
+2. 使用已认证的账号
+3. 添加更多代理
+4. 降低请求频率
+5. 在大型任务之间休息
+6. 启用 AI 恢复以自动处理封锁
+
+## 高级工作流
+
+### 工作流 1：全面的潜在客户开发
+
+1. 使用广泛的关键词**创建搜索任务**
+2. 使用 AI **生成相关关键词**
+3. **以中等并发运行**（3-5）
+4. **启用 AI 恢复**以实现稳健的错误处理
+5. 使用您的业务背景**AI 分析**所有结果
+6. **按概率评分筛选**（重点关注 70% 以上）
+7. 从高评分结果中 **AI 提取联系信息**
+8. **导出**用于电子邮件营销活动
+
+### 工作流 2：竞争分析
+
+1. **搜索竞争对手名称**+ 行业关键词
+2. **使用本地浏览器**以避免被检测
+3. **AI 分析**进行行业分类
+4. **导出**用于市场研究
+
+### 工作流 3：本地企业发现
+
+1. **搜索本地关键词**（例如"Chicago 水管工"）
+2. 从结果中 **AI 提取联系信息**（电子邮件、电话、地址）
+3. 使用您的业务背景**批量分析**网站
+4. **创建有针对性的推广**活动
+
+## 与其他功能的集成
+
+搜索结果可与以下功能无缝集成：
+
+- **[联系提取](./contact-extraction)** - 从 URL 中提取电子邮件
+- **[黄页](./yellow-pages)** - 与目录列表交叉参考
+- **[AI 邮件撰写器](../ai-outreach/ai-email-writer)** - 创建个性化推广邮件
+- **[批量邮件发送](./batch-email-sending)** - 启动营销活动
+
+## 下一步
+
+- [了解黄页抓取](./yellow-pages)
+- [设置联系提取](./contact-extraction)
+- [创建 AI 驱动的电子邮件营销活动](../ai-outreach/ai-email-writer)
 
 ---
 
-**Ready to find leads?** Start with a small search task and scale up as you become familiar with the system.
+**准备好寻找潜在客户了吗？** 从一个小型搜索任务开始，随着您熟悉系统逐步扩大规模。

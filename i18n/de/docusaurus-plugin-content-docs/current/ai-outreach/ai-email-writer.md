@@ -2,80 +2,80 @@
 id: ai-email-writer
 title: AI Email Writer
 sidebar_label: AI Email Writer
-description: Create personalized, AI-generated email templates with variable substitution and Knowledge Library integration.
+description: Erstellen Sie personalisierte, KI-generierte E-Mail-Vorlagen mit Variablenersetzung und Integration der Wissensbibliothek.
 ---
 
 # AI Email Writer
 
-The AI Email Writer is aiFetchly's intelligent email creation system. Generate personalized outreach emails, create reusable templates with dynamic variables, and leverage your Knowledge Library for context-aware messaging.
+Der AI Email Writer ist aiFetchlys intelligentes E-Mail-Erstellungssystem. Generieren Sie personalisierte Outreach-E-Mails, erstellen Sie wiederverwendbare Vorlagen mit dynamischen Variablen und nutzen Sie Ihre Wissensbibliothek für kontextbezogene Nachrichten.
 
-## Understanding AI Email Generation
+## Grundlagen der KI-E-Mail-Generierung
 
-Traditional email templates are static and generic. aiFetchly's AI Email Writer:
+Herkömmliche E-Mail-Vorlagen sind statisch und generisch. aiFetchlys AI Email Writer:
 
-- **Generates unique content** for each recipient
-- **Incorporates your knowledge base** through RAG integration
-- **Personalizes at scale** while maintaining quality
-- **Adapts to different contexts** and recipient types
+- **Generiert einzigartige Inhalte** für jeden Empfänger
+- **Bezieht Ihre Wissensbasis ein** durch RAG-Integration
+- **Personalisiert im großen Maßstab** bei gleichbleibender Qualität
+- **Passt sich an verschiedene Kontexte** und Empfängertypen an
 
-:::info AI + Knowledge Library
+:::info KI + Wissensbibliothek
 
-For best results, [upload relevant documents](./knowledge-library) to your Knowledge Library before generating emails. The AI will reference your specific products, services, and value propositions.
+Für optimale Ergebnisse laden Sie [relevante Dokumente](./knowledge-library) in Ihre Wissensbibliothek hoch, bevor Sie E-Mails generieren. Die KI wird auf Ihre spezifischen Produkte, Dienstleistungen und Alleinstellungsmerkmale zurückgreifen.
 
 :::
 
-## Email Templates Overview
+## Übersicht der E-Mail-Vorlagen
 
-Templates are the foundation of your email campaigns. They contain:
+Vorlagen sind das Fundament Ihrer E-Mail-Kampagnen. Sie enthalten:
 
-1. **Static Content**: Base message that stays consistent
-2. **Dynamic Variables**: Placeholders that get replaced with recipient-specific data
-3. **AI Generation**: Optional AI-powered content creation
-4. **Rich Formatting**: Support for various text styles
+1. **Statische Inhalte**: Grundnachricht, die gleich bleibt
+2. **Dynamische Variablen**: Platzhalter, die mit empfängerspezifischen Daten ersetzt werden
+3. **KI-Generierung**: Optionale KI-gestützte Inhaltserstellung
+4. **Erweiterte Formatierung**: Unterstützung für verschiedene Textstile
 
-## Creating Email Templates
+## E-Mail-Vorlagen erstellen
 
-### Step 1: Navigate to Email Marketing
+### Schritt 1: Zum E-Mail-Marketing navigieren
 
-1. Click **Email Marketing** in the left navigation menu
-2. Select **Templates** from the submenu
-3. Click **Create New Template**
+1. Klicken Sie auf **Email Marketing** im linken Navigationsmenü
+2. Wählen Sie **Templates** aus dem Untermenü
+3. Klicken Sie auf **Create New Template**
 
-### Step 2: Template Information
+### Schritt 2: Vorlageninformationen
 
-Enter the following details:
+Geben Sie die folgenden Details ein:
 
-#### Title (Required)
+#### Titel (Erforderlich)
 
-- **Purpose**: Identify the template in your list
-- **Example**: "Product Launch Outreach", "Partnership Proposal"
-- **Guideline**: Use descriptive, specific names
+- **Zweck**: Identifizierung der Vorlage in Ihrer Liste
+- **Beispiel**: "Produktlaunch-Outreach", "Partnerschaftsvorschlag"
+- **Richtlinie**: Verwenden Sie beschreibende, spezifische Namen
 
-#### Description (Optional)
+#### Beschreibung (Optional)
 
-- **Purpose**: Provide context about the template's use case
-- **Example**: "Initial outreach for new product launch to qualified leads"
-- **Guideline**: Include when to use, target audience, and key messaging
+- **Zweck**: Kontext zum Anwendungsfall der Vorlage
+- **Beispiel**: "Erstkontakt für neuen Produktlaunch an qualifizierte Leads"
+- **Richtlinie**: Geben Sie an, wann die Vorlage verwendet werden soll, die Zielgruppe und die Kernbotschaft
 
-### Step 3: Template Content
+### Schritt 3: Vorlageninhalt
 
-Write your email content in the rich text editor.
+Verfassen Sie Ihren E-Mail-Inhalt im Rich-Text-Editor.
 
-#### Using Variables
+#### Variablen verwenden
 
-Variables are placeholders that get replaced with actual data when sending emails.
+Variablen sind Platzhalter, die beim Versenden der E-Mails durch tatsächliche Daten ersetzt werden.
 
-**Available Variables:**
+**Verfügbare Variablen:**
 
-| Variable | Description | Example Output |
-|----------|-------------|----------------|
-| `{$send_time}` | Current timestamp | "2024-01-15 10:30 AM" |
-| `{$sender}` | Sender name | "John Smith" |
-| `{$receiver_email}` | Recipient's email | "contact@company.com" |
-| `{$url}` | Source URL | "https://company.com" |
-| `{$description}` | Description text | "Software company in New York" |
+| Variable | Beschreibung | Beispielausgabe |
+|----------|-------------|-----------------|
+| `{$send_time}` | Aktueller Zeitstempel | "2024-01-15 10:30 AM" |
+| `{$sender}` | Absendername | "John Smith" |
+| `{$receiver_email}` | E-Mail-Adresse des Empfängers | "contact@company.com" |
+| `{$url}` | Quell-URL | "https://company.com" |
+| `{$description}` | Beschreibungstext | "Software company in New York" |
 
-**Example Template with Variables:**
+**Beispielvorlage mit Variablen:**
 
 ```
 Subject: Partnership Opportunity from {$sender}
@@ -94,7 +94,7 @@ Best regards,
 Sent: {$send_time}
 ```
 
-**After Variable Substitution:**
+**Nach Variablenersetzung:**
 
 ```
 Subject: Partnership Opportunity from John Smith
@@ -113,93 +113,93 @@ John Smith
 Sent: 2024-01-15 10:30 AM
 ```
 
-### Step 4: AI-Generated Content (Optional)
+### Schritt 4: KI-generierte Inhalte (Optional)
 
-For AI-powered content generation:
+Für KI-gestützte Inhaltserstellung:
 
-1. **Toggle "Use AI Generation"**
-2. **Provide a prompt** describing what you want
-3. **Enable RAG Context** to use Knowledge Library
-4. **Click Generate** to create content
+1. **Aktivieren Sie "Use AI Generation"**
+2. **Geben Sie einen Prompt ein**, der beschreibt, was Sie möchten
+3. **Aktivieren Sie RAG Context**, um die Wissensbibliothek zu nutzen
+4. **Klicken Sie auf Generate**, um Inhalte zu erstellen
 
-**Example Prompts:**
-- "Write a friendly introduction email for our marketing services"
-- "Create a personalized outreach mentioning our SaaS platform features"
-- "Generate a partnership proposal email"
+**Beispiel-Prompts:**
+- "Schreibe eine freundliche Vorstellungs-E-Mail für unsere Marketingdienstleistungen"
+- "Erstelle einen personalisierten Outreach, der unsere SaaS-Plattform-Funktionen erwähnt"
+- "Generiere eine E-Mail für einen Partnerschaftsvorschlag"
 
-:::tip AI + RAG Integration
+:::tip KI + RAG-Integration
 
-When RAG context is enabled, the AI will automatically reference your Knowledge Library to include accurate information about your products, services, and value propositions.
+Wenn der RAG-Kontext aktiviert ist, greift die KI automatisch auf Ihre Wissensbibliothek zu, um präzise Informationen über Ihre Produkte, Dienstleistungen und Alleinstellungsmerkmale einzubeziehen.
 
 :::
 
-### Step 5: Preview and Test
+### Schritt 5: Vorschau und Test
 
-1. **Click "Preview"** to see the template with sample variables
-2. **Test different variable combinations**
-3. **Edit content** as needed
-4. **Save Template** when satisfied
+1. **Klicken Sie auf "Preview"**, um die Vorlage mit Beispielvariablen zu sehen
+2. **Testen Sie verschiedene Variablenkombinationen**
+3. **Bearbeiten Sie den Inhalt** nach Bedarf
+4. **Speichern Sie die Vorlage**, wenn Sie zufrieden sind
 
-## Managing Templates
+## Vorlagen verwalten
 
-### Template List
+### Vorlagenliste
 
-Navigate to **Email Marketing** → **Templates** to see all templates.
+Navigieren Sie zu **Email Marketing** → **Templates**, um alle Vorlagen zu sehen.
 
-**Template Information:**
-- Title
-- Description
-- Creation date
-- Last modified date
-- Usage count
+**Vorlageninformationen:**
+- Titel
+- Beschreibung
+- Erstellungsdatum
+- Datum der letzten Änderung
+- Verwendungshäufigkeit
 
-### Template Actions
+### Vorlagenaktionen
 
-| Action | Description |
+| Aktion | Beschreibung |
 |--------|-------------|
-| **Edit** | Modify template content and variables |
-| **Duplicate** | Create a copy of the template |
-| **Delete** | Remove template (confirm required) |
-| **Preview** | See template with sample variables |
-| **Use in Campaign** | Select for batch email sending |
+| **Edit** | Vorlageninhalt und Variablen bearbeiten |
+| **Duplicate** | Eine Kopie der Vorlage erstellen |
+| **Delete** | Vorlage entfernen (Bestätigung erforderlich) |
+| **Preview** | Vorlage mit Beispielvariablen anzeigen |
+| **Use in Campaign** | Für Batch-E-Mail-Versand auswählen |
 
-### Best Practices for Templates
+### Bewährte Methoden für Vorlagen
 
-#### 1. Clear Subject Lines
+#### 1. Klare Betreffzeilen
 
-- ✅ "Partnership Opportunity: [Their Company] + [Your Company]"
-- ✅ "Quick Question About [Their Industry]"
-- ❌ "Hello" or "Hi"
+- ✅ "Partnership Opportunity: [Ihr Unternehmen] + [Unser Unternehmen]"
+- ✅ "Kurze Frage zu [Ihrer Branche]"
+- ❌ "Hallo" oder "Hi"
 
-#### 2. Personalization
+#### 2. Personalisierung
 
-- Use variables to personalize content
-- Mention specific details about the recipient
-- Reference their website, industry, or work
+- Verwenden Sie Variablen zur Personalisierung der Inhalte
+- Erwähnen Sie spezifische Details über den Empfänger
+- Beziehen Sie sich auf deren Website, Branche oder Arbeit
 
-#### 3. Value-First Approach
+#### 3. Mehrwert zuerst
 
-- Lead with value, not just a pitch
-- Explain benefits, not just features
-- Be clear about what's in it for them
+- Beginnen Sie mit Mehrwert, nicht nur einem Verkaufsanruf
+- Erklären Sie Vorteile, nicht nur Funktionen
+- Seien Sie klar darüber, was der Empfänger davon hat
 
-#### 4. Clear Call-to-Action
+#### 4. Klarer Call-to-Action
 
-- Single, clear next step
-- Easy to understand
-- Low friction (e.g., "Reply to this email")
+- Ein einziger, klarer nächster Schritt
+- Leicht verständlich
+- Geringe Hürde (z. B. "Antworten Sie auf diese E-Mail")
 
-#### 5. Professional Tone
+#### 5. Professioneller Ton
 
-- Proofread for grammar and spelling
-- Maintain professional language
-- Avoid overly casual or salesy language
+- Korrekturlesen auf Grammatik und Rechtschreibung
+- Professionelle Sprache beibehalten
+- Übermäßig lockere oder vertriebsorientierte Sprache vermeiden
 
-## Template Examples
+## Vorlagenbeispiele
 
-### Example 1: Product Outreach
+### Beispiel 1: Produkt-Outreach
 
-**Subject:** Improve Your [Industry] Workflow with [Product Name]
+**Betreff:** Optimieren Sie Ihren [Branche]-Workflow mit [Produktname]
 
 ```
 Hi,
@@ -215,9 +215,9 @@ Best,
 {$sender}
 ```
 
-### Example 2: Partnership Proposal
+### Beispiel 2: Partnerschaftsvorschlag
 
-**Subject:** Partnership Opportunity Between [Their Company] & [Your Company]
+**Betreff:** Partnerschaftsmöglichkeit zwischen [Ihr Unternehmen] & [Unser Unternehmen]
 
 ```
 
@@ -236,9 +236,9 @@ Best regards,
 {$sender}
 ```
 
-### Example 3: Content Collaboration
+### Beispiel 3: Inhaltskooperation
 
-**Subject:** Content Collaboration Opportunity
+**Betreff:** Möglichkeit zur Inhaltskooperation
 
 ```
 Hi,
@@ -256,9 +256,9 @@ Best,
 {$sender}
 ```
 
-### Example 4: Service Introduction
+### Beispiel 4: Dienstleistungsvorstellung
 
-**Subject:** [Service Type] for [Their Company]
+**Betreff:** [Dienstleistungstyp] für [Ihr Unternehmen]
 
 ```
 Hi,
@@ -277,11 +277,11 @@ Best regards,
 {$sender}
 ```
 
-## Advanced Features
+## Erweiterte Funktionen
 
-### Conditional Content
+### Bedingte Inhalte
 
-Create variations based on recipient data:
+Erstellen Sie Varianten basierend auf Empfängerdaten:
 
 ```
 {$if_industry}
@@ -293,26 +293,26 @@ Adjust messaging based on company size
 {$endif}
 ```
 
-### Multi-Language Support
+### Mehrsprachige Unterstützung
 
-Create templates in multiple languages:
+Erstellen Sie Vorlagen in mehreren Sprachen:
 
-1. **Duplicate template** for each language
-2. **Translate content** maintaining variable structure
-3. **Use appropriate template** based on recipient location
+1. **Duplizieren Sie die Vorlage** für jede Sprache
+2. **Übersetzen Sie den Inhalt** unter Beibehaltung der Variablenstruktur
+3. **Verwenden Sie die entsprechende Vorlage** basierend auf dem Standort des Empfängers
 
-### A/B Testing
+### A/B-Tests
 
-Create multiple template variations:
+Erstellen Sie mehrere Vorlagenvarianten:
 
-1. **Duplicate template** 2-3 times
-2. **Make one change** per version (subject line, opening, CTA)
-3. **Test with small batches** first
-4. **Measure results** and use winning version
+1. **Duplizieren Sie die Vorlage** 2-3 Mal
+2. **Ändern Sie ein Element** pro Version (Betreffzeile, Eröffnung, CTA)
+3. **Testen Sie mit kleinen Gruppen** zuerst
+4. **Messen Sie die Ergebnisse** und verwenden Sie die beste Version
 
-### Dynamic Content Blocks
+### Dynamische Inhaltsblöcke
 
-Use different content sections based on variables:
+Verwenden Sie verschiedene Inhaltsabschnitte basierend auf Variablen:
 
 ```
 {$value_proposition_1}
@@ -320,89 +320,89 @@ Alternative: {$value_proposition_2}
 Alternative: {$value_proposition_3}
 ```
 
-## Integration with Batch Email Sending
+## Integration mit Batch-E-Mail-Versand
 
-Templates are used in the batch email sending workflow:
+Vorlagen werden im Batch-E-Mail-Versand-Workflow verwendet:
 
-1. **Choose Template** in Step 2 of the batch email process
-2. **Variables are automatically populated** from your email list
-3. **Each recipient gets a personalized email**
-4. **AI can enhance** the template with Knowledge Library content
+1. **Wählen Sie eine Vorlage** in Schritt 2 des Batch-E-Mail-Prozesses
+2. **Variablen werden automatisch befüllt** aus Ihrer E-Mail-Liste
+3. **Jeder Empfänger erhält eine personalisierte E-Mail**
+4. **KI kann die Vorlage erweitern** mit Inhalten aus der Wissensbibliothek
 
-For detailed instructions, see [Batch Email Sending](../lead-generation/batch-email-sending).
+Ausführliche Anleitungen finden Sie unter [Batch-E-Mail-Versand](../lead-generation/batch-email-sending).
 
-## Troubleshooting
+## Fehlerbehebung
 
-### Variables Not Replaced
+### Variablen werden nicht ersetzt
 
-**Possible causes:**
-- Variable names misspelled
-- Missing data in email list
-- Incorrect variable syntax
+**Mögliche Ursachen:**
+- Variablennamen falsch geschrieben
+- Fehlende Daten in der E-Mail-Liste
+- Falsche Variablensyntax
 
-**Solutions:**
-1. Check variable syntax: `{$variable_name}`
-2. Verify data exists for all variables
-3. Test with preview before sending
+**Lösungen:**
+1. Überprüfen Sie die Variablensyntax: `{$variable_name}`
+2. Stellen Sie sicher, dass Daten für alle Variablen vorhanden sind
+3. Testen Sie mit der Vorschau vor dem Versand
 
-### AI Generation Not Working
+### KI-Generierung funktioniert nicht
 
-**Possible causes:**
-- AI service not configured
-- RAG context enabled but no documents in Knowledge Library
-- Prompt too vague
+**Mögliche Ursachen:**
+- KI-Dienst nicht konfiguriert
+- RAG-Kontext aktiviert, aber keine Dokumente in der Wissensbibliothek
+- Prompt ist zu vage
 
-**Solutions:**
-1. Check AI settings in system configuration
-2. Upload relevant documents to Knowledge Library
-3. Provide specific, detailed prompts
-4. Try with RAG disabled first
+**Lösungen:**
+1. Überprüfen Sie die KI-Einstellungen in der Systemkonfiguration
+2. Laden Sie relevante Dokumente in die Wissensbibliothek hoch
+3. Geben Sie spezifische, detaillierte Prompts ein
+4. Versuchen Sie es zuerst mit deaktiviertem RAG
 
-### Template Too Generic
+### Vorlage ist zu generisch
 
-**Possible causes:**
-- Overuse of static text
-- Not enough variables
-- AI generation disabled
+**Mögliche Ursachen:**
+- Zu viel statischer Text
+- Nicht genug Variablen
+- KI-Generierung deaktiviert
 
-**Solutions:**
-1. Add more variables for personalization
-2. Enable AI generation for dynamic content
-3. Use RAG context for specific information
-4. Create multiple templates for different use cases
+**Lösungen:**
+1. Fügen Sie mehr Variablen für Personalisierung hinzu
+2. Aktivieren Sie die KI-Generierung für dynamische Inhalte
+3. Verwenden Sie den RAG-Kontext für spezifische Informationen
+4. Erstellen Sie mehrere Vorlagen für verschiedene Anwendungsfälle
 
-## Best Practices Summary
+## Zusammenfassung der bewährten Methoden
 
-### DO ✅
+### EMPFEHLUNG ✅
 
-- **Personalize content** with variables
-- **Test thoroughly** before campaigns
-- **Keep subject lines** clear and compelling
-- **Provide value** upfront
-- **Use clear CTAs**
-- **Proofread** all templates
-- **Create variations** for different audiences
-- **Leverage AI** with RAG context
+- **Personalisieren Sie Inhalte** mit Variablen
+- **Testen Sie gründlich** vor Kampagnen
+- **Halten Sie Betreffzeilen** klar und ansprechend
+- **Bieten Sie Mehrwert** direkt zu Beginn
+- **Verwenden Sie klare CTAs**
+- **Korrigieren Sie** alle Vorlagen
+- **Erstellen Sie Varianten** für verschiedene Zielgruppen
+- **Nutzen Sie die KI** mit RAG-Kontext
 
-### DON'T ❌
+### VERMEIDEN ❌
 
-- **Don't be overly salesy**
-- **Don't use vague subject lines**
-- **Don't send without testing**
-- **Don't ignore recipient context**
-- **Don't make emails too long**
-- **Don't use excessive formatting**
-- **Don't forget call-to-action**
-- **Don't send from "no-reply" addresses**
+- **Nicht zu vertriebsorientiert sein**
+- **Keine vagen Betreffzeilen verwenden**
+- **Nicht ohne Testversand senden**
+- **Den Empfängerkontext nicht ignorieren**
+- **E-Mails nicht zu lang machen**
+- **Keine übermäßige Formatierung verwenden**
+- **Call-to-Action nicht vergessen**
+- **Nicht von "no-reply"-Adressen senden**
 
-## Next Steps
+## Nächste Schritte
 
-After creating your templates:
+Nachdem Sie Ihre Vorlagen erstellt haben:
 
-- [Configure email services (SMTP)](../lead-generation/batch-email-sending#configuring-email-services)
-- [Set up batch email sending](../lead-generation/batch-email-sending)
-- [Use the AI Marketing Assistant](./ai-marketing-assistant) for strategy
+- [E-Mail-Dienste konfigurieren (SMTP)](../lead-generation/batch-email-sending#configuring-email-services)
+- [Batch-E-Mail-Versand einrichten](../lead-generation/batch-email-sending)
+- [Den KI-Marketing-Assistenten nutzen](./ai-marketing-assistant) für Ihre Strategie
 
 ---
 
-**Ready to create templates?** Start with a simple outreach template and gradually add more personalization and AI-generated content as you become familiar with the system.
+**Bereit, Vorlagen zu erstellen?** Beginnen Sie mit einer einfachen Outreach-Vorlage und fügen Sie schrittweise mehr Personalisierung und KI-generierte Inhalte hinzu, während Sie sich mit dem System vertraut machen.

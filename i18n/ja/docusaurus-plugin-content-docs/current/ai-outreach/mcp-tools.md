@@ -1,71 +1,71 @@
 ---
 id: mcp-tools
-title: MCP Tools
-sidebar_label: MCP Tools
-description: Extend AI capabilities by connecting to external tools and services using the Model Context Protocol (MCP).
+title: MCPツール
+sidebar_label: MCPツール
+description: Model Context Protocol（MCP）を使用して外部ツールやサービスに接続し、AIの機能を拡張します。
 ---
 
-# MCP Tools
+# MCPツール
 
-MCP (Model Context Protocol) allows aiFetchly to connect to external tools and services, extending the AI's capabilities beyond its built-in features. By adding MCP servers, the AI Marketing Assistant can perform web searches, access databases, call external APIs, and execute custom business logic.
+MCP（Model Context Protocol）により、aiFetchlyは外部ツールやサービスに接続し、標準機能を超えたAIの能力を拡張できます。MCPサーバーを追加することで、AIマーケティングアシスタントはウェブ検索、データベースへのアクセス、外部APIの呼び出し、カスタムビジネスロジックの実行が可能になります。
 
-## What is MCP?
+## MCPとは？
 
-The **Model Context Protocol** is an open standard that enables AI applications to interact with external tools and data sources in a secure, structured way. With MCP, aiFetchly can:
+**Model Context Protocol**は、AIアプリケーションが外部ツールやデータソースと安全かつ構造化された方法で連携できるようにするオープン標準です。MCPにより、aiFetchlyは次のことが可能になります。
 
-- **Search the web** for real-time information
-- **Connect to databases** and query data
-- **Call external APIs** for specialized processing
-- **Execute custom tools** built for your workflow
-- **Integrate with third-party services** (CRM, analytics, etc.)
+- **ウェブ検索** — リアルタイムの情報を取得
+- **データベースへの接続** — データのクエリを実行
+- **外部APIの呼び出し** — 専門的な処理を実行
+- **カスタムツールの実行** — ワークフローに合わせたツールを構築
+- **サードパーティサービスとの連携** — CRM、分析ツールなど
 
-Each MCP server exposes a set of **tools** — functions the AI can call during a conversation. For example, a web search server might expose a `search` tool, and a database server might expose a `query` tool.
+各MCPサーバーは**ツール**のセット（AIが会話中に呼び出せる関数）を公開します。例えば、ウェブ検索サーバーは`search`ツールを、データベースサーバーは`query`ツールを公開する場合があります。
 
-## Accessing MCP Tools
+## MCPツールへのアクセス
 
-MCP servers are managed from within the **AI Marketing Assistant** chat interface:
+MCPサーバーは**AIマーケティングアシスタント**のチャットインターフェース内で管理します。
 
-1. Open the AI Marketing Assistant (click the chat icon or press `Cmd/Ctrl + K`)
-2. Click the **MCP Tools** button (server/network icon) in the chat toolbar
-3. The MCP Tools management dialog opens
+1. AIマーケティングアシスタントを開く（チャットアイコンをクリック、または`Cmd/Ctrl + K`を押す）
+2. チャットツールバーの**MCPツール**ボタン（サーバー/ネットワークアイコン）をクリックする
+3. MCPツール管理ダイアログが開きます
 
-:::info Where to Find It
+:::info 見つけ方
 
-MCP Tools are accessed from the AI Chat interface, not from the main Settings page. Open any AI chat session to find the MCP Tools manager.
+MCPツールは、メインの設定ページではなく、AIチャットインターフェースからアクセスします。任意のAIチャットセッションを開いて、MCPツールマネージャーを見つけてください。
 
 :::
 
-## Adding MCP Servers
+## MCPサーバーの追加
 
-### Step 1: Open the Add Dialog
+### 手順1：追加ダイアログを開く
 
-1. In the MCP Tools dialog, click **Add Server** (or the **+** button)
-2. The Add MCP Server dialog opens
+1. MCPツールダイアログで**サーバーを追加**（または**+**ボタン）をクリックする
+2. MCPサーバー追加ダイアログが開きます
 
-### Step 2: Choose Input Mode
+### 手順2：入力モードを選択
 
-You can add servers in two ways:
+サーバーは2つの方法で追加できます。
 
-- **Form Mode**: Fill in individual fields (recommended for beginners)
-- **JSON Mode**: Paste a JSON configuration block (faster for bulk setup, compatible with Claude Desktop format)
+- **フォームモード** — 各フィールドを個別に入力（初心者向け）
+- **JSONモード** — JSON設定ブロックを貼り付け（一括設定に便利、Claude Desktop形式と互換性あり）
 
-### Step 3: Configure the Server
+### 手順3：サーバーを設定
 
-#### Form Mode
+#### フォームモード
 
-| Field | Description | Required |
+| フィールド | 説明 | 必須 |
 |-------|-------------|----------|
-| **Server Name** | A descriptive name for this server | Yes |
-| **Transport Type** | How to connect: `Stdio`, `SSE`, or `WebSocket` | Yes |
-| **Host / Command** | Hostname (for SSE/WebSocket) or command to run (for Stdio) | Yes |
-| **Port** | Port number (not needed for Stdio) | For SSE/WebSocket |
-| **Authentication Type** | `None`, `API Key`, `Bearer Token`, or `Custom` | No |
-| **Timeout** | Request timeout in milliseconds (default: 30000) | No |
-| **Enabled** | Whether the server is active (default: enabled) | No |
+| **サーバー名** | このサーバーの識別名 | はい |
+| **トランスポート種別** | 接続方法：`Stdio`、`SSE`、または`WebSocket` | はい |
+| **ホスト/コマンド** | ホスト名（SSE/WebSocketの場合）または実行コマンド（Stdioの場合） | はい |
+| **ポート** | ポート番号（Stdioでは不要） | SSE/WebSocketの場合 |
+| **認証種別** | `なし`、`APIキー`、`Bearerトークン`、または`カスタム` | いいえ |
+| **タイムアウト** | リクエストタイムアウト（ミリ秒、デフォルト：30000） | いいえ |
+| **有効** | サーバーを有効にするかどうか（デフォルト：有効） | いいえ |
 
-#### JSON Mode
+#### JSONモード
 
-JSON mode accepts the standard `mcpServers` format used by Claude Desktop and other MCP clients:
+JSONモードは、Claude Desktopや他のMCPクライアントで使用される標準`mcpServers`形式に対応しています。
 
 ```json
 {
@@ -78,330 +78,330 @@ JSON mode accepts the standard `mcpServers` format used by Claude Desktop and ot
 }
 ```
 
-**Supported JSON properties:**
+**対応JSONプロパティ：**
 
-| Property | Description |
+| プロパティ | 説明 |
 |----------|-------------|
-| `command` | Command to execute (for Stdio transport) |
-| `args` | Array of command arguments |
-| `url` | Server URL (for SSE/WebSocket) |
-| `host` | Hostname or IP address |
-| `port` | Port number |
-| `transport` | Transport type override |
-| `enabled` | Enable/disable on add (default: true) |
-| `authType` | Authentication type |
-| `authConfig` | Authentication credentials |
-| `timeout` | Request timeout in ms |
+| `command` | 実行するコマンド（Stdioトランスポート用） |
+| `args` | コマンド引数の配列 |
+| `url` | サーバーURL（SSE/WebSocket用） |
+| `host` | ホスト名またはIPアドレス |
+| `port` | ポート番号 |
+| `transport` | トランスポート種別の上書き |
+| `enabled` | 追加時に有効/無効を指定（デフォルト：true） |
+| `authType` | 認証種別 |
+| `authConfig` | 認証情報 |
+| `timeout` | リクエストタイムアウト（ミリ秒） |
 
-You can add multiple servers in a single JSON block by adding more entries under `mcpServers`.
+`mcpServers`の下にエントリを追加することで、1つのJSONブロックで複数のサーバーを追加できます。
 
-:::tip Use Load Example
+:::tip サンプルを読み込む
 
-Click **Load Example** in JSON mode to see a sample configuration you can modify.
+JSONモードで**サンプルを読み込む**をクリックすると、修正可能なサンプル設定が表示されます。
 
 :::
 
-### Step 4: Save
+### 手順4：保存
 
-Click **Add** to save the server configuration. The server appears in the list with an **Enabled** status.
+**追加**をクリックしてサーバー設定を保存します。サーバーが**有効**ステータスで一覧に表示されます。
 
-## Managing MCP Servers
+## MCPサーバーの管理
 
-### Server List
+### サーバー一覧
 
-The MCP Tools dialog displays all configured servers:
+MCPツールダイアログには、設定済みの全サーバーが表示されます。
 
-| Element | Description |
+| 要素 | 説明 |
 |---------|-------------|
-| **Server name** | Identifier you configured |
-| **Status badge** | `Enabled` (green) or `Disabled` (grey) |
-| **Connection info** | Transport type, host, and port |
-| **Tool count** | Number of discovered tools |
+| **サーバー名** | 設定した識別名 |
+| **ステータスバッジ** | `有効`（緑）または`無効`（グレー） |
+| **接続情報** | トランスポート種別、ホスト、ポート |
+| **ツール数** | 検出されたツールの数 |
 
-### Enable/Disable a Server
+### サーバーの有効化/無効化
 
-1. Locate the server in the list
-2. Click the **toggle switch** icon in the Actions column
-3. The server status changes between Enabled and Disabled
+1. 一覧からサーバーを見つける
+2. 操作列の**トグルスイッチ**アイコンをクリックする
+3. サーバーのステータスが有効と無効の間で切り替わります
 
-**When disabled:** The AI cannot use any tools from this server, but the configuration is preserved.
+**無効時：** AIはこのサーバーのツールを使用できませんが、設定は保持されます。
 
-### Edit a Server
+### サーバーの編集
 
-1. Locate the server in the list
-2. Click the **pencil** icon in the Actions column
-3. Modify any configuration fields
-4. Click **Update** to save changes
+1. 一覧からサーバーを見つける
+2. 操作列の**鉛筆**アイコンをクリックする
+3. 設定フィールドを変更する
+4. **更新**をクリックして変更を保存する
 
-:::info JSON Mode Restriction
+:::info JSONモードの制限
 
-JSON mode is only available when adding new servers. To edit an existing server, use Form mode.
-
-:::
-
-### Delete a Server
-
-1. Locate the server in the list
-2. Click the **trash can** icon in the Actions column
-3. Confirm the deletion in the dialog
-
-:::warning Permanent Deletion
-
-Deleting a server removes its configuration and all discovered tools. This action cannot be undone.
+JSONモードは新しいサーバーの追加時のみ使用できます。既存のサーバーを編集するには、フォームモードを使用してください。
 
 :::
 
-## Discovering and Managing Tools
+### サーバーの削除
 
-### Discover Tools
+1. 一覧からサーバーを見つける
+2. 操作列の**ゴミ箱**アイコンをクリックする
+3. ダイアログで削除を確認する
 
-After adding a server, you need to discover the tools it provides:
+:::warning 完全な削除
 
-1. Locate the server in the list
-2. Click the **magnifying glass** (Discover Tools) icon
-3. aiFetchly connects to the server and retrieves the list of available tools
-4. Discovered tools appear under the server entry
-
-:::tip Discover After Configuration Changes
-
-Re-discover tools after changing a server's connection details. This ensures the tool list stays in sync with the server.
+サーバーを削除すると、その設定と検出済みの全ツールが消去されます。この操作は元に戻せません。
 
 :::
 
-### View Discovered Tools
+## ツールの検出と管理
 
-Click on a server entry to expand it and see its tools:
+### ツールの検出
 
-- Each tool shows its name
-- Tools have individual enable/disable toggles
-- Tool names are prefixed with `mcp_` when used by the AI
+サーバーを追加した後、そのサーバーが提供するツールを検出する必要があります。
 
-### Enable/Disable Individual Tools
+1. 一覧からサーバーを見つける
+2. **虫眼鏡**（ツールを検出）アイコンをクリックする
+3. aiFetchlyがサーバーに接続し、利用可能なツール一覧を取得する
+4. 検出されたツールがサーバーエントリの下に表示されます
 
-1. Expand the server to see its tools
-2. Use the **toggle switch** next to each tool name
-3. Disabled tools will not be available to the AI, even if the server is enabled
+:::tip 設定変更後に再検出
 
-This is useful when a server provides many tools but you only want specific ones available to the AI.
+サーバーの接続設定を変更した後は、ツールを再検出してください。ツール一覧がサーバーと同期された状態を保ちます。
 
-### Test Connection
+:::
 
-To verify a server is reachable:
+### 検出されたツールの表示
 
-1. Locate the server in the list
-2. Click the **network check** (Test Connection) icon
-3. aiFetchly attempts to connect and reports success or failure
+サーバーエントリをクリックして展開し、ツールを確認します。
 
-## Transport Types
+- 各ツールに名前が表示されます
+- ツールごとに個別の有効/無効トグルがあります
+- AIが使用する際、ツール名には`mcp_`プレフィックスが付きます
+
+### 個別ツールの有効化/無効化
+
+1. サーバーを展開してツールを表示する
+2. 各ツール名の横にある**トグルスイッチ**を使用する
+3. 無効にされたツールは、サーバーが有効であってもAIから使用できません
+
+これは、サーバーが多数のツールを提供しているが、特定のツールのみをAIに利用させたい場合に便利です。
+
+### 接続テスト
+
+サーバーに到達できるか確認するには：
+
+1. 一覧からサーバーを見つける
+2. **ネットワークチェック**（接続テスト）アイコンをクリックする
+3. aiFetchlyが接続を試み、成功または失敗を報告します
+
+## トランスポート種別
 
 ### Stdio
 
-**Best for:** Local tools, command-line programs, npm packages
+**推奨用途：** ローカルツール、コマンドラインプログラム、npmパッケージ
 
-The Stdio transport launches a local process and communicates via standard input/output.
+Stdioトランスポートはローカルプロセスを起動し、標準入出力を介して通信します。
 
-**Configuration:**
-- **Host/Command**: The command to execute (e.g., `node server.js`, `uvx package-name`)
-- **Port**: Not applicable
+**設定：**
+- **ホスト/コマンド** — 実行するコマンド（例：`node server.js`、`uvx package-name`）
+- **ポート** — 適用外
 
-**Example commands:**
-- `npx @modelcontextprotocol/server-memory` — In-memory knowledge graph
-- `uvx blender-mcp` — Blender integration
-- `node /path/to/custom-server.js` — Custom local server
+**コマンド例：**
+- `npx @modelcontextprotocol/server-memory` — インメモリナレッジグラフ
+- `uvx blender-mcp` — Blender連携
+- `node /path/to/custom-server.js` — カスタムローカルサーバー
 
-### SSE (Server-Sent Events)
+### SSE（Server-Sent Events）
 
-**Best for:** HTTP-based services, cloud-hosted tools
+**推奨用途：** HTTPベースのサービス、クラウドホスト型ツール
 
-SSE transport connects to an HTTP endpoint that streams tool results.
+SSEトランスポートは、ツール結果をストリーミングするHTTPエンドポイントに接続します。
 
-**Configuration:**
-- **Host**: Server hostname or IP (e.g., `api.example.com`)
-- **Port**: Server port number (e.g., `8080`)
+**設定：**
+- **ホスト** — サーバーのホスト名またはIP（例：`api.example.com`）
+- **ポート** — サーバーのポート番号（例：`8080`）
 
 ### WebSocket
 
-**Best for:** Real-time services, bidirectional communication
+**推奨用途：** リアルタイムサービス、双方向通信
 
-WebSocket transport establishes a persistent connection for tool communication.
+WebSocketトランスポートは、ツール通信用の永続的接続を確立します。
 
-**Configuration:**
-- **Host**: Server hostname or IP
-- **Port**: Server port number
+**設定：**
+- **ホスト** — サーバーのホスト名またはIP
+- **ポート** — サーバーのポート番号
 
-## Authentication
+## 認証
 
-MCP servers support several authentication methods:
+MCPサーバーは複数の認証方式をサポートしています。
 
-| Type | Use Case | Fields |
+| 種別 | 使用例 | フィールド |
 |------|----------|--------|
-| **None** | Public/local servers | No credentials needed |
-| **API Key** | Services requiring an API key | API Key (password field) |
-| **Bearer Token** | OAuth/token-based services | Bearer Token (password field) |
-| **Custom** | Non-standard authentication | JSON configuration |
+| **なし** | パブリック/ローカルサーバー | 認証情報不要 |
+| **APIキー** | APIキーが必要なサービス | APIキー（パスワードフィールド） |
+| **Bearerトークン** | OAuth/トークンベースのサービス | Bearerトークン（パスワードフィールド） |
+| **カスタム** | 非標準の認証 | JSON設定 |
 
-## Using MCP Tools in AI Chat
+## AIチャットでのMCPツールの使用
 
-Once MCP servers are configured and tools are discovered:
+MCPサーバーが設定され、ツールが検出された後：
 
-1. **Open AI Marketing Assistant**
-2. The AI automatically detects all enabled tools from enabled servers
-3. Tools appear as available functions the AI can call
-4. The AI decides when to use a tool based on your query
+1. **AIマーケティングアシスタントを開く**
+2. AIは有効なサーバーの有効なツールを自動的に検出する
+3. ツールがAIが呼び出し可能な関数として表示される
+4. AIはクエリに基づいてツールを使用するタイミングを判断する
 
-### Example: Web Search
-
-```
-User: "Search the web for latest SaaS pricing trends"
-AI: [Calls the search tool from your web search MCP server]
-AI: "Here are the latest SaaS pricing trends I found..."
-```
-
-### Example: Database Query
+### 例：ウェブ検索
 
 ```
-User: "How many leads did we get last week from our website?"
-AI: [Calls the query tool from your database MCP server]
-AI: "Based on the database query, you received 247 leads last week..."
+ユーザー: "最新のSaaS価格動向についてウェブで検索して"
+AI: [ウェブ検索MCPサーバーのsearchツールを呼び出し]
+AI: "最新のSaaS価格動向について以下の情報が見つかりました..."
 ```
 
-### Example: Custom API
+### 例：データベースクエリ
 
 ```
-User: "Check if our competitor has updated their pricing page"
-AI: [Calls the monitoring tool from your custom MCP server]
-AI: "Yes, they updated their pricing page yesterday. Here are the changes..."
+ユーザー: "先週ウェブサイトからどれくらいのリードを獲得しましたか？"
+AI: [データベースMCPサーバーのqueryツールを呼び出し]
+AI: "データベースのクエリ結果によると、先週は247件のリードを獲得しました..."
 ```
 
-### How the AI Uses Tools
+### 例：カスタムAPI
 
-The AI follows this process:
+```
+ユーザー: "競合が価格ページを更新したか確認して"
+AI: [カスタムMCPサーバーの監視ツールを呼び出し]
+AI: "はい、昨日価格ページが更新されました。変更内容は以下の通りです..."
+```
 
-1. **Analyzes your request** to determine if a tool is needed
-2. **Selects the appropriate tool** from available MCP tools
-3. **Calls the tool** with the necessary parameters
-4. **Incorporates the result** into its response
+### AIによるツールの使用方法
 
-You can also explicitly ask the AI to use a specific tool:
-- "Use the web search tool to find..."
-- "Query the database for..."
-- "Call the [tool name] to..."
+AIは次のプロセスに従います。
 
-## Troubleshooting
+1. **リクエストを分析** — ツールが必要かどうかを判断する
+2. **適切なツールを選択** — 利用可能なMCPツールから選ぶ
+3. **ツールを呼び出し** — 必要なパラメータを渡す
+4. **結果を統合** — レスポンスに結果を反映させる
 
-### Connection Failed
+また、特定のツールの使用をAIに明示的に指示することもできます。
+- 「ウェブ検索ツールを使って...を探して」
+- 「データベースにクエリして...」
+- 「[ツール名]を呼び出して...」
 
-**Possible causes:**
-- Server is not running
-- Incorrect host/port
-- Firewall blocking the connection
-- Authentication credentials are wrong
+## トラブルシューティング
 
-**Solutions:**
-1. Verify the server is running and accessible
-2. Check host and port configuration
-3. Use **Test Connection** to diagnose
-4. Verify authentication credentials
-5. Check firewall and network settings
+### 接続に失敗する
 
-### Tool Discovery Fails
+**考えられる原因：**
+- サーバーが起動していない
+- ホスト/ポートが正しくない
+- ファイアウォールが接続をブロックしている
+- 認証情報が間違っている
 
-**Possible causes:**
-- Server is not responding
-- Server does not implement the MCP protocol correctly
-- Connection timeout
+**解決策：**
+1. サーバーが起動し、アクセス可能であることを確認する
+2. ホストとポートの設定を確認する
+3. **接続テスト**を使用して診断する
+4. 認証情報を確認する
+5. ファイアウォールとネットワーク設定を確認する
 
-**Solutions:**
-1. Test the connection first
-2. Verify the server supports MCP protocol
-3. Increase the timeout setting
-4. Check server logs for errors
+### ツールの検出に失敗する
 
-### AI Doesn't Use MCP Tools
+**考えられる原因：**
+- サーバーが応答していない
+- サーバーがMCPプロトコルを正しく実装していない
+- 接続タイムアウト
 
-**Possible causes:**
-- Server is disabled
-- All tools are disabled
-- Tools not discovered yet
-- AI doesn't recognize the query as needing a tool
+**解決策：**
+1. まず接続テストを行う
+2. サーバーがMCPプロトコルに対応していることを確認する
+3. タイムアウト設定を増やす
+4. サーバーのログでエラーを確認する
 
-**Solutions:**
-1. Verify the server is enabled (green badge)
-2. Verify individual tools are enabled
-3. Discover tools if the tool count shows 0
-4. Explicitly mention the tool in your request
+### AIがMCPツールを使用しない
 
-### Server Shows 0 Tools
+**考えられる原因：**
+- サーバーが無効になっている
+- すべてのツールが無効になっている
+- ツールがまだ検出されていない
+- AIがクエリにツールが必要だと認識していない
 
-**Solutions:**
-1. Click **Discover Tools** to fetch the tool list
-2. Verify the server is running during discovery
-3. Check that the server exposes tools via MCP protocol
-4. Re-discover after server updates
+**解決策：**
+1. サーバーが有効（緑のバッジ）であることを確認する
+2. 個別のツールが有効であることを確認する
+3. ツール数が0の場合、ツールを検出する
+4. リクエストでツール名を明示的に指定する
 
-## Best Practices
+### サーバーのツール数が0と表示される
 
-### 1. Start with Essential Servers
+**解決策：**
+1. **ツールを検出**をクリックしてツール一覧を取得する
+2. 検出中にサーバーが起動していることを確認する
+3. サーバーがMCPプロトコル経由でツールを公開していることを確認する
+4. サーバーの更新後に再検出する
 
-Only add servers you need:
-- Too many servers increase complexity
-- Each server connection uses resources
-- Start with one or two, add more as needed
+## ベストプラクティス
 
-### 2. Discover Tools After Setup
+### 1. 必要なサーバーだけを追加
 
-Always discover tools after:
-- Adding a new server
-- Changing connection settings
-- Updating the server software
+必要なサーバーのみを追加してください。
+- サーバーが多すぎると複雑さが増す
+- 各サーバー接続はリソースを消費する
+- 最初は1〜2個から始め、必要に応じて追加する
 
-### 3. Use Tool-Level Control
+### 2. 設定後にツールを検出
 
-Disable individual tools you don't need:
-- Reduces noise for the AI
-- Prevents accidental use of powerful tools
-- Keeps the tool list manageable
+次のタイミングで必ずツールを検出してください。
+- 新しいサーバーを追加した後
+- 接続設定を変更した後
+- サーバーソフトウェアを更新した後
 
-### 4. Test Before Using
+### 3. ツールレベルの制御を活用
 
-- Use **Test Connection** after configuration
-- **Discover Tools** to verify tool availability
-- Try a simple query in AI Chat to confirm end-to-end
+不要な個別ツールは無効にしてください。
+- AIにとってのノイズを減らす
+- 強力なツールの誤用を防ぐ
+- ツール一覧を管理しやすく保つ
 
-### 5. Keep Credentials Secure
+### 4. 使用前にテスト
 
-- Treat API keys and tokens like passwords
-- Don't share server configurations with untrusted parties
-- Revoke credentials when removing servers
+- 設定後に**接続テスト**を実行する
+- **ツールを検出**してツールの可用性を確認する
+- AIチャットで簡単なクエリを試して、エンドツーエンドの動作を確認する
 
-### 6. Monitor Tool Usage
+### 5. 認証情報を安全に管理
 
-- Review AI responses for unexpected tool usage
-- Disable tools that produce unreliable results
-- Adjust server timeouts if responses are slow
+- APIキーやトークンはパスワードと同様に扱う
+- 信頼できない相手とサーバー設定を共有しない
+- サーバーを削除する際は認証情報を取り消す
 
-## Integration with Other Features
+### 6. ツールの使用状況を監視
 
-### AI Skills
+- AIのレスポンスで予期しないツール使用がないか確認する
+- 信頼性の低い結果を出力するツールは無効にする
+- レスポンスが遅い場合はサーバーのタイムアウトを調整する
 
-MCP tools and AI Skills work together:
-- Skills provide domain-specific knowledge and logic
-- MCP tools provide external data and actions
-- Both are available in the AI Marketing Assistant
+## 他の機能との連携
 
-### Knowledge Library
+### AIスキル
 
-MCP tools complement the Knowledge Library:
-- Knowledge Library provides your business context
-- MCP tools provide real-time external data
-- Combined for comprehensive AI responses
+MCPツールとAIスキルは連携して動作します。
+- スキルはドメイン固有の知識とロジックを提供
+- MCPツールは外部データとアクションを提供
+- どちらもAIマーケティングアシスタントで利用可能
 
-## Next Steps
+### ナレッジライブラリ
 
-- [Learn about AI Marketing Assistant](./ai-marketing-assistant)
-- [Explore AI Skills](./ai-skills)
-- [Set up Knowledge Library](./knowledge-library)
+MCPツールはナレッジライブラリを補完します。
+- ナレッジライブラリはビジネスコンテキストを提供
+- MCPツールはリアルタイムの外部データを提供
+- 組み合わせることで包括的なAIレスポンスが可能に
+
+## 次のステップ
+
+- [AIマーケティングアシスタントについて](./ai-marketing-assistant)
+- [AIスキルを探す](./ai-skills)
+- [ナレッジライブラリを設定する](./knowledge-library)
 
 ---
 
-**Ready to extend your AI?** Add your first MCP server, discover its tools, and start using external capabilities in your AI conversations.
+**AIを拡張する準備はできましたか？** 最初のMCPサーバーを追加し、ツールを検出して、AIの会話で外部機能を使い始めましょう。

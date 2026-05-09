@@ -5,486 +5,486 @@ sidebar_label: Email Extraction
 description: Extract email addresses from websites and URLs in bulk with aiFetchly's powerful extraction tool.
 ---
 
-# Email Extraction
+# 邮件提取
 
-aiFetchly's Email Extraction feature allows you to harvest email addresses from websites at scale. Extract contact information from individual URLs or leverage your existing search results for targeted email collection.
+aiFetchly 的邮件提取功能允许您大规模采集网站上的邮件地址。从单个 URL 提取联系信息，或利用现有搜索结果进行针对性邮件收集。
 
-## Understanding Email Extraction
+## 了解邮件提取
 
-Email extraction works by:
+邮件提取的工作原理：
 
-1. **Visiting each URL** you provide
-2. **Scanning page content** for email patterns
-3. **Following internal links** (optional)
-4. **Compiling all discovered emails** into a structured list
-5. **Deduplicating** results automatically
+1. **访问您提供的每个 URL**
+2. **扫描页面内容**查找邮件模式
+3. **跟踪内部链接**（可选）
+4. **将所有发现的邮件**汇总为结构化列表
+5. **自动去重**结果
 
-:::info Use Cases
+:::info 使用场景
 
-Email extraction is perfect for:
-- Collecting emails from search results
-- Building contact lists from industry directories
-- Gathering contact info from member listings
-- Extracting emails from resource pages
+邮件提取适用于：
+- 从搜索结果中收集邮件地址
+- 从行业目录建立联系人列表
+- 从会员名录中获取联系信息
+- 从资源页面提取邮件地址
 
 :::
 
-## Creating an Extraction Task
+## 创建提取任务
 
-### Step 1: Navigate to Email Extraction
+### 第 1 步：进入邮件提取
 
-1. Click **Email Extraction** in the left navigation menu
-2. You'll see the extraction task list
-3. Click **Create New Task** button
+1. 在左侧导航菜单中点击 **Email Extraction**
+2. 您将看到提取任务列表
+3. 点击 **Create New Task** 按钮
 
-### Step 2: Choose URL Input Method
+### 第 2 步：选择 URL 输入方式
 
-Select how you want to provide URLs for extraction:
+选择提供 URL 进行提取的方式：
 
-#### Method 1: Manual URL Input
+#### 方式 1：手动 URL 输入
 
-**Best for**: Custom URL lists, specific websites
+**最适合**：自定义 URL 列表、特定网站
 
-1. Select **Manual Input** from the source dropdown
-2. Enter your URLs in the text area
-3. **Format**: One URL per line
+1. 从来源下拉菜单中选择 **Manual Input**
+2. 在文本区域中输入您的 URL
+3. **格式**：每行一个 URL
 
-**Example:**
+**示例：**
 ```
 https://example.com
 https://www.business-site.com/contact
 https://another-site.com/about-us
 ```
 
-**Validation:**
-- URLs must start with `http://` or `https://`
-- Invalid URLs will be flagged automatically
-- Maximum URLs per task: 10,000
+**验证规则：**
+- URL 必须以 `http://` 或 `https://` 开头
+- 无效 URL 将自动标记
+- 每个任务最多 10,000 个 URL
 
-#### Method 2: From Search Results
+#### 方式 2：从搜索结果导入
 
-**Best for**: Leveraging existing search campaigns
+**最适合**：利用现有搜索活动
 
-1. Select **Search Results** from the source dropdown
-2. A table of your completed search tasks appears
-3. Select the search task containing URLs you want to extract from
-4. Click **Confirm**
+1. 从来源下拉菜单中选择 **Search Results**
+2. 显示您已完成搜索任务的表格
+3. 选择包含您要提取 URL 的搜索任务
+4. 点击 **Confirm**
 
-**Benefits:**
-- Seamless integration with search feature
-- No manual URL entry needed
-- Uses previously scraped URLs
+**优势：**
+- 与搜索功能无缝集成
+- 无需手动输入 URL
+- 使用之前已抓取的 URL
 
-### Step 3: Configure Extraction Settings
+### 第 3 步：配置提取设置
 
-#### Page Length
+#### 页面深度
 
-- **Default**: 10 pages per URL
-- **Range**: 1-1000 pages
-- **Purpose**: How many pages deep to crawl each website
+- **默认值**：每个 URL 10 页
+- **范围**：1-1000 页
+- **用途**：对每个网站爬取多少页
 
-**Guidelines:**
-- **Small sites**: 5-10 pages
-- **Medium sites**: 10-50 pages
-- **Large sites**: 50-100 pages
-- **Very large sites**: 100+ pages (use with caution)
+**指导建议：**
+- **小型网站**：5-10 页
+- **中型网站**：10-50 页
+- **大型网站**：50-100 页
+- **超大型网站**：100+ 页（谨慎使用）
 
-:::warning Pages vs. Time
+:::warning 页面数与时间
 
-Higher page length = longer extraction time. Start conservative and scale up.
-
-:::
-
-#### Concurrency
-
-- **Default**: 1 concurrent process
-- **Range**: 1-10 concurrent processes
-- **Purpose**: How many URLs to process simultaneously
-
-**Recommendations:**
-- **Without proxies**: 1-3 concurrent
-- **With proxies**: 3-10 concurrent
-- **Start low** and increase gradually
-
-#### Max Page Number
-
-- **Default**: 100 pages
-- **Range**: 0-1000 pages
-- **Purpose**: Absolute maximum pages to process
-
-**Use Case**: Prevent runaway extraction on very large sites.
-
-#### Process Timeout
-
-- **Default**: 10 minutes
-- **Range**: 1-20 minutes
-- **Purpose**: Maximum time per URL before timeout
-
-**Adjust if:**
-- Sites load slowly → Increase timeout
-- Want faster failure → Decrease timeout
-
-### Step 4: Display Options
-
-#### Show in Browser
-
-- **No** (default): Extraction runs invisibly (faster)
-- **Yes**: Browser window visible (debugging mode)
-
-**Recommendation**: Keep at "No" for production tasks.
-
-### Step 5: Proxy Configuration (Optional)
-
-Add proxies for large-scale extraction:
-
-1. Toggle **Use Proxy**
-2. Click **Choose Proxy**
-3. Select one or more proxies
-4. Click **Confirm**
-
-:::tip When to Use Proxies
-
-Use proxies when:
-- Extracting from 50+ URLs
-- Running multiple concurrent processes
-- Previous tasks were blocked
-- Extracting from the same domains repeatedly
+更高的页面深度 = 更长的提取时间。从保守设置开始，然后逐步增加。
 
 :::
 
-### Step 6: Create Task
+#### 并发数
 
-Click **Submit** to create your extraction task. You can:
-- **Save Only**: Save task without running
-- **Run Now**: Start extraction immediately
+- **默认值**：1 个并发进程
+- **范围**：1-10 个并发进程
+- **用途**：同时处理多少个 URL
 
-## Managing Extraction Tasks
+**建议：**
+- **不使用代理**：1-3 个并发
+- **使用代理**：3-10 个并发
+- **从低开始**逐步增加
 
-### View Task List
+#### 最大页数
 
-Navigate to **Email Extraction** to see all your tasks.
+- **默认值**：100 页
+- **范围**：0-1000 页
+- **用途**：处理页数的绝对上限
 
-**Task List Columns:**
+**使用场景**：防止在超大型网站上失控提取。
 
-| Column | Description |
+#### 处理超时
+
+- **默认值**：10 分钟
+- **范围**：1-20 分钟
+- **用途**：每个 URL 超时前的最大处理时间
+
+**调整场景：**
+- 网站加载缓慢 → 增加超时时间
+- 希望更快失败 → 减少超时时间
+
+### 第 4 步：显示选项
+
+#### 在浏览器中显示
+
+- **否**（默认）：提取在后台运行（更快）
+- **是**：浏览器窗口可见（调试模式）
+
+**建议**：生产任务保持为"否"。
+
+### 第 5 步：代理配置（可选）
+
+为大规模提取添加代理：
+
+1. 切换 **Use Proxy**
+2. 点击 **Choose Proxy**
+3. 选择一个或多个代理
+4. 点击 **Confirm**
+
+:::tip 何时使用代理
+
+以下情况使用代理：
+- 从 50+ 个 URL 提取
+- 运行多个并发进程
+- 之前的任务被阻止
+- 从相同域名重复提取
+
+:::
+
+### 第 6 步：创建任务
+
+点击 **Submit** 创建提取任务。您可以：
+- **仅保存**：保存任务但不运行
+- **立即运行**：立即开始提取
+
+## 管理提取任务
+
+### 查看任务列表
+
+导航到 **Email Extraction** 查看所有任务。
+
+**任务列表列说明：**
+
+| 列 | 描述 |
 |--------|-------------|
-| **ID** | Unique task identifier |
-| **Type** | Manual Input or Search Results |
-| **Status** | Pending, Processing, Complete, Error |
-| **Record Time** | When task was created |
-| **Actions** | View, Edit, Delete, Download Logs |
+| **ID** | 唯一任务标识符 |
+| **Type** | 手动输入或搜索结果 |
+| **Status** | 待处理、处理中、已完成、错误 |
+| **Record Time** | 任务创建时间 |
+| **Actions** | 查看、编辑、删除、下载日志 |
 
-### Task Status
+### 任务状态
 
-| Status | Description | Action |
+| 状态 | 描述 | 操作 |
 |--------|-------------|--------|
-| **Pending** | Task created but not started | Edit, Delete |
-| **Processing** | Actively extracting emails | Monitor progress |
-| **Complete** | Finished successfully | View results |
-| **Error** | Failed with errors | View logs, Retry |
+| **Pending** | 任务已创建但未开始 | 编辑、删除 |
+| **Processing** | 正在提取邮件 | 监控进度 |
+| **Complete** | 成功完成 | 查看结果 |
+| **Error** | 失败并出现错误 | 查看日志、重试 |
 
-### Task Actions
+### 任务操作
 
-- **View Results** (folder icon): See extracted emails
-- **Edit** (pencil icon): Modify task settings (only pending/error tasks)
-- **Delete** (trash icon): Remove task
-- **Download Logs** (download icon): Get error logs (failed tasks only)
+- **查看结果**（文件夹图标）：查看已提取的邮件
+- **编辑**（铅笔图标）：修改任务设置（仅限待处理/错误任务）
+- **删除**（垃圾桶图标）：移除任务
+- **下载日志**（下载图标）：获取错误日志（仅限失败任务）
 
-## Viewing Extracted Emails
+## 查看已提取的邮件
 
-### Step 1: Access Results
+### 第 1 步：访问结果
 
-1. Go to **Email Extraction** task list
-2. Find the completed task
-3. Click **View Results**
+1. 进入 **Email Extraction** 任务列表
+2. 找到已完成的任务
+3. 点击 **View Results**
 
-### Step 2: Results Table
+### 第 2 步：结果表格
 
-The results table displays:
+结果表格显示：
 
-| Column | Description |
+| 列 | 描述 |
 |--------|-------------|
-| **URL** | Source website |
-| **Emails** | Extracted email addresses (expandable) |
-| **Count** | Number of emails found |
-| **Timestamp** | When extraction occurred |
+| **URL** | 来源网站 |
+| **Emails** | 已提取的邮件地址（可展开） |
+| **Count** | 发现的邮件数量 |
+| **Timestamp** | 提取发生时间 |
 
-### Step 3: Expand Details
+### 第 3 步：展开详情
 
-Click on a row to expand and see:
-- All emails found on that URL
-- Email list can be copied
-- View individual email addresses
+点击某行可展开查看：
+- 在该 URL 上找到的所有邮件
+- 邮件列表可复制
+- 查看单个邮件地址
 
-### Step 4: Search and Filter
+### 第 4 步：搜索和筛选
 
-- **Search**: Filter by URL or email address
-- **Pagination**: Navigate large result sets
-- **Auto-refresh**: Results update every 10 seconds during processing
+- **搜索**：按 URL 或邮件地址筛选
+- **分页**：浏览大型结果集
+- **自动刷新**：处理期间每 10 秒更新一次结果
 
-## Exporting Extracted Emails
+## 导出已提取的邮件
 
-### Export as CSV
+### 导出为 CSV
 
-1. Select results you want to export (or leave blank for all)
-2. Click **Export** → **CSV**
-3. File downloads with all extracted emails
+1. 选择要导出的结果（或留空选择全部）
+2. 点击 **Export** → **CSV**
+3. 文件下载包含所有已提取的邮件
 
-**CSV Format:**
+**CSV 格式：**
 ```csv
 URL,Email,Timestamp
 https://example.com,contact@example.com,2024-01-15 10:30:00
 https://example.com,info@example.com,2024-01-15 10:30:00
 ```
 
-### Use in Email Campaigns
+### 在邮件营销中使用
 
-Extracted emails integrate directly with email marketing:
+提取的邮件可直接用于邮件营销：
 
-1. **View Results** of extraction task
-2. Click **Use in Campaign** button
-3. Emails are automatically passed to email marketing workflow
+1. **查看**提取任务的结果
+2. 点击 **Use in Campaign** 按钮
+3. 邮件自动传递到邮件营销工作流程
 
-For detailed instructions, see [Batch Email Sending](./batch-email-sending).
+详细说明请参阅[批量邮件发送](./batch-email-sending)。
 
-## Best Practices
+## 最佳实践
 
-### 1. URL Source Strategy
+### 1. URL 来源策略
 
-**High-Quality Sources:**
-- Industry directories
-- Member listings
-- Association websites
-- Resource pages
-- "Contact Us" pages
+**高质量来源：**
+- 行业目录
+- 会员名录
+- 协会网站
+- 资源页面
+- "联系我们"页面
 
-**Avoid:**
-- Social media platforms (rarely have emails)
-- News sites (low conversion)
-- Very large portals (low quality)
+**避免：**
+- 社交媒体平台（很少有邮件地址）
+- 新闻网站（转化率低）
+- 超大型门户网站（质量低）
 
-### 2. Page Length Settings
+### 2. 页面深度设置
 
-**Conservative** (Quality focus):
-- Page length: 5-10
-- Concurrency: 1-3
-- Best for: Targeted lists, high-value contacts
+**保守模式**（注重质量）：
+- 页面深度：5-10
+- 并发数：1-3
+- 最适合：针对性列表、高价值联系人
 
-**Moderate** (Balance):
-- Page length: 10-50
-- Concurrency: 3-5
-- Best for: General outreach campaigns
+**中等模式**（平衡）：
+- 页面深度：10-50
+- 并发数：3-5
+- 最适合：一般外联活动
 
-**Aggressive** (Quantity focus):
-- Page length: 50-100+
-- Concurrency: 5-10
-- Best for: Market research, broad coverage
+**激进模式**（注重数量）：
+- 页面深度：50-100+
+- 并发数：5-10
+- 最适合：市场研究、广泛覆盖
 
-:::warning Quality vs. Quantity
+:::warning 质量与数量
 
-Aggressive settings may extract more emails but lower quality. Focus on relevant sources for better campaign results.
-
-:::
-
-### 3. Proxy Usage
-
-**Small Tasks** (< 100 URLs):
-- Proxies not required
-- Concurrency: 1-3
-
-**Medium Tasks** (100-1000 URLs):
-- Use 2-3 proxies
-- Concurrency: 3-5
-
-**Large Tasks** (1000+ URLs):
-- Use 5+ proxies
-- Concurrency: 5-10
-- Rotate proxies regularly
-
-### 4. Deduplication
-
-aiFetchly automatically deduplicates emails within a task. For additional deduplication:
-
-- Export results to CSV
-- Use spreadsheet software or scripts
-- Compare with existing contact lists
-- Remove duplicates before campaigns
-
-### 5. Email Verification
-
-Extracted emails may not always be valid. Consider:
-
-- **Manual review**: Spot-check email formats
-- **Email verification tools**: Use third-party services
-- **Test campaigns**: Send small batches first
-- **Track bounces**: Remove undeliverable emails
-
-## Integration with Search Results
-
-The most powerful workflow combines search and extraction:
-
-### Complete Workflow
-
-1. **Run Search Task**:
-   - Search for businesses in your target industry
-   - Use AI keyword generation for comprehensive coverage
-
-2. **Extract Emails**:
-   - Create extraction task from search results
-   - Extract emails from discovered URLs
-
-3. **Quality Control**:
-   - Review extracted emails
-   - Filter by source quality
-   - Remove duplicates
-
-4. **Email Campaign**:
-   - Import to email marketing
-   - Create personalized templates
-   - Launch campaign
-
-## Advanced Techniques
-
-### Technique 1: Deep Extraction
-
-For comprehensive email collection:
-
-1. **Set Page Length**: 50-100 pages
-2. **Enable Proxies**: Use 3-5 proxies
-3. **Moderate Concurrency**: 3-5
-4. **Monitor Progress**: Check results regularly
-5. **Stop Early**: If quality drops, adjust settings
-
-### Technique 2: Pattern-Based Extraction
-
-Target specific types of pages:
-
-- **Contact pages**: URLs containing `/contact`
-- **About pages**: URLs containing `/about`
-- **Team pages**: URLs containing `/team`
-- **Member directories**: Association websites
-
-### Technique 3: Competitor Analysis
-
-Extract emails from competitor websites:
-
-1. **Identify competitors** in your niche
-2. **Extract their contact emails**
-3. **Analyze their partnerships** (link pages)
-4. **Build partnership outreach list**
-
-## Troubleshooting
-
-### Task Status: "Error"
-
-**Possible causes:**
-- Invalid URLs
-- Network connectivity issues
-- All proxies failed
-- Website blocking
-
-**Solutions:**
-1. Verify URL format (http:// or https://)
-2. Check internet connection
-3. Test proxy health
-4. Reduce concurrency
-5. Increase timeout settings
-
-### No Emails Extracted
-
-**Possible causes:**
-- Websites don't have publicly visible emails
-- Emails are in images/JavaScript (not extracted)
-- Websites use contact forms instead of emails
-- Page length too low
-
-**Solutions:**
-1. Increase page length setting
-2. Manually verify websites have emails
-3. Try different URL sources
-4. Check if sites use contact forms
-
-### Slow Processing
-
-**Possible causes:**
-- High page length
-- Many concurrent processes
-- Slow websites
-- Network latency
-
-**Solutions:**
-1. Reduce page length
-2. Decrease concurrency
-3. Increase timeout
-4. Use faster proxies
-
-### Duplicate Emails
-
-**Possible causes:**
-- Same email appears on multiple pages
-- Multiple URLs from same domain
-
-**Solutions:**
-1. aiFetchly auto-deduplicates within tasks
-2. Export and deduplicate across tasks
-3. Use spreadsheet software or scripts
-4. Use email verification tools
-
-### Blocked by Websites
-
-**Possible causes:**
-- Too many concurrent requests
-- No proxy rotation
-- Aggressive settings
-
-**Solutions:**
-1. Reduce concurrency to 1-3
-2. Use multiple proxies
-3. Increase delays between requests
-4. Respect website rate limits
-
-## Legal and Ethical Considerations
-
-### Compliance
-
-When extracting emails, consider:
-
-- **GDPR** (Europe): Strict regulations on email collection
-- **CAN-SPAM** (USA): Requirements for commercial emails
-- **CASL** (Canada): Consent requirements for electronic messages
-
-:::warning Legal Disclaimer
-
-Always ensure you have legal rights to extract and contact the email addresses. Consult legal counsel for guidance on applicable laws.
+激进设置可能提取更多邮件但质量较低。专注于相关来源以获得更好的营销活动效果。
 
 :::
 
-### Best Practices
+### 3. 代理使用
 
-- **Public Sources Only**: Extract from publicly available information
-- **Relevant Context**: Extract from businesses/contacts relevant to your offering
-- **Respect Robots.txt**: Honor website exclusion standards
-- **Provide Opt-Out**: Include unsubscribe options in emails
-- **Value Proposition**: Offer something of value in your outreach
+**小型任务**（< 100 个 URL）：
+- 不需要代理
+- 并发数：1-3
 
-## Integration with Email Marketing
+**中型任务**（100-1000 个 URL）：
+- 使用 2-3 个代理
+- 并发数：3-5
 
-Once you've extracted emails:
+**大型任务**（1000+ 个 URL）：
+- 使用 5+ 个代理
+- 并发数：5-10
+- 定期轮换代理
 
-1. **Review Results**: Quality check your extracted emails
-2. **Export or Import**: Direct to email marketing or export as CSV
-3. **Select Template**: Choose or create email template
-4. **Personalize**: Use AI Email Writer for personalized content
-5. **Launch Campaign**: Send targeted outreach
+### 4. 去重
 
-For detailed instructions on creating campaigns, see [Batch Email Sending](./batch-email-sending).
+aiFetchly 自动在任务内去重邮件。额外去重方法：
 
-## Next Steps
+- 将结果导出为 CSV
+- 使用电子表格软件或脚本
+- 与现有联系人列表比较
+- 在营销活动前移除重复项
 
-- [Set up the Knowledge Library](../ai-outreach/knowledge-library)
-- [Create AI-powered email campaigns](../ai-outreach/ai-email-writer)
-- [Learn about the AI Marketing Assistant](../ai-outreach/ai-marketing-assistant)
+### 5. 邮件验证
+
+提取的邮件可能并非总是有效的。建议：
+
+- **手动审查**：抽查邮件格式
+- **邮件验证工具**：使用第三方服务
+- **测试营销活动**：先发送小批量
+- **跟踪退信**：移除无法送达的邮件
+
+## 与搜索结果的集成
+
+最强大的工作流程是结合搜索和提取：
+
+### 完整工作流程
+
+1. **运行搜索任务**：
+   - 搜索目标行业的企业
+   - 使用 AI 关键词生成实现全面覆盖
+
+2. **提取邮件**：
+   - 从搜索结果创建提取任务
+   - 从发现的 URL 中提取邮件
+
+3. **质量控制**：
+   - 审查提取的邮件
+   - 按来源质量筛选
+   - 移除重复项
+
+4. **邮件营销活动**：
+   - 导入到邮件营销
+   - 创建个性化模板
+   - 发起营销活动
+
+## 高级技巧
+
+### 技巧 1：深度提取
+
+用于全面的邮件收集：
+
+1. **设置页面深度**：50-100 页
+2. **启用代理**：使用 3-5 个代理
+3. **中等并发**：3-5
+4. **监控进度**：定期检查结果
+5. **提前终止**：如果质量下降，调整设置
+
+### 技巧 2：基于模式的提取
+
+针对特定类型的页面：
+
+- **联系页面**：URL 包含 `/contact`
+- **关于页面**：URL 包含 `/about`
+- **团队页面**：URL 包含 `/team`
+- **会员目录**：协会网站
+
+### 技巧 3：竞争对手分析
+
+从竞争对手网站提取邮件：
+
+1. **确定**您所在领域的竞争对手
+2. **提取他们的联系邮件**
+3. **分析他们的合作伙伴**（链接页面）
+4. **建立合作伙伴外联列表**
+
+## 故障排除
+
+### 任务状态："Error"
+
+**可能原因：**
+- 无效 URL
+- 网络连接问题
+- 所有代理均失败
+- 网站阻止访问
+
+**解决方案：**
+1. 验证 URL 格式（http:// 或 https://）
+2. 检查网络连接
+3. 测试代理健康状况
+4. 减少并发数
+5. 增加超时设置
+
+### 未提取到邮件
+
+**可能原因：**
+- 网站没有公开可见的邮件地址
+- 邮件在图片/JavaScript 中（无法提取）
+- 网站使用联系表单而非邮件
+- 页面深度设置过低
+
+**解决方案：**
+1. 增加页面深度设置
+2. 手动验证网站是否有邮件地址
+3. 尝试不同的 URL 来源
+4. 检查网站是否使用联系表单
+
+### 处理速度慢
+
+**可能原因：**
+- 页面深度过高
+- 并发进程过多
+- 网站响应缓慢
+- 网络延迟
+
+**解决方案：**
+1. 减少页面深度
+2. 降低并发数
+3. 增加超时时间
+4. 使用更快的代理
+
+### 邮件重复
+
+**可能原因：**
+- 同一邮件出现在多个页面上
+- 来自同一域名的多个 URL
+
+**解决方案：**
+1. aiFetchly 自动在任务内去重
+2. 导出并在任务间去重
+3. 使用电子表格软件或脚本
+4. 使用邮件验证工具
+
+### 被网站阻止
+
+**可能原因：**
+- 并发请求过多
+- 未轮换代理
+- 设置过于激进
+
+**解决方案：**
+1. 将并发数降至 1-3
+2. 使用多个代理
+3. 增加请求之间的延迟
+4. 遵守网站速率限制
+
+## 法律和道德注意事项
+
+### 合规性
+
+提取邮件时，请考虑：
+
+- **GDPR**（欧洲）：对邮件收集的严格法规
+- **CAN-SPAM**（美国）：商业邮件要求
+- **CASL**（加拿大）：电子消息的同意要求
+
+:::warning 法律声明
+
+始终确保您拥有合法权利提取和联系这些邮件地址。请咨询法律顾问了解适用法律的指导。
+
+:::
+
+### 最佳实践
+
+- **仅使用公开来源**：从公开可用的信息中提取
+- **相关上下文**：从与您的产品/服务相关的企业/联系人处提取
+- **尊重 Robots.txt**：遵守网站排除标准
+- **提供退订选项**：在邮件中包含退订选项
+- **价值主张**：在外联中提供有价值的内容
+
+## 与邮件营销的集成
+
+提取邮件后：
+
+1. **审查结果**：质量检查您提取的邮件
+2. **导出或导入**：直接导入邮件营销或导出为 CSV
+3. **选择模板**：选择或创建邮件模板
+4. **个性化**：使用 AI 邮件撰写器生成个性化内容
+5. **发起营销活动**：发送针对性外联
+
+创建营销活动的详细说明请参阅[批量邮件发送](./batch-email-sending)。
+
+## 下一步
+
+- [设置知识库](../ai-outreach/knowledge-library)
+- [创建 AI 驱动的邮件营销活动](../ai-outreach/ai-email-writer)
+- [了解 AI 营销助手](../ai-outreach/ai-marketing-assistant)
 
 ---
 
-**Ready to extract emails?** Start with a small batch of URLs to test your settings, then scale up your extraction operations.
+**准备好提取邮件了吗？** 从小批量 URL 开始测试您的设置，然后逐步扩大提取规模。

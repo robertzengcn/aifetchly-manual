@@ -2,489 +2,489 @@
 id: contact-extraction
 title: Contact Extraction
 sidebar_label: Email Extraction
-description: Extract email addresses from websites and URLs in bulk with aiFetchly's powerful extraction tool.
+description: Extrae direcciones de correo electrónico de sitios web y URL de forma masiva con la potente herramienta de extracción de aiFetchly.
 ---
 
-# Email Extraction
+# Extracción de correos electrónicos
 
-aiFetchly's Email Extraction feature allows you to harvest email addresses from websites at scale. Extract contact information from individual URLs or leverage your existing search results for targeted email collection.
+La función de extracción de correos electrónicos de aiFetchly te permite recopilar direcciones de correo electrónico de sitios web a escala. Extrae información de contacto de URL individuales o aprovecha tus resultados de búsqueda existentes para una recopilación de correos específica.
 
-## Understanding Email Extraction
+## Comprensión de la extracción de correos electrónicos
 
-Email extraction works by:
+La extracción de correos funciona de la siguiente manera:
 
-1. **Visiting each URL** you provide
-2. **Scanning page content** for email patterns
-3. **Following internal links** (optional)
-4. **Compiling all discovered emails** into a structured list
-5. **Deduplicating** results automatically
+1. **Visita cada URL** que proporcionas
+2. **Escanea el contenido de la página** en busca de patrones de correo electrónico
+3. **Sigue enlaces internos** (opcional)
+4. **Compila todos los correos descubiertos** en una lista estructurada
+5. **Elimina duplicados** de los resultados automáticamente
 
-:::info Use Cases
+:::info Casos de uso
 
-Email extraction is perfect for:
-- Collecting emails from search results
-- Building contact lists from industry directories
-- Gathering contact info from member listings
-- Extracting emails from resource pages
+La extracción de correos es ideal para:
+- Recopilar correos de resultados de búsqueda
+- Construir listas de contacto desde directorios de la industria
+- Recopilar información de contacto de listados de miembros
+- Extraer correos de páginas de recursos
 
 :::
 
-## Creating an Extraction Task
+## Crear una tarea de extracción
 
-### Step 1: Navigate to Email Extraction
+### Paso 1: Ir a Extracción de correos
 
-1. Click **Email Extraction** in the left navigation menu
-2. You'll see the extraction task list
-3. Click **Create New Task** button
+1. Haz clic en **Email Extraction** en el menú de navegación izquierdo
+2. Verás la lista de tareas de extracción
+3. Haz clic en el botón **Create New Task**
 
-### Step 2: Choose URL Input Method
+### Paso 2: Elegir método de entrada de URL
 
-Select how you want to provide URLs for extraction:
+Selecciona cómo deseas proporcionar las URL para la extracción:
 
-#### Method 1: Manual URL Input
+#### Método 1: Entrada manual de URL
 
-**Best for**: Custom URL lists, specific websites
+**Ideal para**: Listas de URL personalizadas, sitios web específicos
 
-1. Select **Manual Input** from the source dropdown
-2. Enter your URLs in the text area
-3. **Format**: One URL per line
+1. Selecciona **Manual Input** en el menú desplegable de origen
+2. Introduce tus URL en el área de texto
+3. **Formato**: Una URL por línea
 
-**Example:**
+**Ejemplo:**
 ```
 https://example.com
-https://www.business-site.com/contact
-https://another-site.com/about-us
+https://www.sitio-empresarial.com/contact
+https://otro-sitio.com/about-us
 ```
 
-**Validation:**
-- URLs must start with `http://` or `https://`
-- Invalid URLs will be flagged automatically
-- Maximum URLs per task: 10,000
+**Validación:**
+- Las URL deben comenzar con `http://` o `https://`
+- Las URL no válidas se marcarán automáticamente
+- Máximo de URL por tarea: 10,000
 
-#### Method 2: From Search Results
+#### Método 2: Desde resultados de búsqueda
 
-**Best for**: Leveraging existing search campaigns
+**Ideal para**: Aprovechar campañas de búsqueda existentes
 
-1. Select **Search Results** from the source dropdown
-2. A table of your completed search tasks appears
-3. Select the search task containing URLs you want to extract from
-4. Click **Confirm**
+1. Selecciona **Search Results** en el menú desplegable de origen
+2. Aparece una tabla con tus tareas de búsqueda completadas
+3. Selecciona la tarea de búsqueda que contiene las URL de las que deseas extraer
+4. Haz clic en **Confirm**
 
-**Benefits:**
-- Seamless integration with search feature
-- No manual URL entry needed
-- Uses previously scraped URLs
+**Ventajas:**
+- Integración fluida con la función de búsqueda
+- No es necesario introducir URL manualmente
+- Utiliza las URL previamente extraídas
 
-### Step 3: Configure Extraction Settings
+### Paso 3: Configurar ajustes de extracción
 
-#### Page Length
+#### Profundidad de páginas
 
-- **Default**: 10 pages per URL
-- **Range**: 1-1000 pages
-- **Purpose**: How many pages deep to crawl each website
+- **Predeterminado**: 10 páginas por URL
+- **Rango**: 1-1000 páginas
+- **Propósito**: Cuántas páginas rastrear en profundidad por cada sitio web
 
-**Guidelines:**
-- **Small sites**: 5-10 pages
-- **Medium sites**: 10-50 pages
-- **Large sites**: 50-100 pages
-- **Very large sites**: 100+ pages (use with caution)
+**Directrices:**
+- **Sitios pequeños**: 5-10 páginas
+- **Sitios medianos**: 10-50 páginas
+- **Sitios grandes**: 50-100 páginas
+- **Sitios muy grandes**: 100+ páginas (usar con precaución)
 
-:::warning Pages vs. Time
+:::warning Páginas vs. Tiempo
 
-Higher page length = longer extraction time. Start conservative and scale up.
-
-:::
-
-#### Concurrency
-
-- **Default**: 1 concurrent process
-- **Range**: 1-10 concurrent processes
-- **Purpose**: How many URLs to process simultaneously
-
-**Recommendations:**
-- **Without proxies**: 1-3 concurrent
-- **With proxies**: 3-10 concurrent
-- **Start low** and increase gradually
-
-#### Max Page Number
-
-- **Default**: 100 pages
-- **Range**: 0-1000 pages
-- **Purpose**: Absolute maximum pages to process
-
-**Use Case**: Prevent runaway extraction on very large sites.
-
-#### Process Timeout
-
-- **Default**: 10 minutes
-- **Range**: 1-20 minutes
-- **Purpose**: Maximum time per URL before timeout
-
-**Adjust if:**
-- Sites load slowly → Increase timeout
-- Want faster failure → Decrease timeout
-
-### Step 4: Display Options
-
-#### Show in Browser
-
-- **No** (default): Extraction runs invisibly (faster)
-- **Yes**: Browser window visible (debugging mode)
-
-**Recommendation**: Keep at "No" for production tasks.
-
-### Step 5: Proxy Configuration (Optional)
-
-Add proxies for large-scale extraction:
-
-1. Toggle **Use Proxy**
-2. Click **Choose Proxy**
-3. Select one or more proxies
-4. Click **Confirm**
-
-:::tip When to Use Proxies
-
-Use proxies when:
-- Extracting from 50+ URLs
-- Running multiple concurrent processes
-- Previous tasks were blocked
-- Extracting from the same domains repeatedly
+Mayor profundidad de páginas = mayor tiempo de extracción. Comienza de forma conservadora y escala gradualmente.
 
 :::
 
-### Step 6: Create Task
+#### Concurrencia
 
-Click **Submit** to create your extraction task. You can:
-- **Save Only**: Save task without running
-- **Run Now**: Start extraction immediately
+- **Predeterminado**: 1 proceso concurrente
+- **Rango**: 1-10 procesos concurrentes
+- **Propósito**: Cuántas URL procesar simultáneamente
 
-## Managing Extraction Tasks
+**Recomendaciones:**
+- **Sin proxies**: 1-3 concurrentes
+- **Con proxies**: 3-10 concurrentes
+- **Comienza bajo** y aumenta gradualmente
 
-### View Task List
+#### Número máximo de páginas
 
-Navigate to **Email Extraction** to see all your tasks.
+- **Predeterminado**: 100 páginas
+- **Rango**: 0-1000 páginas
+- **Propósito**: Máximo absoluto de páginas a procesar
 
-**Task List Columns:**
+**Caso de uso**: Prevenir extracciones descontroladas en sitios muy grandes.
 
-| Column | Description |
-|--------|-------------|
-| **ID** | Unique task identifier |
-| **Type** | Manual Input or Search Results |
+#### Tiempo de espera del proceso
+
+- **Predeterminado**: 10 minutos
+- **Rango**: 1-20 minutos
+- **Propósito**: Tiempo máximo por URL antes de agotar el tiempo de espera
+
+**Ajusta si:**
+- Los sitios cargan lentamente → Aumenta el tiempo de espera
+- Deseas fallos más rápidos → Disminuye el tiempo de espera
+
+### Paso 4: Opciones de visualización
+
+#### Mostrar en el navegador
+
+- **No** (predeterminado): La extracción se ejecuta de forma invisible (más rápido)
+- **Sí**: La ventana del navegador es visible (modo de depuración)
+
+**Recomendación**: Mantén en "No" para tareas de producción.
+
+### Paso 5: Configuración de proxy (Opcional)
+
+Añade proxies para extracciones a gran escala:
+
+1. Activa **Use Proxy**
+2. Haz clic en **Choose Proxy**
+3. Selecciona uno o más proxies
+4. Haz clic en **Confirm**
+
+:::tip Cuándo usar proxies
+
+Usa proxies cuando:
+- Extraigas de más de 50 URL
+- Ejecutes múltiples procesos concurrentes
+- Tareas anteriores hayan sido bloqueadas
+- Extraigas de los mismos dominios repetidamente
+
+:::
+
+### Paso 6: Crear tarea
+
+Haz clic en **Submit** para crear tu tarea de extracción. Puedes:
+- **Save Only**: Guarda la tarea sin ejecutarla
+- **Run Now**: Inicia la extracción inmediatamente
+
+## Gestión de tareas de extracción
+
+### Ver lista de tareas
+
+Navega a **Email Extraction** para ver todas tus tareas.
+
+**Columnas de la lista de tareas:**
+
+| Columna | Descripción |
+|---------|-------------|
+| **ID** | Identificador único de la tarea |
+| **Type** | Manual Input o Search Results |
 | **Status** | Pending, Processing, Complete, Error |
-| **Record Time** | When task was created |
+| **Record Time** | Cuándo se creó la tarea |
 | **Actions** | View, Edit, Delete, Download Logs |
 
-### Task Status
+### Estado de la tarea
 
-| Status | Description | Action |
+| Estado | Descripción | Acción |
 |--------|-------------|--------|
-| **Pending** | Task created but not started | Edit, Delete |
-| **Processing** | Actively extracting emails | Monitor progress |
-| **Complete** | Finished successfully | View results |
-| **Error** | Failed with errors | View logs, Retry |
+| **Pending** | Tarea creada pero no iniciada | Edit, Delete |
+| **Processing** | Extrayendo correos activamente | Monitorear progreso |
+| **Complete** | Finalizada exitosamente | Ver resultados |
+| **Error** | Falló con errores | Ver registros, Retry |
 
-### Task Actions
+### Acciones de tarea
 
-- **View Results** (folder icon): See extracted emails
-- **Edit** (pencil icon): Modify task settings (only pending/error tasks)
-- **Delete** (trash icon): Remove task
-- **Download Logs** (download icon): Get error logs (failed tasks only)
+- **View Results** (icono de carpeta): Ver correos extraídos
+- **Edit** (icono de lápiz): Modificar ajustes de la tarea (solo tareas pendientes/con error)
+- **Delete** (icono de papelera): Eliminar tarea
+- **Download Logs** (icono de descarga): Obtener registros de errores (solo tareas fallidas)
 
-## Viewing Extracted Emails
+## Ver correos extraídos
 
-### Step 1: Access Results
+### Paso 1: Acceder a los resultados
 
-1. Go to **Email Extraction** task list
-2. Find the completed task
-3. Click **View Results**
+1. Ve a la lista de tareas de **Email Extraction**
+2. Encuentra la tarea completada
+3. Haz clic en **View Results**
 
-### Step 2: Results Table
+### Paso 2: Tabla de resultados
 
-The results table displays:
+La tabla de resultados muestra:
 
-| Column | Description |
-|--------|-------------|
-| **URL** | Source website |
-| **Emails** | Extracted email addresses (expandable) |
-| **Count** | Number of emails found |
-| **Timestamp** | When extraction occurred |
+| Columna | Descripción |
+|---------|-------------|
+| **URL** | Sitio web de origen |
+| **Emails** | Direcciones de correo extraídas (expandible) |
+| **Count** | Número de correos encontrados |
+| **Timestamp** | Cuándo ocurrió la extracción |
 
-### Step 3: Expand Details
+### Paso 3: Expandir detalles
 
-Click on a row to expand and see:
-- All emails found on that URL
-- Email list can be copied
-- View individual email addresses
+Haz clic en una fila para expandirla y ver:
+- Todos los correos encontrados en esa URL
+- La lista de correos se puede copiar
+- Ver direcciones de correo individuales
 
-### Step 4: Search and Filter
+### Paso 4: Búsqueda y filtrado
 
-- **Search**: Filter by URL or email address
-- **Pagination**: Navigate large result sets
-- **Auto-refresh**: Results update every 10 seconds during processing
+- **Search**: Filtra por URL o dirección de correo
+- **Pagination**: Navega conjuntos de resultados grandes
+- **Auto-refresh**: Los resultados se actualizan cada 10 segundos durante el procesamiento
 
-## Exporting Extracted Emails
+## Exportar correos extraídos
 
-### Export as CSV
+### Exportar como CSV
 
-1. Select results you want to export (or leave blank for all)
-2. Click **Export** → **CSV**
-3. File downloads with all extracted emails
+1. Selecciona los resultados que deseas exportar (o deja en blanco para todos)
+2. Haz clic en **Export** → **CSV**
+3. El archivo se descarga con todos los correos extraídos
 
-**CSV Format:**
+**Formato CSV:**
 ```csv
 URL,Email,Timestamp
 https://example.com,contact@example.com,2024-01-15 10:30:00
 https://example.com,info@example.com,2024-01-15 10:30:00
 ```
 
-### Use in Email Campaigns
+### Usar en campañas de correo
 
-Extracted emails integrate directly with email marketing:
+Los correos extraídos se integran directamente con el marketing por correo:
 
-1. **View Results** of extraction task
-2. Click **Use in Campaign** button
-3. Emails are automatically passed to email marketing workflow
+1. **View Results** de la tarea de extracción
+2. Haz clic en el botón **Use in Campaign**
+3. Los correos se transfieren automáticamente al flujo de marketing por correo
 
-For detailed instructions, see [Batch Email Sending](./batch-email-sending).
+Para instrucciones detalladas, consulta [Envío masivo de correos](./batch-email-sending).
 
-## Best Practices
+## Mejores prácticas
 
-### 1. URL Source Strategy
+### 1. Estrategia de origen de URL
 
-**High-Quality Sources:**
-- Industry directories
-- Member listings
-- Association websites
-- Resource pages
-- "Contact Us" pages
+**Fuentes de alta calidad:**
+- Directorios de la industria
+- Listados de miembros
+- Sitios web de asociaciones
+- Páginas de recursos
+- Páginas de "Contacto"
 
-**Avoid:**
-- Social media platforms (rarely have emails)
-- News sites (low conversion)
-- Very large portals (low quality)
+**Evita:**
+- Plataformas de redes sociales (rara vez tienen correos)
+- Sitios de noticias (baja conversión)
+- Portales muy grandes (baja calidad)
 
-### 2. Page Length Settings
+### 2. Configuración de profundidad de páginas
 
-**Conservative** (Quality focus):
-- Page length: 5-10
-- Concurrency: 1-3
-- Best for: Targeted lists, high-value contacts
+**Conservadora** (Enfoque en calidad):
+- Profundidad: 5-10
+- Concurrencia: 1-3
+- Ideal para: Listas específicas, contactos de alto valor
 
-**Moderate** (Balance):
-- Page length: 10-50
-- Concurrency: 3-5
-- Best for: General outreach campaigns
+**Moderada** (Equilibrio):
+- Profundidad: 10-50
+- Concurrencia: 3-5
+- Ideal para: Campañas de comunicación generales
 
-**Aggressive** (Quantity focus):
-- Page length: 50-100+
-- Concurrency: 5-10
-- Best for: Market research, broad coverage
+**Agresiva** (Enfoque en cantidad):
+- Profundidad: 50-100+
+- Concurrencia: 5-10
+- Ideal para: Investigación de mercado, cobertura amplia
 
-:::warning Quality vs. Quantity
+:::warning Calidad vs. Cantidad
 
-Aggressive settings may extract more emails but lower quality. Focus on relevant sources for better campaign results.
-
-:::
-
-### 3. Proxy Usage
-
-**Small Tasks** (< 100 URLs):
-- Proxies not required
-- Concurrency: 1-3
-
-**Medium Tasks** (100-1000 URLs):
-- Use 2-3 proxies
-- Concurrency: 3-5
-
-**Large Tasks** (1000+ URLs):
-- Use 5+ proxies
-- Concurrency: 5-10
-- Rotate proxies regularly
-
-### 4. Deduplication
-
-aiFetchly automatically deduplicates emails within a task. For additional deduplication:
-
-- Export results to CSV
-- Use spreadsheet software or scripts
-- Compare with existing contact lists
-- Remove duplicates before campaigns
-
-### 5. Email Verification
-
-Extracted emails may not always be valid. Consider:
-
-- **Manual review**: Spot-check email formats
-- **Email verification tools**: Use third-party services
-- **Test campaigns**: Send small batches first
-- **Track bounces**: Remove undeliverable emails
-
-## Integration with Search Results
-
-The most powerful workflow combines search and extraction:
-
-### Complete Workflow
-
-1. **Run Search Task**:
-   - Search for businesses in your target industry
-   - Use AI keyword generation for comprehensive coverage
-
-2. **Extract Emails**:
-   - Create extraction task from search results
-   - Extract emails from discovered URLs
-
-3. **Quality Control**:
-   - Review extracted emails
-   - Filter by source quality
-   - Remove duplicates
-
-4. **Email Campaign**:
-   - Import to email marketing
-   - Create personalized templates
-   - Launch campaign
-
-## Advanced Techniques
-
-### Technique 1: Deep Extraction
-
-For comprehensive email collection:
-
-1. **Set Page Length**: 50-100 pages
-2. **Enable Proxies**: Use 3-5 proxies
-3. **Moderate Concurrency**: 3-5
-4. **Monitor Progress**: Check results regularly
-5. **Stop Early**: If quality drops, adjust settings
-
-### Technique 2: Pattern-Based Extraction
-
-Target specific types of pages:
-
-- **Contact pages**: URLs containing `/contact`
-- **About pages**: URLs containing `/about`
-- **Team pages**: URLs containing `/team`
-- **Member directories**: Association websites
-
-### Technique 3: Competitor Analysis
-
-Extract emails from competitor websites:
-
-1. **Identify competitors** in your niche
-2. **Extract their contact emails**
-3. **Analyze their partnerships** (link pages)
-4. **Build partnership outreach list**
-
-## Troubleshooting
-
-### Task Status: "Error"
-
-**Possible causes:**
-- Invalid URLs
-- Network connectivity issues
-- All proxies failed
-- Website blocking
-
-**Solutions:**
-1. Verify URL format (http:// or https://)
-2. Check internet connection
-3. Test proxy health
-4. Reduce concurrency
-5. Increase timeout settings
-
-### No Emails Extracted
-
-**Possible causes:**
-- Websites don't have publicly visible emails
-- Emails are in images/JavaScript (not extracted)
-- Websites use contact forms instead of emails
-- Page length too low
-
-**Solutions:**
-1. Increase page length setting
-2. Manually verify websites have emails
-3. Try different URL sources
-4. Check if sites use contact forms
-
-### Slow Processing
-
-**Possible causes:**
-- High page length
-- Many concurrent processes
-- Slow websites
-- Network latency
-
-**Solutions:**
-1. Reduce page length
-2. Decrease concurrency
-3. Increase timeout
-4. Use faster proxies
-
-### Duplicate Emails
-
-**Possible causes:**
-- Same email appears on multiple pages
-- Multiple URLs from same domain
-
-**Solutions:**
-1. aiFetchly auto-deduplicates within tasks
-2. Export and deduplicate across tasks
-3. Use spreadsheet software or scripts
-4. Use email verification tools
-
-### Blocked by Websites
-
-**Possible causes:**
-- Too many concurrent requests
-- No proxy rotation
-- Aggressive settings
-
-**Solutions:**
-1. Reduce concurrency to 1-3
-2. Use multiple proxies
-3. Increase delays between requests
-4. Respect website rate limits
-
-## Legal and Ethical Considerations
-
-### Compliance
-
-When extracting emails, consider:
-
-- **GDPR** (Europe): Strict regulations on email collection
-- **CAN-SPAM** (USA): Requirements for commercial emails
-- **CASL** (Canada): Consent requirements for electronic messages
-
-:::warning Legal Disclaimer
-
-Always ensure you have legal rights to extract and contact the email addresses. Consult legal counsel for guidance on applicable laws.
+Los ajustes agresivos pueden extraer más correos pero de menor calidad. Concéntrate en fuentes relevantes para mejores resultados en las campañas.
 
 :::
 
-### Best Practices
+### 3. Uso de proxies
 
-- **Public Sources Only**: Extract from publicly available information
-- **Relevant Context**: Extract from businesses/contacts relevant to your offering
-- **Respect Robots.txt**: Honor website exclusion standards
-- **Provide Opt-Out**: Include unsubscribe options in emails
-- **Value Proposition**: Offer something of value in your outreach
+**Tareas pequeñas** (< 100 URL):
+- Proxies no requeridos
+- Concurrencia: 1-3
 
-## Integration with Email Marketing
+**Tareas medianas** (100-1000 URL):
+- Usa 2-3 proxies
+- Concurrencia: 3-5
 
-Once you've extracted emails:
+**Tareas grandes** (1000+ URL):
+- Usa 5+ proxies
+- Concurrencia: 5-10
+- Rota los proxies regularmente
 
-1. **Review Results**: Quality check your extracted emails
-2. **Export or Import**: Direct to email marketing or export as CSV
-3. **Select Template**: Choose or create email template
-4. **Personalize**: Use AI Email Writer for personalized content
-5. **Launch Campaign**: Send targeted outreach
+### 4. Deduplicación
 
-For detailed instructions on creating campaigns, see [Batch Email Sending](./batch-email-sending).
+aiFetchly elimina automáticamente los correos duplicados dentro de una tarea. Para una deduplicación adicional:
 
-## Next Steps
+- Exporta los resultados a CSV
+- Usa software de hojas de cálculo o scripts
+- Compara con listas de contactos existentes
+- Elimina duplicados antes de las campañas
 
-- [Set up the Knowledge Library](../ai-outreach/knowledge-library)
-- [Create AI-powered email campaigns](../ai-outreach/ai-email-writer)
-- [Learn about the AI Marketing Assistant](../ai-outreach/ai-marketing-assistant)
+### 5. Verificación de correo
+
+Los correos extraídos pueden no siempre ser válidos. Considera:
+
+- **Revisión manual**: Verifica los formatos de correo
+- **Herramientas de verificación de correo**: Usa servicios de terceros
+- **Campañas de prueba**: Envía lotes pequeños primero
+- **Seguimiento de rebotes**: Elimina correos no entregables
+
+## Integración con resultados de búsqueda
+
+El flujo de trabajo más potente combina búsqueda y extracción:
+
+### Flujo de trabajo completo
+
+1. **Ejecutar tarea de búsqueda**:
+   - Busca empresas en tu industria objetivo
+   - Usa la generación de palabras clave por IA para una cobertura integral
+
+2. **Extraer correos**:
+   - Crea una tarea de extracción desde los resultados de búsqueda
+   - Extrae correos de las URL descubiertas
+
+3. **Control de calidad**:
+   - Revisa los correos extraídos
+   - Filtra por calidad de la fuente
+   - Elimina duplicados
+
+4. **Campaña de correo**:
+   - Importa al marketing por correo
+   - Crea plantillas personalizadas
+   - Lanza la campaña
+
+## Técnicas avanzadas
+
+### Técnica 1: Extracción profunda
+
+Para una recopilación de correos integral:
+
+1. **Configura la profundidad**: 50-100 páginas
+2. **Habilita proxies**: Usa 3-5 proxies
+3. **Concurrencia moderada**: 3-5
+4. **Monitorea el progreso**: Revisa los resultados regularmente
+5. **Detén temprano**: Si la calidad disminuye, ajusta los ajustes
+
+### Técnica 2: Extracción basada en patrones
+
+Dirígete a tipos específicos de páginas:
+
+- **Páginas de contacto**: URL que contienen `/contact`
+- **Páginas de acerca de**: URL que contienen `/about`
+- **Páginas de equipo**: URL que contienen `/team`
+- **Directorios de miembros**: Sitios web de asociaciones
+
+### Técnica 3: Análisis de la competencia
+
+Extrae correos de sitios web de la competencia:
+
+1. **Identifica competidores** en tu nicho
+2. **Extrae sus correos de contacto**
+3. **Analiza sus asociaciones** (páginas de enlaces)
+4. **Construye una lista de contacto para asociaciones**
+
+## Solución de problemas
+
+### Estado de la tarea: "Error"
+
+**Posibles causas:**
+- URL no válidas
+- Problemas de conectividad de red
+- Todos los proxies fallaron
+- Bloqueo del sitio web
+
+**Soluciones:**
+1. Verifica el formato de la URL (http:// o https://)
+2. Comprueba la conexión a internet
+3. Verifica la salud de los proxies
+4. Reduce la concurrencia
+5. Aumenta los ajustes de tiempo de espera
+
+### No se extrajeron correos
+
+**Posibles causas:**
+- Los sitios web no tienen correos visibles públicamente
+- Los correos están en imágenes/JavaScript (no se extraen)
+- Los sitios web usan formularios de contacto en lugar de correos
+- Profundidad de páginas demasiado baja
+
+**Soluciones:**
+1. Aumenta el ajuste de profundidad de páginas
+2. Verifica manualmente que los sitios web tengan correos
+3. Prueba con diferentes fuentes de URL
+4. Comprueba si los sitios usan formularios de contacto
+
+### Procesamiento lento
+
+**Posibles causas:**
+- Alta profundidad de páginas
+- Muchos procesos concurrentes
+- Sitios web lentos
+- Latencia de red
+
+**Soluciones:**
+1. Reduce la profundidad de páginas
+2. Disminuye la concurrencia
+3. Aumenta el tiempo de espera
+4. Usa proxies más rápidos
+
+### Correos duplicados
+
+**Posibles causas:**
+- El mismo correo aparece en múltiples páginas
+- Múltiples URL del mismo dominio
+
+**Soluciones:**
+1. aiFetchly elimina duplicados automáticamente dentro de las tareas
+2. Exporta y deduplica entre tareas
+3. Usa software de hojas de cálculo o scripts
+4. Usa herramientas de verificación de correo
+
+### Bloqueado por sitios web
+
+**Posibles causas:**
+- Demasiadas solicitudes concurrentes
+- Sin rotación de proxies
+- Ajustes agresivos
+
+**Soluciones:**
+1. Reduce la concurrencia a 1-3
+2. Usa múltiples proxies
+3. Aumenta los retrasos entre solicitudes
+4. Respeta los límites de velocidad del sitio web
+
+## Consideraciones legales y éticas
+
+### Cumplimiento
+
+Al extraer correos, considera:
+
+- **GDPR** (Europa): Regulaciones estrictas sobre la recopilación de correos
+- **CAN-SPAM** (EE.UU.): Requisitos para correos comerciales
+- **CASL** (Canadá): Requisitos de consentimiento para mensajes electrónicos
+
+:::warning Aviso legal
+
+Asegúrate siempre de tener derechos legales para extraer y contactar las direcciones de correo. Consulta con un asesor legal para obtener orientación sobre las leyes aplicables.
+
+:::
+
+### Mejores prácticas
+
+- **Solo fuentes públicas**: Extrae de información disponible públicamente
+- **Contexto relevante**: Extrae de empresas/contactos relevantes para tu oferta
+- **Respeta Robots.txt**: Honra los estándares de exclusión de sitios web
+- **Proporciona opción de exclusión**: Incluye opciones de cancelación de suscripción en los correos
+- **Propuesta de valor**: Ofrece algo de valor en tus comunicaciones
+
+## Integración con el marketing por correo
+
+Una vez que hayas extraído los correos:
+
+1. **Revisa los resultados**: Verifica la calidad de tus correos extraídos
+2. **Exporta o importa**: Dirige al marketing por correo o exporta como CSV
+3. **Selecciona plantilla**: Elige o crea una plantilla de correo
+4. **Personaliza**: Usa AI Email Writer para contenido personalizado
+5. **Lanza la campaña**: Envía comunicaciones específicas
+
+Para instrucciones detalladas sobre la creación de campañas, consulta [Envío masivo de correos](./batch-email-sending).
+
+## Próximos pasos
+
+- [Configura la Biblioteca de conocimiento](../ai-outreach/knowledge-library)
+- [Crea campañas de correo con IA](../ai-outreach/ai-email-writer)
+- [Conoce el Asistente de Marketing IA](../ai-outreach/ai-marketing-assistant)
 
 ---
 
-**Ready to extract emails?** Start with a small batch of URLs to test your settings, then scale up your extraction operations.
+**¿Listo para extraer correos?** Comienza con un lote pequeño de URL para probar tus ajustes, luego escala tus operaciones de extracción.

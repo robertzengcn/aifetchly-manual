@@ -5,413 +5,496 @@ sidebar_label: Search Engines
 description: Learn how to scrape search results from Google, Bing, and Yandex to generate leads with AI-powered analysis.
 ---
 
-# Search Engine Scraping
+# 検索エンジンスクレイピング
 
-aiFetchly's multi-engine search scraping feature allows you to collect leads from multiple search engines simultaneously. Extract business information, URLs, and contact details from search results automatically.
+aiFetchly のマルチエンジン検索スクレイピング機能を使えば、複数の検索エンジンから同時にリードを収集できます。検索結果からビジネス情報、URL、連絡先の詳細を自動的に抽出します。AI 分析により、リードのスコアリング、業界分類、連絡先情報の抽出がすべて検索結果から行えます。
 
-## Supported Search Engines
+## 対応検索エンジン
 
-| Engine | Best For | Account Required | Local Browser |
+| エンジン | 最適な用途 | アカウント必須 | ローカルブラウザ |
 |--------|----------|------------------|---------------|
-| **Google** | General searches, global reach | Recommended | Optional |
-| **Bing** | Microsoft ecosystem, US market | Optional | Optional |
-| **Yandex** | Russian market, Cyrillic content | Recommended | **Required** |
+| **Google** | 一般検索、グローバルリーチ | 推奨 | 任意 |
+| **Bing** | Microsoft エコシステム、米国市場 | 任意 | 任意 |
+| **Yandex** | ロシア市場、キリル文字コンテンツ | 推奨 | **必須** |
 
-:::info Yandex Requirement
+:::info Yandex の要件
 
-Yandex scraping requires **local browser integration** for proper operation. Enable this option when creating Yandex tasks.
-
-:::
-
-## Creating a Search Task
-
-### Step 1: Navigate to Search
-
-1. Click **Search** in the left navigation menu
-2. You'll see the **Search Form** page
-
-### Step 2: Basic Search Configuration
-
-Enter the following required information:
-
-#### Keywords
-
-1. **Enter Your Keywords**: Type or paste your search keywords in the text area
-   - One keyword per line
-   - Use specific, targeted keywords for better results
-
-2. **Generate Related Keywords** (Optional):
-   - Click the **Generate Related Keywords** button
-   - aiFetchly uses AI to generate related search terms
-   - Expands your keyword list for broader coverage
-   - Removes duplicates automatically
-
-:::tip Keyword Strategy
-
-Start with 5-10 seed keywords, then use AI generation to expand to 20-50 related keywords for comprehensive coverage.
+Yandex スクレイピングを正常に動作させるには、**ローカルブラウザ統合** が必要です。Yandex タスクを作成する際にこのオプションを有効にしてください。
 
 :::
 
-#### Search Engine
+## 検索タスクの作成
 
-Select the search engine from the dropdown:
-- Google (default)
+### ステップ 1: 検索に移動
+
+1. 左側のナビゲーションメニューで **Search** をクリック
+2. **Search Form** ページが表示されます
+
+### ステップ 2: 基本検索設定
+
+以下の必須情報を入力します:
+
+#### キーワード
+
+1. **キーワードの入力**: テキストエリアに検索キーワードを入力または貼り付け
+   - 1 行に 1 つのキーワード
+   - より良い結果を得るために、具体的でターゲットを絞ったキーワードを使用
+
+2. **関連キーワードの生成**（任意）:
+   - **Generate Related Keywords** ボタンをクリック
+   - aiFetchly が AI を使用して関連検索語を生成
+   - より幅広いカバレッジのためにキーワードリストを拡張
+   - 重複は自動的に削除
+
+:::tip キーワード戦略
+
+まず 5〜10 のシードキーワードで始め、AI 生成を使って 20〜50 の関連キーワードに拡張し、包括的なカバレッジを確保してください。
+
+:::
+
+#### 検索エンジン
+
+ドロップダウンから検索エンジンを選択:
+- Google（デフォルト）
 - Bing
 - Yandex
 
-#### Page Number
+#### ページ番号
 
-Specify which page to start scraping from:
-- **Start at page 1** for fresh searches
-- **Resume from page X** if continuing a previous task
+スクレイピングを開始するページを指定:
+- 新規検索の場合は **ページ 1 から開始**
+- 以前のタスクを続行する場合は **ページ X から再開**
 
-#### Concurrent Quantity
+#### 同時実行数
 
-Set the number of concurrent searches:
-- **1** (default): Safest, slowest
-- **3-5**: Moderate speed, good for most use cases
-- **10+**: Fastest, requires more proxies
+同時検索の数を設定:
+- **1**（デフォルト）: 最も安全、最も遅い
+- **3〜5**: 中程度の速度、ほとんどの用途に適している
+- **10 以上**: 最速、より多くのプロキシが必要
 
-:::warning Concurrency Limits
+:::warning 同時実行数の制限
 
-Higher concurrency increases the risk of being blocked. Start with 1-3 and increase gradually.
-
-:::
-
-### Step 3: Advanced Options
-
-#### Proxy Configuration
-
-**Option A: Use Saved Proxies**
-
-1. Click the **Choose Proxy** button
-2. Select one or more proxies from your list
-3. Click **Confirm** to add them to the task
-
-**Option B: Manual Proxy Entry**
-
-1. Toggle the proxy option
-2. Enter proxy details manually:
-   - Host/IP address
-   - Port number
-   - Username (if required)
-   - Password (if required)
-
-:::tip Proxy Best Practices
-
-Use multiple proxies for high-concurrency tasks to distribute load and avoid blocks.
+同時実行数が高いほどブロックされるリスクが高まります。1〜3 から始め、段階的に増やしてください。
 
 :::
 
-#### Local Browser Integration
+### ステップ 3: 詳細オプション
 
-Enable local browser scraping for more human-like behavior:
+#### プロキシ設定
 
-1. Toggle **Local Browser** to enable
-2. Select your Chrome browser from the list
-3. **Required for**: Yandex scraping
-4. **Recommended for**: Google at scale
+**オプション A: 保存済みプロキシの使用**
 
-**Benefits:**
-- Lower detection rates
-- Better success with anti-bot protections
-- More consistent results
+1. **Choose Proxy** ボタンをクリック
+2. リストから 1 つ以上のプロキシを選択
+3. **Confirm** をクリックしてタスクに追加
 
-#### Search Account Usage
+**オプション B: 手動プロキシ入力**
 
-Use authenticated accounts for better success rates:
+1. プロキシオプションを切替
+2. プロキシの詳細を手動で入力:
+   - ホスト/IP アドレス
+   - ポート番号
+   - ユーザー名（必要な場合）
+   - パスワード（必要な場合）
 
-1. Toggle **Search Account** to enable
-2. Click **Choose Account** to select saved credentials
-3. Select accounts matching your search engine
-4. Click **Confirm**
+:::tip プロキシのベストプラクティス
 
-**Recommendations:**
-- **Google**: Use accounts for large-scale scraping
-- **Yandex**: Use accounts for better access
-- **Bing**: Optional, less critical
+高同時実行のタスクでは複数のプロキシを使用して、負荷を分散しブロックを回避してください。
 
-### Step 4: Execute or Save
+:::
 
-Choose one of the following options:
+#### ローカルブラウザ統合
 
-#### Save Only
+より人間に近い動作のためにローカルブラウザスクレイピングを有効にします:
 
-- Creates the task without running it
-- Useful for scheduling or batch task creation
-- Task status: "Not Start"
+1. **Local Browser** を切替えて有効化
+2. リストから Chrome ブラウザを選択
+3. **必須**: Yandex スクレイピング
+4. **推奨**: 大規模な Google スクレイピング
 
-#### Run Task
+**メリット:**
+- 検出率の低下
+- アンチボット対策に対する高い成功率
+- より安定した結果
 
-- Creates and executes the task immediately
-- Status changes to "Processing"
-- Results appear in real-time
+#### ブラウザで表示
 
-## Managing Search Tasks
+**Show in Browser** を切替えて、スクレイピング中のブラウザの表示を制御:
 
-### View Task List
+- **有効**: スクレイピング中にブラウザウィンドウが表示される — デバッグや進行状況の監視に便利
+- **無効**（デフォルト）: ブラウザはヘッドレスモードで高速にバックグラウンド動作
 
-Navigate to **Search** → **Result List** to see all your search tasks.
+#### AI リカバリーの有効化
 
-**Task List Columns:**
+**Enable AI Recovery** を切替えて、AI にスクレイピングエラーからの自動回復を許可:
 
-| Column | Description |
+- 有効にすると、aiFetchly は AI を使用してスクレイピング中に発生したエラーを診断・回復
+- システムはエラーのスクリーンショットを分析し、戦略を調整可能
+- 過剰なリソース消費を避けるため、リカバリー試行はレート制限あり
+
+:::tip AI リカバリーを使用すべきケース
+
+強力なアンチボット保護を持つエンジン（Google など）のスクレイピング時や、大規模タスクで時折エラーが予想される場合に AI リカバリーを有効にしてください。
+
+:::
+
+#### 検索アカウントの使用
+
+認証済みアカウントを使用して成功率を向上:
+
+1. **Search Account** を切替えて有効化
+2. **Choose Account** をクリックして保存済みの認証情報を選択
+3. 検索エンジンに一致するアカウントを選択
+4. **Confirm** をクリック
+
+**推奨:**
+- **Google**: 大規模スクレイピングにはアカウントを使用
+- **Yandex**: より良いアクセスのためにアカウントを使用
+- **Bing**: 任意、それほど重要ではない
+
+### ステップ 4: 実行または保存
+
+以下のいずれかのオプションを選択:
+
+#### 保存のみ
+
+- タスクを実行せずに作成
+- スケジューリングやバッチタスク作成に便利
+- タスクステータス: "Not Start"
+
+#### タスクの実行
+
+- タスクを作成して直ちに実行
+- ステータスが "Processing" に変更
+- リアルタイムで結果が表示
+
+## 検索タスクの管理
+
+### タスクリストの表示
+
+**Search** → **Result List** に移動してすべての検索タスクを表示します。
+
+**タスクリストの列:**
+
+| 列 | 説明 |
 |--------|-------------|
-| **ID** | Unique task identifier |
-| **Keywords** | Keywords used in the search |
-| **Search Engine** | Engine used (Google, Bing, etc.) |
-| **Status** | Not Start, Processing, Complete, Error |
-| **Created** | Date and time created |
-| **Actions** | Run, Edit, Delete, View Results |
+| **ID** | 一意のタスク識別子 |
+| **Keywords** | 検索に使用されたキーワード |
+| **Search Engine** | 使用エンジン（Google、Bing など） |
+| **Status** | Not Start、Processing、Complete、Error |
+| **Record Time** | 作成日時 |
+| **Actions** | 実行、編集、結果表示、プロセス強制終了、リトライ、ログダウンロード |
 
-### Task Actions
+### タスクアクション
 
-| Action | Description | When Available |
+| アクション | 説明 | 利用可能なタイミング |
 |--------|-------------|----------------|
-| **Run** | Start a "Not Start" task | Task not started |
-| **Retry** | Restart a failed task | Task has "Error" status |
-| **Edit** | Modify task parameters | Any task |
-| **Kill Process** | Stop a running task | Task is "Processing" |
-| **View Results** | See detailed results | Task has results |
-| **Download Logs** | Export error logs | Task has errors |
+| **Run** | "Not Start" のタスクを開始 | タスク未開始時 |
+| **Retry** | 失敗したタスクを再実行 | タスクが "Error" ステータスの場合 |
+| **Edit** | タスクパラメータを変更 | すべてのタスク |
+| **Kill Process** | 実行中のタスクを停止 | タスクが "Processing" の場合 |
+| **View Results** | 詳細な結果を表示 | タスクに結果がある場合 |
+| **Download Logs** | エラーログをエクスポート | タスクにエラーがある場合 |
 
-## Viewing Search Results
+## 検索結果の表示
 
-### Step 1: Open Results
+### ステップ 1: 結果を開く
 
-1. Go to **Search** → **Result List**
-2. Find your task
-3. Click **View Results** to see detailed results
+1. **Search** → **Result List** に移動
+2. タスクを見つける
+3. **View Results** をクリックして詳細な結果を表示
 
-### Step 2: Results Table
+### ステップ 2: 結果テーブル
 
-The results table displays:
+結果テーブルには以下が表示されます:
 
-| Column | Description |
+| 列 | 説明 |
 |--------|-------------|
-| **ID** | Result identifier |
-| **Title** | Page title from search result |
-| **Link** | URL of the search result |
-| **Keyword** | Keyword that generated this result |
-| **Timestamp** | When the result was scraped |
-| **AI Industry** | Industry classification (if analyzed) |
-| **AI Match Score** | Lead quality score (if analyzed) |
-| **Analysis Status** | Analysis completion status |
+| **ID** | 結果識別子 |
+| **Title** | 検索結果のページタイトル |
+| **Link** | 検索結果の URL |
+| **Keyword** | この結果を生成したキーワード |
+| **Record Time** | 結果がスクレイピングされた日時 |
+| **Customer Industry** | AI 分類された業界（分析済みの場合） |
+| **Probability** | AI リード品質スコア 0〜100%（分析済みの場合） |
+| **Analysis Status** | 分析の完了ステータス（pending/analyzing/completed/failed） |
+| **Contact Extraction** | 連絡先情報の抽出ステータス |
+| **Email** | 抽出されたメールアドレス（抽出済みの場合） |
+| **Phone** | 抽出された電話番号（抽出済みの場合） |
+| **Address** | 抽出された住所（抽出済みの場合） |
 
-### Step 3: Interact with Results
+:::tip 列の表示設定
 
-**Individual Actions:**
-- **Copy Link**: Copy URL to clipboard
-- **Open Link**: Open URL in your browser
+**列表示メニュー**を使用して、表示する列をカスタマイズできます。列セレクターをクリックして、ワークフローのニーズに応じて特定の列の表示/非表示を切り替えてください。
 
-**Batch Actions:**
-- Select multiple results using checkboxes
-- **AI Analysis**: Analyze selected results for lead scoring
-- **Extract Emails**: Extract email addresses from selected URLs
-- **Export**: Download results as CSV
+:::
 
-## AI Website Analysis
+### ステップ 3: 結果の操作
 
-Enhance your search results with AI-powered analysis:
+**個別アクション:**
+- **Copy Link**: URL をクリップボードにコピー
+- **Copy Contact Info**: 抽出されたメール、電話番号、または住所を直接コピー
 
-### Step 1: Select Results
+**一括アクション:**
+- チェックボックスで複数の結果を選択
+- **AI Analyze**: 選択した結果を分析してリードスコアリングと業界分類
+- **AI Extract Contact Info**: 選択した URL から連絡先情報（メール、電話、住所）を抽出
+- **Extract Emails**: 選択した URL をメール抽出機能に渡す
+- **Export**: 結果を CSV としてダウンロード（AI 分析フィールドを含む）
 
-1. Check the boxes next to results you want to analyze
-2. Click the **AI Analysis** button
+## AI ウェブサイト分析
 
-### Step 2: Configure Analysis
+AI 搭載分析で検索結果を強化します:
 
-- **Industry Classification**: Categorize businesses by industry
-- **Lead Scoring**: Rate lead quality (0-100)
-- **Business Context**: Extract business information
+### ステップ 1: 結果を選択
 
-### Step 3: Monitor Progress
+1. 分析したい結果のチェックボックスをオン
+2. **AI Analyze** ボタンをクリック
 
-- Progress bar shows completion status
-- Results update in real-time
-- AI Match Score indicates lead quality
+### ステップ 2: ビジネスコンテキストの入力
 
-### Step 4: Filter by Score
+ビジネス情報の入力を求めるダイアログが表示されます:
 
-After analysis:
-- Use the AI Match Score to prioritize leads
-- Filter results by industry
-- Focus on high-score leads for outreach
+1. テキストエリアに **ビジネスの説明を入力** — AI が求めているリードの種類を理解するのに役立ちます
+2. **今後のために保存**（任意）: このチェックボックスをオンにすると、ビジネスの説明が今後の分析用に保存されます
 
-## Email Extraction from Search Results
+:::tip ビジネスコンテキスト
 
-Extract emails directly from your search results:
+ビジネスとターゲット顧客について明確で具体的な説明を入力してください。コンテキストが多いほど、AI のスコアリングが正確になります。例:「小売業界の中小企業向けにマーケティング自動化ツールを販売する B2B SaaS 企業です。」
 
-### Step 1: Select Results
+:::
 
-1. Check boxes next to results containing URLs you want to extract emails from
-2. Click **Extract Emails** button
+### ステップ 3: 分析結果の確認
 
-### Step 2: Configure Extraction
+AI は分析された各結果に対して以下を生成します:
 
-The selected URLs are automatically passed to the [Email Extraction](./contact-extraction) feature.
+| フィールド | 説明 |
+|-------|-------------|
+| **Customer Industry** | AI 分類された業界カテゴリ |
+| **Probability** | 0〜100% のリード品質スコア |
+| **AI Reasoning** | このリードのスコアリング理由の説明 |
+| **Client Business** | ウェブサイトのビジネスタイプ |
 
-### Step 3: View Extracted Emails
+### ステップ 4: 進行状況の監視
 
-Navigate to the Email Extraction section to view collected emails.
+- バッチ操作の完了ステータスがプログレスバーで表示
+- 各ウェブサイトの分析が完了するたびにリアルタイムで結果が更新
+- 各結果の分析ステータスを追跡: pending → analyzing → completed/failed
 
-## Exporting Search Results
+### ステップ 5: スコアでフィルター
 
-### Export as CSV
+分析後:
+- Probability スコアを使用してリードの優先順位を決定
+- アウトリーチには 70% 以上のスコアのリードに注目
+- 業界分類で結果をフィルター
 
-1. Select results you want to export (or leave blank for all)
-2. Click **Export** → **CSV**
-3. Choose save location
-4. File includes all columns from the results table
+## AI 連絡先情報抽出
 
-### Export Error Logs
+AI を使用して検索結果から直接連絡先の詳細を抽出します:
 
-If a task fails:
+### ステップ 1: 結果を選択
 
-1. Go to **Search** → **Result List**
-2. Find the failed task
-3. Click **Download Logs**
-4. Review logs to diagnose issues
+1. 連絡先情報を抽出したい結果のチェックボックスをオン
+2. **AI Extract Contact Info** ボタンをクリック
 
-## Best Practices
+### ステップ 2: 抽出の監視
 
-### 1. Start Small
+- システムが選択された各 URL にアクセスし連絡先情報を抽出
+- 抽出はバックグラウンドで実行され、リアルタイムの進行状況が更新
+- 各結果のステータスを追跡: pending → analyzing → completed/failed
 
-- Begin with 5-10 keywords
-- Use low concurrency (1-3)
-- Monitor results before scaling up
+### ステップ 3: 抽出された連絡先の表示
 
-### 2. Use Proxies
+抽出された情報は結果テーブルに直接表示されます:
 
-- Always use proxies for more than 10 pages
-- Rotate proxies to distribute load
-- Test proxies before running large tasks
+| フィールド | 説明 |
+|-------|-------------|
+| **Email** | 抽出されたメールアドレス |
+| **Phone** | 抽出された電話番号 |
+| **Address** | 抽出された住所 |
 
-### 3. Leverage AI Features
+コピーボタンを使用して、テーブルから個別の連絡先フィールドを直接コピーできます。
 
-- Use keyword generation to expand coverage
-- Run AI analysis to score leads
-- Focus on high-score results for outreach
+## 検索結果からのメール抽出
 
-### 4. Engine-Specific Tips
+検索結果から直接メールを抽出します:
+
+### ステップ 1: 結果を選択
+
+1. メールを抽出したい URL を含む結果のチェックボックスをオン
+2. **Extract Emails** ボタンをクリック
+
+### ステップ 2: 抽出の設定
+
+選択された URL は自動的に[メール抽出](./contact-extraction)機能に渡されます。
+
+### ステップ 3: 抽出メールの表示
+
+メール抽出セクションに移動して収集されたメールを表示します。
+
+## 検索結果のエクスポート
+
+### CSV としてエクスポート
+
+1. エクスポートしたい結果を選択（または空欄のままですべて）
+2. **Export** → **CSV** をクリック
+3. 保存場所を選択
+4. 結果テーブルのすべての列を含むファイルがダウンロードされます（AI 分析フィールド（業界、スコア、推論）と連絡先情報（メール、電話、住所）を含む）
+
+### エラーログのエクスポート
+
+タスクが失敗した場合:
+
+1. **Search** → **Result List** に移動
+2. 失敗したタスクを見つける
+3. **Download Logs** をクリック
+4. ログを確認して問題を診断
+
+## ベストプラクティス
+
+### 1. 小規模で開始
+
+- 5〜10 のキーワードから始める
+- 低い同時実行数（1〜3）を使用
+- スケールアップする前に結果を監視
+
+### 2. プロキシの使用
+
+- 10 ページを超える場合は常にプロキシを使用
+- 負荷分散のためにプロキシをローテーション
+- 大規模タスクの実行前にプロキシをテスト
+
+### 3. AI 機能の活用
+
+- キーワード生成でカバレッジを拡大
+- より正確な AI スコアリングのために明確なビジネスコンテキストを提供
+- AI 分析を実行してリードをスコアリング・分類
+- AI 連絡先抽出でメール、電話番号、住所を取得
+- 高スコアの結果をアウトリーチに活用
+
+### 4. エンジン別のヒント
 
 **Google:**
-- Use authenticated accounts
-- Enable local browser for large tasks
-- Respect rate limits (start with 1 concurrent)
+- 認証済みアカウントを使用
+- 大規模タスクではローカルブラウザを有効化
+- 堅牢なエラー処理のために AI リカバリーを有効化
+- レート制限を尊重（1 同時実行から開始）
 
 **Bing:**
-- More forgiving than Google
-- Can use higher concurrency
-- Good for US-focused searches
+- Google よりも制限が緩い
+- より高い同時実行数が可能
+- 米国向け検索に適している
 
 **Yandex:**
-- **Must use local browser**
-- Use accounts for better access
-- Essential for Russian/Cyrillic content
+- **ローカルブラウザが必須**
+- より良いアクセスのためにアカウントを使用
+- ロシア語/キリル文字コンテンツに不可欠
 
-### 5. Monitor Task Status
+### 5. タスクステータスの監視
 
-- Check task list regularly
-- Review error logs for failures
-- Adjust settings based on results
+- 定期的にタスクリストを確認
+- 失敗のエラーログを確認
+- 結果に基づいて設定を調整
 
-### 6. Organize Results
+### 6. 結果の整理
 
-- Use descriptive task names
-- Export results regularly
-- Clean up old tasks
+- わかりやすいタスク名を使用
+- 定期的に結果をエクスポート
+- 古いタスクをクリーンアップ
 
-## Troubleshooting
+## トラブルシューティング
 
-### Task Status: "Error"
+### タスクステータス: "Error"
 
-**Possible causes:**
-- All proxies failed
-- Network connectivity issues
-- Search engine blocked requests
+**考えられる原因:**
+- すべてのプロキシが失敗
+- ネットワーク接続の問題
+- 検索エンジンがリクエストをブロック
 
-**Solutions:**
-1. Check proxy health in Proxy section
-2. Verify internet connection
-3. Reduce concurrency
-4. Enable local browser
-5. Use authenticated accounts
+**解決策:**
+1. プロキシセクションでプロキシの稼働状態を確認
+2. インターネット接続を確認
+3. 同時実行数を減らす
+4. ローカルブラウザを有効化
+5. 認証済みアカウントを使用
+6. 自動エラー処理のために AI リカバリーを有効化
 
-### No Results Returned
+### 結果が返されない
 
-**Possible causes:**
-- Keywords too specific
-- Search engine returned no results
-- Pagination out of range
+**考えられる原因:**
+- キーワードが特定すぎる
+- 検索エンジンが結果を返さなかった
+- ページ範囲外
 
-**Solutions:**
-1. Try broader keywords
-2. Start from page 1
-3. Verify keywords work in manual search
+**解決策:**
+1. より広範なキーワードを試す
+2. ページ 1 から開始
+3. キーワードが手動検索で機能するか確認
 
-### Slow Processing
+### 処理が遅い
 
-**Possible causes:**
-- High concurrency without enough proxies
-- Local browser enabled (slower but safer)
-- Network latency
+**考えられる原因:**
+- プロキシ不足で高同時実行
+- ローカルブラウザが有効（遅いが安全）
+- ネットワークレイテンシ
 
-**Solutions:**
-1. Add more proxies
-2. Reduce concurrency
-3. Consider disabling local browser for speed (with caution)
+**解決策:**
+1. プロキシを追加
+2. 同時実行数を減らす
+3. 速度を優先する場合はローカルブラウザを無効化（注意して使用）
 
-### Captcha or Block Detected
+### CAPTCHA またはブロックの検出
 
-**Solutions:**
-1. Enable local browser integration
-2. Use authenticated accounts
-3. Add more proxies
-4. Reduce request frequency
-5. Take breaks between large tasks
+**解決策:**
+1. ローカルブラウザ統合を有効化
+2. 認証済みアカウントを使用
+3. プロキシを追加
+4. リクエスト頻度を下げる
+5. 大規模タスクの間に休憩を挟む
+6. AI リカバリーを有効にしてブロックを自動処理
 
-## Advanced Workflows
+## 高度なワークフロー
 
-### Workflow 1: Comprehensive Lead Generation
+### ワークフロー 1: 包括的リードジェネレーション
 
-1. **Create search task** with broad keywords
-2. **Generate related keywords** using AI
-3. **Run with moderate concurrency** (3-5)
-4. **AI analyze** all results
-5. **Filter by match score** (focus on 70+)
-6. **Extract emails** from high-score results
-7. **Export** for email campaigns
+1. 広範なキーワードで **検索タスクを作成**
+2. AI を使用して **関連キーワードを生成**
+3. 中程度の同時実行数（3〜5）で **実行**
+4. 堅牢なエラー処理のために **AI リカバリーを有効化**
+5. ビジネスコンテキストを入力してすべての結果を **AI 分析**
+6. **確率スコアでフィルター**（70% 以上に注目）
+7. 高スコアの結果から **AI 連絡先抽出**
+8. メールキャンペーン用に **エクスポート**
 
-### Workflow 2: Competitive Analysis
+### ワークフロー 2: 競合分析
 
-1. **Search competitor names** + industry keywords
-2. **Use local browser** to avoid detection
-3. **AI analyze** for industry classification
-4. **Export** for market research
+1. 競合名 + 業界キーワードで **検索**
+2. 検出を回避するために **ローカルブラウザを使用**
+3. 業界分類のために **AI 分析**
+4. 市場調査のために **エクスポート**
 
-### Workflow 3: Local Business Discovery
+### ワークフロー 3: ローカルビジネスの発見
 
-1. **Search local keywords** (e.g., "plumbers in Chicago")
-2. **Extract emails** from results
-3. **Batch analyze** websites
-4. **Create targeted outreach** campaigns
+1. ローカルキーワードで **検索**（例：「シカゴの配管工」）
+2. 結果から **AI 連絡先抽出**（メール、電話、住所）
+3. ビジネスコンテキストを入力してウェブサイトを **一括分析**
+4. **ターゲットを絞ったアウトリーチ** キャンペーンを作成
 
-## Integration with Other Features
+## 他の機能との連携
 
-Search results integrate seamlessly with:
+検索結果は以下とシームレスに連携します:
 
-- **[Contact Extraction](./contact-extraction)** - Extract emails from URLs
-- **[Yellow Pages](./yellow-pages)** - Cross-reference with directory listings
-- **[AI Email Writer](../ai-outreach/ai-email-writer)** - Create personalized outreach
-- **[Batch Email Sending](./batch-email-sending)** - Launch campaigns
+- **[コンタクト抽出](./contact-extraction)** - URL からメールを抽出
+- **[イエローページ](./yellow-pages)** - ディレクトリリストとクロスリファレンス
+- **[AI メールライター](../ai-outreach/ai-email-writer)** - パーソナライズされたアウトリーチを作成
+- **[一括メール送信](./batch-email-sending)** - キャンペーンを開始
 
-## Next Steps
+## 次のステップ
 
-- [Learn about Yellow Pages scraping](./yellow-pages)
-- [Set up contact extraction](./contact-extraction)
-- [Create AI-powered email campaigns](../ai-outreach/ai-email-writer)
+- [イエローページスクレイピングについて](./yellow-pages)
+- [コンタクト抽出の設定](./contact-extraction)
+- [AI 搭載メールキャンペーンの作成](../ai-outreach/ai-email-writer)
 
 ---
 
-**Ready to find leads?** Start with a small search task and scale up as you become familiar with the system.
+**リードを見つける準備はできましたか？** 小規模な検索タスクから始め、システムに慣れてきたら徐々に拡大してください。

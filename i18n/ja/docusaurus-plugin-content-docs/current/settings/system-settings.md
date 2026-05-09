@@ -2,219 +2,131 @@
 id: system-settings
 title: System Settings
 sidebar_label: System Settings
-description: Configure aiFetchly's AI models, browser paths, and system preferences.
+description: Configure aiFetchly's browser paths, captcha solving, and system preferences.
 ---
 
-# System Settings
+# システム設定
 
-The System Settings section allows you to configure aiFetchly's core functionality, including AI model providers, browser paths for web automation, and system preferences. Proper configuration ensures optimal performance for all features.
+システム設定セクションでは、Web 自動化のためのブラウザパス、CAPTCHA ソルバー、埋め込みモデル、システム設定など、aiFetchly のコア機能を構成できます。適切な構成により、すべての機能が最適なパフォーマンスを発揮します。
 
-## Accessing System Settings
+## システム設定へのアクセス
 
-1. Click **Settings** in the left navigation menu
-2. A tree-based navigation panel appears on the left
-3. Click on any category to expand its settings
-4. Modify settings as needed
-5. Changes are saved automatically
+1. 左側のナビゲーションメニューで **設定** をクリックします
+2. 左側にツリーベースのナビゲーションパネルが表示されます
+3. 任意のカテゴリをクリックして設定を展開します
+4. 必要に応じて設定を変更します
+5. 変更は自動的に保存されます
 
-:::info Auto-Save
+:::info 自動保存
 
-Most settings save automatically when modified. Look for save indicators or confirmation messages.
-
-:::
-
-## Settings Overview
-
-### AI Model Providers
-
-Configure one or more AI model providers to power aiFetchly's AI features. **At least one provider must be configured** for AI functionality to work.
-
-#### DeepSeek Local
-
-**Best for**: Offline usage, privacy, no API costs
-
-| Setting | Description | Default |
-|---------|-------------|---------|
-| **URL** | Local API endpoint | `http://localhost:11434` |
-| **Model** | Model name | `deepseek-r1:latest` |
-
-**Setup Required:**
-1. Install Ollama (https://ollama.ai)
-2. Pull DeepSeek model: `ollama pull deepseek-r1`
-3. Start Ollama service
-4. Keep URL as default if running locally
-
-:::tip Local AI Advantages
-
-- No API costs
-- Data stays on your machine
-- Works offline
-- Privacy-focused
+ほとんどの設定は変更時に自動的に保存されます。保存インジケーターまたは確認メッセージを確認してください。
 
 :::
 
-#### DeepSeek API
+## 設定概要
 
-**Best for**: Reliable performance, regular updates
+### 2Captcha サービス
 
-| Setting | Description | Default |
-|---------|-------------|---------|
-| **API URL** | DeepSeek API endpoint | `https://api.deepseek.com` |
-| **API Model** | Model to use | `deepseek-chat` |
-| **API Key** | Your API key | *(Required)* |
+Web スクレイピングのための自動 CAPTCHA 解決。
 
-**Setup Required:**
-1. Sign up at https://platform.deepseek.com
-2. Generate API key
-3. Enter API key in settings
+| 設定 | 説明 |
+|------|------|
+| **Token** | 2Captcha API トークン |
+| **有効** | CAPTCHA 解決のオン/オフを切り替え |
 
-#### GrokAI
+**セットアップ（オプション）：**
+1. https://2captcha.com でサインアップ
+2. アカウントに資金を追加
+3. ダッシュボードから API トークンを取得
+4. トークンを入力してサービスを有効にする
 
-**Best for**: X/Twitter integration, real-time data
+:::info 2Captcha を使用するタイミング
 
-| Setting | Description | Default |
-|---------|-------------|---------|
-| **API URL** | GrokAI API endpoint | *(Configure)* |
-| **API Model** | Model to use | *(Configure)* |
-| **API Key** | Your API key | *(Configure)* |
-
-**Setup Required:**
-1. Sign up for X Premium+ (for Grok access)
-2. Obtain API credentials
-3. Configure URL, model, and API key
-
-#### OpenAI
-
-**Best for**: GPT models, reliable service
-
-| Setting | Description | Default |
-|---------|-------------|---------|
-| **API URL** | OpenAI API endpoint | `https://api.openai.com/v1` |
-| **API Model** | Model to use | `gpt-4`, `gpt-3.5-turbo`, etc. |
-| **API Key** | Your API key | *(Required)* |
-
-**Setup Required:**
-1. Sign up at https://platform.openai.com
-2. Create API key
-3. Enter key in settings
-
-#### Volcengine (Doubao)
-
-**Best for**: Chinese language support, cost-effective
-
-| Setting | Description | Default |
-|---------|-------------|---------|
-| **API URL** | Volcengine API endpoint | `https://ark.cn-beijing.volces.com/api/v3/` |
-| **API Model** | Model to use | `doubao-1.5-pro-32k-250115` |
-| **API Key** | Your API key | *(Configure)* |
-
-**Setup Required:**
-1. Sign up at Volcengine platform
-2. Enable Doubao API service
-3. Enter API credentials
-
-### 2Captcha Service
-
-Automated captcha solving for web scraping.
-
-| Setting | Description |
-|---------|-------------|
-| **Token** | Your 2Captcha API token |
-| **Enabled** | Toggle captcha solving on/off |
-
-**Setup (Optional):**
-1. Sign up at https://2captcha.com
-2. Add funds to account
-3. Get API token from dashboard
-4. Enter token and enable service
-
-:::info When to Use 2Captcha
-
-Useful when:
-- Scraping at scale
-- Encountering frequent captchas
-- Don't want to solve captchas manually
+以下の場合に便利です：
+- 大規模なスクレイピング
+- 頻繁に CAPTCHA に遭遇する
+- 手動で CAPTCHA を解決したくない
 
 :::
 
-### Embedding Configuration
+### 埋め込み設定
 
-Configure the default embedding model for RAG (Retrieval-Augmented Generation).
+RAG（検索拡張生成）のデフォルトの埋め込みモデルを構成します。
 
-| Setting | Description |
-|---------|-------------|
-| **Default Model** | Select from available embedding models |
+| 設定 | 説明 |
+|------|------|
+| **デフォルトモデル** | 利用可能な埋め込みモデルから選択 |
 
-**Options:**
-- Various embedding models with different dimensions
-- Choose based on:
-  - Language support
-  - Performance requirements
-  - Resource constraints
+**オプション：**
+- 異なる次元を持つ様々な埋め込みモデル
+- 以下に基づいて選択：
+  - 言語サポート
+  - パフォーマンス要件
+  - リソース制約
 
-### External System Paths
+### 外部システムパス
 
-Configure browser paths for local browser integration.
+ローカルブラウザ統合のためのブラウザパスを構成します。
 
-#### Chrome Path
+#### Chrome パス
 
-**Purpose**: Path to Chrome browser executable
+**目的**：Chrome ブラウザの実行ファイルへのパス
 
-**To Configure:**
-1. Click **Browse** or file selection button
-2. Navigate to Chrome installation
-3. Select executable
+**構成方法：**
+1. **参照** またはファイル選択ボタンをクリック
+2. Chrome のインストール先に移動
+3. 実行ファイルを選択
 
-**Default Paths (by OS):**
-- **Windows**: `C:\Program Files\Google\Chrome\Application\chrome.exe`
-- **macOS**: `/Applications/Google Chrome.app/Contents/MacOS/Google Chrome`
-- **Linux**: `/usr/bin/google-chrome` or `/usr/bin/chromium-browser`
+**デフォルトパス（OS別）：**
+- **Windows**：`C:\Program Files\Google\Chrome\Application\chrome.exe`
+- **macOS**：`/Applications/Google Chrome.app/Contents/MacOS/Google Chrome`
+- **Linux**：`/usr/bin/google-chrome` または `/usr/bin/chromium-browser`
 
-#### Firefox Path
+#### Firefox パス
 
-**Purpose**: Path to Firefox browser executable
+**目的**：Firefox ブラウザの実行ファイルへのパス
 
-**To Configure:**
-1. Click **Browse** or file selection button
-2. Navigate to Firefox installation
-3. Select executable
+**構成方法：**
+1. **参照** またはファイル選択ボタンをクリック
+2. Firefox のインストール先に移動
+3. 実行ファイルを選択
 
-**Default Paths (by OS):**
-- **Windows**: `C:\Program Files\Mozilla Firefox\firefox.exe`
-- **macOS**: `/Applications/Firefox.app/Contents/MacOS/firefox`
-- **Linux**: `/usr/bin/firefox`
+**デフォルトパス（OS別）：**
+- **Windows**：`C:\Program Files\Mozilla Firefox\firefox.exe`
+- **macOS**：`/Applications/Firefox.app/Contents/MacOS/firefox`
+- **Linux**：`/usr/bin/firefox`
 
-:::tip Browser Path Requirements
+:::tip ブラウザパスの要件
 
-Browser paths are required for:
-- Local browser integration features
-- Yandex scraping (requires browser)
-- Certain anti-bot detection scenarios
+ブラウザパスは以下の場合に必要です：
+- ローカルブラウザ統合機能
+- Yandex スクレイピング（ブラウザが必要）
+- 特定のボット検出回避シナリオ
 
 :::
 
-### User Preferences
+### ユーザー設定
 
-Configure your aiFetchly experience.
+aiFetchly の利用体験を構成します。
 
-#### Language
+#### 言語
 
-**Options:**
-- **English**: Interface in English
-- **中文**: Interface in Chinese (Simplified)
+**オプション：**
+- **English**：英語インターフェース
+- **中文**：簡体字中国語インターフェース
 
-**To Change:**
-1. Select preferred language from dropdown
-2. Interface updates immediately
-3. Restart recommended for full language change
+**変更方法：**
+1. ドロップダウンから希望の言語を選択
+2. インターフェースが即座に更新されます
+3. 言語の完全な変更には再起動を推奨
 
-#### AI Website Analysis Business Info
+#### AI Web サイト分析ビジネス情報
 
-**Purpose**: Provide context for AI-powered website analysis
+**目的**：AI 搭載の Web サイト分析にコンテキストを提供
 
-**Format**: JSON configuration
+**形式**：JSON 設定
 
-**Example:**
+**例：**
 ```json
 {
   "industry": "Software",
@@ -224,221 +136,171 @@ Configure your aiFetchly experience.
 }
 ```
 
-**Usage:**
-- AI uses this context when analyzing websites
-- Improves relevance of analysis results
-- Customizes scoring and categorization
+**使用方法：**
+- AI は Web サイトを分析する際にこのコンテキストを使用します
+- 分析結果の関連性が向上します
+- スコアリングとカテゴリ分けをカスタマイズします
 
-## MCP Tools Management
+## MCP ツール管理
 
-**MCP** (Model Context Protocol) allows integration with external tools and services, extending the AI Marketing Assistant with capabilities like web search, database queries, and custom API calls.
+**MCP**（Model Context Protocol）は、外部ツールやサービスとの統合を可能にし、Web 検索、データベースクエリ、カスタム API 呼び出しなどの機能で AI マーケティングアシスタントを拡張します。
 
-For full documentation on configuring and using MCP servers, see [MCP Tools](../ai-outreach/mcp-tools).
+MCP サーバーの構成と使用に関する完全なドキュメントについては、[MCP ツール](../ai-outreach/mcp-tools) を参照してください。
 
-## Configuration Best Practices
+## 構成のベストプラクティス
 
-### 1. AI Provider Setup
+### 1. ブラウザ構成
 
-**Primary Provider:**
-- Configure at least one provider fully
-- Test connectivity before using features
-- Keep API keys secure
+**Chrome と Firefox：**
+- Chrome：互換性が高く、機能が豊富
+- Firefox：オープンソース、プライバシー重視
 
-**Backup Providers:**
-- Configure 2-3 providers for redundancy
-- Use different providers for different use cases
-- Monitor API usage and costs
+**推奨：** Chrome をメインに設定し、Firefox をバックアップに設定してください。
 
-### 2. Browser Configuration
+### 2. CAPTCHA 解決
 
-**Chrome vs Firefox:**
-- Chrome: Better compatibility, more features
-- Firefox: Open-source, privacy-focused
+**有効にするタイミング：**
+- 大規模なスクレイピング操作（>1000 ページ）
+- 頻繁に CAPTCHA に遭遇する
+- 手動介入を避けたい
 
-**Recommendation:** Configure Chrome as primary, Firefox as backup.
+**無効にするタイミング：**
+- 小規模なスクレイピング
+- コストを節約したい（2captcha には料金がかかります）
+- CAPTCHA にほとんど遭遇しない
 
-### 3. Captcha Solving
+### 3. 言語設定
 
-**When to Enable:**
-- Large-scale scraping operations (>1000 pages)
-- Frequent captcha encounters
-- Don't want manual intervention
+**選択基準：**
+- あなたの母国語
+- ターゲットオーディエンスの言語
+- コンテンツの言語（ナレッジライブラリ用）
 
-**When to Disable:**
-- Small-scale scraping
-- To save costs (2captcha has fees)
-- Rare captcha encounters
+**注意：** 言語設定は UI のみに影響します。AI は設定に関係なく複数の言語を処理できます。
 
-### 4. Language Settings
+### 4. MCP ツール
 
-**Choose Based On:**
-- Your native language
-- Target audience language
-- Content language (for Knowledge Library)
+**控えめに追加：**
+- 使用するツールのみを追加
+- 各ツールは複雑さを増加させます
+- ツールを個別にテスト
 
-**Note:** Language preference affects UI only. AI can process multiple languages regardless of setting.
+**セキュリティ：**
+- 信頼できる MCP サーバーのみを使用
+- 認証情報を安全に管理
+- ツールの権限を確認
 
-### 5. MCP Tools
+## トラブルシューティング
 
-**Add Sparingly:**
-- Only add tools you'll use
-- Each tool adds complexity
-- Test tools individually
+### ブラウザ統合が動作しない
 
-**Security:**
-- Only use trusted MCP servers
-- Keep credentials secure
-- Review tool permissions
+**考えられる原因：**
+- ブラウザパスが正しくない
+- ブラウザがインストールされていない
+- 権限の問題
 
-## Troubleshooting
+**解決策：**
+1. ブラウザがインストールされていることを確認
+2. ファイルパスが正しいことを確認
+3. ブラウザを直接起動してテスト
+4. 管理者/sudo 権限で aiFetchly を実行
 
-### AI Features Not Working
+### CAPTCHA が解決されない
 
-**Possible causes:**
-- No AI provider configured
-- API key invalid or expired
-- Local model not running
+**考えられる原因：**
+- 2Captcha トークンが無効
+- 残高不足
+- サービスが無効
 
-**Solutions:**
-1. Verify at least one AI provider is configured
-2. Test API key with provider's test endpoint
-3. For local models, ensure service is running
-4. Check network connectivity for API providers
+**解決策：**
+1. 2Captcha トークンが正しいことを確認
+2. アカウント残高を確認
+3. 2Captcha のトグルが有効になっていることを確認
+4. 最初に手動 CAPTCHA でテスト
 
-### Browser Integration Not Working
+### 設定が保存されない
 
-**Possible causes:**
-- Incorrect browser path
-- Browser not installed
-- Permission issues
+**考えられる原因：**
+- データベースがロックされている
+- 権限不足
+- アプリケーションエラー
 
-**Solutions:**
-1. Verify browser is installed
-2. Check file path is correct
-3. Test by launching browser directly
-4. Run aiFetchly with admin/sudo permissions
+**解決策：**
+1. aiFetchly を再起動
+2. 管理者/sudo として実行
+3. アプリケーションログを確認
+4. データベースが読み取り専用でないことを確認
 
-### Captcha Not Solving
+### MCP ツールが表示されない
 
-**Possible causes:**
-- 2Captcha token invalid
-- Insufficient funds
-- Service disabled
+**考えられる原因：**
+- サーバーが正しく構成されていない
+- 接続テストが失敗した
+- ツールが無効になっている
 
-**Solutions:**
-1. Verify 2Captcha token is correct
-2. Check account balance
-3. Ensure 2Captcha toggle is enabled
-4. Test with manual captcha first
+**解決策：**
+1. サーバー構成を確認
+2. 接続をテスト
+3. サーバーが実行中であることを確認
+4. 個別のツールを有効にする
 
-### Settings Not Saving
+## 高度な構成
 
-**Possible causes:**
-- Database locked
-- Insufficient permissions
-- Application error
+### 複数の埋め込みモデル
 
-**Solutions:**
-1. Restart aiFetchly
-2. Run as administrator/sudo
-3. Check application logs
-4. Verify database isn't read-only
+異なる目的のために異なる埋め込みモデルを構成します：
 
-### MCP Tools Not Appearing
+1. **埋め込み設定** に移動
+2. 複数のモデルを追加
+3. デフォルトモデルを設定
+4. タスクごとに特定のモデルを使用
 
-**Possible causes:**
-- Server not configured correctly
-- Connection test failed
-- Tools disabled
+### 環境固有の設定
 
-**Solutions:**
-1. Verify server configuration
-2. Test connection
-3. Check server is running
-4. Enable individual tools
+異なる環境で異なる設定を使用します：
 
-## Advanced Configuration
+**開発環境：**
+- CAPTCHA 解決を無効にする
+- デバッグログを有効にする
 
-### Custom API Endpoints
+**本番環境：**
+- CAPTCHA 解決を有効にする
+- デバッグログを無効にする
 
-For advanced users with self-hosted models:
+## セキュリティに関する考慮事項
 
-1. Select provider (e.g., OpenAI-compatible)
-2. Set API URL to your endpoint
-3. Configure model name
-4. Add authentication if required
+### ブラウザパス
 
-**Use Cases:**
-- Self-hosted LLaMA models
-- Private API deployments
-- Custom model fine-tunes
+**セキュリティ：**
+- 信頼できるブラウザインストールのみ使用
+- ブラウザの実行ファイルが正当であることを確認
+- ブラウザを最新の状態に保つ
+- カスタムブラウザビルドには注意
 
-### Multiple Embedding Models
+### MCP ツール
 
-Configure different embedding models for different purposes:
+**セキュリティ：**
+- 信頼できる MCP サーバーにのみ接続
+- ツールの権限を慎重に確認
+- 利用可能な場合は常に認証を使用
+- ツールの使用状況を監視
+- 不要な場合はアクセス権を取り消す
 
-1. Navigate to **Embedding Configuration**
-2. Add multiple models
-3. Set default model
-4. Use specific models per task
+## AI スキル管理
 
-### Environment-Specific Settings
+AI スキルは、aiFetchly の AI チャット機能を強化するモジュール式拡張機能です。スキルはインポート、有効化/無効化、および AI マーケティングアシスタント内で使用できます。
 
-Different settings for different environments:
+AI スキルのインポート、管理、使用に関する完全なドキュメントについては、[AI スキル](../ai-outreach/ai-skills) を参照してください。
 
-**Development:**
-- Use local AI models
-- Disable captcha solving
-- Enable debug logging
+## 次のステップ
 
-**Production:**
-- Use API providers for reliability
-- Enable captcha solving
-- Disable debug logging
+システム設定の構成が完了したら：
 
-## Security Considerations
-
-### API Key Management
-
-**Best Practices:**
-- Treat API keys like passwords
-- Don't share or commit to version control
-- Rotate keys periodically
-- Monitor usage for anomalies
-- Revoke compromised keys immediately
-
-### Browser Paths
-
-**Security:**
-- Only use trusted browser installations
-- Verify browser executables are legitimate
-- Keep browsers updated
-- Be cautious with custom browser builds
-
-### MCP Tools
-
-**Security:**
-- Only connect to trusted MCP servers
-- Review tool permissions carefully
-- Use authentication whenever available
-- Monitor tool usage
-- Revoke access when not needed
-
-## AI Skills Management
-
-AI Skills are modular extensions that enhance aiFetchly's AI chat capabilities. Skills can be imported, enabled/disabled, and used within the AI Marketing Assistant.
-
-For full documentation on importing, managing, and using AI Skills, see [AI Skills](../ai-outreach/ai-skills).
-
-## Next Steps
-
-After configuring system settings:
-
-- [Return to Getting Started](../getting-started/introduction)
-- [Set up your first search task](../lead-generation/search-engines)
-- [Configure email services](../lead-generation/batch-email-sending)
-- [Learn about AI Marketing Assistant](../ai-outreach/ai-marketing-assistant)
+- [入門ガイドに戻る](../getting-started/introduction)
+- [最初の検索タスクを設定する](../lead-generation/search-engines)
+- [メールサービスを構成する](../lead-generation/batch-email-sending)
+- [AI マーケティングアシスタントについて学ぶ](../ai-outreach/ai-marketing-assistant)
 
 ---
 
-**Configuration Complete!** Your aiFetchly is now set up and ready to help you generate leads and automate your marketing workflows.
+**構成完了！** aiFetchly がセットアップされ、リード獲得とマーケティングワークフローの自動化をサポートする準備が整いました。

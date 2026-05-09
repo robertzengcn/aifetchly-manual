@@ -2,70 +2,70 @@
 id: mcp-tools
 title: MCP Tools
 sidebar_label: MCP Tools
-description: Extend AI capabilities by connecting to external tools and services using the Model Context Protocol (MCP).
+description: Erweitern Sie die KI-Fähigkeiten durch die Verbindung mit externen Werkzeugen und Diensten über das Model Context Protocol (MCP).
 ---
 
-# MCP Tools
+# MCP-Tools
 
-MCP (Model Context Protocol) allows aiFetchly to connect to external tools and services, extending the AI's capabilities beyond its built-in features. By adding MCP servers, the AI Marketing Assistant can perform web searches, access databases, call external APIs, and execute custom business logic.
+MCP (Model Context Protocol) ermöglicht es aiFetchly, sich mit externen Tools und Diensten zu verbinden und die KI-Funktionen über die integrierten Features hinaus zu erweitern. Durch das Hinzufügen von MCP-Servern kann der KI-Marketing-Assistent Websuchen durchführen, auf Datenbanken zugreifen, externe APIs aufrufen und benutzerdefinierte Geschäftslogik ausführen.
 
-## What is MCP?
+## Was ist MCP?
 
-The **Model Context Protocol** is an open standard that enables AI applications to interact with external tools and data sources in a secure, structured way. With MCP, aiFetchly can:
+Das **Model Context Protocol** ist ein offener Standard, der KI-Anwendungen ermöglicht, auf sichere, strukturierte Weise mit externen Tools und Datenquellen zu interagieren. Mit MCP kann aiFetchly:
 
-- **Search the web** for real-time information
-- **Connect to databases** and query data
-- **Call external APIs** for specialized processing
-- **Execute custom tools** built for your workflow
-- **Integrate with third-party services** (CRM, analytics, etc.)
+- **Das Web durchsuchen** nach Echtzeit-Informationen
+- **Sich mit Datenbanken verbinden** und Daten abfragen
+- **Externe APIs aufrufen** für spezialisierte Verarbeitung
+- **Benutzerdefinierte Tools ausführen**, die für Ihren Workflow entwickelt wurden
+- **Drittanbieterdienste integrieren** (CRM, Analysen usw.)
 
-Each MCP server exposes a set of **tools** — functions the AI can call during a conversation. For example, a web search server might expose a `search` tool, and a database server might expose a `query` tool.
+Jeder MCP-Server stellt eine Reihe von **Tools** bereit — Funktionen, die die KI während einer Konversation aufrufen kann. Beispielsweise könnte ein Web-Such-Server ein `search`-Tool und ein Datenbankserver ein `query`-Tool bereitstellen.
 
-## Accessing MCP Tools
+## Zugriff auf MCP-Tools
 
-MCP servers are managed from within the **AI Marketing Assistant** chat interface:
+MCP-Server werden über die Chat-Oberfläche des **KI-Marketing-Assistenten** verwaltet:
 
-1. Open the AI Marketing Assistant (click the chat icon or press `Cmd/Ctrl + K`)
-2. Click the **MCP Tools** button (server/network icon) in the chat toolbar
-3. The MCP Tools management dialog opens
+1. Öffnen Sie den KI-Marketing-Assistenten (klicken Sie auf das Chat-Symbol oder drücken Sie `Cmd/Ctrl + K`)
+2. Klicken Sie auf die Schaltfläche **MCP Tools** (Server/Netzwerk-Symbol) in der Chat-Symbolleiste
+3. Der MCP-Tools-Verwaltungsdialog wird geöffnet
 
-:::info Where to Find It
+:::info Wo Sie es finden
 
-MCP Tools are accessed from the AI Chat interface, not from the main Settings page. Open any AI chat session to find the MCP Tools manager.
+MCP-Tools werden über die KI-Chat-Oberfläche aufgerufen, nicht über die Haupt-Einstellungsseite. Öffnen Sie eine beliebige KI-Chat-Sitzung, um den MCP-Tools-Manager zu finden.
 
 :::
 
-## Adding MCP Servers
+## MCP-Server hinzufügen
 
-### Step 1: Open the Add Dialog
+### Schritt 1: Den Hinzufügen-Dialog öffnen
 
-1. In the MCP Tools dialog, click **Add Server** (or the **+** button)
-2. The Add MCP Server dialog opens
+1. Klicken Sie im MCP-Tools-Dialog auf **Add Server** (oder die **+**-Schaltfläche)
+2. Der Dialog zum Hinzufügen eines MCP-Servers wird geöffnet
 
-### Step 2: Choose Input Mode
+### Schritt 2: Eingabemodus wählen
 
-You can add servers in two ways:
+Sie können Server auf zwei Arten hinzufügen:
 
-- **Form Mode**: Fill in individual fields (recommended for beginners)
-- **JSON Mode**: Paste a JSON configuration block (faster for bulk setup, compatible with Claude Desktop format)
+- **Formularmodus**: Einzelne Felder ausfüllen (empfohlen für Einsteiger)
+- **JSON-Modus**: JSON-Konfigurationsblock einfügen (schneller für Masseneinrichtung, kompatibel mit dem Claude Desktop-Format)
 
-### Step 3: Configure the Server
+### Schritt 3: Den Server konfigurieren
 
-#### Form Mode
+#### Formularmodus
 
-| Field | Description | Required |
+| Feld | Beschreibung | Erforderlich |
 |-------|-------------|----------|
-| **Server Name** | A descriptive name for this server | Yes |
-| **Transport Type** | How to connect: `Stdio`, `SSE`, or `WebSocket` | Yes |
-| **Host / Command** | Hostname (for SSE/WebSocket) or command to run (for Stdio) | Yes |
-| **Port** | Port number (not needed for Stdio) | For SSE/WebSocket |
-| **Authentication Type** | `None`, `API Key`, `Bearer Token`, or `Custom` | No |
-| **Timeout** | Request timeout in milliseconds (default: 30000) | No |
-| **Enabled** | Whether the server is active (default: enabled) | No |
+| **Server Name** | Ein beschreibender Name für diesen Server | Ja |
+| **Transport Type** | Verbindungstyp: `Stdio`, `SSE` oder `WebSocket` | Ja |
+| **Host / Command** | Hostname (für SSE/WebSocket) oder auszuführender Befehl (für Stdio) | Ja |
+| **Port** | Portnummer (nicht erforderlich für Stdio) | Für SSE/WebSocket |
+| **Authentication Type** | `None`, `API Key`, `Bearer Token` oder `Custom` | Nein |
+| **Timeout** | Anfrage-Timeout in Millisekunden (Standard: 30000) | Nein |
+| **Enabled** | Ob der Server aktiv ist (Standard: aktiviert) | Nein |
 
-#### JSON Mode
+#### JSON-Modus
 
-JSON mode accepts the standard `mcpServers` format used by Claude Desktop and other MCP clients:
+Der JSON-Modus akzeptiert das Standard-`mcpServers`-Format, das von Claude Desktop und anderen MCP-Clients verwendet wird:
 
 ```json
 {
@@ -78,330 +78,330 @@ JSON mode accepts the standard `mcpServers` format used by Claude Desktop and ot
 }
 ```
 
-**Supported JSON properties:**
+**Unterstützte JSON-Eigenschaften:**
 
-| Property | Description |
+| Eigenschaft | Beschreibung |
 |----------|-------------|
-| `command` | Command to execute (for Stdio transport) |
-| `args` | Array of command arguments |
-| `url` | Server URL (for SSE/WebSocket) |
-| `host` | Hostname or IP address |
-| `port` | Port number |
-| `transport` | Transport type override |
-| `enabled` | Enable/disable on add (default: true) |
-| `authType` | Authentication type |
-| `authConfig` | Authentication credentials |
-| `timeout` | Request timeout in ms |
+| `command` | Auszuführender Befehl (für Stdio-Transport) |
+| `args` | Array von Befehlsargumenten |
+| `url` | Server-URL (für SSE/WebSocket) |
+| `host` | Hostname oder IP-Adresse |
+| `port` | Portnummer |
+| `transport` | Überschreibung des Transporttyps |
+| `enabled` | Aktivieren/Deaktivieren beim Hinzufügen (Standard: true) |
+| `authType` | Authentifizierungstyp |
+| `authConfig` | Authentifizierungsdaten |
+| `timeout` | Anfrage-Timeout in ms |
 
-You can add multiple servers in a single JSON block by adding more entries under `mcpServers`.
+Sie können mehrere Server in einem einzelnen JSON-Block hinzufügen, indem Sie weitere Einträge unter `mcpServers` hinzufügen.
 
-:::tip Use Load Example
+:::tip Beispiel laden verwenden
 
-Click **Load Example** in JSON mode to see a sample configuration you can modify.
+Klicken Sie im JSON-Modus auf **Load Example**, um eine Beispielkonfiguration zu sehen, die Sie anpassen können.
 
 :::
 
-### Step 4: Save
+### Schritt 4: Speichern
 
-Click **Add** to save the server configuration. The server appears in the list with an **Enabled** status.
+Klicken Sie auf **Add**, um die Serverkonfiguration zu speichern. Der Server erscheint in der Liste mit dem Status **Enabled**.
 
-## Managing MCP Servers
+## MCP-Server verwalten
 
-### Server List
+### Serverliste
 
-The MCP Tools dialog displays all configured servers:
+Der MCP-Tools-Dialog zeigt alle konfigurierten Server an:
 
-| Element | Description |
+| Element | Beschreibung |
 |---------|-------------|
-| **Server name** | Identifier you configured |
-| **Status badge** | `Enabled` (green) or `Disabled` (grey) |
-| **Connection info** | Transport type, host, and port |
-| **Tool count** | Number of discovered tools |
+| **Servername** | Der von Ihnen konfigurierte Bezeichner |
+| **Status-Badge** | `Enabled` (grün) oder `Disabled` (grau) |
+| **Verbindungsinformationen** | Transporttyp, Host und Port |
+| **Tool-Anzahl** | Anzahl der entdeckten Tools |
 
-### Enable/Disable a Server
+### Server aktivieren/deaktivieren
 
-1. Locate the server in the list
-2. Click the **toggle switch** icon in the Actions column
-3. The server status changes between Enabled and Disabled
+1. Suchen Sie den Server in der Liste
+2. Klicken Sie auf das **Schalter-Symbol** in der Spalte „Aktionen"
+3. Der Serverstatus wechselt zwischen „Aktiviert" und „Deaktiviert"
 
-**When disabled:** The AI cannot use any tools from this server, but the configuration is preserved.
+**Wenn deaktiviert:** Die KI kann keine Tools von diesem Server verwenden, aber die Konfiguration bleibt erhalten.
 
-### Edit a Server
+### Server bearbeiten
 
-1. Locate the server in the list
-2. Click the **pencil** icon in the Actions column
-3. Modify any configuration fields
-4. Click **Update** to save changes
+1. Suchen Sie den Server in der Liste
+2. Klicken Sie auf das **Bleistift-Symbol** in der Spalte „Aktionen"
+3. Ändern Sie die gewünschten Konfigurationsfelder
+4. Klicken Sie auf **Update**, um die Änderungen zu speichern
 
-:::info JSON Mode Restriction
+:::info JSON-Modus-Einschränkung
 
-JSON mode is only available when adding new servers. To edit an existing server, use Form mode.
-
-:::
-
-### Delete a Server
-
-1. Locate the server in the list
-2. Click the **trash can** icon in the Actions column
-3. Confirm the deletion in the dialog
-
-:::warning Permanent Deletion
-
-Deleting a server removes its configuration and all discovered tools. This action cannot be undone.
+Der JSON-Modus ist nur beim Hinzufügen neuer Server verfügbar. Um einen bestehenden Server zu bearbeiten, verwenden Sie den Formularmodus.
 
 :::
 
-## Discovering and Managing Tools
+### Server löschen
 
-### Discover Tools
+1. Suchen Sie den Server in der Liste
+2. Klicken Sie auf das **Papierkorb-Symbol** in der Spalte „Aktionen"
+3. Bestätigen Sie die Löschung im Dialog
 
-After adding a server, you need to discover the tools it provides:
+:::warning Dauerhafte Löschung
 
-1. Locate the server in the list
-2. Click the **magnifying glass** (Discover Tools) icon
-3. aiFetchly connects to the server and retrieves the list of available tools
-4. Discovered tools appear under the server entry
-
-:::tip Discover After Configuration Changes
-
-Re-discover tools after changing a server's connection details. This ensures the tool list stays in sync with the server.
+Das Löschen eines Servers entfernt seine Konfiguration und alle entdeckten Tools. Diese Aktion kann nicht rückgängig gemacht werden.
 
 :::
 
-### View Discovered Tools
+## Tools entdecken und verwalten
 
-Click on a server entry to expand it and see its tools:
+### Tools entdecken
 
-- Each tool shows its name
-- Tools have individual enable/disable toggles
-- Tool names are prefixed with `mcp_` when used by the AI
+Nach dem Hinzufügen eines Servers müssen Sie die von ihm bereitgestellten Tools entdecken:
 
-### Enable/Disable Individual Tools
+1. Suchen Sie den Server in der Liste
+2. Klicken Sie auf das **Lupen-Symbol** (Discover Tools)
+3. aiFetchly verbindet sich mit dem Server und ruft die Liste der verfügbaren Tools ab
+4. Die entdeckten Tools erscheinen unter dem Servereintrag
 
-1. Expand the server to see its tools
-2. Use the **toggle switch** next to each tool name
-3. Disabled tools will not be available to the AI, even if the server is enabled
+:::tip Nach Konfigurationsänderungen entdecken
 
-This is useful when a server provides many tools but you only want specific ones available to the AI.
+Entdecken Sie Tools erneut, nachdem Sie die Verbindungsdetails eines Servers geändert haben. Dadurch bleibt die Tool-Liste mit dem Server synchronisiert.
 
-### Test Connection
+:::
 
-To verify a server is reachable:
+### Entdeckte Tools anzeigen
 
-1. Locate the server in the list
-2. Click the **network check** (Test Connection) icon
-3. aiFetchly attempts to connect and reports success or failure
+Klicken Sie auf einen Servereintrag, um ihn zu erweitern und seine Tools zu sehen:
 
-## Transport Types
+- Jedes Tool zeigt seinen Namen an
+- Tools haben individuelle Aktivierungs-/Deaktivierungsschalter
+- Tool-Namen erhalten das Präfix `mcp_`, wenn sie von der KI verwendet werden
+
+### Einzelne Tools aktivieren/deaktivieren
+
+1. Erweitern Sie den Server, um seine Tools zu sehen
+2. Verwenden Sie den **Schalter** neben jedem Tool-Namen
+3. Deaktivierte Tools sind für die KI nicht verfügbar, auch wenn der Server aktiviert ist
+
+Dies ist nützlich, wenn ein Server viele Tools bereitstellt, Sie aber nur bestimmte für die KI verfügbar machen möchten.
+
+### Verbindung testen
+
+Um zu überprüfen, ob ein Server erreichbar ist:
+
+1. Suchen Sie den Server in der Liste
+2. Klicken Sie auf das **Netzwerk-Check-Symbol** (Test Connection)
+3. aiFetchly versucht eine Verbindung herzustellen und meldet Erfolg oder Misserfolg
+
+## Transporttypen
 
 ### Stdio
 
-**Best for:** Local tools, command-line programs, npm packages
+**Am besten für:** Lokale Tools, Kommandozeilenprogramme, npm-Pakete
 
-The Stdio transport launches a local process and communicates via standard input/output.
+Der Stdio-Transport startet einen lokalen Prozess und kommuniziert über Standard-Eingabe/Ausgabe.
 
-**Configuration:**
-- **Host/Command**: The command to execute (e.g., `node server.js`, `uvx package-name`)
-- **Port**: Not applicable
+**Konfiguration:**
+- **Host/Befehl**: Der auszuführende Befehl (z. B. `node server.js`, `uvx package-name`)
+- **Port**: Nicht zutreffend
 
-**Example commands:**
-- `npx @modelcontextprotocol/server-memory` — In-memory knowledge graph
-- `uvx blender-mcp` — Blender integration
-- `node /path/to/custom-server.js` — Custom local server
+**Beispielbefehle:**
+- `npx @modelcontextprotocol/server-memory` — In-Memory-Wissensgraph
+- `uvx blender-mcp` — Blender-Integration
+- `node /path/to/custom-server.js` — Benutzerdefinierter lokaler Server
 
 ### SSE (Server-Sent Events)
 
-**Best for:** HTTP-based services, cloud-hosted tools
+**Am besten für:** HTTP-basierte Dienste, Cloud-gehostete Tools
 
-SSE transport connects to an HTTP endpoint that streams tool results.
+Der SSE-Transport verbindet sich mit einem HTTP-Endpunkt, der Tool-Ergebnisse streamt.
 
-**Configuration:**
-- **Host**: Server hostname or IP (e.g., `api.example.com`)
-- **Port**: Server port number (e.g., `8080`)
+**Konfiguration:**
+- **Host**: Server-Hostname oder IP (z. B. `api.example.com`)
+- **Port**: Server-Portnummer (z. B. `8080`)
 
 ### WebSocket
 
-**Best for:** Real-time services, bidirectional communication
+**Am besten für:** Echtzeit-Dienste, bidirektionale Kommunikation
 
-WebSocket transport establishes a persistent connection for tool communication.
+Der WebSocket-Transport stellt eine persistente Verbindung für die Tool-Kommunikation her.
 
-**Configuration:**
-- **Host**: Server hostname or IP
-- **Port**: Server port number
+**Konfiguration:**
+- **Host**: Server-Hostname oder IP
+- **Port**: Server-Portnummer
 
-## Authentication
+## Authentifizierung
 
-MCP servers support several authentication methods:
+MCP-Server unterstützen mehrere Authentifizierungsmethoden:
 
-| Type | Use Case | Fields |
+| Typ | Anwendungsfall | Felder |
 |------|----------|--------|
-| **None** | Public/local servers | No credentials needed |
-| **API Key** | Services requiring an API key | API Key (password field) |
-| **Bearer Token** | OAuth/token-based services | Bearer Token (password field) |
-| **Custom** | Non-standard authentication | JSON configuration |
+| **None** | Öffentliche/lokale Server | Keine Anmeldedaten erforderlich |
+| **API Key** | Dienste, die einen API-Schlüssel erfordern | API Key (Passwort-Feld) |
+| **Bearer Token** | OAuth/tokenbasierte Dienste | Bearer Token (Passwort-Feld) |
+| **Custom** | Nicht-Standard-Authentifizierung | JSON-Konfiguration |
 
-## Using MCP Tools in AI Chat
+## MCP-Tools im KI-Chat verwenden
 
-Once MCP servers are configured and tools are discovered:
+Sobald MCP-Server konfiguriert und Tools entdeckt sind:
 
-1. **Open AI Marketing Assistant**
-2. The AI automatically detects all enabled tools from enabled servers
-3. Tools appear as available functions the AI can call
-4. The AI decides when to use a tool based on your query
+1. **KI-Marketing-Assistenten öffnen**
+2. Die KI erkennt automatisch alle aktivierten Tools von aktivierten Servern
+3. Tools erscheinen als verfügbare Funktionen, die die KI aufrufen kann
+4. Die KI entscheidet basierend auf Ihrer Anfrage, wann ein Tool verwendet wird
 
-### Example: Web Search
-
-```
-User: "Search the web for latest SaaS pricing trends"
-AI: [Calls the search tool from your web search MCP server]
-AI: "Here are the latest SaaS pricing trends I found..."
-```
-
-### Example: Database Query
+### Beispiel: Websuche
 
 ```
-User: "How many leads did we get last week from our website?"
-AI: [Calls the query tool from your database MCP server]
-AI: "Based on the database query, you received 247 leads last week..."
+Benutzer: "Suche im Web nach den neuesten SaaS-Preistrends"
+KI: [Ruft das Such-Tool von Ihrem Web-Such-MCP-Server auf]
+KI: "Hier sind die neuesten SaaS-Preistrends, die ich gefunden habe..."
 ```
 
-### Example: Custom API
+### Beispiel: Datenbankabfrage
 
 ```
-User: "Check if our competitor has updated their pricing page"
-AI: [Calls the monitoring tool from your custom MCP server]
-AI: "Yes, they updated their pricing page yesterday. Here are the changes..."
+Benutzer: "Wie viele Leads hatten wir letzte Woche von unserer Website?"
+KI: [Ruft das Abfrage-Tool von Ihrem Datenbank-MCP-Server auf]
+KI: "Laut der Datenbankabfrage haben Sie letzte Woche 247 Leads erhalten..."
 ```
 
-### How the AI Uses Tools
+### Beispiel: Benutzerdefinierte API
 
-The AI follows this process:
+```
+Benutzer: "Prüfe, ob unser Mitbewerber seine Preisseite aktualisiert hat"
+KI: [Ruft das Monitoring-Tool von Ihrem benutzerdefinierten MCP-Server auf]
+KI: "Ja, sie haben ihre Preisseite gestern aktualisiert. Hier sind die Änderungen..."
+```
 
-1. **Analyzes your request** to determine if a tool is needed
-2. **Selects the appropriate tool** from available MCP tools
-3. **Calls the tool** with the necessary parameters
-4. **Incorporates the result** into its response
+### Wie die KI Tools verwendet
 
-You can also explicitly ask the AI to use a specific tool:
-- "Use the web search tool to find..."
-- "Query the database for..."
-- "Call the [tool name] to..."
+Die KI folgt diesem Prozess:
 
-## Troubleshooting
+1. **Analysiert Ihre Anfrage**, um festzustellen, ob ein Tool benötigt wird
+2. **Wählt das passende Tool** aus den verfügbaren MCP-Tools aus
+3. **Ruft das Tool** mit den erforderlichen Parametern auf
+4. **Integriert das Ergebnis** in ihre Antwort
 
-### Connection Failed
+Sie können die KI auch explizit bitten, ein bestimmtes Tool zu verwenden:
+- "Verwende das Web-Such-Tool, um zu finden..."
+- "Frage die Datenbank ab nach..."
+- "Rufe [Tool-Name] auf, um..."
 
-**Possible causes:**
-- Server is not running
-- Incorrect host/port
-- Firewall blocking the connection
-- Authentication credentials are wrong
+## Fehlerbehebung
 
-**Solutions:**
-1. Verify the server is running and accessible
-2. Check host and port configuration
-3. Use **Test Connection** to diagnose
-4. Verify authentication credentials
-5. Check firewall and network settings
+### Verbindung fehlgeschlagen
 
-### Tool Discovery Fails
+**Mögliche Ursachen:**
+- Server läuft nicht
+- Falscher Host/Port
+- Firewall blockiert die Verbindung
+- Authentifizierungsdaten sind falsch
 
-**Possible causes:**
-- Server is not responding
-- Server does not implement the MCP protocol correctly
-- Connection timeout
+**Lösungen:**
+1. Überprüfen Sie, ob der Server läuft und erreichbar ist
+2. Überprüfen Sie die Host- und Port-Konfiguration
+3. Verwenden Sie **Test Connection** zur Diagnose
+4. Überprüfen Sie die Authentifizierungsdaten
+5. Überprüfen Sie Firewall- und Netzwerkeinstellungen
 
-**Solutions:**
-1. Test the connection first
-2. Verify the server supports MCP protocol
-3. Increase the timeout setting
-4. Check server logs for errors
+### Tool-Entdeckung fehlgeschlagen
 
-### AI Doesn't Use MCP Tools
+**Mögliche Ursachen:**
+- Server antwortet nicht
+- Server implementiert das MCP-Protokoll nicht korrekt
+- Verbindungs-Timeout
 
-**Possible causes:**
-- Server is disabled
-- All tools are disabled
-- Tools not discovered yet
-- AI doesn't recognize the query as needing a tool
+**Lösungen:**
+1. Testen Sie zuerst die Verbindung
+2. Überprüfen Sie, ob der Server das MCP-Protokoll unterstützt
+3. Erhöhen Sie die Timeout-Einstellung
+4. Überprüfen Sie die Server-Logs auf Fehler
 
-**Solutions:**
-1. Verify the server is enabled (green badge)
-2. Verify individual tools are enabled
-3. Discover tools if the tool count shows 0
-4. Explicitly mention the tool in your request
+### KI verwendet keine MCP-Tools
 
-### Server Shows 0 Tools
+**Mögliche Ursachen:**
+- Server ist deaktiviert
+- Alle Tools sind deaktiviert
+- Tools wurden noch nicht entdeckt
+- KI erkennt nicht, dass die Anfrage ein Tool erfordert
 
-**Solutions:**
-1. Click **Discover Tools** to fetch the tool list
-2. Verify the server is running during discovery
-3. Check that the server exposes tools via MCP protocol
-4. Re-discover after server updates
+**Lösungen:**
+1. Überprüfen Sie, ob der Server aktiviert ist (grünes Badge)
+2. Überprüfen Sie, ob einzelne Tools aktiviert sind
+3. Entdecken Sie Tools, wenn die Tool-Anzahl 0 anzeigt
+4. Erwähnen Sie das Tool explizit in Ihrer Anfrage
+
+### Server zeigt 0 Tools
+
+**Lösungen:**
+1. Klicken Sie auf **Discover Tools**, um die Tool-Liste abzurufen
+2. Stellen Sie sicher, dass der Server während der Entdeckung läuft
+3. Überprüfen Sie, ob der Server Tools über das MCP-Protokoll bereitstellt
+4. Entdecken Sie Tools nach Server-Updates erneut
 
 ## Best Practices
 
-### 1. Start with Essential Servers
+### 1. Mit wesentlichen Servern beginnen
 
-Only add servers you need:
-- Too many servers increase complexity
-- Each server connection uses resources
-- Start with one or two, add more as needed
+Fügen Sie nur Server hinzu, die Sie benötigen:
+- Zu viele Server erhöhen die Komplexität
+- Jede Serververbindung verbraucht Ressourcen
+- Beginnen Sie mit ein bis zwei und fügen Sie bei Bedarf weitere hinzu
 
-### 2. Discover Tools After Setup
+### 2. Tools nach der Einrichtung entdecken
 
-Always discover tools after:
-- Adding a new server
-- Changing connection settings
-- Updating the server software
+Entdecken Sie Tools immer nach:
+- dem Hinzufügen eines neuen Servers
+- dem Ändern von Verbindungseinstellungen
+- dem Aktualisieren der Serversoftware
 
-### 3. Use Tool-Level Control
+### 3. Tool-Level-Kontrolle verwenden
 
-Disable individual tools you don't need:
-- Reduces noise for the AI
-- Prevents accidental use of powerful tools
-- Keeps the tool list manageable
+Deaktivieren Sie einzelne Tools, die Sie nicht benötigen:
+- Reduziert Störungen für die KI
+- Verhindert versehentliche Verwendung mächtiger Tools
+- Hält die Tool-Liste überschaubar
 
-### 4. Test Before Using
+### 4. Vor der Nutzung testen
 
-- Use **Test Connection** after configuration
-- **Discover Tools** to verify tool availability
-- Try a simple query in AI Chat to confirm end-to-end
+- Verwenden Sie **Test Connection** nach der Konfiguration
+- **Discover Tools**, um die Tool-Verfügbarkeit zu überprüfen
+- Versuchen Sie eine einfache Abfrage im KI-Chat, um Ende-zu-Ende zu bestätigen
 
-### 5. Keep Credentials Secure
+### 5. Zugangsdaten sicher aufbewahren
 
-- Treat API keys and tokens like passwords
-- Don't share server configurations with untrusted parties
-- Revoke credentials when removing servers
+- Behandeln Sie API-Schlüssel und Tokens wie Passwörter
+- Teilen Sie Serverkonfigurationen nicht mit unvertrauenswürdigen Personen
+- Widerrufen Sie Zugangsdaten beim Entfernen von Servern
 
-### 6. Monitor Tool Usage
+### 6. Tool-Nutzung überwachen
 
-- Review AI responses for unexpected tool usage
-- Disable tools that produce unreliable results
-- Adjust server timeouts if responses are slow
+- Überprüfen Sie KI-Antworten auf unerwartete Tool-Nutzung
+- Deaktivieren Sie Tools, die unzuverlässige Ergebnisse liefern
+- Passen Sie Server-Timeouts an, wenn Antworten langsam sind
 
-## Integration with Other Features
+## Integration mit anderen Funktionen
 
-### AI Skills
+### KI-Skills
 
-MCP tools and AI Skills work together:
-- Skills provide domain-specific knowledge and logic
-- MCP tools provide external data and actions
-- Both are available in the AI Marketing Assistant
+MCP-Tools und KI-Skills arbeiten zusammen:
+- Skills bieten domänenspezifisches Wissen und Logik
+- MCP-Tools bieten externe Daten und Aktionen
+- Beide sind im KI-Marketing-Assistenten verfügbar
 
-### Knowledge Library
+### Wissensbibliothek
 
-MCP tools complement the Knowledge Library:
-- Knowledge Library provides your business context
-- MCP tools provide real-time external data
-- Combined for comprehensive AI responses
+MCP-Tools ergänzen die Wissensbibliothek:
+- Die Wissensbibliothek bietet Ihren Geschäftskontext
+- MCP-Tools bieten Echtzeit-externe Daten
+- Kombiniert für umfassende KI-Antworten
 
-## Next Steps
+## Nächste Schritte
 
-- [Learn about AI Marketing Assistant](./ai-marketing-assistant)
-- [Explore AI Skills](./ai-skills)
-- [Set up Knowledge Library](./knowledge-library)
+- [KI-Marketing-Assistenten kennenlernen](./ai-marketing-assistant)
+- [KI-Skills erkunden](./ai-skills)
+- [Wissensbibliothek einrichten](./knowledge-library)
 
 ---
 
-**Ready to extend your AI?** Add your first MCP server, discover its tools, and start using external capabilities in your AI conversations.
+**Bereit, Ihre KI zu erweitern?** Fügen Sie Ihren ersten MCP-Server hinzu, entdecken Sie seine Tools und beginnen Sie, externe Funktionen in Ihren KI-Gesprächen zu nutzen.

@@ -2,407 +2,407 @@
 id: ai-email-writer
 title: AI Email Writer
 sidebar_label: AI Email Writer
-description: Create personalized, AI-generated email templates with variable substitution and Knowledge Library integration.
+description: Crea plantillas de correo electrónico personalizadas generadas por IA con sustitución de variables e integración con la Biblioteca de Conocimiento.
 ---
 
 # AI Email Writer
 
-The AI Email Writer is aiFetchly's intelligent email creation system. Generate personalized outreach emails, create reusable templates with dynamic variables, and leverage your Knowledge Library for context-aware messaging.
+El AI Email Writer es el sistema inteligente de creación de correos electrónicos de aiFetchly. Genere correos electrónicos de divulgación personalizados, cree plantillas reutilizables con variables dinámicas y aproveche su Biblioteca de Conocimiento para mensajes contextualizados.
 
-## Understanding AI Email Generation
+## Descripción general de la generación de correos con IA
 
-Traditional email templates are static and generic. aiFetchly's AI Email Writer:
+Las plantillas de correo electrónico tradicionales son estáticas y genéricas. El AI Email Writer de aiFetchly:
 
-- **Generates unique content** for each recipient
-- **Incorporates your knowledge base** through RAG integration
-- **Personalizes at scale** while maintaining quality
-- **Adapts to different contexts** and recipient types
+- **Genera contenido único** para cada destinatario
+- **Incorpora su base de conocimiento** a través de la integración RAG
+- **Personaliza a escala** manteniendo la calidad
+- **Se adapta a diferentes contextos** y tipos de destinatarios
 
-:::info AI + Knowledge Library
+:::info IA + Biblioteca de Conocimiento
 
-For best results, [upload relevant documents](./knowledge-library) to your Knowledge Library before generating emails. The AI will reference your specific products, services, and value propositions.
+Para obtener los mejores resultados, [cargue documentos relevantes](./knowledge-library) en su Biblioteca de Conocimiento antes de generar correos electrónicos. La IA hará referencia a sus productos, servicios y propuestas de valor específicas.
 
 :::
 
-## Email Templates Overview
+## Descripción general de las plantillas de correo electrónico
 
-Templates are the foundation of your email campaigns. They contain:
+Las plantillas son la base de sus campañas de correo electrónico. Contienen:
 
-1. **Static Content**: Base message that stays consistent
-2. **Dynamic Variables**: Placeholders that get replaced with recipient-specific data
-3. **AI Generation**: Optional AI-powered content creation
-4. **Rich Formatting**: Support for various text styles
+1. **Contenido estático**: Mensaje base que se mantiene consistente
+2. **Variables dinámicas**: Marcadores de posición que se reemplazan con datos específicos del destinatario
+3. **Generación con IA**: Creación de contenido opcional potenciada por IA
+4. **Formato enriquecido**: Soporte para varios estilos de texto
 
-## Creating Email Templates
+## Creación de plantillas de correo electrónico
 
-### Step 1: Navigate to Email Marketing
+### Paso 1: Ir a Email Marketing
 
-1. Click **Email Marketing** in the left navigation menu
-2. Select **Templates** from the submenu
-3. Click **Create New Template**
+1. Haga clic en **Email Marketing** en el menú de navegación izquierdo
+2. Seleccione **Templates** en el submenú
+3. Haga clic en **Create New Template**
 
-### Step 2: Template Information
+### Paso 2: Información de la plantilla
 
-Enter the following details:
+Ingrese los siguientes detalles:
 
-#### Title (Required)
+#### Título (Obligatorio)
 
-- **Purpose**: Identify the template in your list
-- **Example**: "Product Launch Outreach", "Partnership Proposal"
-- **Guideline**: Use descriptive, specific names
+- **Propósito**: Identificar la plantilla en su lista
+- **Ejemplo**: "Divulgación de Lanzamiento de Producto", "Propuesta de Asociación"
+- **Directriz**: Use nombres descriptivos y específicos
 
-#### Description (Optional)
+#### Descripción (Opcional)
 
-- **Purpose**: Provide context about the template's use case
-- **Example**: "Initial outreach for new product launch to qualified leads"
-- **Guideline**: Include when to use, target audience, and key messaging
+- **Propósito**: Proporcionar contexto sobre el caso de uso de la plantilla
+- **Ejemplo**: "Divulgación inicial para el lanzamiento de un nuevo producto a clientes potenciales calificados"
+- **Directriz**: Incluir cuándo usarla, audiencia objetivo y mensajes clave
 
-### Step 3: Template Content
+### Paso 3: Contenido de la plantilla
 
-Write your email content in the rich text editor.
+Escriba el contenido de su correo electrónico en el editor de texto enriquecido.
 
-#### Using Variables
+#### Uso de variables
 
-Variables are placeholders that get replaced with actual data when sending emails.
+Las variables son marcadores de posición que se reemplazan con datos reales al enviar correos electrónicos.
 
-**Available Variables:**
+**Variables disponibles:**
 
-| Variable | Description | Example Output |
-|----------|-------------|----------------|
-| `{$send_time}` | Current timestamp | "2024-01-15 10:30 AM" |
-| `{$sender}` | Sender name | "John Smith" |
-| `{$receiver_email}` | Recipient's email | "contact@company.com" |
-| `{$url}` | Source URL | "https://company.com" |
-| `{$description}` | Description text | "Software company in New York" |
+| Variable | Descripción | Ejemplo de salida |
+|----------|-------------|-------------------|
+| `{$send_time}` | Marca de tiempo actual | "2024-01-15 10:30 AM" |
+| `{$sender}` | Nombre del remitente | "Juan García" |
+| `{$receiver_email}` | Correo del destinatario | "contacto@empresa.com" |
+| `{$url}` | URL de origen | "https://empresa.com" |
+| `{$description}` | Texto descriptivo | "Empresa de software en Madrid" |
 
-**Example Template with Variables:**
+**Ejemplo de plantilla con variables:**
 
 ```
-Subject: Partnership Opportunity from {$sender}
+Asunto: Oportunidad de colaboración de {$sender}
 
-Hi,
+Hola,
 
-I came across your website ({$url}) and was impressed by your work in {$description}.
+Encontré su sitio web ({$url}) y quedé impresionado por su trabajo en {$description}.
 
-I'm reaching out because I believe there's a great partnership opportunity between our companies.
+Me pongo en contacto porque creo que hay una gran oportunidad de colaboración entre nuestras empresas.
 
-Would you be available for a quick call this week?
+¿Estaría disponible para una breve llamada esta semana?
 
-Best regards,
+Saludos cordiales,
 {$sender}
 
-Sent: {$send_time}
+Enviado: {$send_time}
 ```
 
-**After Variable Substitution:**
+**Después de la sustitución de variables:**
 
 ```
-Subject: Partnership Opportunity from John Smith
+Asunto: Oportunidad de colaboración de Juan García
 
-Hi,
+Hola,
 
-I came across your website (https://techstartup.com) and was impressed by your work in Software Development.
+Encontré su sitio web (https://startuptech.com) y quedé impresionado por su trabajo en Desarrollo de Software.
 
-I'm reaching out because I believe there's a great partnership opportunity between our companies.
+Me pongo en contacto porque creo que hay una gran oportunidad de colaboración entre nuestras empresas.
 
-Would you be available for a quick call this week?
+¿Estaría disponible para una breve llamada esta semana?
 
-Best regards,
-John Smith
+Saludos cordiales,
+Juan García
 
-Sent: 2024-01-15 10:30 AM
+Enviado: 2024-01-15 10:30 AM
 ```
 
-### Step 4: AI-Generated Content (Optional)
+### Paso 4: Contenido generado por IA (Opcional)
 
-For AI-powered content generation:
+Para la generación de contenido con IA:
 
-1. **Toggle "Use AI Generation"**
-2. **Provide a prompt** describing what you want
-3. **Enable RAG Context** to use Knowledge Library
-4. **Click Generate** to create content
+1. **Active "Use AI Generation"**
+2. **Proporcione un prompt** describiendo lo que desea
+3. **Habilite RAG Context** para usar la Biblioteca de Conocimiento
+4. **Haga clic en Generate** para crear el contenido
 
-**Example Prompts:**
-- "Write a friendly introduction email for our marketing services"
-- "Create a personalized outreach mentioning our SaaS platform features"
-- "Generate a partnership proposal email"
+**Ejemplos de prompts:**
+- "Escriba un correo electrónico de presentación amigable para nuestros servicios de marketing"
+- "Cree una divulgación personalizada mencionando las características de nuestra plataforma SaaS"
+- "Genere un correo electrónico de propuesta de asociación"
 
-:::tip AI + RAG Integration
+:::tip Integración IA + RAG
 
-When RAG context is enabled, the AI will automatically reference your Knowledge Library to include accurate information about your products, services, and value propositions.
+Cuando el contexto RAG está habilitado, la IA hará referencia automáticamente a su Biblioteca de Conocimiento para incluir información precisa sobre sus productos, servicios y propuestas de valor.
 
 :::
 
-### Step 5: Preview and Test
+### Paso 5: Vista previa y prueba
 
-1. **Click "Preview"** to see the template with sample variables
-2. **Test different variable combinations**
-3. **Edit content** as needed
-4. **Save Template** when satisfied
+1. **Haga clic en "Preview"** para ver la plantilla con variables de ejemplo
+2. **Pruebe diferentes combinaciones de variables**
+3. **Edite el contenido** según sea necesario
+4. **Guarde la plantilla** cuando esté satisfecho
 
-## Managing Templates
+## Gestión de plantillas
 
-### Template List
+### Lista de plantillas
 
-Navigate to **Email Marketing** → **Templates** to see all templates.
+Vaya a **Email Marketing** → **Templates** para ver todas las plantillas.
 
-**Template Information:**
-- Title
-- Description
-- Creation date
-- Last modified date
-- Usage count
+**Información de la plantilla:**
+- Título
+- Descripción
+- Fecha de creación
+- Fecha de última modificación
+- Contador de uso
 
-### Template Actions
+### Acciones de plantilla
 
-| Action | Description |
+| Acción | Descripción |
 |--------|-------------|
-| **Edit** | Modify template content and variables |
-| **Duplicate** | Create a copy of the template |
-| **Delete** | Remove template (confirm required) |
-| **Preview** | See template with sample variables |
-| **Use in Campaign** | Select for batch email sending |
+| **Edit** | Modificar el contenido y las variables de la plantilla |
+| **Duplicate** | Crear una copia de la plantilla |
+| **Delete** | Eliminar la plantilla (se requiere confirmación) |
+| **Preview** | Ver la plantilla con variables de ejemplo |
+| **Use in Campaign** | Seleccionar para envío masivo de correos |
 
-### Best Practices for Templates
+### Mejores prácticas para plantillas
 
-#### 1. Clear Subject Lines
+#### 1. Líneas de asunto claras
 
-- ✅ "Partnership Opportunity: [Their Company] + [Your Company]"
-- ✅ "Quick Question About [Their Industry]"
-- ❌ "Hello" or "Hi"
+- ✅ "Oportunidad de Asociación: [Su Empresa] + [Nuestra Empresa]"
+- ✅ "Pregunta rápida sobre [Su Industria]"
+- ❌ "Hola" o "Hola"
 
-#### 2. Personalization
+#### 2. Personalización
 
-- Use variables to personalize content
-- Mention specific details about the recipient
-- Reference their website, industry, or work
+- Use variables para personalizar el contenido
+- Mencione detalles específicos sobre el destinatario
+- Haga referencia a su sitio web, industria o trabajo
 
-#### 3. Value-First Approach
+#### 3. Enfoque de valor primero
 
-- Lead with value, not just a pitch
-- Explain benefits, not just features
-- Be clear about what's in it for them
+- Comience con el valor, no solo con una propuesta de venta
+- Explique beneficios, no solo características
+- Sea claro sobre qué beneficio obtienen
 
-#### 4. Clear Call-to-Action
+#### 4. Llamada a la acción clara
 
-- Single, clear next step
-- Easy to understand
-- Low friction (e.g., "Reply to this email")
+- Un solo siguiente paso claro
+- Fácil de entender
+- Baja fricción (por ejemplo, "Responda a este correo")
 
-#### 5. Professional Tone
+#### 5. Tono profesional
 
-- Proofread for grammar and spelling
-- Maintain professional language
-- Avoid overly casual or salesy language
+- Revise la ortografía y gramática
+- Mantenga un lenguaje profesional
+- Evite un lenguaje excesivamente informal o de ventas agresiva
 
-## Template Examples
+## Ejemplos de plantillas
 
-### Example 1: Product Outreach
+### Ejemplo 1: Divulgación de producto
 
-**Subject:** Improve Your [Industry] Workflow with [Product Name]
+**Asunto:** Mejore su flujo de trabajo en [Industria] con [Nombre del Producto]
 
 ```
-Hi,
+Hola,
 
-I noticed on {$url} that you're in the [Industry] space.
+Me di cuenta en {$url} que están en el sector de [Industria].
 
-I'm reaching out because our platform has helped companies like [Description]
-reduce their workflow time by up to 40%.
+Me pongo en contacto porque nuestra plataforma ha ayudado a empresas como [Descripción]
+a reducir su tiempo de flujo de trabajo hasta en un 40%.
 
-Would you be interested in a quick demo to see how it could work for {$receiver_email}?
+¿Estaría interesado en una breve demostración para ver cómo podría funcionar para {$receiver_email}?
 
-Best,
+Saludos,
 {$sender}
 ```
 
-### Example 2: Partnership Proposal
+### Ejemplo 2: Propuesta de asociación
 
-**Subject:** Partnership Opportunity Between [Their Company] & [Your Company]
+**Asunto:** Oportunidad de Asociación entre [Su Empresa] y [Nuestra Empresa]
 
 ```
 
-Hi,
+Hola,
 
-I've been following [Description] (from {$url}) and think there's a
-great synergy between our companies.
+He estado siguiendo [Descripción] (de {$url}) y creo que hay una
+gran sinergia entre nuestras empresas.
 
-We've been working on [Industry] solutions and believe a partnership
-could be mutually beneficial. Our companies serve similar markets with
-complementary offerings.
+Hemos estado trabajando en soluciones para [Industria] y creemos que una asociación
+podría ser mutuamente beneficiosa. Nuestras empresas sirven mercados similares con
+ofertas complementarias.
 
-Would you be open to a brief call to explore possibilities?
+¿Estaría abierto a una breve llamada para explorar posibilidades?
 
-Best regards,
+Saludos cordiales,
 {$sender}
 ```
 
-### Example 3: Content Collaboration
+### Ejemplo 3: Colaboración de contenido
 
-**Subject:** Content Collaboration Opportunity
+**Asunto:** Oportunidad de Colaboración de Contenido
 
 ```
-Hi,
+Hola,
 
-I came across your content on {$url} and was impressed by your
-expertise in [Industry].
+Encontré su contenido en {$url} y quedé impresionado por su
+experiencia en [Industria].
 
-I'm writing to explore a potential content collaboration. Our audience
-is very interested in [Topic], and I think your insights would provide
-tremendous value.
+Le escribo para explorar una posible colaboración de contenido. Nuestra audiencia
+está muy interesada en [Tema], y creo que sus ideas aportarían
+un valor tremendo.
 
-Would you be interested in discussing a guest post or joint webinar?
+¿Estaría interesado en discutir una publicación invitada o un webinar conjunto?
 
-Best,
+Saludos,
 {$sender}
 ```
 
-### Example 4: Service Introduction
+### Ejemplo 4: Presentación de servicios
 
-**Subject:** [Service Type] for [Their Company]
+**Asunto:** [Tipo de Servicio] para [Su Empresa]
 
 ```
-Hi,
+Hola,
 
-I was researching companies in the [Industry] space and came across
+Estaba investigando empresas en el sector de [Industria] y encontré
 {$url}.
 
-I noticed you're [Description] and thought our [Service Type] might
-be a good fit for your current stage. We've helped similar companies
-achieve [Specific Result].
+Noté que son [Descripción] y pensé que nuestro [Tipo de Servicio] podría
+ser un buen ajuste para su etapa actual. Hemos ayudado a empresas similares
+a lograr [Resultado Específico].
 
-Would you be open to a brief conversation about your goals and
-how we might help?
+¿Estaría abierto a una breve conversación sobre sus objetivos y
+cómo podríamos ayudarle?
 
-Best regards,
+Saludos cordiales,
 {$sender}
 ```
 
-## Advanced Features
+## Funciones avanzadas
 
-### Conditional Content
+### Contenido condicional
 
-Create variations based on recipient data:
+Cree variaciones basadas en los datos del destinatario:
 
 ```
 {$if_industry}
-If they're in [Industry], mention relevant case studies
+Si están en [Industria], mencione casos de estudio relevantes
 {$endif}
 
 {$if_company_size}
-Adjust messaging based on company size
+Ajuste el mensaje según el tamaño de la empresa
 {$endif}
 ```
 
-### Multi-Language Support
+### Soporte multiidioma
 
-Create templates in multiple languages:
+Cree plantillas en múltiples idiomas:
 
-1. **Duplicate template** for each language
-2. **Translate content** maintaining variable structure
-3. **Use appropriate template** based on recipient location
+1. **Duplicar la plantilla** para cada idioma
+2. **Traduzca el contenido** manteniendo la estructura de variables
+3. **Use la plantilla apropiada** según la ubicación del destinatario
 
-### A/B Testing
+### Pruebas A/B
 
-Create multiple template variations:
+Cree múltiples variaciones de plantillas:
 
-1. **Duplicate template** 2-3 times
-2. **Make one change** per version (subject line, opening, CTA)
-3. **Test with small batches** first
-4. **Measure results** and use winning version
+1. **Duplicar la plantilla** 2-3 veces
+2. **Haga un cambio** por versión (línea de asunto, apertura, llamada a la acción)
+3. **Pruebe con lotes pequeños** primero
+4. **Mida los resultados** y use la versión ganadora
 
-### Dynamic Content Blocks
+### Bloques de contenido dinámico
 
-Use different content sections based on variables:
+Use diferentes secciones de contenido basadas en variables:
 
 ```
 {$value_proposition_1}
-Alternative: {$value_proposition_2}
-Alternative: {$value_proposition_3}
+Alternativa: {$value_proposition_2}
+Alternativa: {$value_proposition_3}
 ```
 
-## Integration with Batch Email Sending
+## Integración con el envío masivo de correos
 
-Templates are used in the batch email sending workflow:
+Las plantillas se usan en el flujo de trabajo de envío masivo de correos:
 
-1. **Choose Template** in Step 2 of the batch email process
-2. **Variables are automatically populated** from your email list
-3. **Each recipient gets a personalized email**
-4. **AI can enhance** the template with Knowledge Library content
+1. **Elija una plantilla** en el Paso 2 del proceso de envío masivo
+2. **Las variables se completan automáticamente** desde su lista de correos
+3. **Cada destinatario recibe un correo electrónico personalizado**
+4. **La IA puede mejorar** la plantilla con contenido de la Biblioteca de Conocimiento
 
-For detailed instructions, see [Batch Email Sending](../lead-generation/batch-email-sending).
+Para instrucciones detalladas, consulte [Batch Email Sending](../lead-generation/batch-email-sending).
 
-## Troubleshooting
+## Solución de problemas
 
-### Variables Not Replaced
+### Variables no reemplazadas
 
-**Possible causes:**
-- Variable names misspelled
-- Missing data in email list
-- Incorrect variable syntax
+**Posibles causas:**
+- Nombres de variables mal escritos
+- Datos faltantes en la lista de correos
+- Sintaxis de variable incorrecta
 
-**Solutions:**
-1. Check variable syntax: `{$variable_name}`
-2. Verify data exists for all variables
-3. Test with preview before sending
+**Soluciones:**
+1. Verifique la sintaxis de la variable: `{$variable_name}`
+2. Compruebe que existan datos para todas las variables
+3. Pruebe con la vista previa antes de enviar
 
-### AI Generation Not Working
+### La generación con IA no funciona
 
-**Possible causes:**
-- AI service not configured
-- RAG context enabled but no documents in Knowledge Library
-- Prompt too vague
+**Posibles causas:**
+- Servicio de IA no configurado
+- Contexto RAG habilitado pero sin documentos en la Biblioteca de Conocimiento
+- Prompt demasiado vago
 
-**Solutions:**
-1. Check AI settings in system configuration
-2. Upload relevant documents to Knowledge Library
-3. Provide specific, detailed prompts
-4. Try with RAG disabled first
+**Soluciones:**
+1. Verifique la configuración de IA en la configuración del sistema
+2. Cargue documentos relevantes en la Biblioteca de Conocimiento
+3. Proporcione prompts específicos y detallados
+4. Intente primero con RAG deshabilitado
 
-### Template Too Generic
+### Plantilla demasiado genérica
 
-**Possible causes:**
-- Overuse of static text
-- Not enough variables
-- AI generation disabled
+**Posibles causas:**
+- Uso excesivo de texto estático
+- No hay suficientes variables
+- Generación con IA deshabilitada
 
-**Solutions:**
-1. Add more variables for personalization
-2. Enable AI generation for dynamic content
-3. Use RAG context for specific information
-4. Create multiple templates for different use cases
+**Soluciones:**
+1. Agregue más variables para personalización
+2. Habilite la generación con IA para contenido dinámico
+3. Use el contexto RAG para información específica
+4. Cree múltiples plantillas para diferentes casos de uso
 
-## Best Practices Summary
+## Resumen de mejores prácticas
 
-### DO ✅
+### HACER ✅
 
-- **Personalize content** with variables
-- **Test thoroughly** before campaigns
-- **Keep subject lines** clear and compelling
-- **Provide value** upfront
-- **Use clear CTAs**
-- **Proofread** all templates
-- **Create variations** for different audiences
-- **Leverage AI** with RAG context
+- **Personalice el contenido** con variables
+- **Pruebe a fondo** antes de las campañas
+- **Mantenga las líneas de asunto** claras y atractivas
+- **Aporte valor** desde el principio
+- **Use llamadas a la acción claras**
+- **Revise** todas las plantillas
+- **Cree variaciones** para diferentes audiencias
+- **Aproveche la IA** con contexto RAG
 
-### DON'T ❌
+### NO HACER ❌
 
-- **Don't be overly salesy**
-- **Don't use vague subject lines**
-- **Don't send without testing**
-- **Don't ignore recipient context**
-- **Don't make emails too long**
-- **Don't use excessive formatting**
-- **Don't forget call-to-action**
-- **Don't send from "no-reply" addresses**
+- **No sea demasiado vendedor**
+- **No use líneas de asunto vagas**
+- **No envíe sin probar**
+- **No ignore el contexto del destinatario**
+- **No haga correos demasiado largos**
+- **No use formato excesivo**
+- **No olvide la llamada a la acción**
+- **No envíe desde direcciones "no-reply"**
 
-## Next Steps
+## Próximos pasos
 
-After creating your templates:
+Después de crear sus plantillas:
 
-- [Configure email services (SMTP)](../lead-generation/batch-email-sending#configuring-email-services)
-- [Set up batch email sending](../lead-generation/batch-email-sending)
-- [Use the AI Marketing Assistant](./ai-marketing-assistant) for strategy
+- [Configurar servicios de correo (SMTP)](../lead-generation/batch-email-sending#configuring-email-services)
+- [Configurar el envío masivo de correos](../lead-generation/batch-email-sending)
+- [Usar el Asistente de Marketing IA](./ai-marketing-assistant) para estrategia
 
 ---
 
-**Ready to create templates?** Start with a simple outreach template and gradually add more personalization and AI-generated content as you become familiar with the system.
+**¿Listo para crear plantillas?** Comience con una plantilla de divulgación simple y agregue gradualmente más personalización y contenido generado por IA a medida que se familiarice con el sistema.

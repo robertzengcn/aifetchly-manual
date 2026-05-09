@@ -1,313 +1,313 @@
 ---
 id: ai-skills
-title: AI Skills
-sidebar_label: AI Skills
-description: Manage and extend aiFetchly's AI capabilities with customizable skills - import, uninstall, enable/disable, and use in AI Chat.
+title: AI 技能
+sidebar_label: AI 技能
+description: 通过可自定义的技能管理和扩展 aiFetchly 的 AI 能力——导入、卸载、启用/禁用，并在 AI 聊天中使用。
 ---
 
-# AI Skills
+# AI 技能
 
-AI Skills are modular extensions that enhance aiFetchly's AI chat capabilities. Skills add specialized knowledge, custom tools, and domain-specific functionality to the AI Marketing Assistant.
+AI 技能是模块化扩展，用于增强 aiFetchly 的 AI 聊天能力。技能为 AI 营销助手添加专业知识、自定义工具和特定领域的功能。
 
-## What Are AI Skills?
+## 什么是 AI 技能？
 
-AI Skills are packaged components that extend the AI's capabilities:
+AI 技能是打包的组件，用于扩展 AI 的能力：
 
-- **Built-in Skills**: Pre-installed skills with core functionality
-- **User-Installed Skills**: Custom skills you import for specific use cases
+- **内置技能**：预装的核心功能技能
+- **用户安装技能**：您为特定用例导入的自定义技能
 
-Each skill has:
-- A unique name and version
-- A category (e.g., "web-search", "data-analysis", "automation")
-- Enable/disable state
-- A manifest defining permissions and capabilities
+每个技能具有：
+- 唯一的名称和版本号
+- 所属类别（例如"网络搜索"、"数据分析"、"自动化"）
+- 启用/禁用状态
+- 定义权限和能力的清单文件
 
-## Accessing AI Skills
+## 访问 AI 技能
 
-1. Click **Settings** in the left navigation menu
-2. Navigate to **Skills**
-3. View the list of installed skills with their status
+1. 点击左侧导航菜单中的 **设置**
+2. 进入 **技能** 页面
+3. 查看已安装技能列表及其状态
 
-## Importing Skills
+## 导入技能
 
-### Step 1: Obtain Skill Package
+### 第 1 步：获取技能包
 
-Skills are distributed as `.zip` files. You can get skills from:
-- Official aiFetchly skill marketplace
-- Community-contributed skills
-- Custom-developed skills for your organization
+技能以 `.zip` 文件形式分发。您可以从以下途径获取技能：
+- aiFetchly 官方技能市场
+- 社区贡献的技能
+- 为您的组织定制开发的技能
 
-### Step 2: Import the Skill
+### 第 2 步：导入技能
 
-1. In the Skills page, click the **Import** button (top-right, with upload icon)
-2. A file selection dialog opens
-3. Navigate to your skill `.zip` file
-4. Select the file and confirm
+1. 在技能页面，点击 **导入** 按钮（右上角，带有上传图标）
+2. 文件选择对话框将打开
+3. 导航到您的技能 `.zip` 文件
+4. 选择文件并确认
 
-### Step 3: Verify Installation
+### 第 3 步：验证安装
 
-After import:
-- The skill appears in the skills table
-- Status shows as **Enabled** by default
-- Verify the skill's category and version match expectations
+导入完成后：
+- 技能将出现在技能列表中
+- 状态默认显示为 **已启用**
+- 验证技能的类别和版本是否符合预期
 
-:::tip Import Tips
+:::tip 导入提示
 
-- Only `.zip` files are supported
-- The skill must have a valid `manifest.json` inside
-- If import fails, check the zip file integrity and manifest format
-
-:::
-
-## Managing Skills
-
-### View Installed Skills
-
-The skills table displays:
-
-| Column | Description |
-|--------|-------------|
-| **Name** | Skill identifier/name |
-| **Source** | `Built-in` or `User-installed` badge |
-| **Category** | Skill's functional category |
-| **Version** | Current version number |
-| **Status** | `Enabled` or `Disabled` badge |
-| **Actions** | Enable/disable toggle and uninstall button |
-
-### Enable/Disable Skills
-
-To toggle a skill's state:
-
-1. Locate the skill in the table
-2. Use the **toggle buttons** in the Actions column:
-   - **Check mark** (green): Enable the skill
-   - **X mark** (grey): Disable the skill
-
-**When to Disable:**
-- Skill conflicts with another skill
-- Temporary troubleshooting
-- Skill not needed for current tasks
-- Testing skill behavior
-
-**Note:** Built-in skills cannot be uninstalled, only disabled.
-
-### Uninstall Skills
-
-To remove a user-installed skill:
-
-1. Locate the skill in the table
-2. Click the **Delete** (trash can) icon in the Actions column
-3. Confirm the uninstall action in the dialog
-
-:::warning Uninstall Warning
-
-Uninstalling a skill permanently removes it. You'll need to re-import if you want to use it again.
+- 仅支持 `.zip` 文件
+- 技能包内必须包含有效的 `manifest.json` 文件
+- 如果导入失败，请检查 zip 文件完整性和清单文件格式
 
 :::
 
-## Using Skills in AI Chat
+## 管理技能
 
-Skills become available in the **AI Marketing Assistant** once enabled.
+### 查看已安装技能
 
-### Accessing AI Chat
+技能列表显示以下信息：
 
-1. Navigate to **AI Marketing Assistant** (or **AI Chat**)
-2. Start a new conversation or continue existing one
+| 列名 | 说明 |
+|------|------|
+| **名称** | 技能标识符/名称 |
+| **来源** | `内置` 或 `用户安装` 标签 |
+| **类别** | 技能的功能类别 |
+| **版本** | 当前版本号 |
+| **状态** | `已启用` 或 `已禁用` 标签 |
+| **操作** | 启用/禁用开关和卸载按钮 |
 
-### How Skills Work in Chat
+### 启用/禁用技能
 
-Enabled skills automatically integrate with AI responses:
+切换技能状态：
 
-1. **Automatic Tool Selection**: AI chooses relevant skills based on your query
-2. **Manual Invocation**: Request specific skill functionality
-3. **Combined Outputs**: Multiple skills can work together
+1. 在列表中找到该技能
+2. 使用操作列中的 **切换按钮**：
+   - **勾选标记**（绿色）：启用技能
+   - **叉号标记**（灰色）：禁用技能
 
-### Example Skill Usage
+**何时应禁用技能：**
+- 技能与其他技能发生冲突
+- 临时排查问题
+- 当前任务不需要该技能
+- 测试技能行为
 
-**Web Search Skill:**
+**注意：** 内置技能无法卸载，只能禁用。
+
+### 卸载技能
+
+移除用户安装的技能：
+
+1. 在列表中找到该技能
+2. 点击操作列中的 **删除**（垃圾桶）图标
+3. 在对话框中确认卸载操作
+
+:::warning 卸载警告
+
+卸载技能将永久删除该技能。如果需要再次使用，您必须重新导入。
+
+:::
+
+## 在 AI 聊天中使用技能
+
+技能启用后即可在 **AI 营销助手** 中使用。
+
+### 访问 AI 聊天
+
+1. 导航到 **AI 营销助手**（或 **AI 聊天**）
+2. 开始新对话或继续现有对话
+
+### 技能在聊天中的工作方式
+
+已启用的技能会自动集成到 AI 回复中：
+
+1. **自动工具选择**：AI 根据您的查询自动选择相关技能
+2. **手动调用**：请求使用特定技能功能
+3. **组合输出**：多个技能可以协同工作
+
+### 技能使用示例
+
+**网络搜索技能：**
 ```
-User: "What are the latest trends in SaaS marketing?"
-AI: [Uses web search skill to find current information]
-AI: "Based on recent data, SaaS marketing trends include..."
+用户："SaaS 营销的最新趋势是什么？"
+AI：[使用网络搜索技能查找最新信息]
+AI："根据最新数据，SaaS 营销趋势包括..."
 ```
 
-**Data Analysis Skill:**
+**数据分析技能：**
 ```
-User: "Analyze this customer data and identify patterns"
-AI: [Uses data analysis skill to process the data]
-AI: "The analysis reveals these key patterns..."
-```
-
-**Automation Skill:**
-```
-User: "Set up an automated email campaign for new leads"
-AI: [Uses automation skill to configure the campaign]
-AI: "Your automated campaign is now configured with..."
+用户："分析这些客户数据并识别其中的模式"
+AI：[使用数据分析技能处理数据]
+AI："分析揭示了以下关键模式..."
 ```
 
-### Skill Indicators in Chat
+**自动化技能：**
+```
+用户："为新线索设置自动邮件营销活动"
+AI：[使用自动化技能配置营销活动]
+AI："您的自动化营销活动已配置完成，包含..."
+```
 
-When a skill is used:
-- The skill name may appear in the response
-- A small icon or badge indicates skill activation
-- Tool usage is shown in the conversation flow
+### 聊天中的技能指示器
 
-### Skill Permission Prompts
+当技能被使用时：
+- 回复中可能会显示技能名称
+- 小图标或标签会指示技能已激活
+- 工具使用情况会在对话流程中显示
 
-Some skills require your explicit permission before execution. This is a security feature to protect your system.
+### 技能权限提示
 
-**When You'll See Permission Prompts:**
+某些技能在执行前需要您的明确授权。这是一项安全功能，用于保护您的系统。
 
-Skills are categorized by their permission level:
+**何时会出现权限提示：**
 
-| Category | Permission Behavior | Examples |
-|----------|-------------------|----------|
-| **Pure** | Auto-approved, no prompt | Text processing, calculations, data formatting |
-| **Shell** | Always prompts before execution | Running system commands, file operations |
-| **Network** | May prompt for external calls | Web scraping, API calls to external services |
-| **Data** | May prompt for sensitive access | File system read/write, database access |
+技能按其权限级别分类：
 
-**The Permission Prompt:**
+| 类别 | 权限行为 | 示例 |
+|------|----------|------|
+| **纯计算** | 自动批准，无需提示 | 文本处理、计算、数据格式化 |
+| **系统命令** | 执行前始终提示 | 运行系统命令、文件操作 |
+| **网络** | 外部调用时可能提示 | 网页抓取、调用外部 API 服务 |
+| **数据** | 敏感访问时可能提示 | 文件系统读写、数据库访问 |
 
-When a skill needs permission, you'll see a dialog in the AI chat:
+**权限提示界面：**
+
+当技能需要权限时，AI 聊天中会显示如下对话框：
 
 ```
 ┌─────────────────────────────────────────────┐
-│  Skill Permission Request                  │
+│  技能权限请求                                │
 ├─────────────────────────────────────────────┤
-│  Skill: shell_execute                       │
-│  Category: Shell                            │
+│  技能：shell_execute                        │
+│  类别：系统命令                               │
 │                                             │
-│  This skill wants to run:                  │
+│  该技能请求执行：                              │
 │  $ ls -la /path/to/directory               │
 │                                             │
-│  [Allow Once]  [Allow Always]  [Deny]      │
+│  [允许一次]  [始终允许]  [拒绝]                │
 └─────────────────────────────────────────────┘
 ```
 
-**Permission Options:**
+**权限选项：**
 
-- **Allow Once**: Grant permission for this single execution only
-- **Allow Always**: Remember this decision and auto-approve future requests from this skill
-- **Deny**: Block this execution (skill will fail gracefully)
+- **允许一次**：仅授予本次执行的权限
+- **始终允许**：记住此决定，今后自动批准该技能的请求
+- **拒绝**：阻止本次执行（技能将优雅地失败）
 
-**Managing Saved Permissions:**
+**管理已保存的权限：**
 
-To review or change saved permissions:
+查看或更改已保存的权限：
 
-1. Go to **Settings** → **AI Skills**
-2. Click on a skill to view its permission status
-3. Toggle "Always Allow" to change auto-approval behavior
-4. Disabled skills have their permissions temporarily suspended
+1. 进入 **设置** → **AI 技能**
+2. 点击技能查看其权限状态
+3. 切换"始终允许"以更改自动批准行为
+4. 已禁用的技能其权限将被临时暂停
 
-:::tip Security Best Practice
+:::tip 安全最佳实践
 
-Start with "Allow Once" for new skills. After verifying they work correctly and safely, you can switch to "Allow Always" for convenience.
+对于新技能，建议先使用"允许一次"。在验证技能正常且安全运行后，再切换为"始终允许"以获得便利。
 
 :::
 
-## Skill Categories
+## 技能类别
 
-Skills are organized by functional category:
+技能按功能类别组织：
 
-| Category | Purpose | Example Skills |
-|----------|---------|----------------|
-| **Web Search** | Internet research, trend analysis | Search engine, social media monitoring |
-| **Data Analysis** | Processing and interpreting data | CSV analysis, statistical modeling |
-| **Automation** | Workflow automation tasks | Email automation, task scheduling |
-| **Integration** | External service connections | CRM, API connectors |
-| **Content** | Content generation and optimization | Blog writing, SEO optimization |
-| **Pure** | General-purpose utilities | Text processing, formatting |
+| 类别 | 用途 | 示例技能 |
+|------|------|----------|
+| **网络搜索** | 互联网研究、趋势分析 | 搜索引擎、社交媒体监控 |
+| **数据分析** | 数据处理与解读 | CSV 分析、统计建模 |
+| **自动化** | 工作流自动化任务 | 邮件自动化、任务调度 |
+| **集成** | 外部服务连接 | CRM、API 连接器 |
+| **内容** | 内容生成与优化 | 博客写作、SEO 优化 |
+| **纯计算** | 通用工具 | 文本处理、格式化 |
 
-## Troubleshooting
+## 故障排除
 
-### Skill Not Appearing in Chat
+### 技能未在聊天中出现
 
-**Possible causes:**
-- Skill is disabled
-- Skill installation incomplete
-- Skill requires specific permissions
+**可能的原因：**
+- 技能已被禁用
+- 技能安装未完成
+- 技能需要特定权限
 
-**Solutions:**
-1. Check skill status in Settings → Skills
-2. Enable the skill if disabled
-3. Re-import the skill if corrupted
-4. Verify skill manifest has required permissions
+**解决方案：**
+1. 在设置 → 技能中检查技能状态
+2. 如果已禁用，请启用该技能
+3. 如果技能已损坏，请重新导入
+4. 验证技能清单文件是否包含所需权限
 
-### Import Failed
+### 导入失败
 
-**Possible causes:**
-- Invalid zip file format
-- Missing or malformed `manifest.json`
-- Skill already installed
-- Corrupted download
+**可能的原因：**
+- zip 文件格式无效
+- 缺少或格式错误的 `manifest.json`
+- 技能已安装
+- 下载文件已损坏
 
-**Solutions:**
-1. Verify zip file integrity
-2. Check manifest.json format and content
-3. Uninstall existing version first, then re-import
-4. Re-download the skill package
+**解决方案：**
+1. 验证 zip 文件完整性
+2. 检查 manifest.json 的格式和内容
+3. 先卸载现有版本，然后重新导入
+4. 重新下载技能包
 
-### Skill Causes Errors
+### 技能导致错误
 
-**Possible causes:**
-- Skill bug or incompatibility
-- Missing dependencies
-- API key not configured
+**可能的原因：**
+- 技能存在缺陷或不兼容
+- 缺少依赖项
+- API 密钥未配置
 
-**Solutions:**
-1. Disable the skill temporarily
-2. Check skill documentation for requirements
-3. Verify all required configurations are complete
-4. Contact skill developer for support
+**解决方案：**
+1. 临时禁用该技能
+2. 查看技能文档了解所需条件
+3. 验证所有必要配置是否已完成
+4. 联系技能开发者获取支持
 
-### Built-in Skill Cannot Uninstall
+### 内置技能无法卸载
 
-Built-in skills are core to aiFetchly functionality and cannot be removed. You can only disable them if they conflict with other skills.
+内置技能是 aiFetchly 核心功能的一部分，无法移除。如果与其他技能冲突，您只能将其禁用。
 
-## Best Practices
+## 最佳实践
 
-### 1. Skill Selection
+### 1. 技能选择
 
-**Install Only What You Need:**
-- Each skill adds complexity
-- Too many skills may cause conflicts
-- Start with essential skills, add as needed
+**只安装需要的技能：**
+- 每个技能都会增加系统复杂性
+- 过多的技能可能导致冲突
+- 从必要技能开始，按需添加
 
-### 2. Skill Updates
+### 2. 技能更新
 
-**Keep Skills Current:**
-- Check for skill updates regularly
-- Update skills for bug fixes and improvements
-- Test updated skills before production use
+**保持技能为最新版本：**
+- 定期检查技能更新
+- 更新技能以获取错误修复和功能改进
+- 在生产环境使用前先测试更新后的技能
 
-### 3. Skill Organization
+### 3. 技能组织
 
-**Name and Categorize Well:**
-- Use descriptive skill names
-- Organize by functional category
-- Document custom skill purposes
+**合理命名和分类：**
+- 使用描述性的技能名称
+- 按功能类别组织
+- 记录自定义技能的用途
 
-### 4. Testing
+### 4. 测试
 
-**Test Before Production:**
-- Enable skills in test mode first
-- Verify skill behavior in AI chat
-- Check for conflicts with existing skills
+**生产环境前先测试：**
+- 先在测试模式下启用技能
+- 在 AI 聊天中验证技能行为
+- 检查与现有技能的冲突
 
-### 5. Security
+### 5. 安全
 
-**Only Install Trusted Skills:**
-- Verify skill source
-- Review skill permissions
-- Monitor skill behavior
-- Remove unused skills
+**只安装可信的技能：**
+- 验证技能来源
+- 审查技能权限
+- 监控技能行为
+- 移除不再使用的技能
 
-## Skill Development (For Developers)
+## 技能开发（面向开发者）
 
-### Manifest Structure
+### 清单文件结构
 
-A skill's `manifest.json` should include:
+技能的 `manifest.json` 应包含：
 
 ```json
 {
@@ -319,43 +319,43 @@ A skill's `manifest.json` should include:
 }
 ```
 
-### Packaging
+### 打包
 
-1. Include `manifest.json` at root
-2. Add skill implementation files
-3. Include any required assets
-4. Zip the contents (not the folder)
-5. Name the file `skill-name.zip`
+1. 在根目录包含 `manifest.json`
+2. 添加技能实现文件
+3. 包含所需的资源文件
+4. 将内容打包为 zip（而非文件夹本身）
+5. 命名文件为 `skill-name.zip`
 
-## Integration with Other Features
+## 与其他功能的集成
 
-### AI Marketing Assistant
+### AI 营销助手
 
-Skills enhance AI chat capabilities:
-- More accurate responses
-- Access to external data sources
-- Automated task execution
+技能增强 AI 聊天能力：
+- 更准确的回复
+- 访问外部数据源
+- 自动化任务执行
 
-### MCP Tools
+### MCP 工具
 
-Skills and MCP tools can work together:
-- Skills provide domain-specific logic
-- MCP tools provide external connectivity
-- Combined for powerful automation
+技能和 MCP 工具可以协同工作：
+- 技能提供特定领域的逻辑
+- MCP 工具提供外部连接能力
+- 两者结合实现强大的自动化
 
-### Knowledge Library
+### 知识库
 
-Skills can leverage your knowledge base:
-- Search knowledge during chat
-- Apply learned patterns
-- Generate context-aware responses
+技能可以利用您的知识库：
+- 在聊天过程中搜索知识
+- 应用已学习的模式
+- 生成结合上下文的回复
 
-## Next Steps
+## 下一步
 
-- [Configure System Settings](../settings/system-settings)
-- [Learn about AI Marketing Assistant](./ai-marketing-assistant)
-- [Set up Knowledge Library](./knowledge-library)
+- [配置系统设置](../settings/system-settings)
+- [了解 AI 营销助手](./ai-marketing-assistant)
+- [设置知识库](./knowledge-library)
 
 ---
 
-**Ready to extend AI capabilities?** Import your first skill and discover new possibilities for automation and intelligence.
+**准备好扩展 AI 能力了吗？** 导入您的第一个技能，探索自动化和智能化的新可能。

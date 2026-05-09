@@ -7,496 +7,496 @@ description: Send personalized email campaigns at scale using SMTP integration w
 
 # Batch Email Sending
 
-aiFetchly's Batch Email Sending feature allows you to launch personalized email campaigns at scale. Import emails from your extraction tasks, use AI-generated templates, and send via your own SMTP server for complete control over your outreach.
+aiFetchly の一括メール送信機能を使えば、パーソナライズされたメールキャンペーンを大規模に展開できます。抽出タスクからメールアドレスをインポートし、AI 生成テンプレートを利用して、独自の SMTP サーバー経由で送信することで、アウトリーチ活動を完全にコントロールできます。
 
-## Overview
+## 概要
 
-The batch email sending process consists of **4 steps**:
+一括メール送信のプロセスは以下の **4 ステップ** で構成されます:
 
-1. **Choose Email Source** - Select where your emails come from
-2. **Choose Email Template** - Select or create your message template
-3. **Choose Email Filter** (Optional) - Apply filters to your email list
-4. **Choose Email Service** - Configure SMTP and send
+1. **メールソースの選択** - メールアドレスの取得元を選択
+2. **メールテンプレートの選択** - メッセージテンプレートを選択または作成
+3. **メールフィルターの選択** (任意) - メールリストにフィルターを適用
+4. **メールサービスの選択** - SMTP を設定して送信
 
-:::info Prerequisites
+:::info 前提条件
 
-Before sending campaigns, ensure you have:
-- [Configured an SMTP service](#configuring-email-services)
-- [Created email templates](../ai-outreach/ai-email-writer)
-- [Extracted or imported email lists](./contact-extraction)
-
-:::
-
-## Configuring Email Services
-
-Before sending emails, you must configure at least one SMTP service.
-
-### What is SMTP?
-
-**SMTP** (Simple Mail Transfer Protocol) is the standard for sending emails. aiFetchly uses SMTP to send emails through your own email server or email service provider.
-
-### Step 1: Navigate to Email Services
-
-1. Click **Email Marketing** in the left navigation menu
-2. Select **Email Services** from the submenu
-3. Click **Add New Service**
-
-### Step 2: SMTP Configuration
-
-Enter the following SMTP details:
-
-#### Service Name
-
-- **Purpose**: Identify this SMTP configuration
-- **Example**: "Gmail SMTP", "SendGrid", "AWS SES"
-- **Required**: Yes
-
-#### From Email
-
-- **Purpose**: Email address that emails will be sent from
-- **Example**: `outreach@yourcompany.com`
-- **Required**: Yes
-
-:::tip Sender Reputation
-
-Use a dedicated email address for outreach. Avoid using personal email addresses for bulk sending.
+キャンペーンを送信する前に、以下の準備を完了してください:
+- [SMTP サービスの設定](#configuring-email-services)
+- [メールテンプレートの作成](../ai-outreach/ai-email-writer)
+- [メールリストの抽出またはインポート](./contact-extraction)
 
 :::
 
-#### Password
+## メールサービスの設定
 
-- **Purpose**: Email account password or application-specific password
-- **Required**: Yes
-- **Security**: Password is stored securely
+メールを送信する前に、少なくとも 1 つの SMTP サービスを設定する必要があります。
 
-**Show/Hide Toggle**: Click the eye icon to show/hide the password.
+### SMTP とは?
 
-#### Host
+**SMTP**（Simple Mail Transfer Protocol）は、メール送信の標準プロトコルです。aiFetchly は SMTP を使用して、ご自身のメールサーバーまたはメールサービスプロバイダー経由でメールを送信します。
 
-- **Purpose**: SMTP server hostname
-- **Examples**:
+### ステップ 1: メールサービスに移動
+
+1. 左側のナビゲーションメニューで **Email Marketing** をクリック
+2. サブメューから **Email Services** を選択
+3. **Add New Service** をクリック
+
+### ステップ 2: SMTP 設定
+
+以下の SMTP 詳細情報を入力します:
+
+#### サービス名
+
+- **目的**: この SMTP 設定を識別するための名前
+- **例**: "Gmail SMTP"、"SendGrid"、"AWS SES"
+- **必須**: はい
+
+#### 送信元メールアドレス
+
+- **目的**: メールの送信元となるメールアドレス
+- **例**: `outreach@yourcompany.com`
+- **必須**: はい
+
+:::tip 送信者レピュテーション
+
+アウトリーチ用には専用のメールアドレスを使用してください。個人用メールアドレスを一括送信に使用しないでください。
+
+:::
+
+#### パスワード
+
+- **目的**: メールアカウントのパスワードまたはアプリ固有のパスワード
+- **必須**: はい
+- **セキュリティ**: パスワードは安全に保存されます
+
+**表示/非表示の切替**: 目のアイコンをクリックしてパスワードの表示/非表示を切り替えます。
+
+#### ホスト
+
+- **目的**: SMTP サーバーのホスト名
+- **例**:
   - Gmail: `smtp.gmail.com`
   - SendGrid: `smtp.sendgrid.net`
   - AWS SES: `email-smtp.us-east-1.amazonaws.com`
-- **Required**: Yes
+- **必須**: はい
 
-#### Port
+#### ポート
 
-- **Purpose**: SMTP server port
-- **Common Ports**:
-  - **587**: Submission (STARTTLS) - Recommended
-  - **465**: SMTPS (SSL/TLS)
-  - **25**: SMTP (not recommended, often blocked)
-- **Required**: Yes
+- **目的**: SMTP サーバーのポート番号
+- **一般的なポート**:
+  - **587**: Submission（STARTTLS）- 推奨
+  - **465**: SMTPS（SSL/TLS）
+  - **25**: SMTP（非推奨、多くの場合ブロックされます）
+- **必須**: はい
 
 #### SSL/TLS
 
-- **Toggle**: Enable secure connection
-- **Recommended**: Always keep enabled
-- **Purpose**: Encrypts email transmission
+- **切替**: 安全な接続を有効化
+- **推奨**: 常に有効にしておくことを推奨
+- **目的**: メール送信を暗号化します
 
-### Step 3: Test Configuration
+### ステップ 3: 設定のテスト
 
-Before saving, test your SMTP settings:
+保存する前に、SMTP 設定をテストします:
 
-1. **Click "Test Connection"**
-2. **Enter test details**:
-   - **Receiver**: Test email address
-   - **Title**: Test subject line
-   - **Content**: Test email body
-3. **Click "Send Test Email"**
-4. **Check your inbox** for the test email
+1. **"Test Connection" をクリック**
+2. **テスト詳細を入力**:
+   - **宛先**: テスト用メールアドレス
+   - **件名**: テスト用件名
+   - **本文**: テスト用メール本文
+3. **"Send Test Email" をクリック**
+4. **受信トレイを確認**してテストメールが届いたか確認
 
-:::important Test Before Sending
+:::important 送信前にテスト
 
-Always test your SMTP configuration before using it in campaigns. This prevents failed sends and wasted resources.
+キャンペーンで使用する前に、必ず SMTP 設定をテストしてください。これにより、送信失敗やリソースの無駄を防ぐことができます。
 
 :::
 
-### Step 4: Save Service
+### ステップ 4: サービスの保存
 
-1. If test successful, click **Save**
-2. Service appears in your email services list
-3. Ready to use in campaigns
+1. テストが成功したら、**Save** をクリック
+2. サービスがメールサービスリストに表示されます
+3. キャンペーンで使用できるようになります
 
-### Common SMTP Providers
+### 主な SMTP プロバイダー
 
-| Provider | Host | Port | Notes |
+| プロバイダー | ホスト | ポート | 備考 |
 |----------|------|------|-------|
-| **Gmail** | `smtp.gmail.com` | 587 | Use App Password, not regular password |
-| **Outlook** | `smtp.office365.com` | 587 | May require App Password |
-| **SendGrid** | `smtp.sendgrid.net` | 587 | API key as password |
-| **Mailgun** | `smtp.mailgun.org` | 587 | Use SMTP credentials |
-| **AWS SES** | Region-specific | 587 | Requires SMTP credentials |
-| **Postmark** | `smtp.postmarkapp.com` | 587 | API key as password |
+| **Gmail** | `smtp.gmail.com` | 587 | アプリパスワードを使用（通常のパスワードは不可） |
+| **Outlook** | `smtp.office365.com` | 587 | アプリパスワードが必要な場合があります |
+| **SendGrid** | `smtp.sendgrid.net` | 587 | API キーをパスワードとして使用 |
+| **Mailgun** | `smtp.mailgun.org` | 587 | SMTP 認証情報を使用 |
+| **AWS SES** | リージョン固有 | 587 | SMTP 認証情報が必要 |
+| **Postmark** | `smtp.postmarkapp.com` | 587 | API キーをパスワードとして使用 |
 
-:::warning Gmail and Outlook
+:::warning Gmail と Outlook
 
-Gmail and Outlook require **App Passwords** for third-party SMTP access. You cannot use your regular password.
+Gmail と Outlook では、サードパーティの SMTP アクセスに **アプリパスワード** が必要です。通常のパスワードは使用できません。
 
-1. Enable 2-factor authentication
-2. Generate an App Password
-3. Use the App Password in aiFetchly
-
-:::
-
-## Sending Batch Emails
-
-### Step 1: Choose Email Source
-
-1. **Navigate** to **Email Marketing** → **Send Bulk Emails**
-2. **Select Email Source Type** from the dropdown:
-   - **Email Task**: Emails from extraction tasks
-   - **Manual Input**: Upload email list manually
-   - **Search Results**: Use search task results
-
-#### Using Email Tasks (Recommended)
-
-1. Select **Email Task** from dropdown
-2. **Choose extraction task** from the list
-3. **Preview** the email list
-4. **Option**: Enable "Avoid Duplicates" to skip already-contacted emails
-
-#### Using Manual Input
-
-1. Select **Manual Input** from dropdown
-2. **Enter emails** in the text area
-3. **Format**: One email per line, or CSV format
-4. **Click "Parse"** to process the list
-
-### Step 2: Choose Email Template
-
-1. **Select one or more templates** from your template list
-2. **Preview** the template content
-3. **Variables** will be automatically populated:
-   - `{$receiver_email}`: Recipient's email address
-   - `{$url}`: Source URL (if available)
-   - `{$description}`: Description or context
-   - `{$sender}`: Sender name from SMTP config
-   - `{$send_time}`: Timestamp
-
-:::tip Multiple Templates
-
-You can select multiple templates to A/B test different messaging. The system will rotate through templates across recipients.
+1. 二段階認証を有効にする
+2. アプリパスワードを生成する
+3. aiFetchly でアプリパスワードを使用する
 
 :::
 
-### Step 3: Choose Email Filter (Optional)
+## 一括メールの送信
 
-Apply filters to your email list:
+### ステップ 1: メールソースの選択
 
-1. **Select filter type** from dropdown
-2. **Configure filter rules**
-3. **Preview filtered results**
-4. **See count** of filtered emails
+1. **Email Marketing** → **Send Bulk Emails** に移動
+2. ドロップダウンから **メールソースの種類** を選択:
+   - **Email Task**: 抽出タスクからのメール
+   - **Manual Input**: メールリストを手動でアップロード
+   - **Search Results**: 検索タスクの結果を使用
 
-**Common Filters:**
-- Remove duplicate emails
-- Filter by domain
-- Filter by industry/category
-- Exclude previous recipients
+#### メールタスクを使用（推奨）
 
-:::info Filter Status
+1. ドロップダウンから **Email Task** を選択
+2. リストから **抽出タスクを選択**
+3. メールリストを **プレビュー**
+4. **オプション**: "Avoid Duplicates" を有効にして、既に連絡済みのメールをスキップ
 
-Email filters are currently a placeholder feature in this version. Duplicate prevention is available in Step 1.
+#### 手動入力を使用
+
+1. ドロップダウンから **Manual Input** を選択
+2. テキストエリアに **メールアドレスを入力**
+3. **形式**: 1 行に 1 つのメールアドレス、または CSV 形式
+4. **"Parse" をクリック**してリストを処理
+
+### ステップ 2: メールテンプレートの選択
+
+1. テンプレートリストから **1 つ以上のテンプレートを選択**
+2. テンプレートの内容を **プレビュー**
+3. **変数** は自動的に置換されます:
+   - `{$receiver_email}`: 受信者のメールアドレス
+   - `{$url}`: 送信元 URL（利用可能な場合）
+   - `{$description}`: 説明またはコンテキスト
+   - `{$sender}`: SMTP 設定からの送信者名
+   - `{$send_time}`: タイムスタンプ
+
+:::tip 複数テンプレート
+
+複数のテンプレートを選択して、異なるメッセージの A/B テストを行うことができます。システムは受信者間でテンプレートをローテーションします。
 
 :::
 
-### Step 4: Choose Email Service
+### ステップ 3: メールフィルターの選択 (任意)
 
-1. **Select SMTP service** from your configured services
-2. **Review campaign summary**:
-   - Email count
-   - Selected template(s)
-   - SMTP service
-   - Estimated send time
+メールリストにフィルターを適用します:
 
-3. **Click "Send Campaign"** to start sending
+1. ドロップダウンから **フィルタータイプを選択**
+2. **フィルタールールを設定**
+3. **フィルタリング結果をプレビュー**
+4. フィルタリングされたメールの **件数を確認**
 
-### Campaign Execution
+**一般的なフィルター:**
+- 重複メールの削除
+- ドメインによるフィルター
+- 業界/カテゴリによるフィルター
+- 過去の受信者の除外
 
-After launching:
+:::info フィルターのステータス
 
-- **Real-time Progress**: Track sending progress
-- **Success/Fail Counts**: See successful vs. failed sends
-- **Error Logs**: View details for failed emails
-- **Pause/Resume**: Control campaign execution
+メールフィルターは現在のバージョンではプレースホルダー機能です。重複防止はステップ 1 で利用可能です。
 
-## Monitoring Campaigns
+:::
 
-### Campaign List
+### ステップ 4: メールサービスの選択
 
-Navigate to **Email Marketing** → **Campaigns** to see all campaigns.
+1. 設定済みのサービスから **SMTP サービスを選択**
+2. **キャンペーン概要を確認**:
+   - メール件数
+   - 選択したテンプレート
+   - SMTP サービス
+   - 推定送信時間
 
-**Campaign Information:**
-- Campaign name
-- Email count
-- Template used
-- SMTP service
-- Status (Pending, Sending, Completed, Failed)
-- Sent/Failed counts
-- Start and end times
+3. **"Send Campaign" をクリック**して送信を開始
 
-### Campaign Actions
+### キャンペーンの実行
 
-| Action | Description |
+開始後:
+
+- **リアルタイムの進行状況**: 送信の進行状況を追跡
+- **成功/失敗件数**: 成功と失敗の送信数を確認
+- **エラーログ**: 失敗したメールの詳細を表示
+- **一時停止/再開**: キャンペーンの実行を制御
+
+## キャンペーンの監視
+
+### キャンペーンリスト
+
+**Email Marketing** → **Campaigns** に移動してすべてのキャンペーンを表示します。
+
+**キャンペーン情報:**
+- キャンペーン名
+- メール件数
+- 使用テンプレート
+- SMTP サービス
+- ステータス（Pending、Sending、Completed、Failed）
+- 送信済み/失敗件数
+- 開始時刻と終了時刻
+
+### キャンペーンアクション
+
+| アクション | 説明 |
 |--------|-------------|
-| **View Details** | See individual email status |
-| **Pause** | Pause running campaign |
-| **Resume** | Continue paused campaign |
-| **Stop** | Terminate campaign |
-| **Download Logs** | Export campaign results |
-| **Delete** | Remove campaign record |
+| **View Details** | 個別のメールステータスを表示 |
+| **Pause** | 実行中のキャンペーンを一時停止 |
+| **Resume** | 一時停止中のキャンペーンを再開 |
+| **Stop** | キャンペーンを終了 |
+| **Download Logs** | キャンペーン結果をエクスポート |
+| **Delete** | キャンペーン記録を削除 |
 
-### Email Status
+### メールステータス
 
-Individual emails can have these statuses:
+個別のメールは以下のステータスを持ちます:
 
-| Status | Description |
+| ステータス | 説明 |
 |--------|-------------|
-| **Pending** | Queued to send |
-| **Sent** | Successfully delivered |
-| **Failed** | Could not be delivered |
-| **Bounced** | Rejected by recipient server |
-| **Opened** | Recipient opened email |
-| **Clicked** | Recipient clicked link |
+| **Pending** | 送信待ち |
+| **Sent** | 正常に配信済み |
+| **Failed** | 配信できなかった |
+| **Bounced** | 受信者サーバーに拒否された |
+| **Opened** | 受信者がメールを開封 |
+| **Clicked** | 受信者がリンクをクリック |
 
-## Best Practices
+## ベストプラクティス
 
-### 1. SMTP Configuration
+### 1. SMTP 設定
 
-**Use Dedicated IPs:**
-- For high-volume sending, use dedicated IP addresses
-- Build sender reputation gradually
-- Monitor deliverability metrics
+**専用 IP の使用:**
+- 大量送信には専用 IP アドレスを使用
+- 送信者レピュテーションを段階的に構築
+- 到達率指標を監視
 
-**Warm Up New Accounts:**
-- Start with 20-50 emails per day
-- Gradually increase over 2-4 weeks
-- Monitor bounce and spam rates
+**新規アカウントのウォームアップ:**
+- 1 日 20〜50 通から開始
+- 2〜4 週間かけて段階的に増加
+- バウンス率とスパム率を監視
 
-**Multiple Services:**
-- Configure 2-3 SMTP services
-- Rotate between services to distribute load
-- Prevent rate limiting by single provider
+**複数サービスの活用:**
+- 2〜3 の SMTP サービスを設定
+- サービス間でローテーションして負荷を分散
+- 単一プロバイダーによるレート制限を防止
 
-### 2. Email List Quality
+### 2. メールリストの品質
 
-**Clean Your Lists:**
-- Remove bounced emails
-- Suppress unsubscribes and complaints
-- Verify emails before sending
+**リストのクリーンアップ:**
+- バウンスしたメールアドレスを削除
+- 配信停止と苦情を抑制
+- 送信前にメールアドレスを検証
 
-**Segment Your Audience:**
-- Group by industry, company size, or interest
-- Create targeted campaigns for each segment
-- Improve relevance and engagement
+**オーディエンスのセグメント化:**
+- 業界、企業規模、または興味でグループ化
+- 各セグメント向けのターゲットキャンペーンを作成
+- 関連性とエンゲージメントを向上
 
-**Avoid Duplicates:**
-- Enable "Avoid Duplicates" option
-- Suppression lists for previous recipients
-- Regular list maintenance
+**重複の回避:**
+- "Avoid Duplicates" オプションを有効にする
+- 過去の受信者を抑制リストで管理
+- 定期的なリストメンテナンス
 
-### 3. Template Optimization
+### 3. テンプレートの最適化
 
-**Personalize Content:**
-- Use variables extensively
-- Mention recipient-specific details
-- Reference their website or work
+**コンテンツのパーソナライズ:**
+- 変数を積極的に活用
+- 受信者固有の詳細に言及
+- 相手のウェブサイトや仕事に触れる
 
-**Keep It Concise:**
-- 100-200 words ideal
-- Clear subject lines
-- Single call-to-action
+**簡潔にまとめる:**
+- 100〜200 語が理想
+- 明確な件名
+- 単一のコールトゥアクション
 
-**Mobile-Friendly:**
-- Short paragraphs
-- Clear formatting
-- Test on mobile devices
+**モバイルフレンドリー:**
+- 短い段落
+- 明確なフォーマット
+- モバイルデバイスでテスト
 
-### 4. Timing and Frequency
+### 4. タイミングと頻度
 
-**Best Send Times:**
-- Tuesday, Wednesday, Thursday: 10 AM - 2 PM
-- Avoid Monday mornings and weekends
-- Test times for your specific audience
+**最適な送信時間:**
+- 火曜日、水曜日、木曜日の 10 時〜14 時
+- 月曜日の朝と週末を避ける
+- 特定のオーディエンスに合わせて時間をテスト
 
-**Sending Frequency:**
-- Don't send to same recipient within 30 days
-- Space out campaigns appropriately
-- Monitor unsubscribe rates
+**送信頻度:**
+- 同一受信者への送信は 30 日以内に再度行わない
+- キャンペーン間を適切に空ける
+- 配信停止率を監視
 
-**Rate Limiting:**
-- Respect SMTP provider limits
-- Start slow: 10-20 emails per minute
-- Monitor for blocks or bounces
+**レート制限:**
+- SMTP プロバイダーの制限を遵守
+- ゆっくり開始: 1 分間に 10〜20 通
+- ブロックやバウンスを監視
 
-### 5. Compliance
+### 5. コンプライアンス
 
-**Include Required Elements:**
-- Physical mailing address
-- Clear unsubscribe mechanism
-- Accurate header information
-- Your identity in the email
+**必須要素の包含:**
+- 物理的な郵送先住所
+- 明確な配信停止の仕組み
+- 正確なヘッダー情報
+- メール内の送信者情報
 
-**Follow Regulations:**
-- **CAN-SPAM** (USA): Commercial email requirements
-- **GDPR** (EU): Consent and data protection
-- **CASL** (Canada): Consent requirements
+**規制の遵守:**
+- **CAN-SPAM**（米国）: 商業メールの要件
+- **GDPR**（EU）: 同意とデータ保護
+- **CASL**（カナダ）: 同意の要件
 
-:::warning Legal Compliance
+:::warning 法的コンプライアンス
 
-Ensure your email campaigns comply with applicable laws in your recipients' jurisdictions. Consult legal counsel for guidance.
-
-:::
-
-## Troubleshooting
-
-### SMTP Connection Failed
-
-**Possible causes:**
-- Incorrect SMTP settings
-- Firewall blocking connection
-- Authentication issues
-
-**Solutions:**
-1. Verify host, port, and credentials
-2. Test with telnet: `telnet smtp.host.com port`
-3. Check firewall/antivirus settings
-4. Try different port (587 vs 465)
-5. Verify App Password for Gmail/Outlook
-
-### High Bounce Rate
-
-**Possible causes:**
-- Invalid email addresses
-- Sender reputation issues
-- Spam filter triggers
-
-**Solutions:**
-1. Verify email list quality
-2. Check sender reputation (MXToolbox)
-3. Improve email content
-4. Warm up email account
-5. Use different SMTP service
-
-### Emails Going to Spam
-
-**Possible causes:**
-- Poor sender reputation
-- Spammy content
-- Missing authentication
-
-**Solutions:**
-1. Set up SPF, DKIM, and DMARC
-2. Improve email content quality
-3. Avoid spam trigger words
-4. Include physical address and unsubscribe
-5. Warm up sending domain
-
-### Rate Limiting
-
-**Possible causes:**
-- Sending too fast
-- SMTP provider limits exceeded
-
-**Solutions:**
-1. Reduce sending speed (emails per minute)
-2. Configure multiple SMTP services
-3. Check provider rate limits
-4. Upgrade SMTP plan if needed
-
-### Templates Not Personalizing
-
-**Possible causes:**
-- Variables not matching data
-- Missing data in email list
-
-**Solutions:**
-1. Verify variable names match exactly
-2. Check email list has required fields
-3. Test with preview before sending
-4. Use generic content as fallback
-
-## Campaign Metrics to Track
-
-### Deliverability
-
-- **Sent Rate**: Emails successfully sent / Total emails
-- **Bounce Rate**: Bounced emails / Sent emails
-- **Delivery Rate**: Delivered emails / Sent emails
-
-### Engagement
-
-- **Open Rate**: Opens / Delivered
-- **Click-Through Rate**: Clicks / Opens
-- **Conversion Rate**: Conversions / Clicks
-
-### Sender Reputation
-
-- **Complaint Rate**: Spam complaints / Delivered
-- **Unsubscribe Rate**: Unsubscribes / Delivered
-- **Spam Trap Hits**: Emails to spam traps
-
-:::tip Benchmark Metrics
-
-Industry averages:
-- Open Rate: 15-25%
-- Click-Through Rate: 2-5%
-- Bounce Rate: < 2%
-- Complaint Rate: < 0.1%
+メールキャンペーンが受信者の管轄区域の適用法令に準拠していることを確認してください。指針については法律の専門家にご相談ください。
 
 :::
 
-## Advanced Workflows
+## トラブルシューティング
 
-### Workflow 1: Drip Campaign
+### SMTP 接続失敗
 
-Set up automated multi-touch campaigns:
+**考えられる原因:**
+- SMTP 設定が正しくない
+- ファイアウォールが接続をブロックしている
+- 認証の問題
 
-1. **Day 1**: Initial outreach email
-2. **Day 3**: Follow-up if no response
-3. **Day 7**: Final follow-up with value add
-4. **Day 14**: Break-up email
+**解決策:**
+1. ホスト、ポート、認証情報を確認
+2. telnet でテスト: `telnet smtp.host.com port`
+3. ファイアウォール/ウイルス対策設定を確認
+4. 別のポートを試す（587 と 465）
+5. Gmail/Outlook のアプリパスワードを確認
 
-Use the [Scheduler](../automation/task-scheduling) to automate.
+### バウンス率が高い
 
-### Workflow 2: A/B Testing
+**考えられる原因:**
+- 無効なメールアドレス
+- 送信者レピュテーションの問題
+- スパムフィルターのトリガー
 
-Test different approaches:
+**解決策:**
+1. メールリストの品質を検証
+2. 送信者レピュテーションを確認（MXToolbox）
+3. メールの内容を改善
+4. メールアカウントをウォームアップ
+5. 別の SMTP サービスを使用
 
-1. **Create 2-3 template variations**
-2. **Split email list** into segments
-3. **Send different templates** to each segment
-4. **Measure results** (open rate, response rate)
-5. **Use winner** for future campaigns
+### メールがスパムに入る
 
-### Workflow 3: Segmented Campaigns
+**考えられる原因:**
+- 送信者レピュテーションが低い
+- スパム的なコンテンツ
+- 認証が不足
 
-Target specific audiences:
+**解決策:**
+1. SPF、DKIM、DMARC を設定
+2. メールのコンテンツ品質を改善
+3. スパムトリガーワードを避ける
+4. 住所と配信停止リンクを含める
+5. 送信ドメインをウォームアップ
 
-1. **Extract emails** by industry or location
-2. **Create tailored templates** for each segment
-3. **Send targeted campaigns** to each segment
-4. **Analyze results** by segment
-5. **Optimize messaging** based on response
+### レート制限
 
-## Integration with Lead Generation
+**考えられる原因:**
+- 送信速度が速すぎる
+- SMTP プロバイダーの制限を超過
 
-The complete email outreach workflow:
+**解決策:**
+1. 送信速度（1 分あたりのメール数）を下げる
+2. 複数の SMTP サービスを設定
+3. プロバイダーのレート制限を確認
+4. 必要に応じて SMTP プランをアップグレード
 
-1. **[Search Engines](./search-engines)**: Find target websites
-2. **[Contact Extraction](./contact-extraction)**: Harvest emails
-3. **[AI Email Writer](../ai-outreach/ai-email-writer)**: Create personalized templates
-4. **[Knowledge Library](../ai-outreach/knowledge-library)**: Provide context for AI
-5. **Batch Email Sending**: Launch campaigns
+### テンプレートがパーソナライズされない
 
-## Next Steps
+**考えられる原因:**
+- 変数がデータと一致していない
+- メールリストに必要なフィールドがない
 
-- [Set up the AI Marketing Assistant](../ai-outreach/ai-marketing-assistant) for strategy
-- [Configure task scheduling](../automation/task-scheduling) for automation
-- [Review system settings](../settings/system-settings)
+**解決策:**
+1. 変数名が正確に一致しているか確認
+2. メールリストに必要なフィールドがあるか確認
+3. 送信前にプレビューでテスト
+4. フォールバックとして汎用コンテンツを使用
+
+## 追跡すべきキャンペーン指標
+
+### 到達率
+
+- **送信率**: 正常に送信されたメール数 / 総メール数
+- **バウンス率**: バウンスしたメール数 / 送信したメール数
+- **配信率**: 配信されたメール数 / 送信したメール数
+
+### エンゲージメント
+
+- **開封率**: 開封数 / 配信数
+- **クリック率**: クリック数 / 開封数
+- **コンバージョン率**: コンバージョン数 / クリック数
+
+### 送信者レピュテーション
+
+- **苦情率**: スパム苦情数 / 配信数
+- **配信停止率**: 配信停止数 / 配信数
+- **スパムトラップヒット**: スパムトラップへのメール送信
+
+:::tip ベンチマーク指標
+
+業界平均値:
+- 開封率: 15〜25%
+- クリック率: 2〜5%
+- バウンス率: < 2%
+- 苦情率: < 0.1%
+
+:::
+
+## 高度なワークフロー
+
+### ワークフロー 1: ドリップキャンペーン
+
+自動化されたマルチタッチキャンペーンを設定します:
+
+1. **1 日目**: 初回アウトリーチメール
+2. **3 日目**: 返信がない場合のフォローアップ
+3. **7 日目**: 価値を提供する最終フォローアップ
+4. **14 日目**: クロージングメール
+
+自動化には[スケジューラー](../automation/task-scheduling)を使用してください。
+
+### ワークフロー 2: A/B テスト
+
+異なるアプローチをテストします:
+
+1. **2〜3 のテンプレートバリエーションを作成**
+2. **メールリストをセグメントに分割**
+3. **各セグメントに異なるテンプレートを送信**
+4. **結果を測定**（開封率、返信率）
+5. **最良のテンプレートを**今後のキャンペーンに使用
+
+### ワークフロー 3: セグメント別キャンペーン
+
+特定のオーディエンスをターゲットにします:
+
+1. **業界や地域別にメールを抽出**
+2. **各セグメント向けのカスタマイズテンプレートを作成**
+3. **各セグメントにターゲットキャンペーンを送信**
+4. **セグメント別に結果を分析**
+5. **反応に基づいてメッセージを最適化**
+
+## リードジェネレーションとの連携
+
+完全なメールアウトリーチワークフロー:
+
+1. **[検索エンジン](./search-engines)**: ターゲットウェブサイトを見つける
+2. **[コンタクト抽出](./contact-extraction)**: メールアドレスを収集
+3. **[AI メールライター](../ai-outreach/ai-email-writer)**: パーソナライズされたテンプレートを作成
+4. **[ナレッジライブラリ](../ai-outreach/knowledge-library)**: AI にコンテキストを提供
+5. **一括メール送信**: キャンペーンを開始
+
+## 次のステップ
+
+- [AI マーケティングアシスタント](../ai-outreach/ai-marketing-assistant)を設定して戦略を立てる
+- [タスクスケジューリング](../automation/task-scheduling)を設定して自動化
+- [システム設定](../settings/system-settings)を確認
 
 ---
 
-**Ready to send campaigns?** Start with a small test batch (20-50 emails) to verify everything works, then scale up your outreach operations.
+**キャンペーンを送信する準備はできましたか？** 小規模なテストバッチ（20〜50 通）で全てが正常に機能することを確認してから、アウトリーチ活動を拡大してください。

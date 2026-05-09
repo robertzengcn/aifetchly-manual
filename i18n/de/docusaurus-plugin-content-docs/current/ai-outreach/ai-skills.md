@@ -2,312 +2,312 @@
 id: ai-skills
 title: AI Skills
 sidebar_label: AI Skills
-description: Manage and extend aiFetchly's AI capabilities with customizable skills - import, uninstall, enable/disable, and use in AI Chat.
+description: Verwalten und erweitern Sie die KI-Fähigkeiten von aiFetchly mit anpassbaren Skills - importieren, deinstallieren, aktivieren/deaktivieren und im KI-Chat verwenden.
 ---
 
 # AI Skills
 
-AI Skills are modular extensions that enhance aiFetchly's AI chat capabilities. Skills add specialized knowledge, custom tools, and domain-specific functionality to the AI Marketing Assistant.
+AI Skills sind modulare Erweiterungen, die die KI-Chat-Funktionen von aiFetchly erweitern. Skills fügen dem KI-Marketing-Assistenten spezialisiertes Wissen, benutzerdefinierte Werkzeuge und domänenspezifische Funktionen hinzu.
 
-## What Are AI Skills?
+## Was sind AI Skills?
 
-AI Skills are packaged components that extend the AI's capabilities:
+AI Skills sind paketierte Komponenten, die die Fähigkeiten der KI erweitern:
 
-- **Built-in Skills**: Pre-installed skills with core functionality
-- **User-Installed Skills**: Custom skills you import for specific use cases
+- **Integrierte Skills**: Vorinstallierte Skills mit Kernfunktionen
+- **Benutzerinstallierte Skills**: Benutzerdefinierte Skills, die Sie für bestimmte Anwendungsfälle importieren
 
-Each skill has:
-- A unique name and version
-- A category (e.g., "web-search", "data-analysis", "automation")
-- Enable/disable state
-- A manifest defining permissions and capabilities
+Jeder Skill hat:
+- Einen eindeutigen Namen und eine Version
+- Eine Kategorie (z. B. "web-search", "data-analysis", "automation")
+- Einen Aktivierungs-/Deaktivierungsstatus
+- Ein Manifest, das Berechtigungen und Fähigkeiten definiert
 
-## Accessing AI Skills
+## Zugriff auf AI Skills
 
-1. Click **Settings** in the left navigation menu
-2. Navigate to **Skills**
-3. View the list of installed skills with their status
+1. Klicken Sie auf **Einstellungen** im linken Navigationsmenü
+2. Navigieren Sie zu **Skills**
+3. Sehen Sie sich die Liste der installierten Skills mit deren Status an
 
-## Importing Skills
+## Skills importieren
 
-### Step 1: Obtain Skill Package
+### Schritt 1: Skill-Paket beschaffen
 
-Skills are distributed as `.zip` files. You can get skills from:
-- Official aiFetchly skill marketplace
-- Community-contributed skills
-- Custom-developed skills for your organization
+Skills werden als `.zip`-Dateien vertrieben. Sie können Skills erhalten von:
+- Offiziellem aiFetchly-Skill-Marketplace
+- Community-beigetragene Skills
+- Benutzerdefinierten, für Ihre Organisation entwickelten Skills
 
-### Step 2: Import the Skill
+### Schritt 2: Den Skill importieren
 
-1. In the Skills page, click the **Import** button (top-right, with upload icon)
-2. A file selection dialog opens
-3. Navigate to your skill `.zip` file
-4. Select the file and confirm
+1. Klicken Sie auf der Skills-Seite auf die Schaltfläche **Importieren** (oben rechts, mit Upload-Symbol)
+2. Ein Dateiauswahldialog öffnet sich
+3. Navigieren Sie zu Ihrer Skill-`.zip`-Datei
+4. Wählen Sie die Datei aus und bestätigen Sie
 
-### Step 3: Verify Installation
+### Schritt 3: Installation überprüfen
 
-After import:
-- The skill appears in the skills table
-- Status shows as **Enabled** by default
-- Verify the skill's category and version match expectations
+Nach dem Import:
+- Der Skill erscheint in der Skills-Tabelle
+- Der Status wird standardmäßig als **Aktiviert** angezeigt
+- Überprüfen Sie, ob Kategorie und Version des Skills Ihren Erwartungen entsprechen
 
-:::tip Import Tips
+:::tip Import-Tipps
 
-- Only `.zip` files are supported
-- The skill must have a valid `manifest.json` inside
-- If import fails, check the zip file integrity and manifest format
+- Es werden nur `.zip`-Dateien unterstützt
+- Der Skill muss eine gültige `manifest.json`-Datei enthalten
+- Wenn der Import fehlschlägt, überprüfen Sie die Integrität der Zip-Datei und das Manifest-Format
 
 :::
 
-## Managing Skills
+## Skills verwalten
 
-### View Installed Skills
+### Installierte Skills anzeigen
 
-The skills table displays:
+Die Skills-Tabelle zeigt folgende Informationen:
 
-| Column | Description |
+| Spalte | Beschreibung |
 |--------|-------------|
-| **Name** | Skill identifier/name |
-| **Source** | `Built-in` or `User-installed` badge |
-| **Category** | Skill's functional category |
-| **Version** | Current version number |
-| **Status** | `Enabled` or `Disabled` badge |
-| **Actions** | Enable/disable toggle and uninstall button |
+| **Name** | Skill-Bezeichner/Name |
+| **Quelle** | `Integriert`- oder `Benutzerinstalliert`-Badge |
+| **Kategorie** | Funktionale Kategorie des Skills |
+| **Version** | Aktuelle Versionsnummer |
+| **Status** | `Aktiviert`- oder `Deaktiviert`-Badge |
+| **Aktionen** | Aktivierungs-/Deaktivierungsschalter und Deinstallations-Schaltfläche |
 
-### Enable/Disable Skills
+### Skills aktivieren/deaktivieren
 
-To toggle a skill's state:
+So ändern Sie den Status eines Skills:
 
-1. Locate the skill in the table
-2. Use the **toggle buttons** in the Actions column:
-   - **Check mark** (green): Enable the skill
-   - **X mark** (grey): Disable the skill
+1. Suchen Sie den Skill in der Tabelle
+2. Verwenden Sie die **Schalter** in der Spalte Aktionen:
+   - **Häkchen** (grün): Skill aktivieren
+   - **X-Zeichen** (grau): Skill deaktivieren
 
-**When to Disable:**
-- Skill conflicts with another skill
-- Temporary troubleshooting
-- Skill not needed for current tasks
-- Testing skill behavior
+**Wann deaktivieren:**
+- Skill steht in Konflikt mit einem anderen Skill
+- Vorübergehende Fehlerbehebung
+- Skill wird für aktuelle Aufgaben nicht benötigt
+- Skill-Verhalten wird getestet
 
-**Note:** Built-in skills cannot be uninstalled, only disabled.
+**Hinweis:** Integrierte Skills können nicht deinstalliert, sondern nur deaktiviert werden.
 
-### Uninstall Skills
+### Skills deinstallieren
 
-To remove a user-installed skill:
+So entfernen Sie einen benutzerinstallierten Skill:
 
-1. Locate the skill in the table
-2. Click the **Delete** (trash can) icon in the Actions column
-3. Confirm the uninstall action in the dialog
+1. Suchen Sie den Skill in der Tabelle
+2. Klicken Sie auf das **Löschen**-Symbol (Papierkorb) in der Spalte Aktionen
+3. Bestätigen Sie die Deinstallationsaktion im Dialog
 
-:::warning Uninstall Warning
+:::warning Deinstallations-Warnung
 
-Uninstalling a skill permanently removes it. You'll need to re-import if you want to use it again.
+Die Deinstallation eines Skills entfernt ihn dauerhaft. Sie müssen ihn erneut importieren, wenn Sie ihn wieder verwenden möchten.
 
 :::
 
-## Using Skills in AI Chat
+## Skills im KI-Chat verwenden
 
-Skills become available in the **AI Marketing Assistant** once enabled.
+Skills stehen im **KI-Marketing-Assistenten** zur Verfügung, sobald sie aktiviert sind.
 
-### Accessing AI Chat
+### Auf den KI-Chat zugreifen
 
-1. Navigate to **AI Marketing Assistant** (or **AI Chat**)
-2. Start a new conversation or continue existing one
+1. Navigieren Sie zum **KI-Marketing-Assistenten** (oder **KI-Chat**)
+2. Starten Sie eine neue Konversation oder setzen Sie eine bestehende fort
 
-### How Skills Work in Chat
+### Wie Skills im Chat funktionieren
 
-Enabled skills automatically integrate with AI responses:
+Aktivierte Skills werden automatisch in KI-Antworten integriert:
 
-1. **Automatic Tool Selection**: AI chooses relevant skills based on your query
-2. **Manual Invocation**: Request specific skill functionality
-3. **Combined Outputs**: Multiple skills can work together
+1. **Automatische Werkzeugauswahl**: Die KI wählt relevante Skills basierend auf Ihrer Anfrage aus
+2. **Manueller Aufruf**: Fordern Sie spezifische Skill-Funktionalität an
+3. **Kombinierte Ausgaben**: Mehrere Skills können zusammenarbeiten
 
-### Example Skill Usage
+### Beispiel für die Skill-Nutzung
 
-**Web Search Skill:**
+**Web-Suche-Skill:**
 ```
-User: "What are the latest trends in SaaS marketing?"
-AI: [Uses web search skill to find current information]
-AI: "Based on recent data, SaaS marketing trends include..."
-```
-
-**Data Analysis Skill:**
-```
-User: "Analyze this customer data and identify patterns"
-AI: [Uses data analysis skill to process the data]
-AI: "The analysis reveals these key patterns..."
+Benutzer: "Was sind die neuesten Trends im SaaS-Marketing?"
+KI: [Verwendet den Web-Suche-Skill, um aktuelle Informationen zu finden]
+KI: "Basierend auf aktuellen Daten umfassen SaaS-Marketing-Trends..."
 ```
 
-**Automation Skill:**
+**Datenanalyse-Skill:**
 ```
-User: "Set up an automated email campaign for new leads"
-AI: [Uses automation skill to configure the campaign]
-AI: "Your automated campaign is now configured with..."
+Benutzer: "Analysieren Sie diese Kundendaten und identifizieren Sie Muster"
+KI: [Verwendet den Datenanalyse-Skill zur Verarbeitung der Daten]
+KI: "Die Analyse zeigt folgende Schlüsselmuster..."
 ```
 
-### Skill Indicators in Chat
+**Automatisierungs-Skill:**
+```
+Benutzer: "Richten Sie eine automatisierte E-Mail-Kampagne für neue Leads ein"
+KI: [Verwendet den Automatisierungs-Skill zur Konfiguration der Kampagne]
+KI: "Ihre automatisierte Kampagne ist jetzt konfiguriert mit..."
+```
 
-When a skill is used:
-- The skill name may appear in the response
-- A small icon or badge indicates skill activation
-- Tool usage is shown in the conversation flow
+### Skill-Kennzeichen im Chat
 
-### Skill Permission Prompts
+Wenn ein Skill verwendet wird:
+- Der Skill-Name kann in der Antwort erscheinen
+- Ein kleines Symbol oder Badge zeigt die Skill-Aktivierung an
+- Die Werkzeugverwendung wird im Konversationsverlauf angezeigt
 
-Some skills require your explicit permission before execution. This is a security feature to protect your system.
+### Skill-Berechtigungsabfragen
 
-**When You'll See Permission Prompts:**
+Einige Skills erfordern Ihre ausdrückliche Genehmigung vor der Ausführung. Dies ist eine Sicherheitsfunktion zum Schutz Ihres Systems.
 
-Skills are categorized by their permission level:
+**Wann Sie Berechtigungsabfragen sehen:**
 
-| Category | Permission Behavior | Examples |
+Skills werden nach ihrem Berechtigungsniveau kategorisiert:
+
+| Kategorie | Berechtigungsverhalten | Beispiele |
 |----------|-------------------|----------|
-| **Pure** | Auto-approved, no prompt | Text processing, calculations, data formatting |
-| **Shell** | Always prompts before execution | Running system commands, file operations |
-| **Network** | May prompt for external calls | Web scraping, API calls to external services |
-| **Data** | May prompt for sensitive access | File system read/write, database access |
+| **Pure** | Automatisch genehmigt, keine Abfrage | Textverarbeitung, Berechnungen, Datenformatierung |
+| **Shell** | Fragt immer vor der Ausführung nach | Ausführung von Systembefehlen, Dateioperationen |
+| **Network** | Kann bei externen Aufrufen nachfragen | Web-Scraping, API-Aufrufe an externe Dienste |
+| **Data** | Kann bei sensiblen Zugriffen nachfragen | Dateisystem-Lese-/Schreibzugriff, Datenbankzugriff |
 
-**The Permission Prompt:**
+**Die Berechtigungsabfrage:**
 
-When a skill needs permission, you'll see a dialog in the AI chat:
+Wenn ein Skill eine Berechtigung benötigt, sehen Sie einen Dialog im KI-Chat:
 
 ```
 ┌─────────────────────────────────────────────┐
-│  Skill Permission Request                  │
+│  Skill-Berechtigungsanfrage                │
 ├─────────────────────────────────────────────┤
 │  Skill: shell_execute                       │
-│  Category: Shell                            │
+│  Kategorie: Shell                            │
 │                                             │
-│  This skill wants to run:                  │
-│  $ ls -la /path/to/directory               │
+│  Dieser Skill möchte Folgendes ausführen:  │
+│  $ ls -la /pfad/zum/verzeichnis            │
 │                                             │
-│  [Allow Once]  [Allow Always]  [Deny]      │
+│  [Einmal erlauben]  [Immer erlauben]  [Ablehnen] │
 └─────────────────────────────────────────────┘
 ```
 
-**Permission Options:**
+**Berechtigungsoptionen:**
 
-- **Allow Once**: Grant permission for this single execution only
-- **Allow Always**: Remember this decision and auto-approve future requests from this skill
-- **Deny**: Block this execution (skill will fail gracefully)
+- **Einmal erlauben**: Berechtigung nur für diese einzelne Ausführung erteilen
+- **Immer erlauben**: Diese Entscheidung speichern und zukünftige Anfragen dieses Skills automatisch genehmigen
+- **Ablehnen**: Diese Ausführung blockieren (Skill wird ordnungsgemäß fehlschlagen)
 
-**Managing Saved Permissions:**
+**Gespeicherte Berechtigungen verwalten:**
 
-To review or change saved permissions:
+So überprüfen oder ändern Sie gespeicherte Berechtigungen:
 
-1. Go to **Settings** → **AI Skills**
-2. Click on a skill to view its permission status
-3. Toggle "Always Allow" to change auto-approval behavior
-4. Disabled skills have their permissions temporarily suspended
+1. Gehen Sie zu **Einstellungen** → **AI Skills**
+2. Klicken Sie auf einen Skill, um seinen Berechtigungsstatus anzuzeigen
+3. Schalten Sie "Immer erlauben" um, um das Auto-Genehmigungsverhalten zu ändern
+4. Deaktivierte Skills haben ihre Berechtigungen vorübergehend ausgesetzt
 
-:::tip Security Best Practice
+:::tip Bewährte Sicherheitspraxis
 
-Start with "Allow Once" for new skills. After verifying they work correctly and safely, you can switch to "Allow Always" for convenience.
+Beginnen Sie mit "Einmal erlauben" für neue Skills. Nachdem Sie überprüft haben, dass sie korrekt und sicher funktionieren, können Sie für mehr Komfort zu "Immer erlauben" wechseln.
 
 :::
 
-## Skill Categories
+## Skill-Kategorien
 
-Skills are organized by functional category:
+Skills sind nach funktionaler Kategorie organisiert:
 
-| Category | Purpose | Example Skills |
+| Kategorie | Zweck | Beispiel-Skills |
 |----------|---------|----------------|
-| **Web Search** | Internet research, trend analysis | Search engine, social media monitoring |
-| **Data Analysis** | Processing and interpreting data | CSV analysis, statistical modeling |
-| **Automation** | Workflow automation tasks | Email automation, task scheduling |
-| **Integration** | External service connections | CRM, API connectors |
-| **Content** | Content generation and optimization | Blog writing, SEO optimization |
-| **Pure** | General-purpose utilities | Text processing, formatting |
+| **Web-Suche** | Internetrecherche, Trendanalyse | Suchmaschine, Social-Media-Monitoring |
+| **Datenanalyse** | Datenverarbeitung und -interpretation | CSV-Analyse, statistische Modellierung |
+| **Automatisierung** | Workflow-Automatisierungsaufgaben | E-Mail-Automatisierung, Aufgabenplanung |
+| **Integration** | Externe Dienstverbindungen | CRM, API-Konnektoren |
+| **Content** | Content-Erstellung und -Optimierung | Blog-Schreiben, SEO-Optimierung |
+| **Pure** | Allzweck-Dienstprogramme | Textverarbeitung, Formatierung |
 
-## Troubleshooting
+## Fehlerbehebung
 
-### Skill Not Appearing in Chat
+### Skill erscheint nicht im Chat
 
-**Possible causes:**
-- Skill is disabled
-- Skill installation incomplete
-- Skill requires specific permissions
+**Mögliche Ursachen:**
+- Skill ist deaktiviert
+- Skill-Installation unvollständig
+- Skill erfordert spezifische Berechtigungen
 
-**Solutions:**
-1. Check skill status in Settings → Skills
-2. Enable the skill if disabled
-3. Re-import the skill if corrupted
-4. Verify skill manifest has required permissions
+**Lösungen:**
+1. Überprüfen Sie den Skill-Status unter Einstellungen → Skills
+2. Aktivieren Sie den Skill, falls deaktiviert
+3. Importieren Sie den Skill erneut, falls beschädigt
+4. Überprüfen Sie, ob das Skill-Manifest die erforderlichen Berechtigungen enthält
 
-### Import Failed
+### Import fehlgeschlagen
 
-**Possible causes:**
-- Invalid zip file format
-- Missing or malformed `manifest.json`
-- Skill already installed
-- Corrupted download
+**Mögliche Ursachen:**
+- Ungültiges Zip-Dateiformat
+- Fehlende oder fehlerhafte `manifest.json`
+- Skill bereits installiert
+- Beschädigter Download
 
-**Solutions:**
-1. Verify zip file integrity
-2. Check manifest.json format and content
-3. Uninstall existing version first, then re-import
-4. Re-download the skill package
+**Lösungen:**
+1. Überprüfen Sie die Integrität der Zip-Datei
+2. Prüfen Sie Format und Inhalt der manifest.json
+3. Deinstallieren Sie zuerst die vorhandene Version und importieren Sie dann erneut
+4. Laden Sie das Skill-Paket erneut herunter
 
-### Skill Causes Errors
+### Skill verursacht Fehler
 
-**Possible causes:**
-- Skill bug or incompatibility
-- Missing dependencies
-- API key not configured
+**Mögliche Ursachen:**
+- Skill-Fehler oder Inkompatibilität
+- Fehlende Abhängigkeiten
+- API-Schlüssel nicht konfiguriert
 
-**Solutions:**
-1. Disable the skill temporarily
-2. Check skill documentation for requirements
-3. Verify all required configurations are complete
-4. Contact skill developer for support
+**Lösungen:**
+1. Deaktivieren Sie den Skill vorübergehend
+2. Überprüfen Sie die Skill-Dokumentation auf Anforderungen
+3. Vergewissern Sie sich, dass alle erforderlichen Konfigurationen vollständig sind
+4. Kontaktieren Sie den Skill-Entwickler für Support
 
-### Built-in Skill Cannot Uninstall
+### Integrierter Skill kann nicht deinstalliert werden
 
-Built-in skills are core to aiFetchly functionality and cannot be removed. You can only disable them if they conflict with other skills.
+Integrierte Skills sind Kernbestandteil der aiFetchly-Funktionalität und können nicht entfernt werden. Sie können sie nur deaktivieren, wenn sie mit anderen Skills in Konflikt stehen.
 
-## Best Practices
+## Bewährte Praktiken
 
-### 1. Skill Selection
+### 1. Skill-Auswahl
 
-**Install Only What You Need:**
-- Each skill adds complexity
-- Too many skills may cause conflicts
-- Start with essential skills, add as needed
+**Installieren Sie nur, was Sie benötigen:**
+- Jeder Skill erhöht die Komplexität
+- Zu viele Skills können Konflikte verursachen
+- Beginnen Sie mit den wesentlichen Skills und fügen Sie bei Bedarf weitere hinzu
 
-### 2. Skill Updates
+### 2. Skill-Updates
 
-**Keep Skills Current:**
-- Check for skill updates regularly
-- Update skills for bug fixes and improvements
-- Test updated skills before production use
+**Halten Sie Skills aktuell:**
+- Überprüfen Sie regelmäßig nach Skill-Updates
+- Aktualisieren Sie Skills für Fehlerbehebungen und Verbesserungen
+- Testen Sie aktualisierte Skills vor dem produktiven Einsatz
 
-### 3. Skill Organization
+### 3. Skill-Organisation
 
-**Name and Categorize Well:**
-- Use descriptive skill names
-- Organize by functional category
-- Document custom skill purposes
+**Gute Benennung und Kategorisierung:**
+- Verwenden Sie beschreibende Skill-Namen
+- Organisieren Sie nach funktionaler Kategorie
+- Dokumentieren Sie den Zweck benutzerdefinierter Skills
 
-### 4. Testing
+### 4. Testen
 
-**Test Before Production:**
-- Enable skills in test mode first
-- Verify skill behavior in AI chat
-- Check for conflicts with existing skills
+**Vor der Produktion testen:**
+- Aktivieren Sie Skills zuerst im Testmodus
+- Überprüfen Sie das Skill-Verhalten im KI-Chat
+- Prüfen Sie auf Konflikte mit vorhandenen Skills
 
-### 5. Security
+### 5. Sicherheit
 
-**Only Install Trusted Skills:**
-- Verify skill source
-- Review skill permissions
-- Monitor skill behavior
-- Remove unused skills
+**Nur vertrauenswürdige Skills installieren:**
+- Überprüfen Sie die Skill-Quelle
+- Prüfen Sie die Skill-Berechtigungen
+- Überwachen Sie das Skill-Verhalten
+- Entfernen Sie nicht verwendete Skills
 
-## Skill Development (For Developers)
+## Skill-Entwicklung (Für Entwickler)
 
-### Manifest Structure
+### Manifest-Struktur
 
-A skill's `manifest.json` should include:
+Die `manifest.json` eines Skills sollte Folgendes enthalten:
 
 ```json
 {
@@ -315,47 +315,47 @@ A skill's `manifest.json` should include:
   "version": "1.0.0",
   "category": "automation",
   "permissions": ["web-search", "data-access"],
-  "description": "Description of what this skill does"
+  "description": "Beschreibung der Funktionsweise dieses Skills"
 }
 ```
 
-### Packaging
+### Paketierung
 
-1. Include `manifest.json` at root
-2. Add skill implementation files
-3. Include any required assets
-4. Zip the contents (not the folder)
-5. Name the file `skill-name.zip`
+1. `manifest.json` im Hauptverzeichnis einfügen
+2. Skill-Implementierungsdateien hinzufügen
+3. Erforderliche Assets einbinden
+4. Den Inhalt zippen (nicht den Ordner)
+5. Datei als `skill-name.zip` benennen
 
-## Integration with Other Features
+## Integration mit anderen Funktionen
 
-### AI Marketing Assistant
+### KI-Marketing-Assistent
 
-Skills enhance AI chat capabilities:
-- More accurate responses
-- Access to external data sources
-- Automated task execution
+Skills erweitern die KI-Chat-Fähigkeiten:
+- Präzisere Antworten
+- Zugriff auf externe Datenquellen
+- Automatisierte Aufgabenausführung
 
-### MCP Tools
+### MCP-Tools
 
-Skills and MCP tools can work together:
-- Skills provide domain-specific logic
-- MCP tools provide external connectivity
-- Combined for powerful automation
+Skills und MCP-Tools können zusammenarbeiten:
+- Skills bieten domänenspezifische Logik
+- MCP-Tools bieten externe Konnektivität
+- Kombiniert für leistungsstarke Automatisierung
 
-### Knowledge Library
+### Wissensbibliothek
 
-Skills can leverage your knowledge base:
-- Search knowledge during chat
-- Apply learned patterns
-- Generate context-aware responses
+Skills können Ihre Wissensbasis nutzen:
+- Wissen während des Chats durchsuchen
+- Gelernte Muster anwenden
+- Kontextbewusste Antworten generieren
 
-## Next Steps
+## Nächste Schritte
 
-- [Configure System Settings](../settings/system-settings)
-- [Learn about AI Marketing Assistant](./ai-marketing-assistant)
-- [Set up Knowledge Library](./knowledge-library)
+- [Systemeinstellungen konfigurieren](../settings/system-settings)
+- [KI-Marketing-Assistent kennenlernen](./ai-marketing-assistant)
+- [Wissensbibliothek einrichten](./knowledge-library)
 
 ---
 
-**Ready to extend AI capabilities?** Import your first skill and discover new possibilities for automation and intelligence.
+**Bereit, die KI-Fähigkeiten zu erweitern?** Importieren Sie Ihren ersten Skill und entdecken Sie neue Möglichkeiten für Automatisierung und Intelligenz.

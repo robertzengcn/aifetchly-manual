@@ -5,98 +5,116 @@ sidebar_label: Proxy Setup
 description: Learn how to configure and manage proxies for safe and efficient web scraping in aiFetchly.
 ---
 
-# Proxy Setup Guide
+# プロキシ設定ガイド
 
-Using proxies is essential for safe and efficient web scraping with aiFetchly. Proxies help you:
+aiFetchly ではプロキシの使用は**任意**です。プロキシなしでも検索タスクを実行できますが、プロキシを追加することで以下のメリットがあります。
 
-- **Avoid IP blocks** from search engines and websites
-- **Scrape at scale** by distributing requests across multiple IPs
-- **Maintain anonymity** while collecting leads
-- **Access geo-restricted content** from different regions
+- 検索エンジンや Web サイトからの **IP ブロックを回避**
+- 複数の IP にリクエストを分散して **大規模にスクレイピング**
+- リード収集中の **匿名性を維持**
+- さまざまな地域の **ジオ制限コンテンツにアクセス**
 
-## Understanding Proxies
+:::info オプション機能
 
-A proxy server acts as an intermediary between your computer and the websites you scrape. Instead of the website seeing your IP address, they see the proxy's IP address.
+プロキシは aiFetchly の使用に必須ではありません。プロキシを設定せずにすぐにスクレイピングを開始できます。レート制限の回避や特定地域のコンテンツへのアクセスが必要な場合にのみプロキシを追加してください。
 
-### Proxy Types Supported
+:::
 
-aiFetchly supports three proxy protocols:
+## プロキシについて
 
-| Protocol | Description | Use Case |
+プロキシサーバーは、お使いのコンピュータとスクレイピング対象の Web サイトの間に立つ中継サーバーです。Web サイトにはお使いの IP アドレスではなく、プロキシの IP アドレスが表示されます。
+
+### 対応プロキシタイプ
+
+aiFetchly は 3 つのプロキシプロトコルに対応しています。
+
+| プロトコル | 説明 | 使用例 |
 |----------|-------------|----------|
-| **HTTP** | Basic HTTP proxy | General web scraping, non-SSL sites |
-| **HTTPS** | Secure HTTP proxy | Secure websites (HTTPS), recommended for most scraping |
-| **SOCKS5** | Socket Secure 5 | Advanced users, supports more protocols, better performance |
+| **HTTP** | 基本的な HTTP プロキシ | 一般的な Web スクレイピング、非 SSL サイト |
+| **HTTPS** | セキュア HTTP プロキシ | セキュアな Web サイト（HTTPS）、ほとんどのスクレイピングに推奨 |
+| **SOCKS5** | Socket Secure 5 | 上級者向け、より多くのプロトコルに対応、パフォーマンス向上 |
 
-:::tip Recommended Protocol
+:::tip 推奨プロトコル
 
-For most use cases, **HTTPS** proxies are recommended as they work with both HTTP and HTTPS websites.
-
-:::
-
-### Proxy Format
-
-Each proxy requires the following information:
-
-- **Host/IP** - The proxy server address (e.g., `192.168.1.1` or `proxy.example.com`)
-- **Port** - The port number (e.g., `8080`, `3128`, `1080`)
-- **Protocol** - http, https, or socks5
-- **Username** (optional) - For authentication
-- **Password** (optional) - For authentication
-
-Example: `192.168.1.1:8080` with username `user1` and password `pass123`
-
-## Adding Proxies Manually
-
-### Step 1: Open Proxy Management
-
-1. Launch aiFetchly
-2. Navigate to **Proxy** in the left navigation menu
-3. You'll see the proxy management page with a list of your proxies
-
-### Step 2: Add a Single Proxy
-
-1. Click the **Add Proxy** button (+ icon) in the top-right corner
-2. Fill in the required fields:
-
-   - **Host/IP**: Enter the proxy server address or IP
-   - **Port**: Enter the port number
-   - **Protocol**: Select from the dropdown (HTTP, HTTPS, or SOCKS5)
-   - **Username**: (Optional) Enter if authentication is required
-   - **Password**: (Optional) Enter if authentication is required
-
-3. Click **Submit** to save the proxy
-
-:::info Authentication
-
-If your proxy provider requires authentication, you must enter the username and password. Unauthenticated proxies will fail when tested.
+ほとんどのユースケースでは **HTTPS** プロキシが推奨されます。HTTP と HTTPS の両方の Web サイトで動作します。
 
 :::
 
-### Step 3: Test the Proxy
+### プロキシのフォーマット
 
-After adding proxies, you should verify they work:
+各プロキシには以下の情報が必要です。
 
-1. Select the proxy(s) you want to test
-2. Click the **Check Proxy** button
-3. aiFetchly will test each proxy and update the status:
-   - ✅ **Pass** (green) - Proxy is working correctly
-   - ❌ **Failure** (pink) - Proxy is not working
-   - ⚪ **Unknown** (grey) - Proxy hasn't been tested yet
+- **ホスト/IP** - プロキシサーバーのアドレス（例: `192.168.1.1` または `proxy.example.com`）
+- **ポート** - ポート番号（例: `8080`、`3128`、`1080`）
+- **プロトコル** - http、https、または socks5
+- **ユーザー名**（任意） - 認証用
+- **パスワード**（任意） - 認証用
 
-## Batch Importing Proxies
+例: `192.168.1.1:8080`、ユーザー名 `user1`、パスワード `pass123`
 
-If you have multiple proxies, you can import them all at once using a CSV file.
+## プロキシの手動追加
 
-### Step 1: Download Template
+### ステップ 1: プロキシ管理を開く
 
-1. Go to **Proxy** in the navigation menu
-2. Click **Batch Upload Proxy**
-3. Click **Download Template** to get the CSV template
+1. aiFetchly を起動する
+2. 左側のナビゲーションメニューから **Proxy** を選択する
+3. プロキシ管理ページが表示され、プロキシの一覧が確認できます
 
-### Step 2: Prepare Your CSV File
+### ステップ 2: 単一プロキシを追加する
 
-The CSV template has the following structure:
+1. 右上の **Add Proxy** ボタン（+ アイコン）をクリックする
+2. 必要な項目を入力する：
+
+   - **Host/IP**: プロキシサーバーのアドレスまたは IP を入力
+   - **Port**: ポート番号を入力
+   - **Protocol**: ドロップダウンから選択（HTTP、HTTPS、または SOCKS5）
+   - **Username**:（任意）認証が必要な場合に入力
+   - **Password**:（任意）認証が必要な場合に入力
+
+3. **Submit** をクリックしてプロキシを保存する
+
+:::info 認証について
+
+プロキシプロバイダーが認証を要求している場合、ユーザー名とパスワードを入力する必要があります。認証なしのプロキシはテスト時に失敗します。
+
+:::
+
+### ステップ 3: プロキシをテストする
+
+プロキシを追加した後、正常に動作することを確認してください。
+
+1. ツールバーで **Check timeout** を設定することもできます（プロキシごとに 1～60 秒、デフォルトは 10 秒）。この制限は接続テストと Google チェックの両方に適用されます。
+2. テストしたいプロキシを選択します（行のチェックボックス）。
+3. **Check Proxy** をクリックします。
+4. aiFetchly は 2 種類の結果を更新します。
+
+**Status（接続性）** — プロキシがトラフィックを中継できるかどうか（例: テストエンドポイントへのトンネル）：
+
+- **Pass** — 基本的なプロキシチェックが成功。
+- **Failure** — 基本チェックが失敗（ホスト/ポートの間違い、認証エラー、またはネットワークの問題）。
+- **Unknown** — まだテストされていません。
+
+**Google Pass** — 同じプロキシで自動トラフィックとしてブロックされずに **Google** にアクセスできるかどうか。**Status** が **Pass** になった後、アプリは別のチェック（ヘッドレスブラウザで Google にアクセス）を実行します。この列の結果は少し遅れて更新されることがあります。
+
+- **Pass** — Google チェックが成功。Google ベースのスクレイピングで機能する可能性が高い IP です。
+- **Fail** — Google にブロックされた、チャレンジが表示された、またはチェックでエラーが発生（データセンター IP や過剰使用のプロキシでよく発生）。
+- **Not Checked** — Google の結果がまだない（プロキシが基本チェックに合格していない、またはこの機能追加後にチェックされていない）。
+
+**Status** が **Failure** の場合、**Google Pass** は **Not Checked** のままになります（Google のステップは基本チェックに合格した場合のみ実行されます）。
+
+## プロキシの一括インポート
+
+複数のプロキシがある場合、CSV ファイルを使用して一度にインポートできます。
+
+### ステップ 1: テンプレートをダウンロードする
+
+1. ナビゲーションメニューから **Proxy** を開く
+2. **Batch Upload Proxy** をクリックする
+3. **Download Template** をクリックして CSV テンプレートを取得する
+
+### ステップ 2: CSV ファイルを準備する
+
+CSV テンプレートの構造は以下の通りです。
 
 ```csv
 host,port,protocols,user,pass
@@ -106,236 +124,253 @@ host,port,protocols,user,pass
 192.168.1.4,8080,http,,
 ```
 
-**CSV Format Guidelines:**
+**CSV フォーマットのガイドライン：**
 
-- **host** - Required: Proxy IP address or hostname
-- **port** - Required: Port number
-- **protocols** - Required: Must be "http", "https", or "socks5"
-- **user** - Optional: Username (leave empty if no authentication)
-- **pass** - Optional: Password (leave empty if no authentication)
+- **host** - 必須: プロキシの IP アドレスまたはホスト名
+- **port** - 必須: ポート番号
+- **protocols** - 必須: "http"、"https"、または "socks5" である必要があります
+- **user** - 任意: ユーザー名（認証がない場合は空欄）
+- **pass** - 任意: パスワード（認証がない場合は空欄）
 
-:::tip CSV Formatting
+:::tip CSV フォーマットのヒント
 
-- Don't include headers in your import file (only data rows)
-- Use commas to separate fields
-- Leave user/pass fields empty if your proxy doesn't require authentication
-- Save the file as `.csv` (comma-separated values)
+- テンプレートと同じ列ヘッダー（`host`、`port`、`protocols`、`user`、`pass`）を使用するか、列がこの順序であればヘッダー行を省略することもできます
+- カンマでフィールドを区切ってください
+- プロキシが認証を必要としない場合は user/pass フィールドを空欄にしてください
+- ファイルを `.csv`（カンマ区切り値）として保存してください
 
 :::
 
-### Step 3: Import the CSV
+### ステップ 3: CSV をインポートする
 
-1. Click **Batch Upload Proxy**
-2. Click the file upload area or drag and drop your CSV file
-3. The proxies will be displayed in a table
-4. Click **Check Proxy** to validate all imported proxies
-5. Click **Save to My Proxy** to add valid proxies to your account
-6. Click **Remove fail Proxy** to delete any proxies that failed the health check
+1. **Batch Upload** をクリックする
+2. **Upload File** で CSV ファイルを選択する（または **Paste Text** で 1 行に 1 つのプロキシを入力）
+3. 解析されたプロキシがプレビューテーブルに表示される
+4. 任意: **Check Proxies** をクリックしてプレビューリストに対する **簡易接続テスト** を実行（保存済みプロキシに対する完全な **Google Pass** チェックとは異なります）
+5. **Import proxy** をクリックしてライブラリに追加する（一部のロケールでは **Import All** と表示）
+6. インポート後、メインのプロキシリストを開き、新しい行を選択して **Check Proxy** をクリックし、Google にアクセスするタスク用に **Status** と **Google Pass** を記録する
 
-## Managing Your Proxy List
+チェック後にメインリストを整理するには、**remove failure proxy** を使用します（**Status** が **Failure** の行を削除します）。
 
-### Viewing Proxies
+## プロキシリストの管理
 
-The proxy list shows all your proxies with the following information:
+### プロキシの表示
 
-| Column | Description |
+プロキシリストには、すべてのプロキシと以下の情報が表示されます。
+
+| 列 | 説明 |
 |--------|-------------|
-| **ID** | Unique identifier |
-| **Host** | Proxy server IP/hostname |
-| **Username** | Authentication username (if any) |
-| **Password** | Authentication password (masked) |
-| **Protocol** | HTTP, HTTPS, or SOCKS5 |
-| **Status** | Pass, Failure, or Unknown |
-| **Check Time** | Last time the proxy was tested |
-| **Actions** | Edit or delete buttons |
+| **ID** | 一意の識別子 |
+| **Host** | プロキシサーバーの IP/ホスト名 |
+| **Port** | プロキシのポート |
+| **Username** | 認証ユーザー名（設定されている場合） |
+| **Password** | 認証パスワード（デフォルトで非表示、**Columns** で表示可能） |
+| **Protocol** | HTTP、HTTPS、または SOCKS5 |
+| **Status** | 基本チェック: Pass、Failure、または Unknown |
+| **Check Time** | プロキシが最後にテストされた日時 |
+| **Google Pass** | Google 固有のチェック: Pass、Fail、または Not Checked（[Google Pass チェック](#google-pass-check)を参照） |
+| **Actions** | 編集または削除ボタン |
 
-### Editing Proxies
+ツールバーの **Columns** コントロールを使用して列の表示/非表示を切り替えられます（例: パスワードはセキュリティ上デフォルトで非表示）。
 
-1. Find the proxy you want to modify in the list
-2. Click the **Edit** button (pencil icon)
-3. Modify the fields as needed
-4. Click **Submit** to save changes
+### プロキシの編集
 
-### Deleting Proxies
+1. リストから変更したいプロキシを見つける
+2. **Edit** ボタン（鉛筆アイコン）をクリックする
+3. 必要に応じてフィールドを変更する
+4. **Submit** をクリックして変更を保存する
 
-1. Find the proxy you want to remove
-2. Click the **Delete** button (trash icon)
-3. Confirm the deletion
+### プロキシの削除
 
-### Bulk Operations
+1. 削除したいプロキシを見つける
+2. **Delete** ボタン（ゴミ箱アイコン）をクリックする
+3. 削除を確認する
 
-- **Check All Proxies** - Test all proxies in your list simultaneously
-- **Remove Failed Proxies** - Delete all proxies with "Failure" status at once
+### 一括操作
 
-## Using Proxies in Search Tasks
+- **Check Proxy** — 1 つ以上の行を選択した状態で、フルチェック（基本チェックに加え、合格した場合の **Google Pass**）を実行。少なくとも 1 つのプロキシを選択するまでチェックは実行されません。
+- **remove failure proxy** — **Status** が **Failure** のすべての保存済みプロキシを一括削除
 
-Once you've added and tested your proxies, you can use them in search and scraping tasks.
+## 検索タスクでのプロキシの使用
 
-### Step 1: Create or Edit a Search Task
+プロキシを追加してテストした後、検索およびスクレイピングタスクで使用できます。
 
-1. Navigate to **Search** → **Search Form**
-2. Create a new search task or edit an existing one
+### ステップ 1: 検索タスクを作成または編集する
 
-### Step 2: Select Proxies
+1. **Search** → **Search Form** に移動する
+2. 新しい検索タスクを作成するか、既存のタスクを編集する
 
-1. Find the **Proxy** section in the task configuration
-2. Click the **Choose Proxy** button
-3. A proxy selection dialog will appear showing all your proxies
-4. Select one or more proxies from the list:
-   - Only proxies with "Pass" status are recommended
-   - You can select multiple proxies for load balancing
+### ステップ 2: プロキシを選択する
 
-5. Click **Confirm** to add selected proxies to your task
+1. タスク設定内の **Proxy** セクションを見つける
+2. **Choose Proxy** ボタンをクリックする
+3. プロキシ選択ダイアログが表示され、すべてのプロキシが一覧表示される
+4. リストから 1 つ以上のプロキシを選択する：
+   - タスクで Google または Google 中心のフローを使用する場合、**Status** が **Pass** で **Google Pass** も **Pass** のプロキシを優先
+   - ロードバランスのために複数のプロキシを選択可能
 
-### Step 3: Run Your Task
+5. **Confirm** をクリックして選択したプロキシをタスクに追加する
 
-When you run the search task, aiFetchly will:
+### ステップ 3: タスクを実行する
 
-- Distribute requests across your selected proxies
-- Automatically rotate through proxies
-- Handle proxy failures gracefully
-- Continue scraping even if some proxies fail
+検索タスクを実行すると、aiFetchly は以下の処理を行います。
 
-:::info Proxy Rotation
+- 選択したプロキシ間でリクエストを分散
+- プロキシを自動的にローテーション
+- プロキシの障害を適切に処理
+- 一部のプロキシが失敗してもスクレイピングを継続
 
-When using multiple proxies, aiFetchly automatically rotates through them to distribute the load and avoid rate limiting.
+:::info プロキシのローテーション
+
+複数のプロキシを使用する場合、aiFetchly は自動的にローテーションを行い、負荷を分散してレート制限を回避します。
 
 :::
 
-## Proxy Health Monitoring
+## プロキシのヘルスモニタリング
 
-Regular health checks ensure your proxies are working properly.
+定期的なヘルスチェックにより、プロキシが正常に動作していることを確認できます。
 
-### Automatic Health Checks
+### チェックの実行タイミング
 
-- Proxies are tested when you click **Check Proxy** or **Check All**
-- Check results update the status column
-- Check time is recorded for each proxy
+- **保存済みプロキシ:** 行を選択した状態で **Check Proxy** を使用します。チェックの実行中にリストが更新され、進捗が 100% に達すると **Status** の結果が最新の状態になります。**Google Pass** は基本ステップに合格したプロキシについて少し遅れて完了する場合があります。
+- **一括アップロードダイアログ:** **Check Proxies** はインポート前のプレビュー行の接続性のみ検証します。**Google Pass** を確認するには、インポート後にメインリストで **Check Proxy** を実行してください。
 
-### Health Check Timeout
+### ヘルスチェックのタイムアウト
 
-By default, proxy tests timeout after **10 seconds**. This can be adjusted in system settings if needed.
+**Proxy** ページで **Check timeout** を設定します（1～60 秒、デフォルト **10**）。同じ値が保存済みプロキシの基本チェックと Google ブラウザチェックに適用されます。
 
-### Interpreting Status Results
+### ステータス結果の解釈
 
-| Status | Meaning | Action |
+| ステータス | 意味 | 対応 |
 |--------|---------|--------|
-| **Pass** (green) | Proxy is working | Ready to use |
-| **Failure** (pink) | Proxy is not working | Remove or replace |
-| **Unknown** (grey) | Not tested yet | Run health check |
+| **Pass**（緑） | 基本的なプロキシチェックが成功 | 一般的な使用に対応、Google が必要な場合は **Google Pass** を確認 |
+| **Failure**（ピンク） | プロキシが機能していない | 削除または差し替え |
+| **Unknown**（グレー） | まだテストされていない | ヘルスチェックを実行 |
 
-## Best Practices
+## Google Pass チェック
 
-### 1. Use Reliable Proxy Providers
+**Google Pass** は「このプロキシ経由で、明らかなブロックなしに Google にアクセスできるか」を判定します。実際のブラウジングに近いヘッドレスブラウザセッションを使用するため、単純な ping や HTTP トンネルテストよりも厳密です。
 
-Invest in quality proxy services. Free proxies are often slow, unreliable, or already blocked by major websites.
+- **Pass** — Google 向けスクレイピングに有用な指標。すべての Google サービスやトラフィック量を保証するものではありません。
+- **Fail** — 多くの場合、データセンター IP、再利用されたプロキシ、または既にフラグされた IP です。別のプロキシまたはプロバイダーをお試しください。
+- **Not Checked** — 保存済みプロキシで **Check Proxy** を実行するか、プロキシがまだ基本チェックに合格していません。
 
-### 2. Regular Health Checks
+**Google Pass** は **Status** が **Pass** であっても **Fail** になることがあります。これは、Google が一般的な接続性以外にボットや悪用に関する追加シグナルを適用しているためです。
 
-Test your proxies regularly, especially before running large scraping tasks.
+## ベストプラクティス
 
-### 3. Remove Failed Proxies
+### 1. 信頼できるプロキシプロバイダーを利用する
 
-Keep your proxy list clean by removing failed proxies promptly.
+品質の高いプロキシサービスに投資してください。無料プロキシは多くの場合、遅く、信頼性が低く、主要な Web サイトで既にブロックされています。
 
-### 4. Use Multiple Proxies
+### 2. 定期的なヘルスチェック
 
-For large-scale scraping, use multiple proxies to:
-- Distribute the load
-- Reduce the risk of IP blocks
-- Increase scraping speed
+特に大規模なスクレイピングタスクを実行する前に、プロキシを定期的にテストしてください。
 
-### 5. Match Proxy Location to Target
+### 3. 失敗したプロキシの削除
 
-If scraping geo-specific content, use proxies from the same region as your target audience.
+失敗したプロキシは速やかに削除し、プロキシリストをクリーンに保ちましょう。
 
-### 6. Monitor Proxy Performance
+### 4. 複数のプロキシを使用する
 
-Keep track of which proxies perform best and prioritize them in your tasks.
+大規模なスクレイピングには、複数のプロキシを使用して以下を実現しましょう。
+- 負荷を分散
+- IP ブロックのリスクを軽減
+- スクレイピング速度を向上
 
-### 7. Don't Overuse Single Proxies
+### 5. プロキシのロケーションをターゲットに合わせる
 
-Even working proxies can get blocked if overused. Rotate them regularly.
+特定地域のコンテンツをスクレイピングする場合、ターゲット層と同じ地域のプロキシを使用してください。
 
-## Troubleshooting Proxy Issues
+### 6. プロキシのパフォーマンスを監視する
 
-### All Proxies Show "Failure"
+どのプロキシが最もパフォーマンスが良いかを追跡し、タスクで優先的に使用しましょう。
 
-**Possible causes:**
-- Network connectivity issues
-- Incorrect proxy credentials
-- Proxy provider service is down
+### 7. 単一プロキシの過剰使用を避ける
 
-**Solutions:**
-- Check your internet connection
-- Verify username/password with your proxy provider
-- Contact your proxy provider
+動作しているプロキシであっても、過剰に使用するとブロックされる可能性があります。定期的にローテーションしてください。
 
-### Some Proxies Fail Intermittently
+## トラブルシューティング
 
-**Possible causes:**
-- Proxy server is overloaded
-- Unstable proxy service
+### すべてのプロキシが「Failure」と表示される
 
-**Solutions:**
-- Remove unreliable proxies
-- Use health check results to identify stable proxies
-- Consider upgrading your proxy service
+**考えられる原因：**
+- ネットワーク接続の問題
+- プロキシの認証情報が間違っている
+- プロキシプロバイダーのサービスがダウンしている
 
-### Proxies Work in Tests but Fail During Scraping
+**解決策：**
+- インターネット接続を確認する
+- プロキシプロバイダーでユーザー名/パスワードを確認する
+- プロキシプロバイダーに問い合わせる
 
-**Possible causes:**
-- Target website has stricter anti-scraping measures
-- Proxy is rate-limited by the target
+### 一部のプロキシが断続的に失敗する
 
-**Solutions:**
-- Use more proxies to distribute requests
-- Slow down request frequency
-- Try different proxy providers
+**考えられる原因：**
+- プロキシサーバーが過負荷状態
+- プロキシサービスが不安定
 
-### Can't Connect to Proxy
+**解決策：**
+- 信頼性の低いプロキシを削除する
+- ヘルスチェックの結果を使用して安定したプロキシを特定する
+- プロキシサービスのアップグレードを検討する
 
-**Possible causes:**
-- Firewall blocking proxy connection
-- Incorrect proxy settings
-- Proxy server is offline
+### テストでは成功するがスクレイピング中に失敗する
 
-**Solutions:**
-- Check firewall settings
-- Verify proxy host and port
-- Test proxy in a browser or with curl
+**考えられる原因：**
+- 対象 Web サイトにより厳しいアンチスクレイピング対策がある
+- プロキシが対象サイトからレート制限されている
+- **Status** は **Pass** だが **Google Pass** が **Fail** で、タスクが Google に依存している
 
-## Security Considerations
+**解決策：**
+- より多くのプロキシを使用してリクエストを分散する
+- リクエスト頻度を下げる
+- 別のプロキシプロバイダーを試す
+- Google を多用するワークフローでは **Google Pass** が **Pass** のプロキシを優先する
 
-### Protect Your Proxy Credentials
+### プロキシに接続できない
 
-- Treat proxy usernames and passwords like sensitive data
-- Don't share proxy lists with unauthorized users
-- Use secure methods to transfer proxy information
+**考えられる原因：**
+- ファイアウォールがプロキシ接続をブロックしている
+- プロキシ設定が間違っている
+- プロキシサーバーがオフライン
 
-### Use HTTPS Proxies
+**解決策：**
+- ファイアウォールの設定を確認する
+- プロキシのホストとポートを確認する
+- ブラウザまたは curl でプロキシをテストする
 
-HTTPS proxies encrypt traffic between you and the proxy server, providing better security.
+## セキュリティ上の考慮事項
 
-### Rotate Proxies Regularly
+### プロキシの認証情報を保護する
 
-Regularly change your proxy pool to maintain security and avoid detection.
+- プロキシのユーザー名とパスワードは機密データとして扱う
+- 権限のないユーザーとプロキシリストを共有しない
+- プロキシ情報の転送には安全な方法を使用する
 
-## Next Steps
+### HTTPS プロキシを使用する
 
-Now that you've configured your proxies:
+HTTPS プロキシは、お使いの端末とプロキシサーバー間の通信を暗号化するため、より高いセキュリティが得られます。
 
-- [Learn about search engine scraping](../lead-generation/search-engines)
-- [Set up contact extraction](../lead-generation/contact-extraction)
-- [Configure the Knowledge Library](../ai-outreach/knowledge-library)
+### プロキシを定期的にローテーションする
+
+セキュリティの維持と検出の回避のため、プロキシプールを定期的に入れ替えてください。
+
+## 次のステップ
+
+プロキシの設定が完了したら：
+
+- [検索エンジンスクレイピングについて学ぶ](../lead-generation/search-engines)
+- [コンタクト抽出の設定](../lead-generation/contact-extraction)
+- [ナレッジライブラリの設定](../ai-outreach/knowledge-library)
 
 ---
 
-**Need proxies?** Consider these popular proxy providers:
-- Bright Data (formerly Luminati)
+**プロキシをお探しですか？** 以下の人気プロキシプロバイダーをご検討ください。
+- Bright Data（旧 Luminati）
 - Smartproxy
 - Oxylabs
 - Storm Proxies
 - ProxyMesh
 
-*Note: This is not an endorsement. Research and choose based on your specific needs.*
+*注: これは推奨ではありません。ご自身の具体的なニーズに基づいてリサーチし、お選びください。*

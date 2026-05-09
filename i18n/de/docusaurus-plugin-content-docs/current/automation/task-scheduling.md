@@ -1,100 +1,100 @@
 ---
 id: task-scheduling
-title: Task Scheduling
-sidebar_label: Task Scheduler
-description: Automate your workflows with aiFetchly's powerful task scheduling system.
+title: Aufgabenplanung
+sidebar_label: Aufgabenplaner
+description: Automatisieren Sie Ihre Workflows mit dem leistungsstarken Aufgabenplanungssystem von aiFetchly.
 ---
 
-# Task Scheduling
+# Aufgabenplanung
 
-aiFetchly's Task Scheduler allows you to automate your marketing workflows by running tasks automatically at specified times or in response to other tasks. Set up recurring searches, automated email campaigns, and complex multi-step workflows.
+Der Aufgabenplaner von aiFetchly ermöglicht es Ihnen, Ihre Marketing-Workflows zu automatisieren, indem Aufgaben automatisch zu bestimmten Zeiten oder als Reaktion auf andere Aufgaben ausgeführt werden. Richten Sie wiederkehrende Suchen, automatisierte E-Mail-Kampagnen und komplexe mehrstufige Workflows ein.
 
-## Understanding Scheduling
+## Planung verstehen
 
-The Task Scheduler supports three types of task triggers:
+Der Aufgabenplaner unterstützt drei Arten von Aufgabentriggern:
 
-| Trigger Type | Description | Best For |
+| Triggertyp | Beschreibung | Am besten für |
 |-------------|-------------|----------|
-| **Cron** | Time-based scheduling using cron expressions | Recurring tasks, daily/weekly/monthly jobs |
-| **Dependency** | Triggered by completion of another task | Multi-step workflows, task chains |
-| **Manual** | Execute only when manually triggered | On-demand tasks, testing |
+| **Cron** | Zeitbasierte Planung mit Cron-Ausdrücken | Wiederkehrende Aufgaben, tägliche/wöchentliche/monatliche Jobs |
+| **Abhängigkeit** | Wird durch den Abschluss einer anderen Aufgabe ausgelöst | Mehrstufige Workflows, Aufgabenketten |
+| **Manuell** | Wird nur bei manueller Auslösung ausgeführt | On-Demand-Aufgaben, Tests |
 
-:::info Automate Everything
+:::info Alles automatisieren
 
-From lead generation to email campaigns, scheduling automation saves time and ensures consistent execution of your marketing workflows.
+Von der Lead-Generierung bis zu E-Mail-Kampagnen spart Planungsautomatisierung Zeit und gewährleistet eine konsistente Ausführung Ihrer Marketing-Workflows.
 
 :::
 
-## Creating a Scheduled Task
+## Eine geplante Aufgabe erstellen
 
-### Step 1: Navigate to Scheduler
+### Schritt 1: Zum Planer navigieren
 
-1. Click **Schedule** in the left navigation menu
-2. Click **New Schedule** button
+1. Klicken Sie auf **Schedule** im linken Navigationsmenü
+2. Klicken Sie auf die Schaltfläche **New Schedule**
 
-### Step 2: Basic Information
+### Schritt 2: Grundlegende Informationen
 
-Enter the following required information:
+Geben Sie die folgenden erforderlichen Informationen ein:
 
-#### Schedule Name
+#### Zeitplanname
 
-- **Purpose**: Identify the schedule in your list
-- **Example**: "Daily Google Search", "Weekly Email Campaign"
-- **Required**: Yes
+- **Zweck**: Den Zeitplan in Ihrer Liste identifizieren
+- **Beispiel**: "Tägliche Google-Suche", "Wöchentliche E-Mail-Kampagne"
+- **Erforderlich**: Ja
 
-#### Task Type
+#### Aufgabentyp
 
-Select the type of task to schedule:
+Wählen Sie den Typ der zu planenden Aufgabe:
 
-- **Search**: Search engine scraping tasks
-- **Email Extract**: Email extraction tasks
-- **Bulk Email**: Email marketing campaigns
-- **Yellow Pages**: Directory scraping tasks
-- **Video Download**: Video downloading tasks
+- **Search**: Suchmaschinen-Scraping-Aufgaben
+- **Email Extract**: E-Mail-Extraktionsaufgaben
+- **Bulk Email**: E-Mail-Marketing-Kampagnen
+- **Yellow Pages**: Verzeichnis-Scraping-Aufgaben
+- **Video Download**: Video-Download-Aufgaben
 
-#### Task ID
+#### Aufgaben-ID
 
-- **Purpose**: Link to the specific task instance
-- **Selection**: Choose from existing tasks of the selected type
-- **Required**: Yes
+- **Zweck**: Mit der spezifischen Aufgabeninstanz verknüpfen
+- **Auswahl**: Aus vorhandenen Aufgaben des ausgewählten Typs wählen
+- **Erforderlich**: Ja
 
-#### Description
+#### Beschreibung
 
-- **Purpose**: Provide context about the schedule's purpose
-- **Example**: "Daily search for new marketing agencies in target cities"
-- **Optional**: Yes
+- **Zweck**: Kontext über den Zweck des Zeitplans geben
+- **Beispiel**: "Tägliche Suche nach neuen Marketingagenturen in Zielstädten"
+- **Optional**: Ja
 
-### Step 3: Configure Trigger
+### Schritt 3: Trigger konfigurieren
 
-#### Cron Scheduling (Time-Based)
+#### Cron-Planung (Zeitbasiert)
 
-**Enable Cron** and configure the schedule:
+Aktivieren Sie **Cron** und konfigurieren Sie den Zeitplan:
 
-**Preset Options:**
-- Every minute
-- Every hour
-- Daily (midnight)
-- Weekly (Sunday midnight)
-- Monthly (1st of month, midnight)
-- Every 15 minutes
-- Every 30 minutes
-- Every 2 hours
-- Every 6 hours
-- Every 12 hours
-- Weekdays 9 AM
-- Weekends 10 AM
+**Voreinstellungen:**
+- Jede Minute
+- Jede Stunde
+- Täglich (Mitternacht)
+- Wöchentlich (Sonntag Mitternacht)
+- Monatlich (1. des Monats, Mitternacht)
+- Alle 15 Minuten
+- Alle 30 Minuten
+- Alle 2 Stunden
+- Alle 6 Stunden
+- Alle 12 Stunden
+- Werktags 9 Uhr
+- Wochenends 10 Uhr
 
-**Custom Cron Builder:**
+**Benutzerdefinierter Cron-Builder:**
 
-| Field | Options | Description |
+| Feld | Optionen | Beschreibung |
 |-------|---------|-------------|
-| **Minutes** | `*/5`, `*/15`, `*/30`, or specific minutes | Every 5/15/30 min or specific |
-| **Hours** | `*/2`, `*/6`, `*/12`, or specific hours | Every 2/6/12 hours or specific |
-| **Days** | `*/2` or specific days | Every 2 days or specific days |
-| **Months** | `*/3`, `*/6`, or specific months | Every 3/6 months or specific |
-| **Weekdays** | `1-5` (weekdays), `0,6` (weekends), or specific | Weekdays, weekends, or specific |
+| **Minuten** | `*/5`, `*/15`, `*/30` oder bestimmte Minuten | Alle 5/15/30 Min. oder spezifisch |
+| **Stunden** | `*/2`, `*/6`, `*/12` oder bestimmte Stunden | Alle 2/6/12 Stunden oder spezifisch |
+| **Tage** | `*/2` oder bestimmte Tage | Alle 2 Tage oder spezifisch |
+| **Monate** | `*/3`, `*/6` oder bestimmte Monate | Alle 3/6 Monate oder spezifisch |
+| **Wochentage** | `1-5` (Werktage), `0,6` (Wochenenden) oder spezifisch | Werktage, Wochenenden oder spezifisch |
 
-**Cron Expression Format:**
+**Cron-Ausdrucksformat:**
 ```
 ┌───────────── minute (0 - 59)
 │ ┌───────────── hour (0 - 23)
@@ -105,431 +105,431 @@ Select the type of task to schedule:
 * * * * *
 ```
 
-**Examples:**
+**Beispiele:**
 ```
-0 9 * * 1-5      # Weekdays at 9:00 AM
-*/30 * * * *     # Every 30 minutes
-0 0 * * 1        # Every Monday at midnight
-0 9,15 * * *     # Daily at 9:00 AM and 3:00 PM
-0 0 1 * *        # 1st of every month at midnight
+0 9 * * 1-5      # Werktags um 9:00 Uhr
+*/30 * * * *     # Alle 30 Minuten
+0 0 * * 1        # Jeden Montag um Mitternacht
+0 9,15 * * *     # Täglich um 9:00 und 15:00 Uhr
+0 0 1 * *        # Am 1. jeden Monats um Mitternacht
 ```
 
-**Next Run Time:**
-- System automatically calculates and displays the next execution time
-- Helpful for verifying your cron expression
+**Nächste Ausführungszeit:**
+- Das System berechnet und zeigt automatisch die nächste Ausführungszeit an
+- Hilfreich zur Überprüfung Ihres Cron-Ausdrucks
 
-#### Dependency Scheduling (Task-Based)
+#### Abhängigkeitsplanung (Aufgabenbasiert)
 
-**Enable Dependency** to trigger this task when another task completes.
+Aktivieren Sie **Dependency**, um diese Aufgabe auszulösen, wenn eine andere Aufgabe abgeschlossen ist.
 
-**Configuration:**
+**Konfiguration:**
 
-1. **Parent Schedule**: Select the schedule that will trigger this task
-2. **Dependency Condition**:
-   - **On Success**: Run only if parent task succeeds
-   - **On Completion**: Run after parent completes (success or failure)
-   - **On Failure**: Run only if parent task fails
+1. **Übergeordneter Zeitplan**: Wählen Sie den Zeitplan, der diese Aufgabe auslösen soll
+2. **Abhängigkeitsbedingung**:
+   - **On Success**: Nur ausführen, wenn die übergeordnete Aufgabe erfolgreich ist
+   - **On Completion**: Nach Abschluss der übergeordneten Aufgabe ausführen (Erfolg oder Fehler)
+   - **On Failure**: Nur ausführen, wenn die übergeordnete Aufgabe fehlschlägt
 
-3. **Delay (minutes)**: Wait time after parent completes before running this task
-   - `0` minutes: Run immediately
-   - `5` minutes: Wait 5 minutes before starting
-   - `60` minutes: Wait 1 hour before starting
+3. **Verzögerung (Minuten)**: Wartezeit nach Abschluss der übergeordneten Aufgabe
+   - `0` Minuten: Sofort ausführen
+   - `5` Minuten: 5 Minuten vor dem Start warten
+   - `60` Minuten: 1 Stunde vor dem Start warten
 
-**Use Cases:**
-- **Email after Extraction**: Extract emails, then send campaign when complete
-- **Analysis after Scraping**: Scrape data, then run AI analysis
-- **Multi-stage Campaigns**: Initial outreach → Follow-up 1 → Follow-up 2
+**Anwendungsfälle:**
+- **E-Mail nach Extraktion**: E-Mails extrahieren, dann Kampagne nach Abschluss senden
+- **Analyse nach Scraping**: Daten scrapen, dann KI-Analyse durchführen
+- **Mehrstufige Kampagnen**: Erste Kontaktaufnahme → Follow-up 1 → Follow-up 2
 
-:::tip Dependency Chains
+:::tip Abhängigkeitsketten
 
-You can create multi-level dependency chains:
-- Task A (Cron) → Task B (Dependency) → Task C (Dependency)
+Sie können mehrstufige Abhängigkeitsketten erstellen:
+- Aufgabe A (Cron) → Aufgabe B (Abhängigkeit) → Aufgabe C (Abhängigkeit)
 
-This creates powerful automated workflows.
+Dies erstellt leistungsstarke automatisierte Workflows.
 
 :::
 
-#### Manual Execution
+#### Manuelle Ausführung
 
-**Enable Manual** to run tasks only when triggered:
+Aktivieren Sie **Manual**, um Aufgaben nur bei Auslösung auszuführen:
 
-- No automatic scheduling
-- Execute on-demand via "Run Now" button
-- Useful for testing or infrequent tasks
+- Keine automatische Planung
+- On-Demand-Ausführung über die Schaltfläche "Run Now"
+- Nützlich für Tests oder seltene Aufgaben
 
-### Step 4: Active Status
+### Schritt 4: Aktiver Status
 
-Toggle the schedule as:
-- **Active**: Schedule will run according to trigger settings
-- **Inactive**: Schedule is disabled and won't run
+Schalten Sie den Zeitplan um:
+- **Active**: Der Zeitplan wird gemäß den Triggereinstellungen ausgeführt
+- **Inactive**: Der Zeitplan ist deaktiviert und wird nicht ausgeführt
 
-### Step 5: Save Schedule
+### Schritt 5: Zeitplan speichern
 
-Click **Save** to create the schedule. You can:
-- **Edit** the schedule later
-- **Enable/Disable** as needed
-- **Run Now** to test immediately
+Klicken Sie auf **Save**, um den Zeitplan zu erstellen. Sie können:
+- Den Zeitplan später **Edit** (bearbeiten)
+- Bei Bedarf **Enable/Disable** (aktivieren/deaktivieren)
+- Mit **Run Now** sofort testen
 
-## Managing Scheduled Tasks
+## Geplante Aufgaben verwalten
 
-### View Schedule List
+### Zeitplanliste anzeigen
 
-Navigate to **Schedule** to see all your scheduled tasks.
+Navigieren Sie zu **Schedule**, um alle Ihre geplanten Aufgaben zu sehen.
 
-**Schedule Overview:**
-- **Status Card**: Shows total, active, inactive, and paused schedules
-- **Filters**: Search by name, status, task type, trigger type
+**Zeitplanübersicht:**
+- **Statuskarte**: Zeigt Gesamtzahl, aktive, inaktive und pausierte Zeitpläne
+- **Filter**: Suche nach Name, Status, Aufgabentyp, Triggertyp
 
-### Schedule Table
+### Zeitplantabelle
 
-The schedule list displays:
+Die Zeitplanliste zeigt:
 
-| Column | Description |
+| Spalte | Beschreibung |
 |--------|-------------|
-| **Name** | Schedule name with task type indicator |
-| **Status** | Active (green), Inactive (grey), Paused (yellow) |
-| **Trigger Type** | Cron, Dependency, or Manual |
-| **Schedule** | Cron expression or dependency description |
-| **Next Run** | Next execution time with countdown |
-| **Last Run** | Most recent execution with elapsed time |
-| **Executions** | Success count / Failure count |
-| **Actions** | Edit, Delete, Pause/Resume, Run Now |
+| **Name** | Zeitplanname mit Aufgabentyp-Indikator |
+| **Status** | Active (grün), Inactive (grau), Paused (gelb) |
+| **Trigger Type** | Cron, Dependency oder Manual |
+| **Schedule** | Cron-Ausdruck oder Abhängigkeitsbeschreibung |
+| **Next Run** | Nächste Ausführungszeit mit Countdown |
+| **Last Run** | Letzte Ausführung mit vergangener Zeit |
+| **Executions** | Anzahl Erfolge / Anzahl Fehler |
+| **Actions** | Bearbeiten, Löschen, Pausieren/Fortsetzen, Jetzt ausführen |
 
-### Schedule Actions
+### Zeitplanaktionen
 
-| Action | Description | When Available |
+| Aktion | Beschreibung | Verfügbar wenn |
 |--------|-------------|----------------|
-| **Edit** | Modify schedule configuration | Always |
-| **Delete** | Remove schedule | Always |
-| **Enable** | Activate an inactive schedule | Inactive schedules |
-| **Disable** | Deactivate a schedule | Active schedules |
-| **Pause** | Temporarily halt execution | Active schedules |
-| **Resume** | Restart paused schedule | Paused schedules |
-| **Run Now** | Execute immediately | Always |
+| **Edit** | Zeitplankonfiguration ändern | Immer |
+| **Delete** | Zeitplan entfernen | Immer |
+| **Enable** | Einen inaktiven Zeitplan aktivieren | Inaktive Zeitpläne |
+| **Disable** | Einen Zeitplan deaktivieren | Aktive Zeitpläne |
+| **Pause** | Ausführung vorübergehend stoppen | Aktive Zeitpläne |
+| **Resume** | Pausierten Zeitplan fortsetzen | Pausierte Zeitpläne |
+| **Run Now** | Sofort ausführen | Immer |
 
-## Monitoring Execution
+## Ausführung überwachen
 
-### View Execution History
+### Ausführungsverlauf anzeigen
 
-1. Click **View Details** on a schedule
-2. See the execution history table
+1. Klicken Sie auf **View Details** bei einem Zeitplan
+2. Sehen Sie sich die Ausführungsverlaufstabelle an
 
-**Execution Information:**
+**Ausführungsinformationen:**
 
-| Column | Description |
+| Spalte | Beschreibung |
 |--------|-------------|
-| **Start Time** | When the execution started |
-| **End Time** | When execution completed (or "Running...") |
-| **Duration** | How long the execution took (or live counter) |
-| **Status** | Success (green), Failed (red), Running (blue) |
-| **Result** | Summary of execution results |
-| **Error** | Error message (if execution failed) |
-| **Actions** | View details, cancel running |
+| **Start Time** | Wann die Ausführung begann |
+| **End Time** | Wann die Ausführung abgeschlossen wurde (oder "Running...") |
+| **Duration** | Wie lange die Ausführung dauerte (oder Live-Zähler) |
+| **Status** | Success (grün), Failed (rot), Running (blau) |
+| **Result** | Zusammenfassung der Ausführungsergebnisse |
+| **Error** | Fehlermeldung (falls Ausführung fehlgeschlagen) |
+| **Actions** | Details anzeigen, laufende abbrechen |
 
-### Execution Statistics
+### Ausführungsstatistiken
 
-The detail view shows:
+Die Detailansicht zeigt:
 
-- **Success Rate**: Percentage of successful executions
-- **Average Duration**: Typical execution time
-- **Total Executions**: Overall count and breakdown
-- **Last Error**: Most recent failure message
-- **Next Run**: Countdown to next execution
+- **Erfolgsquote**: Prozentsatz der erfolgreichen Ausführungen
+- **Durchschnittliche Dauer**: Typische Ausführungszeit
+- **Gesamte Ausführungen**: Gesamtanzahl und Aufschlüsselung
+- **Letzter Fehler**: Aktuellste Fehlermeldung
+- **Nächste Ausführung**: Countdown zur nächsten Ausführung
 
-### Real-Time Monitoring
+### Echtzeitüberwachung
 
-For running tasks:
-- **Live Duration**: Counter shows elapsed time
-- **Cancel Button**: Stop the execution if needed
-- **Auto-Refresh**: Status updates every few seconds
+Für laufende Aufgaben:
+- **Live-Dauer**: Zähler zeigt vergangene Zeit an
+- **Abbrechen-Schaltfläche**: Ausführung bei Bedarf stoppen
+- **Automatische Aktualisierung**: Status wird alle paar Sekunden aktualisiert
 
-## Common Scheduling Patterns
+## Häufige Planungsmuster
 
-### Pattern 1: Daily Lead Generation
+### Muster 1: Tägliche Lead-Generierung
 
-**Schedule**: Every weekday at 9:00 AM
+**Zeitplan**: Jeden Werktag um 9:00 Uhr
 ```
 Cron: 0 9 * * 1-5
 Task: Search Engine Scraping
 ```
 
-**Use Case**: Fresh leads every morning for your sales team.
+**Anwendungsfall**: Jeden Morgen neue Leads für Ihr Vertriebsteam.
 
-### Pattern 2: Hourly Monitoring
+### Muster 2: Stündliche Überwachung
 
-**Schedule**: Every hour during business hours
+**Zeitplan**: Jede Stunde während der Geschäftszeiten
 ```
 Cron: 0 9-17 * * 1-5
 Task: Search / Yellow Pages
 ```
 
-**Use Case**: Monitor for new business listings during work hours.
+**Anwendungsfall**: Überwachung neuer Geschäftseinträge während der Arbeitszeit.
 
-### Pattern 3: Weekly Campaign
+### Muster 3: Wöchentliche Kampagne
 
-**Schedule**: Every Monday at 10:00 AM
+**Zeitplan**: Jeden Montag um 10:00 Uhr
 ```
 Cron: 0 10 * * 1
 Task: Bulk Email Sending
 ```
 
-**Use Case**: Weekly email newsletter or outreach campaign.
+**Anwendungsfall**: Wöchentlicher E-Mail-Newsletter oder Outreach-Kampagne.
 
-### Pattern 4: Multi-Step Workflow
+### Muster 4: Mehrstufiger Workflow
 
-**Task A** (Cron): Daily at 9:00 AM - Search for leads
-**Task B** (Dependency): After A succeeds - Extract emails
-**Task C** (Dependency): After B succeeds (30 min delay) - Send emails
+**Aufgabe A** (Cron): Täglich um 9:00 Uhr - Nach Leads suchen
+**Aufgabe B** (Abhängigkeit): Nach Erfolg von A - E-Mails extrahieren
+**Aufgabe C** (Abhängigkeit): Nach Erfolg von B (30 Min. Verzögerung) - E-Mails senden
 
-**Use Case**: Automated lead generation and outreach pipeline.
+**Anwendungsfall**: Automatisierte Lead-Generierungs- und Outreach-Pipeline.
 
-### Pattern 5: Maintenance Tasks
+### Muster 5: Wartungsaufgaben
 
-**Schedule**: Every Sunday at 3:00 AM
+**Zeitplan**: Jeden Sonntag um 3:00 Uhr
 ```
 Cron: 0 3 * * 0
 Task: Data cleanup or backup
 ```
 
-**Use Case**: Routine maintenance during low-traffic periods.
+**Anwendungsfall**: Regelmäßige Wartung in Zeiten mit wenig Traffic.
 
 ## Best Practices
 
-### 1. Schedule Design
+### 1. Zeitplandesign
 
-**Avoid Overlapping:**
-- Ensure tasks complete before next scheduled run
-- Consider average execution time when setting frequency
-- Use dependencies to sequence overlapping tasks
+**Überschneidungen vermeiden:**
+- Sicherstellen, dass Aufgaben vor der nächsten geplanten Ausführung abgeschlossen sind
+- Durchschnittliche Ausführungszeit bei der Festlegung der Häufigkeit berücksichtigen
+- Abhängigkeiten verwenden, um sich überschneidende Aufgaben zu sequenzieren
 
-**Off-Peak Hours:**
-- Schedule resource-intensive tasks during off-hours
-- Avoid competing with user activity
-- Consider time zones for global operations
+**Nebenzeiten:**
+- Ressourcenintensive Aufgaben außerhalb der Stoßzeiten planen
+- Konkurrenz mit Benutzeraktivität vermeiden
+- Zeitzonen für globale Operationen berücksichtigen
 
-**Buffer Time:**
-- Add buffer between dependent tasks
-- Account for variable execution times
-- Prevent cascading delays
+**Pufferzeit:**
+- Puffer zwischen abhängigen Aufgaben hinzufügen
+- Variable Ausführungszeiten berücksichtigen
+| Kaskadenverzögerungen verhindern
 
-### 2. Error Handling
+### 2. Fehlerbehandlung
 
-**Monitor Failures:**
-- Check execution history regularly
-- Investigate repeated failures
-- Adjust schedules or tasks as needed
+**Fehler überwachen:**
+- Ausführungsverlauf regelmäßig prüfen
+- Wiederholte Fehler untersuchen
+- Zeitpläne oder Aufgaben bei Bedarf anpassen
 
-**Set Up Alerts:**
-- Review schedules weekly
-- Check for stuck or paused tasks
-- Verify dependencies are firing correctly
+**Warnungen einrichten:**
+- Zeitpläne wöchentlich überprüfen
+- Auf steckengebliebene oder pausierte Aufgaben prüfen
+| Abhängigkeiten korrekt auslösen lassen
 
 **Graceful Degradation:**
-- Use "On Completion" dependencies to continue chain even if one task fails
-- Create alternative schedules for critical tasks
-- Document escalation procedures
+- "On Completion"-Abhängigkeiten verwenden, um die Kette fortzusetzen, auch wenn eine Aufgabe fehlschlägt
+- Alternative Zeitpläne für kritische Aufgaben erstellen
+| Eskalationsverfahren dokumentieren
 
-### 3. Resource Management
+### 3. Ressourcenmanagement
 
-**Concurrent Tasks:**
-- Avoid scheduling too many tasks simultaneously
-- Consider system resources (CPU, memory, network)
-- Stagger similar tasks to prevent conflicts
+**Gleichzeitige Aufgaben:**
+- Nicht zu viele Aufgaben gleichzeitig planen
+- Systemressourcen (CPU, Speicher, Netzwerk) berücksichtigen
+| Ähnliche Aufgaben versetzen, um Konflikte zu vermeiden
 
-**Proxy Rotation:**
-- Ensure sufficient proxies for concurrent scheduled tasks
-- Distribute load across proxy pool
-- Monitor proxy health for scheduled tasks
+**Proxy-Rotation:**
+- Ausreichende Proxys für gleichzeitige geplante Aufgaben sicherstellen
+| Last über den Proxy-Pool verteilen
+| Proxy-Gesundheit für geplante Aufgaben überwachen
 
-### 4. Testing
+### 4. Tests
 
-**Test Schedules:**
-- Use "Run Now" to test before scheduling
-- Verify with one-time execution first
-- Check logs for any issues
+**Zeitpläne testen:**
+- Vor der Planung mit "Run Now" testen
+| Zuerst mit einmaliger Ausführung verifizieren
+| Protokolle auf Probleme prüfen
 
-**Validate Cron Expressions:**
-- Use the "Next Run Time" preview to verify
-- Test with shorter intervals first
-- Confirm timezone settings are correct
+**Cron-Ausdrücke validieren:**
+- "Next Run Time"-Vorschau zur Überprüfung verwenden
+| Zuerst mit kürzeren Intervallen testen
+| Zeitzoneneinstellungen bestätigen
 
-**Test Dependencies:**
-- Verify parent tasks complete successfully
-- Test delay settings
-- Ensure chains work as expected
+**Abhängigkeiten testen:**
+| Übergeordnete Aufgaben erfolgreich abschließen lassen
+| Verzögerungseinstellungen testen
+| Sicherstellen, dass Ketten wie erwartet funktionieren
 
-### 5. Documentation
+### 5. Dokumentation
 
-**Name Schedules Clearly:**
-- Descriptive names with purpose and frequency
-- Include task type and target
-- Example: "Daily Google Search - Marketing Agencies"
+**Zeitpläne klar benennen:**
+- Beschreibende Namen mit Zweck und Häufigkeit
+| Aufgabentyp und Ziel angeben
+| Beispiel: "Tägliche Google-Suche - Marketingagenturen"
 
-**Use Descriptions:**
-- Document purpose and expected outcomes
-- Note dependencies and relationships
-- Include any special considerations
+**Beschreibungen nutzen:**
+| Zweck und erwartete Ergebnisse dokumentieren
+| Abhängigkeiten und Beziehungen notieren
+| Besondere Hinweise aufnehmen
 
-**Label Task Purposes:**
-- Tag or categorize related schedules
-- Group by project or campaign
-- Make identification easy
+**Aufgabenzwecke kennzeichnen:**
+| Verwandte Zeitpläne markieren oder kategorisieren
+| Nach Projekt oder Kampagne gruppieren
+| Identifikation erleichtern
 
-## Troubleshooting
+## Fehlerbehebung
 
-### Schedule Not Running
+### Zeitplan wird nicht ausgeführt
 
-**Possible causes:**
-- Schedule is inactive or paused
-- Cron expression misconfigured
-- Scheduler service not running
-- System time/timezone issues
+**Mögliche Ursachen:**
+- Zeitplan ist inaktiv oder pausiert
+- Cron-Ausdruck falsch konfiguriert
+| Planer-Dienst wird nicht ausgeführt
+| Systemzeit/Zeitzonen-Probleme
 
-**Solutions:**
-1. Verify schedule status is "Active"
-2. Check cron expression syntax
-3. Confirm scheduler service is running
-4. Verify system time and timezone settings
-5. Check execution logs for errors
+**Lösungen:**
+1. Überprüfen Sie, ob der Status "Active" ist
+2. Cron-Ausdruck-Syntax prüfen
+3. Bestätigen Sie, dass der Planer-Dienst läuft
+4. Systemzeit und Zeitzoneneinstellungen überprüfen
+5. Ausführungsprotokolle auf Fehler prüfen
 
-### Task Executing Too Frequently
+### Aufgabe wird zu häufig ausgeführt
 
-**Possible causes:**
-- Cron expression incorrect
-- Multiple schedules for same task
-- Misunderstood cron syntax
+**Mögliche Ursachen:**
+- Cron-Ausdruck falsch
+| Mehrere Zeitpläne für dieselbe Aufgabe
+| Cron-Syntax missverstanden
 
-**Solutions:**
-1. Review cron expression carefully
-2. Check for duplicate schedules
-3. Use "Next Run Time" preview to verify
-4. Test with longer intervals first
+**Lösungen:**
+1. Cron-Ausdruck sorgfältig überprüfen
+2. Auf doppelte Zeitpläne prüfen
+3. "Next Run Time"-Vorschau zur Überprüfung verwenden
+4. Zuerst mit längeren Intervallen testen
 
-### Dependencies Not Firing
+### Abhängigkeiten werden nicht ausgelöst
 
-**Possible causes:**
-- Parent task not completing
-- Wrong dependency condition
-- Delay too long or too short
+**Mögliche Ursachen:**
+| Übergeordnete Aufgabe wird nicht abgeschlossen
+| Falsche Abhängigkeitsbedingung
+| Verzögerung zu lang oder zu kurz
 
-**Solutions:**
-1. Check parent task execution history
-2. Verify dependency condition matches desired behavior
-3. Adjust delay settings
-4. Check for circular dependencies
+**Lösungen:**
+1. Ausführungsverlauf der übergeordneten Aufgabe prüfen
+2. Abhängigkeitsbedingung mit dem gewünschten Verhalten abgleichen
+3. Verzögerungseinstellungen anpassen
+4. Auf zirkuläre Abhängigkeiten prüfen
 
-### Tasks Taking Too Long
+### Aufgaben dauern zu lange
 
-**Possible causes:**
-- Task configuration too aggressive
-- System resources insufficient
-- Network bottlenecks
+**Mögliche Ursachen:**
+| Aufgabenkonfiguration zu aggressiv
+| Systemressourcen unzureichend
+| Netzwerk-Engpässe
 
-**Solutions:**
-1. Reduce task scope (pages, concurrency, etc.)
-2. Schedule during off-peak hours
-3. Increase interval between runs
-4. Check system performance
+**Lösungen:**
+1. Aufgaben-Umfang reduzieren (Seiten, Parallelität usw.)
+2. In Nebenzeiten planen
+3. Intervall zwischen Ausführungen vergrößern
+4. Systemleistung prüfen
 
-### Execution History Not Showing
+### Ausführungsverlauf wird nicht angezeigt
 
-**Possible causes:**
-- Task never executed
-- History cleared
-- Database issues
+**Mögliche Ursachen:**
+| Aufgabe wurde noch nie ausgeführt
+| Verlauf wurde gelöscht
+| Datenbankprobleme
 
-**Solutions:**
-1. Run task manually to test
-2. Check if task has ever executed
-3. Verify database connectivity
-4. Restart scheduler service if needed
+**Lösungen:**
+1. Aufgabe manuell zum Testen ausführen
+2. Prüfen, ob die Aufgabe jemals ausgeführt wurde
+3. Datenbankverbindung überprüfen
+4. Planer-Dienst bei Bedarf neu starten
 
-## Advanced Workflows
+## Erweiterte Workflows
 
-### Workflow 1: Automated Lead Generation Pipeline
+### Workflow 1: Automatisierte Lead-Generierungs-Pipeline
 
-**Schedule 1**: Daily Search
+**Zeitplan 1**: Tägliche Suche
 ```
 Cron: 0 9 * * 1-5 (Weekdays 9 AM)
 Task: Google Search for "marketing agencies [city]"
 ```
 
-**Schedule 2**: Email Extraction (Dependency)
+**Zeitplan 2**: E-Mail-Extraktion (Abhängigkeit)
 ```
 Trigger: After Schedule 1 succeeds
 Delay: 0 minutes
 Task: Extract emails from Schedule 1 results
 ```
 
-**Schedule 3**: Email Campaign (Dependency)
+**Zeitplan 3**: E-Mail-Kampagne (Abhängigkeit)
 ```
 Trigger: After Schedule 2 completes
 Delay: 60 minutes (allow time for extraction)
 Task: Send welcome email campaign
 ```
 
-**Result**: Automated daily lead generation and outreach.
+**Ergebnis**: Automatisierte tägliche Lead-Generierung und Outreach.
 
-### Workflow 2: Weekly Maintenance
+### Workflow 2: Wöchentliche Wartung
 
-**Schedule 1**: Database Cleanup
+**Zeitplan 1**: Datenbankbereinigung
 ```
 Cron: 0 3 * * 0 (Sunday 3 AM)
 Task: Remove old completed tasks
 ```
 
-**Schedule 2**: Proxy Health Check (Dependency)
+**Zeitplan 2**: Proxy-Gesundheitsprüfung (Abhängigkeit)
 ```
 Trigger: After Schedule 1 completes
 Task: Test all proxies and remove failed
 ```
 
-**Schedule 3**: Report Generation (Dependency)
+**Zeitplan 3**: Berichtserstellung (Abhängigkeit)
 ```
 Trigger: After Schedule 2 completes
 Task: Generate weekly usage report
 ```
 
-**Result**: Automated weekly maintenance and reporting.
+**Ergebnis**: Automatisierte wöchentliche Wartung und Berichterstellung.
 
-### Workflow 3: Multi-Regional Monitoring
+### Workflow 3: Multi-Regionale Überwachung
 
-**Schedule 1**: US East Monitoring
+**Zeitplan 1**: US-Ostküstenüberwachung
 ```
 Cron: 0 */2 * * * (Every 2 hours)
 Task: Search US East keywords
 ```
 
-**Schedule 2**: US West Monitoring
+**Zeitplan 2**: US-Westküstenüberwachung
 ```
 Cron: 0 */2 * * * (Every 2 hours, offset)
 Task: Search US West keywords
 ```
 
-**Schedule 3**: Europe Monitoring
+**Zeitplan 3**: Europa-Überwachung
 ```
 Cron: 0 */2 * * * (Every 2 hours, offset)
 Task: Search European keywords
 ```
 
-**Result**: Continuous global monitoring with staggered schedules.
+**Ergebnis**: Kontinuierliche globale Überwachung mit versetzten Zeitplänen.
 
-## Integration with Other Features
+## Integration mit anderen Funktionen
 
-The Task Scheduler integrates with:
+Der Aufgabenplaner integriert sich mit:
 
-- **[Search Engines](../lead-generation/search-engines)**: Schedule recurring searches
-- **[Contact Extraction](../lead-generation/contact-extraction)**: Auto-extract after searches
-- **[Yellow Pages](../lead-generation/yellow-pages)**: Regular directory scraping
-- **[Batch Email Sending](../lead-generation/batch-email-sending)**: Automated campaigns
+- **[Suchmaschinen](../lead-generation/search-engines)**: Wiederkehrende Suchen planen
+- **[Kontaktextraktion](../lead-generation/contact-extraction)**: Automatische Extraktion nach Suchen
+- **[Gelbe Seiten](../lead-generation/yellow-pages)**: Regelmäßiges Verzeichnis-Scraping
+- **[Massen-E-Mail-Versand](../lead-generation/batch-email-sending)**: Automatisierte Kampagnen
 
-## Next Steps
+## Nächste Schritte
 
-Now that you understand scheduling:
+Nachdem Sie nun die Planung verstehen:
 
-- [Configure system settings](../settings/system-settings)
-- [Review the complete user manual](../getting-started/introduction)
+- [Systemeinstellungen konfigurieren](../settings/system-settings)
+- [Das vollständige Benutzerhandbuch lesen](../getting-started/introduction)
 
 ---
 
-**Ready to automate?** Start by scheduling a simple daily search task, then gradually build more complex automated workflows as you become familiar with the system.
+**Bereit zu automatisieren?** Beginnen Sie mit der Planung einer einfachen täglichen Suchaufgabe und erstellen Sie dann schrittweise komplexere automatisierte Workflows, während Sie sich mit dem System vertraut machen.

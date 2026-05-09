@@ -1,688 +1,688 @@
 ---
 id: yellow-pages
-title: Yellow Pages Scraping
-sidebar_label: Yellow Pages
-description: Extract business information from Yellow Pages, Yelp, and other online directories worldwide.
+title: Gelbe-Seiten-Scraping
+sidebar_label: Gelbe Seiten
+description: Extrahieren Sie Geschäftsinformationen aus Gelben Seiten, Yelp und anderen Online-Verzeichnissen weltweit.
 ---
 
-# Yellow Pages Scraping
+# Gelbe-Seiten-Scraping
 
-aiFetchly's Yellow Pages scraping feature allows you to extract comprehensive business information from multiple online directories. Collect leads from local business listings with detailed contact information, ratings, reviews, and more. Powered by AI support, you can enhance scraping accuracy and generate related keywords automatically.
+Die Gelbe-Seiten-Scraping-Funktion von aiFetchly ermöglicht es Ihnen, umfassende Geschäftsinformationen aus mehreren Online-Verzeichnissen zu extrahieren. Sammeln Sie Leads aus lokalen Geschäftseinträgen mit detaillierten Kontaktinformationen, Bewertungen, Rezensionen und mehr. Mit KI-Unterstützung können Sie die Scraping-Genauigkeit verbessern und automatisch verwandte Schlüsselwörter generieren.
 
-## Supported Directories
+## Unterstützte Verzeichnisse
 
-| Directory | Region | Language | Rate Limit | Features |
+| Verzeichnis | Region | Sprache | Ratenlimit | Funktionen |
 |-----------|--------|----------|------------|----------|
-| **YellowPages.com** | USA | English | 100 req/hour | Business details, ratings, reviews, hours |
-| **Yelp.com** | USA | English | 60 req/hour | Reviews, ratings, photos, detailed extraction |
-| **YellowPages.ca** | Canada | English | 100 req/hour | Canadian business directory, address parsing |
-| **YellowPages.com.sg** | Singapore | English | 100 req/hour | Singapore business listings |
-| **192.com** | UK | English | 100 req/hour | UK-specific business directory |
-| **11880.com** | Germany | German | 100 req/hour | German directory, cookie consent handling |
-| **Gelbeseiten.de** | Germany | German | 100 req/hour | German Yellow Pages, shadow root handling |
-| **PagesJaunes.fr** | France | French | 100 req/hour | French Yellow Pages, location required |
-| **PagineGialle.it** | Italy | Italian | 100 req/hour | Italian Yellow Pages, cookie consent |
-| **iTownPage** | Japan | Japanese | 60 req/hour | Japanese directory, dialog handling |
-| **uSonar Yellow Page** | Japan | Japanese | 60 req/hour | Japanese business listings |
-| **KoreaLocalPages** | South Korea | Korean | 60 req/hour | Korean local business directory |
+| **YellowPages.com** | USA | Englisch | 100 Anf./Std. | Geschäftsdetails, Bewertungen, Rezensionen, Öffnungszeiten |
+| **Yelp.com** | USA | Englisch | 60 Anf./Std. | Rezensionen, Bewertungen, Fotos, detaillierte Extraktion |
+| **YellowPages.ca** | Kanada | Englisch | 100 Anf./Std. | Kanadisches Geschäftsverzeichnis, Adressanalyse |
+| **YellowPages.com.sg** | Singapur | Englisch | 100 Anf./Std. | Singapurer Geschäftslistungen |
+| **192.com** | UK | Englisch | 100 Anf./Std. | UK-spezifisches Geschäftsverzeichnis |
+| **11880.com** | Deutschland | Deutsch | 100 Anf./Std. | Deutsches Verzeichnis, Cookie-Einwilligungsbehandlung |
+| **Gelbeseiten.de** | Deutschland | Deutsch | 100 Anf./Std. | Deutsche Gelbe Seiten, Shadow-Root-Behandlung |
+| **PagesJaunes.fr** | Frankreich | Französisch | 100 Anf./Std. | Französische Gelbe Seiten, Standort erforderlich |
+| **PagineGialle.it** | Italien | Italienisch | 100 Anf./Std. | Italienische Gelbe Seiten, Cookie-Einwilligung |
+| **iTownPage** | Japan | Japanisch | 60 Anf./Std. | Japanisches Verzeichnis, Dialogbehandlung |
+| **uSonar Yellow Page** | Japan | Japanisch | 60 Anf./Std. | Japanische Geschäftslistungen |
+| **KoreaLocalPages** | Südkorea | Koreanisch | 60 Anf./Std. | Koreanisches lokales Geschäftsverzeichnis |
 
-:::tip Rate Limits
+:::tip Ratenlimits
 
-Each directory has specific rate limits. aiFetchly automatically manages request delays to comply with these limits.
-
-:::
-
-:::info Platform Information
-
-When creating a task, select a platform from the dropdown. As you select each platform, you'll see a sidebar showing:
-- Country/Language support
-- Rate limits
-- Authentication requirements
-- Whether location is required
+Jedes Verzeichnis hat spezifische Ratenlimits. aiFetchly verwaltet automatisch Anfrageverzögerungen, um diese Limits einzuhalten.
 
 :::
 
-## Creating a Yellow Pages Task
+:::info Plattform-Informationen
 
-### Step 1: Navigate to Yellow Pages
+Beim Erstellen eines Auftrags wählen Sie eine Plattform aus dem Dropdown aus. Bei der Auswahl jeder Plattform sehen Sie eine Seitenleiste mit:
+- Land-/Sprachunterstützung
+- Ratenlimits
+- Authentifizierungsanforderungen
+- Ob ein Standort erforderlich ist
 
-1. Click **Yellow Pages** in the left navigation menu
-2. You'll see the Yellow Pages task list
-3. Click **Create New Task** button
+:::
 
-### Step 2: Basic Information
+## Einen Gelbe-Seiten-Auftrag erstellen
 
-Enter the following required information:
+### Schritt 1: Zu Gelbe Seiten navigieren
 
-#### Task Name
+1. Klicken Sie auf **Gelbe Seiten** im linken Navigationsmenü
+2. Sie sehen die Gelbe-Seiten-Auftragsliste
+3. Klicken Sie auf **Neuen Auftrag erstellen**
 
-- Give your task a descriptive name
-- Example: "Restaurants in Chicago" or "Plumbers in Miami"
+### Schritt 2: Grundlegende Informationen
 
-#### Platform Selection
+Geben Sie die folgenden erforderlichen Informationen ein:
 
-Select the directory you want to scrape from the dropdown:
+#### Auftragsname
 
-**Americas:**
+- Geben Sie Ihrem Auftrag einen beschreibenden Namen
+- Beispiel: "Restaurants in Berlin" oder "Klempner in München"
+
+#### Plattformauswahl
+
+Wählen Sie das Verzeichnis, das Sie scrapen möchten, aus dem Dropdown:
+
+**Amerika:**
 - YellowPages.com (USA)
 - Yelp.com (USA)
-- YellowPages.ca (Canada)
+- YellowPages.ca (Kanada)
 
-**Europe:**
+**Europa:**
 - 192.com (UK)
-- 11880.com (Germany)
-- Gelbeseiten.de (Germany)
-- PagesJaunes.fr (France) — location required
-- PagineGialle.it (Italy)
+- 11880.com (Deutschland)
+- Gelbeseiten.de (Deutschland)
+- PagesJaunes.fr (Frankreich) — Standort erforderlich
+- PagineGialle.it (Italien)
 
-**Asia-Pacific:**
-- YellowPages.com.sg (Singapore)
+**Asien-Pazifik:**
+- YellowPages.com.sg (Singapur)
 - iTownPage (Japan)
 - uSonar Yellow Page (Japan)
-- KoreaLocalPages (South Korea)
+- KoreaLocalPages (Südkorea)
 
-#### Keywords
+#### Schlüsselwörter
 
-Enter your search keywords:
-- **Format**: Comma-separated or one per line
-- **Examples**: `restaurant, plumber, dentist, marketing agency`
-- **Tip**: Use specific business types or categories for better results
+Geben Sie Ihre Suchbegriffe ein:
+- **Format**: Komma-getrennt oder einer pro Zeile
+- **Beispiele**: `Restaurant, Klempner, Zahnarzt, Marketingagentur`
+- **Tipp**: Verwenden Sie spezifische Geschäftstypen oder -kategorien für bessere Ergebnisse
 
-**AI Query Keywords** (Optional):
-- Click the **AI Query Keywords** button (purple, robot icon) inside the keywords field
-- aiFetchly uses AI to generate related search terms based on your existing keywords
-- Generated keywords are combined with your originals, duplicates removed automatically
-- If no keywords are entered, AI generates suggestions from a default seed term
+**KI-Schlüsselwörter abfragen** (Optional):
+- Klicken Sie auf die Schaltfläche **KI-Schlüsselwörter abfragen** (lila, Roboter-Symbol) innerhalb des Schlüsselwort-Feldes
+- aiFetchly verwendet KI, um verwandte Suchbegriffe basierend auf Ihren vorhandenen Schlüsselwörtern zu generieren
+- Generierte Schlüsselwörter werden mit Ihren Originalen kombiniert, Duplikate automatisch entfernt
+- Wenn keine Schlüsselwörter eingegeben sind, generiert die KI Vorschläge aus einem Standard-Seed-Begriff
 
-#### Location
+#### Standort
 
-Enter the geographic location for your search:
-- **Examples**: `New York, NY`, `Los Angeles, CA`, `Miami, Florida`
-- **Format**: City, State or City, Region
-- **Required**: For most platforms
+Geben Sie den geografischen Standort für Ihre Suche ein:
+- **Beispiele**: `Berlin, München, Hamburg`
+- **Format**: Stadt, Bundesland oder Stadt, Region
+- **Erforderlich**: Für die meisten Plattformen
 
-### Step 3: Performance Settings
+### Schritt 3: Leistungseinstellungen
 
-Configure how the scraping task runs:
+Konfigurieren Sie, wie der Scraping-Auftrag ausgeführt wird:
 
-#### Max Pages
+#### Maximale Seiten
 
-- **Range**: 1-100 pages
-- **Default**: 10 pages
-- **Recommendation**: Start with 10-20 pages for testing
+- **Bereich**: 1-100 Seiten
+- **Standard**: 10 Seiten
+- **Empfehlung**: Mit 10-20 Seiten für Tests beginnen
 
-**What this means:**
-- Each page typically contains 20-30 business listings
-- 10 pages = 200-300 potential leads
-- More pages = longer processing time
+**Was das bedeutet:**
+- Jede Seite enthält typischerweise 20-30 Geschäftseinträge
+- 10 Seiten = 200-300 potenzielle Leads
+- Mehr Seiten = längere Verarbeitungszeit
 
-#### Concurrency
+#### Gleichzeitigkeit
 
-- **Range**: 1-10 concurrent requests
-- **Default**: 2 concurrent requests
-- **Higher values**: Faster but higher risk of being blocked
+- **Bereich**: 1-10 gleichzeitige Anfragen
+- **Standard**: 2 gleichzeitige Anfragen
+- **Höhere Werte**: Schneller, aber höheres Risiko der Blockierung
 
-:::warning Concurrency Guidelines
+:::warning Parallelitätsrichtlinien
 
-- Start with 1-3 concurrent requests
-- Increase gradually if using proxies
-- Respect platform rate limits
-
-:::
-
-#### Delay Between Requests
-
-- **Range**: 0-10,000 milliseconds
-- **Default**: 2000ms (2 seconds)
-- **Purpose**: Prevents rate limiting and blocking
-
-**Recommended delays:**
-- **Yelp.com**: 3000ms (stricter rate limits)
-- **Japanese platforms** (iTownPage, uSonar): 2500ms
-- **Korean platforms** (KoreaLocalPages): 2500ms
-- **All others**: 2000ms
-
-### Step 4: Browser Configuration
-
-#### Headless Mode
-
-- **Enabled** (default): Browser runs invisibly (faster, recommended)
-- **Disabled**: Browser window visible (useful for debugging)
-
-**Recommendation**: Keep headless mode enabled for production tasks.
-
-#### AI Support
-
-Toggle **AI Support** to enable AI-powered scraping assistance:
-
-- When enabled, AI helps improve scraping accuracy and handle edge cases
-- Enabled by default if your account has AI features enabled
-- Look for the purple robot icon next to the toggle
-
-#### Local Browser
-
-Toggle **Use Local Browser** to use your local Chrome or Firefox installation for scraping:
-
-1. Toggle **Local Browser** to enable
-2. Select **Chrome** or **Firefox** from the dropdown
-3. **Benefits**: Lower detection rates, better success with anti-bot protections
-
-### Step 5: Optional Features
-
-#### Account Selection
-
-Some platforms support authenticated scraping:
-
-1. Toggle **Use Account** if available
-2. Select an account from your saved accounts
-3. Benefits:
-   - Higher success rate
-   - Access to member-only content
-   - Reduced risk of blocking
-
-#### Proxy Configuration
-
-Add proxies for large-scale scraping:
-
-1. Toggle **Use Proxy**
-2. Click **Choose Proxy**
-3. Select one or more proxies from your list
-4. Click **Confirm**
-
-:::tip When to Use Proxies
-
-Use proxies when:
-- Scraping more than 50 pages
-- Running concurrent tasks
-- Previous tasks were blocked
+- Mit 1-3 gleichzeitigen Anfragen beginnen
+- Bei Proxy-Verwendung schrittweise erhöhen
+- Plattform-Ratenlimits beachten
 
 :::
 
-### Step 6: Scheduling (Optional)
+#### Verzögerung zwischen Anfragen
 
-#### One-Time Scheduling
+- **Bereich**: 0-10.000 Millisekunden
+- **Standard**: 2000ms (2 Sekunden)
+- **Zweck**: Verhindert Ratenbegrenzung und Blockierung
 
-Set a specific date and time for the task to run:
-- Click **Schedule**
-- Select date and time
-- Task runs automatically at scheduled time
+**Empfohlene Verzögerungen:**
+- **Yelp.com**: 3000ms (strengere Ratenlimits)
+- **Japanische Plattformen** (iTownPage, uSonar): 2500ms
+- **Koreanische Plattformen** (KoreaLocalPages): 2500ms
+- **Alle anderen**: 2000ms
 
-#### Recurring Scheduling
+### Schritt 4: Browser-Konfiguration
 
-Set up automated recurring tasks:
+#### Headless-Modus
 
-**Preset Options:**
-- Every 15 minutes
-- Every 30 minutes
-- Every hour
-- Every 2 hours
-- Every 6 hours
-- Every 12 hours
-- Daily
-- Weekly
-- Monthly
+- **Aktiviert** (Standard): Browser läuft unsichtbar (schneller, empfohlen)
+- **Deaktiviert**: Browser-Fenster sichtbar (nützlich für Debugging)
 
-**Custom Scheduling:**
-- Use cron expressions for advanced scheduling
-- Example: `0 9 * * 1-5` (9 AM Monday-Friday)
+**Empfehlung**: Headless-Modus für Produktionsaufgaben aktiviert lassen.
 
-**Schedule Preview:**
-- Shows next run time
-- Displays configuration summary
+#### KI-Unterstützung
 
-### Step 7: Create Task
+Schalten Sie **KI-Unterstützung** um, um KI-gestützte Scraping-Assistenz zu aktivieren:
 
-Click one of the action buttons in the sidebar:
+- Wenn aktiviert, hilft die KI, die Scraping-Genauigkeit zu verbessern und Sonderfälle zu behandeln
+- Standardmäßig aktiviert, wenn Ihr Konto KI-Funktionen hat
+- Suchen Sie nach dem lilafarbenen Roboter-Symbol neben dem Schalter
 
-- **Create & Start Task** (primary button): Creates the task and starts execution immediately
-- **Create Task Only**: Saves the task without running it — status will be "Pending"
+#### Lokaler Browser
 
-:::tip Task Preview
+Schalten Sie **Lokalen Browser verwenden** um, um Ihre lokale Chrome- oder Firefox-Installation für das Scraping zu nutzen:
 
-As you fill in the form, the **Task Preview** sidebar shows a live summary of your configuration including task name, platform, keywords count, location, max pages, concurrency, headless mode, and local browser selection. Review this before creating the task.
+1. **Lokaler Browser** umschalten, um zu aktivieren
+2. **Chrome** oder **Firefox** aus dem Dropdown auswählen
+3. **Vorteile**: Niedrigere Erkennungsraten, besserer Erfolg bei Anti-Bot-Schutzmaßnahmen
+
+### Schritt 5: Optionale Funktionen
+
+#### Kontoauswahl
+
+Einige Plattformen unterstützen authentifiziertes Scraping:
+
+1. **Konto verwenden** umschalten, falls verfügbar
+2. Ein Konto aus Ihren gespeicherten Konten auswählen
+3. Vorteile:
+   - Höhere Erfolgsrate
+   - Zugriff auf exklusive Inhalte für Mitglieder
+   - Reduziertes Blockierungsrisiko
+
+#### Proxy-Konfiguration
+
+Proxys für groß angelegtes Scraping hinzufügen:
+
+1. **Proxy verwenden** umschalten
+2. Klicken Sie auf **Proxy wählen**
+3. Einen oder mehrere Proxys aus Ihrer Liste auswählen
+4. Klicken Sie auf **Bestätigen**
+
+:::tip Wann Proxys verwenden
+
+Proxys verwenden, wenn:
+- Mehr als 50 Seiten gescrapt werden
+- Gleichzeitige Aufträge ausgeführt werden
+- Vorherige Aufträge blockiert wurden
 
 :::
 
-### Editing a Task
+### Schritt 6: Planung (Optional)
 
-To modify an existing task:
+#### Einmalige Planung
 
-1. Go to **Yellow Pages** task list
-2. Click the **Edit** (pencil) icon on the task
-3. Modify the configuration in the form
-4. Click **Update Task** to save changes
+Ein bestimmtes Datum und eine Uhrzeit für die Auftragsausführung festlegen:
+- Klicken Sie auf **Planen**
+- Datum und Uhrzeit auswählen
+- Auftrag wird automatisch zur geplanten Zeit ausgeführt
 
-## Managing Yellow Pages Tasks
+#### Wiederkehrende Planung
 
-### View Task List
+Automatisierte, wiederkehrende Aufträge einrichten:
 
-Navigate to **Yellow Pages** to see all your tasks.
+**Vordefinierte Optionen:**
+- Alle 15 Minuten
+- Alle 30 Minuten
+- Stündlich
+- Alle 2 Stunden
+- Alle 6 Stunden
+- Alle 12 Stunden
+- Täglich
+- Wöchentlich
+- Monatlich
 
-**Task List Overview:**
-- **Real-time Statistics**: Total, running, pending, completed, failed tasks with success rate
-- **Auto-refresh**: Updates every 5 seconds; toggle on/off with the refresh button
-- **Smart Pause**: Auto-refresh pauses automatically when you switch browser tabs and resumes when you return
+**Benutzerdefinierte Planung:**
+- Cron-Ausdrücke für erweiterte Planung verwenden
+- Beispiel: `0 9 * * 1-5` (9 Uhr Montag-Freitag)
 
-### Filtering and Search
+**Planungs-Vorschau:**
+- Zeigt die nächste Ausführungszeit
+- Zeigt Konfigurationszusammenfassung
 
-Use the filter bar to narrow down tasks:
+### Schritt 7: Auftrag erstellen
 
-| Filter | Description |
+Klicken Sie auf eine der Aktionsschaltflächen in der Seitenleiste:
+
+- **Auftrag erstellen & starten** (Hauptschaltfläche): Erstellt den Auftrag und startet die Ausführung sofort
+- **Nur Auftrag erstellen**: Speichert den Auftrag ohne Ausführung — Status wird "Ausstehend" sein
+
+:::tip Auftrag-Vorschau
+
+Während Sie das Formular ausfüllen, zeigt die **Auftrag-Vorschau**-Seitenleiste eine Live-Zusammenfassung Ihrer Konfiguration, einschließlich Auftragsname, Plattform, Schlüsselwortanzahl, Standort, maximale Seiten, Gleichzeitigkeit, Headless-Modus und lokaler Browserauswahl. Überprüfen Sie dies vor der Auftragserteilung.
+
+:::
+
+### Einen Auftrag bearbeiten
+
+So ändern Sie einen vorhandenen Auftrag:
+
+1. Gehen Sie zur **Gelbe Seiten**-Auftragsliste
+2. Klicken Sie auf das **Bearbeiten**-Symbol (Bleistift) auf dem Auftrag
+3. Ändern Sie die Konfiguration im Formular
+4. Klicken Sie auf **Auftrag aktualisieren**, um die Änderungen zu speichern
+
+## Gelbe-Seiten-Aufträge verwalten
+
+### Auftragsliste anzeigen
+
+Navigieren Sie zu **Gelbe Seiten**, um alle Ihre Aufträge zu sehen.
+
+**Auftragslistenübersicht:**
+- **Echtzeit-Statistiken**: Gesamt, laufend, ausstehend, abgeschlossen, fehlgeschlagen mit Erfolgsrate
+- **Auto-Aktualisierung**: Aktualisiert alle 5 Sekunden; mit der Aktualisierungsschaltfläche ein-/ausschalten
+- **Intelligente Pause**: Auto-Aktualisierung pausiert automatisch beim Wechseln von Browser-Tabs und wird beim Zurückkehren fortgesetzt
+
+### Filterung und Suche
+
+Verwenden Sie die Filterleiste, um Aufträge einzugrenzen:
+
+| Filter | Beschreibung |
 |--------|-------------|
-| **Search** | Search by task name or platform |
-| **Status** | Filter by Pending, Running, Completed, Failed, Paused |
-| **Platform** | Filter by directory platform |
-| **Priority** | Filter by High, Medium, Low priority |
+| **Suche** | Nach Auftragsname oder Plattform suchen |
+| **Status** | Filtern nach Ausstehend, Laufend, Abgeschlossen, Fehlgeschlagen, Pausiert |
+| **Plattform** | Nach Verzeichnisplattform filtern |
+| **Priorität** | Nach Hoher, Mittlerer, Niedriger Priorität filtern |
 
-Active filters are displayed as removable chips below the filter bar. Click **Clear Filters** to reset all filters.
+Aktive Filter werden als entfernbare Chips unter der Filterleiste angezeigt. Klicken Sie auf **Filter löschen**, um alle Filter zurückzusetzen.
 
-### Task Status
+### Auftragsstatus
 
-| Status | Description | Action |
+| Status | Beschreibung | Aktion |
 |--------|-------------|--------|
-| **Pending** | Task created but not started | Start, Edit, Delete |
-| **Running** | Task is currently processing | Pause, Stop, View Progress |
-| **Paused** | Temporarily suspended | Resume, Stop |
-| **Completed** | Finished successfully | View Results, Delete |
-| **Failed** | Ended with errors | View Logs, Retry, Delete |
+| **Ausstehend** | Auftrag erstellt, aber nicht gestartet | Starten, Bearbeiten, Löschen |
+| **Laufend** | Auftrag wird gerade verarbeitet | Pausieren, Stoppen, Fortschritt anzeigen |
+| **Pausiert** | Vorübergehend angehalten | Fortsetzen, Stoppen |
+| **Abgeschlossen** | Erfolgreich beendet | Ergebnisse anzeigen, Löschen |
+| **Fehlgeschlagen** | Mit Fehlern beendet | Protokolle anzeigen, Wiederholen, Löschen |
 
-### Task Actions
+### Auftragsaktionen
 
-| Action | Description |
+| Aktion | Beschreibung |
 |--------|-------------|
-| **Start** | Begin task execution |
-| **Stop** | Terminate running task |
-| **Pause** | Temporarily suspend task |
-| **Resume** | Continue paused task |
-| **Edit** | Modify task configuration |
-| **Delete** | Remove task from system |
-| **View Results** | See extracted business data |
+| **Starten** | Auftragsausführung beginnen |
+| **Stoppen** | Laufenden Auftrag beenden |
+| **Pausieren** | Auftrag vorübergehend aussetzen |
+| **Fortsetzen** | Pausierten Auftrag fortsetzen |
+| **Bearbeiten** | Auftragskonfiguration ändern |
+| **Löschen** | Auftrag aus dem System entfernen |
+| **Ergebnisse anzeigen** | Extrahierte Geschäftsdaten anzeigen |
 
-### Cloudflare Protection Alert
+### Cloudflare-Schutz-Warnung
 
-If a task encounters Cloudflare protection, aiFetchly displays a warning notification at the top of the task list. This alert indicates that the target directory has activated anti-bot measures. To resolve this, try enabling local browser, using authenticated accounts, or adding proxies.
+Wenn ein Auftrag auf Cloudflare-Schutz stößt, zeigt aiFetchly eine Warnmeldung oben in der Auftragsliste an. Diese Warnung zeigt an, dass das Zielverzeichnis Anti-Bot-Maßnahmen aktiviert hat. Zur Behebung versuchen Sie, den lokalen Browser zu aktivieren, authentifizierte Konten zu verwenden oder Proxys hinzuzufügen.
 
-### Bulk Operations
+### Massenoperationen
 
-- **Start Multiple**: Select and start multiple paused/failed tasks
-- **Stop Tasks**: Stop multiple running tasks
-- **Delete Tasks**: Remove multiple completed/failed tasks
+- **Mehrere starten**: Mehrere pausierte/fehlgeschlagene Aufträge auswählen und starten
+- **Aufträge stoppen**: Mehrere laufende Aufträge stoppen
+- **Aufträge löschen**: Mehrere abgeschlossene/fehlgeschlagene Aufträge entfernen
 
-## Viewing Results
+## Ergebnisse anzeigen
 
-### Step 1: Access Results
+### Schritt 1: Ergebnisse aufrufen
 
-1. Go to **Yellow Pages** task list
-2. Find the completed task
-3. Click **View Results** to open the results page
+1. Gehen Sie zur **Gelbe Seiten**-Auftragsliste
+2. Finden Sie den abgeschlossenen Auftrag
+3. Klicken Sie auf **Ergebnisse anzeigen**, um die Ergebnisseite zu öffnen
 
-### Step 2: Task Summary Card
+### Schritt 2: Auftragszusammenfassungs-Karte
 
-The results page shows a **Task Summary Card** at the top with:
-- **Platform**: Which directory was scraped
-- **Total Results**: Number of businesses extracted
-- **Status**: Current task status (color-coded)
-- **Created Time**: When the task was created
-- **Keywords**: Displayed as chips for easy review
-- **Location**: The geographic area searched
+Die Ergebnisseite zeigt eine **Auftragszusammenfassungs-Karte** oben mit:
+- **Plattform**: Welches Verzeichnis gescrapt wurde
+- **Gesamtergebnisse**: Anzahl der extrahierten Unternehmen
+- **Status**: Aktueller Auftragsstatus (farbcodiert)
+- **Erstellungszeit**: Wann der Auftrag erstellt wurde
+- **Schlüsselwörter**: Als Chips für einfache Überprüfung angezeigt
+- **Standort**: Das durchsuchte geografische Gebiet
 
-### Step 4: Results Table
+### Schritt 4: Ergebnistabelle
 
-The results table displays comprehensive business information:
+Die Ergebnistabelle zeigt umfassende Geschäftsinformationen:
 
-| Column | Description |
+| Spalte | Beschreibung |
 |--------|-------------|
-| **Business Name** | Name of the business |
-| **Categories** | Business categories (visual chips) |
-| **Email** | Email address with copy button |
-| **Phone** | Phone number with copy button |
-| **Website** | Clickable link to website |
-| **Address** | Full address with map icon |
-| **Ratings** | Star rating with review count |
-| **Description** | Business description |
-| **Hours** | Business hours (if available) |
-| **Year Established** | Year business was founded |
-| **Employee Count** | Number of employees |
-| **Scraped At** | Timestamp of data extraction |
+| **Unternehmensname** | Name des Unternehmens |
+| **Kategorien** | Geschäftskategorien (visuelle Chips) |
+| **E-Mail** | E-Mail-Adresse mit Kopier-Schaltfläche |
+| **Telefon** | Telefonnummer mit Kopier-Schaltfläche |
+| **Website** | Anklickbarer Link zur Website |
+| **Adresse** | Vollständige Adresse mit Karten-Symbol |
+| **Bewertungen** | Sternebewertung mit Rezensionsanzahl |
+| **Beschreibung** | Unternehmensbeschreibung |
+| **Öffnungszeiten** | Geschäftszeiten (falls verfügbar) |
+| **Gründungsjahr** | Jahr der Unternehmensgründung |
+| **Mitarbeiterzahl** | Anzahl der Mitarbeiter |
+| **Extrahiert am** | Zeitstempel der Datenextraktion |
 
-### Step 5: Interact with Results
+### Schritt 5: Mit Ergebnissen interagieren
 
-**Individual Actions:**
-- **Copy Email**: Copy email address to clipboard
-- **Copy Phone**: Copy phone number to clipboard
-- **Open Website**: Open business website in new tab
-- **View Details**: See full business record in modal
+**Einzelaktionen:**
+- **E-Mail kopieren**: E-Mail-Adresse in die Zwischenablage kopieren
+- **Telefon kopieren**: Telefonnummer in die Zwischenablage kopieren
+- **Website öffnen**: Unternehmenswebsite in neuem Tab öffnen
+- **Details anzeigen**: Vollständigen Geschäftseintrag im Modal anzeigen
 
-**Search & Filter:**
-- **Search**: Filter by business name, email, phone, website, or address
-- **Category Filter**: Filter results by business categories
-- **Pagination**: Navigate through large result sets
+**Suche & Filter:**
+- **Suche**: Nach Unternehmensname, E-Mail, Telefon, Website oder Adresse filtern
+- **Kategorie-Filter**: Ergebnisse nach Geschäftskategorien filtern
+- **Paginierung**: Durch große Ergebnismengen navigieren
 
-## Exporting Results
+## Ergebnisse exportieren
 
-### Export as CSV
+### Als CSV exportieren
 
-1. Click **Export** button in the results view
-2. File downloads automatically in CSV format
-3. Filename includes task ID and date
+1. Klicken Sie auf **Exportieren** in der Ergebnisansicht
+2. Datei wird automatisch im CSV-Format heruntergeladen
+3. Dateiname enthält Auftrags-ID und Datum
 
-**Exported Data Includes:**
-- Business name and categories
-- Contact details (email, phone, website)
-- Address and location
-- Ratings and reviews
-- Business hours
-- Additional metadata
+**Exportierte Daten enthalten:**
+- Unternehmensname und Kategorien
+- Kontaktdetails (E-Mail, Telefon, Website)
+- Adresse und Standort
+- Bewertungen und Rezensionen
+- Geschäftszeiten
+- Zusätzliche Metadaten
 
-## Best Practices
+## Bewährte Praktiken
 
-### 1. Keyword Strategy
+### 1. Schlüsselwort-Strategie
 
-- **Be Specific**: Use specific business types instead of generic terms
-  - ❌ "services"
-  - ✅ "marketing agency" or "plumbing services"
+- **Seien Sie spezifisch**: Verwenden Sie spezifische Geschäftstypen anstelle generischer Begriffe
+  - Falsch: "Dienstleistungen"
+  - Richtig: "Marketingagentur" oder "Klempner-Dienstleistungen"
 
-- **Use Synonyms**: Try different terms for the same business type
-  - "restaurant" and "eatery"
-  - "plumber" and "plumbing service"
+- **Synonyme verwenden**: Verschiedene Begriffe für denselben Geschäftstyp ausprobieren
+  - "Restaurant" und "Gaststätte"
+  - "Klempner" und "Sanitär-Service"
 
-### 2. Location Targeting
+### 2. Standort-Targeting
 
-- **Be Precise**: Use "City, State" format
-  - ✅ "Chicago, IL"
-  - ✅ "Los Angeles, CA"
-  - ❌ "Chicago" (might return ambiguous results)
+- **Präzise sein**: Verwenden Sie das Format "Stadt, Bundesland"
+  - Richtig: "Berlin, BE"
+  - Richtig: "München, BY"
+  - Falsch: "Berlin" (kann mehrdeutige Ergebnisse liefern)
 
-- **Start Broad, Then Narrow**:
-  1. Search in a large city (thousands of results)
-  2. Export results
-  3. Search in specific neighborhoods
+- **Breit beginnen, dann eingrenzen**:
+  1. In einer großen Stadt suchen (Tausende Ergebnisse)
+  2. Ergebnisse exportieren
+  3. In spezifischen Stadtteilen suchen
 
-### 3. Performance Optimization
+### 3. Leistungsoptimierung
 
-**For Small Tasks** (< 100 pages):
-- Concurrency: 1-3
-- Delay: 2000ms
-- No proxy needed
+**Für kleine Aufträge** (< 100 Seiten):
+- Gleichzeitigkeit: 1-3
+- Verzögerung: 2000ms
+- Kein Proxy erforderlich
 
-**For Medium Tasks** (100-500 pages):
-- Concurrency: 3-5
-- Delay: 2000ms
-- Use 2-3 proxies
+**Für mittlere Aufträge** (100-500 Seiten):
+- Gleichzeitigkeit: 3-5
+- Verzögerung: 2000ms
+- 2-3 Proxys verwenden
 
-**For Large Tasks** (500+ pages):
-- Concurrency: 5-10
-- Delay: 2000ms
-- Use 5+ proxies
-- Consider splitting into multiple tasks
+**Für große Aufträge** (500+ Seiten):
+- Gleichzeitigkeit: 5-10
+- Verzögerung: 2000ms
+- 5+ Proxys verwenden
+- Aufteilung in mehrere Aufträge in Betracht ziehen
 
-### 4. Avoiding Blocks
+### 4. Blockaden vermeiden
 
-1. **Respect Rate Limits**: Don't exceed recommended concurrency
-2. **Use Delays**: Keep request delays at 2000ms or higher
-3. **Rotate Proxies**: Distribute requests across multiple IPs
-4. **Use Accounts**: Authenticated scraping has higher limits
-5. **Take Breaks**: Don't run large tasks continuously
-6. **Enable AI Support**: AI can help handle anti-bot protections
-7. **Use Local Browser**: Real browser fingerprint reduces detection risk
+1. **Ratenlimits beachten**: Empfohlene Gleichzeitigkeit nicht überschreiten
+2. **Verzögerungen verwenden**: Anfrageverzögerungen bei 2000ms oder höher halten
+3. **Proxys rotieren**: Anfragen über mehrere IPs verteilen
+4. **Konten verwenden**: Authentifiziertes Scraping hat höhere Limits
+5. **Pausen einlegen**: Keine großen Aufträge kontinuierlich ausführen
+6. **KI-Unterstützung aktivieren**: KI kann helfen, Anti-Bot-Schutz zu behandeln
+7. **Lokalen Browser verwenden**: Echter Browser-Fingerabdruck reduziert Erkennungsrisiko
 
-### 5. Data Quality
+### 5. Datenqualität
 
-- **Verify Results**: Spot-check extracted data for accuracy
-- **Filter Categories**: Use category filters to remove irrelevant results
-- **Cross-Reference**: Combine data from multiple platforms
-- **Regular Updates**: Business information changes, refresh data regularly
+- **Ergebnisse verifizieren**: Stichprobenartig extrahierte Daten auf Genauigkeit überprüfen
+- **Kategorien filtern**: Kategoriefilter verwenden, um irrelevante Ergebnisse zu entfernen
+- **Abgleichen**: Daten von mehreren Plattformen kombinieren
+- **Regelmäßige Aktualisierung**: Geschäftsinformationen ändern sich, Daten regelmäßig aktualisieren
 
-## Platform-Specific Tips
+## Plattform-spezifische Tipps
 
 ### YellowPages.com (USA)
 
-**Strengths:**
-- Comprehensive business listings
-- Accurate contact information
-- Good coverage across all states
+**Stärken:**
+- Umfassende Geschäftseinträge
+- Akkurate Kontaktinformationen
+- Gute Abdeckung über alle Bundesstaaten
 
-**Tips:**
-- Use city + state for best results
-- Includes business hours and services
-- Good for B2C businesses
+**Tipps:**
+- Stadt + Bundesland für beste Ergebnisse verwenden
+- Enthält Geschäftszeiten und Dienstleistungen
+- Gut für B2C-Unternehmen
 
 ### Yelp.com (USA)
 
-**Strengths:**
-- Rich review data
-- Photos and detailed descriptions
-- User-generated content
+**Stärken:**
+- Reichhaltige Rezensionsdaten
+- Fotos und detaillierte Beschreibungen
+- Benutzererstellte Inhalte
 
-**Tips:**
-- Stricter rate limits (use 3000ms delay)
-- Great for service businesses
-- Review data helps qualify leads
+**Tipps:**
+- Strengere Ratenlimits (3000ms Verzögerung verwenden)
+- Hervorragend für Dienstleistungsunternehmen
+- Rezensionsdaten helfen bei der Lead-Qualifizierung
 
-### YellowPages.ca (Canada)
+### YellowPages.ca (Kanada)
 
-**Strengths:**
-- Canada-specific listings
-- Canadian business verification
+**Stärken:**
+- Kanada-spezifische Einträge
+- Kanadische Geschäftsverifizierung
 
-**Tips:**
-- Essential for Canadian market
-- Use "City, Province" format
+**Tipps:**
+- Unverzichtbar für den kanadischen Markt
+- Format "Stadt, Provinz" verwenden
 
-### YellowPages.com.sg (Singapore)
+### YellowPages.com.sg (Singapur)
 
-**Strengths:**
-- Singapore business directory
-- Comprehensive local listings
+**Stärken:**
+- Singapurer Geschäftsverzeichnis
+- Umfassende lokale Einträge
 
-**Tips:**
-- Use city or district names for location
-- Good for Southeast Asian market research
+**Tipps:**
+- Stadt- oder Bezirksnamen für den Standort verwenden
+- Gut für südostasiatische Marktforschung
 
 ### 192.com (UK)
 
-**Strengths:**
-- UK-specific business and people directory
-- Good coverage across United Kingdom
+**Stärken:**
+- UK-spezifisches Geschäfts- und Personenverzeichnis
+- Gute Abdeckung im gesamten Vereinigten Königreich
 
-**Tips:**
-- Use UK city and postcode format
-- Good for UK B2B outreach
+**Tipps:**
+- UK-Stadt- und Postleitzahlformat verwenden
+- Gut für UK-B2B-Akquise
 
-### 11880.com (Germany)
+### 11880.com (Deutschland)
 
-**Strengths:**
-- German business directory
-- Handles cookie consent automatically
+**Stärken:**
+- Deutsches Geschäftsverzeichnis
+- Behandelt Cookie-Einwilligungen automatisch
 
-**Tips:**
-- Use German city names for best results
-- Good for DACH market research
+**Tipps:**
+- Deutsche Stadtnamen für beste Ergebnisse verwenden
+- Gut für DACH-Marktforschung
 
-### Gelbeseiten.de (Germany)
+### Gelbeseiten.de (Deutschland)
 
-**Strengths:**
-- German Yellow Pages
-- Comprehensive business listings in Germany
-- Handles complex cookie consent dialogs
+**Stärken:**
+- Deutsche Gelbe Seiten
+- Umfassende Geschäftseinträge in Deutschland
+- Behandelt komplexe Cookie-Einwilligungs-Dialoge
 
-**Tips:**
-- Use German keywords for best results
-- Essential for German market
+**Tipps:**
+- Deutsche Schlüsselwörter für beste Ergebnisse verwenden
+- Unverzichtbar für den deutschen Markt
 
-### PagesJaunes.fr (France)
+### PagesJaunes.fr (Frankreich)
 
-**Strengths:**
-- French Yellow Pages
-- Phone number reveal feature
-- Comprehensive French business listings
+**Stärken:**
+- Französische Gelbe Seiten
+- Telefonnummer-Anzeigefunktion
+- Umfassende französische Geschäftseinträge
 
-**Tips:**
-- **Location is required** for this platform
-- Use French city names and postal codes
-- Good for French market outreach
+**Tipps:**
+- **Standort ist erforderlich** für diese Plattform
+- Französische Stadtnamen und Postleitzahlen verwenden
+- Gut für französische Markterschließung
 
-### PagineGialle.it (Italy)
+### PagineGialle.it (Italien)
 
-**Strengths:**
-- Italian Yellow Pages
-- Comprehensive Italian business directory
-- Handles cookie consent automatically
+**Stärken:**
+- Italienische Gelbe Seiten
+- Umfassendes italienisches Geschäftsverzeichnis
+- Behandelt Cookie-Einwilligungen automatisch
 
-**Tips:**
-- Use Italian city names for location
-- Good for Italian market research
+**Tipps:**
+- Italienische Stadtnamen für den Standort verwenden
+- Gut für italienische Marktforschung
 
 ### iTownPage (Japan)
 
-**Strengths:**
-- Japanese business directory
-- Handles dialog popups automatically
-- Japanese cookie consent management
+**Stärken:**
+- Japanisches Geschäftsverzeichnis
+- Behandelt Dialog-Popups automatisch
+- Japanische Cookie-Einwilligungsverwaltung
 
-**Tips:**
-- Use Japanese keywords for best results
-- Essential for Japanese local business discovery
-- Use 2500ms delay (60 req/hour rate limit)
+**Tipps:**
+- Japanische Schlüsselwörter für beste Ergebnisse verwenden
+- Unverzichtbar für die Entdeckung japanischer lokaler Unternehmen
+- 2500ms Verzögerung verwenden (60 Anf./Std. Ratenlimit)
 
 ### uSonar Yellow Page (Japan)
 
-**Strengths:**
-- Alternative Japanese business directory
-- Good for cross-referencing with iTownPage
+**Stärken:**
+- Alternatives japanisches Geschäftsverzeichnis
+- Gut zum Abgleich mit iTownPage
 
-**Tips:**
-- Use alongside iTownPage for broader coverage
-- Use 2500ms delay
+**Tipps:**
+- Zusammen mit iTownPage für breitere Abdeckung verwenden
+- 2500ms Verzögerung verwenden
 
-### KoreaLocalPages (South Korea)
+### KoreaLocalPages (Südkorea)
 
-**Strengths:**
-- Korean local business directory
-- Good for Korean market entry research
+**Stärken:**
+- Koreanisches lokales Geschäftsverzeichnis
+- Gut für Markteintrittsrecherche in Südkorea
 
-**Tips:**
-- Use Korean keywords for best results
-- Use 2500ms delay (60 req/hour rate limit)
-- Good for discovering Korean businesses
+**Tipps:**
+- Koreanische Schlüsselwörter für beste Ergebnisse verwenden
+- 2500ms Verzögerung verwenden (60 Anf./Std. Ratenlimit)
+- Gut zur Entdeckung koreanischer Unternehmen
 
-## Integration with Email Marketing
+## Integration mit E-Mail-Marketing
 
-Extracted business emails can be used directly in email campaigns:
+Extrahierte Geschäfts-E-Mails können direkt in E-Mail-Kampagnen verwendet werden:
 
-1. **Export Results** from Yellow Pages task
-2. **Navigate to Email Marketing** → **Send Bulk Emails**
-3. **Import CSV** with extracted emails
-4. **Create Template** for your outreach
-5. **Launch Campaign**
+1. **Ergebnisse exportieren** aus dem Gelbe-Seiten-Auftrag
+2. Navigieren Sie zu **E-Mail-Marketing** → **Massen-E-Mails senden**
+3. **CSV importieren** mit extrahierten E-Mails
+4. **Vorlage erstellen** für Ihre Akquise
+5. **Kampagne starten**
 
-For detailed instructions, see [Batch Email Sending](./batch-email-sending).
+Ausführliche Anleitungen finden Sie unter [Batch-E-Mail-Versand](./batch-email-sending).
 
-## Troubleshooting
+## Fehlerbehebung
 
-### Task Status: "Failed"
+### Auftragsstatus: "Fehlgeschlagen"
 
-**Possible causes:**
-- All proxies failed
-- Network connectivity issues
-- Platform blocked requests
-- Invalid keywords or location
+**Mögliche Ursachen:**
+- Alle Proxys fehlgeschlagen
+- Netzwerkverbindungsprobleme
+- Plattform hat Anfragen blockiert
+- Ungültige Schlüsselwörter oder Standort
 
-**Solutions:**
-1. Check proxy health
-2. Verify internet connection
-3. Reduce concurrency and increase delay
-4. Try different keywords/location
-5. Enable account authentication
-6. Enable AI Support for smarter error handling
-7. Use Local Browser to bypass anti-bot protections
+**Lösungen:**
+1. Proxy-Gesundheit überprüfen
+2. Internetverbindung überprüfen
+3. Gleichzeitigkeit reduzieren und Verzögerung erhöhen
+4. Andere Schlüsselwörter/Standort versuchen
+5. Konto-Authentifizierung aktivieren
+6. KI-Unterstützung für intelligentere Fehlerbehandlung aktivieren
+7. Lokalen Browser verwenden, um Anti-Bot-Schutz zu umgehen
 
-### No Results Returned
+### Keine Ergebnisse zurückgegeben
 
-**Possible causes:**
-- Keywords too specific
-- Location has no matching businesses
-- Platform returned no results
+**Mögliche Ursachen:**
+- Schlüsselwörter zu spezifisch
+- Standort hat keine passenden Unternehmen
+- Plattform hat keine Ergebnisse zurückgegeben
 
-**Solutions:**
-1. Try broader keywords
-2. Verify location spelling
-3. Check if businesses exist on the platform manually
-4. Try nearby locations
+**Lösungen:**
+1. Breitere Schlüsselwörter versuchen
+2. Standort-Schreibweise überprüfen
+3. Manuell prüfen, ob Unternehmen auf der Plattform existieren
+4. Nahegelegene Standorte versuchen
 
-### Slow Processing
+### Langsame Verarbeitung
 
-**Possible causes:**
-- High max pages setting
-- Conservative delay settings
-- Platform rate limits
+**Mögliche Ursachen:**
+- Hohe Einstellung für maximale Seiten
+- Konservative Verzögerungseinstellungen
+- Plattform-Ratenlimits
 
-**Solutions:**
-1. Reduce max pages
-2. Slightly reduce delay (with caution)
-3. Increase concurrency (if using proxies)
+**Lösungen:**
+1. Maximale Seiten reduzieren
+2. Verzögerung leicht reduzieren (mit Vorsicht)
+3. Gleichzeitigkeit erhöhen (bei Proxy-Verwendung)
 
-### Incomplete Data
+### Unvollständige Daten
 
-**Possible causes:**
-- Business listings missing information
-- Platform layout changes
+**Mögliche Ursachen:**
+- Geschäftseinträge mit fehlenden Informationen
+- Plattform-Layout-Änderungen
 
-**Solutions:**
-1. Some businesses naturally lack certain data
-2. Cross-reference with other platforms
-3. Report platform issues to support
+**Lösungen:**
+1. Einige Unternehmen verfügen natürlich über bestimmte Daten nicht
+2. Mit anderen Plattformen abgleichen
+3. Plattform-Probleme an den Support melden
 
-## Advanced Workflows
+## Erweiterte Workflows
 
-### Workflow 1: Local Business Outreach
+### Workflow 1: Lokale Unternehmens-Akquise
 
-1. **Search** for businesses in your target location
-2. **Filter** by category and ratings
-3. **Export** high-quality leads
-4. **Import** to email marketing
-5. **Create personalized campaign** using AI Email Writer
+1. **Suchen** nach Unternehmen an Ihrem Zielstandort
+2. **Filtern** nach Kategorie und Bewertungen
+3. **Exportieren** von hochwertigen Leads
+4. **Importieren** in E-Mail-Marketing
+5. **Personalisierte Kampagne erstellen** mit dem KI-E-Mail-Writer
 
-### Workflow 2: Competitive Analysis
+### Workflow 2: Wettbewerbsanalyse
 
-1. **Scrape competitors** in multiple locations
-2. **Analyze ratings and reviews**
-3. **Identify service gaps**
-4. **Target underserved areas**
+1. **Wettbewerber scrapen** an mehreren Standorten
+2. **Bewertungen und Rezensionen analysieren**
+3. **Service-Lücken identifizieren**
+4. **Unterversorgte Gebiete gezielt ansprechen**
 
-### Workflow 3: Market Research
+### Workflow 3: Marktforschung
 
-1. **Extract** all businesses in an industry
-2. **Analyze** distribution and patterns
-3. **Identify** market opportunities
-4. **Plan** expansion strategy
+1. **Alle Unternehmen** einer Branche extrahieren
+2. **Verteilung und Muster analysieren**
+3. **Marktopportunitäten identifizieren**
+4. **Expansionsstrategie planen**
 
-## Comparison: Search Engines vs. Yellow Pages
+## Vergleich: Suchmaschinen vs. Gelbe Seiten
 
-| Feature | Search Engines | Yellow Pages |
+| Funktion | Suchmaschinen | Gelbe Seiten |
 |---------|---------------|--------------|
-| **Best For** | Finding websites, general research | Local businesses, verified listings |
-| **Data Quality** | Varies | Structured, verified |
-| **Contact Info** | Requires extraction | Pre-extracted emails/phones |
-| **Geographic Targeting** | Keyword-based | Location-based |
-| **Ratings/Reviews** | Sometimes | Always (Yelp) |
-| **Business Hours** | Rarely | Commonly |
+| **Am besten für** | Websites finden, allgemeine Recherche | Lokale Unternehmen, verifizierte Einträge |
+| **Datenqualität** | Variiert | Strukturiert, verifiziert |
+| **Kontaktinformationen** | Erfordert Extraktion | Vorab extrahierte E-Mails/Telefonnummern |
+| **Geografisches Targeting** | Schlüsselwortbasiert | Standortbasiert |
+| **Bewertungen/Rezensionen** | Manchmal | Immer (Yelp) |
+| **Geschäftszeiten** | Selten | Häufig |
 
-:::tip Use Both Strategies
+:::tip Beide Strategien verwenden
 
-Combine both approaches:
-1. Use **Search Engines** to find industry-specific websites
-2. Use **Yellow Pages** to find local businesses
-3. Cross-reference for comprehensive coverage
+Kombinieren Sie beide Ansätze:
+1. **Suchmaschinen** verwenden, um branchenspezifische Websites zu finden
+2. **Gelbe Seiten** verwenden, um lokale Unternehmen zu finden
+3. Für umfassende Abdeckung abgleichen
 
 :::
 
-## Next Steps
+## Nächste Schritte
 
-- [Learn about email extraction](./contact-extraction)
-- [Set up AI-powered email campaigns](../ai-outreach/ai-email-writer)
-- [Configure task scheduling](../automation/task-scheduling)
+- [E-Mail-Extraktion kennenlernen](./contact-extraction)
+- [KI-gestützte E-Mail-Kampagnen einrichten](../ai-outreach/ai-email-writer)
+- [Aufgabenplanung konfigurieren](../automation/task-scheduling)
 
 ---
 
-**Ready to find local businesses?** Start with a small task to familiarize yourself with the process, then scale up your operations.
+**Bereit, lokale Unternehmen zu finden?** Beginnen Sie mit einem kleinen Auftrag, um sich mit dem Prozess vertraut zu machen, und skalieren Sie dann Ihre Aktivitäten.

@@ -1,688 +1,688 @@
 ---
 id: yellow-pages
-title: Yellow Pages Scraping
-sidebar_label: Yellow Pages
-description: Extract business information from Yellow Pages, Yelp, and other online directories worldwide.
+title: 黄页抓取
+sidebar_label: 黄页
+description: 从黄页、Yelp 和其他全球在线目录中提取商业信息。
 ---
 
-# Yellow Pages Scraping
+# 黄页抓取
 
-aiFetchly's Yellow Pages scraping feature allows you to extract comprehensive business information from multiple online directories. Collect leads from local business listings with detailed contact information, ratings, reviews, and more. Powered by AI support, you can enhance scraping accuracy and generate related keywords automatically.
+aiFetchly 的黄页抓取功能允许您从多个在线目录中提取全面的商业信息。通过详细的联系信息、评分、评论等，从本地商家列表中收集潜在客户。借助 AI 支持，您可以提高抓取准确性并自动生成相关关键词。
 
-## Supported Directories
+## 支持的目录
 
-| Directory | Region | Language | Rate Limit | Features |
-|-----------|--------|----------|------------|----------|
-| **YellowPages.com** | USA | English | 100 req/hour | Business details, ratings, reviews, hours |
-| **Yelp.com** | USA | English | 60 req/hour | Reviews, ratings, photos, detailed extraction |
-| **YellowPages.ca** | Canada | English | 100 req/hour | Canadian business directory, address parsing |
-| **YellowPages.com.sg** | Singapore | English | 100 req/hour | Singapore business listings |
-| **192.com** | UK | English | 100 req/hour | UK-specific business directory |
-| **11880.com** | Germany | German | 100 req/hour | German directory, cookie consent handling |
-| **Gelbeseiten.de** | Germany | German | 100 req/hour | German Yellow Pages, shadow root handling |
-| **PagesJaunes.fr** | France | French | 100 req/hour | French Yellow Pages, location required |
-| **PagineGialle.it** | Italy | Italian | 100 req/hour | Italian Yellow Pages, cookie consent |
-| **iTownPage** | Japan | Japanese | 60 req/hour | Japanese directory, dialog handling |
-| **uSonar Yellow Page** | Japan | Japanese | 60 req/hour | Japanese business listings |
-| **KoreaLocalPages** | South Korea | Korean | 60 req/hour | Korean local business directory |
+| 目录 | 地区 | 语言 | 速率限制 | 功能 |
+|------|------|------|----------|------|
+| **YellowPages.com** | 美国 | 英语 | 100 次/小时 | 商家详情、评分、评论、营业时间 |
+| **Yelp.com** | 美国 | 英语 | 60 次/小时 | 评论、评分、照片、详细提取 |
+| **YellowPages.ca** | 加拿大 | 英语 | 100 次/小时 | 加拿大商家目录、地址解析 |
+| **YellowPages.com.sg** | 新加坡 | 英语 | 100 次/小时 | 新加坡商家列表 |
+| **192.com** | 英国 | 英语 | 100 次/小时 | 英国专属商家目录 |
+| **11880.com** | 德国 | 德语 | 100 次/小时 | 德国目录、Cookie 同意处理 |
+| **Gelbeseiten.de** | 德国 | 德语 | 100 次/小时 | 德国黄页、Shadow DOM 处理 |
+| **PagesJaunes.fr** | 法国 | 法语 | 100 次/小时 | 法国黄页、需要提供地点 |
+| **PagineGialle.it** | 意大利 | 意大利语 | 100 次/小时 | 意大利黄页、Cookie 同意处理 |
+| **iTownPage** | 日本 | 日语 | 60 次/小时 | 日本目录、对话框处理 |
+| **uSonar Yellow Page** | 日本 | 日语 | 60 次/小时 | 日本商家列表 |
+| **KoreaLocalPages** | 韩国 | 韩语 | 60 次/小时 | 韩国本地商家目录 |
 
-:::tip Rate Limits
+:::tip 速率限制
 
-Each directory has specific rate limits. aiFetchly automatically manages request delays to comply with these limits.
-
-:::
-
-:::info Platform Information
-
-When creating a task, select a platform from the dropdown. As you select each platform, you'll see a sidebar showing:
-- Country/Language support
-- Rate limits
-- Authentication requirements
-- Whether location is required
+每个目录都有特定的速率限制。aiFetchly 会自动管理请求延迟以遵守这些限制。
 
 :::
 
-## Creating a Yellow Pages Task
+:::info 平台信息
 
-### Step 1: Navigate to Yellow Pages
-
-1. Click **Yellow Pages** in the left navigation menu
-2. You'll see the Yellow Pages task list
-3. Click **Create New Task** button
-
-### Step 2: Basic Information
-
-Enter the following required information:
-
-#### Task Name
-
-- Give your task a descriptive name
-- Example: "Restaurants in Chicago" or "Plumbers in Miami"
-
-#### Platform Selection
-
-Select the directory you want to scrape from the dropdown:
-
-**Americas:**
-- YellowPages.com (USA)
-- Yelp.com (USA)
-- YellowPages.ca (Canada)
-
-**Europe:**
-- 192.com (UK)
-- 11880.com (Germany)
-- Gelbeseiten.de (Germany)
-- PagesJaunes.fr (France) — location required
-- PagineGialle.it (Italy)
-
-**Asia-Pacific:**
-- YellowPages.com.sg (Singapore)
-- iTownPage (Japan)
-- uSonar Yellow Page (Japan)
-- KoreaLocalPages (South Korea)
-
-#### Keywords
-
-Enter your search keywords:
-- **Format**: Comma-separated or one per line
-- **Examples**: `restaurant, plumber, dentist, marketing agency`
-- **Tip**: Use specific business types or categories for better results
-
-**AI Query Keywords** (Optional):
-- Click the **AI Query Keywords** button (purple, robot icon) inside the keywords field
-- aiFetchly uses AI to generate related search terms based on your existing keywords
-- Generated keywords are combined with your originals, duplicates removed automatically
-- If no keywords are entered, AI generates suggestions from a default seed term
-
-#### Location
-
-Enter the geographic location for your search:
-- **Examples**: `New York, NY`, `Los Angeles, CA`, `Miami, Florida`
-- **Format**: City, State or City, Region
-- **Required**: For most platforms
-
-### Step 3: Performance Settings
-
-Configure how the scraping task runs:
-
-#### Max Pages
-
-- **Range**: 1-100 pages
-- **Default**: 10 pages
-- **Recommendation**: Start with 10-20 pages for testing
-
-**What this means:**
-- Each page typically contains 20-30 business listings
-- 10 pages = 200-300 potential leads
-- More pages = longer processing time
-
-#### Concurrency
-
-- **Range**: 1-10 concurrent requests
-- **Default**: 2 concurrent requests
-- **Higher values**: Faster but higher risk of being blocked
-
-:::warning Concurrency Guidelines
-
-- Start with 1-3 concurrent requests
-- Increase gradually if using proxies
-- Respect platform rate limits
+创建任务时，从下拉菜单中选择一个平台。当您选择每个平台时，您会看到一个侧边栏，显示：
+- 国家/语言支持
+- 速率限制
+- 认证要求
+- 是否需要提供地点
 
 :::
 
-#### Delay Between Requests
+## 创建黄页任务
 
-- **Range**: 0-10,000 milliseconds
-- **Default**: 2000ms (2 seconds)
-- **Purpose**: Prevents rate limiting and blocking
+### 步骤 1：进入黄页
 
-**Recommended delays:**
-- **Yelp.com**: 3000ms (stricter rate limits)
-- **Japanese platforms** (iTownPage, uSonar): 2500ms
-- **Korean platforms** (KoreaLocalPages): 2500ms
-- **All others**: 2000ms
+1. 点击左侧导航菜单中的 **Yellow Pages**
+2. 您将看到黄页任务列表
+3. 点击 **Create New Task** 按钮
 
-### Step 4: Browser Configuration
+### 步骤 2：基本信息
 
-#### Headless Mode
+输入以下必填信息：
 
-- **Enabled** (default): Browser runs invisibly (faster, recommended)
-- **Disabled**: Browser window visible (useful for debugging)
+#### 任务名称
 
-**Recommendation**: Keep headless mode enabled for production tasks.
+- 为您的任务起一个描述性名称
+- 示例："芝加哥的餐厅" 或 "迈阿密的水管工"
 
-#### AI Support
+#### 平台选择
 
-Toggle **AI Support** to enable AI-powered scraping assistance:
+从下拉菜单中选择要抓取的目录：
 
-- When enabled, AI helps improve scraping accuracy and handle edge cases
-- Enabled by default if your account has AI features enabled
-- Look for the purple robot icon next to the toggle
+**美洲：**
+- YellowPages.com（美国）
+- Yelp.com（美国）
+- YellowPages.ca（加拿大）
 
-#### Local Browser
+**欧洲：**
+- 192.com（英国）
+- 11880.com（德国）
+- Gelbeseiten.de（德国）
+- PagesJaunes.fr（法国）— 需要提供地点
+- PagineGialle.it（意大利）
 
-Toggle **Use Local Browser** to use your local Chrome or Firefox installation for scraping:
+**亚太地区：**
+- YellowPages.com.sg（新加坡）
+- iTownPage（日本）
+- uSonar Yellow Page（日本）
+- KoreaLocalPages（韩国）
 
-1. Toggle **Local Browser** to enable
-2. Select **Chrome** or **Firefox** from the dropdown
-3. **Benefits**: Lower detection rates, better success with anti-bot protections
+#### 关键词
 
-### Step 5: Optional Features
+输入您的搜索关键词：
+- **格式**：以逗号分隔或每行一个
+- **示例**：`restaurant, plumber, dentist, marketing agency`
+- **提示**：使用特定的商家类型或类别可获得更好的结果
 
-#### Account Selection
+**AI 查询关键词**（可选）：
+- 点击关键词字段内的 **AI Query Keywords** 按钮（紫色，机器人图标）
+- aiFetchly 使用 AI 根据您现有的关键词生成相关搜索词
+- 生成的关键词与原始关键词合并，自动去除重复项
+- 如果未输入关键词，AI 将从默认种子词生成建议
 
-Some platforms support authenticated scraping:
+#### 地点
 
-1. Toggle **Use Account** if available
-2. Select an account from your saved accounts
-3. Benefits:
-   - Higher success rate
-   - Access to member-only content
-   - Reduced risk of blocking
+输入搜索的地理位置：
+- **示例**：`New York, NY`、`Los Angeles, CA`、`Miami, Florida`
+- **格式**：城市，州 或 城市，地区
+- **必填**：适用于大多数平台
 
-#### Proxy Configuration
+### 步骤 3：性能设置
 
-Add proxies for large-scale scraping:
+配置抓取任务的运行方式：
 
-1. Toggle **Use Proxy**
-2. Click **Choose Proxy**
-3. Select one or more proxies from your list
-4. Click **Confirm**
+#### 最大页数
 
-:::tip When to Use Proxies
+- **范围**：1-100 页
+- **默认值**：10 页
+- **建议**：测试时从 10-20 页开始
 
-Use proxies when:
-- Scraping more than 50 pages
-- Running concurrent tasks
-- Previous tasks were blocked
+**这意味着：**
+- 每页通常包含 20-30 条商家列表
+- 10 页 = 200-300 个潜在客户
+- 页数越多 = 处理时间越长
 
-:::
+#### 并发数
 
-### Step 6: Scheduling (Optional)
+- **范围**：1-10 个并发请求
+- **默认值**：2 个并发请求
+- **较高值**：速度更快，但被封锁的风险更高
 
-#### One-Time Scheduling
+:::warning 并发指南
 
-Set a specific date and time for the task to run:
-- Click **Schedule**
-- Select date and time
-- Task runs automatically at scheduled time
-
-#### Recurring Scheduling
-
-Set up automated recurring tasks:
-
-**Preset Options:**
-- Every 15 minutes
-- Every 30 minutes
-- Every hour
-- Every 2 hours
-- Every 6 hours
-- Every 12 hours
-- Daily
-- Weekly
-- Monthly
-
-**Custom Scheduling:**
-- Use cron expressions for advanced scheduling
-- Example: `0 9 * * 1-5` (9 AM Monday-Friday)
-
-**Schedule Preview:**
-- Shows next run time
-- Displays configuration summary
-
-### Step 7: Create Task
-
-Click one of the action buttons in the sidebar:
-
-- **Create & Start Task** (primary button): Creates the task and starts execution immediately
-- **Create Task Only**: Saves the task without running it — status will be "Pending"
-
-:::tip Task Preview
-
-As you fill in the form, the **Task Preview** sidebar shows a live summary of your configuration including task name, platform, keywords count, location, max pages, concurrency, headless mode, and local browser selection. Review this before creating the task.
+- 从 1-3 个并发请求开始
+- 如果使用代理，逐步增加
+- 遵守平台速率限制
 
 :::
 
-### Editing a Task
+#### 请求间隔
 
-To modify an existing task:
+- **范围**：0-10,000 毫秒
+- **默认值**：2000 毫秒（2 秒）
+- **目的**：防止速率限制和封锁
 
-1. Go to **Yellow Pages** task list
-2. Click the **Edit** (pencil) icon on the task
-3. Modify the configuration in the form
-4. Click **Update Task** to save changes
+**建议延迟：**
+- **Yelp.com**：3000 毫秒（速率限制更严格）
+- **日本平台**（iTownPage、uSonar）：2500 毫秒
+- **韩国平台**（KoreaLocalPages）：2500 毫秒
+- **其他所有平台**：2000 毫秒
 
-## Managing Yellow Pages Tasks
+### 步骤 4：浏览器配置
 
-### View Task List
+#### 无头模式
 
-Navigate to **Yellow Pages** to see all your tasks.
+- **启用**（默认）：浏览器在后台运行（更快，推荐）
+- **禁用**：浏览器窗口可见（适用于调试）
 
-**Task List Overview:**
-- **Real-time Statistics**: Total, running, pending, completed, failed tasks with success rate
-- **Auto-refresh**: Updates every 5 seconds; toggle on/off with the refresh button
-- **Smart Pause**: Auto-refresh pauses automatically when you switch browser tabs and resumes when you return
+**建议**：在生产任务中保持启用无头模式。
 
-### Filtering and Search
+#### AI 支持
 
-Use the filter bar to narrow down tasks:
+切换 **AI Support** 以启用 AI 驱动的抓取辅助：
 
-| Filter | Description |
-|--------|-------------|
-| **Search** | Search by task name or platform |
-| **Status** | Filter by Pending, Running, Completed, Failed, Paused |
-| **Platform** | Filter by directory platform |
-| **Priority** | Filter by High, Medium, Low priority |
+- 启用后，AI 有助于提高抓取准确性并处理边缘情况
+- 如果您的账户已启用 AI 功能，则默认开启
+- 查看切换开关旁边的紫色机器人图标
 
-Active filters are displayed as removable chips below the filter bar. Click **Clear Filters** to reset all filters.
+#### 本地浏览器
 
-### Task Status
+切换 **Use Local Browser** 以使用您本地安装的 Chrome 或 Firefox 进行抓取：
 
-| Status | Description | Action |
-|--------|-------------|--------|
-| **Pending** | Task created but not started | Start, Edit, Delete |
-| **Running** | Task is currently processing | Pause, Stop, View Progress |
-| **Paused** | Temporarily suspended | Resume, Stop |
-| **Completed** | Finished successfully | View Results, Delete |
-| **Failed** | Ended with errors | View Logs, Retry, Delete |
+1. 切换 **Local Browser** 以启用
+2. 从下拉菜单中选择 **Chrome** 或 **Firefox**
+3. **优势**：更低的检测率，更好地应对反爬虫保护
 
-### Task Actions
+### 步骤 5：可选功能
 
-| Action | Description |
-|--------|-------------|
-| **Start** | Begin task execution |
-| **Stop** | Terminate running task |
-| **Pause** | Temporarily suspend task |
-| **Resume** | Continue paused task |
-| **Edit** | Modify task configuration |
-| **Delete** | Remove task from system |
-| **View Results** | See extracted business data |
+#### 账户选择
 
-### Cloudflare Protection Alert
+某些平台支持认证抓取：
 
-If a task encounters Cloudflare protection, aiFetchly displays a warning notification at the top of the task list. This alert indicates that the target directory has activated anti-bot measures. To resolve this, try enabling local browser, using authenticated accounts, or adding proxies.
+1. 如果可用，切换 **Use Account**
+2. 从您保存的账户中选择一个
+3. 优势：
+   - 更高的成功率
+   - 访问仅限会员的内容
+   - 降低被封锁的风险
 
-### Bulk Operations
+#### 代理配置
 
-- **Start Multiple**: Select and start multiple paused/failed tasks
-- **Stop Tasks**: Stop multiple running tasks
-- **Delete Tasks**: Remove multiple completed/failed tasks
+为大规模抓取添加代理：
 
-## Viewing Results
+1. 切换 **Use Proxy**
+2. 点击 **Choose Proxy**
+3. 从列表中选择一个或多个代理
+4. 点击 **Confirm**
 
-### Step 1: Access Results
+:::tip 何时使用代理
 
-1. Go to **Yellow Pages** task list
-2. Find the completed task
-3. Click **View Results** to open the results page
+在以下情况使用代理：
+- 抓取超过 50 页
+- 运行并发任务
+- 之前的任务被封锁
 
-### Step 2: Task Summary Card
+:::
 
-The results page shows a **Task Summary Card** at the top with:
-- **Platform**: Which directory was scraped
-- **Total Results**: Number of businesses extracted
-- **Status**: Current task status (color-coded)
-- **Created Time**: When the task was created
-- **Keywords**: Displayed as chips for easy review
-- **Location**: The geographic area searched
+### 步骤 6：调度（可选）
 
-### Step 4: Results Table
+#### 一次性调度
 
-The results table displays comprehensive business information:
+设置任务运行的具体日期和时间：
+- 点击 **Schedule**
+- 选择日期和时间
+- 任务将在预定时间自动运行
 
-| Column | Description |
-|--------|-------------|
-| **Business Name** | Name of the business |
-| **Categories** | Business categories (visual chips) |
-| **Email** | Email address with copy button |
-| **Phone** | Phone number with copy button |
-| **Website** | Clickable link to website |
-| **Address** | Full address with map icon |
-| **Ratings** | Star rating with review count |
-| **Description** | Business description |
-| **Hours** | Business hours (if available) |
-| **Year Established** | Year business was founded |
-| **Employee Count** | Number of employees |
-| **Scraped At** | Timestamp of data extraction |
+#### 周期性调度
 
-### Step 5: Interact with Results
+设置自动重复任务：
 
-**Individual Actions:**
-- **Copy Email**: Copy email address to clipboard
-- **Copy Phone**: Copy phone number to clipboard
-- **Open Website**: Open business website in new tab
-- **View Details**: See full business record in modal
+**预设选项：**
+- 每 15 分钟
+- 每 30 分钟
+- 每小时
+- 每 2 小时
+- 每 6 小时
+- 每 12 小时
+- 每天
+- 每周
+- 每月
 
-**Search & Filter:**
-- **Search**: Filter by business name, email, phone, website, or address
-- **Category Filter**: Filter results by business categories
-- **Pagination**: Navigate through large result sets
+**自定义调度：**
+- 使用 cron 表达式进行高级调度
+- 示例：`0 9 * * 1-5`（周一至周五上午 9 点）
 
-## Exporting Results
+**调度预览：**
+- 显示下次运行时间
+- 显示配置摘要
 
-### Export as CSV
+### 步骤 7：创建任务
 
-1. Click **Export** button in the results view
-2. File downloads automatically in CSV format
-3. Filename includes task ID and date
+点击侧边栏中的操作按钮之一：
 
-**Exported Data Includes:**
-- Business name and categories
-- Contact details (email, phone, website)
-- Address and location
-- Ratings and reviews
-- Business hours
-- Additional metadata
+- **Create & Start Task**（主按钮）：创建任务并立即开始执行
+- **Create Task Only**：保存任务但不运行 — 状态为"待处理"
 
-## Best Practices
+:::tip 任务预览
 
-### 1. Keyword Strategy
+在填写表单时，**Task Preview** 侧边栏会实时显示配置摘要，包括任务名称、平台、关键词数量、地点、最大页数、并发数、无头模式和本地浏览器选择。在创建任务之前查看此预览。
 
-- **Be Specific**: Use specific business types instead of generic terms
-  - ❌ "services"
-  - ✅ "marketing agency" or "plumbing services"
+:::
 
-- **Use Synonyms**: Try different terms for the same business type
-  - "restaurant" and "eatery"
-  - "plumber" and "plumbing service"
+### 编辑任务
 
-### 2. Location Targeting
+要修改现有任务：
 
-- **Be Precise**: Use "City, State" format
+1. 进入 **Yellow Pages** 任务列表
+2. 点击任务上的 **Edit**（铅笔）图标
+3. 在表单中修改配置
+4. 点击 **Update Task** 保存更改
+
+## 管理黄页任务
+
+### 查看任务列表
+
+导航到 **Yellow Pages** 查看所有任务。
+
+**任务列表概览：**
+- **实时统计**：总数、运行中、待处理、已完成、失败的任务及成功率
+- **自动刷新**：每 5 秒更新一次；可通过刷新按钮开关
+- **智能暂停**：当您切换浏览器标签页时自动暂停自动刷新，返回时恢复
+
+### 筛选和搜索
+
+使用筛选栏缩小任务范围：
+
+| 筛选器 | 描述 |
+|--------|------|
+| **Search** | 按任务名称或平台搜索 |
+| **Status** | 按待处理、运行中、已完成、失败、已暂停筛选 |
+| **Platform** | 按目录平台筛选 |
+| **Priority** | 按高、中、低优先级筛选 |
+
+活动的筛选器以可删除的标签形式显示在筛选栏下方。点击 **Clear Filters** 重置所有筛选器。
+
+### 任务状态
+
+| 状态 | 描述 | 操作 |
+|------|------|------|
+| **Pending** | 任务已创建但未开始 | 开始、编辑、删除 |
+| **Running** | 任务正在处理中 | 暂停、停止、查看进度 |
+| **Paused** | 暂时挂起 | 恢复、停止 |
+| **Completed** | 成功完成 | 查看结果、删除 |
+| **Failed** | 出现错误结束 | 查看日志、重试、删除 |
+
+### 任务操作
+
+| 操作 | 描述 |
+|------|------|
+| **Start** | 开始执行任务 |
+| **Stop** | 终止正在运行的任务 |
+| **Pause** | 暂时挂起任务 |
+| **Resume** | 继续已暂停的任务 |
+| **Edit** | 修改任务配置 |
+| **Delete** | 从系统中删除任务 |
+| **View Results** | 查看提取的商家数据 |
+
+### Cloudflare 防护警报
+
+如果任务遇到 Cloudflare 防护，aiFetchly 会在任务列表顶部显示警告通知。此警报表明目标目录已激活反爬虫措施。要解决此问题，请尝试启用本地浏览器、使用认证账户或添加代理。
+
+### 批量操作
+
+- **Start Multiple**：选择并启动多个已暂停/失败的任务
+- **Stop Tasks**：停止多个正在运行的任务
+- **Delete Tasks**：删除多个已完成/失败的任务
+
+## 查看结果
+
+### 步骤 1：访问结果
+
+1. 进入 **Yellow Pages** 任务列表
+2. 找到已完成的任务
+3. 点击 **View Results** 打开结果页面
+
+### 步骤 2：任务摘要卡片
+
+结果页面顶部显示 **Task Summary Card**，包含：
+- **Platform**：抓取了哪个目录
+- **Total Results**：提取的商家数量
+- **Status**：当前任务状态（颜色编码）
+- **Created Time**：任务创建时间
+- **Keywords**：以标签形式显示，便于查看
+- **Location**：搜索的地理区域
+
+### 步骤 4：结果表格
+
+结果表格显示全面的商家信息：
+
+| 列 | 描述 |
+|----|------|
+| **Business Name** | 商家名称 |
+| **Categories** | 商家类别（可视化标签） |
+| **Email** | 电子邮件地址，带复制按钮 |
+| **Phone** | 电话号码，带复制按钮 |
+| **Website** | 可点击的网站链接 |
+| **Address** | 完整地址，带地图图标 |
+| **Ratings** | 星级评分及评论数量 |
+| **Description** | 商家描述 |
+| **Hours** | 营业时间（如果有） |
+| **Year Established** | 商家成立年份 |
+| **Employee Count** | 员工人数 |
+| **Scraped At** | 数据提取时间戳 |
+
+### 步骤 5：与结果交互
+
+**单个操作：**
+- **Copy Email**：复制电子邮件地址到剪贴板
+- **Copy Phone**：复制电话号码到剪贴板
+- **Open Website**：在新标签页中打开商家网站
+- **View Details**：在弹窗中查看完整商家记录
+
+**搜索和筛选：**
+- **Search**：按商家名称、电子邮件、电话、网站或地址筛选
+- **Category Filter**：按商家类别筛选结果
+- **Pagination**：浏览大量结果集
+
+## 导出结果
+
+### 导出为 CSV
+
+1. 点击结果视图中的 **Export** 按钮
+2. 文件自动以 CSV 格式下载
+3. 文件名包含任务 ID 和日期
+
+**导出数据包括：**
+- 商家名称和类别
+- 联系方式（电子邮件、电话、网站）
+- 地址和位置
+- 评分和评论
+- 营业时间
+- 其他元数据
+
+## 最佳实践
+
+### 1. 关键词策略
+
+- **具体明确**：使用特定的商家类型而非通用术语
+  - ❌ "服务"
+  - ✅ "营销机构" 或 "水管维修服务"
+
+- **使用同义词**：尝试同一商家类型的不同术语
+  - "餐厅" 和 "餐馆"
+  - "水管工" 和 "水管服务"
+
+### 2. 地点定位
+
+- **精确**：使用"城市，州"格式
   - ✅ "Chicago, IL"
   - ✅ "Los Angeles, CA"
-  - ❌ "Chicago" (might return ambiguous results)
+  - ❌ "芝加哥"（可能返回模糊结果）
 
-- **Start Broad, Then Narrow**:
-  1. Search in a large city (thousands of results)
-  2. Export results
-  3. Search in specific neighborhoods
+- **先宽后窄**：
+  1. 在大城市搜索（数千条结果）
+  2. 导出结果
+  3. 在特定社区搜索
 
-### 3. Performance Optimization
+### 3. 性能优化
 
-**For Small Tasks** (< 100 pages):
-- Concurrency: 1-3
-- Delay: 2000ms
-- No proxy needed
+**小型任务**（< 100 页）：
+- 并发数：1-3
+- 延迟：2000 毫秒
+- 不需要代理
 
-**For Medium Tasks** (100-500 pages):
-- Concurrency: 3-5
-- Delay: 2000ms
-- Use 2-3 proxies
+**中型任务**（100-500 页）：
+- 并发数：3-5
+- 延迟：2000 毫秒
+- 使用 2-3 个代理
 
-**For Large Tasks** (500+ pages):
-- Concurrency: 5-10
-- Delay: 2000ms
-- Use 5+ proxies
-- Consider splitting into multiple tasks
+**大型任务**（500+ 页）：
+- 并发数：5-10
+- 延迟：2000 毫秒
+- 使用 5 个以上代理
+- 考虑拆分为多个任务
 
-### 4. Avoiding Blocks
+### 4. 避免封锁
 
-1. **Respect Rate Limits**: Don't exceed recommended concurrency
-2. **Use Delays**: Keep request delays at 2000ms or higher
-3. **Rotate Proxies**: Distribute requests across multiple IPs
-4. **Use Accounts**: Authenticated scraping has higher limits
-5. **Take Breaks**: Don't run large tasks continuously
-6. **Enable AI Support**: AI can help handle anti-bot protections
-7. **Use Local Browser**: Real browser fingerprint reduces detection risk
+1. **遵守速率限制**：不要超过建议的并发数
+2. **使用延迟**：将请求延迟保持在 2000 毫秒或更高
+3. **轮换代理**：将请求分布在多个 IP 上
+4. **使用账户**：认证抓取有更高的限制
+5. **适当休息**：不要连续运行大型任务
+6. **启用 AI 支持**：AI 可以帮助应对反爬虫保护
+7. **使用本地浏览器**：真实浏览器指纹降低检测风险
 
-### 5. Data Quality
+### 5. 数据质量
 
-- **Verify Results**: Spot-check extracted data for accuracy
-- **Filter Categories**: Use category filters to remove irrelevant results
-- **Cross-Reference**: Combine data from multiple platforms
-- **Regular Updates**: Business information changes, refresh data regularly
+- **验证结果**：抽查提取数据的准确性
+- **筛选类别**：使用类别筛选器移除不相关的结果
+- **交叉参考**：合并来自多个平台的数据
+- **定期更新**：商家信息会变化，定期刷新数据
 
-## Platform-Specific Tips
+## 平台专属提示
 
-### YellowPages.com (USA)
+### YellowPages.com（美国）
 
-**Strengths:**
-- Comprehensive business listings
-- Accurate contact information
-- Good coverage across all states
+**优势：**
+- 全面的商家列表
+- 准确的联系信息
+- 覆盖所有州
 
-**Tips:**
-- Use city + state for best results
-- Includes business hours and services
-- Good for B2C businesses
+**提示：**
+- 使用城市 + 州获得最佳结果
+- 包含营业时间和服务信息
+- 适合 B2C 商家
 
-### Yelp.com (USA)
+### Yelp.com（美国）
 
-**Strengths:**
-- Rich review data
-- Photos and detailed descriptions
-- User-generated content
+**优势：**
+- 丰富的评论数据
+- 照片和详细描述
+- 用户生成内容
 
-**Tips:**
-- Stricter rate limits (use 3000ms delay)
-- Great for service businesses
-- Review data helps qualify leads
+**提示：**
+- 速率限制更严格（使用 3000 毫秒延迟）
+- 适合服务类商家
+- 评论数据有助于筛选潜在客户
 
-### YellowPages.ca (Canada)
+### YellowPages.ca（加拿大）
 
-**Strengths:**
-- Canada-specific listings
-- Canadian business verification
+**优势：**
+- 加拿大专属列表
+- 加拿大商家验证
 
-**Tips:**
-- Essential for Canadian market
-- Use "City, Province" format
+**提示：**
+- 加拿大市场必备
+- 使用"城市，省"格式
 
-### YellowPages.com.sg (Singapore)
+### YellowPages.com.sg（新加坡）
 
-**Strengths:**
-- Singapore business directory
-- Comprehensive local listings
+**优势：**
+- 新加坡商家目录
+- 全面的本地列表
 
-**Tips:**
-- Use city or district names for location
-- Good for Southeast Asian market research
+**提示：**
+- 使用城市或地区名称作为地点
+- 适合东南亚市场研究
 
-### 192.com (UK)
+### 192.com（英国）
 
-**Strengths:**
-- UK-specific business and people directory
-- Good coverage across United Kingdom
+**优势：**
+- 英国专属的商家和人员目录
+- 覆盖整个英国
 
-**Tips:**
-- Use UK city and postcode format
-- Good for UK B2B outreach
+**提示：**
+- 使用英国城市和邮政编码格式
+- 适合英国 B2B 推广
 
-### 11880.com (Germany)
+### 11880.com（德国）
 
-**Strengths:**
-- German business directory
-- Handles cookie consent automatically
+**优势：**
+- 德国商家目录
+- 自动处理 Cookie 同意
 
-**Tips:**
-- Use German city names for best results
-- Good for DACH market research
+**提示：**
+- 使用德国城市名称获得最佳结果
+- 适合 DACH 市场研究
 
-### Gelbeseiten.de (Germany)
+### Gelbeseiten.de（德国）
 
-**Strengths:**
-- German Yellow Pages
-- Comprehensive business listings in Germany
-- Handles complex cookie consent dialogs
+**优势：**
+- 德国黄页
+- 全面的德国商家列表
+- 处理复杂的 Cookie 同意对话框
 
-**Tips:**
-- Use German keywords for best results
-- Essential for German market
+**提示：**
+- 使用德语关键词获得最佳结果
+- 德国市场必备
 
-### PagesJaunes.fr (France)
+### PagesJaunes.fr（法国）
 
-**Strengths:**
-- French Yellow Pages
-- Phone number reveal feature
-- Comprehensive French business listings
+**优势：**
+- 法国黄页
+- 电话号码显示功能
+- 全面的法国商家列表
 
-**Tips:**
-- **Location is required** for this platform
-- Use French city names and postal codes
-- Good for French market outreach
+**提示：**
+- 此平台**必须提供地点**
+- 使用法国城市名称和邮政编码
+- 适合法国市场推广
 
-### PagineGialle.it (Italy)
+### PagineGialle.it（意大利）
 
-**Strengths:**
-- Italian Yellow Pages
-- Comprehensive Italian business directory
-- Handles cookie consent automatically
+**优势：**
+- 意大利黄页
+- 全面的意大利商家目录
+- 自动处理 Cookie 同意
 
-**Tips:**
-- Use Italian city names for location
-- Good for Italian market research
+**提示：**
+- 使用意大利城市名称作为地点
+- 适合意大利市场研究
 
-### iTownPage (Japan)
+### iTownPage（日本）
 
-**Strengths:**
-- Japanese business directory
-- Handles dialog popups automatically
-- Japanese cookie consent management
+**优势：**
+- 日本商家目录
+- 自动处理弹出对话框
+- 日语 Cookie 同意管理
 
-**Tips:**
-- Use Japanese keywords for best results
-- Essential for Japanese local business discovery
-- Use 2500ms delay (60 req/hour rate limit)
+**提示：**
+- 使用日语关键词获得最佳结果
+- 日本本地商家发现必备
+- 使用 2500 毫秒延迟（60 次/小时速率限制）
 
-### uSonar Yellow Page (Japan)
+### uSonar Yellow Page（日本）
 
-**Strengths:**
-- Alternative Japanese business directory
-- Good for cross-referencing with iTownPage
+**优势：**
+- 备选日本商家目录
+- 适合与 iTownPage 交叉参考
 
-**Tips:**
-- Use alongside iTownPage for broader coverage
-- Use 2500ms delay
+**提示：**
+- 与 iTownPage 配合使用以获得更广泛的覆盖
+- 使用 2500 毫秒延迟
 
-### KoreaLocalPages (South Korea)
+### KoreaLocalPages（韩国）
 
-**Strengths:**
-- Korean local business directory
-- Good for Korean market entry research
+**优势：**
+- 韩国本地商家目录
+- 适合韩国市场进入研究
 
-**Tips:**
-- Use Korean keywords for best results
-- Use 2500ms delay (60 req/hour rate limit)
-- Good for discovering Korean businesses
+**提示：**
+- 使用韩语关键词获得最佳结果
+- 使用 2500 毫秒延迟（60 次/小时速率限制）
+- 适合发现韩国商家
 
-## Integration with Email Marketing
+## 与邮件营销的集成
 
-Extracted business emails can be used directly in email campaigns:
+提取的商家电子邮件可直接用于邮件营销活动：
 
-1. **Export Results** from Yellow Pages task
-2. **Navigate to Email Marketing** → **Send Bulk Emails**
-3. **Import CSV** with extracted emails
-4. **Create Template** for your outreach
-5. **Launch Campaign**
+1. 从黄页任务**导出结果**
+2. 导航到 **Email Marketing** → **Send Bulk Emails**
+3. **导入 CSV** 包含提取的电子邮件
+4. 为您的推广**创建模板**
+5. **启动活动**
 
-For detailed instructions, see [Batch Email Sending](./batch-email-sending).
+详细说明请参阅[批量邮件发送](./batch-email-sending)。
 
-## Troubleshooting
+## 故障排除
 
-### Task Status: "Failed"
+### 任务状态："Failed"
 
-**Possible causes:**
-- All proxies failed
-- Network connectivity issues
-- Platform blocked requests
-- Invalid keywords or location
+**可能原因：**
+- 所有代理失败
+- 网络连接问题
+- 平台阻止了请求
+- 关键词或地点无效
 
-**Solutions:**
-1. Check proxy health
-2. Verify internet connection
-3. Reduce concurrency and increase delay
-4. Try different keywords/location
-5. Enable account authentication
-6. Enable AI Support for smarter error handling
-7. Use Local Browser to bypass anti-bot protections
+**解决方案：**
+1. 检查代理健康状况
+2. 验证互联网连接
+3. 降低并发数并增加延迟
+4. 尝试不同的关键词/地点
+5. 启用账户认证
+6. 启用 AI 支持以实现更智能的错误处理
+7. 使用本地浏览器绕过反爬虫保护
 
-### No Results Returned
+### 未返回结果
 
-**Possible causes:**
-- Keywords too specific
-- Location has no matching businesses
-- Platform returned no results
+**可能原因：**
+- 关键词过于具体
+- 地点没有匹配的商家
+- 平台未返回结果
 
-**Solutions:**
-1. Try broader keywords
-2. Verify location spelling
-3. Check if businesses exist on the platform manually
-4. Try nearby locations
+**解决方案：**
+1. 尝试更广泛的关键词
+2. 验证地点拼写
+3. 手动检查平台上是否存在商家
+4. 尝试附近的地点
 
-### Slow Processing
+### 处理缓慢
 
-**Possible causes:**
-- High max pages setting
-- Conservative delay settings
-- Platform rate limits
+**可能原因：**
+- 最大页数设置过高
+- 保守的延迟设置
+- 平台速率限制
 
-**Solutions:**
-1. Reduce max pages
-2. Slightly reduce delay (with caution)
-3. Increase concurrency (if using proxies)
+**解决方案：**
+1. 减少最大页数
+2. 适当减少延迟（需谨慎）
+3. 增加并发数（如果使用代理）
 
-### Incomplete Data
+### 数据不完整
 
-**Possible causes:**
-- Business listings missing information
-- Platform layout changes
+**可能原因：**
+- 商家列表缺少信息
+- 平台布局变更
 
-**Solutions:**
-1. Some businesses naturally lack certain data
-2. Cross-reference with other platforms
-3. Report platform issues to support
+**解决方案：**
+1. 某些商家天然缺少某些数据
+2. 与其他平台交叉参考
+3. 向支持团队报告平台问题
 
-## Advanced Workflows
+## 高级工作流程
 
-### Workflow 1: Local Business Outreach
+### 工作流程 1：本地商家推广
 
-1. **Search** for businesses in your target location
-2. **Filter** by category and ratings
-3. **Export** high-quality leads
-4. **Import** to email marketing
-5. **Create personalized campaign** using AI Email Writer
+1. 在目标地点**搜索**商家
+2. 按类别和评分**筛选**
+3. **导出**高质量潜在客户
+4. **导入**到邮件营销
+5. 使用 AI 邮件撰写器**创建个性化活动**
 
-### Workflow 2: Competitive Analysis
+### 工作流程 2：竞争分析
 
-1. **Scrape competitors** in multiple locations
-2. **Analyze ratings and reviews**
-3. **Identify service gaps**
-4. **Target underserved areas**
+1. 在多个地点**抓取竞争对手**
+2. **分析评分和评论**
+3. **识别服务空白**
+4. **定位服务不足的区域**
 
-### Workflow 3: Market Research
+### 工作流程 3：市场研究
 
-1. **Extract** all businesses in an industry
-2. **Analyze** distribution and patterns
-3. **Identify** market opportunities
-4. **Plan** expansion strategy
+1. **提取**某个行业的所有商家
+2. **分析**分布和模式
+3. **识别**市场机会
+4. **规划**扩展策略
 
-## Comparison: Search Engines vs. Yellow Pages
+## 对比：搜索引擎 vs 黄页
 
-| Feature | Search Engines | Yellow Pages |
-|---------|---------------|--------------|
-| **Best For** | Finding websites, general research | Local businesses, verified listings |
-| **Data Quality** | Varies | Structured, verified |
-| **Contact Info** | Requires extraction | Pre-extracted emails/phones |
-| **Geographic Targeting** | Keyword-based | Location-based |
-| **Ratings/Reviews** | Sometimes | Always (Yelp) |
-| **Business Hours** | Rarely | Commonly |
+| 特性 | 搜索引擎 | 黄页 |
+|------|----------|------|
+| **最佳用途** | 查找网站、通用研究 | 本地商家、已验证列表 |
+| **数据质量** | 不一 | 结构化、已验证 |
+| **联系信息** | 需要提取 | 预提取的电子邮件/电话 |
+| **地理定位** | 基于关键词 | 基于地点 |
+| **评分/评论** | 有时 | 始终有（Yelp） |
+| **营业时间** | 很少 | 常见 |
 
-:::tip Use Both Strategies
+:::tip 结合两种策略
 
-Combine both approaches:
-1. Use **Search Engines** to find industry-specific websites
-2. Use **Yellow Pages** to find local businesses
-3. Cross-reference for comprehensive coverage
+结合两种方法：
+1. 使用**搜索引擎**查找行业特定网站
+2. 使用**黄页**查找本地商家
+3. 交叉参考以获得全面覆盖
 
 :::
 
-## Next Steps
+## 下一步
 
-- [Learn about email extraction](./contact-extraction)
-- [Set up AI-powered email campaigns](../ai-outreach/ai-email-writer)
-- [Configure task scheduling](../automation/task-scheduling)
+- [了解电子邮件提取](./contact-extraction)
+- [设置 AI 驱动的邮件营销活动](../ai-outreach/ai-email-writer)
+- [配置任务调度](../automation/task-scheduling)
 
 ---
 
-**Ready to find local businesses?** Start with a small task to familiarize yourself with the process, then scale up your operations.
+**准备好查找本地商家了吗？** 从一个小任务开始，熟悉流程，然后扩大您的运营规模。

@@ -5,498 +5,498 @@ sidebar_label: Batch Email Sending
 description: Send personalized email campaigns at scale using SMTP integration with aiFetchly.
 ---
 
-# Batch Email Sending
+# 批量邮件发送
 
-aiFetchly's Batch Email Sending feature allows you to launch personalized email campaigns at scale. Import emails from your extraction tasks, use AI-generated templates, and send via your own SMTP server for complete control over your outreach.
+aiFetchly 的批量邮件发送功能允许您大规模发起个性化邮件营销活动。从提取任务中导入邮件地址，使用 AI 生成的模板，并通过您自己的 SMTP 服务器发送，完全掌控您的外联工作。
 
-## Overview
+## 概述
 
-The batch email sending process consists of **4 steps**:
+批量邮件发送流程包含 **4 个步骤**：
 
-1. **Choose Email Source** - Select where your emails come from
-2. **Choose Email Template** - Select or create your message template
-3. **Choose Email Filter** (Optional) - Apply filters to your email list
-4. **Choose Email Service** - Configure SMTP and send
+1. **选择邮件来源** - 选择邮件地址的来源
+2. **选择邮件模板** - 选择或创建您的消息模板
+3. **选择邮件过滤器**（可选）- 对邮件列表应用过滤条件
+4. **选择邮件服务** - 配置 SMTP 并发送
 
-:::info Prerequisites
+:::info 前提条件
 
-Before sending campaigns, ensure you have:
-- [Configured an SMTP service](#configuring-email-services)
-- [Created email templates](../ai-outreach/ai-email-writer)
-- [Extracted or imported email lists](./contact-extraction)
-
-:::
-
-## Configuring Email Services
-
-Before sending emails, you must configure at least one SMTP service.
-
-### What is SMTP?
-
-**SMTP** (Simple Mail Transfer Protocol) is the standard for sending emails. aiFetchly uses SMTP to send emails through your own email server or email service provider.
-
-### Step 1: Navigate to Email Services
-
-1. Click **Email Marketing** in the left navigation menu
-2. Select **Email Services** from the submenu
-3. Click **Add New Service**
-
-### Step 2: SMTP Configuration
-
-Enter the following SMTP details:
-
-#### Service Name
-
-- **Purpose**: Identify this SMTP configuration
-- **Example**: "Gmail SMTP", "SendGrid", "AWS SES"
-- **Required**: Yes
-
-#### From Email
-
-- **Purpose**: Email address that emails will be sent from
-- **Example**: `outreach@yourcompany.com`
-- **Required**: Yes
-
-:::tip Sender Reputation
-
-Use a dedicated email address for outreach. Avoid using personal email addresses for bulk sending.
+在发送营销活动之前，请确保您已：
+- [配置 SMTP 服务](#configuring-email-services)
+- [创建邮件模板](../ai-outreach/ai-email-writer)
+- [提取或导入邮件列表](./contact-extraction)
 
 :::
 
-#### Password
+## 配置邮件服务
 
-- **Purpose**: Email account password or application-specific password
-- **Required**: Yes
-- **Security**: Password is stored securely
+在发送邮件之前，您必须至少配置一个 SMTP 服务。
 
-**Show/Hide Toggle**: Click the eye icon to show/hide the password.
+### 什么是 SMTP？
 
-#### Host
+**SMTP**（简单邮件传输协议）是发送邮件的标准协议。aiFetchly 使用 SMTP 通过您自己的邮件服务器或邮件服务提供商发送邮件。
 
-- **Purpose**: SMTP server hostname
-- **Examples**:
-  - Gmail: `smtp.gmail.com`
-  - SendGrid: `smtp.sendgrid.net`
-  - AWS SES: `email-smtp.us-east-1.amazonaws.com`
-- **Required**: Yes
+### 第 1 步：进入邮件服务
 
-#### Port
+1. 在左侧导航菜单中点击 **Email Marketing**
+2. 从子菜单中选择 **Email Services**
+3. 点击 **Add New Service**
 
-- **Purpose**: SMTP server port
-- **Common Ports**:
-  - **587**: Submission (STARTTLS) - Recommended
-  - **465**: SMTPS (SSL/TLS)
-  - **25**: SMTP (not recommended, often blocked)
-- **Required**: Yes
+### 第 2 步：SMTP 配置
+
+输入以下 SMTP 详细信息：
+
+#### 服务名称
+
+- **用途**：标识此 SMTP 配置
+- **示例**："Gmail SMTP"、"SendGrid"、"AWS SES"
+- **必填**：是
+
+#### 发件人邮箱
+
+- **用途**：邮件将以此邮箱地址发送
+- **示例**：`outreach@yourcompany.com`
+- **必填**：是
+
+:::tip 发件人信誉
+
+使用专用的邮箱地址进行外联。避免使用个人邮箱地址进行批量发送。
+
+:::
+
+#### 密码
+
+- **用途**：邮箱账户密码或应用专用密码
+- **必填**：是
+- **安全性**：密码安全存储
+
+**显示/隐藏切换**：点击眼睛图标可显示或隐藏密码。
+
+#### 主机
+
+- **用途**：SMTP 服务器主机名
+- **示例**：
+  - Gmail：`smtp.gmail.com`
+  - SendGrid：`smtp.sendgrid.net`
+  - AWS SES：`email-smtp.us-east-1.amazonaws.com`
+- **必填**：是
+
+#### 端口
+
+- **用途**：SMTP 服务器端口
+- **常用端口**：
+  - **587**：提交端口（STARTTLS）- 推荐
+  - **465**：SMTPS（SSL/TLS）
+  - **25**：SMTP（不推荐，通常被阻止）
+- **必填**：是
 
 #### SSL/TLS
 
-- **Toggle**: Enable secure connection
-- **Recommended**: Always keep enabled
-- **Purpose**: Encrypts email transmission
+- **切换**：启用安全连接
+- **推荐**：始终保持启用
+- **用途**：加密邮件传输
 
-### Step 3: Test Configuration
+### 第 3 步：测试配置
 
-Before saving, test your SMTP settings:
+保存之前，请测试您的 SMTP 设置：
 
-1. **Click "Test Connection"**
-2. **Enter test details**:
-   - **Receiver**: Test email address
-   - **Title**: Test subject line
-   - **Content**: Test email body
-3. **Click "Send Test Email"**
-4. **Check your inbox** for the test email
+1. **点击 "Test Connection"**
+2. **输入测试详情**：
+   - **收件人**：测试邮箱地址
+   - **标题**：测试主题行
+   - **内容**：测试邮件正文
+3. **点击 "Send Test Email"**
+4. **检查您的收件箱**以确认测试邮件
 
-:::important Test Before Sending
+:::important 发送前先测试
 
-Always test your SMTP configuration before using it in campaigns. This prevents failed sends and wasted resources.
+在营销活动中使用 SMTP 配置之前，务必先进行测试。这可以防止发送失败和资源浪费。
 
 :::
 
-### Step 4: Save Service
+### 第 4 步：保存服务
 
-1. If test successful, click **Save**
-2. Service appears in your email services list
-3. Ready to use in campaigns
+1. 如果测试成功，点击 **Save**
+2. 服务将显示在您的邮件服务列表中
+3. 可在营销活动中使用
 
-### Common SMTP Providers
+### 常用 SMTP 服务商
 
-| Provider | Host | Port | Notes |
+| 服务商 | 主机 | 端口 | 备注 |
 |----------|------|------|-------|
-| **Gmail** | `smtp.gmail.com` | 587 | Use App Password, not regular password |
-| **Outlook** | `smtp.office365.com` | 587 | May require App Password |
-| **SendGrid** | `smtp.sendgrid.net` | 587 | API key as password |
-| **Mailgun** | `smtp.mailgun.org` | 587 | Use SMTP credentials |
-| **AWS SES** | Region-specific | 587 | Requires SMTP credentials |
-| **Postmark** | `smtp.postmarkapp.com` | 587 | API key as password |
+| **Gmail** | `smtp.gmail.com` | 587 | 使用应用专用密码，而非普通密码 |
+| **Outlook** | `smtp.office365.com` | 587 | 可能需要应用专用密码 |
+| **SendGrid** | `smtp.sendgrid.net` | 587 | 使用 API 密钥作为密码 |
+| **Mailgun** | `smtp.mailgun.org` | 587 | 使用 SMTP 凭证 |
+| **AWS SES** | 区域特定 | 587 | 需要 SMTP 凭证 |
+| **Postmark** | `smtp.postmarkapp.com` | 587 | 使用 API 密钥作为密码 |
 
-:::warning Gmail and Outlook
+:::warning Gmail 和 Outlook
 
-Gmail and Outlook require **App Passwords** for third-party SMTP access. You cannot use your regular password.
+Gmail 和 Outlook 需要**应用专用密码**才能进行第三方 SMTP 访问。您不能使用普通密码。
 
-1. Enable 2-factor authentication
-2. Generate an App Password
-3. Use the App Password in aiFetchly
-
-:::
-
-## Sending Batch Emails
-
-### Step 1: Choose Email Source
-
-1. **Navigate** to **Email Marketing** → **Send Bulk Emails**
-2. **Select Email Source Type** from the dropdown:
-   - **Email Task**: Emails from extraction tasks
-   - **Manual Input**: Upload email list manually
-   - **Search Results**: Use search task results
-
-#### Using Email Tasks (Recommended)
-
-1. Select **Email Task** from dropdown
-2. **Choose extraction task** from the list
-3. **Preview** the email list
-4. **Option**: Enable "Avoid Duplicates" to skip already-contacted emails
-
-#### Using Manual Input
-
-1. Select **Manual Input** from dropdown
-2. **Enter emails** in the text area
-3. **Format**: One email per line, or CSV format
-4. **Click "Parse"** to process the list
-
-### Step 2: Choose Email Template
-
-1. **Select one or more templates** from your template list
-2. **Preview** the template content
-3. **Variables** will be automatically populated:
-   - `{$receiver_email}`: Recipient's email address
-   - `{$url}`: Source URL (if available)
-   - `{$description}`: Description or context
-   - `{$sender}`: Sender name from SMTP config
-   - `{$send_time}`: Timestamp
-
-:::tip Multiple Templates
-
-You can select multiple templates to A/B test different messaging. The system will rotate through templates across recipients.
+1. 启用双因素认证
+2. 生成应用专用密码
+3. 在 aiFetchly 中使用应用专用密码
 
 :::
 
-### Step 3: Choose Email Filter (Optional)
+## 发送批量邮件
 
-Apply filters to your email list:
+### 第 1 步：选择邮件来源
 
-1. **Select filter type** from dropdown
-2. **Configure filter rules**
-3. **Preview filtered results**
-4. **See count** of filtered emails
+1. **导航到** **Email Marketing** → **Send Bulk Emails**
+2. **从下拉菜单中选择邮件来源类型**：
+   - **Email Task**：来自提取任务的邮件
+   - **Manual Input**：手动上传邮件列表
+   - **Search Results**：使用搜索任务结果
 
-**Common Filters:**
-- Remove duplicate emails
-- Filter by domain
-- Filter by industry/category
-- Exclude previous recipients
+#### 使用邮件任务（推荐）
 
-:::info Filter Status
+1. 从下拉菜单中选择 **Email Task**
+2. **从列表中选择提取任务**
+3. **预览**邮件列表
+4. **选项**：启用 "Avoid Duplicates" 以跳过已联系过的邮件地址
 
-Email filters are currently a placeholder feature in this version. Duplicate prevention is available in Step 1.
+#### 使用手动输入
+
+1. 从下拉菜单中选择 **Manual Input**
+2. **在文本区域中输入邮件地址**
+3. **格式**：每行一个邮件地址，或 CSV 格式
+4. **点击 "Parse"** 处理列表
+
+### 第 2 步：选择邮件模板
+
+1. **从模板列表中选择一个或多个模板**
+2. **预览**模板内容
+3. **变量**将自动填充：
+   - `{$receiver_email}`：收件人邮箱地址
+   - `{$url}`：来源 URL（如有）
+   - `{$description}`：描述或上下文
+   - `{$sender}`：SMTP 配置中的发件人名称
+   - `{$send_time}`：时间戳
+
+:::tip 多个模板
+
+您可以选择多个模板来进行 A/B 测试不同消息。系统将在收件人之间轮换使用模板。
 
 :::
 
-### Step 4: Choose Email Service
+### 第 3 步：选择邮件过滤器（可选）
 
-1. **Select SMTP service** from your configured services
-2. **Review campaign summary**:
-   - Email count
-   - Selected template(s)
-   - SMTP service
-   - Estimated send time
+对邮件列表应用过滤条件：
 
-3. **Click "Send Campaign"** to start sending
+1. **从下拉菜单中选择过滤器类型**
+2. **配置过滤规则**
+3. **预览过滤结果**
+4. **查看**过滤后的邮件数量
 
-### Campaign Execution
+**常用过滤器：**
+- 移除重复邮件地址
+- 按域名过滤
+- 按行业/类别过滤
+- 排除之前的收件人
 
-After launching:
+:::info 过滤器状态
 
-- **Real-time Progress**: Track sending progress
-- **Success/Fail Counts**: See successful vs. failed sends
-- **Error Logs**: View details for failed emails
-- **Pause/Resume**: Control campaign execution
+邮件过滤器在当前版本中为占位功能。重复邮件排除功能可在第 1 步中使用。
 
-## Monitoring Campaigns
+:::
 
-### Campaign List
+### 第 4 步：选择邮件服务
 
-Navigate to **Email Marketing** → **Campaigns** to see all campaigns.
+1. **从已配置的服务中选择 SMTP 服务**
+2. **查看营销活动摘要**：
+   - 邮件数量
+   - 已选模板
+   - SMTP 服务
+   - 预计发送时间
 
-**Campaign Information:**
-- Campaign name
-- Email count
-- Template used
-- SMTP service
-- Status (Pending, Sending, Completed, Failed)
-- Sent/Failed counts
-- Start and end times
+3. **点击 "Send Campaign"** 开始发送
 
-### Campaign Actions
+### 营销活动执行
 
-| Action | Description |
+启动后：
+
+- **实时进度**：跟踪发送进度
+- **成功/失败计数**：查看成功与失败的发送数量
+- **错误日志**：查看失败邮件的详细信息
+- **暂停/恢复**：控制营销活动执行
+
+## 监控营销活动
+
+### 营销活动列表
+
+导航到 **Email Marketing** → **Campaigns** 查看所有营销活动。
+
+**营销活动信息：**
+- 营销活动名称
+- 邮件数量
+- 使用的模板
+- SMTP 服务
+- 状态（待处理、发送中、已完成、失败）
+- 发送成功/失败计数
+- 开始和结束时间
+
+### 营销活动操作
+
+| 操作 | 描述 |
 |--------|-------------|
-| **View Details** | See individual email status |
-| **Pause** | Pause running campaign |
-| **Resume** | Continue paused campaign |
-| **Stop** | Terminate campaign |
-| **Download Logs** | Export campaign results |
-| **Delete** | Remove campaign record |
+| **View Details** | 查看单个邮件状态 |
+| **Pause** | 暂停正在运行的营销活动 |
+| **Resume** | 继续已暂停的营销活动 |
+| **Stop** | 终止营销活动 |
+| **Download Logs** | 导出营销活动结果 |
+| **Delete** | 删除营销活动记录 |
 
-### Email Status
+### 邮件状态
 
-Individual emails can have these statuses:
+单个邮件可能具有以下状态：
 
-| Status | Description |
+| 状态 | 描述 |
 |--------|-------------|
-| **Pending** | Queued to send |
-| **Sent** | Successfully delivered |
-| **Failed** | Could not be delivered |
-| **Bounced** | Rejected by recipient server |
-| **Opened** | Recipient opened email |
-| **Clicked** | Recipient clicked link |
+| **Pending** | 已排队等待发送 |
+| **Sent** | 已成功送达 |
+| **Failed** | 无法送达 |
+| **Bounced** | 被收件人服务器拒绝 |
+| **Opened** | 收件人已打开邮件 |
+| **Clicked** | 收件人已点击链接 |
 
-## Best Practices
+## 最佳实践
 
-### 1. SMTP Configuration
+### 1. SMTP 配置
 
-**Use Dedicated IPs:**
-- For high-volume sending, use dedicated IP addresses
-- Build sender reputation gradually
-- Monitor deliverability metrics
+**使用专用 IP：**
+- 对于大量发送，使用专用 IP 地址
+- 逐步建立发件人信誉
+- 监控送达率指标
 
-**Warm Up New Accounts:**
-- Start with 20-50 emails per day
-- Gradually increase over 2-4 weeks
-- Monitor bounce and spam rates
+**预热新账户：**
+- 从每天 20-50 封邮件开始
+- 在 2-4 周内逐步增加
+- 监控退信率和垃圾邮件率
 
-**Multiple Services:**
-- Configure 2-3 SMTP services
-- Rotate between services to distribute load
-- Prevent rate limiting by single provider
+**多个服务：**
+- 配置 2-3 个 SMTP 服务
+- 在服务之间轮换以分散负载
+- 防止单个服务商的速率限制
 
-### 2. Email List Quality
+### 2. 邮件列表质量
 
-**Clean Your Lists:**
-- Remove bounced emails
-- Suppress unsubscribes and complaints
-- Verify emails before sending
+**清理您的列表：**
+- 移除退信的邮件地址
+- 抑制取消订阅和投诉
+- 发送前验证邮件地址
 
-**Segment Your Audience:**
-- Group by industry, company size, or interest
-- Create targeted campaigns for each segment
-- Improve relevance and engagement
+**细分受众：**
+- 按行业、公司规模或兴趣分组
+- 为每个细分创建针对性的营销活动
+- 提高相关性和参与度
 
-**Avoid Duplicates:**
-- Enable "Avoid Duplicates" option
-- Suppression lists for previous recipients
-- Regular list maintenance
+**避免重复：**
+- 启用 "Avoid Duplicates" 选项
+- 为之前的收件人建立抑制列表
+- 定期维护列表
 
-### 3. Template Optimization
+### 3. 模板优化
 
-**Personalize Content:**
-- Use variables extensively
-- Mention recipient-specific details
-- Reference their website or work
+**个性化内容：**
+- 充分使用变量
+- 提及收件人特定的信息
+- 引用他们的网站或作品
 
-**Keep It Concise:**
-- 100-200 words ideal
-- Clear subject lines
-- Single call-to-action
+**保持简洁：**
+- 理想长度 100-200 字
+- 清晰的主题行
+- 单一行动号召
 
-**Mobile-Friendly:**
-- Short paragraphs
-- Clear formatting
-- Test on mobile devices
+**移动端友好：**
+- 短段落
+- 清晰的格式
+- 在移动设备上测试
 
-### 4. Timing and Frequency
+### 4. 时间和频率
 
-**Best Send Times:**
-- Tuesday, Wednesday, Thursday: 10 AM - 2 PM
-- Avoid Monday mornings and weekends
-- Test times for your specific audience
+**最佳发送时间：**
+- 周二、周三、周四：上午 10 点 - 下午 2 点
+- 避免周一早上和周末
+- 针对您的特定受众测试发送时间
 
-**Sending Frequency:**
-- Don't send to same recipient within 30 days
-- Space out campaigns appropriately
-- Monitor unsubscribe rates
+**发送频率：**
+- 不要在 30 天内向同一收件人发送邮件
+- 适当间隔营销活动
+- 监控取消订阅率
 
-**Rate Limiting:**
-- Respect SMTP provider limits
-- Start slow: 10-20 emails per minute
-- Monitor for blocks or bounces
+**速率限制：**
+- 遵守 SMTP 服务商的限制
+- 从慢速开始：每分钟 10-20 封邮件
+- 监控是否被阻止或退信
 
-### 5. Compliance
+### 5. 合规性
 
-**Include Required Elements:**
-- Physical mailing address
-- Clear unsubscribe mechanism
-- Accurate header information
-- Your identity in the email
+**包含必要元素：**
+- 实体邮寄地址
+- 清晰的退订机制
+- 准确的头部信息
+- 您在邮件中的身份标识
 
-**Follow Regulations:**
-- **CAN-SPAM** (USA): Commercial email requirements
-- **GDPR** (EU): Consent and data protection
-- **CASL** (Canada): Consent requirements
+**遵守法规：**
+- **CAN-SPAM**（美国）：商业邮件要求
+- **GDPR**（欧盟）：同意和数据保护
+- **CASL**（加拿大）：同意要求
 
-:::warning Legal Compliance
+:::warning 法律合规
 
-Ensure your email campaigns comply with applicable laws in your recipients' jurisdictions. Consult legal counsel for guidance.
-
-:::
-
-## Troubleshooting
-
-### SMTP Connection Failed
-
-**Possible causes:**
-- Incorrect SMTP settings
-- Firewall blocking connection
-- Authentication issues
-
-**Solutions:**
-1. Verify host, port, and credentials
-2. Test with telnet: `telnet smtp.host.com port`
-3. Check firewall/antivirus settings
-4. Try different port (587 vs 465)
-5. Verify App Password for Gmail/Outlook
-
-### High Bounce Rate
-
-**Possible causes:**
-- Invalid email addresses
-- Sender reputation issues
-- Spam filter triggers
-
-**Solutions:**
-1. Verify email list quality
-2. Check sender reputation (MXToolbox)
-3. Improve email content
-4. Warm up email account
-5. Use different SMTP service
-
-### Emails Going to Spam
-
-**Possible causes:**
-- Poor sender reputation
-- Spammy content
-- Missing authentication
-
-**Solutions:**
-1. Set up SPF, DKIM, and DMARC
-2. Improve email content quality
-3. Avoid spam trigger words
-4. Include physical address and unsubscribe
-5. Warm up sending domain
-
-### Rate Limiting
-
-**Possible causes:**
-- Sending too fast
-- SMTP provider limits exceeded
-
-**Solutions:**
-1. Reduce sending speed (emails per minute)
-2. Configure multiple SMTP services
-3. Check provider rate limits
-4. Upgrade SMTP plan if needed
-
-### Templates Not Personalizing
-
-**Possible causes:**
-- Variables not matching data
-- Missing data in email list
-
-**Solutions:**
-1. Verify variable names match exactly
-2. Check email list has required fields
-3. Test with preview before sending
-4. Use generic content as fallback
-
-## Campaign Metrics to Track
-
-### Deliverability
-
-- **Sent Rate**: Emails successfully sent / Total emails
-- **Bounce Rate**: Bounced emails / Sent emails
-- **Delivery Rate**: Delivered emails / Sent emails
-
-### Engagement
-
-- **Open Rate**: Opens / Delivered
-- **Click-Through Rate**: Clicks / Opens
-- **Conversion Rate**: Conversions / Clicks
-
-### Sender Reputation
-
-- **Complaint Rate**: Spam complaints / Delivered
-- **Unsubscribe Rate**: Unsubscribes / Delivered
-- **Spam Trap Hits**: Emails to spam traps
-
-:::tip Benchmark Metrics
-
-Industry averages:
-- Open Rate: 15-25%
-- Click-Through Rate: 2-5%
-- Bounce Rate: < 2%
-- Complaint Rate: < 0.1%
+确保您的邮件营销活动符合收件人所在地区适用的法律。请咨询法律顾问获取指导。
 
 :::
 
-## Advanced Workflows
+## 故障排除
 
-### Workflow 1: Drip Campaign
+### SMTP 连接失败
 
-Set up automated multi-touch campaigns:
+**可能原因：**
+- SMTP 设置不正确
+- 防火墙阻止连接
+- 认证问题
 
-1. **Day 1**: Initial outreach email
-2. **Day 3**: Follow-up if no response
-3. **Day 7**: Final follow-up with value add
-4. **Day 14**: Break-up email
+**解决方案：**
+1. 验证主机、端口和凭证
+2. 使用 telnet 测试：`telnet smtp.host.com port`
+3. 检查防火墙/杀毒软件设置
+4. 尝试不同端口（587 与 465）
+5. 验证 Gmail/Outlook 的应用专用密码
 
-Use the [Scheduler](../automation/task-scheduling) to automate.
+### 高退信率
 
-### Workflow 2: A/B Testing
+**可能原因：**
+- 无效的邮件地址
+- 发件人信誉问题
+- 垃圾邮件过滤器触发
 
-Test different approaches:
+**解决方案：**
+1. 验证邮件列表质量
+2. 检查发件人信誉（MXToolbox）
+3. 改善邮件内容
+4. 预热邮件账户
+5. 使用不同的 SMTP 服务
 
-1. **Create 2-3 template variations**
-2. **Split email list** into segments
-3. **Send different templates** to each segment
-4. **Measure results** (open rate, response rate)
-5. **Use winner** for future campaigns
+### 邮件进入垃圾邮件
 
-### Workflow 3: Segmented Campaigns
+**可能原因：**
+- 发件人信誉差
+- 内容具有垃圾邮件特征
+- 缺少身份验证
 
-Target specific audiences:
+**解决方案：**
+1. 设置 SPF、DKIM 和 DMARC
+2. 改善邮件内容质量
+3. 避免垃圾邮件触发词
+4. 包含实体地址和退订链接
+5. 预热发送域名
 
-1. **Extract emails** by industry or location
-2. **Create tailored templates** for each segment
-3. **Send targeted campaigns** to each segment
-4. **Analyze results** by segment
-5. **Optimize messaging** based on response
+### 速率限制
 
-## Integration with Lead Generation
+**可能原因：**
+- 发送速度过快
+- 超出 SMTP 服务商限制
 
-The complete email outreach workflow:
+**解决方案：**
+1. 降低发送速度（每分钟邮件数）
+2. 配置多个 SMTP 服务
+3. 检查服务商速率限制
+4. 如有需要升级 SMTP 套餐
 
-1. **[Search Engines](./search-engines)**: Find target websites
-2. **[Contact Extraction](./contact-extraction)**: Harvest emails
-3. **[AI Email Writer](../ai-outreach/ai-email-writer)**: Create personalized templates
-4. **[Knowledge Library](../ai-outreach/knowledge-library)**: Provide context for AI
-5. **Batch Email Sending**: Launch campaigns
+### 模板未个性化
 
-## Next Steps
+**可能原因：**
+- 变量与数据不匹配
+- 邮件列表中缺少数据
 
-- [Set up the AI Marketing Assistant](../ai-outreach/ai-marketing-assistant) for strategy
-- [Configure task scheduling](../automation/task-scheduling) for automation
-- [Review system settings](../settings/system-settings)
+**解决方案：**
+1. 验证变量名称完全匹配
+2. 检查邮件列表是否包含必填字段
+3. 发送前使用预览进行测试
+4. 使用通用内容作为后备
+
+## 需跟踪的营销活动指标
+
+### 送达率
+
+- **发送率**：成功发送的邮件 / 总邮件数
+- **退信率**：退信邮件 / 已发送邮件
+- **送达率**：已送达邮件 / 已发送邮件
+
+### 参与度
+
+- **打开率**：打开次数 / 已送达邮件
+- **点击率**：点击次数 / 打开次数
+- **转化率**：转化次数 / 点击次数
+
+### 发件人信誉
+
+- **投诉率**：垃圾邮件投诉 / 已送达邮件
+- **退订率**：退订次数 / 已送达邮件
+- **垃圾邮件陷阱命中数**：发送到垃圾邮件陷阱的邮件数
+
+:::tip 基准指标
+
+行业平均水平：
+- 打开率：15-25%
+- 点击率：2-5%
+- 退信率：< 2%
+- 投诉率：< 0.1%
+
+:::
+
+## 高级工作流程
+
+### 工作流程 1：滴灌式营销活动
+
+设置自动化多次触达营销活动：
+
+1. **第 1 天**：初始外联邮件
+2. **第 3 天**：如无回复则跟进
+3. **第 7 天**：附加价值的最终跟进
+4. **第 14 天**：终止邮件
+
+使用[任务调度器](../automation/task-scheduling)实现自动化。
+
+### 工作流程 2：A/B 测试
+
+测试不同方案：
+
+1. **创建 2-3 个模板变体**
+2. **将邮件列表拆分**为多个细分
+3. **向每个细分发送不同模板**
+4. **衡量结果**（打开率、回复率）
+5. **将优胜者用于**未来营销活动
+
+### 工作流程 3：细分营销活动
+
+针对特定受众：
+
+1. **按行业或地区提取邮件**
+2. **为每个细分创建定制模板**
+3. **向每个细分发送针对性营销活动**
+4. **按细分分析结果**
+5. **根据回复优化消息**
+
+## 与潜在客户生成的集成
+
+完整的邮件外联工作流程：
+
+1. **[搜索引擎](./search-engines)**：查找目标网站
+2. **[联系方式提取](./contact-extraction)**：采集邮件地址
+3. **[AI 邮件撰写](../ai-outreach/ai-email-writer)**：创建个性化模板
+4. **[知识库](../ai-outreach/knowledge-library)**：为 AI 提供上下文
+5. **批量邮件发送**：发起营销活动
+
+## 下一步
+
+- [设置 AI 营销助手](../ai-outreach/ai-marketing-assistant)制定策略
+- [配置任务调度](../automation/task-scheduling)实现自动化
+- [查看系统设置](../settings/system-settings)
 
 ---
 
-**Ready to send campaigns?** Start with a small test batch (20-50 emails) to verify everything works, then scale up your outreach operations.
+**准备好发送营销活动了吗？** 从小批量测试（20-50 封邮件）开始，验证一切正常后再扩大您的外联规模。

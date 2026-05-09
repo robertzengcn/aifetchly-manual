@@ -2,219 +2,131 @@
 id: system-settings
 title: System Settings
 sidebar_label: System Settings
-description: Configure aiFetchly's AI models, browser paths, and system preferences.
+description: Configure aiFetchly's browser paths, captcha solving, and system preferences.
 ---
 
-# System Settings
+# 系统设置
 
-The System Settings section allows you to configure aiFetchly's core functionality, including AI model providers, browser paths for web automation, and system preferences. Proper configuration ensures optimal performance for all features.
+系统设置部分允许您配置 aiFetchly 的核心功能，包括用于 Web 自动化的浏览器路径、验证码求解、嵌入模型和系统偏好设置。正确的配置可确保所有功能的最佳性能。
 
-## Accessing System Settings
+## 访问系统设置
 
-1. Click **Settings** in the left navigation menu
-2. A tree-based navigation panel appears on the left
-3. Click on any category to expand its settings
-4. Modify settings as needed
-5. Changes are saved automatically
+1. 点击左侧导航菜单中的 **设置**
+2. 左侧将出现一个树形导航面板
+3. 点击任意类别以展开其设置
+4. 根据需要修改设置
+5. 更改会自动保存
 
-:::info Auto-Save
+:::info 自动保存
 
-Most settings save automatically when modified. Look for save indicators or confirmation messages.
-
-:::
-
-## Settings Overview
-
-### AI Model Providers
-
-Configure one or more AI model providers to power aiFetchly's AI features. **At least one provider must be configured** for AI functionality to work.
-
-#### DeepSeek Local
-
-**Best for**: Offline usage, privacy, no API costs
-
-| Setting | Description | Default |
-|---------|-------------|---------|
-| **URL** | Local API endpoint | `http://localhost:11434` |
-| **Model** | Model name | `deepseek-r1:latest` |
-
-**Setup Required:**
-1. Install Ollama (https://ollama.ai)
-2. Pull DeepSeek model: `ollama pull deepseek-r1`
-3. Start Ollama service
-4. Keep URL as default if running locally
-
-:::tip Local AI Advantages
-
-- No API costs
-- Data stays on your machine
-- Works offline
-- Privacy-focused
+大多数设置在修改时会自动保存。请注意保存指示器或确认消息。
 
 :::
 
-#### DeepSeek API
+## 设置概览
 
-**Best for**: Reliable performance, regular updates
+### 2Captcha 服务
 
-| Setting | Description | Default |
-|---------|-------------|---------|
-| **API URL** | DeepSeek API endpoint | `https://api.deepseek.com` |
-| **API Model** | Model to use | `deepseek-chat` |
-| **API Key** | Your API key | *(Required)* |
+用于网页抓取的自动验证码求解。
 
-**Setup Required:**
-1. Sign up at https://platform.deepseek.com
-2. Generate API key
-3. Enter API key in settings
+| 设置 | 描述 |
+|------|------|
+| **Token** | 您的 2Captcha API 令牌 |
+| **已启用** | 开启/关闭验证码求解 |
 
-#### GrokAI
+**设置步骤（可选）：**
+1. 在 https://2captcha.com 注册
+2. 向账户充值
+3. 从控制面板获取 API 令牌
+4. 输入令牌并启用服务
 
-**Best for**: X/Twitter integration, real-time data
+:::info 何时使用 2Captcha
 
-| Setting | Description | Default |
-|---------|-------------|---------|
-| **API URL** | GrokAI API endpoint | *(Configure)* |
-| **API Model** | Model to use | *(Configure)* |
-| **API Key** | Your API key | *(Configure)* |
-
-**Setup Required:**
-1. Sign up for X Premium+ (for Grok access)
-2. Obtain API credentials
-3. Configure URL, model, and API key
-
-#### OpenAI
-
-**Best for**: GPT models, reliable service
-
-| Setting | Description | Default |
-|---------|-------------|---------|
-| **API URL** | OpenAI API endpoint | `https://api.openai.com/v1` |
-| **API Model** | Model to use | `gpt-4`, `gpt-3.5-turbo`, etc. |
-| **API Key** | Your API key | *(Required)* |
-
-**Setup Required:**
-1. Sign up at https://platform.openai.com
-2. Create API key
-3. Enter key in settings
-
-#### Volcengine (Doubao)
-
-**Best for**: Chinese language support, cost-effective
-
-| Setting | Description | Default |
-|---------|-------------|---------|
-| **API URL** | Volcengine API endpoint | `https://ark.cn-beijing.volces.com/api/v3/` |
-| **API Model** | Model to use | `doubao-1.5-pro-32k-250115` |
-| **API Key** | Your API key | *(Configure)* |
-
-**Setup Required:**
-1. Sign up at Volcengine platform
-2. Enable Doubao API service
-3. Enter API credentials
-
-### 2Captcha Service
-
-Automated captcha solving for web scraping.
-
-| Setting | Description |
-|---------|-------------|
-| **Token** | Your 2Captcha API token |
-| **Enabled** | Toggle captcha solving on/off |
-
-**Setup (Optional):**
-1. Sign up at https://2captcha.com
-2. Add funds to account
-3. Get API token from dashboard
-4. Enter token and enable service
-
-:::info When to Use 2Captcha
-
-Useful when:
-- Scraping at scale
-- Encountering frequent captchas
-- Don't want to solve captchas manually
+在以下情况下有用：
+- 大规模抓取
+- 频繁遇到验证码
+- 不想手动解决验证码
 
 :::
 
-### Embedding Configuration
+### 嵌入配置
 
-Configure the default embedding model for RAG (Retrieval-Augmented Generation).
+配置用于 RAG（检索增强生成）的默认嵌入模型。
 
-| Setting | Description |
-|---------|-------------|
-| **Default Model** | Select from available embedding models |
+| 设置 | 描述 |
+|------|------|
+| **默认模型** | 从可用的嵌入模型中选择 |
 
-**Options:**
-- Various embedding models with different dimensions
-- Choose based on:
-  - Language support
-  - Performance requirements
-  - Resource constraints
+**选项：**
+- 具有不同维度的各种嵌入模型
+- 根据以下因素选择：
+  - 语言支持
+  - 性能要求
+  - 资源限制
 
-### External System Paths
+### 外部系统路径
 
-Configure browser paths for local browser integration.
+配置用于本地浏览器集成的浏览器路径。
 
-#### Chrome Path
+#### Chrome 路径
 
-**Purpose**: Path to Chrome browser executable
+**用途**：Chrome 浏览器可执行文件的路径
 
-**To Configure:**
-1. Click **Browse** or file selection button
-2. Navigate to Chrome installation
-3. Select executable
+**配置方法：**
+1. 点击 **浏览** 或文件选择按钮
+2. 导航到 Chrome 安装目录
+3. 选择可执行文件
 
-**Default Paths (by OS):**
-- **Windows**: `C:\Program Files\Google\Chrome\Application\chrome.exe`
-- **macOS**: `/Applications/Google Chrome.app/Contents/MacOS/Google Chrome`
-- **Linux**: `/usr/bin/google-chrome` or `/usr/bin/chromium-browser`
+**默认路径（按操作系统）：**
+- **Windows**：`C:\Program Files\Google\Chrome\Application\chrome.exe`
+- **macOS**：`/Applications/Google Chrome.app/Contents/MacOS/Google Chrome`
+- **Linux**：`/usr/bin/google-chrome` 或 `/usr/bin/chromium-browser`
 
-#### Firefox Path
+#### Firefox 路径
 
-**Purpose**: Path to Firefox browser executable
+**用途**：Firefox 浏览器可执行文件的路径
 
-**To Configure:**
-1. Click **Browse** or file selection button
-2. Navigate to Firefox installation
-3. Select executable
+**配置方法：**
+1. 点击 **浏览** 或文件选择按钮
+2. 导航到 Firefox 安装目录
+3. 选择可执行文件
 
-**Default Paths (by OS):**
-- **Windows**: `C:\Program Files\Mozilla Firefox\firefox.exe`
-- **macOS**: `/Applications/Firefox.app/Contents/MacOS/firefox`
-- **Linux**: `/usr/bin/firefox`
+**默认路径（按操作系统）：**
+- **Windows**：`C:\Program Files\Mozilla Firefox\firefox.exe`
+- **macOS**：`/Applications/Firefox.app/Contents/MacOS/firefox`
+- **Linux**：`/usr/bin/firefox`
 
-:::tip Browser Path Requirements
+:::tip 浏览器路径要求
 
-Browser paths are required for:
-- Local browser integration features
-- Yandex scraping (requires browser)
-- Certain anti-bot detection scenarios
+浏览器路径在以下情况下是必需的：
+- 本地浏览器集成功能
+- Yandex 抓取（需要浏览器）
+- 某些反机器人检测场景
 
 :::
 
-### User Preferences
+### 用户偏好
 
-Configure your aiFetchly experience.
+配置您的 aiFetchly 使用体验。
 
-#### Language
+#### 语言
 
-**Options:**
-- **English**: Interface in English
-- **中文**: Interface in Chinese (Simplified)
+**选项：**
+- **English**：英文界面
+- **中文**：简体中文界面
 
-**To Change:**
-1. Select preferred language from dropdown
-2. Interface updates immediately
-3. Restart recommended for full language change
+**更改方法：**
+1. 从下拉菜单中选择首选语言
+2. 界面将立即更新
+3. 建议重启以完全切换语言
 
-#### AI Website Analysis Business Info
+#### AI 网站分析业务信息
 
-**Purpose**: Provide context for AI-powered website analysis
+**用途**：为 AI 驱动的网站分析提供上下文
 
-**Format**: JSON configuration
+**格式**：JSON 配置
 
-**Example:**
+**示例：**
 ```json
 {
   "industry": "Software",
@@ -224,221 +136,171 @@ Configure your aiFetchly experience.
 }
 ```
 
-**Usage:**
-- AI uses this context when analyzing websites
-- Improves relevance of analysis results
-- Customizes scoring and categorization
+**用法：**
+- AI 在分析网站时使用此上下文
+- 提高分析结果的相关性
+- 自定义评分和分类
 
-## MCP Tools Management
+## MCP 工具管理
 
-**MCP** (Model Context Protocol) allows integration with external tools and services, extending the AI Marketing Assistant with capabilities like web search, database queries, and custom API calls.
+**MCP**（模型上下文协议）允许与外部工具和服务集成，通过网页搜索、数据库查询和自定义 API 调用等功能扩展 AI 营销助手。
 
-For full documentation on configuring and using MCP servers, see [MCP Tools](../ai-outreach/mcp-tools).
+有关配置和使用 MCP 服务器的完整文档，请参阅 [MCP 工具](../ai-outreach/mcp-tools)。
 
-## Configuration Best Practices
+## 配置最佳实践
 
-### 1. AI Provider Setup
+### 1. 浏览器配置
 
-**Primary Provider:**
-- Configure at least one provider fully
-- Test connectivity before using features
-- Keep API keys secure
+**Chrome 与 Firefox：**
+- Chrome：兼容性更好，功能更多
+- Firefox：开源，注重隐私
 
-**Backup Providers:**
-- Configure 2-3 providers for redundancy
-- Use different providers for different use cases
-- Monitor API usage and costs
+**建议：** 将 Chrome 配置为主要浏览器，Firefox 作为备用。
 
-### 2. Browser Configuration
+### 2. 验证码求解
 
-**Chrome vs Firefox:**
-- Chrome: Better compatibility, more features
-- Firefox: Open-source, privacy-focused
+**何时启用：**
+- 大规模抓取操作（>1000 页）
+- 频繁遇到验证码
+- 不希望手动干预
 
-**Recommendation:** Configure Chrome as primary, Firefox as backup.
+**何时禁用：**
+- 小规模抓取
+- 为了节省成本（2captcha 会产生费用）
+- 很少遇到验证码
 
-### 3. Captcha Solving
+### 3. 语言设置
 
-**When to Enable:**
-- Large-scale scraping operations (>1000 pages)
-- Frequent captcha encounters
-- Don't want manual intervention
+**选择依据：**
+- 您的母语
+- 目标受众的语言
+- 内容语言（用于知识库）
 
-**When to Disable:**
-- Small-scale scraping
-- To save costs (2captcha has fees)
-- Rare captcha encounters
+**注意：** 语言偏好仅影响用户界面。AI 可以处理多种语言，不受此设置影响。
 
-### 4. Language Settings
+### 4. MCP 工具
 
-**Choose Based On:**
-- Your native language
-- Target audience language
-- Content language (for Knowledge Library)
+**适量添加：**
+- 仅添加您会使用的工具
+- 每个工具都会增加复杂性
+- 逐一测试工具
 
-**Note:** Language preference affects UI only. AI can process multiple languages regardless of setting.
+**安全性：**
+- 仅使用受信任的 MCP 服务器
+- 妥善保管凭据
+- 审查工具权限
 
-### 5. MCP Tools
+## 故障排除
 
-**Add Sparingly:**
-- Only add tools you'll use
-- Each tool adds complexity
-- Test tools individually
+### 浏览器集成不工作
 
-**Security:**
-- Only use trusted MCP servers
-- Keep credentials secure
-- Review tool permissions
+**可能的原因：**
+- 浏览器路径不正确
+- 浏览器未安装
+- 权限问题
 
-## Troubleshooting
+**解决方案：**
+1. 验证浏览器已安装
+2. 检查文件路径是否正确
+3. 通过直接启动浏览器进行测试
+4. 以管理员/sudo 权限运行 aiFetchly
 
-### AI Features Not Working
+### 验证码无法求解
 
-**Possible causes:**
-- No AI provider configured
-- API key invalid or expired
-- Local model not running
+**可能的原因：**
+- 2Captcha 令牌无效
+- 余额不足
+- 服务已禁用
 
-**Solutions:**
-1. Verify at least one AI provider is configured
-2. Test API key with provider's test endpoint
-3. For local models, ensure service is running
-4. Check network connectivity for API providers
+**解决方案：**
+1. 验证 2Captcha 令牌是否正确
+2. 检查账户余额
+3. 确保 2Captcha 开关已启用
+4. 先测试手动验证码
 
-### Browser Integration Not Working
+### 设置未保存
 
-**Possible causes:**
-- Incorrect browser path
-- Browser not installed
-- Permission issues
+**可能的原因：**
+- 数据库被锁定
+- 权限不足
+- 应用程序错误
 
-**Solutions:**
-1. Verify browser is installed
-2. Check file path is correct
-3. Test by launching browser directly
-4. Run aiFetchly with admin/sudo permissions
+**解决方案：**
+1. 重启 aiFetchly
+2. 以管理员/sudo 身份运行
+3. 检查应用程序日志
+4. 验证数据库不是只读的
 
-### Captcha Not Solving
+### MCP 工具未显示
 
-**Possible causes:**
-- 2Captcha token invalid
-- Insufficient funds
-- Service disabled
+**可能的原因：**
+- 服务器配置不正确
+- 连接测试失败
+- 工具已禁用
 
-**Solutions:**
-1. Verify 2Captcha token is correct
-2. Check account balance
-3. Ensure 2Captcha toggle is enabled
-4. Test with manual captcha first
+**解决方案：**
+1. 验证服务器配置
+2. 测试连接
+3. 检查服务器是否正在运行
+4. 启用各个工具
 
-### Settings Not Saving
+## 高级配置
 
-**Possible causes:**
-- Database locked
-- Insufficient permissions
-- Application error
+### 多个嵌入模型
 
-**Solutions:**
-1. Restart aiFetchly
-2. Run as administrator/sudo
-3. Check application logs
-4. Verify database isn't read-only
+为不同目的配置不同的嵌入模型：
 
-### MCP Tools Not Appearing
+1. 导航到 **嵌入配置**
+2. 添加多个模型
+3. 设置默认模型
+4. 按任务使用特定模型
 
-**Possible causes:**
-- Server not configured correctly
-- Connection test failed
-- Tools disabled
+### 特定环境设置
 
-**Solutions:**
-1. Verify server configuration
-2. Test connection
-3. Check server is running
-4. Enable individual tools
+不同环境使用不同设置：
 
-## Advanced Configuration
+**开发环境：**
+- 禁用验证码求解
+- 启用调试日志
 
-### Custom API Endpoints
+**生产环境：**
+- 启用验证码求解
+- 禁用调试日志
 
-For advanced users with self-hosted models:
+## 安全注意事项
 
-1. Select provider (e.g., OpenAI-compatible)
-2. Set API URL to your endpoint
-3. Configure model name
-4. Add authentication if required
+### 浏览器路径
 
-**Use Cases:**
-- Self-hosted LLaMA models
-- Private API deployments
-- Custom model fine-tunes
+**安全性：**
+- 仅使用受信任的浏览器安装
+- 验证浏览器可执行文件是否合法
+- 保持浏览器更新
+- 对自定义浏览器构建保持谨慎
 
-### Multiple Embedding Models
+### MCP 工具
 
-Configure different embedding models for different purposes:
+**安全性：**
+- 仅连接到受信任的 MCP 服务器
+- 仔细审查工具权限
+- 只要可用就使用身份验证
+- 监控工具使用情况
+- 不需要时撤销访问权限
 
-1. Navigate to **Embedding Configuration**
-2. Add multiple models
-3. Set default model
-4. Use specific models per task
+## AI 技能管理
 
-### Environment-Specific Settings
+AI 技能是增强 aiFetchly AI 聊天功能的模块化扩展。技能可以导入、启用/禁用，并在 AI 营销助手中使用。
 
-Different settings for different environments:
+有关导入、管理和使用 AI 技能的完整文档，请参阅 [AI 技能](../ai-outreach/ai-skills)。
 
-**Development:**
-- Use local AI models
-- Disable captcha solving
-- Enable debug logging
+## 后续步骤
 
-**Production:**
-- Use API providers for reliability
-- Enable captcha solving
-- Disable debug logging
+配置系统设置后：
 
-## Security Considerations
-
-### API Key Management
-
-**Best Practices:**
-- Treat API keys like passwords
-- Don't share or commit to version control
-- Rotate keys periodically
-- Monitor usage for anomalies
-- Revoke compromised keys immediately
-
-### Browser Paths
-
-**Security:**
-- Only use trusted browser installations
-- Verify browser executables are legitimate
-- Keep browsers updated
-- Be cautious with custom browser builds
-
-### MCP Tools
-
-**Security:**
-- Only connect to trusted MCP servers
-- Review tool permissions carefully
-- Use authentication whenever available
-- Monitor tool usage
-- Revoke access when not needed
-
-## AI Skills Management
-
-AI Skills are modular extensions that enhance aiFetchly's AI chat capabilities. Skills can be imported, enabled/disabled, and used within the AI Marketing Assistant.
-
-For full documentation on importing, managing, and using AI Skills, see [AI Skills](../ai-outreach/ai-skills).
-
-## Next Steps
-
-After configuring system settings:
-
-- [Return to Getting Started](../getting-started/introduction)
-- [Set up your first search task](../lead-generation/search-engines)
-- [Configure email services](../lead-generation/batch-email-sending)
-- [Learn about AI Marketing Assistant](../ai-outreach/ai-marketing-assistant)
+- [返回入门指南](../getting-started/introduction)
+- [设置您的第一个搜索任务](../lead-generation/search-engines)
+- [配置电子邮件服务](../lead-generation/batch-email-sending)
+- [了解 AI 营销助手](../ai-outreach/ai-marketing-assistant)
 
 ---
 
-**Configuration Complete!** Your aiFetchly is now set up and ready to help you generate leads and automate your marketing workflows.
+**配置完成！** 您的 aiFetchly 现已设置完毕，可以开始帮助您生成潜在客户并自动化您的营销工作流程。

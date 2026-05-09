@@ -2,416 +2,499 @@
 id: search-engines
 title: Search Engine Scraping
 sidebar_label: Search Engines
-description: Learn how to scrape search results from Google, Bing, and Yandex to generate leads with AI-powered analysis.
+description: Aprende a extraer resultados de búsqueda de Google, Bing y Yandex para generar leads con análisis impulsado por IA.
 ---
 
-# Search Engine Scraping
+# Extracción de motores de búsqueda
 
-aiFetchly's multi-engine search scraping feature allows you to collect leads from multiple search engines simultaneously. Extract business information, URLs, and contact details from search results automatically.
+La función de extracción multi-motor de aiFetchly te permite recopilar leads de múltiples motores de búsqueda simultáneamente. Extrae información empresarial, URL y datos de contacto de los resultados de búsqueda automáticamente. Impulsado por análisis de IA, puedes puntuar leads, clasificar industrias y extraer información de contacto — todo desde tus resultados de búsqueda.
 
-## Supported Search Engines
+## Motores de búsqueda compatibles
 
-| Engine | Best For | Account Required | Local Browser |
-|--------|----------|------------------|---------------|
-| **Google** | General searches, global reach | Recommended | Optional |
-| **Bing** | Microsoft ecosystem, US market | Optional | Optional |
-| **Yandex** | Russian market, Cyrillic content | Recommended | **Required** |
+| Motor | Ideal para | Cuenta requerida | Navegador local |
+|-------|------------|-------------------|-----------------|
+| **Google** | Búsquedas generales, alcance global | Recomendado | Opcional |
+| **Bing** | Ecosistema Microsoft, mercado estadounidense | Opcional | Opcional |
+| **Yandex** | Mercado ruso, contenido cirílico | Recomendado | **Requerido** |
 
-:::info Yandex Requirement
+:::info Requisito de Yandex
 
-Yandex scraping requires **local browser integration** for proper operation. Enable this option when creating Yandex tasks.
-
-:::
-
-## Creating a Search Task
-
-### Step 1: Navigate to Search
-
-1. Click **Search** in the left navigation menu
-2. You'll see the **Search Form** page
-
-### Step 2: Basic Search Configuration
-
-Enter the following required information:
-
-#### Keywords
-
-1. **Enter Your Keywords**: Type or paste your search keywords in the text area
-   - One keyword per line
-   - Use specific, targeted keywords for better results
-
-2. **Generate Related Keywords** (Optional):
-   - Click the **Generate Related Keywords** button
-   - aiFetchly uses AI to generate related search terms
-   - Expands your keyword list for broader coverage
-   - Removes duplicates automatically
-
-:::tip Keyword Strategy
-
-Start with 5-10 seed keywords, then use AI generation to expand to 20-50 related keywords for comprehensive coverage.
+La extracción de Yandex requiere **integración con navegador local** para su correcto funcionamiento. Habilita esta opción al crear tareas de Yandex.
 
 :::
 
-#### Search Engine
+## Crear una tarea de búsqueda
 
-Select the search engine from the dropdown:
-- Google (default)
+### Paso 1: Ir a Búsqueda
+
+1. Haz clic en **Search** en el menú de navegación izquierdo
+2. Verás la página del **Formulario de búsqueda**
+
+### Paso 2: Configuración básica de búsqueda
+
+Introduce la siguiente información requerida:
+
+#### Palabras clave
+
+1. **Introduce tus palabras clave**: Escribe o pega tus palabras clave de búsqueda en el área de texto
+   - Una palabra clave por línea
+   - Usa palabras clave específicas y dirigidas para mejores resultados
+
+2. **Generar palabras clave relacionadas** (Opcional):
+   - Haz clic en el botón **Generate Related Keywords**
+   - aiFetchly usa IA para generar términos de búsqueda relacionados
+   - Amplía tu lista de palabras clave para una cobertura más amplia
+   - Elimina duplicados automáticamente
+
+:::tip Estrategia de palabras clave
+
+Comienza con 5-10 palabras clave semilla, luego usa la generación por IA para ampliar a 20-50 palabras clave relacionadas para una cobertura integral.
+
+:::
+
+#### Motor de búsqueda
+
+Selecciona el motor de búsqueda en el menú desplegable:
+- Google (predeterminado)
 - Bing
 - Yandex
 
-#### Page Number
+#### Número de página
 
-Specify which page to start scraping from:
-- **Start at page 1** for fresh searches
-- **Resume from page X** if continuing a previous task
+Especifica desde qué página comenzar la extracción:
+- **Comenzar en la página 1** para búsquedas nuevas
+- **Continuar desde la página X** si retomas una tarea anterior
 
-#### Concurrent Quantity
+#### Cantidad concurrente
 
-Set the number of concurrent searches:
-- **1** (default): Safest, slowest
-- **3-5**: Moderate speed, good for most use cases
-- **10+**: Fastest, requires more proxies
+Establece el número de búsquedas concurrentes:
+- **1** (predeterminado): Más seguro, más lento
+- **3-5**: Velocidad moderada, bueno para la mayoría de los casos
+- **10+**: Más rápido, requiere más proxies
 
-:::warning Concurrency Limits
+:::warning Límites de concurrencia
 
-Higher concurrency increases the risk of being blocked. Start with 1-3 and increase gradually.
-
-:::
-
-### Step 3: Advanced Options
-
-#### Proxy Configuration
-
-**Option A: Use Saved Proxies**
-
-1. Click the **Choose Proxy** button
-2. Select one or more proxies from your list
-3. Click **Confirm** to add them to the task
-
-**Option B: Manual Proxy Entry**
-
-1. Toggle the proxy option
-2. Enter proxy details manually:
-   - Host/IP address
-   - Port number
-   - Username (if required)
-   - Password (if required)
-
-:::tip Proxy Best Practices
-
-Use multiple proxies for high-concurrency tasks to distribute load and avoid blocks.
+Una mayor concurrencia aumenta el riesgo de ser bloqueado. Comienza con 1-3 y aumenta gradualmente.
 
 :::
 
-#### Local Browser Integration
+### Paso 3: Opciones avanzadas
 
-Enable local browser scraping for more human-like behavior:
+#### Configuración de proxy
 
-1. Toggle **Local Browser** to enable
-2. Select your Chrome browser from the list
-3. **Required for**: Yandex scraping
-4. **Recommended for**: Google at scale
+**Opción A: Usar proxies guardados**
 
-**Benefits:**
-- Lower detection rates
-- Better success with anti-bot protections
-- More consistent results
+1. Haz clic en el botón **Choose Proxy**
+2. Selecciona uno o más proxies de tu lista
+3. Haz clic en **Confirm** para añadirlos a la tarea
 
-#### Search Account Usage
+**Opción B: Entrada manual de proxy**
 
-Use authenticated accounts for better success rates:
+1. Activa la opción de proxy
+2. Introduce los datos del proxy manualmente:
+   - Host/Dirección IP
+   - Número de puerto
+   - Usuario (si es necesario)
+   - Contraseña (si es necesario)
 
-1. Toggle **Search Account** to enable
-2. Click **Choose Account** to select saved credentials
-3. Select accounts matching your search engine
-4. Click **Confirm**
+:::tip Mejores prácticas de proxies
 
-**Recommendations:**
-- **Google**: Use accounts for large-scale scraping
-- **Yandex**: Use accounts for better access
-- **Bing**: Optional, less critical
+Usa múltiples proxies para tareas de alta concurrencia para distribuir la carga y evitar bloqueos.
 
-### Step 4: Execute or Save
+:::
 
-Choose one of the following options:
+#### Integración con navegador local
 
-#### Save Only
+Habilita la extracción con navegador local para un comportamiento más humano:
 
-- Creates the task without running it
-- Useful for scheduling or batch task creation
-- Task status: "Not Start"
+1. Activa **Local Browser** para habilitar
+2. Selecciona tu navegador Chrome de la lista
+3. **Requerido para**: Extracción de Yandex
+4. **Recomendado para**: Google a gran escala
 
-#### Run Task
+**Beneficios:**
+- Menores tasas de detección
+- Mejor éxito con protecciones anti-bot
+- Resultados más consistentes
 
-- Creates and executes the task immediately
-- Status changes to "Processing"
-- Results appear in real-time
+#### Mostrar en el navegador
 
-## Managing Search Tasks
+Activa **Show in Browser** para controlar la visibilidad del navegador durante la extracción:
 
-### View Task List
+- **Habilitado**: La ventana del navegador es visible durante la extracción — útil para depuración o monitoreo del progreso
+- **Deshabilitado** (predeterminado): El navegador se ejecuta en modo headless para una operación más rápida y en segundo plano
 
-Navigate to **Search** → **Result List** to see all your search tasks.
+#### Habilitar recuperación por IA
 
-**Task List Columns:**
+Activa **Enable AI Recovery** para permitir que la IA se recupere automáticamente de errores de extracción:
 
-| Column | Description |
-|--------|-------------|
-| **ID** | Unique task identifier |
-| **Keywords** | Keywords used in the search |
-| **Search Engine** | Engine used (Google, Bing, etc.) |
+- Cuando está habilitado, aiFetchly usa IA para diagnosticar y recuperarse de errores encontrados durante la extracción
+- El sistema puede analizar capturas de pantalla de errores y ajustar su estrategia
+- Los intentos de recuperación están limitados para evitar un uso excesivo de recursos
+
+:::tip Cuándo usar recuperación por IA
+
+Habilita la recuperación por IA al extraer de motores con fuerte protección anti-bot (como Google) o al ejecutar tareas a gran escala donde se esperan errores ocasionales.
+
+:::
+
+#### Uso de cuenta de búsqueda
+
+Usa cuentas autenticadas para mejores tasas de éxito:
+
+1. Activa **Search Account** para habilitar
+2. Haz clic en **Choose Account** para seleccionar credenciales guardadas
+3. Selecciona cuentas que coincidan con tu motor de búsqueda
+4. Haz clic en **Confirm**
+
+**Recomendaciones:**
+- **Google**: Usa cuentas para extracción a gran escala
+- **Yandex**: Usa cuentas para mejor acceso
+- **Bing**: Opcional, menos crítico
+
+### Paso 4: Ejecutar o guardar
+
+Elige una de las siguientes opciones:
+
+#### Solo guardar
+
+- Crea la tarea sin ejecutarla
+- Útil para programación o creación de tareas por lotes
+- Estado de la tarea: "Not Start"
+
+#### Ejecutar tarea
+
+- Crea y ejecuta la tarea inmediatamente
+- El estado cambia a "Processing"
+- Los resultados aparecen en tiempo real
+
+## Gestión de tareas de búsqueda
+
+### Ver lista de tareas
+
+Navega a **Search** → **Result List** para ver todas tus tareas de búsqueda.
+
+**Columnas de la lista de tareas:**
+
+| Columna | Descripción |
+|---------|-------------|
+| **ID** | Identificador único de la tarea |
+| **Keywords** | Palabras clave utilizadas en la búsqueda |
+| **Search Engine** | Motor utilizado (Google, Bing, etc.) |
 | **Status** | Not Start, Processing, Complete, Error |
-| **Created** | Date and time created |
-| **Actions** | Run, Edit, Delete, View Results |
+| **Record Time** | Fecha y hora de creación |
+| **Actions** | Run, Edit, View Results, Kill Process, Retry, Download Logs |
 
-### Task Actions
+### Acciones de tarea
 
-| Action | Description | When Available |
-|--------|-------------|----------------|
-| **Run** | Start a "Not Start" task | Task not started |
-| **Retry** | Restart a failed task | Task has "Error" status |
-| **Edit** | Modify task parameters | Any task |
-| **Kill Process** | Stop a running task | Task is "Processing" |
-| **View Results** | See detailed results | Task has results |
-| **Download Logs** | Export error logs | Task has errors |
+| Acción | Descripción | Cuándo está disponible |
+|--------|-------------|------------------------|
+| **Run** | Iniciar una tarea "Not Start" | Tarea no iniciada |
+| **Retry** | Reiniciar una tarea fallida | Tarea con estado "Error" |
+| **Edit** | Modificar parámetros de la tarea | Cualquier tarea |
+| **Kill Process** | Detener una tarea en ejecución | Tarea en estado "Processing" |
+| **View Results** | Ver resultados detallados | La tarea tiene resultados |
+| **Download Logs** | Exportar registros de errores | La tarea tiene errores |
 
-## Viewing Search Results
+## Ver resultados de búsqueda
 
-### Step 1: Open Results
+### Paso 1: Abrir resultados
 
-1. Go to **Search** → **Result List**
-2. Find your task
-3. Click **View Results** to see detailed results
+1. Ve a **Search** → **Result List**
+2. Encuentra tu tarea
+3. Haz clic en **View Results** para ver los resultados detallados
 
-### Step 2: Results Table
+### Paso 2: Tabla de resultados
 
-The results table displays:
+La tabla de resultados muestra:
 
-| Column | Description |
-|--------|-------------|
-| **ID** | Result identifier |
-| **Title** | Page title from search result |
-| **Link** | URL of the search result |
-| **Keyword** | Keyword that generated this result |
-| **Timestamp** | When the result was scraped |
-| **AI Industry** | Industry classification (if analyzed) |
-| **AI Match Score** | Lead quality score (if analyzed) |
-| **Analysis Status** | Analysis completion status |
+| Columna | Descripción |
+|---------|-------------|
+| **ID** | Identificador del resultado |
+| **Title** | Título de la página del resultado de búsqueda |
+| **Link** | URL del resultado de búsqueda |
+| **Keyword** | Palabra clave que generó este resultado |
+| **Record Time** | Cuándo se extrajo el resultado |
+| **Customer Industry** | Industria clasificada por IA (si se analizó) |
+| **Probability** | Puntuación de calidad del lead 0-100% (si se analizó) |
+| **Analysis Status** | Estado de finalización del análisis (pending/analyzing/completed/failed) |
+| **Contact Extraction** | Estado de extracción de información de contacto |
+| **Email** | Dirección de correo extraída (si se extrajo) |
+| **Phone** | Número de teléfono extraído (si se extrajo) |
+| **Address** | Dirección física extraída (si se extrajo) |
 
-### Step 3: Interact with Results
+:::tip Visibilidad de columnas
 
-**Individual Actions:**
-- **Copy Link**: Copy URL to clipboard
-- **Open Link**: Open URL in your browser
+Puedes personalizar qué columnas se muestran usando el menú de **visibilidad de columnas**. Haz clic en el selector de columnas para mostrar u ocultar columnas específicas según las necesidades de tu flujo de trabajo.
 
-**Batch Actions:**
-- Select multiple results using checkboxes
-- **AI Analysis**: Analyze selected results for lead scoring
-- **Extract Emails**: Extract email addresses from selected URLs
-- **Export**: Download results as CSV
+:::
 
-## AI Website Analysis
+### Paso 3: Interactuar con los resultados
 
-Enhance your search results with AI-powered analysis:
+**Acciones individuales:**
+- **Copy Link**: Copiar la URL al portapapeles
+- **Copy Contact Info**: Copiar directamente el correo, teléfono o dirección extraídos
 
-### Step 1: Select Results
+**Acciones por lotes:**
+- Selecciona múltiples resultados usando casillas de verificación
+- **AI Analyze**: Analizar los resultados seleccionados para puntuación de leads y clasificación de industria
+- **AI Extract Contact Info**: Extraer información de contacto (correo, teléfono, dirección) de las URL seleccionadas
+- **Extract Emails**: Navegar a la función de Extracción de correos con las URL seleccionadas
+- **Export**: Descargar resultados como CSV (incluye campos de análisis de IA)
 
-1. Check the boxes next to results you want to analyze
-2. Click the **AI Analysis** button
+## Análisis de sitios web con IA
 
-### Step 2: Configure Analysis
+Mejora tus resultados de búsqueda con análisis impulsado por IA:
 
-- **Industry Classification**: Categorize businesses by industry
-- **Lead Scoring**: Rate lead quality (0-100)
-- **Business Context**: Extract business information
+### Paso 1: Seleccionar resultados
 
-### Step 3: Monitor Progress
+1. Marca las casillas junto a los resultados que deseas analizar
+2. Haz clic en el botón **AI Analyze**
 
-- Progress bar shows completion status
-- Results update in real-time
-- AI Match Score indicates lead quality
+### Paso 2: Proporcionar contexto empresarial
 
-### Step 4: Filter by Score
+Aparecerá un diálogo solicitando tu información empresarial:
 
-After analysis:
-- Use the AI Match Score to prioritize leads
-- Filter results by industry
-- Focus on high-score leads for outreach
+1. **Introduce la descripción de tu negocio** en el área de texto — esto ayuda a la IA a entender qué tipo de leads estás buscando
+2. **Guardar para futuro** (opcional): Marca esta casilla para guardar tu descripción de negocio para análisis futuros
 
-## Email Extraction from Search Results
+:::tip Contexto empresarial
 
-Extract emails directly from your search results:
+Proporciona una descripción clara y específica de tu negocio y clientes objetivo. Cuanto más contexto proporciones, más precisa será la puntuación de la IA. Por ejemplo: "Somos una empresa B2B SaaS que vende herramientas de automatización de marketing a pequeñas y medianas empresas del sector retail."
 
-### Step 1: Select Results
+:::
 
-1. Check boxes next to results containing URLs you want to extract emails from
-2. Click **Extract Emails** button
+### Paso 3: Revisar resultados del análisis
 
-### Step 2: Configure Extraction
+La IA produce lo siguiente para cada resultado analizado:
 
-The selected URLs are automatically passed to the [Email Extraction](./contact-extraction) feature.
+| Campo | Descripción |
+|-------|-------------|
+| **Customer Industry** | Categoría de industria clasificada por IA |
+| **Probability** | Puntuación de calidad del lead de 0-100% |
+| **AI Reasoning** | Explicación de por qué este lead recibió esta puntuación |
+| **Client Business** | Tipo de negocio identificado del sitio web |
 
-### Step 3: View Extracted Emails
+### Paso 4: Monitorear progreso
 
-Navigate to the Email Extraction section to view collected emails.
+- La barra de progreso muestra el estado de finalización de las operaciones por lotes
+- Los resultados se actualizan en tiempo real a medida que se analiza cada sitio web
+- El estado de análisis rastrea cada resultado: pending → analyzing → completed/failed
 
-## Exporting Search Results
+### Paso 5: Filtrar por puntuación
 
-### Export as CSV
+Después del análisis:
+- Usa la puntuación de probabilidad para priorizar leads
+- Concéntrate en leads con puntuación de 70%+ para comunicación
+- Filtra resultados por clasificación de industria
 
-1. Select results you want to export (or leave blank for all)
-2. Click **Export** → **CSV**
-3. Choose save location
-4. File includes all columns from the results table
+## Extracción de información de contacto con IA
 
-### Export Error Logs
+Extrae detalles de contacto directamente de tus resultados de búsqueda usando IA:
 
-If a task fails:
+### Paso 1: Seleccionar resultados
 
-1. Go to **Search** → **Result List**
-2. Find the failed task
-3. Click **Download Logs**
-4. Review logs to diagnose issues
+1. Marca las casillas junto a los resultados de los que deseas extraer información de contacto
+2. Haz clic en el botón **AI Extract Contact Info**
 
-## Best Practices
+### Paso 2: Monitorear extracción
 
-### 1. Start Small
+- El sistema visita cada URL seleccionada y extrae información de contacto
+- La extracción se ejecuta en segundo plano con actualizaciones de progreso en tiempo real
+- El estado rastrea cada resultado: pending → analyzing → completed/failed
 
-- Begin with 5-10 keywords
-- Use low concurrency (1-3)
-- Monitor results before scaling up
+### Paso 3: Ver contactos extraídos
 
-### 2. Use Proxies
+La información extraída se muestra directamente en la tabla de resultados:
 
-- Always use proxies for more than 10 pages
-- Rotate proxies to distribute load
-- Test proxies before running large tasks
+| Campo | Descripción |
+|-------|-------------|
+| **Email** | Direcciones de correo extraídas |
+| **Phone** | Números de teléfono extraídos |
+| **Address** | Direcciones físicas extraídas |
 
-### 3. Leverage AI Features
+Puedes copiar campos de contacto individuales directamente desde la tabla usando los botones de copia.
 
-- Use keyword generation to expand coverage
-- Run AI analysis to score leads
-- Focus on high-score results for outreach
+## Extracción de correos desde resultados de búsqueda
 
-### 4. Engine-Specific Tips
+Extrae correos directamente de tus resultados de búsqueda:
+
+### Paso 1: Seleccionar resultados
+
+1. Marca las casillas junto a los resultados que contienen URL de las que deseas extraer correos
+2. Haz clic en el botón **Extract Emails**
+
+### Paso 2: Configurar extracción
+
+Las URL seleccionadas se transfieren automáticamente a la función de [Extracción de correos](./contact-extraction).
+
+### Paso 3: Ver correos extraídos
+
+Navega a la sección de Extracción de correos para ver los correos recopilados.
+
+## Exportar resultados de búsqueda
+
+### Exportar como CSV
+
+1. Selecciona los resultados que deseas exportar (o deja en blanco para todos)
+2. Haz clic en **Export** → **CSV**
+3. Elige la ubicación de guardado
+4. El archivo incluye todas las columnas de la tabla de resultados, incluyendo campos de análisis de IA (industria, puntuación, razonamiento) e información de contacto (correo, teléfono, dirección)
+
+### Exportar registros de errores
+
+Si una tarea falla:
+
+1. Ve a **Search** → **Result List**
+2. Encuentra la tarea fallida
+3. Haz clic en **Download Logs**
+4. Revisa los registros para diagnosticar problemas
+
+## Mejores prácticas
+
+### 1. Comienza en pequeño
+
+- Comienza con 5-10 palabras clave
+- Usa baja concurrencia (1-3)
+- Monitorea los resultados antes de escalar
+
+### 2. Usa proxies
+
+- Siempre usa proxies para más de 10 páginas
+- Rota los proxies para distribuir la carga
+- Prueba los proxies antes de ejecutar tareas grandes
+
+### 3. Aprovecha las funciones de IA
+
+- Usa la generación de palabras clave para ampliar la cobertura
+- Proporciona un contexto empresarial claro para una puntuación de IA más precisa
+- Ejecuta análisis de IA para puntuar y clasificar leads
+- Usa la extracción de contactos por IA para obtener correo, teléfono y dirección
+- Concéntrate en resultados con puntuación alta para comunicación
+
+### 4. Consejos específicos por motor
 
 **Google:**
-- Use authenticated accounts
-- Enable local browser for large tasks
-- Respect rate limits (start with 1 concurrent)
+- Usa cuentas autenticadas
+- Habilita el navegador local para tareas grandes
+- Habilita la recuperación por IA para un manejo robusto de errores
+- Respeta los límites de velocidad (comienza con 1 concurrente)
 
 **Bing:**
-- More forgiving than Google
-- Can use higher concurrency
-- Good for US-focused searches
+- Más tolerante que Google
+- Puede usar mayor concurrencia
+- Bueno para búsquedas enfocadas en EE.UU.
 
 **Yandex:**
-- **Must use local browser**
-- Use accounts for better access
-- Essential for Russian/Cyrillic content
+- **Debe usar navegador local**
+- Usa cuentas para mejor acceso
+- Esencial para contenido ruso/cirílico
 
-### 5. Monitor Task Status
+### 5. Monitorea el estado de las tareas
 
-- Check task list regularly
-- Review error logs for failures
-- Adjust settings based on results
+- Revisa la lista de tareas regularmente
+- Revisa los registros de errores para fallos
+- Ajusta los ajustes según los resultados
 
-### 6. Organize Results
+### 6. Organiza los resultados
 
-- Use descriptive task names
-- Export results regularly
-- Clean up old tasks
+- Usa nombres descriptivos para las tareas
+- Exporta los resultados regularmente
+- Limpia tareas antiguas
 
-## Troubleshooting
+## Solución de problemas
 
-### Task Status: "Error"
+### Estado de la tarea: "Error"
 
-**Possible causes:**
-- All proxies failed
-- Network connectivity issues
-- Search engine blocked requests
+**Posibles causas:**
+- Todos los proxies fallaron
+- Problemas de conectividad de red
+- El motor de búsqueda bloqueó las solicitudes
 
-**Solutions:**
-1. Check proxy health in Proxy section
-2. Verify internet connection
-3. Reduce concurrency
-4. Enable local browser
-5. Use authenticated accounts
+**Soluciones:**
+1. Comprueba la salud de los proxies en la sección de Proxy
+2. Verifica la conexión a internet
+3. Reduce la concurrencia
+4. Habilita el navegador local
+5. Usa cuentas autenticadas
+6. Habilita la recuperación por IA para el manejo automático de errores
 
-### No Results Returned
+### No se devolvieron resultados
 
-**Possible causes:**
-- Keywords too specific
-- Search engine returned no results
-- Pagination out of range
+**Posibles causas:**
+- Palabras clave demasiado específicas
+- El motor de búsqueda no devolvió resultados
+- Paginación fuera de rango
 
-**Solutions:**
-1. Try broader keywords
-2. Start from page 1
-3. Verify keywords work in manual search
+**Soluciones:**
+1. Prueba con palabras clave más amplias
+2. Comienza desde la página 1
+3. Verifica que las palabras clave funcionen en una búsqueda manual
 
-### Slow Processing
+### Procesamiento lento
 
-**Possible causes:**
-- High concurrency without enough proxies
-- Local browser enabled (slower but safer)
-- Network latency
+**Posibles causas:**
+- Alta concurrencia sin suficientes proxies
+- Navegador local habilitado (más lento pero más seguro)
+- Latencia de red
 
-**Solutions:**
-1. Add more proxies
-2. Reduce concurrency
-3. Consider disabling local browser for speed (with caution)
+**Soluciones:**
+1. Añade más proxies
+2. Reduce la concurrencia
+3. Considera deshabilitar el navegador local para velocidad (con precaución)
 
-### Captcha or Block Detected
+### Captcha o bloqueo detectado
 
-**Solutions:**
-1. Enable local browser integration
-2. Use authenticated accounts
-3. Add more proxies
-4. Reduce request frequency
-5. Take breaks between large tasks
+**Soluciones:**
+1. Habilita la integración con navegador local
+2. Usa cuentas autenticadas
+3. Añade más proxies
+4. Reduce la frecuencia de solicitudes
+5. Toma descansos entre tareas grandes
+6. Habilita la recuperación por IA para manejar bloqueos automáticamente
 
-## Advanced Workflows
+## Flujos de trabajo avanzados
 
-### Workflow 1: Comprehensive Lead Generation
+### Flujo de trabajo 1: Generación integral de leads
 
-1. **Create search task** with broad keywords
-2. **Generate related keywords** using AI
-3. **Run with moderate concurrency** (3-5)
-4. **AI analyze** all results
-5. **Filter by match score** (focus on 70+)
-6. **Extract emails** from high-score results
-7. **Export** for email campaigns
+1. **Crea tarea de búsqueda** con palabras clave amplias
+2. **Genera palabras clave relacionadas** usando IA
+3. **Ejecuta con concurrencia moderada** (3-5)
+4. **Habilita recuperación por IA** para manejo robusto de errores
+5. **Analiza con IA** todos los resultados con tu contexto empresarial
+6. **Filtra por puntuación de probabilidad** (concéntrate en 70%+)
+7. **Extrae contactos con IA** de los resultados con puntuación alta
+8. **Exporta** para campañas de correo
 
-### Workflow 2: Competitive Analysis
+### Flujo de trabajo 2: Análisis competitivo
 
-1. **Search competitor names** + industry keywords
-2. **Use local browser** to avoid detection
-3. **AI analyze** for industry classification
-4. **Export** for market research
+1. **Busca nombres de competidores** + palabras clave de la industria
+2. **Usa navegador local** para evitar detección
+3. **Analiza con IA** para clasificación de industria
+4. **Exporta** para investigación de mercado
 
-### Workflow 3: Local Business Discovery
+### Flujo de trabajo 3: Descubrimiento de negocios locales
 
-1. **Search local keywords** (e.g., "plumbers in Chicago")
-2. **Extract emails** from results
-3. **Batch analyze** websites
-4. **Create targeted outreach** campaigns
+1. **Busca palabras clave locales** (ej., "plomeros en Chicago")
+2. **Extrae contactos con IA** de los resultados (correo, teléfono, dirección)
+3. **Analiza por lotes** los sitios web con tu contexto empresarial
+4. **Crea campañas** de comunicación dirigidas
 
-## Integration with Other Features
+## Integración con otras funciones
 
-Search results integrate seamlessly with:
+Los resultados de búsqueda se integran perfectamente con:
 
-- **[Contact Extraction](./contact-extraction)** - Extract emails from URLs
-- **[Yellow Pages](./yellow-pages)** - Cross-reference with directory listings
-- **[AI Email Writer](../ai-outreach/ai-email-writer)** - Create personalized outreach
-- **[Batch Email Sending](./batch-email-sending)** - Launch campaigns
+- **[Extracción de contactos](./contact-extraction)** - Extrae correos de URL
+- **[Páginas amarillas](./yellow-pages)** - Referencia cruzada con listados de directorios
+- **[AI Email Writer](../ai-outreach/ai-email-writer)** - Crea comunicaciones personalizadas
+- **[Envío masivo de correos](./batch-email-sending)** - Lanza campañas
 
-## Next Steps
+## Próximos pasos
 
-- [Learn about Yellow Pages scraping](./yellow-pages)
-- [Set up contact extraction](./contact-extraction)
-- [Create AI-powered email campaigns](../ai-outreach/ai-email-writer)
+- [Conoce la extracción de Páginas amarillas](./yellow-pages)
+- [Configura la extracción de contactos](./contact-extraction)
+- [Crea campañas de correo impulsadas por IA](../ai-outreach/ai-email-writer)
 
 ---
 
-**Ready to find leads?** Start with a small search task and scale up as you become familiar with the system.
+**¿Listo para encontrar leads?** Comienza con una tarea de búsqueda pequeña y escala a medida que te familiarices con el sistema.

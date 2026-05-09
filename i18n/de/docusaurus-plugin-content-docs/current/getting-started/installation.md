@@ -7,282 +7,282 @@ description: How to download and install aiFetchly on Windows, macOS, or Linux.
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# Installing aiFetchly
+# aiFetchly installieren
 
-aiFetchly is available for Windows, macOS, and Linux. Follow the instructions for your operating system below.
+aiFetchly ist für Windows, macOS und Linux verfügbar. Befolgen Sie die Anweisungen für Ihr Betriebssystem.
 
-## System Requirements
+## Systemanforderungen
 
-Before installing aiFetchly, ensure your system meets these requirements:
+Stellen Sie vor der Installation sicher, dass Ihr System diese Anforderungen erfüllt:
 
-### All Platforms
-- **RAM**: 4GB minimum (8GB recommended)
-- **Storage**: 500MB for application + additional space for data
-- **Network**: Stable internet connection
+### Alle Plattformen
+- **RAM**: 4 GB minimum (8 GB empfohlen)
+- **Speicher**: 500 MB für die Anwendung + zusätzlicher Platz für Daten
+- **Netzwerk**: Stabile Internetverbindung
 
-### Platform-Specific
+### Plattformspezifisch
 
-| Platform | Minimum Version |
+| Plattform | Mindestversion |
 |----------|-----------------|
-| Windows | Windows 10 or later |
-| macOS | macOS 10.15 (Catalina) or later |
+| Windows | Windows 10 oder neuer |
+| macOS | macOS 10.15 (Catalina) oder neuer |
 | Linux | Ubuntu 20.04+, Debian 11+, Fedora 35+ |
 
-## Download aiFetchly
+## aiFetchly herunterladen
 
-1. Visit the official aiFetchly website
-2. Navigate to the **Downloads** section
-3. Select the appropriate installer for your operating system
+1. Besuchen Sie die offizielle aiFetchly-Website
+2. Navigieren Sie zum Bereich **Downloads**
+3. Wählen Sie das passende Installationsprogramm für Ihr Betriebssystem
 
-## Installation by Platform
+## Installation nach Plattform
 
-### Windows Installation
+### Windows-Installation
 
-aiFetchly provides two installer options for Windows:
+aiFetchly bietet zwei Installationsprogramme für Windows:
 
-#### Option 1: Squirrel Installer (Recommended)
+#### Option 1: Squirrel-Installationsprogramm (Empfohlen)
 
-The Squirrel installer is the modern installation method with automatic update support.
+Das Squirrel-Installationsprogramm ist die moderne Installationsmethode mit automatischer Update-Unterstützung.
 
-**Steps:**
+**Schritte:**
 
-1. Download `aiFetchly-Setup-x.x.x.exe` (where x.x.x is the version number)
-2. Double-click the installer to run it
-3. If prompted by Windows SmartScreen, click "More info" then "Run anyway"
-4. Follow the installation wizard:
-   - Choose installation location (default: `%LOCALAPPDATA%\aiFetchly`)
-   - Select whether to create a desktop shortcut
-   - Select whether to create a Start Menu shortcut
-5. Click **Install** to begin installation
-6. Wait for the installation to complete
-7. Click **Finish** to close the installer
+1. `aiFetchly-Setup-x.x.x.exe` herunterladen (x.x.x ist die Versionsnummer)
+2. Installationsprogramm doppelt anklicken
+3. Falls Windows SmartScreen eine Warnung zeigt, auf „Weitere Informationen" und dann „Trotzdem ausführen" klicken
+4. Dem Installationsassistenten folgen:
+   - Installationsort wählen (Standard: `%LOCALAPPDATA%\aiFetchly`)
+   - Desktop-Verknüpfung erstellen oder nicht
+   - Startmenü-Verknüpfung erstellen oder nicht
+5. Auf **Installieren** klicken
+6. Auf Abschluss der Installation warten
+7. Auf **Fertigstellen** klicken
 
-:::tip Administrator Privileges
+:::tip Administratorrechte
 
-Standard installation doesn't require administrator privileges. However, if you want to install for all users, run the installer as administrator.
-
-:::
-
-#### Option 2: WiX Installer (MSI)
-
-The WiX installer provides a traditional MSI installation experience.
-
-**Steps:**
-
-1. Download `aiFetchly-x.x.x.msi`
-2. Double-click the MSI file
-3. Follow the Windows Installer wizard:
-   - Accept the license agreement
-   - Choose installation directory
-   - Configure shortcuts (desktop and Start Menu)
-   - Select installation folder for all users or current user
-4. Click **Install** to begin
-5. Complete the wizard and restart if prompted
-
-#### Launching aiFetchly on Windows
-
-After installation, you can launch aiFetchly by:
-
-- **Desktop Shortcut**: Double-click the aiFetchly icon on your desktop
-- **Start Menu**: Go to Start → All Programs → aiFetchly → aiFetchly
-- **Installation Folder**: Navigate to the installation directory and run `aiFetchly.exe`
-
-### macOS Installation
-
-aiFetchly for macOS is distributed as a DMG disk image.
-
-**Steps:**
-
-1. Download `aiFetchly-x.x.x.dmg`
-2. Double-click the DMG file to mount it
-3. A window will appear with the aiFetchly application and a shortcut to Applications
-4. Drag the **aiFetchly** icon to the **Applications** folder
-5. Wait for the copy operation to complete
-6. Eject the DMG by dragging it to the trash or right-clicking and selecting "Eject"
-
-#### First Launch on macOS
-
-**Important:** On first launch, macOS may prevent aiFetchly from running due to security settings.
-
-**To bypass Gatekeeper protection:**
-
-1. Open **System Preferences** → **Security & Privacy**
-2. Go to the **General** tab
-3. Look for a message saying "aiFetchly was blocked from opening"
-4. Click **Open Anyway** to confirm you want to run aiFetchly
-
-:::info Alternative Method
-
-Right-click (or Control-click) on aiFetchly in the Applications folder and select "Open". This will bypass Gatekeeper for this specific launch.
+Die Standardinstallation erfordert keine Administratorrechte. Wenn Sie jedoch für alle Benutzer installieren möchten, führen Sie das Installationsprogramm als Administrator aus.
 
 :::
 
-#### Launching aiFetchly on macOS
+#### Option 2: WiX-Installationsprogramm (MSI)
 
-After installation:
+Das WiX-Installationsprogramm bietet eine traditionelle MSI-Installation.
 
-- **Applications Folder**: Open Finder → Applications → aiFetchly
-- **Spotlight Search**: Press `Cmd + Space`, type "aiFetchly", and press Enter
-- **Launchpad**: Click the Launchpad icon and search for aiFetchly
+**Schritte:**
 
-### Linux Installation
+1. `aiFetchly-x.x.x.msi` herunterladen
+2. MSI-Datei doppelt anklicken
+3. Dem Windows-Installationsassistenten folgen:
+   - Lizenzvereinbarung akzeptieren
+   - Installationsverzeichnis wählen
+   - Verknüpfungen konfigurieren (Desktop und Startmenü)
+   - Installationsordner für alle oder aktuellen Benutzer wählen
+4. Auf **Installieren** klicken
+5. Assistenten abschließen und bei Bedarf neu starten
 
-aiFetchly provides packages for Debian/Ubuntu (DEB) and Red Hat/Fedora (RPM) distributions.
+#### aiFetchly unter Windows starten
 
-#### Debian/Ubuntu (DEB Package)
+Nach der Installation können Sie aiFetchly starten über:
 
-**Steps:**
+- **Desktop-Verknüpfung**: aiFetchly-Icon auf dem Desktop doppelt anklicken
+- **Startmenü**: Start → Alle Programme → aiFetchly → aiFetchly
+- **Installationsordner**: Zum Installationsverzeichnis navigieren und `aiFetchly.exe` ausführen
 
-1. Download `aifetchly_x.x.x_amd64.deb`
-2. Open your terminal and navigate to the download directory
-3. Install the package using:
+### macOS-Installation
+
+aiFetchly für macOS wird als DMG-Disk-Image vertrieben.
+
+**Schritte:**
+
+1. `aiFetchly-x.x.x.dmg` herunterladen
+2. DMG-Datei doppelt anklicken zum Einhängen
+3. Ein Fenster mit der aiFetchly-Anwendung und einem Link zu „Programme" erscheint
+4. Das **aiFetchly**-Symbol in den Ordner **Programme** ziehen
+5. Auf Abschluss des Kopiervorgangs warten
+6. DMG auswerfen durch Ziehen in den Papierkorb oder Rechtsklick und „Auswerfen"
+
+#### Erster Start unter macOS
+
+**Wichtig:** Beim ersten Start kann macOS aiFetchly aufgrund der Sicherheitseinstellungen blockieren.
+
+**Gatekeeper-Schutz umgehen:**
+
+1. **Systemeinstellungen** → **Sicherheit & Datenschutz** öffnen
+2. Zum Reiter **Allgemein** gehen
+3. Nach der Meldung „aiFetchly wurde am Öffnen gehindert" suchen
+4. Auf **Trotzdem öffnen** klicken
+
+:::info Alternative Methode
+
+Klicken Sie im Programme-Ordner mit der rechten Maustaste (oder Control-Klick) auf aiFetchly und wählen Sie „Öffnen". Dies umgeht Gatekeeper für diesen Start.
+
+:::
+
+#### aiFetchly unter macOS starten
+
+Nach der Installation:
+
+- **Programme-Ordner**: Finder öffnen → Programme → aiFetchly
+- **Spotlight-Suche**: `Cmd + Leertaste` drücken, „aiFetchly" eingeben und Enter drücken
+- **Launchpad**: Launchpad-Icon klicken und aiFetchly suchen
+
+### Linux-Installation
+
+aiFetchly bietet Pakete für Debian/Ubuntu (DEB) und Red Hat/Fedora (RPM) Distributionen.
+
+#### Debian/Ubuntu (DEB-Paket)
+
+**Schritte:**
+
+1. `aifetchly_x.x.x_amd64.deb` herunterladen
+2. Terminal öffnen und zum Download-Verzeichnis navigieren
+3. Paket installieren mit:
 
 ```bash
 sudo dpkg -i aifetchly_x.x.x_amd64.deb
 ```
 
-4. If there are dependency issues, fix them with:
+4. Bei Abhängigkeitsproblemen:
 
 ```bash
 sudo apt-get install -f
 ```
 
-5. aiFetchly will be installed to `/opt/aifetchly` by default
+5. aiFetchly wird standardmäßig nach `/opt/aifetchly` installiert
 
-#### Red Hat/Fedora (RPM Package)
+#### Red Hat/Fedora (RPM-Paket)
 
-**Steps:**
+**Schritte:**
 
-1. Download `aifetchly-x.x.x.x86_64.rpm`
-2. Open your terminal and navigate to the download directory
-3. Install the package using:
+1. `aifetchly-x.x.x.x86_64.rpm` herunterladen
+2. Terminal öffnen und zum Download-Verzeichnis navigieren
+3. Paket installieren mit:
 
 ```bash
 sudo dnf install aifetchly-x.x.x.x86_64.rpm
 ```
 
-Or using `yum`:
+Oder mit `yum`:
 
 ```bash
 sudo yum install aifetchly-x.x.x.x86_64.rpm
 ```
 
-#### Manual Installation ( tar.gz archive)
+#### Manuelle Installation (tar.gz-Archiv)
 
-If you prefer not to use a package manager:
+Wenn Sie keinen Paketmanager verwenden möchten:
 
-1. Download `aiFetchly-x.x.x-linux.tar.gz`
-2. Extract the archive:
+1. `aiFetchly-x.x.x-linux.tar.gz` herunterladen
+2. Archiv entpacken:
 
 ```bash
 tar -xzf aiFetchly-x.x.x-linux.tar.gz
 ```
 
-3. Move the extracted directory to your preferred location:
+3. Entpacktes Verzeichnis an den gewünschten Ort verschieben:
 
 ```bash
 sudo mv aiFetchly /opt/aifetchly
 ```
 
-4. Create desktop shortcuts manually (optional)
+4. Desktop-Verknüpfungen manuell erstellen (optional)
 
-#### Launching aiFetchly on Linux
+#### aiFetchly unter Linux starten
 
-After installation:
+Nach der Installation:
 
-- **Application Menu**: Look for aiFetchly in your desktop environment's application menu
-- **Terminal**: Run `/opt/aifetchly/aiFetchly`
-- **Desktop Shortcut**: If created during installation, double-click the desktop icon
+- **Anwendungsmenü**: aiFetchly im Anwendungsmenü Ihrer Desktop-Umgebung suchen
+- **Terminal**: `/opt/aifetchly/aiFetchly` ausführen
+- **Desktop-Verknüpfung**: Falls erstellt, Desktop-Icon doppelt anklicken
 
-## Verifying Installation
+## Installation überprüfen
 
-After launching aiFetchly, you should see the main application window with:
+Nach dem Start von aiFetchly sollten Sie das Hauptfenster sehen mit:
 
-- Navigation menu on the left
-- Dashboard or welcome screen
-- Access to all features (Search, Email Marketing, Knowledge Library, etc.)
+- Navigationsmenü auf der linken Seite
+- Dashboard oder Willkommensbildschirm
+- Zugriff auf alle Funktionen (Suche, E-Mail-Marketing, Wissensbibliothek usw.)
 
-## Uninstalling aiFetchly
+## aiFetchly deinstallieren
 
-If you need to remove aiFetchly from your system:
+Wenn Sie aiFetchly von Ihrem System entfernen möchten:
 
 ### Windows
 
-**Squirrel Installer:**
+**Squirrel-Installationsprogramm:**
 
-1. Go to **Settings** → **Apps** → **Installed apps**
-2. Search for "aiFetchly"
-3. Click **Uninstall** and follow the prompts
+1. **Einstellungen** → **Apps** → **Installierte Apps** öffnen
+2. Nach „aiFetchly" suchen
+3. Auf **Deinstallieren** klicken und den Anweisungen folgen
 
-**WiX Installer (MSI):**
+**WiX-Installationsprogramm (MSI):**
 
-1. Go to **Settings** → **Apps** → **Installed apps**
-2. Find aiFetchly in the list
-3. Click **Uninstall** and confirm
+1. **Einstellungen** → **Apps** → **Installierte Apps** öffnen
+2. aiFetchly in der Liste finden
+3. Auf **Deinstallieren** klicken und bestätigen
 
-Or use the uninstaller in the installation directory.
+Oder das Deinstallationsprogramm im Installationsverzeichnis verwenden.
 
 ### macOS
 
-1. Quit aiFetchly if it's running
-2. Open **Finder** and go to **Applications**
-3. Drag **aiFetchly** to the trash
-4. Empty the trash to complete removal
+1. aiFetchly beenden, falls es läuft
+2. **Finder** öffnen und zu **Programme** gehen
+3. **aiFetchly** in den Papierkorb ziehen
+4. Papierkorb leeren zum vollständigen Entfernen
 
-:::note Application Data
+:::note Anwendungsdaten
 
-On macOS, user data and preferences are stored in:
+Unter macOS werden Benutzerdaten und Einstellungen gespeichert in:
 ```
 ~/Library/Application Support/aiFetchly
 ```
 
-Delete this folder if you want to remove all user data.
+Löschen Sie diesen Ordner, um alle Benutzerdaten zu entfernen.
 
 :::
 
 ### Linux
 
-**DEB Package (Debian/Ubuntu):**
+**DEB-Paket (Debian/Ubuntu):**
 
 ```bash
 sudo apt remove aifetchly
 ```
 
-**RPM Package (Red Hat/Fedora):**
+**RPM-Paket (Red Hat/Fedora):**
 
 ```bash
 sudo dnf remove aifetchly
 ```
 
-**Manual Installation:**
+**Manuelle Installation:**
 
 ```bash
 sudo rm -rf /opt/aifetchly
-rm ~/.config/aifetchly  # Remove user data if desired
+rm ~/.config/aifetchly  # Benutzerdaten bei Bedarf entfernen
 ```
 
-## Updating aiFetchly
+## aiFetchly aktualisieren
 
-### Windows (Squirrel Installer)
+### Windows (Squirrel-Installationsprogramm)
 
-aiFetchly will automatically check for updates on launch. When an update is available:
+aiFetchly prüft beim Start automatisch nach Updates. Wenn ein Update verfügbar ist:
 
-1. You'll see a notification about the new version
-2. Click **Download Update** to begin
-3. The application will download and install the update automatically
-4. aiFetchly will restart to complete the update
+1. Sie sehen eine Benachrichtigung über die neue Version
+2. Auf **Update herunterladen** klicken
+3. Die Anwendung lädt und installiert das Update automatisch
+4. aiFetchly startet neu, um das Update abzuschließen
 
 ### macOS
 
-Updates are delivered through DMG releases. To update:
+Updates werden über DMG-Releases bereitgestellt. So aktualisieren Sie:
 
-1. Download the latest DMG from the website
-2. Drag the new aiFetchly to Applications, replacing the old version
-3. Launch and confirm when prompted to replace
+1. Neueste DMG von der Website herunterladen
+2. Neues aiFetchly in Programme ziehen und alte Version ersetzen
+3. Starten und beim Ersetzen-Prompt bestätigen
 
 ### Linux
 
-Updates are delivered through package updates:
+Updates werden über Paketaktualisierungen bereitgestellt:
 
 **Debian/Ubuntu:**
 
@@ -297,35 +297,35 @@ sudo apt install --only-upgrade aifetchly
 sudo dnf upgrade aifetchly
 ```
 
-## Troubleshooting Installation
+## Installationsprobleme beheben
 
-### Windows: "Windows Protected Your PC"
+### Windows: „Windows hat Ihren PC geschützt"
 
-This is Windows SmartScreen being cautious. Click **More info** → **Run anyway** to proceed.
+Dies ist eine Vorsichtsmaßnahme von Windows SmartScreen. Klicken Sie auf **Weitere Informationen** → **Trotzdem ausführen**.
 
-### Windows: Installation Fails
+### Windows: Installation schlägt fehl
 
-- Run the installer as administrator
-- Temporarily disable antivirus software
-- Ensure you have sufficient disk space
-- Check that no previous version is running
+- Installationsprogramm als Administrator ausführen
+- Antiviren-Software vorübergehend deaktivieren
+- Ausreichenden Speicherplatz sicherstellen
+- Prüfen, dass keine vorherige Version läuft
 
-### macOS: "App Can't Be Opened"
+### macOS: „App kann nicht geöffnet werden"
 
-This is Gatekeeper protection. See the [First Launch on macOS](#first-launch-on-macos) section above.
+Dies ist der Gatekeeper-Schutz. Siehe den Abschnitt [Erster Start unter macOS](#first-launch-on-macos) oben.
 
-### Linux: Permission Denied
+### Linux: Berechtigung verweigert
 
-Ensure the installer has execute permissions:
+Stellen Sie sicher, dass das Installationsprogramm Ausführungsberechtigungen hat:
 
 ```bash
 chmod +x aifetchly_x.x.x_amd64.deb
 sudo dpkg -i aifetchly_x.x.x_amd64.deb
 ```
 
-### Linux: Missing Dependencies
+### Linux: Fehlende Abhängigkeiten
 
-If you encounter dependency errors:
+Bei Abhängigkeitsfehlern:
 
 **Debian/Ubuntu:**
 
@@ -339,14 +339,14 @@ sudo apt-get install -f
 sudo dnf install --skip-broken aifetchly
 ```
 
-## Next Steps
+## Nächste Schritte
 
-After successfully installing aiFetchly:
+Nach erfolgreicher Installation von aiFetchly:
 
-1. [Configure proxy settings](./proxy-setup) (recommended for scraping)
-2. [Learn about lead generation](../lead-generation/search-engines)
-3. [Set up your Knowledge Library](../ai-outreach/knowledge-library)
+1. [Proxy-Einstellungen konfigurieren](./proxy-setup) (empfohlen für Scraping)
+2. [Lead-Generierung kennenlernen](../lead-generation/search-engines)
+3. [Wissensbibliothek einrichten](../ai-outreach/knowledge-library)
 
 ---
 
-**Need help?** Check our [system settings](../settings/system-settings) or contact support.
+**Hilfe benötigt?** Lesen Sie unsere [Systemeinstellungen](../settings/system-settings) oder kontaktieren Sie den Support.

@@ -7,125 +7,125 @@ description: An overview of aiFetchly - your AI-powered marketing automation too
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# Welcome to aiFetchly
+# Bienvenue sur aiFetchly
 
-**aiFetchly** is a powerful desktop application that combines AI technology with marketing automation to help you generate leads, extract contacts, and run personalized email outreach campaigns at scale.
+**aiFetchly** est une application de bureau puissante qui combine la technologie IA avec l'automatisation marketing pour vous aider à générer des prospects, extraire des contacts et mener des campagnes d'emailing de prospection personnalisées à grande échelle.
 
-## What is aiFetchly?
+## Qu'est-ce qu'aiFetchly ?
 
-aiFetchly is an all-in-one marketing automation platform designed for businesses and marketers who need to:
+aiFetchly est une plateforme d'automatisation marketing tout-en-un conçue pour les entreprises et les marketeurs qui ont besoin de :
 
-- **Find leads** across multiple search engines and online directories
-- **Extract contact information** from websites and business listings
-- **Generate personalized emails** using AI with context from your own documents
-- **Automate campaigns** with scheduling and batch email sending
-- **Get AI assistance** for marketing strategies and content creation
+- **Trouver des prospects** sur plusieurs moteurs de recherche et annuires en ligne
+- **Extraire des informations de contact** à partir de sites web et de listes d'entreprises
+- **Générer des emails personnalisés** en utilisant l'IA avec le contexte de vos propres documents
+- **Automatiser les campagnes** avec la planification et l'envoi d'emails par lot
+- **Obtenir une assistance IA** pour les stratégies marketing et la création de contenu
 
-## Key Features
+## Fonctionnalités principales
 
-### 🔍 Multi-Engine Search & Scraping
+### 🔍 Recherche multi-moteurs & scraping
 
-Search and scrape leads from multiple search engines simultaneously:
+Rechercher et scraper des prospects simultanément sur plusieurs moteurs de recherche :
 
-- **Google** - The world's largest search engine
-- **Bing** - Microsoft's search engine
-- **Yandex** - Popular Russian search engine
+- **Google** - Le plus grand moteur de recherche au monde
+- **Bing** - Le moteur de recherche de Microsoft
+- **Yandex** - Moteur de recherche russe populaire
 
-:::tip Concurrent Scraping
+:::tip Scraping simultané
 
-Run multiple search tasks at the same time to maximize your lead generation efficiency.
+Exécutez plusieurs tâches de recherche en même temps pour maximiser votre efficacité de génération de prospects.
 
 :::
 
-### 📧 Contact Extraction
+### 📧 Extraction de contacts
 
-Extract email addresses and contact information from:
+Extraire des adresses email et des informations de contact à partir de :
 
-- **Website URLs** - Bulk extract emails from lists of websites
-- **Yellow Pages** - Scrape business directories for local leads
-- **Search Results** - Directly extract from your search campaigns
+- **URLs de sites web** - Extraction en masse d'emails à partir de listes de sites
+- **Pages Jaunes** - Scraper les annuaires pour des prospects locaux
+- **Résultats de recherche** - Extraire directement de vos campagnes de recherche
 
-### 🤖 AI-Powered Email Writer
+### 🤖 Rédacteur d'emails IA
 
-Create personalized outreach emails using advanced AI:
+Créer des emails de prospection personnalisés avec une IA avancée :
 
-- **Knowledge Library Integration** - Upload your own documents (PDF, Word, HTML) to provide context for AI-generated emails
-- **Template System** - Save and reuse email templates with variable substitution
-- **RAG Technology** - Retrieval-Augmented Generation ensures contextually relevant content
+- **Intégration de la bibliothèque de connaissances** - Téléchargez vos propres documents (PDF, Word, HTML) pour fournir du contexte aux emails générés par l'IA
+- **Système de modèles** - Enregistrez et réutilisez des modèles d'emails avec substitution de variables
+- **Technologie RAG** - La génération augmentée par récupération garantit un contenu contextuellement pertinent
 
-### ✉️ Batch Email Sending
+### ✉️ Envoi d'emails par lot
 
-Send personalized email campaigns at scale:
+Envoyer des campagnes d'emails personnalisées à grande échelle :
 
-- **SMTP Integration** - Use your own email server for full control
-- **Filter & Target** - Apply filters to reach the right audience
-- **Duplicate Prevention** - Avoid sending to the same contact multiple times
-- **Campaign Management** - Track and manage your email campaigns
+- **Intégration SMTP** - Utilisez votre propre serveur de messagerie pour un contrôle total
+- **Filtrage & ciblage** - Appliquez des filtres pour atteindre la bonne audience
+- **Prévention des doublons** - Évitez d'envoyer au même contact plusieurs fois
+- **Gestion de campagne** - Suivez et gérez vos campagnes d'emailing
 
-### 🎯 AI Marketing Assistant
+### 🎯 Assistant marketing IA
 
-Get strategic marketing guidance through AI-powered chat:
+Obtenez des conseils marketing stratégiques via un chat alimenté par l'IA :
 
-- **Marketing Strategy** - Plan campaigns and strategies with AI assistance
-- **Content Ideas** - Generate ideas for marketing content
-- **Knowledge Integration** - AI draws from your Knowledge Library for personalized advice
+- **Stratégie marketing** - Planifiez des campagnes et des stratégies avec l'assistance de l'IA
+- **Idées de contenu** - Générez des idées pour le contenu marketing
+- **Intégration des connaissances** - L'IA puise dans votre bibliothèque de connaissances pour des conseils personnalisés
 
-### ⏰ Task Scheduling
+### ⏰ Planification des tâches
 
-Automate your workflows with powerful scheduling:
+Automatisez vos flux de travail avec une planification puissante :
 
-- **Cron-Based Scheduling** - Flexible scheduling with cron expressions
-- **Task Dependencies** - Chain tasks together for complex workflows
-- **Pause/Resume** - Control when tasks run
-- **Execution History** - Track scheduled task performance
+- **Planification basée sur Cron** - Planification flexible avec des expressions Cron
+- **Dépendances de tâches** - Enchaînez les tâches pour des flux de travail complexes
+- **Pause/Reprise** - Contrôlez le moment d'exécution des tâches
+- **Historique d'exécution** - Suivez les performances des tâches planifiées
 
-### 🌐 Proxy Support
+### 🌐 Support proxy
 
-Protect your identity and scale your operations:
+Protégez votre identité et faites évoluer vos opérations :
 
-- **Proxy Management** - Add and manage multiple proxies
-- **Health Checking** - Verify proxy performance before use
-- **Batch Import** - Import proxy lists in bulk
-- **Integration** - Use proxies with all scraping and extraction features
+- **Gestion des proxies** - Ajoutez et gérez plusieurs proxies
+- **Vérification de santé** - Vérifiez les performances des proxies avant utilisation
+- **Import en masse** - Importez des listes de proxies en masse
+- **Intégration** - Utilisez des proxies avec toutes les fonctionnalités de scraping et d'extraction
 
-## System Requirements
+## Configuration système
 
-aiFetchly is a desktop application built with **Electron**, available for:
+aiFetchly est une application de bureau construite avec **Electron**, disponible pour :
 
-- **Windows** 10 or later
-- **macOS** 10.15 or later
+- **Windows** 10 ou ultérieur
+- **macOS** 10.15 ou ultérieur
 - **Linux** (Ubuntu 20.04+, Debian, Fedora, etc.)
 
-### Technical Specifications
+### Spécifications techniques
 
-- **Memory**: 4GB RAM minimum (8GB recommended)
-- **Storage**: 500MB for application + additional space for data
-- **Network**: Stable internet connection for search, AI features, and email sending
+- **Mémoire** : 4 Go de RAM minimum (8 Go recommandés)
+- **Stockage** : 500 Mo pour l'application + espace supplémentaire pour les données
+- **Réseau** : Connexion internet stable pour la recherche, les fonctionnalités IA et l'envoi d'emails
 
-## Current Version Status
+## Statut de la version actuelle
 
-:::info Feature Availability
+:::info Disponibilité des fonctionnalités
 
-All features described in this manual are currently available to all users. Future versions may introduce tiered plans (Community/Pro) with differentiated feature sets.
+Toutes les fonctionnalités décrites dans ce manuel sont actuellement disponibles pour tous les utilisateurs. Les futures versions pourront introduire des plans à niveaux (Communauté/Pro) avec des ensembles de fonctionnalités différenciés.
 
 :::
 
-## Next Steps
+## Prochaines étapes
 
-- [Install aiFetchly](./installation) on your computer
-- [Configure proxies](./proxy-setup) for safe scraping
-- [Learn about lead generation](../lead-generation/search-engines)
-- [Set up the Knowledge Library](../ai-outreach/knowledge-library)
-- [Start your first email campaign](../lead-generation/batch-email-sending)
+- [Installer aiFetchly](./installation) sur votre ordinateur
+- [Configurer les proxies](./proxy-setup) pour un scraping sécurisé
+- [En savoir plus sur la génération de prospects](../lead-generation/search-engines)
+- [Configurer la bibliothèque de connaissances](../ai-outreach/knowledge-library)
+- [Démarrer votre première campagne d'emailing](../lead-generation/batch-email-sending)
 
 ## Support & Documentation
 
-This manual covers all aspects of using aiFetchly. If you need additional help:
+Ce manuel couvre tous les aspects de l'utilisation d'aiFetchly. Si vous avez besoin d'aide supplémentaire :
 
-- Browse the documentation sections using the sidebar
-- Check our FAQ for common questions
-- Contact support through our official channels
+- Parcourez les sections de documentation à l'aide de la barre latérale
+- Consultez notre FAQ pour les questions courantes
+- Contactez le support via nos canaux officiels
 
 ---
 
-**Ready to get started?** Let's begin with [installation](./installation).
+**Prêt à commencer ?** Commençons par l'[installation](./installation).

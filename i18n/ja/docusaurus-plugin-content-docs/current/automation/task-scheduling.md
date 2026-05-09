@@ -5,531 +5,531 @@ sidebar_label: Task Scheduler
 description: Automate your workflows with aiFetchly's powerful task scheduling system.
 ---
 
-# Task Scheduling
+# タスクスケジューリング
 
-aiFetchly's Task Scheduler allows you to automate your marketing workflows by running tasks automatically at specified times or in response to other tasks. Set up recurring searches, automated email campaigns, and complex multi-step workflows.
+aiFetchly のタスクスケジューラーを使えば、指定した時刻にタスクを自動実行したり、他のタスクの完了に応じて実行したりすることで、マーケティングワークフローを自動化できます。定期的な検索、自動メールキャンペーン、複雑なマルチステップワークフローを設定できます。
 
-## Understanding Scheduling
+## スケジューリングについて
 
-The Task Scheduler supports three types of task triggers:
+タスクスケジューラーは 3 種類のタスクトリガーをサポートしています:
 
-| Trigger Type | Description | Best For |
+| トリガータイプ | 説明 | 最適な用途 |
 |-------------|-------------|----------|
-| **Cron** | Time-based scheduling using cron expressions | Recurring tasks, daily/weekly/monthly jobs |
-| **Dependency** | Triggered by completion of another task | Multi-step workflows, task chains |
-| **Manual** | Execute only when manually triggered | On-demand tasks, testing |
+| **Cron** | cron 式による時間ベースのスケジューリング | 定期タスク、毎日/毎週/毎月のジョブ |
+| **依存関係** | 別のタスクの完了によってトリガー | マルチステップワークフロー、タスクチェーン |
+| **手動** | 手動でトリガーされた場合のみ実行 | オンデマンドタスク、テスト |
 
-:::info Automate Everything
+:::info すべてを自動化
 
-From lead generation to email campaigns, scheduling automation saves time and ensures consistent execution of your marketing workflows.
+リードジェネレーションからメールキャンペーンまで、スケジューリングの自動化は時間を節約し、マーケティングワークフローの安定した実行を確保します。
 
 :::
 
-## Creating a Scheduled Task
+## スケジュールタスクの作成
 
-### Step 1: Navigate to Scheduler
+### ステップ 1: スケジューラーに移動
 
-1. Click **Schedule** in the left navigation menu
-2. Click **New Schedule** button
+1. 左側のナビゲーションメニューで **Schedule** をクリック
+2. **New Schedule** ボタンをクリック
 
-### Step 2: Basic Information
+### ステップ 2: 基本情報
 
-Enter the following required information:
+以下の必須情報を入力します:
 
-#### Schedule Name
+#### スケジュール名
 
-- **Purpose**: Identify the schedule in your list
-- **Example**: "Daily Google Search", "Weekly Email Campaign"
-- **Required**: Yes
+- **目的**: リスト内でスケジュールを識別するための名前
+- **例**: 「毎日の Google 検索」、「週次メールキャンペーン」
+- **必須**: はい
 
-#### Task Type
+#### タスクタイプ
 
-Select the type of task to schedule:
+スケジュールするタスクの種類を選択:
 
-- **Search**: Search engine scraping tasks
-- **Email Extract**: Email extraction tasks
-- **Bulk Email**: Email marketing campaigns
-- **Yellow Pages**: Directory scraping tasks
-- **Video Download**: Video downloading tasks
+- **Search**: 検索エンジンスクレイピングタスク
+- **Email Extract**: メール抽出タスク
+- **Bulk Email**: メールマーケティングキャンペーン
+- **Yellow Pages**: ディレクトリスクレイピングタスク
+- **Video Download**: 動画ダウンロードタスク
 
-#### Task ID
+#### タスク ID
 
-- **Purpose**: Link to the specific task instance
-- **Selection**: Choose from existing tasks of the selected type
-- **Required**: Yes
+- **目的**: 特定のタスクインスタンスにリンク
+- **選択**: 選択したタイプの既存タスクから選択
+- **必須**: はい
 
-#### Description
+#### 説明
 
-- **Purpose**: Provide context about the schedule's purpose
-- **Example**: "Daily search for new marketing agencies in target cities"
-- **Optional**: Yes
+- **目的**: スケジュールの目的に関するコンテキストを提供
+- **例**: 「ターゲット都市の新しいマーケティング代理店を毎日検索」
+- **任意**: はい
 
-### Step 3: Configure Trigger
+### ステップ 3: トリガーの設定
 
-#### Cron Scheduling (Time-Based)
+#### Cron スケジューリング（時間ベース）
 
-**Enable Cron** and configure the schedule:
+**Enable Cron** を有効にしてスケジュールを設定:
 
-**Preset Options:**
-- Every minute
-- Every hour
-- Daily (midnight)
-- Weekly (Sunday midnight)
-- Monthly (1st of month, midnight)
-- Every 15 minutes
-- Every 30 minutes
-- Every 2 hours
-- Every 6 hours
-- Every 12 hours
-- Weekdays 9 AM
-- Weekends 10 AM
+**プリセットオプション:**
+- 毎分
+- 毎時
+- 毎日（深夜）
+- 毎週（日曜深夜）
+- 毎月（1 日深夜）
+- 15 分ごと
+- 30 分ごと
+- 2 時間ごと
+- 6 時間ごと
+- 12 時間ごと
+- 平日 9 時
+- 週末 10 時
 
-**Custom Cron Builder:**
+**カスタム Cron ビルダー:**
 
-| Field | Options | Description |
+| フィールド | オプション | 説明 |
 |-------|---------|-------------|
-| **Minutes** | `*/5`, `*/15`, `*/30`, or specific minutes | Every 5/15/30 min or specific |
-| **Hours** | `*/2`, `*/6`, `*/12`, or specific hours | Every 2/6/12 hours or specific |
-| **Days** | `*/2` or specific days | Every 2 days or specific days |
-| **Months** | `*/3`, `*/6`, or specific months | Every 3/6 months or specific |
-| **Weekdays** | `1-5` (weekdays), `0,6` (weekends), or specific | Weekdays, weekends, or specific |
+| **分** | `*/5`、`*/15`、`*/30`、または特定の分 | 5/15/30 分ごと、または特定の時刻 |
+| **時** | `*/2`、`*/6`、`*/12`、または特定の時 | 2/6/12 時間ごと、または特定の時刻 |
+| **日** | `*/2` または特定の日 | 2 日ごと、または特定の日 |
+| **月** | `*/3`、`*/6`、または特定の月 | 3/6 か月ごと、または特定の月 |
+| **曜日** | `1-5`（平日）、`0,6`（週末）、または特定 | 平日、週末、または特定の曜日 |
 
-**Cron Expression Format:**
+**Cron 式の形式:**
 ```
-┌───────────── minute (0 - 59)
-│ ┌───────────── hour (0 - 23)
-│ │ ┌───────────── day of month (1 - 31)
-│ │ │ ┌───────────── month (1 - 12)
-│ │ │ │ ┌───────────── day of week (0 - 6) (Sunday to Saturday)
+┌───────────── 分 (0 - 59)
+│ ┌───────────── 時 (0 - 23)
+│ │ ┌───────────── 日 (1 - 31)
+│ │ │ ┌───────────── 月 (1 - 12)
+│ │ │ │ ┌───────────── 曜日 (0 - 6) (日曜〜土曜)
 │ │ │ │ │
 * * * * *
 ```
 
-**Examples:**
+**例:**
 ```
-0 9 * * 1-5      # Weekdays at 9:00 AM
-*/30 * * * *     # Every 30 minutes
-0 0 * * 1        # Every Monday at midnight
-0 9,15 * * *     # Daily at 9:00 AM and 3:00 PM
-0 0 1 * *        # 1st of every month at midnight
+0 9 * * 1-5      # 平日 9:00
+*/30 * * * *     # 30 分ごと
+0 0 * * 1        # 毎週月曜日の深夜
+0 9,15 * * *     # 毎日 9:00 と 15:00
+0 0 1 * *        # 毎月 1 日の深夜
 ```
 
-**Next Run Time:**
-- System automatically calculates and displays the next execution time
-- Helpful for verifying your cron expression
+**次回実行時刻:**
+- システムが次回の実行時刻を自動的に計算して表示
+- cron 式の検証に役立ちます
 
-#### Dependency Scheduling (Task-Based)
+#### 依存関係スケジューリング（タスクベース）
 
-**Enable Dependency** to trigger this task when another task completes.
+**Enable Dependency** を有効にして、別のタスクの完了時にこのタスクをトリガーします。
 
-**Configuration:**
+**設定:**
 
-1. **Parent Schedule**: Select the schedule that will trigger this task
-2. **Dependency Condition**:
-   - **On Success**: Run only if parent task succeeds
-   - **On Completion**: Run after parent completes (success or failure)
-   - **On Failure**: Run only if parent task fails
+1. **Parent Schedule**: このタスクをトリガーするスケジュールを選択
+2. **依存条件**:
+   - **On Success**: 親タスクが成功した場合のみ実行
+   - **On Completion**: 親タスクの完了後（成功・失敗を問わず）に実行
+   - **On Failure**: 親タスクが失敗した場合のみ実行
 
-3. **Delay (minutes)**: Wait time after parent completes before running this task
-   - `0` minutes: Run immediately
-   - `5` minutes: Wait 5 minutes before starting
-   - `60` minutes: Wait 1 hour before starting
+3. **遅延（分）**: 親タスク完了後、このタスクを実行するまでの待機時間
+   - `0` 分: 直ちに実行
+   - `5` 分: 5 分待機してから開始
+   - `60` 分: 1 時間待機してから開始
 
-**Use Cases:**
-- **Email after Extraction**: Extract emails, then send campaign when complete
-- **Analysis after Scraping**: Scrape data, then run AI analysis
-- **Multi-stage Campaigns**: Initial outreach → Follow-up 1 → Follow-up 2
+**ユースケース:**
+- **抽出後のメール送信**: メールを抽出し、完了時にキャンペーンを送信
+- **スクレイピング後の分析**: データをスクレイピングし、AI 分析を実行
+- **マルチステージキャンペーン**: 初回アウトリーチ → フォローアップ 1 → フォローアップ 2
 
-:::tip Dependency Chains
+:::tip 依存関係チェーン
 
-You can create multi-level dependency chains:
-- Task A (Cron) → Task B (Dependency) → Task C (Dependency)
+マルチレベルの依存関係チェーンを作成できます:
+- タスク A（Cron）→ タスク B（依存）→ タスク C（依存）
 
-This creates powerful automated workflows.
+これにより強力な自動化ワークフローが構築できます。
 
 :::
 
-#### Manual Execution
+#### 手動実行
 
-**Enable Manual** to run tasks only when triggered:
+**Enable Manual** を有効にして、トリガー時のみタスクを実行:
 
-- No automatic scheduling
-- Execute on-demand via "Run Now" button
-- Useful for testing or infrequent tasks
+- 自動スケジューリングなし
+- "Run Now" ボタンでオンデマンド実行
+- テストや頻度の低いタスクに便利
 
-### Step 4: Active Status
+### ステップ 4: アクティブステータス
 
-Toggle the schedule as:
-- **Active**: Schedule will run according to trigger settings
-- **Inactive**: Schedule is disabled and won't run
+スケジュールを以下のように切替:
+- **Active**: トリガー設定に従ってスケジュールが実行
+- **Inactive**: スケジュールが無効化され、実行されない
 
-### Step 5: Save Schedule
+### ステップ 5: スケジュールの保存
 
-Click **Save** to create the schedule. You can:
-- **Edit** the schedule later
-- **Enable/Disable** as needed
-- **Run Now** to test immediately
+**Save** をクリックしてスケジュールを作成します。以下の操作が可能:
+- 後で **編集**
+- 必要に応じて **有効化/無効化**
+- **Run Now** で即座にテスト
 
-## Managing Scheduled Tasks
+## スケジュールタスクの管理
 
-### View Schedule List
+### スケジュールリストの表示
 
-Navigate to **Schedule** to see all your scheduled tasks.
+**Schedule** に移動してすべてのスケジュールタスクを表示します。
 
-**Schedule Overview:**
-- **Status Card**: Shows total, active, inactive, and paused schedules
-- **Filters**: Search by name, status, task type, trigger type
+**スケジュール概要:**
+- **ステータスカード**: 合計、アクティブ、非アクティブ、一時停止の各スケジュール数を表示
+- **フィルター**: 名前、ステータス、タスクタイプ、トリガータイプで検索
 
-### Schedule Table
+### スケジュールテーブル
 
-The schedule list displays:
+スケジュールリストには以下が表示されます:
 
-| Column | Description |
+| 列 | 説明 |
 |--------|-------------|
-| **Name** | Schedule name with task type indicator |
-| **Status** | Active (green), Inactive (grey), Paused (yellow) |
-| **Trigger Type** | Cron, Dependency, or Manual |
-| **Schedule** | Cron expression or dependency description |
-| **Next Run** | Next execution time with countdown |
-| **Last Run** | Most recent execution with elapsed time |
-| **Executions** | Success count / Failure count |
-| **Actions** | Edit, Delete, Pause/Resume, Run Now |
+| **Name** | タスクタイプインジケーター付きのスケジュール名 |
+| **Status** | Active（緑）、Inactive（グレー）、Paused（黄） |
+| **Trigger Type** | Cron、Dependency、または Manual |
+| **Schedule** | Cron 式または依存関係の説明 |
+| **Next Run** | 次回実行時刻とカウントダウン |
+| **Last Run** | 直近の実行と経過時間 |
+| **Executions** | 成功数 / 失敗数 |
+| **Actions** | 編集、削除、一時停止/再開、Run Now |
 
-### Schedule Actions
+### スケジュールアクション
 
-| Action | Description | When Available |
+| アクション | 説明 | 利用可能なタイミング |
 |--------|-------------|----------------|
-| **Edit** | Modify schedule configuration | Always |
-| **Delete** | Remove schedule | Always |
-| **Enable** | Activate an inactive schedule | Inactive schedules |
-| **Disable** | Deactivate a schedule | Active schedules |
-| **Pause** | Temporarily halt execution | Active schedules |
-| **Resume** | Restart paused schedule | Paused schedules |
-| **Run Now** | Execute immediately | Always |
+| **Edit** | スケジュール設定を変更 | 常時 |
+| **Delete** | スケジュールを削除 | 常時 |
+| **Enable** | 非アクティブなスケジュールを有効化 | 非アクティブなスケジュール |
+| **Disable** | スケジュールを無効化 | アクティブなスケジュール |
+| **Pause** | 実行を一時的に停止 | アクティブなスケジュール |
+| **Resume** | 一時停止中のスケジュールを再開 | 一時停止中のスケジュール |
+| **Run Now** | 直ちに実行 | 常時 |
 
-## Monitoring Execution
+## 実行の監視
 
-### View Execution History
+### 実行履歴の表示
 
-1. Click **View Details** on a schedule
-2. See the execution history table
+1. スケジュールの **View Details** をクリック
+2. 実行履歴テーブルを表示
 
-**Execution Information:**
+**実行情報:**
 
-| Column | Description |
+| 列 | 説明 |
 |--------|-------------|
-| **Start Time** | When the execution started |
-| **End Time** | When execution completed (or "Running...") |
-| **Duration** | How long the execution took (or live counter) |
-| **Status** | Success (green), Failed (red), Running (blue) |
-| **Result** | Summary of execution results |
-| **Error** | Error message (if execution failed) |
-| **Actions** | View details, cancel running |
+| **Start Time** | 実行の開始時刻 |
+| **End Time** | 実行の完了時刻（または "Running..."） |
+| **Duration** | 実行にかかった時間（またはライブカウンター） |
+| **Status** | Success（緑）、Failed（赤）、Running（青） |
+| **Result** | 実行結果のサマリー |
+| **Error** | エラーメッセージ（実行が失敗した場合） |
+| **Actions** | 詳細表示、実行中のキャンセル |
 
-### Execution Statistics
+### 実行統計
 
-The detail view shows:
+詳細表示には以下が表示されます:
 
-- **Success Rate**: Percentage of successful executions
-- **Average Duration**: Typical execution time
-- **Total Executions**: Overall count and breakdown
-- **Last Error**: Most recent failure message
-- **Next Run**: Countdown to next execution
+- **成功率**: 成功した実行の割合
+- **平均所要時間**: 通常の実行時間
+- **総実行数**: 全体の件数と内訳
+- **直近のエラー**: 最新の失敗メッセージ
+- **次回実行**: 次回実行までのカウントダウン
 
-### Real-Time Monitoring
+### リアルタイム監視
 
-For running tasks:
-- **Live Duration**: Counter shows elapsed time
-- **Cancel Button**: Stop the execution if needed
-- **Auto-Refresh**: Status updates every few seconds
+実行中のタスクについて:
+- **リアルタイム所要時間**: 経過時間をカウンターで表示
+- **キャンセルボタン**: 必要に応じて実行を停止
+- **自動更新**: 数秒ごとにステータスが更新
 
-## Common Scheduling Patterns
+## 一般的なスケジューリングパターン
 
-### Pattern 1: Daily Lead Generation
+### パターン 1: 毎日のリードジェネレーション
 
-**Schedule**: Every weekday at 9:00 AM
+**スケジュール**: 平日毎日 9:00
 ```
 Cron: 0 9 * * 1-5
-Task: Search Engine Scraping
+Task: 検索エンジンスクレイピング
 ```
 
-**Use Case**: Fresh leads every morning for your sales team.
+**ユースケース**: 毎朝セールスチームに新鮮なリードを提供。
 
-### Pattern 2: Hourly Monitoring
+### パターン 2: 毎時の監視
 
-**Schedule**: Every hour during business hours
+**スケジュール**: 営業時間中は毎時
 ```
 Cron: 0 9-17 * * 1-5
 Task: Search / Yellow Pages
 ```
 
-**Use Case**: Monitor for new business listings during work hours.
+**ユースケース**: 営業時間中に新しいビジネスリストを監視。
 
-### Pattern 3: Weekly Campaign
+### パターン 3: 週次キャンペーン
 
-**Schedule**: Every Monday at 10:00 AM
+**スケジュール**: 毎週月曜日 10:00
 ```
 Cron: 0 10 * * 1
 Task: Bulk Email Sending
 ```
 
-**Use Case**: Weekly email newsletter or outreach campaign.
+**ユースケース**: 週次メールニュースレターまたはアウトリーチキャンペーン。
 
-### Pattern 4: Multi-Step Workflow
+### パターン 4: マルチステップワークフロー
 
-**Task A** (Cron): Daily at 9:00 AM - Search for leads
-**Task B** (Dependency): After A succeeds - Extract emails
-**Task C** (Dependency): After B succeeds (30 min delay) - Send emails
+**タスク A**（Cron）: 毎日 9:00 - リードを検索
+**タスク B**（依存）: A の成功後 - メールを抽出
+**タスク C**（依存）: B の成功後（30 分遅延） - メールを送信
 
-**Use Case**: Automated lead generation and outreach pipeline.
+**ユースケース**: 自動化されたリードジェネレーションとアウトリーチパイプライン。
 
-### Pattern 5: Maintenance Tasks
+### パターン 5: メンテナンスタスク
 
-**Schedule**: Every Sunday at 3:00 AM
+**スケジュール**: 毎週日曜日 3:00
 ```
 Cron: 0 3 * * 0
-Task: Data cleanup or backup
+Task: データクリーンアップまたはバックアップ
 ```
 
-**Use Case**: Routine maintenance during low-traffic periods.
+**ユースケース**: トラフィックの少ない時間帯の定期的なメンテナンス。
 
-## Best Practices
+## ベストプラクティス
 
-### 1. Schedule Design
+### 1. スケジュール設計
 
-**Avoid Overlapping:**
-- Ensure tasks complete before next scheduled run
-- Consider average execution time when setting frequency
-- Use dependencies to sequence overlapping tasks
+**重複を回避:**
+- 次回のスケジュール実行前にタスクが完了することを確認
+- 頻度の設定時に平均実行時間を考慮
+- 重複するタスクの順序付けに依存関係を使用
 
-**Off-Peak Hours:**
-- Schedule resource-intensive tasks during off-hours
-- Avoid competing with user activity
-- Consider time zones for global operations
+**オフピーク時間:**
+- リソース集約型のタスクは時間外にスケジュール
+- ユーザーアクティビティとの競合を避ける
+- グローバル運用ではタイムゾーンを考慮
 
-**Buffer Time:**
-- Add buffer between dependent tasks
-- Account for variable execution times
-- Prevent cascading delays
+**バッファ時間:**
+- 依存タスク間にバッファを追加
+- 実行時間の変動を考慮
+- 連鎖的な遅延を防止
 
-### 2. Error Handling
+### 2. エラー処理
 
-**Monitor Failures:**
-- Check execution history regularly
-- Investigate repeated failures
-- Adjust schedules or tasks as needed
+**失敗を監視:**
+- 実行履歴を定期的に確認
+- 繰り返される失敗を調査
+- 必要に応じてスケジュールやタスクを調整
 
-**Set Up Alerts:**
-- Review schedules weekly
-- Check for stuck or paused tasks
-- Verify dependencies are firing correctly
+**アラートの設定:**
+- スケジュールを毎週確認
+- 停止または一時停止中のタスクをチェック
+- 依存関係が正しく発火しているか確認
 
-**Graceful Degradation:**
-- Use "On Completion" dependencies to continue chain even if one task fails
-- Create alternative schedules for critical tasks
-- Document escalation procedures
+**段階的縮退:**
+- "On Completion" 依存を使用して、1 つのタスクが失敗してもチェーンを継続
+- 重要なタスクには代替スケジュールを作成
+- エスカレーション手順を文書化
 
-### 3. Resource Management
+### 3. リソース管理
 
-**Concurrent Tasks:**
-- Avoid scheduling too many tasks simultaneously
-- Consider system resources (CPU, memory, network)
-- Stagger similar tasks to prevent conflicts
+**同時実行タスク:**
+- 多すぎるタスクを同時にスケジュールしない
+- システムリソース（CPU、メモリ、ネットワーク）を考慮
+- 類似タスクをずらして競合を防止
 
-**Proxy Rotation:**
-- Ensure sufficient proxies for concurrent scheduled tasks
-- Distribute load across proxy pool
-- Monitor proxy health for scheduled tasks
+**プロキシのローテーション:**
+- 同時にスケジュールされたタスクに十分なプロキシを確保
+- プロキシプール全体に負荷を分散
+- スケジュールされたタスクのプロキシの健全性を監視
 
-### 4. Testing
+### 4. テスト
 
-**Test Schedules:**
-- Use "Run Now" to test before scheduling
-- Verify with one-time execution first
-- Check logs for any issues
+**スケジュールのテスト:**
+- スケジュール前に "Run Now" でテスト
+- まず 1 回限りの実行で確認
+- ログで問題をチェック
 
-**Validate Cron Expressions:**
-- Use the "Next Run Time" preview to verify
-- Test with shorter intervals first
-- Confirm timezone settings are correct
+**Cron 式の検証:**
+- "Next Run Time" プレビューで確認
+- まず短い間隔でテスト
+- タイムゾーン設定が正しいことを確認
 
-**Test Dependencies:**
-- Verify parent tasks complete successfully
-- Test delay settings
-- Ensure chains work as expected
+**依存関係のテスト:**
+- 親タスクが正常に完了することを確認
+- 遅延設定をテスト
+- チェーンが期待通りに動作することを確認
 
-### 5. Documentation
+### 5. ドキュメンテーション
 
-**Name Schedules Clearly:**
-- Descriptive names with purpose and frequency
-- Include task type and target
-- Example: "Daily Google Search - Marketing Agencies"
+**わかりやすいスケジュール名:**
+- 目的と頻度を含む説明的な名前
+- タスクタイプとターゲットを含める
+- 例: 「毎日の Google 検索 - マーケティング代理店」
 
-**Use Descriptions:**
-- Document purpose and expected outcomes
-- Note dependencies and relationships
-- Include any special considerations
+**説明の活用:**
+- 目的と期待される結果を文書化
+- 依存関係と関連性を記載
+- 特別な配慮事項を含める
 
-**Label Task Purposes:**
-- Tag or categorize related schedules
-- Group by project or campaign
-- Make identification easy
+**タスクの目的のラベル付け:**
+- 関連するスケジュールにタグやカテゴリを付ける
+- プロジェクトやキャンペーンでグループ化
+- 識別しやすくする
 
-## Troubleshooting
+## トラブルシューティング
 
-### Schedule Not Running
+### スケジュールが実行されない
 
-**Possible causes:**
-- Schedule is inactive or paused
-- Cron expression misconfigured
-- Scheduler service not running
-- System time/timezone issues
+**考えられる原因:**
+- スケジュールが非アクティブまたは一時停止中
+- cron 式の設定ミス
+- スケジューラーサービスが実行されていない
+- システム時刻/タイムゾーンの問題
 
-**Solutions:**
-1. Verify schedule status is "Active"
-2. Check cron expression syntax
-3. Confirm scheduler service is running
-4. Verify system time and timezone settings
-5. Check execution logs for errors
+**解決策:**
+1. スケジュールのステータスが "Active" であることを確認
+2. cron 式の構文を確認
+3. スケジューラーサービスが実行中であることを確認
+4. システム時刻とタイムゾーン設定を確認
+5. 実行ログでエラーを確認
 
-### Task Executing Too Frequently
+### タスクが頻繁すぎる頻度で実行される
 
-**Possible causes:**
-- Cron expression incorrect
-- Multiple schedules for same task
-- Misunderstood cron syntax
+**考えられる原因:**
+- cron 式が正しくない
+- 同一タスクに複数のスケジュールがある
+- cron 構文の誤解
 
-**Solutions:**
-1. Review cron expression carefully
-2. Check for duplicate schedules
-3. Use "Next Run Time" preview to verify
-4. Test with longer intervals first
+**解決策:**
+1. cron 式を慎重に確認
+2. 重複スケジュールをチェック
+3. "Next Run Time" プレビューで確認
+4. まず長い間隔でテスト
 
-### Dependencies Not Firing
+### 依存関係が発火しない
 
-**Possible causes:**
-- Parent task not completing
-- Wrong dependency condition
-- Delay too long or too short
+**考えられる原因:**
+- 親タスクが完了していない
+- 依存条件が間違っている
+- 遅延が長すぎるまたは短すぎる
 
-**Solutions:**
-1. Check parent task execution history
-2. Verify dependency condition matches desired behavior
-3. Adjust delay settings
-4. Check for circular dependencies
+**解決策:**
+1. 親タスクの実行履歴を確認
+2. 依存条件が期待する動作に一致しているか確認
+3. 遅延設定を調整
+4. 循環依存がないか確認
 
-### Tasks Taking Too Long
+### タスクに時間がかかりすぎる
 
-**Possible causes:**
-- Task configuration too aggressive
-- System resources insufficient
-- Network bottlenecks
+**考えられる原因:**
+- タスク設定が攻撃的すぎる
+- システムリソースが不足
+- ネットワークのボトルネック
 
-**Solutions:**
-1. Reduce task scope (pages, concurrency, etc.)
-2. Schedule during off-peak hours
-3. Increase interval between runs
-4. Check system performance
+**解決策:**
+1. タスクのスコープを縮小（ページ数、同時実行数など）
+2. オフピーク時間にスケジュール
+3. 実行間隔を延ばす
+4. システムパフォーマンスを確認
 
-### Execution History Not Showing
+### 実行履歴が表示されない
 
-**Possible causes:**
-- Task never executed
-- History cleared
-- Database issues
+**考えられる原因:**
+- タスクが一度も実行されていない
+- 履歴がクリアされた
+- データベースの問題
 
-**Solutions:**
-1. Run task manually to test
-2. Check if task has ever executed
-3. Verify database connectivity
-4. Restart scheduler service if needed
+**解決策:**
+1. 手動でタスクを実行してテスト
+2. タスクが実行されたことがあるか確認
+3. データベース接続を確認
+4. 必要に応じてスケジューラーサービスを再起動
 
-## Advanced Workflows
+## 高度なワークフロー
 
-### Workflow 1: Automated Lead Generation Pipeline
+### ワークフロー 1: 自動リードジェネレーションパイプライン
 
-**Schedule 1**: Daily Search
+**スケジュール 1**: 毎日の検索
 ```
-Cron: 0 9 * * 1-5 (Weekdays 9 AM)
-Task: Google Search for "marketing agencies [city]"
-```
-
-**Schedule 2**: Email Extraction (Dependency)
-```
-Trigger: After Schedule 1 succeeds
-Delay: 0 minutes
-Task: Extract emails from Schedule 1 results
+Cron: 0 9 * * 1-5 (平日 9:00)
+Task: "marketing agencies [city]" の Google 検索
 ```
 
-**Schedule 3**: Email Campaign (Dependency)
+**スケジュール 2**: メール抽出（依存）
 ```
-Trigger: After Schedule 2 completes
-Delay: 60 minutes (allow time for extraction)
-Task: Send welcome email campaign
-```
-
-**Result**: Automated daily lead generation and outreach.
-
-### Workflow 2: Weekly Maintenance
-
-**Schedule 1**: Database Cleanup
-```
-Cron: 0 3 * * 0 (Sunday 3 AM)
-Task: Remove old completed tasks
+Trigger: スケジュール 1 の成功後
+Delay: 0 分
+Task: スケジュール 1 の結果からメールを抽出
 ```
 
-**Schedule 2**: Proxy Health Check (Dependency)
+**スケジュール 3**: メールキャンペーン（依存）
 ```
-Trigger: After Schedule 1 completes
-Task: Test all proxies and remove failed
-```
-
-**Schedule 3**: Report Generation (Dependency)
-```
-Trigger: After Schedule 2 completes
-Task: Generate weekly usage report
+Trigger: スケジュール 2 の完了後
+Delay: 60 分（抽出のための時間を確保）
+Task: ウェルカムメールキャンペーンを送信
 ```
 
-**Result**: Automated weekly maintenance and reporting.
+**結果**: 自動化された毎日のリードジェネレーションとアウトリーチ。
 
-### Workflow 3: Multi-Regional Monitoring
+### ワークフロー 2: 週次メンテナンス
 
-**Schedule 1**: US East Monitoring
+**スケジュール 1**: データベースクリーンアップ
 ```
-Cron: 0 */2 * * * (Every 2 hours)
-Task: Search US East keywords
-```
-
-**Schedule 2**: US West Monitoring
-```
-Cron: 0 */2 * * * (Every 2 hours, offset)
-Task: Search US West keywords
+Cron: 0 3 * * 0 (日曜 3:00)
+Task: 古い完了済みタスクを削除
 ```
 
-**Schedule 3**: Europe Monitoring
+**スケジュール 2**: プロキシヘルスチェック（依存）
 ```
-Cron: 0 */2 * * * (Every 2 hours, offset)
-Task: Search European keywords
+Trigger: スケジュール 1 の完了後
+Task: すべてのプロキシをテストし、失敗したものを削除
 ```
 
-**Result**: Continuous global monitoring with staggered schedules.
+**スケジュール 3**: レポート生成（依存）
+```
+Trigger: スケジュール 2 の完了後
+Task: 週次利用レポートを生成
+```
 
-## Integration with Other Features
+**結果**: 自動化された週次メンテナンスとレポート作成。
 
-The Task Scheduler integrates with:
+### ワークフロー 3: マルチリージョン監視
 
-- **[Search Engines](../lead-generation/search-engines)**: Schedule recurring searches
-- **[Contact Extraction](../lead-generation/contact-extraction)**: Auto-extract after searches
-- **[Yellow Pages](../lead-generation/yellow-pages)**: Regular directory scraping
-- **[Batch Email Sending](../lead-generation/batch-email-sending)**: Automated campaigns
+**スケジュール 1**: 米国東部監視
+```
+Cron: 0 */2 * * * (2 時間ごと)
+Task: 米国東部のキーワードを検索
+```
 
-## Next Steps
+**スケジュール 2**: 米国西部監視
+```
+Cron: 0 */2 * * * (2 時間ごと、オフセット)
+Task: 米国西部のキーワードを検索
+```
 
-Now that you understand scheduling:
+**スケジュール 3**: ヨーロッパ監視
+```
+Cron: 0 */2 * * * (2 時間ごと、オフセット)
+Task: ヨーロッパのキーワードを検索
+```
 
-- [Configure system settings](../settings/system-settings)
-- [Review the complete user manual](../getting-started/introduction)
+**結果**: ずらしスケジュールによる継続的なグローバル監視。
+
+## 他の機能との連携
+
+タスクスケジューラーは以下と連携します:
+
+- **[検索エンジン](../lead-generation/search-engines)**: 定期的な検索をスケジュール
+- **[コンタクト抽出](../lead-generation/contact-extraction)**: 検索後に自動抽出
+- **[イエローページ](../lead-generation/yellow-pages)**: 定期的なディレクトリスクレイピング
+- **[一括メール送信](../lead-generation/batch-email-sending)**: 自動キャンペーン
+
+## 次のステップ
+
+スケジューリングについて理解できたら:
+
+- [システム設定の構成](../settings/system-settings)
+- [完全なユーザーマニュアルの確認](../getting-started/introduction)
 
 ---
 
-**Ready to automate?** Start by scheduling a simple daily search task, then gradually build more complex automated workflows as you become familiar with the system.
+**自動化を始める準備はできましたか？** まずはシンプルな毎日の検索タスクをスケジュールし、システムに慣れてきたら徐々により複雑な自動化ワークフローを構築してください。

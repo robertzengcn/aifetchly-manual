@@ -2,377 +2,377 @@
 id: knowledge-library
 title: Knowledge Library
 sidebar_label: Knowledge Library
-description: Build your knowledge base with documents that AI uses to generate contextually relevant content.
+description: Construya su base de conocimiento con documentos que la IA usa para generar contenido contextualmente relevante.
 ---
 
 # Knowledge Library
 
-The Knowledge Library is aiFetchly's intelligent document management system. Upload your documents (PDFs, Word files, HTML, and more) to create a knowledge base that powers AI-generated content, ensuring your outreach is contextually accurate and personalized.
+La Biblioteca de Conocimiento es el sistema inteligente de gestión de documentos de aiFetchly. Cargue sus documentos (PDFs, archivos Word, HTML y más) para crear una base de conocimiento que potencia el contenido generado por IA, asegurando que su divulgación sea contextualmente precisa y personalizada.
 
-## What is RAG?
+## ¿Qué es RAG?
 
-**RAG** (Retrieval-Augmented Generation) is a technology that:
+**RAG** (Generación Aumentada por Recuperación) es una tecnología que:
 
-1. **Ingests** your documents and breaks them into smaller chunks
-2. **Creates vector embeddings** that understand the semantic meaning of your content
-3. **Retrieves relevant information** when generating content
-4. **Enhances AI responses** with your specific knowledge
+1. **Ingiera** sus documentos y los divide en fragmentos más pequeños
+2. **Crea embeddings vectoriales** que comprenden el significado semántico de su contenido
+3. **Recupera información relevante** al generar contenido
+4. **Mejora las respuestas de IA** con su conocimiento específico
 
-:::info Why RAG Matters
+:::info Por qué importa RAG
 
-Traditional AI systems generate generic content. With RAG, aiFetchly's AI references YOUR documents, creating personalized, context-aware emails and marketing content.
-
-:::
-
-## Supported File Types
-
-| Format | Extensions | Best For |
-|--------|------------|----------|
-| **PDF** | `.pdf` | Brochures, whitepapers, documentation |
-| **Microsoft Word** | `.doc`, `.docx` | Proposals, contracts, product info |
-| **Text** | `.txt` | Simple text files, notes |
-| **Markdown** | `.md` | Technical documentation, README files |
-| **HTML** | `.html`, `.htm` | Web content, articles |
-
-## Uploading Documents
-
-### Step 1: Navigate to Knowledge Library
-
-1. Click **Knowledge** in the left navigation menu
-2. You'll see the Knowledge Library interface
-
-### Step 2: Upload Documents
-
-**Method 1: Drag and Drop**
-
-1. Drag files from your computer
-2. Drop them onto the upload area
-3. Visual feedback shows files being added
-
-**Method 2: File Browser**
-
-1. Click the **Upload** button (or the upload area)
-2. Navigate to your files in the file browser
-3. Select one or multiple documents
-4. Click **Open** to upload
-
-### Step 3: Processing
-
-After upload, documents are automatically processed:
-
-1. **Saving**: Files are saved to the database
-2. **Chunking**: Documents are broken into smaller segments
-3. **Embedding**: Vector embeddings are created for semantic search
-4. **Status Update**: Processing status changes from **Pending** → **Processing** → **Completed**
-
-:::tip Processing Time
-
-Processing time depends on file size:
-- Small files (< 1MB): 10-30 seconds
-- Medium files (1-5MB): 30-60 seconds
-- Large files (5-10MB): 1-3 minutes
+Los sistemas de IA tradicionales generan contenido genérico. Con RAG, la IA de aiFetchly referencia SUS documentos, creando correos electrónicos y contenido de marketing personalizados y contextualizados.
 
 :::
 
-## Managing Documents
+## Tipos de archivos admitidos
 
-### Document List View
+| Formato | Extensiones | Mejor para |
+|---------|-------------|------------|
+| **PDF** | `.pdf` | Folletos, informes técnicos, documentación |
+| **Microsoft Word** | `.doc`, `.docx` | Propuestas, contratos, información de producto |
+| **Texto** | `.txt` | Archivos de texto simple, notas |
+| **Markdown** | `.md` | Documentación técnica, archivos README |
+| **HTML** | `.html`, `.htm` | Contenido web, artículos |
 
-The Knowledge Library displays all your documents with:
+## Carga de documentos
 
-| Column | Description |
+### Paso 1: Ir a la Biblioteca de Conocimiento
+
+1. Haga clic en **Knowledge** en el menú de navegación izquierdo
+2. Verá la interfaz de la Biblioteca de Conocimiento
+
+### Paso 2: Cargar documentos
+
+**Método 1: Arrastrar y soltar**
+
+1. Arrastre archivos desde su computadora
+2. Suéltelos en el área de carga
+3. La retroalimentación visual muestra los archivos añadiéndose
+
+**Método 2: Explorador de archivos**
+
+1. Haga clic en el botón **Upload** (o en el área de carga)
+2. Navegue a sus archivos en el explorador
+3. Seleccione uno o múltiples documentos
+4. Haga clic en **Open** para cargar
+
+### Paso 3: Procesamiento
+
+Después de la carga, los documentos se procesan automáticamente:
+
+1. **Guardado**: Los archivos se guardan en la base de datos
+2. **Fragmentación**: Los documentos se dividen en segmentos más pequeños
+3. **Embedding**: Se crean embeddings vectoriales para búsqueda semántica
+4. **Actualización de estado**: El estado de procesamiento cambia de **Pending** → **Processing** → **Completed**
+
+:::tip Tiempo de procesamiento
+
+El tiempo de procesamiento depende del tamaño del archivo:
+- Archivos pequeños (< 1MB): 10-30 segundos
+- Archivos medianos (1-5MB): 30-60 segundos
+- Archivos grandes (5-10MB): 1-3 minutos
+
+:::
+
+## Gestión de documentos
+
+### Vista de lista de documentos
+
+La Biblioteca de Conocimiento muestra todos sus documentos con:
+
+| Columna | Descripción |
+|---------|-------------|
+| **Name** | Nombre del archivo del documento |
+| **Title** | Título del documento (editable) |
+| **Status** | Estado de procesamiento (Pending/Processing/Completed/Error) |
+| **Type** | Tipo de archivo (PDF, DOCX, etc.) |
+| **Size** | Tamaño del archivo |
+| **Upload Date** | Cuándo se cargó el documento |
+| **Actions** | Ver, descargar, eliminar, re-embeder |
+
+### Acciones de documentos
+
+| Acción | Descripción |
 |--------|-------------|
-| **Name** | Document filename |
-| **Title** | Document title (editable) |
-| **Status** | Processing status (Pending/Processing/Completed/Error) |
-| **Type** | File type (PDF, DOCX, etc.) |
-| **Size** | File size |
-| **Upload Date** | When the document was uploaded |
-| **Actions** | View, download, delete, re-embed |
+| **View** | Abrir documento para ver el contenido |
+| **Download** | Descargar archivo original a su computadora |
+| **Delete** | Eliminar documento de la base de conocimiento |
+| **Re-embed** | Reprocesar documento con nuevo modelo de embedding |
+| **View Logs** | Ver detalles de error para documentos fallidos |
 
-### Document Actions
+### Búsqueda y filtrado
 
-| Action | Description |
-|--------|-------------|
-| **View** | Open document to view content |
-| **Download** | Download original file to your computer |
-| **Delete** | Remove document from knowledge base |
-| **Re-embed** | Reprocess document with new embedding model |
-| **View Logs** | See error details for failed documents |
+- **Buscar por nombre**: Filtrar documentos por nombre de archivo
+- **Filtrar por estado**: Mostrar solo documentos completados, en procesamiento o fallidos
+- **Filtrar por tipo**: Mostrar solo tipos de archivo específicos
 
-### Search and Filter
+### Operaciones masivas
 
-- **Search by Name**: Filter documents by filename
-- **Filter by Status**: Show only completed, processing, or failed documents
-- **Filter by Type**: Show only specific file types
+- **Selección múltiple**: Marque las casillas junto a los documentos
+- **Eliminación masiva**: Eliminar múltiples documentos a la vez
+- **Limpiar selección**: Deseleccionar todos los documentos
 
-### Bulk Operations
+## Descripción de los estados de procesamiento
 
-- **Select Multiple**: Check boxes next to documents
-- **Bulk Delete**: Remove multiple documents at once
-- **Clear Selection**: Deselect all documents
+| Estado | Color | Significado | Acción |
+|--------|-------|-------------|--------|
+| **Pending** | Gris | En cola para procesamiento | Esperar el procesamiento automático |
+| **Processing** | Azul | Actualmente siendo procesado | Esperar a que se complete |
+| **Completed** | Verde | Listo para usar en generación de IA | El documento está activo |
+| **Error** | Rojo | El procesamiento falló | Ver logs, intentar re-embeder |
 
-## Understanding Processing Status
+## Re-embeder documentos
 
-| Status | Color | Meaning | Action |
-|--------|-------|---------|--------|
-| **Pending** | Grey | Queued for processing | Wait for automatic processing |
-| **Processing** | Blue | Currently being embedded | Wait for completion |
-| **Completed** | Green | Ready to use in AI generation | Document is active |
-| **Error** | Red | Processing failed | View logs, try re-embedding |
+Si cambia los modelos de embedding o necesita reprocesar un documento:
 
-## Re-embedding Documents
+1. Busque el documento en la lista
+2. Haga clic en el botón **Re-embed**
+3. El estado del documento cambia a **Processing**
+4. Se crean nuevos embeddings con el modelo actual
+5. El estado se actualiza a **Completed** cuando termina
 
-If you change embedding models or need to reprocess a document:
+**Casos de uso para re-embeder:**
+- Cambió el modelo de embedding en la configuración
+- El embedding anterior falló parcialmente
+- Desea usar parámetros de fragmentación actualizados
 
-1. Find the document in the list
-2. Click **Re-embed** button
-3. Document status changes to **Processing**
-4. New embeddings are created with current model
-5. Status updates to **Completed** when done
+## Solución de problemas
 
-**Use Cases for Re-embedding:**
-- Changed embedding model in settings
-- Previous embedding failed partially
-- Want to use updated chunking parameters
+### Estado del documento: "Error"
 
-## Troubleshooting
+**Posibles causas:**
+- Archivo corrupto
+- Formato de archivo no admitido
+- Archivo demasiado grande
+- Problemas de codificación
 
-### Document Status: "Error"
+**Soluciones:**
+1. **Ver Logs** para ver el error específico
+2. **Intente re-embeder** el documento
+3. **Vuelva a cargar** el archivo original
+4. **Convierta el archivo** a un formato diferente (por ejemplo, DOC → PDF)
 
-**Possible causes:**
-- Corrupted file
-- Unsupported file format
-- File too large
-- Encoding issues
+### Procesamiento lento
 
-**Solutions:**
-1. **View Logs** to see specific error
-2. **Try Re-embedding** the document
-3. **Re-upload** the original file
-4. **Convert file** to a different format (e.g., DOC → PDF)
+**Posibles causas:**
+- Tamaño de archivo grande
+- Alta carga del sistema
+- Latencia de red (para embedding remoto)
 
-### Slow Processing
+**Soluciones:**
+1. Espere a que se complete el procesamiento
+2. Divida documentos grandes en archivos más pequeños
+3. Cierre otras aplicaciones para liberar recursos
 
-**Possible causes:**
-- Large file size
-- High system load
-- Network latency (for remote embedding)
+### El documento no se usa en el contenido de IA
 
-**Solutions:**
-1. Wait for processing to complete
-2. Split large documents into smaller files
-3. Close other applications to free resources
+**Posibles causas:**
+- El documento no está completamente procesado
+- El contenido del documento no es relevante para la consulta
+- El contexto RAG no está habilitado
 
-### Document Not Used in AI Content
+**Soluciones:**
+1. Verifique que el estado del documento sea **Completed**
+2. Asegúrese de que el contexto RAG esté habilitado en AI Chat/Email Writer
+3. Intente buscar contenido más específico
+4. Cargue documentos relevantes adicionales
 
-**Possible causes:**
-- Document not fully processed
-- Document content not relevant to query
-- RAG context not enabled
+## Mejores prácticas
 
-**Solutions:**
-1. Verify document status is **Completed**
-2. Ensure RAG context is enabled in AI Chat/Email Writer
-3. Try searching for more specific content
-4. Upload additional relevant documents
+### 1. Selección de documentos
 
-## Best Practices
+**Cargue documentos que:**
+- Describan sus productos o servicios en detalle
+- Expliquen su propuesta de valor
+- Contengan casos de estudio o historias de éxito
+- Incluyan terminología específica de la industria
+- Proporcionen ventajas competitivas
 
-### 1. Document Selection
+**Evite:**
+- Información genérica o desactualizada
+- Contenido irrelevante
+- Archivos muy grandes (> 10MB)
+- Documentos con formato deficiente
 
-**Upload documents that:**
-- Describe your products or services in detail
-- Explain your value proposition
-- Contain case studies or success stories
-- Include industry-specific terminology
-- Provide competitive advantages
+### 2. Organización de documentos
 
-**Avoid:**
-- Generic or outdated information
-- Irrelevant content
-- Very large files (> 10MB)
-- Poorly formatted documents
+**Convenciones de nomenclatura:**
+- Use nombres descriptivos: `Folleto_Producto_2024.pdf`
+- Incluya números de versión: `Guia_Precios_v2.docx`
+- Agregue fechas: `Caso_Estudio_Enero_2024.pdf`
 
-### 2. Document Organization
+**Categorización:**
+- Agrupe documentos relacionados
+- Use patrones de nomenclatura consistentes
+- Etiquete documentos para fácil filtrado
 
-**Naming Conventions:**
-- Use descriptive names: `Product_Brochure_2024.pdf`
-- Include version numbers: `Pricing_Guide_v2.docx`
-- Add dates: `Case_Study_January_2024.pdf`
+### 3. Calidad del contenido
 
-**Categorization:**
-- Group related documents together
-- Use consistent naming patterns
-- Tag documents for easy filtering
+**Para mejores resultados:**
+- Use documentos bien formateados
+- Incluya encabezados estructurados
+- Proporcione detalles específicos y ejemplos
+- Mantenga la información actualizada
+- Use lenguaje profesional
 
-### 3. Content Quality
+### 4. Mantenimiento regular
 
-**For Best Results:**
-- Use well-formatted documents
-- Include structured headings
-- Provide specific details and examples
-- Keep information up-to-date
-- Use professional language
+**Mantenga saludable su base de conocimiento:**
+- **Revise regularmente**: Elimine documentos desactualizados
+- **Actualice contenido**: Vuelva a cargar cuando cambie la información
+- **Monitoree el estado**: Verifique si hay embeddings fallidos
+- **Optimice el tamaño**: Divida documentos grandes cuando sea posible
 
-### 4. Regular Maintenance
+## Integración con funciones de IA
 
-**Keep Your Knowledge Base Healthy:**
-- **Review regularly**: Remove outdated documents
-- **Update content**: Re-upload when information changes
-- **Monitor status**: Check for failed embeddings
-- **Optimize size**: Split large documents when possible
-
-## Integration with AI Features
-
-The Knowledge Library integrates with:
+La Biblioteca de Conocimiento se integra con:
 
 ### AI Email Writer
 
-When creating AI-generated emails:
+Al crear correos generados por IA:
 
-1. **Enable RAG Context** in the email writer
-2. AI searches your Knowledge Library for relevant information
-3. Retrieved content is used to personalize emails
-4. Emails contain accurate, context-aware information
+1. **Habilite RAG Context** en el editor de correos
+2. La IA busca información relevante en su Biblioteca de Conocimiento
+3. El contenido recuperado se usa para personalizar los correos
+4. Los correos contienen información precisa y contextualizada
 
-**Example:**
-- You upload a product catalog PDF
-- AI generates emails referencing specific products
-- Each email mentions products relevant to the recipient
+**Ejemplo:**
+- Carga un catálogo de productos en PDF
+- La IA genera correos referenciando productos específicos
+- Cada correo menciona productos relevantes para el destinatario
 
-### AI Marketing Assistant
+### Asistente de Marketing IA
 
-When chatting with the AI assistant:
+Al chatear con el asistente de IA:
 
-1. **Toggle RAG Context** (📖 icon)
-2. Ask questions about your business, products, or services
-3. AI searches Knowledge Library for answers
-4. Responses are based on YOUR documentation
+1. **Alterne RAG Context** (icono 📖)
+2. Haga preguntas sobre su negocio, productos o servicios
+3. La IA busca en la Biblioteca de Conocimiento respuestas
+4. Las respuestas se basan en SU documentación
 
-**Example Questions:**
-- "What are our key product features?"
-- "How does our pricing compare to competitors?"
-- "What's our refund policy?"
-- "Generate a marketing email for Product X"
+**Preguntas de ejemplo:**
+- "¿Cuáles son las características clave de nuestro producto?"
+- "¿Cómo se compara nuestro precio con los competidores?"
+- "¿Cuál es nuestra política de reembolso?"
+- "Genere un correo de marketing para el Producto X"
 
-## Example Use Cases
+## Casos de uso de ejemplo
 
-### Use Case 1: Product Marketing
+### Caso de uso 1: Marketing de productos
 
-**Documents to Upload:**
-- Product brochures
-- Feature specifications
-- Pricing guides
-- Comparison charts
-- Case studies
+**Documentos para cargar:**
+- Folletos de productos
+- Especificaciones de características
+- Guías de precios
+- Tablas comparativas
+- Casos de estudio
 
-**Result:** AI generates detailed, accurate product emails.
+**Resultado:** La IA genera correos de producto detallados y precisos.
 
-### Use Case 2: Service Businesses
+### Caso de uso 2: Empresas de servicios
 
-**Documents to Upload:**
-- Service descriptions
-- Process documentation
-- Client testimonials
-- Portfolio samples
-- Pricing packages
+**Documentos para cargar:**
+- Descripciones de servicios
+- Documentación de procesos
+- Testimonios de clientes
+- Muestras de portafolio
+- Paquetes de precios
 
-**Result:** AI creates service-focused outreach with specific details.
+**Resultado:** La IA crea divulgación enfocada en servicios con detalles específicos.
 
-### Use Case 3: Agency Outreach
+### Caso de uso 3: Divulgación de agencias
 
-**Documents to Upload:**
-- Agency capabilities
-- Portfolio pieces
-- Case studies
-- Team bios
-- Service packages
+**Documentos para cargar:**
+- Capacidades de la agencia
+- Piezas de portafolio
+- Casos de estudio
+- Biografías del equipo
+- Paquetes de servicios
 
-**Result:** AI personalizes agency pitches to each prospect.
+**Resultado:** La IA personaliza las propuestas de agencia a cada prospecto.
 
-### Use Case 4: SaaS Companies
+### Caso de uso 4: Empresas SaaS
 
-**Documents to Upload:**
-- Feature documentation
-- API guides
-- Pricing tiers
-- Onboarding materials
-- Webinar transcripts
+**Documentos para cargar:**
+- Documentación de características
+- Guías de API
+- Niveles de precios
+- Materiales de incorporación
+- Transcripciones de webinars
 
-**Result:** AI generates technical yet accessible outreach.
+**Resultado:** La IA genera divulgación técnica pero accesible.
 
-## Technical Details
+## Detalles técnicos
 
-### How RAG Works
+### Cómo funciona RAG
 
-1. **Document Ingestion**:
-   - Files are uploaded and saved to database
-   - Metadata (name, type, size, date) is recorded
+1. **Ingesta de documentos**:
+   - Los archivos se cargan y guardan en la base de datos
+   - Se registran los metadatos (nombre, tipo, tamaño, fecha)
 
-2. **Text Extraction**:
-   - Text is extracted from different file formats
-   - Formatting is preserved where possible
+2. **Extracción de texto**:
+   - Se extrae texto de diferentes formatos de archivo
+   - Se preserva el formato cuando es posible
 
-3. **Chunking**:
-   - Documents are split into smaller segments (chunks)
-   - Typical chunk size: 500-1000 characters
-   - Overlap between chunks maintains context
+3. **Fragmentación**:
+   - Los documentos se dividen en segmentos más pequeños (fragmentos)
+   - Tamaño típico de fragmento: 500-1000 caracteres
+   - La superposición entre fragmentos mantiene el contexto
 
-4. **Embedding Creation**:
-   - Each chunk is converted to a vector embedding
-   - Embeddings capture semantic meaning
-   - Stored in vector database for fast retrieval
+4. **Creación de embeddings**:
+   - Cada fragmento se convierte en un embedding vectorial
+   - Los embeddings capturan el significado semántico
+   - Almacenados en base de datos vectorial para recuperación rápida
 
-5. **Semantic Search**:
-   - When generating content, AI searches for relevant chunks
-   - Similarity matching finds most relevant content
-   - Retrieved chunks are included as context
+5. **Búsqueda semántica**:
+   - Al generar contenido, la IA busca fragmentos relevantes
+   - La coincidencia de similitud encuentra el contenido más relevante
+   - Los fragmentos recuperados se incluyen como contexto
 
-6. **Content Generation**:
-   - AI uses retrieved context + prompt
-   - Generates personalized, accurate content
-   - References your specific knowledge
+6. **Generación de contenido**:
+   - La IA usa el contexto recuperado + prompt
+   - Genera contenido personalizado y preciso
+   - Referencia su conocimiento específico
 
-### Storage and Performance
+### Almacenamiento y rendimiento
 
-- **Storage**: Documents stored in local SQLite database
-- **Vector Database**: Optimized for fast similarity search
-- **Performance**: Millisecond retrieval for relevant content
-- **Scalability**: Handles thousands of documents efficiently
+- **Almacenamiento**: Documentos almacenados en base de datos SQLite local
+- **Base de datos vectorial**: Optimizada para búsqueda rápida de similitud
+- **Rendimiento**: Recuperación en milisegundos de contenido relevante
+- **Escalabilidad**: Maneja miles de documentos eficientemente
 
-## Security and Privacy
+## Seguridad y privacidad
 
-### Data Storage
+### Almacenamiento de datos
 
-- **Local Storage**: All documents stored locally on your machine
-- **No Cloud Upload**: Original files remain on your computer
-- **Encrypted**: Database can be encrypted for additional security
+- **Almacenamiento local**: Todos los documentos almacenados localmente en su máquina
+- **Sin carga a la nube**: Los archivos originales permanecen en su computadora
+- **Cifrado**: La base de datos puede cifrarse para seguridad adicional
 
-### Privacy Considerations
+### Consideraciones de privacidad
 
-- **Your Knowledge**: Only you have access to your documents
-- **AI Processing**: Embeddings created locally or on your servers
-- **No Training Data**: Your documents aren't used to train public AI models
+- **Su conocimiento**: Solo usted tiene acceso a sus documentos
+- **Procesamiento de IA**: Embeddings creados localmente o en sus servidores
+- **Sin datos de entrenamiento**: Sus documentos no se usan para entrenar modelos de IA públicos
 
-:::tip Confidential Information
+:::tip Información confidencial
 
-The Knowledge Library is perfect for:
-- Internal product documentation
-- Confidential pricing information
-- Proprietary business processes
-- Client-specific information
+La Biblioteca de Conocimiento es perfecta para:
+- Documentación interna de producto
+- Información confidencial de precios
+- Procesos de negocio propietarios
+- Información específica de clientes
 
 :::
 
-## Next Steps
+## Próximos pasos
 
-Now that you've built your Knowledge Library:
+Ahora que ha construido su Biblioteca de Conocimiento:
 
-- [Create AI-generated email campaigns](./ai-email-writer)
-- [Use the AI Marketing Assistant](./ai-marketing-assistant)
-- [Set up batch email sending](../lead-generation/batch-email-sending)
+- [Cree campañas de correo generadas por IA](./ai-email-writer)
+- [Use el Asistente de Marketing IA](./ai-marketing-assistant)
+- [Configure el envío masivo de correos](../lead-generation/batch-email-sending)
 
 ---
 
-**Ready to build your knowledge base?** Start by uploading your product documentation, pricing guides, and marketing materials to power personalized AI outreach.
+**¿Listo para construir su base de conocimiento?** Comience cargando su documentación de producto, guías de precios y materiales de marketing para potenciar la divulgación de IA personalizada.

@@ -2,174 +2,174 @@
 id: ai-skills
 title: AI Skills
 sidebar_label: AI Skills
-description: Manage and extend aiFetchly's AI capabilities with customizable skills - import, uninstall, enable/disable, and use in AI Chat.
+description: aiFetchlyのAI機能を管理・拡張するカスタマイズ可能なスキル - インポート、アンインストール、有効化/無効化、AIチャットでの利用方法。
 ---
 
 # AI Skills
 
-AI Skills are modular extensions that enhance aiFetchly's AI chat capabilities. Skills add specialized knowledge, custom tools, and domain-specific functionality to the AI Marketing Assistant.
+AI Skillsは、aiFetchlyのAIチャット機能を拡張するモジュラー式の拡張機能です。スキルを追加することで、AIマーケティングアシスタントに専門知識、カスタムツール、ドメイン固有の機能を付加できます。
 
-## What Are AI Skills?
+## AI Skillsとは？
 
-AI Skills are packaged components that extend the AI's capabilities:
+AI Skillsは、AIの機能を拡張するパッケージ化されたコンポーネントです：
 
-- **Built-in Skills**: Pre-installed skills with core functionality
-- **User-Installed Skills**: Custom skills you import for specific use cases
+- **組み込みスキル**: コア機能を備えたプレインストール済みのスキル
+- **ユーザーインストールスキル**: 特定の用途に合わせてインポートするカスタムスキル
 
-Each skill has:
-- A unique name and version
-- A category (e.g., "web-search", "data-analysis", "automation")
-- Enable/disable state
-- A manifest defining permissions and capabilities
+各スキルには以下が含まれます：
+- 一意の名前とバージョン
+- カテゴリ（例：「web-search」「data-analysis」「automation」）
+- 有効/無効の状態
+- 権限と機能を定義するマニフェスト
 
-## Accessing AI Skills
+## AI Skillsへのアクセス
 
-1. Click **Settings** in the left navigation menu
-2. Navigate to **Skills**
-3. View the list of installed skills with their status
+1. 左側のナビゲーションメニューで**Settings**をクリックします
+2. **Skills**に移動します
+3. インストール済みスキルの一覧とステータスを確認します
 
-## Importing Skills
+## スキルのインポート
 
-### Step 1: Obtain Skill Package
+### ステップ1：スキルパッケージの取得
 
-Skills are distributed as `.zip` files. You can get skills from:
-- Official aiFetchly skill marketplace
-- Community-contributed skills
-- Custom-developed skills for your organization
+スキルは`.zip`ファイルとして配布されます。以下の方法でスキルを入手できます：
+- aiFetchly公式スキルマーケットプレイス
+- コミュニティ提供のスキル
+- 組織向けにカスタム開発されたスキル
 
-### Step 2: Import the Skill
+### ステップ2：スキルのインポート
 
-1. In the Skills page, click the **Import** button (top-right, with upload icon)
-2. A file selection dialog opens
-3. Navigate to your skill `.zip` file
-4. Select the file and confirm
+1. Skillsページで**Import**ボタン（右上のアップロードアイコン）をクリックします
+2. ファイル選択ダイアログが開きます
+3. スキルの`.zip`ファイルの場所に移動します
+4. ファイルを選択して確認します
 
-### Step 3: Verify Installation
+### ステップ3：インストールの確認
 
-After import:
-- The skill appears in the skills table
-- Status shows as **Enabled** by default
-- Verify the skill's category and version match expectations
+インポート後：
+- スキルテーブルにスキルが表示されます
+- ステータスはデフォルトで**Enabled**と表示されます
+- スキルのカテゴリとバージョンが期待通りであることを確認します
 
-:::tip Import Tips
+:::tip インポートのヒント
 
-- Only `.zip` files are supported
-- The skill must have a valid `manifest.json` inside
-- If import fails, check the zip file integrity and manifest format
+- `.zip`ファイルのみサポートされています
+- スキル内部に有効な`manifest.json`が必要です
+- インポートに失敗した場合は、zipファイルの整合性とマニフェストの形式を確認してください
 
 :::
 
-## Managing Skills
+## スキルの管理
 
-### View Installed Skills
+### インストール済みスキルの確認
 
-The skills table displays:
+スキルテーブルには以下の情報が表示されます：
 
-| Column | Description |
+| 列 | 説明 |
 |--------|-------------|
-| **Name** | Skill identifier/name |
-| **Source** | `Built-in` or `User-installed` badge |
-| **Category** | Skill's functional category |
-| **Version** | Current version number |
-| **Status** | `Enabled` or `Disabled` badge |
-| **Actions** | Enable/disable toggle and uninstall button |
+| **Name** | スキルの識別子/名前 |
+| **Source** | `Built-in`または`User-installed`のバッジ |
+| **Category** | スキルの機能カテゴリ |
+| **Version** | 現在のバージョン番号 |
+| **Status** | `Enabled`または`Disabled`のバッジ |
+| **Actions** | 有効/無効の切り替えボタンとアンインストールボタン |
 
-### Enable/Disable Skills
+### スキルの有効化/無効化
 
-To toggle a skill's state:
+スキルの状態を切り替えるには：
 
-1. Locate the skill in the table
-2. Use the **toggle buttons** in the Actions column:
-   - **Check mark** (green): Enable the skill
-   - **X mark** (grey): Disable the skill
+1. テーブルで対象のスキルを見つけます
+2. Actions列の**トグルボタン**を使用します：
+   - **チェックマーク**（緑）：スキルを有効にする
+   - **×マーク**（グレー）：スキルを無効にする
 
-**When to Disable:**
-- Skill conflicts with another skill
-- Temporary troubleshooting
-- Skill not needed for current tasks
-- Testing skill behavior
+**無効化すべきケース：**
+- 他のスキルと競合している場合
+- 一時的なトラブルシューティングが必要な場合
+- 現在のタスクでスキルが不要な場合
+- スキルの動作をテストする場合
 
-**Note:** Built-in skills cannot be uninstalled, only disabled.
+**注意：** 組み込みスキルはアンインストールできません。無効化のみ可能です。
 
-### Uninstall Skills
+### スキルのアンインストール
 
-To remove a user-installed skill:
+ユーザーインストール済みのスキルを削除するには：
 
-1. Locate the skill in the table
-2. Click the **Delete** (trash can) icon in the Actions column
-3. Confirm the uninstall action in the dialog
+1. テーブルで対象のスキルを見つけます
+2. Actions列の**Delete**（ゴミ箱）アイコンをクリックします
+3. ダイアログでアンインストールを確認します
 
-:::warning Uninstall Warning
+:::warning アンインストールの警告
 
-Uninstalling a skill permanently removes it. You'll need to re-import if you want to use it again.
+スキルをアンインストールすると完全に削除されます。再度使用する場合は、再インポートが必要になります。
 
 :::
 
-## Using Skills in AI Chat
+## AIチャットでのスキル利用
 
-Skills become available in the **AI Marketing Assistant** once enabled.
+スキルは有効化されると、**AIマーケティングアシスタント**で利用可能になります。
 
-### Accessing AI Chat
+### AIチャットへのアクセス
 
-1. Navigate to **AI Marketing Assistant** (or **AI Chat**)
-2. Start a new conversation or continue existing one
+1. **AI Marketing Assistant**（または**AI Chat**）に移動します
+2. 新しい会話を開始するか、既存の会話を続行します
 
-### How Skills Work in Chat
+### チャットでのスキルの動作
 
-Enabled skills automatically integrate with AI responses:
+有効化されたスキルは、AIの応答に自動的に統合されます：
 
-1. **Automatic Tool Selection**: AI chooses relevant skills based on your query
-2. **Manual Invocation**: Request specific skill functionality
-3. **Combined Outputs**: Multiple skills can work together
+1. **自動ツール選択**: AIが質問に基づいて関連スキルを自動選択します
+2. **手動呼び出し**: 特定のスキル機能をリクエストします
+3. **複合出力**: 複数のスキルが連携して動作します
 
-### Example Skill Usage
+### スキル利用例
 
-**Web Search Skill:**
+**Web検索スキル：**
 ```
-User: "What are the latest trends in SaaS marketing?"
-AI: [Uses web search skill to find current information]
-AI: "Based on recent data, SaaS marketing trends include..."
-```
-
-**Data Analysis Skill:**
-```
-User: "Analyze this customer data and identify patterns"
-AI: [Uses data analysis skill to process the data]
-AI: "The analysis reveals these key patterns..."
+ユーザー: 「SaaSマーケティングの最新トレンドを教えてください」
+AI: [Web検索スキルを使用して最新情報を取得]
+AI: 「最新データに基づくと、SaaSマーケティングのトレンドには以下が含まれます...」
 ```
 
-**Automation Skill:**
+**データ分析スキル：**
 ```
-User: "Set up an automated email campaign for new leads"
-AI: [Uses automation skill to configure the campaign]
-AI: "Your automated campaign is now configured with..."
+ユーザー: 「この顧客データを分析してパターンを見つけてください」
+AI: [データ分析スキルを使用してデータを処理]
+AI: 「分析の結果、以下の主要なパターンが見つかりました...」
 ```
 
-### Skill Indicators in Chat
+**自動化スキル：**
+```
+ユーザー: 「新規リード向けの自動メールキャンペーンを設定して」
+AI: [自動化スキルを使用してキャンペーンを設定]
+AI: 「自動キャンペーンが以下の内容で設定されました...」
+```
 
-When a skill is used:
-- The skill name may appear in the response
-- A small icon or badge indicates skill activation
-- Tool usage is shown in the conversation flow
+### チャットでのスキルインジケーター
 
-### Skill Permission Prompts
+スキルが使用されると：
+- 応答内にスキル名が表示される場合があります
+- 小さなアイコンまたはバッジでスキルの起動が示されます
+- 会話の流れの中でツールの使用状況が表示されます
 
-Some skills require your explicit permission before execution. This is a security feature to protect your system.
+### スキルの権限プロンプト
 
-**When You'll See Permission Prompts:**
+一部のスキルは、実行前に明示的な許可を必要とします。これはシステムを保護するためのセキュリティ機能です。
 
-Skills are categorized by their permission level:
+**権限プロンプトが表示されるタイミング：**
 
-| Category | Permission Behavior | Examples |
+スキルは権限レベルに応じて分類されています：
+
+| カテゴリ | 権限の動作 | 例 |
 |----------|-------------------|----------|
-| **Pure** | Auto-approved, no prompt | Text processing, calculations, data formatting |
-| **Shell** | Always prompts before execution | Running system commands, file operations |
-| **Network** | May prompt for external calls | Web scraping, API calls to external services |
-| **Data** | May prompt for sensitive access | File system read/write, database access |
+| **Pure** | 自動承認、プロンプトなし | テキスト処理、計算、データフォーマット |
+| **Shell** | 実行前に常にプロンプトを表示 | システムコマンドの実行、ファイル操作 |
+| **Network** | 外部通信でプロンプトを表示する場合あり | Webスクレイピング、外部サービスへのAPI呼び出し |
+| **Data** | 機密データアクセスでプロンプトを表示する場合あり | ファイルシステムの読み書き、データベースアクセス |
 
-**The Permission Prompt:**
+**権限プロンプトの表示：**
 
-When a skill needs permission, you'll see a dialog in the AI chat:
+スキルが権限を必要とする場合、AIチャットにダイアログが表示されます：
 
 ```
 ┌─────────────────────────────────────────────┐
@@ -185,129 +185,129 @@ When a skill needs permission, you'll see a dialog in the AI chat:
 └─────────────────────────────────────────────┘
 ```
 
-**Permission Options:**
+**権限オプション：**
 
-- **Allow Once**: Grant permission for this single execution only
-- **Allow Always**: Remember this decision and auto-approve future requests from this skill
-- **Deny**: Block this execution (skill will fail gracefully)
+- **Allow Once**: この1回の実行のみ許可します
+- **Allow Always**: この決定を記憶し、今後このスキルからのリクエストを自動承認します
+- **Deny**: この実行をブロックします（スキルは安全に失敗します）
 
-**Managing Saved Permissions:**
+**保存された権限の管理：**
 
-To review or change saved permissions:
+保存された権限を確認または変更するには：
 
-1. Go to **Settings** → **AI Skills**
-2. Click on a skill to view its permission status
-3. Toggle "Always Allow" to change auto-approval behavior
-4. Disabled skills have their permissions temporarily suspended
+1. **Settings** → **AI Skills**に移動します
+2. スキルをクリックして権限ステータスを表示します
+3. 「Always Allow」を切り替えて自動承認の動作を変更します
+4. 無効化されたスキルの権限は一時的に停止されます
 
-:::tip Security Best Practice
+:::tip セキュリティのベストプラクティス
 
-Start with "Allow Once" for new skills. After verifying they work correctly and safely, you can switch to "Allow Always" for convenience.
+新しいスキルは最初「Allow Once」で開始してください。正常かつ安全に動作することを確認した後、利便性のため「Allow Always」に切り替えることができます。
 
 :::
 
-## Skill Categories
+## スキルカテゴリ
 
-Skills are organized by functional category:
+スキルは機能カテゴリ別に整理されています：
 
-| Category | Purpose | Example Skills |
+| カテゴリ | 目的 | スキル例 |
 |----------|---------|----------------|
-| **Web Search** | Internet research, trend analysis | Search engine, social media monitoring |
-| **Data Analysis** | Processing and interpreting data | CSV analysis, statistical modeling |
-| **Automation** | Workflow automation tasks | Email automation, task scheduling |
-| **Integration** | External service connections | CRM, API connectors |
-| **Content** | Content generation and optimization | Blog writing, SEO optimization |
-| **Pure** | General-purpose utilities | Text processing, formatting |
+| **Web Search** | インターネット調査、トレンド分析 | 検索エンジン、ソーシャルメディア監視 |
+| **Data Analysis** | データの処理と解釈 | CSV分析、統計モデリング |
+| **Automation** | ワークフローの自動化タスク | メール自動化、タスクスケジューリング |
+| **Integration** | 外部サービスとの連携 | CRM、APIコネクタ |
+| **Content** | コンテンツの生成と最適化 | ブログ執筆、SEO最適化 |
+| **Pure** | 汎用ユーティリティ | テキスト処理、フォーマット |
 
-## Troubleshooting
+## トラブルシューティング
 
-### Skill Not Appearing in Chat
+### スキルがチャットに表示されない
 
-**Possible causes:**
-- Skill is disabled
-- Skill installation incomplete
-- Skill requires specific permissions
+**考えられる原因：**
+- スキルが無効になっている
+- スキルのインストールが不完全
+- スキルに特定の権限が必要
 
-**Solutions:**
-1. Check skill status in Settings → Skills
-2. Enable the skill if disabled
-3. Re-import the skill if corrupted
-4. Verify skill manifest has required permissions
+**解決方法：**
+1. Settings → Skillsでスキルのステータスを確認します
+2. 無効な場合は有効化します
+3. 破損している場合はスキルを再インポートします
+4. スキルのマニフェストに必要な権限が含まれていることを確認します
 
-### Import Failed
+### インポートに失敗する
 
-**Possible causes:**
-- Invalid zip file format
-- Missing or malformed `manifest.json`
-- Skill already installed
-- Corrupted download
+**考えられる原因：**
+- 無効なzipファイル形式
+- `manifest.json`が存在しない、または形式が不正
+- スキルがすでにインストール済み
+- ダウンロードの破損
 
-**Solutions:**
-1. Verify zip file integrity
-2. Check manifest.json format and content
-3. Uninstall existing version first, then re-import
-4. Re-download the skill package
+**解決方法：**
+1. zipファイルの整合性を確認します
+2. manifest.jsonの形式と内容を確認します
+3. 既存のバージョンを先にアンインストールしてから再インポートします
+4. スキルパッケージを再ダウンロードします
 
-### Skill Causes Errors
+### スキルがエラーを引き起こす
 
-**Possible causes:**
-- Skill bug or incompatibility
-- Missing dependencies
-- API key not configured
+**考えられる原因：**
+- スキルのバグまたは非互換性
+- 依存関係の不足
+- APIキーが設定されていない
 
-**Solutions:**
-1. Disable the skill temporarily
-2. Check skill documentation for requirements
-3. Verify all required configurations are complete
-4. Contact skill developer for support
+**解決方法：**
+1. スキルを一時的に無効化します
+2. スキルのドキュメントで要件を確認します
+3. 必要な設定がすべて完了していることを確認します
+4. スキル開発者にサポートを依頼します
 
-### Built-in Skill Cannot Uninstall
+### 組み込みスキルをアンインストールできない
 
-Built-in skills are core to aiFetchly functionality and cannot be removed. You can only disable them if they conflict with other skills.
+組み込みスキルはaiFetchlyのコア機能の一部であるため、削除できません。他のスキルと競合する場合のみ無効化できます。
 
-## Best Practices
+## ベストプラクティス
 
-### 1. Skill Selection
+### 1. スキルの選択
 
-**Install Only What You Need:**
-- Each skill adds complexity
-- Too many skills may cause conflicts
-- Start with essential skills, add as needed
+**必要なもののみインストール：**
+- 各スキルは複雑さを増加させます
+- スキルが多すぎると競合が発生する可能性があります
+- 必須スキルから始め、必要に応じて追加してください
 
-### 2. Skill Updates
+### 2. スキルの更新
 
-**Keep Skills Current:**
-- Check for skill updates regularly
-- Update skills for bug fixes and improvements
-- Test updated skills before production use
+**スキルを最新に保つ：**
+- 定期的にスキルの更新を確認します
+- バグ修正と改善のためにスキルを更新します
+- 本番環境で使用する前に更新されたスキルをテストします
 
-### 3. Skill Organization
+### 3. スキルの整理
 
-**Name and Categorize Well:**
-- Use descriptive skill names
-- Organize by functional category
-- Document custom skill purposes
+**適切な命名と分類：**
+- 説明的なスキル名を使用します
+- 機能カテゴリ別に整理します
+- カスタムスキルの目的を文書化します
 
-### 4. Testing
+### 4. テスト
 
-**Test Before Production:**
-- Enable skills in test mode first
-- Verify skill behavior in AI chat
-- Check for conflicts with existing skills
+**本番前にテスト：**
+- まずテストモードでスキルを有効化します
+- AIチャットでスキルの動作を確認します
+- 既存のスキルとの競合を確認します
 
-### 5. Security
+### 5. セキュリティ
 
-**Only Install Trusted Skills:**
-- Verify skill source
-- Review skill permissions
-- Monitor skill behavior
-- Remove unused skills
+**信頼できるスキルのみインストール：**
+- スキルの提供元を確認します
+- スキルの権限を確認します
+- スキルの動作を監視します
+- 使用しないスキルは削除します
 
-## Skill Development (For Developers)
+## スキル開発（開発者向け）
 
-### Manifest Structure
+### マニフェスト構造
 
-A skill's `manifest.json` should include:
+スキルの`manifest.json`には以下を含める必要があります：
 
 ```json
 {
@@ -319,43 +319,43 @@ A skill's `manifest.json` should include:
 }
 ```
 
-### Packaging
+### パッケージング
 
-1. Include `manifest.json` at root
-2. Add skill implementation files
-3. Include any required assets
-4. Zip the contents (not the folder)
-5. Name the file `skill-name.zip`
+1. `manifest.json`をルートに配置します
+2. スキルの実装ファイルを追加します
+3. 必要なアセットを含めます
+4. フォルダではなく内容物をzip化します
+5. ファイル名を`skill-name.zip`にします
 
-## Integration with Other Features
+## 他の機能との連携
 
-### AI Marketing Assistant
+### AIマーケティングアシスタント
 
-Skills enhance AI chat capabilities:
-- More accurate responses
-- Access to external data sources
-- Automated task execution
+スキルはAIチャットの機能を強化します：
+- より正確な応答
+- 外部データソースへのアクセス
+- タスクの自動実行
 
-### MCP Tools
+### MCPツール
 
-Skills and MCP tools can work together:
-- Skills provide domain-specific logic
-- MCP tools provide external connectivity
-- Combined for powerful automation
+スキルとMCPツールは連携して動作できます：
+- スキルはドメイン固有のロジックを提供します
+- MCPツールは外部接続機能を提供します
+- これらを組み合わせることで強力な自動化が可能になります
 
-### Knowledge Library
+### ナレッジライブラリ
 
-Skills can leverage your knowledge base:
-- Search knowledge during chat
-- Apply learned patterns
-- Generate context-aware responses
+スキルはナレッジベースを活用できます：
+- チャット中にナレッジを検索
+- 学習したパターンを適用
+- コンテキストに応じた応答を生成
 
-## Next Steps
+## 次のステップ
 
-- [Configure System Settings](../settings/system-settings)
-- [Learn about AI Marketing Assistant](./ai-marketing-assistant)
-- [Set up Knowledge Library](./knowledge-library)
+- [システム設定の構成](../settings/system-settings)
+- [AIマーケティングアシスタントについて](./ai-marketing-assistant)
+- [ナレッジライブラリの設定](./knowledge-library)
 
 ---
 
-**Ready to extend AI capabilities?** Import your first skill and discover new possibilities for automation and intelligence.
+**AIの機能を拡張する準備はできましたか？** 最初のスキルをインポートして、自動化とインテリジェンスの新たな可能性を体験してください。

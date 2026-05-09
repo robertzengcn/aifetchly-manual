@@ -2,219 +2,131 @@
 id: system-settings
 title: System Settings
 sidebar_label: System Settings
-description: Configure aiFetchly's AI models, browser paths, and system preferences.
+description: Configura las rutas del navegador, resolución de captchas y preferencias del sistema de aiFetchly.
 ---
 
-# System Settings
+# Configuración del sistema
 
-The System Settings section allows you to configure aiFetchly's core functionality, including AI model providers, browser paths for web automation, and system preferences. Proper configuration ensures optimal performance for all features.
+La sección de Configuración del sistema te permite configurar la funcionalidad principal de aiFetchly, incluyendo las rutas del navegador para la automatización web, resolución de captchas, modelos de embeddings y preferencias del sistema. Una configuración adecuada garantiza un rendimiento óptimo para todas las funciones.
 
-## Accessing System Settings
+## Acceso a la configuración del sistema
 
-1. Click **Settings** in the left navigation menu
-2. A tree-based navigation panel appears on the left
-3. Click on any category to expand its settings
-4. Modify settings as needed
-5. Changes are saved automatically
+1. Haz clic en **Settings** en el menú de navegación izquierdo
+2. Aparece un panel de navegación en forma de árbol a la izquierda
+3. Haz clic en cualquier categoría para expandir sus ajustes
+4. Modifica los ajustes según sea necesario
+5. Los cambios se guardan automáticamente
 
-:::info Auto-Save
+:::info Guardado automático
 
-Most settings save automatically when modified. Look for save indicators or confirmation messages.
-
-:::
-
-## Settings Overview
-
-### AI Model Providers
-
-Configure one or more AI model providers to power aiFetchly's AI features. **At least one provider must be configured** for AI functionality to work.
-
-#### DeepSeek Local
-
-**Best for**: Offline usage, privacy, no API costs
-
-| Setting | Description | Default |
-|---------|-------------|---------|
-| **URL** | Local API endpoint | `http://localhost:11434` |
-| **Model** | Model name | `deepseek-r1:latest` |
-
-**Setup Required:**
-1. Install Ollama (https://ollama.ai)
-2. Pull DeepSeek model: `ollama pull deepseek-r1`
-3. Start Ollama service
-4. Keep URL as default if running locally
-
-:::tip Local AI Advantages
-
-- No API costs
-- Data stays on your machine
-- Works offline
-- Privacy-focused
+La mayoría de los ajustes se guardan automáticamente al modificarlos. Busca indicadores de guardado o mensajes de confirmación.
 
 :::
 
-#### DeepSeek API
+## Resumen de ajustes
 
-**Best for**: Reliable performance, regular updates
+### Servicio 2Captcha
 
-| Setting | Description | Default |
-|---------|-------------|---------|
-| **API URL** | DeepSeek API endpoint | `https://api.deepseek.com` |
-| **API Model** | Model to use | `deepseek-chat` |
-| **API Key** | Your API key | *(Required)* |
+Resolución automatizada de captchas para extracción web.
 
-**Setup Required:**
-1. Sign up at https://platform.deepseek.com
-2. Generate API key
-3. Enter API key in settings
+| Ajuste | Descripción |
+|--------|-------------|
+| **Token** | Tu token de API de 2Captcha |
+| **Enabled** | Activar/desactivar la resolución de captchas |
 
-#### GrokAI
+**Configuración (Opcional):**
+1. Regístrate en https://2captcha.com
+2. Añade fondos a tu cuenta
+3. Obtén el token de API desde el panel
+4. Introduce el token y habilita el servicio
 
-**Best for**: X/Twitter integration, real-time data
+:::info Cuándo usar 2Captcha
 
-| Setting | Description | Default |
-|---------|-------------|---------|
-| **API URL** | GrokAI API endpoint | *(Configure)* |
-| **API Model** | Model to use | *(Configure)* |
-| **API Key** | Your API key | *(Configure)* |
-
-**Setup Required:**
-1. Sign up for X Premium+ (for Grok access)
-2. Obtain API credentials
-3. Configure URL, model, and API key
-
-#### OpenAI
-
-**Best for**: GPT models, reliable service
-
-| Setting | Description | Default |
-|---------|-------------|---------|
-| **API URL** | OpenAI API endpoint | `https://api.openai.com/v1` |
-| **API Model** | Model to use | `gpt-4`, `gpt-3.5-turbo`, etc. |
-| **API Key** | Your API key | *(Required)* |
-
-**Setup Required:**
-1. Sign up at https://platform.openai.com
-2. Create API key
-3. Enter key in settings
-
-#### Volcengine (Doubao)
-
-**Best for**: Chinese language support, cost-effective
-
-| Setting | Description | Default |
-|---------|-------------|---------|
-| **API URL** | Volcengine API endpoint | `https://ark.cn-beijing.volces.com/api/v3/` |
-| **API Model** | Model to use | `doubao-1.5-pro-32k-250115` |
-| **API Key** | Your API key | *(Configure)* |
-
-**Setup Required:**
-1. Sign up at Volcengine platform
-2. Enable Doubao API service
-3. Enter API credentials
-
-### 2Captcha Service
-
-Automated captcha solving for web scraping.
-
-| Setting | Description |
-|---------|-------------|
-| **Token** | Your 2Captcha API token |
-| **Enabled** | Toggle captcha solving on/off |
-
-**Setup (Optional):**
-1. Sign up at https://2captcha.com
-2. Add funds to account
-3. Get API token from dashboard
-4. Enter token and enable service
-
-:::info When to Use 2Captcha
-
-Useful when:
-- Scraping at scale
-- Encountering frequent captchas
-- Don't want to solve captchas manually
+Útil cuando:
+- Extraes a gran escala
+- Encuentras captchas frecuentes
+- No deseas resolver captchas manualmente
 
 :::
 
-### Embedding Configuration
+### Configuración de embeddings
 
-Configure the default embedding model for RAG (Retrieval-Augmented Generation).
+Configura el modelo de embeddings predeterminado para RAG (Generación Aumentada por Recuperación).
 
-| Setting | Description |
-|---------|-------------|
-| **Default Model** | Select from available embedding models |
+| Ajuste | Descripción |
+|--------|-------------|
+| **Default Model** | Selecciona entre los modelos de embeddings disponibles |
 
-**Options:**
-- Various embedding models with different dimensions
-- Choose based on:
-  - Language support
-  - Performance requirements
-  - Resource constraints
+**Opciones:**
+- Varios modelos de embeddings con diferentes dimensiones
+- Elige basándote en:
+  - Soporte de idiomas
+  - Requisitos de rendimiento
+  - Restricciones de recursos
 
-### External System Paths
+### Rutas de sistemas externos
 
-Configure browser paths for local browser integration.
+Configura las rutas del navegador para la integración con el navegador local.
 
-#### Chrome Path
+#### Ruta de Chrome
 
-**Purpose**: Path to Chrome browser executable
+**Propósito**: Ruta al ejecutable del navegador Chrome
 
-**To Configure:**
-1. Click **Browse** or file selection button
-2. Navigate to Chrome installation
-3. Select executable
+**Para configurar:**
+1. Haz clic en **Browse** o en el botón de selección de archivos
+2. Navega a la instalación de Chrome
+3. Selecciona el ejecutable
 
-**Default Paths (by OS):**
+**Rutas predeterminadas (por SO):**
 - **Windows**: `C:\Program Files\Google\Chrome\Application\chrome.exe`
 - **macOS**: `/Applications/Google Chrome.app/Contents/MacOS/Google Chrome`
-- **Linux**: `/usr/bin/google-chrome` or `/usr/bin/chromium-browser`
+- **Linux**: `/usr/bin/google-chrome` o `/usr/bin/chromium-browser`
 
-#### Firefox Path
+#### Ruta de Firefox
 
-**Purpose**: Path to Firefox browser executable
+**Propósito**: Ruta al ejecutable del navegador Firefox
 
-**To Configure:**
-1. Click **Browse** or file selection button
-2. Navigate to Firefox installation
-3. Select executable
+**Para configurar:**
+1. Haz clic en **Browse** o en el botón de selección de archivos
+2. Navega a la instalación de Firefox
+3. Selecciona el ejecutable
 
-**Default Paths (by OS):**
+**Rutas predeterminadas (por SO):**
 - **Windows**: `C:\Program Files\Mozilla Firefox\firefox.exe`
 - **macOS**: `/Applications/Firefox.app/Contents/MacOS/firefox`
 - **Linux**: `/usr/bin/firefox`
 
-:::tip Browser Path Requirements
+:::tip Requisitos de la ruta del navegador
 
-Browser paths are required for:
-- Local browser integration features
-- Yandex scraping (requires browser)
-- Certain anti-bot detection scenarios
+Las rutas del navegador son necesarias para:
+- Funciones de integración con navegador local
+- Extracción de Yandex (requiere navegador)
+- Ciertos escenarios de detección anti-bot
 
 :::
 
-### User Preferences
+### Preferencias del usuario
 
-Configure your aiFetchly experience.
+Configura tu experiencia con aiFetchly.
 
-#### Language
+#### Idioma
 
-**Options:**
-- **English**: Interface in English
-- **中文**: Interface in Chinese (Simplified)
+**Opciones:**
+- **English**: Interfaz en inglés
+- **中文**: Interfaz en chino (Simplificado)
 
-**To Change:**
-1. Select preferred language from dropdown
-2. Interface updates immediately
-3. Restart recommended for full language change
+**Para cambiar:**
+1. Selecciona el idioma preferido del menú desplegable
+2. La interfaz se actualiza inmediatamente
+3. Se recomienda reiniciar para un cambio completo de idioma
 
-#### AI Website Analysis Business Info
+#### Información empresarial para análisis de sitios web con IA
 
-**Purpose**: Provide context for AI-powered website analysis
+**Propósito**: Proporcionar contexto para el análisis de sitios web impulsado por IA
 
-**Format**: JSON configuration
+**Formato**: Configuración JSON
 
-**Example:**
+**Ejemplo:**
 ```json
 {
   "industry": "Software",
@@ -224,221 +136,171 @@ Configure your aiFetchly experience.
 }
 ```
 
-**Usage:**
-- AI uses this context when analyzing websites
-- Improves relevance of analysis results
-- Customizes scoring and categorization
+**Uso:**
+- La IA usa este contexto al analizar sitios web
+- Mejora la relevancia de los resultados del análisis
+- Personaliza la puntuación y categorización
 
-## MCP Tools Management
+## Gestión de herramientas MCP
 
-**MCP** (Model Context Protocol) allows integration with external tools and services, extending the AI Marketing Assistant with capabilities like web search, database queries, and custom API calls.
+**MCP** (Model Context Protocol) permite la integración con herramientas y servicios externos, ampliando el Asistente de Marketing IA con capacidades como búsqueda web, consultas a bases de datos y llamadas a APIs personalizadas.
 
-For full documentation on configuring and using MCP servers, see [MCP Tools](../ai-outreach/mcp-tools).
+Para la documentación completa sobre la configuración y uso de servidores MCP, consulta [MCP Tools](../ai-outreach/mcp-tools).
 
-## Configuration Best Practices
+## Mejores prácticas de configuración
 
-### 1. AI Provider Setup
-
-**Primary Provider:**
-- Configure at least one provider fully
-- Test connectivity before using features
-- Keep API keys secure
-
-**Backup Providers:**
-- Configure 2-3 providers for redundancy
-- Use different providers for different use cases
-- Monitor API usage and costs
-
-### 2. Browser Configuration
+### 1. Configuración del navegador
 
 **Chrome vs Firefox:**
-- Chrome: Better compatibility, more features
-- Firefox: Open-source, privacy-focused
+- Chrome: Mejor compatibilidad, más funciones
+- Firefox: Código abierto, enfocado en la privacidad
 
-**Recommendation:** Configure Chrome as primary, Firefox as backup.
+**Recomendación:** Configura Chrome como primario y Firefox como respaldo.
 
-### 3. Captcha Solving
+### 2. Resolución de captchas
 
-**When to Enable:**
-- Large-scale scraping operations (>1000 pages)
-- Frequent captcha encounters
-- Don't want manual intervention
+**Cuándo habilitar:**
+- Operaciones de extracción a gran escala (>1000 páginas)
+- Encuentros frecuentes con captchas
+- No deseas intervención manual
 
-**When to Disable:**
-- Small-scale scraping
-- To save costs (2captcha has fees)
-- Rare captcha encounters
+**Cuándo deshabilitar:**
+- Extracción a pequeña escala
+- Para ahorrar costos (2captcha tiene tarifas)
+- Encuentros raros con captchas
 
-### 4. Language Settings
+### 3. Ajustes de idioma
 
-**Choose Based On:**
-- Your native language
-- Target audience language
-- Content language (for Knowledge Library)
+**Elige basándote en:**
+- Tu idioma nativo
+- El idioma de tu audiencia objetivo
+- El idioma del contenido (para la Biblioteca de conocimiento)
 
-**Note:** Language preference affects UI only. AI can process multiple languages regardless of setting.
+**Nota:** La preferencia de idioma afecta solo la interfaz. La IA puede procesar múltiples idiomas independientemente del ajuste.
 
-### 5. MCP Tools
+### 4. Herramientas MCP
 
-**Add Sparingly:**
-- Only add tools you'll use
-- Each tool adds complexity
-- Test tools individually
+**Añade con moderación:**
+- Solo añade herramientas que usarás
+- Cada herramienta añade complejidad
+- Prueba las herramientas individualmente
 
-**Security:**
-- Only use trusted MCP servers
-- Keep credentials secure
-- Review tool permissions
+**Seguridad:**
+- Solo usa servidores MCP de confianza
+- Mantén las credenciales seguras
+- Revisa los permisos de las herramientas
 
-## Troubleshooting
+## Solución de problemas
 
-### AI Features Not Working
+### La integración del navegador no funciona
 
-**Possible causes:**
-- No AI provider configured
-- API key invalid or expired
-- Local model not running
+**Posibles causas:**
+- Ruta del navegador incorrecta
+- Navegador no instalado
+- Problemas de permisos
 
-**Solutions:**
-1. Verify at least one AI provider is configured
-2. Test API key with provider's test endpoint
-3. For local models, ensure service is running
-4. Check network connectivity for API providers
+**Soluciones:**
+1. Verifica que el navegador esté instalado
+2. Comprueba que la ruta del archivo sea correcta
+3. Prueba lanzando el navegador directamente
+4. Ejecuta aiFetchly con permisos de administrador/sudo
 
-### Browser Integration Not Working
+### El captcha no se resuelve
 
-**Possible causes:**
-- Incorrect browser path
-- Browser not installed
-- Permission issues
+**Posibles causas:**
+- Token de 2Captcha no válido
+- Fondos insuficientes
+- Servicio deshabilitado
 
-**Solutions:**
-1. Verify browser is installed
-2. Check file path is correct
-3. Test by launching browser directly
-4. Run aiFetchly with admin/sudo permissions
+**Soluciones:**
+1. Verifica que el token de 2Captcha sea correcto
+2. Comprueba el saldo de la cuenta
+3. Asegúrate de que el interruptor de 2Captcha esté habilitado
+4. Prueba resolviendo un captcha manualmente primero
 
-### Captcha Not Solving
+### Los ajustes no se guardan
 
-**Possible causes:**
-- 2Captcha token invalid
-- Insufficient funds
-- Service disabled
+**Posibles causas:**
+- Base de datos bloqueada
+- Permisos insuficientes
+- Error de la aplicación
 
-**Solutions:**
-1. Verify 2Captcha token is correct
-2. Check account balance
-3. Ensure 2Captcha toggle is enabled
-4. Test with manual captcha first
+**Soluciones:**
+1. Reinicia aiFetchly
+2. Ejecuta como administrador/sudo
+3. Comprueba los registros de la aplicación
+4. Verifica que la base de datos no sea de solo lectura
 
-### Settings Not Saving
+### Las herramientas MCP no aparecen
 
-**Possible causes:**
-- Database locked
-- Insufficient permissions
-- Application error
+**Posibles causas:**
+- Servidor no configurado correctamente
+- Prueba de conexión fallida
+- Herramientas deshabilitadas
 
-**Solutions:**
-1. Restart aiFetchly
-2. Run as administrator/sudo
-3. Check application logs
-4. Verify database isn't read-only
+**Soluciones:**
+1. Verifica la configuración del servidor
+2. Prueba la conexión
+3. Comprueba que el servidor esté en ejecución
+4. Habilita las herramientas individuales
 
-### MCP Tools Not Appearing
+## Configuración avanzada
 
-**Possible causes:**
-- Server not configured correctly
-- Connection test failed
-- Tools disabled
+### Múltiples modelos de embeddings
 
-**Solutions:**
-1. Verify server configuration
-2. Test connection
-3. Check server is running
-4. Enable individual tools
+Configura diferentes modelos de embeddings para diferentes propósitos:
 
-## Advanced Configuration
+1. Navega a **Embedding Configuration**
+2. Añade múltiples modelos
+3. Establece el modelo predeterminado
+4. Usa modelos específicos por tarea
 
-### Custom API Endpoints
+### Ajustes específicos por entorno
 
-For advanced users with self-hosted models:
+Diferentes ajustes para diferentes entornos:
 
-1. Select provider (e.g., OpenAI-compatible)
-2. Set API URL to your endpoint
-3. Configure model name
-4. Add authentication if required
+**Desarrollo:**
+- Deshabilita la resolución de captchas
+- Habilita el registro de depuración
 
-**Use Cases:**
-- Self-hosted LLaMA models
-- Private API deployments
-- Custom model fine-tunes
+**Producción:**
+- Habilita la resolución de captchas
+- Deshabilita el registro de depuración
 
-### Multiple Embedding Models
+## Consideraciones de seguridad
 
-Configure different embedding models for different purposes:
+### Rutas del navegador
 
-1. Navigate to **Embedding Configuration**
-2. Add multiple models
-3. Set default model
-4. Use specific models per task
+**Seguridad:**
+- Solo usa instalaciones de navegadores de confianza
+- Verifica que los ejecutables del navegador sean legítimos
+- Mantén los navegadores actualizados
+- Ten precaución con compilaciones de navegador personalizadas
 
-### Environment-Specific Settings
+### Herramientas MCP
 
-Different settings for different environments:
+**Seguridad:**
+- Solo conéctate a servidores MCP de confianza
+- Revisa los permisos de las herramientas cuidadosamente
+- Usa autenticación siempre que esté disponible
+- Monitorea el uso de las herramientas
+- Revoca el acceso cuando no sea necesario
 
-**Development:**
-- Use local AI models
-- Disable captcha solving
-- Enable debug logging
+## Gestión de Skills de IA
 
-**Production:**
-- Use API providers for reliability
-- Enable captcha solving
-- Disable debug logging
+Las Skills de IA son extensiones modulares que mejoran las capacidades de chat de IA de aiFetchly. Las Skills se pueden importar, habilitar/deshabilitar y usar dentro del Asistente de Marketing IA.
 
-## Security Considerations
+Para la documentación completa sobre la importación, gestión y uso de Skills de IA, consulta [AI Skills](../ai-outreach/ai-skills).
 
-### API Key Management
+## Próximos pasos
 
-**Best Practices:**
-- Treat API keys like passwords
-- Don't share or commit to version control
-- Rotate keys periodically
-- Monitor usage for anomalies
-- Revoke compromised keys immediately
+Después de configurar los ajustes del sistema:
 
-### Browser Paths
-
-**Security:**
-- Only use trusted browser installations
-- Verify browser executables are legitimate
-- Keep browsers updated
-- Be cautious with custom browser builds
-
-### MCP Tools
-
-**Security:**
-- Only connect to trusted MCP servers
-- Review tool permissions carefully
-- Use authentication whenever available
-- Monitor tool usage
-- Revoke access when not needed
-
-## AI Skills Management
-
-AI Skills are modular extensions that enhance aiFetchly's AI chat capabilities. Skills can be imported, enabled/disabled, and used within the AI Marketing Assistant.
-
-For full documentation on importing, managing, and using AI Skills, see [AI Skills](../ai-outreach/ai-skills).
-
-## Next Steps
-
-After configuring system settings:
-
-- [Return to Getting Started](../getting-started/introduction)
-- [Set up your first search task](../lead-generation/search-engines)
-- [Configure email services](../lead-generation/batch-email-sending)
-- [Learn about AI Marketing Assistant](../ai-outreach/ai-marketing-assistant)
+- [Volver a Primeros pasos](../getting-started/introduction)
+- [Configura tu primera tarea de búsqueda](../lead-generation/search-engines)
+- [Configura servicios de correo](../lead-generation/batch-email-sending)
+- [Conoce el Asistente de Marketing IA](../ai-outreach/ai-marketing-assistant)
 
 ---
 
-**Configuration Complete!** Your aiFetchly is now set up and ready to help you generate leads and automate your marketing workflows.
+**¡Configuración completa!** Tu aiFetchly ahora está configurado y listo para ayudarte a generar leads y automatizar tus flujos de trabajo de marketing.

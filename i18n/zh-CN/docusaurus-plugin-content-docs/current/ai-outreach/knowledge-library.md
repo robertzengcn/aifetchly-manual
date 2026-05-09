@@ -5,374 +5,374 @@ sidebar_label: Knowledge Library
 description: Build your knowledge base with documents that AI uses to generate contextually relevant content.
 ---
 
-# Knowledge Library
+# 知识库
 
-The Knowledge Library is aiFetchly's intelligent document management system. Upload your documents (PDFs, Word files, HTML, and more) to create a knowledge base that powers AI-generated content, ensuring your outreach is contextually accurate and personalized.
+知识库是 aiFetchly 的智能文档管理系统。上传您的文档（PDF、Word、HTML 等格式），创建为 AI 内容生成提供支撑的知识库，确保您的外联内容精准且个性化。
 
-## What is RAG?
+## 什么是 RAG？
 
-**RAG** (Retrieval-Augmented Generation) is a technology that:
+**RAG**（检索增强生成）是一项技术，其工作流程如下：
 
-1. **Ingests** your documents and breaks them into smaller chunks
-2. **Creates vector embeddings** that understand the semantic meaning of your content
-3. **Retrieves relevant information** when generating content
-4. **Enhances AI responses** with your specific knowledge
+1. **摄取**您的文档，并将其拆分为较小的片段
+2. **创建向量嵌入**，理解内容的语义含义
+3. 在生成内容时**检索相关信息**
+4. 利用您的专属知识**增强 AI 回复**
 
-:::info Why RAG Matters
+:::info RAG 为何重要
 
-Traditional AI systems generate generic content. With RAG, aiFetchly's AI references YOUR documents, creating personalized, context-aware emails and marketing content.
+传统 AI 系统生成的内容较为泛化。借助 RAG，aiFetchly 的 AI 能够引用您的文档，创建个性化、具备上下文感知能力的邮件和营销内容。
 
 :::
 
-## Supported File Types
+## 支持的文件类型
 
-| Format | Extensions | Best For |
+| 格式 | 扩展名 | 适用场景 |
 |--------|------------|----------|
-| **PDF** | `.pdf` | Brochures, whitepapers, documentation |
-| **Microsoft Word** | `.doc`, `.docx` | Proposals, contracts, product info |
-| **Text** | `.txt` | Simple text files, notes |
-| **Markdown** | `.md` | Technical documentation, README files |
-| **HTML** | `.html`, `.htm` | Web content, articles |
+| **PDF** | `.pdf` | 宣传册、白皮书、技术文档 |
+| **Microsoft Word** | `.doc`, `.docx` | 提案、合同、产品资料 |
+| **文本** | `.txt` | 纯文本文件、笔记 |
+| **Markdown** | `.md` | 技术文档、README 文件 |
+| **HTML** | `.html`, `.htm` | 网页内容、文章 |
 
-## Uploading Documents
+## 上传文档
 
-### Step 1: Navigate to Knowledge Library
+### 第 1 步：进入知识库
 
-1. Click **Knowledge** in the left navigation menu
-2. You'll see the Knowledge Library interface
+1. 点击左侧导航菜单中的 **Knowledge**
+2. 您将看到知识库界面
 
-### Step 2: Upload Documents
+### 第 2 步：上传文档
 
-**Method 1: Drag and Drop**
+**方式一：拖放上传**
 
-1. Drag files from your computer
-2. Drop them onto the upload area
-3. Visual feedback shows files being added
+1. 从电脑中拖动文件
+2. 将文件拖放到上传区域
+3. 界面会显示文件正在添加的视觉反馈
 
-**Method 2: File Browser**
+**方式二：文件浏览器**
 
-1. Click the **Upload** button (or the upload area)
-2. Navigate to your files in the file browser
-3. Select one or multiple documents
-4. Click **Open** to upload
+1. 点击 **Upload** 按钮（或上传区域）
+2. 在文件浏览器中找到您的文件
+3. 选择一个或多个文档
+4. 点击 **Open** 开始上传
 
-### Step 3: Processing
+### 第 3 步：处理
 
-After upload, documents are automatically processed:
+上传后，文档将自动进行处理：
 
-1. **Saving**: Files are saved to the database
-2. **Chunking**: Documents are broken into smaller segments
-3. **Embedding**: Vector embeddings are created for semantic search
-4. **Status Update**: Processing status changes from **Pending** → **Processing** → **Completed**
+1. **保存**：文件保存到数据库
+2. **分块**：文档被拆分为较小的片段
+3. **嵌入**：创建向量嵌入用于语义搜索
+4. **状态更新**：处理状态从 **Pending** → **Processing** → **Completed** 变化
 
-:::tip Processing Time
+:::tip 处理时间
 
-Processing time depends on file size:
-- Small files (< 1MB): 10-30 seconds
-- Medium files (1-5MB): 30-60 seconds
-- Large files (5-10MB): 1-3 minutes
+处理时间取决于文件大小：
+- 小文件（< 1MB）：10-30 秒
+- 中等文件（1-5MB）：30-60 秒
+- 大文件（5-10MB）：1-3 分钟
 
 :::
 
-## Managing Documents
+## 管理文档
 
-### Document List View
+### 文档列表视图
 
-The Knowledge Library displays all your documents with:
+知识库展示所有文档，包含以下信息：
 
-| Column | Description |
+| 列 | 说明 |
 |--------|-------------|
-| **Name** | Document filename |
-| **Title** | Document title (editable) |
-| **Status** | Processing status (Pending/Processing/Completed/Error) |
-| **Type** | File type (PDF, DOCX, etc.) |
-| **Size** | File size |
-| **Upload Date** | When the document was uploaded |
-| **Actions** | View, download, delete, re-embed |
+| **Name** | 文档文件名 |
+| **Title** | 文档标题（可编辑） |
+| **Status** | 处理状态（Pending/Processing/Completed/Error） |
+| **Type** | 文件类型（PDF、DOCX 等） |
+| **Size** | 文件大小 |
+| **Upload Date** | 文档上传日期 |
+| **Actions** | 查看、下载、删除、重新嵌入 |
 
-### Document Actions
+### 文档操作
 
-| Action | Description |
+| 操作 | 说明 |
 |--------|-------------|
-| **View** | Open document to view content |
-| **Download** | Download original file to your computer |
-| **Delete** | Remove document from knowledge base |
-| **Re-embed** | Reprocess document with new embedding model |
-| **View Logs** | See error details for failed documents |
+| **View** | 打开文档查看内容 |
+| **Download** | 将原始文件下载到电脑 |
+| **Delete** | 从知识库中移除文档 |
+| **Re-embed** | 使用新的嵌入模型重新处理文档 |
+| **View Logs** | 查看失败文档的错误详情 |
 
-### Search and Filter
+### 搜索与筛选
 
-- **Search by Name**: Filter documents by filename
-- **Filter by Status**: Show only completed, processing, or failed documents
-- **Filter by Type**: Show only specific file types
+- **按名称搜索**：根据文件名筛选文档
+- **按状态筛选**：仅显示已完成、处理中或失败的文档
+- **按类型筛选**：仅显示特定文件类型
 
-### Bulk Operations
+### 批量操作
 
-- **Select Multiple**: Check boxes next to documents
-- **Bulk Delete**: Remove multiple documents at once
-- **Clear Selection**: Deselect all documents
+- **多选**：勾选文档旁的复选框
+- **批量删除**：一次移除多个文档
+- **清除选择**：取消选中所有文档
 
-## Understanding Processing Status
+## 了解处理状态
 
-| Status | Color | Meaning | Action |
+| 状态 | 颜色 | 含义 | 操作 |
 |--------|-------|---------|--------|
-| **Pending** | Grey | Queued for processing | Wait for automatic processing |
-| **Processing** | Blue | Currently being embedded | Wait for completion |
-| **Completed** | Green | Ready to use in AI generation | Document is active |
-| **Error** | Red | Processing failed | View logs, try re-embedding |
-
-## Re-embedding Documents
-
-If you change embedding models or need to reprocess a document:
-
-1. Find the document in the list
-2. Click **Re-embed** button
-3. Document status changes to **Processing**
-4. New embeddings are created with current model
-5. Status updates to **Completed** when done
+| **Pending** | 灰色 | 已排队等待处理 | 等待自动处理 |
+| **Processing** | 蓝色 | 正在进行嵌入处理 | 等待完成 |
+| **Completed** | 绿色 | 可用于 AI 内容生成 | 文档已激活 |
+| **Error** | 红色 | 处理失败 | 查看日志，尝试重新嵌入 |
+
+## 重新嵌入文档
+
+如果您更换了嵌入模型或需要重新处理文档：
+
+1. 在列表中找到该文档
+2. 点击 **Re-embed** 按钮
+3. 文档状态变为 **Processing**
+4. 使用当前模型创建新的嵌入
+5. 完成后状态更新为 **Completed**
 
-**Use Cases for Re-embedding:**
-- Changed embedding model in settings
-- Previous embedding failed partially
-- Want to use updated chunking parameters
+**重新嵌入的适用场景：**
+- 在设置中更换了嵌入模型
+- 上次嵌入部分失败
+- 希望使用更新后的分块参数
 
-## Troubleshooting
+## 故障排除
 
-### Document Status: "Error"
+### 文档状态："Error"
 
-**Possible causes:**
-- Corrupted file
-- Unsupported file format
-- File too large
-- Encoding issues
+**可能原因：**
+- 文件已损坏
+- 不支持的文件格式
+- 文件过大
+- 编码问题
 
-**Solutions:**
-1. **View Logs** to see specific error
-2. **Try Re-embedding** the document
-3. **Re-upload** the original file
-4. **Convert file** to a different format (e.g., DOC → PDF)
+**解决方案：**
+1. **查看日志**以了解具体错误
+2. **尝试重新嵌入**该文档
+3. **重新上传**原始文件
+4. **转换文件**为其他格式（例如 DOC → PDF）
 
-### Slow Processing
+### 处理速度慢
 
-**Possible causes:**
-- Large file size
-- High system load
-- Network latency (for remote embedding)
+**可能原因：**
+- 文件较大
+- 系统负载高
+- 网络延迟（远程嵌入场景）
 
-**Solutions:**
-1. Wait for processing to complete
-2. Split large documents into smaller files
-3. Close other applications to free resources
+**解决方案：**
+1. 等待处理完成
+2. 将大型文档拆分为较小的文件
+3. 关闭其他应用程序以释放资源
 
-### Document Not Used in AI Content
+### 文档未被 AI 内容引用
 
-**Possible causes:**
-- Document not fully processed
-- Document content not relevant to query
-- RAG context not enabled
+**可能原因：**
+- 文档尚未完全处理
+- 文档内容与查询不相关
+- RAG 上下文未启用
 
-**Solutions:**
-1. Verify document status is **Completed**
-2. Ensure RAG context is enabled in AI Chat/Email Writer
-3. Try searching for more specific content
-4. Upload additional relevant documents
+**解决方案：**
+1. 确认文档状态为 **Completed**
+2. 确保在 AI Chat/Email Writer 中已启用 RAG 上下文
+3. 尝试搜索更具体的内容
+4. 上传更多相关文档
 
-## Best Practices
+## 最佳实践
 
-### 1. Document Selection
+### 1. 文档选择
 
-**Upload documents that:**
-- Describe your products or services in detail
-- Explain your value proposition
-- Contain case studies or success stories
-- Include industry-specific terminology
-- Provide competitive advantages
+**建议上传以下类型的文档：**
+- 详细描述您的产品或服务的文档
+- 阐述您的价值主张的文档
+- 包含案例研究或成功案例的文档
+- 包含行业专业术语的文档
+- 提供竞争优势信息的文档
 
-**Avoid:**
-- Generic or outdated information
-- Irrelevant content
-- Very large files (> 10MB)
-- Poorly formatted documents
+**避免上传：**
+- 泛化或过时的信息
+- 不相关的内容
+- 过大的文件（> 10MB）
+- 格式混乱的文档
 
-### 2. Document Organization
+### 2. 文档组织
 
-**Naming Conventions:**
-- Use descriptive names: `Product_Brochure_2024.pdf`
-- Include version numbers: `Pricing_Guide_v2.docx`
-- Add dates: `Case_Study_January_2024.pdf`
+**命名规范：**
+- 使用描述性名称：`Product_Brochure_2024.pdf`
+- 包含版本号：`Pricing_Guide_v2.docx`
+- 添加日期：`Case_Study_January_2024.pdf`
 
-**Categorization:**
-- Group related documents together
-- Use consistent naming patterns
-- Tag documents for easy filtering
+**分类管理：**
+- 将相关文档归类在一起
+- 使用一致的命名模式
+- 为文档添加标签以便筛选
 
-### 3. Content Quality
+### 3. 内容质量
 
-**For Best Results:**
-- Use well-formatted documents
-- Include structured headings
-- Provide specific details and examples
-- Keep information up-to-date
-- Use professional language
+**为获得最佳效果：**
+- 使用格式良好的文档
+- 包含结构化的标题
+- 提供具体细节和示例
+- 保持信息更新
+- 使用专业语言
 
-### 4. Regular Maintenance
+### 4. 定期维护
 
-**Keep Your Knowledge Base Healthy:**
-- **Review regularly**: Remove outdated documents
-- **Update content**: Re-upload when information changes
-- **Monitor status**: Check for failed embeddings
-- **Optimize size**: Split large documents when possible
+**保持知识库健康：**
+- **定期检查**：移除过时的文档
+- **更新内容**：信息变更时重新上传
+- **监控状态**：检查是否有失败的嵌入
+- **优化大小**：尽可能拆分大型文档
 
-## Integration with AI Features
+## 与 AI 功能的集成
 
-The Knowledge Library integrates with:
+知识库可与以下功能集成：
 
-### AI Email Writer
+### AI 邮件撰写器
 
-When creating AI-generated emails:
+创建 AI 生成的邮件时：
 
-1. **Enable RAG Context** in the email writer
-2. AI searches your Knowledge Library for relevant information
-3. Retrieved content is used to personalize emails
-4. Emails contain accurate, context-aware information
+1. 在邮件撰写器中**启用 RAG 上下文**
+2. AI 在知识库中搜索相关信息
+3. 检索到的内容用于个性化邮件
+4. 邮件包含准确且具备上下文感知的信息
 
-**Example:**
-- You upload a product catalog PDF
-- AI generates emails referencing specific products
-- Each email mentions products relevant to the recipient
+**示例：**
+- 您上传了一份产品目录 PDF
+- AI 生成引用特定产品的邮件
+- 每封邮件都提及与收件人相关的产品
 
-### AI Marketing Assistant
+### AI 营销助手
 
-When chatting with the AI assistant:
+与 AI 助手对话时：
 
-1. **Toggle RAG Context** (📖 icon)
-2. Ask questions about your business, products, or services
-3. AI searches Knowledge Library for answers
-4. Responses are based on YOUR documentation
+1. **切换 RAG 上下文**（📖 图标）
+2. 提问关于您的业务、产品或服务的问题
+3. AI 在知识库中搜索答案
+4. 回复基于您的文档内容
 
-**Example Questions:**
-- "What are our key product features?"
-- "How does our pricing compare to competitors?"
-- "What's our refund policy?"
-- "Generate a marketing email for Product X"
+**示例问题：**
+- "我们的核心产品功能有哪些？"
+- "我们的定价与竞争对手相比如何？"
+- "我们的退款政策是什么？"
+- "为产品 X 生成一封营销邮件"
 
-## Example Use Cases
+## 示例使用场景
 
-### Use Case 1: Product Marketing
+### 场景一：产品营销
 
-**Documents to Upload:**
-- Product brochures
-- Feature specifications
-- Pricing guides
-- Comparison charts
-- Case studies
+**建议上传的文档：**
+- 产品宣传册
+- 功能规格说明
+- 定价指南
+- 竞品对比表
+- 案例研究
 
-**Result:** AI generates detailed, accurate product emails.
+**效果：** AI 生成详细、准确的产品邮件。
 
-### Use Case 2: Service Businesses
+### 场景二：服务型企业
 
-**Documents to Upload:**
-- Service descriptions
-- Process documentation
-- Client testimonials
-- Portfolio samples
-- Pricing packages
+**建议上传的文档：**
+- 服务描述
+- 流程文档
+- 客户评价
+- 作品集样本
+- 定价方案
 
-**Result:** AI creates service-focused outreach with specific details.
+**效果：** AI 创建包含具体细节的服务导向外联内容。
 
-### Use Case 3: Agency Outreach
+### 场景三：代理机构外联
 
-**Documents to Upload:**
-- Agency capabilities
-- Portfolio pieces
-- Case studies
-- Team bios
-- Service packages
+**建议上传的文档：**
+- 代理机构能力介绍
+- 作品集
+- 案例研究
+- 团队简介
+- 服务套餐
 
-**Result:** AI personalizes agency pitches to each prospect.
+**效果：** AI 为每个潜在客户个性化定制代理机构推介。
 
-### Use Case 4: SaaS Companies
+### 场景四：SaaS 企业
 
-**Documents to Upload:**
-- Feature documentation
-- API guides
-- Pricing tiers
-- Onboarding materials
-- Webinar transcripts
+**建议上传的文档：**
+- 功能文档
+- API 指南
+- 定价层级
+- 入门指南
+- 网络研讨会文字记录
 
-**Result:** AI generates technical yet accessible outreach.
+**效果：** AI 生成专业且易于理解的外联内容。
 
-## Technical Details
+## 技术细节
 
-### How RAG Works
+### RAG 工作原理
 
-1. **Document Ingestion**:
-   - Files are uploaded and saved to database
-   - Metadata (name, type, size, date) is recorded
+1. **文档摄取**：
+   - 文件上传并保存到数据库
+   - 记录元数据（名称、类型、大小、日期）
 
-2. **Text Extraction**:
-   - Text is extracted from different file formats
-   - Formatting is preserved where possible
+2. **文本提取**：
+   - 从不同文件格式中提取文本
+   - 尽可能保留格式
 
-3. **Chunking**:
-   - Documents are split into smaller segments (chunks)
-   - Typical chunk size: 500-1000 characters
-   - Overlap between chunks maintains context
+3. **分块**：
+   - 文档被拆分为较小的片段（chunks）
+   - 典型分块大小：500-1000 个字符
+   - 分块之间保留重叠以维持上下文
 
-4. **Embedding Creation**:
-   - Each chunk is converted to a vector embedding
-   - Embeddings capture semantic meaning
-   - Stored in vector database for fast retrieval
+4. **嵌入创建**：
+   - 每个分块被转换为向量嵌入
+   - 嵌入捕获语义含义
+   - 存储在向量数据库中以实现快速检索
 
-5. **Semantic Search**:
-   - When generating content, AI searches for relevant chunks
-   - Similarity matching finds most relevant content
-   - Retrieved chunks are included as context
+5. **语义搜索**：
+   - 生成内容时，AI 搜索相关分块
+   - 通过相似度匹配找到最相关的内容
+   - 检索到的分块作为上下文纳入
 
-6. **Content Generation**:
-   - AI uses retrieved context + prompt
-   - Generates personalized, accurate content
-   - References your specific knowledge
+6. **内容生成**：
+   - AI 使用检索到的上下文和提示词
+   - 生成个性化、准确的内容
+   - 引用您的专属知识
 
-### Storage and Performance
+### 存储与性能
 
-- **Storage**: Documents stored in local SQLite database
-- **Vector Database**: Optimized for fast similarity search
-- **Performance**: Millisecond retrieval for relevant content
-- **Scalability**: Handles thousands of documents efficiently
+- **存储**：文档存储在本地 SQLite 数据库中
+- **向量数据库**：针对快速相似度搜索进行了优化
+- **性能**：毫秒级检索相关内容
+- **可扩展性**：高效处理数千份文档
 
-## Security and Privacy
+## 安全与隐私
 
-### Data Storage
+### 数据存储
 
-- **Local Storage**: All documents stored locally on your machine
-- **No Cloud Upload**: Original files remain on your computer
-- **Encrypted**: Database can be encrypted for additional security
+- **本地存储**：所有文档存储在您的本地机器上
+- **无云端上传**：原始文件保留在您的电脑上
+- **加密**：数据库可进行加密以增强安全性
 
-### Privacy Considerations
+### 隐私说明
 
-- **Your Knowledge**: Only you have access to your documents
-- **AI Processing**: Embeddings created locally or on your servers
-- **No Training Data**: Your documents aren't used to train public AI models
+- **您的知识**：只有您可以访问您的文档
+- **AI 处理**：嵌入在本地或您的服务器上创建
+- **不用于训练**：您的文档不会用于训练公共 AI 模型
 
-:::tip Confidential Information
+:::tip 机密信息
 
-The Knowledge Library is perfect for:
-- Internal product documentation
-- Confidential pricing information
-- Proprietary business processes
-- Client-specific information
+知识库非常适合存储以下内容：
+- 内部产品文档
+- 机密定价信息
+- 专有业务流程
+- 特定客户信息
 
 :::
 
-## Next Steps
+## 下一步
 
-Now that you've built your Knowledge Library:
+知识库构建完成后，您可以继续：
 
-- [Create AI-generated email campaigns](./ai-email-writer)
-- [Use the AI Marketing Assistant](./ai-marketing-assistant)
-- [Set up batch email sending](../lead-generation/batch-email-sending)
+- [创建 AI 生成的邮件营销活动](./ai-email-writer)
+- [使用 AI 营销助手](./ai-marketing-assistant)
+- [设置批量邮件发送](../lead-generation/batch-email-sending)
 
 ---
 
-**Ready to build your knowledge base?** Start by uploading your product documentation, pricing guides, and marketing materials to power personalized AI outreach.
+**准备好构建您的知识库了吗？** 从上传您的产品文档、定价指南和营销资料开始，为个性化的 AI 外联提供支撑。

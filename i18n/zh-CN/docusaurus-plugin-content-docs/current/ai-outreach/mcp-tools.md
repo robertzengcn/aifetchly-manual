@@ -2,70 +2,70 @@
 id: mcp-tools
 title: MCP Tools
 sidebar_label: MCP Tools
-description: Extend AI capabilities by connecting to external tools and services using the Model Context Protocol (MCP).
+description: 通过模型上下文协议（MCP）连接外部工具和服务，扩展 AI 能力。
 ---
 
 # MCP Tools
 
-MCP (Model Context Protocol) allows aiFetchly to connect to external tools and services, extending the AI's capabilities beyond its built-in features. By adding MCP servers, the AI Marketing Assistant can perform web searches, access databases, call external APIs, and execute custom business logic.
+MCP（模型上下文协议）允许 aiFetchly 连接外部工具和服务，将 AI 的能力扩展到内置功能之外。通过添加 MCP 服务器，AI 营销助手可以执行网页搜索、访问数据库、调用外部 API 以及执行自定义业务逻辑。
 
-## What is MCP?
+## 什么是 MCP？
 
-The **Model Context Protocol** is an open standard that enables AI applications to interact with external tools and data sources in a secure, structured way. With MCP, aiFetchly can:
+**模型上下文协议（Model Context Protocol）** 是一种开放标准，使 AI 应用能够以安全、结构化的方式与外部工具和数据源进行交互。通过 MCP，aiFetchly 可以：
 
-- **Search the web** for real-time information
-- **Connect to databases** and query data
-- **Call external APIs** for specialized processing
-- **Execute custom tools** built for your workflow
-- **Integrate with third-party services** (CRM, analytics, etc.)
+- **搜索网页**以获取实时信息
+- **连接数据库**并查询数据
+- **调用外部 API**进行专门处理
+- **执行自定义工具**，专为你的工作流构建
+- **集成第三方服务**（CRM、分析平台等）
 
-Each MCP server exposes a set of **tools** — functions the AI can call during a conversation. For example, a web search server might expose a `search` tool, and a database server might expose a `query` tool.
+每个 MCP 服务器暴露一组**工具**——即 AI 在对话中可以调用的函数。例如，网页搜索服务器可能暴露一个 `search` 工具，而数据库服务器可能暴露一个 `query` 工具。
 
-## Accessing MCP Tools
+## 访问 MCP 工具
 
-MCP servers are managed from within the **AI Marketing Assistant** chat interface:
+MCP 服务器在 **AI 营销助手**的聊天界面中进行管理：
 
-1. Open the AI Marketing Assistant (click the chat icon or press `Cmd/Ctrl + K`)
-2. Click the **MCP Tools** button (server/network icon) in the chat toolbar
-3. The MCP Tools management dialog opens
+1. 打开 AI 营销助手（点击聊天图标或按 `Cmd/Ctrl + K`）
+2. 点击聊天工具栏中的 **MCP Tools** 按钮（服务器/网络图标）
+3. MCP 工具管理对话框将打开
 
-:::info Where to Find It
+:::info 在哪里找到
 
-MCP Tools are accessed from the AI Chat interface, not from the main Settings page. Open any AI chat session to find the MCP Tools manager.
+MCP 工具是从 AI 聊天界面访问的，而不是从主设置页面。打开任意 AI 聊天会话即可找到 MCP 工具管理器。
 
 :::
 
-## Adding MCP Servers
+## 添加 MCP 服务器
 
-### Step 1: Open the Add Dialog
+### 第 1 步：打开添加对话框
 
-1. In the MCP Tools dialog, click **Add Server** (or the **+** button)
-2. The Add MCP Server dialog opens
+1. 在 MCP 工具对话框中，点击 **Add Server**（或 **+** 按钮）
+2. 添加 MCP 服务器对话框将打开
 
-### Step 2: Choose Input Mode
+### 第 2 步：选择输入模式
 
-You can add servers in two ways:
+你可以通过两种方式添加服务器：
 
-- **Form Mode**: Fill in individual fields (recommended for beginners)
-- **JSON Mode**: Paste a JSON configuration block (faster for bulk setup, compatible with Claude Desktop format)
+- **表单模式**：逐项填写字段（推荐新手使用）
+- **JSON 模式**：粘贴 JSON 配置块（批量配置更快捷，兼容 Claude Desktop 格式）
 
-### Step 3: Configure the Server
+### 第 3 步：配置服务器
 
-#### Form Mode
+#### 表单模式
 
-| Field | Description | Required |
-|-------|-------------|----------|
-| **Server Name** | A descriptive name for this server | Yes |
-| **Transport Type** | How to connect: `Stdio`, `SSE`, or `WebSocket` | Yes |
-| **Host / Command** | Hostname (for SSE/WebSocket) or command to run (for Stdio) | Yes |
-| **Port** | Port number (not needed for Stdio) | For SSE/WebSocket |
-| **Authentication Type** | `None`, `API Key`, `Bearer Token`, or `Custom` | No |
-| **Timeout** | Request timeout in milliseconds (default: 30000) | No |
-| **Enabled** | Whether the server is active (default: enabled) | No |
+| 字段 | 说明 | 是否必填 |
+|------|------|----------|
+| **Server Name** | 服务器的描述性名称 | 是 |
+| **Transport Type** | 连接方式：`Stdio`、`SSE` 或 `WebSocket` | 是 |
+| **Host / Command** | 主机名（用于 SSE/WebSocket）或要运行的命令（用于 Stdio） | 是 |
+| **Port** | 端口号（Stdio 不需要） | SSE/WebSocket 需要 |
+| **Authentication Type** | `None`、`API Key`、`Bearer Token` 或 `Custom` | 否 |
+| **Timeout** | 请求超时时间，单位毫秒（默认：30000） | 否 |
+| **Enabled** | 服务器是否处于激活状态（默认：已启用） | 否 |
 
-#### JSON Mode
+#### JSON 模式
 
-JSON mode accepts the standard `mcpServers` format used by Claude Desktop and other MCP clients:
+JSON 模式接受 Claude Desktop 和其他 MCP 客户端使用的标准 `mcpServers` 格式：
 
 ```json
 {
@@ -78,330 +78,330 @@ JSON mode accepts the standard `mcpServers` format used by Claude Desktop and ot
 }
 ```
 
-**Supported JSON properties:**
+**支持的 JSON 属性：**
 
-| Property | Description |
-|----------|-------------|
-| `command` | Command to execute (for Stdio transport) |
-| `args` | Array of command arguments |
-| `url` | Server URL (for SSE/WebSocket) |
-| `host` | Hostname or IP address |
-| `port` | Port number |
-| `transport` | Transport type override |
-| `enabled` | Enable/disable on add (default: true) |
-| `authType` | Authentication type |
-| `authConfig` | Authentication credentials |
-| `timeout` | Request timeout in ms |
+| 属性 | 说明 |
+|------|------|
+| `command` | 要执行的命令（用于 Stdio 传输） |
+| `args` | 命令参数数组 |
+| `url` | 服务器 URL（用于 SSE/WebSocket） |
+| `host` | 主机名或 IP 地址 |
+| `port` | 端口号 |
+| `transport` | 传输类型覆盖 |
+| `enabled` | 添加时是否启用（默认：true） |
+| `authType` | 认证类型 |
+| `authConfig` | 认证凭据 |
+| `timeout` | 请求超时时间（毫秒） |
 
-You can add multiple servers in a single JSON block by adding more entries under `mcpServers`.
+你可以在单个 JSON 块中添加多个服务器，只需在 `mcpServers` 下添加更多条目。
 
-:::tip Use Load Example
+:::tip 使用加载示例
 
-Click **Load Example** in JSON mode to see a sample configuration you can modify.
-
-:::
-
-### Step 4: Save
-
-Click **Add** to save the server configuration. The server appears in the list with an **Enabled** status.
-
-## Managing MCP Servers
-
-### Server List
-
-The MCP Tools dialog displays all configured servers:
-
-| Element | Description |
-|---------|-------------|
-| **Server name** | Identifier you configured |
-| **Status badge** | `Enabled` (green) or `Disabled` (grey) |
-| **Connection info** | Transport type, host, and port |
-| **Tool count** | Number of discovered tools |
-
-### Enable/Disable a Server
-
-1. Locate the server in the list
-2. Click the **toggle switch** icon in the Actions column
-3. The server status changes between Enabled and Disabled
-
-**When disabled:** The AI cannot use any tools from this server, but the configuration is preserved.
-
-### Edit a Server
-
-1. Locate the server in the list
-2. Click the **pencil** icon in the Actions column
-3. Modify any configuration fields
-4. Click **Update** to save changes
-
-:::info JSON Mode Restriction
-
-JSON mode is only available when adding new servers. To edit an existing server, use Form mode.
+在 JSON 模式中点击 **Load Example** 可以查看并修改示例配置。
 
 :::
 
-### Delete a Server
+### 第 4 步：保存
 
-1. Locate the server in the list
-2. Click the **trash can** icon in the Actions column
-3. Confirm the deletion in the dialog
+点击 **Add** 保存服务器配置。服务器将以 **Enabled** 状态显示在列表中。
 
-:::warning Permanent Deletion
+## 管理 MCP 服务器
 
-Deleting a server removes its configuration and all discovered tools. This action cannot be undone.
+### 服务器列表
+
+MCP 工具对话框显示所有已配置的服务器：
+
+| 元素 | 说明 |
+|------|------|
+| **Server name** | 你配置的服务器标识符 |
+| **Status badge** | `Enabled`（绿色）或 `Disabled`（灰色） |
+| **Connection info** | 传输类型、主机和端口 |
+| **Tool count** | 已发现的工具数量 |
+
+### 启用/禁用服务器
+
+1. 在列表中找到该服务器
+2. 点击操作列中的**开关**图标
+3. 服务器状态将在已启用和已禁用之间切换
+
+**禁用时：** AI 无法使用该服务器的任何工具，但配置会保留。
+
+### 编辑服务器
+
+1. 在列表中找到该服务器
+2. 点击操作列中的**铅笔**图标
+3. 修改任意配置字段
+4. 点击 **Update** 保存更改
+
+:::info JSON 模式限制
+
+JSON 模式仅在添加新服务器时可用。要编辑现有服务器，请使用表单模式。
 
 :::
 
-## Discovering and Managing Tools
+### 删除服务器
 
-### Discover Tools
+1. 在列表中找到该服务器
+2. 点击操作列中的**垃圾桶**图标
+3. 在对话框中确认删除
 
-After adding a server, you need to discover the tools it provides:
+:::warning 永久删除
 
-1. Locate the server in the list
-2. Click the **magnifying glass** (Discover Tools) icon
-3. aiFetchly connects to the server and retrieves the list of available tools
-4. Discovered tools appear under the server entry
-
-:::tip Discover After Configuration Changes
-
-Re-discover tools after changing a server's connection details. This ensures the tool list stays in sync with the server.
+删除服务器将移除其配置及所有已发现的工具。此操作无法撤销。
 
 :::
 
-### View Discovered Tools
+## 发现和管理工具
 
-Click on a server entry to expand it and see its tools:
+### 发现工具
 
-- Each tool shows its name
-- Tools have individual enable/disable toggles
-- Tool names are prefixed with `mcp_` when used by the AI
+添加服务器后，你需要发现其提供的工具：
 
-### Enable/Disable Individual Tools
+1. 在列表中找到该服务器
+2. 点击**放大镜**（Discover Tools）图标
+3. aiFetchly 连接到服务器并获取可用工具列表
+4. 已发现的工具将显示在服务器条目下方
 
-1. Expand the server to see its tools
-2. Use the **toggle switch** next to each tool name
-3. Disabled tools will not be available to the AI, even if the server is enabled
+:::tip 配置变更后重新发现
 
-This is useful when a server provides many tools but you only want specific ones available to the AI.
+更改服务器的连接信息后，请重新发现工具。这可确保工具列表与服务器保持同步。
 
-### Test Connection
+:::
 
-To verify a server is reachable:
+### 查看已发现的工具
 
-1. Locate the server in the list
-2. Click the **network check** (Test Connection) icon
-3. aiFetchly attempts to connect and reports success or failure
+点击服务器条目可展开查看其工具：
 
-## Transport Types
+- 每个工具显示其名称
+- 工具具有单独的启用/禁用开关
+- AI 使用工具时，工具名称会加上 `mcp_` 前缀
+
+### 启用/禁用单个工具
+
+1. 展开服务器以查看其工具
+2. 使用每个工具名称旁边的**开关**
+3. 即使服务器已启用，被禁用的工具也不会被 AI 使用
+
+当一个服务器提供大量工具但你只想让特定工具对 AI 可用时，此功能非常有用。
+
+### 测试连接
+
+验证服务器是否可达：
+
+1. 在列表中找到该服务器
+2. 点击**网络检测**（Test Connection）图标
+3. aiFetchly 尝试连接并报告成功或失败
+
+## 传输类型
 
 ### Stdio
 
-**Best for:** Local tools, command-line programs, npm packages
+**适用场景：** 本地工具、命令行程序、npm 包
 
-The Stdio transport launches a local process and communicates via standard input/output.
+Stdio 传输会启动一个本地进程，并通过标准输入/输出进行通信。
 
-**Configuration:**
-- **Host/Command**: The command to execute (e.g., `node server.js`, `uvx package-name`)
-- **Port**: Not applicable
+**配置：**
+- **Host/Command**：要执行的命令（例如 `node server.js`、`uvx package-name`）
+- **Port**：不适用
 
-**Example commands:**
-- `npx @modelcontextprotocol/server-memory` — In-memory knowledge graph
-- `uvx blender-mcp` — Blender integration
-- `node /path/to/custom-server.js` — Custom local server
+**示例命令：**
+- `npx @modelcontextprotocol/server-memory` — 内存知识图谱
+- `uvx blender-mcp` — Blender 集成
+- `node /path/to/custom-server.js` — 自定义本地服务器
 
-### SSE (Server-Sent Events)
+### SSE（服务器推送事件）
 
-**Best for:** HTTP-based services, cloud-hosted tools
+**适用场景：** 基于 HTTP 的服务、云端托管的工具
 
-SSE transport connects to an HTTP endpoint that streams tool results.
+SSE 传输连接到一个以流式方式返回工具结果的 HTTP 端点。
 
-**Configuration:**
-- **Host**: Server hostname or IP (e.g., `api.example.com`)
-- **Port**: Server port number (e.g., `8080`)
+**配置：**
+- **Host**：服务器主机名或 IP（例如 `api.example.com`）
+- **Port**：服务器端口号（例如 `8080`）
 
 ### WebSocket
 
-**Best for:** Real-time services, bidirectional communication
+**适用场景：** 实时服务、双向通信
 
-WebSocket transport establishes a persistent connection for tool communication.
+WebSocket 传输建立持久连接用于工具通信。
 
-**Configuration:**
-- **Host**: Server hostname or IP
-- **Port**: Server port number
+**配置：**
+- **Host**：服务器主机名或 IP
+- **Port**：服务器端口号
 
-## Authentication
+## 认证
 
-MCP servers support several authentication methods:
+MCP 服务器支持多种认证方式：
 
-| Type | Use Case | Fields |
-|------|----------|--------|
-| **None** | Public/local servers | No credentials needed |
-| **API Key** | Services requiring an API key | API Key (password field) |
-| **Bearer Token** | OAuth/token-based services | Bearer Token (password field) |
-| **Custom** | Non-standard authentication | JSON configuration |
+| 类型 | 使用场景 | 字段 |
+|------|----------|------|
+| **None** | 公共/本地服务器 | 无需凭据 |
+| **API Key** | 需要 API 密钥的服务 | API Key（密码字段） |
+| **Bearer Token** | 基于 OAuth/令牌的服务 | Bearer Token（密码字段） |
+| **Custom** | 非标准认证方式 | JSON 配置 |
 
-## Using MCP Tools in AI Chat
+## 在 AI 聊天中使用 MCP 工具
 
-Once MCP servers are configured and tools are discovered:
+当 MCP 服务器配置完成且工具已发现后：
 
-1. **Open AI Marketing Assistant**
-2. The AI automatically detects all enabled tools from enabled servers
-3. Tools appear as available functions the AI can call
-4. The AI decides when to use a tool based on your query
+1. **打开 AI 营销助手**
+2. AI 会自动检测所有已启用服务器中的已启用工具
+3. 工具以可调用函数的形式显示，供 AI 调用
+4. AI 根据你的查询判断何时使用工具
 
-### Example: Web Search
-
-```
-User: "Search the web for latest SaaS pricing trends"
-AI: [Calls the search tool from your web search MCP server]
-AI: "Here are the latest SaaS pricing trends I found..."
-```
-
-### Example: Database Query
+### 示例：网页搜索
 
 ```
-User: "How many leads did we get last week from our website?"
-AI: [Calls the query tool from your database MCP server]
-AI: "Based on the database query, you received 247 leads last week..."
+用户："搜索最新的 SaaS 定价趋势"
+AI：[调用你的网页搜索 MCP 服务器中的搜索工具]
+AI："以下是我找到的最新 SaaS 定价趋势..."
 ```
 
-### Example: Custom API
+### 示例：数据库查询
 
 ```
-User: "Check if our competitor has updated their pricing page"
-AI: [Calls the monitoring tool from your custom MCP server]
-AI: "Yes, they updated their pricing page yesterday. Here are the changes..."
+用户："我们上周从网站获得了多少潜在客户？"
+AI：[调用你的数据库 MCP 服务器中的查询工具]
+AI："根据数据库查询结果，你上周获得了 247 个潜在客户..."
 ```
 
-### How the AI Uses Tools
+### 示例：自定义 API
 
-The AI follows this process:
+```
+用户："检查一下竞争对手是否更新了他们的定价页面"
+AI：[调用你的自定义 MCP 服务器中的监控工具]
+AI："是的，他们昨天更新了定价页面。以下是变更内容..."
+```
 
-1. **Analyzes your request** to determine if a tool is needed
-2. **Selects the appropriate tool** from available MCP tools
-3. **Calls the tool** with the necessary parameters
-4. **Incorporates the result** into its response
+### AI 如何使用工具
 
-You can also explicitly ask the AI to use a specific tool:
-- "Use the web search tool to find..."
-- "Query the database for..."
-- "Call the [tool name] to..."
+AI 遵循以下流程：
 
-## Troubleshooting
+1. **分析你的请求**，判断是否需要使用工具
+2. **选择合适的工具**，从可用的 MCP 工具中选择
+3. **调用工具**，传入必要的参数
+4. **将结果整合**到回复中
 
-### Connection Failed
+你也可以明确要求 AI 使用特定工具：
+- "使用网页搜索工具查找……"
+- "查询数据库获取……"
+- "调用 [工具名称] 来……"
 
-**Possible causes:**
-- Server is not running
-- Incorrect host/port
-- Firewall blocking the connection
-- Authentication credentials are wrong
+## 故障排除
 
-**Solutions:**
-1. Verify the server is running and accessible
-2. Check host and port configuration
-3. Use **Test Connection** to diagnose
-4. Verify authentication credentials
-5. Check firewall and network settings
+### 连接失败
 
-### Tool Discovery Fails
+**可能原因：**
+- 服务器未运行
+- 主机/端口配置不正确
+- 防火墙阻止了连接
+- 认证凭据错误
 
-**Possible causes:**
-- Server is not responding
-- Server does not implement the MCP protocol correctly
-- Connection timeout
+**解决方案：**
+1. 验证服务器是否正在运行且可访问
+2. 检查主机和端口配置
+3. 使用 **Test Connection** 进行诊断
+4. 验证认证凭据
+5. 检查防火墙和网络设置
 
-**Solutions:**
-1. Test the connection first
-2. Verify the server supports MCP protocol
-3. Increase the timeout setting
-4. Check server logs for errors
+### 工具发现失败
 
-### AI Doesn't Use MCP Tools
+**可能原因：**
+- 服务器未响应
+- 服务器未正确实现 MCP 协议
+- 连接超时
 
-**Possible causes:**
-- Server is disabled
-- All tools are disabled
-- Tools not discovered yet
-- AI doesn't recognize the query as needing a tool
+**解决方案：**
+1. 先测试连接
+2. 验证服务器是否支持 MCP 协议
+3. 增加超时设置
+4. 检查服务器日志中的错误
 
-**Solutions:**
-1. Verify the server is enabled (green badge)
-2. Verify individual tools are enabled
-3. Discover tools if the tool count shows 0
-4. Explicitly mention the tool in your request
+### AI 未使用 MCP 工具
 
-### Server Shows 0 Tools
+**可能原因：**
+- 服务器已禁用
+- 所有工具已禁用
+- 工具尚未发现
+- AI 未识别查询需要使用工具
 
-**Solutions:**
-1. Click **Discover Tools** to fetch the tool list
-2. Verify the server is running during discovery
-3. Check that the server exposes tools via MCP protocol
-4. Re-discover after server updates
+**解决方案：**
+1. 验证服务器已启用（绿色标识）
+2. 验证各个工具已启用
+3. 如果工具数量显示为 0，请执行工具发现
+4. 在请求中明确提及工具名称
 
-## Best Practices
+### 服务器显示 0 个工具
 
-### 1. Start with Essential Servers
+**解决方案：**
+1. 点击 **Discover Tools** 获取工具列表
+2. 确保发现过程中服务器正在运行
+3. 检查服务器是否通过 MCP 协议暴露了工具
+4. 服务器更新后重新发现工具
 
-Only add servers you need:
-- Too many servers increase complexity
-- Each server connection uses resources
-- Start with one or two, add more as needed
+## 最佳实践
 
-### 2. Discover Tools After Setup
+### 1. 从必要的服务器开始
 
-Always discover tools after:
-- Adding a new server
-- Changing connection settings
-- Updating the server software
+只添加你真正需要的服务器：
+- 过多的服务器会增加复杂性
+- 每个服务器连接都会消耗资源
+- 从一两个开始，根据需要逐步添加
 
-### 3. Use Tool-Level Control
+### 2. 配置完成后发现工具
 
-Disable individual tools you don't need:
-- Reduces noise for the AI
-- Prevents accidental use of powerful tools
-- Keeps the tool list manageable
+在以下操作后务必重新发现工具：
+- 添加新服务器
+- 更改连接设置
+- 更新服务器软件
 
-### 4. Test Before Using
+### 3. 使用工具级别控制
 
-- Use **Test Connection** after configuration
-- **Discover Tools** to verify tool availability
-- Try a simple query in AI Chat to confirm end-to-end
+禁用你不需要的单个工具：
+- 减少对 AI 的干扰
+- 防止误用功能强大的工具
+- 保持工具列表的可管理性
 
-### 5. Keep Credentials Secure
+### 4. 使用前先测试
 
-- Treat API keys and tokens like passwords
-- Don't share server configurations with untrusted parties
-- Revoke credentials when removing servers
+- 配置完成后使用 **Test Connection** 测试连接
+- 使用 **Discover Tools** 验证工具的可用性
+- 在 AI 聊天中尝试一个简单的查询，确认端到端正常工作
 
-### 6. Monitor Tool Usage
+### 5. 保护凭据安全
 
-- Review AI responses for unexpected tool usage
-- Disable tools that produce unreliable results
-- Adjust server timeouts if responses are slow
+- 像对待密码一样保护 API 密钥和令牌
+- 不要与不受信任的方共享服务器配置
+- 移除服务器时撤销相关凭据
 
-## Integration with Other Features
+### 6. 监控工具使用情况
 
-### AI Skills
+- 检查 AI 回复中是否存在异常的工具使用
+- 禁用产生不可靠结果的工具
+- 如果响应缓慢，调整服务器超时设置
 
-MCP tools and AI Skills work together:
-- Skills provide domain-specific knowledge and logic
-- MCP tools provide external data and actions
-- Both are available in the AI Marketing Assistant
+## 与其他功能的集成
 
-### Knowledge Library
+### AI 技能
 
-MCP tools complement the Knowledge Library:
-- Knowledge Library provides your business context
-- MCP tools provide real-time external data
-- Combined for comprehensive AI responses
+MCP 工具与 AI 技能协同工作：
+- 技能提供特定领域的知识和逻辑
+- MCP 工具提供外部数据和操作能力
+- 两者均在 AI 营销助手中可用
 
-## Next Steps
+### 知识库
 
-- [Learn about AI Marketing Assistant](./ai-marketing-assistant)
-- [Explore AI Skills](./ai-skills)
-- [Set up Knowledge Library](./knowledge-library)
+MCP 工具与知识库互为补充：
+- 知识库提供你的业务上下文
+- MCP 工具提供实时外部数据
+- 两者结合，实现全面的 AI 响应
+
+## 下一步
+
+- [了解 AI 营销助手](./ai-marketing-assistant)
+- [探索 AI 技能](./ai-skills)
+- [设置知识库](./knowledge-library)
 
 ---
 
-**Ready to extend your AI?** Add your first MCP server, discover its tools, and start using external capabilities in your AI conversations.
+**准备好扩展你的 AI 了吗？** 添加你的第一个 MCP 服务器，发现其工具，开始在 AI 对话中使用外部能力。

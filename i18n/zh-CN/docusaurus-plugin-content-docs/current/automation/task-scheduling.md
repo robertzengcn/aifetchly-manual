@@ -1,100 +1,100 @@
 ---
 id: task-scheduling
-title: Task Scheduling
-sidebar_label: Task Scheduler
-description: Automate your workflows with aiFetchly's powerful task scheduling system.
+title: 任务调度
+sidebar_label: 任务调度器
+description: 使用 aiFetchly 强大的任务调度系统自动化您的工作流程。
 ---
 
-# Task Scheduling
+# 任务调度
 
-aiFetchly's Task Scheduler allows you to automate your marketing workflows by running tasks automatically at specified times or in response to other tasks. Set up recurring searches, automated email campaigns, and complex multi-step workflows.
+aiFetchly 的任务调度器允许您通过在指定时间自动运行任务或响应其他任务来自动化您的营销工作流程。设置定期搜索、自动电子邮件营销活动和复杂的多步骤工作流程。
 
-## Understanding Scheduling
+## 了解调度
 
-The Task Scheduler supports three types of task triggers:
+任务调度器支持三种类型的任务触发器：
 
-| Trigger Type | Description | Best For |
+| 触发器类型 | 描述 | 适用场景 |
 |-------------|-------------|----------|
-| **Cron** | Time-based scheduling using cron expressions | Recurring tasks, daily/weekly/monthly jobs |
-| **Dependency** | Triggered by completion of another task | Multi-step workflows, task chains |
-| **Manual** | Execute only when manually triggered | On-demand tasks, testing |
+| **Cron** | 使用 cron 表达式进行基于时间的调度 | 循环任务、每日/每周/每月任务 |
+| **依赖** | 由另一个任务的完成触发 | 多步骤工作流程、任务链 |
+| **手动** | 仅在手动触发时执行 | 按需任务、测试 |
 
-:::info Automate Everything
+:::info 全自动运行
 
-From lead generation to email campaigns, scheduling automation saves time and ensures consistent execution of your marketing workflows.
+从潜在客户获取到电子邮件营销活动，调度自动化可以节省时间并确保您的营销工作流程一致执行。
 
 :::
 
-## Creating a Scheduled Task
+## 创建计划任务
 
-### Step 1: Navigate to Scheduler
+### 第 1 步：进入调度器
 
-1. Click **Schedule** in the left navigation menu
-2. Click **New Schedule** button
+1. 点击左侧导航菜单中的 **Schedule**
+2. 点击 **New Schedule** 按钮
 
-### Step 2: Basic Information
+### 第 2 步：基本信息
 
-Enter the following required information:
+输入以下必填信息：
 
-#### Schedule Name
+#### 调度名称
 
-- **Purpose**: Identify the schedule in your list
-- **Example**: "Daily Google Search", "Weekly Email Campaign"
-- **Required**: Yes
+- **用途**：在列表中标识该调度
+- **示例**："每日 Google 搜索"、"每周电子邮件营销活动"
+- **必填**：是
 
-#### Task Type
+#### 任务类型
 
-Select the type of task to schedule:
+选择要调度的任务类型：
 
-- **Search**: Search engine scraping tasks
-- **Email Extract**: Email extraction tasks
-- **Bulk Email**: Email marketing campaigns
-- **Yellow Pages**: Directory scraping tasks
-- **Video Download**: Video downloading tasks
+- **Search**：搜索引擎抓取任务
+- **Email Extract**：电子邮件提取任务
+- **Bulk Email**：电子邮件营销活动
+- **Yellow Pages**：目录抓取任务
+- **Video Download**：视频下载任务
 
-#### Task ID
+#### 任务 ID
 
-- **Purpose**: Link to the specific task instance
-- **Selection**: Choose from existing tasks of the selected type
-- **Required**: Yes
+- **用途**：关联到特定的任务实例
+- **选择**：从所选类型的现有任务中选择
+- **必填**：是
 
-#### Description
+#### 描述
 
-- **Purpose**: Provide context about the schedule's purpose
-- **Example**: "Daily search for new marketing agencies in target cities"
-- **Optional**: Yes
+- **用途**：提供有关调度目的的上下文信息
+- **示例**："每日搜索目标城市中的新营销机构"
+- **选填**：是
 
-### Step 3: Configure Trigger
+### 第 3 步：配置触发器
 
-#### Cron Scheduling (Time-Based)
+#### Cron 调度（基于时间）
 
-**Enable Cron** and configure the schedule:
+启用 **Cron** 并配置调度计划：
 
-**Preset Options:**
-- Every minute
-- Every hour
-- Daily (midnight)
-- Weekly (Sunday midnight)
-- Monthly (1st of month, midnight)
-- Every 15 minutes
-- Every 30 minutes
-- Every 2 hours
-- Every 6 hours
-- Every 12 hours
-- Weekdays 9 AM
-- Weekends 10 AM
+**预设选项：**
+- 每分钟
+- 每小时
+- 每天（午夜）
+- 每周（周日午夜）
+- 每月（每月 1 日午夜）
+- 每 15 分钟
+- 每 30 分钟
+- 每 2 小时
+- 每 6 小时
+- 每 12 小时
+- 工作日上午 9 点
+- 周末上午 10 点
 
-**Custom Cron Builder:**
+**自定义 Cron 构建器：**
 
-| Field | Options | Description |
+| 字段 | 选项 | 描述 |
 |-------|---------|-------------|
-| **Minutes** | `*/5`, `*/15`, `*/30`, or specific minutes | Every 5/15/30 min or specific |
-| **Hours** | `*/2`, `*/6`, `*/12`, or specific hours | Every 2/6/12 hours or specific |
-| **Days** | `*/2` or specific days | Every 2 days or specific days |
-| **Months** | `*/3`, `*/6`, or specific months | Every 3/6 months or specific |
-| **Weekdays** | `1-5` (weekdays), `0,6` (weekends), or specific | Weekdays, weekends, or specific |
+| **分钟** | `*/5`、`*/15`、`*/30` 或特定分钟 | 每 5/15/30 分钟或特定时间 |
+| **小时** | `*/2`、`*/6`、`*/12` 或特定小时 | 每 2/6/12 小时或特定时间 |
+| **日** | `*/2` 或特定日期 | 每 2 天或特定日期 |
+| **月** | `*/3`、`*/6` 或特定月份 | 每 3/6 个月或特定月份 |
+| **星期** | `1-5`（工作日）、`0,6`（周末）或特定日期 | 工作日、周末或特定日期 |
 
-**Cron Expression Format:**
+**Cron 表达式格式：**
 ```
 ┌───────────── minute (0 - 59)
 │ ┌───────────── hour (0 - 23)
@@ -105,431 +105,431 @@ Select the type of task to schedule:
 * * * * *
 ```
 
-**Examples:**
+**示例：**
 ```
-0 9 * * 1-5      # Weekdays at 9:00 AM
-*/30 * * * *     # Every 30 minutes
-0 0 * * 1        # Every Monday at midnight
-0 9,15 * * *     # Daily at 9:00 AM and 3:00 PM
-0 0 1 * *        # 1st of every month at midnight
+0 9 * * 1-5      # 工作日上午 9:00
+*/30 * * * *     # 每 30 分钟
+0 0 * * 1        # 每周一午夜
+0 9,15 * * *     # 每天上午 9:00 和下午 3:00
+0 0 1 * *        # 每月 1 日午夜
 ```
 
-**Next Run Time:**
-- System automatically calculates and displays the next execution time
-- Helpful for verifying your cron expression
+**下次运行时间：**
+- 系统自动计算并显示下次执行时间
+- 有助于验证您的 cron 表达式
 
-#### Dependency Scheduling (Task-Based)
+#### 依赖调度（基于任务）
 
-**Enable Dependency** to trigger this task when another task completes.
+启用 **Dependency** 以在另一个任务完成时触发此任务。
 
-**Configuration:**
+**配置：**
 
-1. **Parent Schedule**: Select the schedule that will trigger this task
-2. **Dependency Condition**:
-   - **On Success**: Run only if parent task succeeds
-   - **On Completion**: Run after parent completes (success or failure)
-   - **On Failure**: Run only if parent task fails
+1. **父调度**：选择将触发此任务的调度
+2. **依赖条件**：
+   - **On Success**：仅在父任务成功时运行
+   - **On Completion**：在父任务完成后运行（无论成功或失败）
+   - **On Failure**：仅在父任务失败时运行
 
-3. **Delay (minutes)**: Wait time after parent completes before running this task
-   - `0` minutes: Run immediately
-   - `5` minutes: Wait 5 minutes before starting
-   - `60` minutes: Wait 1 hour before starting
+3. **延迟（分钟）**：父任务完成后等待多长时间再运行此任务
+   - `0` 分钟：立即运行
+   - `5` 分钟：等待 5 分钟后开始
+   - `60` 分钟：等待 1 小时后开始
 
-**Use Cases:**
-- **Email after Extraction**: Extract emails, then send campaign when complete
-- **Analysis after Scraping**: Scrape data, then run AI analysis
-- **Multi-stage Campaigns**: Initial outreach → Follow-up 1 → Follow-up 2
+**使用场景：**
+- **提取后发送邮件**：提取电子邮件，完成后发送营销活动
+- **抓取后分析**：抓取数据，然后运行 AI 分析
+- **多阶段营销活动**：初始联系 → 跟进 1 → 跟进 2
 
-:::tip Dependency Chains
+:::tip 依赖链
 
-You can create multi-level dependency chains:
-- Task A (Cron) → Task B (Dependency) → Task C (Dependency)
+您可以创建多层依赖链：
+- 任务 A（Cron）→ 任务 B（依赖）→ 任务 C（依赖）
 
-This creates powerful automated workflows.
+这将创建强大的自动化工作流程。
 
 :::
 
-#### Manual Execution
+#### 手动执行
 
-**Enable Manual** to run tasks only when triggered:
+启用 **Manual** 以仅在触发时运行任务：
 
-- No automatic scheduling
-- Execute on-demand via "Run Now" button
-- Useful for testing or infrequent tasks
+- 无自动调度
+- 通过 "Run Now" 按钮按需执行
+- 适用于测试或不频繁的任务
 
-### Step 4: Active Status
+### 第 4 步：激活状态
 
-Toggle the schedule as:
-- **Active**: Schedule will run according to trigger settings
-- **Inactive**: Schedule is disabled and won't run
+切换调度的状态：
+- **Active**：调度将根据触发器设置运行
+- **Inactive**：调度已禁用，不会运行
 
-### Step 5: Save Schedule
+### 第 5 步：保存调度
 
-Click **Save** to create the schedule. You can:
-- **Edit** the schedule later
-- **Enable/Disable** as needed
-- **Run Now** to test immediately
+点击 **Save** 以创建调度。您可以：
+- 稍后 **Edit**（编辑）调度
+- 根据需要 **Enable/Disable**（启用/禁用）
+- **Run Now** 立即测试
 
-## Managing Scheduled Tasks
+## 管理计划任务
 
-### View Schedule List
+### 查看调度列表
 
-Navigate to **Schedule** to see all your scheduled tasks.
+导航到 **Schedule** 查看所有计划任务。
 
-**Schedule Overview:**
-- **Status Card**: Shows total, active, inactive, and paused schedules
-- **Filters**: Search by name, status, task type, trigger type
+**调度概览：**
+- **状态卡片**：显示总数、活跃、非活跃和已暂停的调度
+- **过滤器**：按名称、状态、任务类型、触发器类型搜索
 
-### Schedule Table
+### 调度表格
 
-The schedule list displays:
+调度列表显示以下信息：
 
-| Column | Description |
+| 列 | 描述 |
 |--------|-------------|
-| **Name** | Schedule name with task type indicator |
-| **Status** | Active (green), Inactive (grey), Paused (yellow) |
-| **Trigger Type** | Cron, Dependency, or Manual |
-| **Schedule** | Cron expression or dependency description |
-| **Next Run** | Next execution time with countdown |
-| **Last Run** | Most recent execution with elapsed time |
-| **Executions** | Success count / Failure count |
-| **Actions** | Edit, Delete, Pause/Resume, Run Now |
+| **Name** | 带有任务类型指示器的调度名称 |
+| **Status** | Active（绿色）、Inactive（灰色）、Paused（黄色） |
+| **Trigger Type** | Cron、Dependency 或 Manual |
+| **Schedule** | Cron 表达式或依赖描述 |
+| **Next Run** | 下次执行时间及倒计时 |
+| **Last Run** | 最近执行时间及已用时间 |
+| **Executions** | 成功次数 / 失败次数 |
+| **Actions** | 编辑、删除、暂停/恢复、立即运行 |
 
-### Schedule Actions
+### 调度操作
 
-| Action | Description | When Available |
+| 操作 | 描述 | 可用条件 |
 |--------|-------------|----------------|
-| **Edit** | Modify schedule configuration | Always |
-| **Delete** | Remove schedule | Always |
-| **Enable** | Activate an inactive schedule | Inactive schedules |
-| **Disable** | Deactivate a schedule | Active schedules |
-| **Pause** | Temporarily halt execution | Active schedules |
-| **Resume** | Restart paused schedule | Paused schedules |
-| **Run Now** | Execute immediately | Always |
+| **Edit** | 修改调度配置 | 始终可用 |
+| **Delete** | 删除调度 | 始终可用 |
+| **Enable** | 激活非活跃的调度 | 非活跃调度 |
+| **Disable** | 停用调度 | 活跃调度 |
+| **Pause** | 暂时停止执行 | 活跃调度 |
+| **Resume** | 恢复已暂停的调度 | 已暂停的调度 |
+| **Run Now** | 立即执行 | 始终可用 |
 
-## Monitoring Execution
+## 监控执行
 
-### View Execution History
+### 查看执行历史
 
-1. Click **View Details** on a schedule
-2. See the execution history table
+1. 在调度上点击 **View Details**
+2. 查看执行历史表格
 
-**Execution Information:**
+**执行信息：**
 
-| Column | Description |
+| 列 | 描述 |
 |--------|-------------|
-| **Start Time** | When the execution started |
-| **End Time** | When execution completed (or "Running...") |
-| **Duration** | How long the execution took (or live counter) |
-| **Status** | Success (green), Failed (red), Running (blue) |
-| **Result** | Summary of execution results |
-| **Error** | Error message (if execution failed) |
-| **Actions** | View details, cancel running |
+| **Start Time** | 执行开始时间 |
+| **End Time** | 执行完成时间（或显示 "Running..."） |
+| **Duration** | 执行耗时（或实时计数器） |
+| **Status** | Success（绿色）、Failed（红色）、Running（蓝色） |
+| **Result** | 执行结果摘要 |
+| **Error** | 错误信息（如果执行失败） |
+| **Actions** | 查看详情、取消运行中的任务 |
 
-### Execution Statistics
+### 执行统计
 
-The detail view shows:
+详情视图显示：
 
-- **Success Rate**: Percentage of successful executions
-- **Average Duration**: Typical execution time
-- **Total Executions**: Overall count and breakdown
-- **Last Error**: Most recent failure message
-- **Next Run**: Countdown to next execution
+- **成功率**：成功执行的百分比
+- **平均耗时**：典型执行时间
+- **总执行次数**：总计数及明细
+- **最近错误**：最近的失败信息
+- **下次运行**：距离下次执行的倒计时
 
-### Real-Time Monitoring
+### 实时监控
 
-For running tasks:
-- **Live Duration**: Counter shows elapsed time
-- **Cancel Button**: Stop the execution if needed
-- **Auto-Refresh**: Status updates every few seconds
+对于运行中的任务：
+- **实时耗时**：计数器显示已用时间
+- **取消按钮**：如需停止执行
+- **自动刷新**：状态每隔几秒更新
 
-## Common Scheduling Patterns
+## 常见调度模式
 
-### Pattern 1: Daily Lead Generation
+### 模式 1：每日潜在客户获取
 
-**Schedule**: Every weekday at 9:00 AM
+**调度**：每个工作日上午 9:00
 ```
 Cron: 0 9 * * 1-5
 Task: Search Engine Scraping
 ```
 
-**Use Case**: Fresh leads every morning for your sales team.
+**使用场景**：每天早上为您的销售团队获取新的潜在客户。
 
-### Pattern 2: Hourly Monitoring
+### 模式 2：每小时监控
 
-**Schedule**: Every hour during business hours
+**调度**：工作时间内的每小时
 ```
 Cron: 0 9-17 * * 1-5
 Task: Search / Yellow Pages
 ```
 
-**Use Case**: Monitor for new business listings during work hours.
+**使用场景**：在工作时间内监控新的商家列表。
 
-### Pattern 3: Weekly Campaign
+### 模式 3：每周营销活动
 
-**Schedule**: Every Monday at 10:00 AM
+**调度**：每周一上午 10:00
 ```
 Cron: 0 10 * * 1
 Task: Bulk Email Sending
 ```
 
-**Use Case**: Weekly email newsletter or outreach campaign.
+**使用场景**：每周电子邮件简报或推广活动。
 
-### Pattern 4: Multi-Step Workflow
+### 模式 4：多步骤工作流程
 
-**Task A** (Cron): Daily at 9:00 AM - Search for leads
-**Task B** (Dependency): After A succeeds - Extract emails
-**Task C** (Dependency): After B succeeds (30 min delay) - Send emails
+**任务 A**（Cron）：每天上午 9:00 - 搜索潜在客户
+**任务 B**（依赖）：A 成功后 - 提取电子邮件
+**任务 C**（依赖）：B 成功后（延迟 30 分钟）- 发送电子邮件
 
-**Use Case**: Automated lead generation and outreach pipeline.
+**使用场景**：自动化的潜在客户获取和推广流程。
 
-### Pattern 5: Maintenance Tasks
+### 模式 5：维护任务
 
-**Schedule**: Every Sunday at 3:00 AM
+**调度**：每周日凌晨 3:00
 ```
 Cron: 0 3 * * 0
 Task: Data cleanup or backup
 ```
 
-**Use Case**: Routine maintenance during low-traffic periods.
+**使用场景**：低流量时段的日常维护。
 
-## Best Practices
+## 最佳实践
 
-### 1. Schedule Design
+### 1. 调度设计
 
-**Avoid Overlapping:**
-- Ensure tasks complete before next scheduled run
-- Consider average execution time when setting frequency
-- Use dependencies to sequence overlapping tasks
+**避免重叠：**
+- 确保任务在下一次计划运行之前完成
+- 在设置频率时考虑平均执行时间
+- 使用依赖来排序重叠的任务
 
-**Off-Peak Hours:**
-- Schedule resource-intensive tasks during off-hours
-- Avoid competing with user activity
-- Consider time zones for global operations
+**非高峰时段：**
+- 在非工作时间调度资源密集型任务
+- 避免与用户活动竞争
+- 考虑全球运营的时区问题
 
-**Buffer Time:**
-- Add buffer between dependent tasks
-- Account for variable execution times
-- Prevent cascading delays
+**缓冲时间：**
+- 在依赖任务之间添加缓冲
+- 考虑可变的执行时间
+- 防止级联延迟
 
-### 2. Error Handling
+### 2. 错误处理
 
-**Monitor Failures:**
-- Check execution history regularly
-- Investigate repeated failures
-- Adjust schedules or tasks as needed
+**监控失败：**
+- 定期检查执行历史
+- 调查重复失败
+- 根据需要调整调度或任务
 
-**Set Up Alerts:**
-- Review schedules weekly
-- Check for stuck or paused tasks
-- Verify dependencies are firing correctly
+**设置警报：**
+- 每周审查调度
+- 检查卡住或暂停的任务
+- 验证依赖是否正常触发
 
-**Graceful Degradation:**
-- Use "On Completion" dependencies to continue chain even if one task fails
-- Create alternative schedules for critical tasks
-- Document escalation procedures
+**优雅降级：**
+- 使用 "On Completion" 依赖，即使某个任务失败也能继续链路
+- 为关键任务创建替代调度
+- 记录升级处理程序
 
-### 3. Resource Management
+### 3. 资源管理
 
-**Concurrent Tasks:**
-- Avoid scheduling too many tasks simultaneously
-- Consider system resources (CPU, memory, network)
-- Stagger similar tasks to prevent conflicts
+**并发任务：**
+- 避免同时调度过多任务
+- 考虑系统资源（CPU、内存、网络）
+- 错开类似任务以防止冲突
 
-**Proxy Rotation:**
-- Ensure sufficient proxies for concurrent scheduled tasks
-- Distribute load across proxy pool
-- Monitor proxy health for scheduled tasks
+**代理轮换：**
+- 确保有足够的代理用于并发的计划任务
+- 在代理池中分配负载
+- 监控计划任务的代理健康状况
 
-### 4. Testing
+### 4. 测试
 
-**Test Schedules:**
-- Use "Run Now" to test before scheduling
-- Verify with one-time execution first
-- Check logs for any issues
+**测试调度：**
+- 在正式调度前使用 "Run Now" 进行测试
+- 先通过一次性执行进行验证
+- 检查日志中的任何问题
 
-**Validate Cron Expressions:**
-- Use the "Next Run Time" preview to verify
-- Test with shorter intervals first
-- Confirm timezone settings are correct
+**验证 Cron 表达式：**
+- 使用 "Next Run Time" 预览进行验证
+- 先用较短的间隔测试
+- 确认时区设置正确
 
-**Test Dependencies:**
-- Verify parent tasks complete successfully
-- Test delay settings
-- Ensure chains work as expected
+**测试依赖：**
+- 验证父任务是否成功完成
+- 测试延迟设置
+- 确保链路按预期工作
 
-### 5. Documentation
+### 5. 文档记录
 
-**Name Schedules Clearly:**
-- Descriptive names with purpose and frequency
-- Include task type and target
-- Example: "Daily Google Search - Marketing Agencies"
+**清晰命名调度：**
+- 使用描述性名称，包含用途和频率
+- 包含任务类型和目标
+- 示例："每日 Google 搜索 - 营销机构"
 
-**Use Descriptions:**
-- Document purpose and expected outcomes
-- Note dependencies and relationships
-- Include any special considerations
+**使用描述：**
+- 记录目的和预期结果
+- 注明依赖和关系
+- 包含任何特殊注意事项
 
-**Label Task Purposes:**
-- Tag or categorize related schedules
-- Group by project or campaign
-- Make identification easy
+**标记任务用途：**
+- 对相关调度进行标记或分类
+- 按项目或营销活动分组
+- 便于识别
 
-## Troubleshooting
+## 故障排除
 
-### Schedule Not Running
+### 调度未运行
 
-**Possible causes:**
-- Schedule is inactive or paused
-- Cron expression misconfigured
-- Scheduler service not running
-- System time/timezone issues
+**可能原因：**
+- 调度处于非活跃或已暂停状态
+- Cron 表达式配置错误
+- 调度器服务未运行
+- 系统时间/时区问题
 
-**Solutions:**
-1. Verify schedule status is "Active"
-2. Check cron expression syntax
-3. Confirm scheduler service is running
-4. Verify system time and timezone settings
-5. Check execution logs for errors
+**解决方案：**
+1. 验证调度状态为 "Active"
+2. 检查 cron 表达式语法
+3. 确认调度器服务正在运行
+4. 验证系统时间和时区设置
+5. 检查执行日志中的错误
 
-### Task Executing Too Frequently
+### 任务执行过于频繁
 
-**Possible causes:**
-- Cron expression incorrect
-- Multiple schedules for same task
-- Misunderstood cron syntax
+**可能原因：**
+- Cron 表达式不正确
+- 同一任务有多个调度
+- 对 cron 语法的误解
 
-**Solutions:**
-1. Review cron expression carefully
-2. Check for duplicate schedules
-3. Use "Next Run Time" preview to verify
-4. Test with longer intervals first
+**解决方案：**
+1. 仔细审查 cron 表达式
+2. 检查是否有重复调度
+3. 使用 "Next Run Time" 预览进行验证
+4. 先用较长的间隔测试
 
-### Dependencies Not Firing
+### 依赖未触发
 
-**Possible causes:**
-- Parent task not completing
-- Wrong dependency condition
-- Delay too long or too short
+**可能原因：**
+- 父任务未完成
+- 依赖条件设置错误
+- 延迟过长或过短
 
-**Solutions:**
-1. Check parent task execution history
-2. Verify dependency condition matches desired behavior
-3. Adjust delay settings
-4. Check for circular dependencies
+**解决方案：**
+1. 检查父任务执行历史
+2. 验证依赖条件是否符合预期行为
+3. 调整延迟设置
+4. 检查是否存在循环依赖
 
-### Tasks Taking Too Long
+### 任务耗时过长
 
-**Possible causes:**
-- Task configuration too aggressive
-- System resources insufficient
-- Network bottlenecks
+**可能原因：**
+- 任务配置过于激进
+- 系统资源不足
+- 网络瓶颈
 
-**Solutions:**
-1. Reduce task scope (pages, concurrency, etc.)
-2. Schedule during off-peak hours
-3. Increase interval between runs
-4. Check system performance
+**解决方案：**
+1. 减少任务范围（页面数、并发数等）
+2. 在非高峰时段调度
+3. 增加运行间隔
+4. 检查系统性能
 
-### Execution History Not Showing
+### 执行历史未显示
 
-**Possible causes:**
-- Task never executed
-- History cleared
-- Database issues
+**可能原因：**
+- 任务从未执行过
+- 历史记录已清除
+- 数据库问题
 
-**Solutions:**
-1. Run task manually to test
-2. Check if task has ever executed
-3. Verify database connectivity
-4. Restart scheduler service if needed
+**解决方案：**
+1. 手动运行任务进行测试
+2. 检查任务是否曾经执行过
+3. 验证数据库连接
+4. 如需要，重启调度器服务
 
-## Advanced Workflows
+## 高级工作流程
 
-### Workflow 1: Automated Lead Generation Pipeline
+### 工作流程 1：自动化潜在客户获取流程
 
-**Schedule 1**: Daily Search
+**调度 1**：每日搜索
 ```
 Cron: 0 9 * * 1-5 (Weekdays 9 AM)
 Task: Google Search for "marketing agencies [city]"
 ```
 
-**Schedule 2**: Email Extraction (Dependency)
+**调度 2**：电子邮件提取（依赖）
 ```
 Trigger: After Schedule 1 succeeds
 Delay: 0 minutes
 Task: Extract emails from Schedule 1 results
 ```
 
-**Schedule 3**: Email Campaign (Dependency)
+**调度 3**：电子邮件营销活动（依赖）
 ```
 Trigger: After Schedule 2 completes
 Delay: 60 minutes (allow time for extraction)
 Task: Send welcome email campaign
 ```
 
-**Result**: Automated daily lead generation and outreach.
+**结果**：自动化的每日潜在客户获取和推广。
 
-### Workflow 2: Weekly Maintenance
+### 工作流程 2：每周维护
 
-**Schedule 1**: Database Cleanup
+**调度 1**：数据库清理
 ```
 Cron: 0 3 * * 0 (Sunday 3 AM)
 Task: Remove old completed tasks
 ```
 
-**Schedule 2**: Proxy Health Check (Dependency)
+**调度 2**：代理健康检查（依赖）
 ```
 Trigger: After Schedule 1 completes
 Task: Test all proxies and remove failed
 ```
 
-**Schedule 3**: Report Generation (Dependency)
+**调度 3**：报告生成（依赖）
 ```
 Trigger: After Schedule 2 completes
 Task: Generate weekly usage report
 ```
 
-**Result**: Automated weekly maintenance and reporting.
+**结果**：自动化的每周维护和报告。
 
-### Workflow 3: Multi-Regional Monitoring
+### 工作流程 3：多区域监控
 
-**Schedule 1**: US East Monitoring
+**调度 1**：美国东部监控
 ```
 Cron: 0 */2 * * * (Every 2 hours)
 Task: Search US East keywords
 ```
 
-**Schedule 2**: US West Monitoring
+**调度 2**：美国西部监控
 ```
 Cron: 0 */2 * * * (Every 2 hours, offset)
 Task: Search US West keywords
 ```
 
-**Schedule 3**: Europe Monitoring
+**调度 3**：欧洲监控
 ```
 Cron: 0 */2 * * * (Every 2 hours, offset)
 Task: Search European keywords
 ```
 
-**Result**: Continuous global monitoring with staggered schedules.
+**结果**：通过错开调度实现持续的全局监控。
 
-## Integration with Other Features
+## 与其他功能的集成
 
-The Task Scheduler integrates with:
+任务调度器与以下功能集成：
 
-- **[Search Engines](../lead-generation/search-engines)**: Schedule recurring searches
-- **[Contact Extraction](../lead-generation/contact-extraction)**: Auto-extract after searches
-- **[Yellow Pages](../lead-generation/yellow-pages)**: Regular directory scraping
-- **[Batch Email Sending](../lead-generation/batch-email-sending)**: Automated campaigns
+- **[搜索引擎](../lead-generation/search-engines)**：调度定期搜索
+- **[联系方式提取](../lead-generation/contact-extraction)**：搜索后自动提取
+- **[黄页](../lead-generation/yellow-pages)**：定期目录抓取
+- **[批量邮件发送](../lead-generation/batch-email-sending)**：自动化营销活动
 
-## Next Steps
+## 下一步
 
-Now that you understand scheduling:
+现在您已经了解了调度功能：
 
-- [Configure system settings](../settings/system-settings)
-- [Review the complete user manual](../getting-started/introduction)
+- [配置系统设置](../settings/system-settings)
+- [查看完整用户手册](../getting-started/introduction)
 
 ---
 
-**Ready to automate?** Start by scheduling a simple daily search task, then gradually build more complex automated workflows as you become familiar with the system.
+**准备好自动化的了吗？** 从调度一个简单的每日搜索任务开始，然后随着您对系统的熟悉，逐步构建更复杂的自动化工作流程。

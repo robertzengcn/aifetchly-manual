@@ -1,475 +1,475 @@
 ---
 id: ai-marketing-assistant
-title: AI Marketing Assistant
-sidebar_label: AI Marketing Assistant
-description: Get strategic marketing guidance and content ideas with aiFetchly's AI-powered chat assistant.
+title: AI 营销助手
+sidebar_label: AI 营销助手
+description: 通过 aiFetchly 的 AI 驱动聊天助手，获取战略营销指导和内容创意。
 ---
 
-# AI Marketing Assistant
+# AI 营销助手
 
-The AI Marketing Assistant is your intelligent marketing consultant. Powered by advanced AI with access to your Knowledge Library, it provides strategic guidance, generates content ideas, helps with campaign planning, and answers questions about your business, products, and industry.
+AI 营销助手是您的智能营销顾问。它由先进的 AI 技术驱动，并可访问您的知识库，能够提供战略指导、生成内容创意、协助活动策划，并回答关于您的业务、产品和行业的问题。
 
-## What is the AI Marketing Assistant?
+## 什么是 AI 营销助手？
 
-Unlike generic chatbots, the AI Marketing Assistant:
+与通用聊天机器人不同，AI 营销助手：
 
-- **Knows your business** through the Knowledge Library
-- **Provides strategic guidance** for marketing decisions
-- **Generates content ideas** tailored to your offerings
-- **Assists with campaign planning** and execution
-- **Answers questions** about your specific industry
+- **了解您的业务** — 通过知识库掌握企业信息
+- **提供战略指导** — 助力营销决策
+- **生成内容创意** — 针对您的产品量身定制
+- **协助活动策划** — 覆盖策划与执行全流程
+- **回答专业问题** — 聚焦您所在的特定行业
 
-:::info Your Personal Marketing Consultant
+:::info 您的专属营销顾问
 
-Think of the AI Marketing Assistant as an always-available marketing expert who has studied all your documentation and understands your specific business context.
+可以将 AI 营销助手想象为一位随时在线的营销专家，他已研读过您的全部文档，并深入理解您的业务背景。
 
 :::
 
-## Accessing the AI Marketing Assistant
+## 访问 AI 营销助手
 
-### Opening the Chat
+### 打开聊天窗口
 
-**Method 1: Chat Icon**
+**方式一：聊天图标**
 
-1. Look for the **chat icon** (💬) in the header
-2. Click the icon to open the chat panel
+1. 在页面顶部找到**聊天图标**（💬）
+2. 点击图标打开聊天面板
 
-**Method 2: Keyboard Shortcut**
+**方式二：键盘快捷键**
 
-- **Windows/Linux**: Press `Ctrl + K`
-- **macOS**: Press `Cmd + K`
+- **Windows/Linux**：按 `Ctrl + K`
+- **macOS**：按 `Cmd + K`
 
-### Chat Interface
+### 聊天界面
 
-The chat panel displays:
+聊天面板包含以下区域：
 
-- **Message History**: Previous conversations and messages
-- **Input Area**: Type your questions or requests
-- **RAG Toggle**: Enable/disable Knowledge Library context
-- **Action Buttons**: New conversation, clear chat, refresh
+- **消息历史**：以往的对话记录
+- **输入区域**：输入您的问题或请求
+- **RAG 开关**：启用/禁用知识库上下文
+- **操作按钮**：新建对话、清除聊天、刷新
 
-## Chat Features
+## 聊天功能
 
-### RAG Context Integration
+### RAG 上下文集成
 
-Toggle the **RAG context** button (📖) to enable Knowledge Library integration.
+点击 **RAG 上下文**按钮（📖）可启用知识库集成。
 
-**When Enabled:**
-- AI searches your Knowledge Library for relevant information
-- Retrieved context is included in responses
-- Answers are specific to your business/products
+**启用时：**
+- AI 会在您的知识库中检索相关信息
+- 检索到的上下文将融入回答中
+- 回答针对您的业务/产品更加具体
 
-**When Disabled:**
-- AI provides general marketing guidance
-- No specific business context
-- Broader, less personalized responses
+**禁用时：**
+- AI 提供通用的营销指导
+- 不包含特定的业务上下文
+- 回答更宽泛、个性化程度较低
 
-:::tip Best Practice
+:::tip 最佳实践
 
-Keep RAG context enabled for questions about your specific business, products, or services. Disable for general marketing concepts and strategies.
+当提问涉及您具体的业务、产品或服务时，建议保持 RAG 上下文启用状态。咨询通用营销概念和策略时可将其禁用。
 
 :::
 
-### Message Formatting
+### 消息格式
 
-The AI Marketing Assistant supports rich text formatting:
+AI 营销助手支持富文本格式：
 
-- **Bold text**: `**text**` or `__text__`
-- *Italic text*: `*text*` or `_text_`
-- `Inline code`: `` `code` ``
-- [Links]: `[text](url)`
+- **加粗文本**：`**文本**` 或 `__文本__`
+- *斜体文本*：`*文本*` 或 `_文本_`
+- `行内代码`：`` `代码` ``
+- [链接]：`[文本](url)`
 
-### Conversation Management
+### 对话管理
 
-**New Conversation**
-- Click the **New Conversation** button
-- Starts a fresh chat session
-- Previous conversations are saved for reference
+**新建对话**
+- 点击**新建对话**按钮
+- 开始一个新的聊天会话
+- 历史对话将保存以供后续查看
 
-**Clear Chat**
-- Click **Clear Chat** to remove all messages
-- Confirmation dialog prevents accidental deletion
-- Chat history is permanently removed
+**清除聊天**
+- 点击**清除聊天**可移除所有消息
+- 确认弹窗可防止误删
+- 聊天记录将被永久删除
 
-**Refresh**
-- Click **Refresh** to reload chat history
-- Useful if messages aren't displaying correctly
+**刷新**
+- 点击**刷新**可重新加载聊天历史
+- 当消息显示异常时可使用此功能
 
-## What You Can Ask
+## 您可以问什么
 
-The AI Marketing Assistant can help with:
+AI 营销助手可帮助您处理以下事项：
 
-### 1. Marketing Strategy
+### 1. 营销策略
 
-**Example Questions:**
-- "What marketing channels work best for B2B SaaS companies?"
-- "How should I position our product against competitors?"
-- "What's a good go-to-market strategy for [product]?"
-- "How can I improve our conversion rates?"
+**示例问题：**
+- "哪些营销渠道最适合 B2B SaaS 企业？"
+- "我们的产品应如何与竞争对手进行差异化定位？"
+- "针对 [产品] 有什么好的市场进入策略？"
+- "如何提升我们的转化率？"
 
-**The AI Will:**
-- Analyze your specific situation
-- Reference your Knowledge Library for context
-- Provide actionable recommendations
-- Suggest metrics to track
+**AI 将会：**
+- 分析您的具体情况
+- 从知识库中获取上下文信息
+- 提供可操作的建议
+- 推荐可追踪的指标
 
-### 2. Content Creation
+### 2. 内容创作
 
-**Example Requests:**
-- "Write a blog post outline about [topic]"
-- "Generate 5 email subject lines for [campaign]"
-- "Create a social media content calendar for next week"
-- "Write a landing page headline for [product]"
+**示例请求：**
+- "为 [主题] 写一个博客文章大纲"
+- "为 [活动] 生成 5 个邮件标题"
+- "制定下周的社交媒体内容日历"
+- "为 [产品] 写一个落地页标题"
 
-**The AI Will:**
-- Use your product/service information
-- Generate multiple options
-- Tailor content to your target audience
-- Maintain brand voice consistency
+**AI 将会：**
+- 使用您的产品/服务信息
+- 生成多个选项
+- 根据目标受众定制内容
+- 保持品牌语调一致性
 
-### 3. Campaign Planning
+### 3. 活动策划
 
-**Example Questions:**
-- "What should I include in a product launch campaign?"
-- "How do I structure a drip email sequence?"
-- "What's a good A/B testing strategy for our emails?"
-- "How can we segment our email list effectively?"
+**示例问题：**
+- "产品发布活动应该包含哪些内容？"
+- "如何构建一套滴灌式邮件序列？"
+- "针对我们的邮件，有什么好的 A/B 测试策略？"
+- "如何有效地对我们的邮件列表进行细分？"
 
-**The AI Will:**
-- Create step-by-step plans
-- Suggest timelines and milestones
-- Recommend tools and resources
-- Identify potential pitfalls
+**AI 将会：**
+- 制定分步骤计划
+- 建议时间线和里程碑
+- 推荐工具和资源
+- 识别潜在风险
 
-### 4. Industry Insights
+### 4. 行业洞察
 
-**Example Questions:**
-- "What are the current trends in [industry]?"
-- "How do we differentiate from [competitor]?"
-- "What pain points should we address in our messaging?"
-- "Who is our ideal customer profile?"
+**示例问题：**
+- "[行业] 目前有哪些趋势？"
+- "我们如何与 [竞争对手] 形成差异化？"
+- "我们的营销信息应该突出哪些痛点？"
+- "我们的理想客户画像是什么？"
 
-**The AI Will:**
-- Leverage your uploaded documentation
-- Provide industry-specific insights
-- Identify competitive advantages
-- Suggest targeting strategies
+**AI 将会：**
+- 利用您上传的文档资料
+- 提供行业专业洞察
+- 识别竞争优势
+- 推荐定向策略
 
-### 5. Product Knowledge
+### 5. 产品知识
 
-**Example Questions:**
-- "What are the key features of [product]?"
-- "How does our pricing compare to alternatives?"
-- "What are our main value propositions?"
-- "How should I describe [feature] to prospects?"
+**示例问题：**
+- "[产品] 的核心功能有哪些？"
+- "我们的定价与替代方案相比如何？"
+- "我们的主要价值主张是什么？"
+- "我应该如何向潜在客户描述 [功能]？"
 
-**The AI Will:**
-- Reference your product documentation
-- Extract key selling points
-- Suggest positioning language
-- Maintain accuracy
+**AI 将会：**
+- 引用您的产品文档
+- 提取核心卖点
+- 建议定位话术
+- 确保内容准确性
 
-## Example Conversations
+## 示例对话
 
-### Example 1: Product Launch Strategy
+### 示例一：产品发布策略
 
-**User:**
-> We're launching a new email automation tool. What should our go-to-market strategy include?
+**用户：**
+> 我们即将推出一款新的邮件自动化工具。我们的市场进入策略应该包含哪些内容？
 
-**AI Marketing Assistant (with RAG):**
-> Based on your product documentation, here's a go-to-market strategy for your email automation tool:
+**AI 营销助手（启用 RAG）：**
+> 根据您的产品文档，以下是针对您的邮件自动化工具的市场进入策略：
 >
-> **Phase 1: Pre-Launch (2-4 weeks before)**
-> - Create anticipation with teaser content
-> - Build a waitlist with early access incentives
-> - Reach out to industry influencers for reviews
-> - Prepare educational content about email automation benefits
+> **第一阶段：发布前（提前 2-4 周）**
+> - 通过预告内容制造期待感
+> - 建立候补名单并提供优先体验激励
+> - 联系行业意见领袖进行评测
+> - 准备关于邮件自动化优势的教育内容
 >
-> **Phase 2: Launch Week**
-> - Launch day announcement to all channels
-> - Host a live demo webinar
-> - Offer limited-time launch discount
-> - Distribute press release to industry publications
+> **第二阶段：发布周**
+> - 发布当天向所有渠道发布公告
+> - 举办线上演示直播
+> - 提供限时发布折扣
+> - 向行业媒体分发新闻稿
 >
-> **Phase 3: Post-Launch (4-8 weeks after)**
-> - Share customer testimonials and case studies
-> - Create tutorial content and documentation
-> - Gather and feature user feedback
-> - Optimize based on early adoption metrics
+> **第三阶段：发布后（发布后 4-8 周）**
+> - 分享客户评价和案例研究
+> - 创建教程内容和文档
+> - 收集并展示用户反馈
+> - 根据早期采用数据持续优化
 >
-> Would you like me to elaborate on any of these phases?
+> 需要我详细展开其中某个阶段吗？
 
-### Example 2: Email Campaign Improvement
+### 示例二：邮件活动优化
 
-**User:**
-> Our email open rates are low (10%). How can we improve them?
+**用户：**
+> 我们的邮件打开率很低（10%）。如何改善？
 
-**AI Marketing Assistant:**
-> Low open rates typically indicate issues with subject lines, sender reputation, or timing. Here are actionable improvements:
+**AI 营销助手：**
+> 打开率低通常意味着标题、发件人信誉或发送时间存在问题。以下是一些可操作的改进建议：
 >
-> **Immediate Fixes:**
-> 1. **A/B Test Subject Lines**:
->    - Personalization: "John, quick question about [topic]"
->    - Curiosity: "The mistake 80% of [industry] professionals make"
->    - Urgency: "Last chance for [offer]"
->    - Questions: "Have you seen [resource] yet?"
+> **立即可以着手优化的方向：**
+> 1. **A/B 测试标题**：
+>    - 个性化："张总，关于 [主题] 想请教一下"
+>    - 好奇心驱动："80% 的 [行业] 从业者都在犯这个错误"
+>    - 紧迫感："[优惠] 最后机会"
+>    - 提问式："您看过 [资源] 了吗？"
 >
-> 2. **Clean Your List**:
->    - Remove inactive subscribers (no opens in 6+ months)
->    - Verify email addresses
->    - Re-engage segment: "Still interested?"
+> 2. **清理列表**：
+>    - 移除不活跃订阅者（6 个月以上未打开邮件的）
+>    - 验证邮箱地址有效性
+>    - 重新激活细分群体："还在关注吗？"
 >
-> 3. **Optimize Send Times**:
->    - Test Tuesday/Wednesday/Thursday 10 AM - 2 PM
->    - Avoid Monday mornings and weekends
->    - Test with your specific audience
+> 3. **优化发送时间**：
+>    - 测试周二/周三/周四的上午 10 点至下午 2 点
+>    - 避开周一早晨和周末
+>    - 针对您的特定受众进行测试
 >
-> 4. **Improve Sender Reputation**:
->    - Use consistent "From" name and email
->    - Set up SPF, DKIM, DMARC
->    - Keep spam complaint rate below 0.1%
+> 4. **提升发件人信誉**：
+>    - 使用一致的"发件人"名称和邮箱
+>    - 配置 SPF、DKIM、DMARC
+>    - 将垃圾邮件投诉率控制在 0.1% 以下
 >
-> **Target: 20-25% open rate** is achievable with these improvements.
+> **目标：通过以上优化，20-25% 的打开率是可以实现的。**
 >
-> Would you like specific subject line examples for your business?
+> 需要我针对您的业务提供具体的标题示例吗？
 
-### Example 3: Content Calendar Creation
+### 示例三：内容日历创建
 
-**User:**
-> Create a week's worth of LinkedIn content for our marketing agency
+**用户：**
+> 为我们的营销代理公司创建一周的 LinkedIn 内容
 
-**AI Marketing Assistant (with RAG):**
-> Here's a LinkedIn content calendar for your marketing agency, based on your services:
+**AI 营销助手（启用 RAG）：**
+> 以下是基于您的服务为营销代理公司定制的 LinkedIn 内容日历：
 >
-> **Monday - Thought Leadership**
-> Post: "The biggest misconception about [industry] marketing is [misconception]. Here's what actually works: [3 key points]"
+> **周一 — 思想领导力**
+> 帖子："关于 [行业] 营销最大的误解是 [误解]。真正有效的方法是：[3 个要点]"
 >
-> **Tuesday - Case Study**
-> Post: "How we helped [client type] achieve [specific result]: [brief story with before/after metrics]"
+> **周二 — 案例研究**
+> 帖子："我们如何帮助 [客户类型] 实现 [具体成果]：[简短案例，含前后数据对比]"
 >
-> **Wednesday - Educational**
-> Post: "3 [industry] metrics you're probably ignoring (but shouldn't):
-> 1. [Metric 1]
-> 2. [Metric 2]
-> 3. [Metric 3]"
+> **周三 — 知识分享**
+> 帖子："你可能忽视的 3 个 [行业] 指标（但不应该）：
+> 1. [指标 1]
+> 2. [指标 2]
+> 3. [指标 3]"
 >
-> **Thursday - Behind the Scenes**
-> Post: "A day in the life at [Agency Name]: [team/process insight]. This is how we [unique approach]"
+> **周四 — 幕后故事**
+> 帖子："[代理公司名称] 的一天：[团队/流程洞察]。我们就是这样 [独特方法]"
 >
-> **Friday - Engagement**
-> Post: "Hot take: [controversial but defensible opinion about industry]. Agree or disagree?"
+> **周五 — 互动讨论**
+> 帖子："大胆观点：[关于行业的争议性但可论证的观点]。你同意还是反对？"
 >
-> Each post includes relevant hashtags and a CTA. Would you like me to write the full content for any of these?
+> 每篇帖子都配有相关话题标签和行动号召。需要我为其中某篇撰写完整内容吗？
 
-## Best Practices
+## 最佳实践
 
-### 1. Be Specific
+### 1. 具体明确
 
-**Vague:**
-> "How do I market better?"
+**模糊：**
+> "如何更好地做营销？"
 
-**Specific:**
-> "How should I market a B2B SaaS product to mid-market manufacturing companies?"
+**具体：**
+> "我应该如何向中型制造企业推广 B2B SaaS 产品？"
 
-The more specific your question, the better the AI's guidance.
+问题越具体，AI 的指导越精准。
 
-### 2. Provide Context
+### 2. 提供上下文
 
-**Minimal Context:**
-> "Write an email template"
+**缺少上下文：**
+> "写一个邮件模板"
 
-**With Context:**
-> "Write a cold outreach email template for our web development services, targeting e-commerce companies who need site speed optimization"
+**附带上下文：**
+> "为我们的网站开发服务写一个冷启动外联邮件模板，目标是需要网站速度优化的电商企业"
 
-Include relevant details about your target audience, goals, and constraints.
+请包含目标受众、目标和约束条件等相关信息。
 
-### 3. Use RAG Context
+### 3. 使用 RAG 上下文
 
-Enable RAG context (📖) when asking about:
-- Your products or services
-- Your competitive positioning
-- Your pricing and packaging
-- Your target customers
-- Your brand voice
+在提问以下内容时启用 RAG 上下文（📖）：
+- 您的产品或服务
+- 您的竞争定位
+- 您的定价和包装方案
+- 您的目标客户
+- 您的品牌语调
 
-Disable RAG for:
-- General marketing concepts
-- Industry best practices
-- Theoretical frameworks
-- Creative brainstorming
+以下情况可禁用 RAG：
+- 通用营销概念
+- 行业最佳实践
+- 理论框架
+- 创意头脑风暴
 
-### 4. Iterate and Refine
+### 4. 迭代优化
 
-The AI's first response is a starting point. Follow up with:
-- "Can you make this more concise?"
-- "What about [alternative approach]?"
-- "Give me 3 more options for [specific element]"
-- "How would this work for [specific scenario]?"
+AI 的首次回答是一个起点，您可以通过以下方式继续追问：
+- "能否写得更简洁一些？"
+- "[替代方案] 怎么样？"
+- "针对 [具体要素] 再给我 3 个选项"
+- "这在 [具体场景] 下如何应用？"
 
-### 5. Combine with Human Judgment
+### 5. 结合人工判断
 
-The AI Marketing Assistant provides recommendations based on data and best practices, but:
-- You know your business best
-- Test suggestions before full implementation
-- Adapt recommendations to your specific situation
-- Measure results and iterate
+AI 营销助手基于数据和最佳实践提供建议，但请注意：
+- 您最了解自己的业务
+- 全面实施前请先测试建议
+- 根据您的具体情况调整建议
+- 衡量结果并持续迭代
 
-## Advanced Usage
+## 高级用法
 
-### Strategic Planning Sessions
+### 战略规划会议
 
-Use the AI for comprehensive strategy development:
+使用 AI 进行全面的战略制定：
 
-1. **Start with context**: "I'm planning our Q2 marketing strategy"
-2. **Provide details**: Target audience, budget, goals, timeline
-3. **Ask for framework**: "What should our strategy include?"
-4. **Dive deeper**: Ask follow-ups about each component
-5. **Get specific tactics**: Request actionable steps
-6. **Create execution plan**: Ask for timeline and resources
+1. **从背景入手**："我正在规划第二季度的营销策略"
+2. **提供细节**：目标受众、预算、目标、时间线
+3. **请求框架**："我们的策略应该包含哪些内容？"
+4. **深入探讨**：针对每个组成部分追问
+5. **获取具体策略**：请求可操作的步骤
+6. **制定执行计划**：请求时间线和资源配置
 
-### Campaign Brainstorming
+### 活动头脑风暴
 
-Generate campaign ideas systematically:
+系统化地生成活动创意：
 
-1. **Define objectives**: "We want to generate 50 qualified leads"
-2. **Identify audience**: "Targeting [specific persona]"
-3. **Brainstorm angles**: "What messaging approaches would work?"
-4. **Get tactics**: "What channels and formats should we use?"
-5. **Create content**: "Write copy for [specific element]"
-6. **Plan execution**: "What's the implementation timeline?"
+1. **定义目标**："我们希望获得 50 个合格线索"
+2. **确定受众**："目标人群是 [具体画像]"
+3. **头脑风暴角度**："哪些信息切入点会比较有效？"
+4. **获取策略**："我们应该使用哪些渠道和形式？"
+5. **创建内容**："为 [具体要素] 撰写文案"
+6. **规划执行**："实施时间线是什么？"
 
-### Competitive Analysis
+### 竞争分析
 
-Analyze your competitive position:
+分析您的竞争态势：
 
-1. **Describe competitors**: "Here's what [competitor] does well..."
-2. **Identify gaps**: "What are they missing?"
-3. **Find differentiation**: "How can we stand out?"
-4. **Position effectively**: "What's our unique value proposition?"
-5. **Craft messaging**: "How do we communicate this?"
+1. **描述竞争对手**："这是 [竞争对手] 做得好的方面……"
+2. **识别差距**："他们缺少了什么？"
+3. **寻找差异化**："我们如何脱颖而出？"
+4. **有效定位**："我们的独特价值主张是什么？"
+5. **打磨信息**："我们如何传达这一点？"
 
-### Problem Solving
+### 问题解决
 
-Address marketing challenges:
+应对营销挑战：
 
-1. **Describe problem**: "Our conversion rate is only 2%"
-2. **Provide context**: Traffic source, funnel details, current tests
-3. **Get diagnosis**: "What might be causing this?"
-4. **Explore solutions**: "What should we test first?"
-5. **Prioritize**: "Which 3 changes will have the most impact?"
+1. **描述问题**："我们的转化率只有 2%"
+2. **提供上下文**：流量来源、漏斗详情、当前测试
+3. **获取诊断**："可能是什么原因导致的？"
+4. **探索解决方案**："我们应该优先测试什么？"
+5. **排列优先级**："哪 3 项改动的效果最大？"
 
-## Integration with Your Workflow
+## 与您的工作流集成
 
-### Before Campaigns
+### 活动前
 
-- **Strategy validation**: "Does this approach make sense?"
-- **Audience analysis**: "Who should we target and why?"
-- **Messaging development**: "What's our core value prop?"
-- **Channel selection**: "Where should we focus our efforts?"
+- **策略验证**："这个方案可行吗？"
+- **受众分析**："我们应该以谁为目标，为什么？"
+- **信息开发**："我们的核心价值主张是什么？"
+- **渠道选择**："我们应该将精力集中在哪里？"
 
-### During Campaigns
+### 活动中
 
-- **Optimization ideas**: "How can we improve performance?"
-- **Troubleshooting**: "Why isn't this working?"
-- **A/B test ideas**: "What should we test next?"
-- **Content variations**: "Give me alternative headlines"
+- **优化建议**："如何提升效果？"
+- **问题排查**："为什么效果不理想？"
+- **A/B 测试建议**："下一步应该测试什么？"
+- **内容变体**："给我一些替代标题"
 
-### After Campaigns
+### 活动后
 
-- **Performance analysis**: "What do these results tell us?"
-- **Improvement recommendations**: "How do we do better next time?"
-- **Documentation**: "Summarize what we learned"
-- **Future planning**: "What should we test in the next campaign?"
+- **效果分析**："这些结果说明了什么？"
+- **改进建议**："下次如何做得更好？"
+- **经验总结**："总结我们的收获"
+- **后续规划**："下一次活动应该测试什么？"
 
-## Tips for Better Results
+## 获取更好结果的技巧
 
-### DO ✅
+### 建议 ✅
 
-- **Be specific** in your questions
-- **Provide context** about your situation
-- **Enable RAG** for business-specific questions
-- **Follow up** with clarifying questions
-- **Test recommendations** before full implementation
-- **Iterate** based on AI responses
-- **Combine AI insights** with your expertise
+- **具体明确**地提出问题
+- **提供上下文**说明您的情况
+- 针对业务相关问题**启用 RAG**
+- **追问**以澄清需求
+- 全面实施前**先测试**建议
+- 基于 AI 回复**持续迭代**
+- 将 AI 洞察与您的**专业经验**相结合
 
-### DON'T ❌
+### 避免 ❌
 
-- **Don't be vague** about what you need
-- **Don't expect perfect answers** immediately
-- **Don't implement blindly** without testing
-- **Don't ignore** your domain expertise
-- **Don't use** for sensitive data (passwords, API keys)
-- **Don't rely solely** on AI for critical decisions
+- **不要模糊**表达您的需求
+- **不要期望**首次回答就完美无缺
+- **不要盲目实施**而未经测试
+- **不要忽视**您的领域专业知识
+- **不要用于**敏感数据（密码、API 密钥）
+- **不要仅依赖** AI 做出关键决策
 
-## Limitations and Considerations
+## 限制与注意事项
 
-### Knowledge Accuracy
+### 知识准确性
 
-- AI may not know recent events (knowledge cutoff)
-- Always verify facts before publishing
-- Cross-reference important claims
+- AI 可能不了解最新事件（存在知识截止日期）
+- 发布前务必核实事实
+- 交叉验证重要论断
 
-### Business Specificity
+### 业务针对性
 
-- AI only knows what's in your Knowledge Library
-- Upload comprehensive, up-to-date documentation
-- Keep Knowledge Library current
+- AI 仅了解您知识库中的内容
+- 请上传全面且最新的文档
+- 保持知识库内容的时效性
 
-### Creative Judgment
+### 创意判断
 
-- AI provides options, not final creative decisions
-- Use AI for ideation, human for selection
-- Test creative elements with real audiences
+- AI 提供选项，而非最终的创意决策
+- 用 AI 进行创意发散，由人来做选择
+- 用真实受众测试创意元素
 
-### Strategic Context
+### 战略上下文
 
-- AI lacks real-world context about your market
-- Combine AI insights with market research
-- Validate recommendations with customer feedback
+- AI 缺乏关于您市场的真实世界上下文
+- 将 AI 洞察与市场调研相结合
+- 用客户反馈验证建议
 
-## Troubleshooting
+## 故障排除
 
-### AI Responses Not Relevant
+### AI 回答不相关
 
-**Solutions:**
-1. Enable RAG context toggle
-2. Upload relevant documents to Knowledge Library
-3. Be more specific in your questions
-4. Provide more context about your situation
+**解决方案：**
+1. 启用 RAG 上下文开关
+2. 将相关文档上传至知识库
+3. 更具体地描述您的问题
+4. 提供更多关于您情况的背景信息
 
-### Responses Too Generic
+### 回答过于泛化
 
-**Solutions:**
-1. Ask for specific examples
-2. Provide your unique context
-3. Reference your specific products/services
-4. Request multiple options to choose from
+**解决方案：**
+1. 要求提供具体示例
+2. 提供您独特的上下文
+3. 引用您具体的产品/服务
+4. 请求提供多个选项供选择
 
-### Can't Find Previous Conversations
+### 找不到历史对话
 
-**Solutions:**
-1. Conversations are saved automatically
-2. Scroll up to see history
-3. Click "Refresh" to reload
-4. Start a new conversation if needed
+**解决方案：**
+1. 对话会自动保存
+2. 向上滚动查看历史记录
+3. 点击"刷新"重新加载
+4. 如需可开启新对话
 
-### AI Doesn't Understand Request
+### AI 无法理解请求
 
-**Solutions:**
-1. Rephrase your question more clearly
-2. Break complex requests into smaller parts
-3. Provide examples of what you're looking for
-4. Try asking from a different angle
+**解决方案：**
+1. 更清晰地重新表述问题
+2. 将复杂请求拆分为更小的部分
+3. 提供您期望结果的示例
+4. 尝试从不同角度提问
 
-## Next Steps
+## 下一步
 
-Now that you understand the AI Marketing Assistant:
+现在您已了解 AI 营销助手的功能：
 
-- [Build your Knowledge Library](./knowledge-library) for better context
-- [Create email templates](./ai-email-writer) with AI assistance
-- [Set up automated campaigns](../lead-generation/batch-email-sending)
+- [构建您的知识库](./knowledge-library)以获取更好的上下文支持
+- [借助 AI 创建邮件模板](./ai-email-writer)
+- [设置自动化营销活动](../lead-generation/batch-email-sending)
 
 ---
 
-**Ready to get strategic guidance?** Open the AI Marketing Assistant, enable RAG context, and start asking questions about your specific marketing challenges and opportunities.
+**准备好获取战略指导了吗？** 打开 AI 营销助手，启用 RAG 上下文，开始就您具体的营销挑战和机遇提问吧。

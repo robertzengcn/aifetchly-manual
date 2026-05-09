@@ -5,486 +5,486 @@ sidebar_label: Email Extraction
 description: Extract email addresses from websites and URLs in bulk with aiFetchly's powerful extraction tool.
 ---
 
-# Email Extraction
+# メール抽出
 
-aiFetchly's Email Extraction feature allows you to harvest email addresses from websites at scale. Extract contact information from individual URLs or leverage your existing search results for targeted email collection.
+aiFetchly のメール抽出機能を使用すると、ウェブサイトからメールアドレスを大規模に収集できます。個別の URL から連絡先情報を抽出したり、既存の検索結果を活用してターゲットを絞ったメール収集を行ったりすることができます。
 
-## Understanding Email Extraction
+## メール抽出について
 
-Email extraction works by:
+メール抽出は以下の仕組みで動作します:
 
-1. **Visiting each URL** you provide
-2. **Scanning page content** for email patterns
-3. **Following internal links** (optional)
-4. **Compiling all discovered emails** into a structured list
-5. **Deduplicating** results automatically
+1. **各 URL にアクセス**してページを取得
+2. **ページ内容をスキャン**してメールパターンを検出
+3. **内部リンクをたどる**（オプション）
+4. **発見されたすべてのメールアドレス**を構造化リストにまとめる
+5. **重複を自動的に除去**
 
-:::info Use Cases
+:::info 活用例
 
-Email extraction is perfect for:
-- Collecting emails from search results
-- Building contact lists from industry directories
-- Gathering contact info from member listings
-- Extracting emails from resource pages
+メール抽出は以下のような用途に最適です:
+- 検索結果からのメール収集
+- 業界ディレクトリからのコンタクトリスト構築
+- 会員名簿からの連絡先情報収集
+- リソースページからのメール抽出
 
 :::
 
-## Creating an Extraction Task
+## 抽出タスクの作成
 
-### Step 1: Navigate to Email Extraction
+### ステップ 1: メール抽出に移動
 
-1. Click **Email Extraction** in the left navigation menu
-2. You'll see the extraction task list
-3. Click **Create New Task** button
+1. 左側のナビゲーションメニューで **Email Extraction** をクリック
+2. 抽出タスクリストが表示されます
+3. **Create New Task** ボタンをクリック
 
-### Step 2: Choose URL Input Method
+### ステップ 2: URL 入力方法の選択
 
-Select how you want to provide URLs for extraction:
+抽出対象の URL の指定方法を選択します:
 
-#### Method 1: Manual URL Input
+#### 方法 1: 手動 URL 入力
 
-**Best for**: Custom URL lists, specific websites
+**適しているケース**: カスタム URL リスト、特定のウェブサイト
 
-1. Select **Manual Input** from the source dropdown
-2. Enter your URLs in the text area
-3. **Format**: One URL per line
+1. ソースドロップダウンから **Manual Input** を選択
+2. テキストエリアに URL を入力
+3. **形式**: 1 行に 1 つの URL
 
-**Example:**
+**例:**
 ```
 https://example.com
 https://www.business-site.com/contact
 https://another-site.com/about-us
 ```
 
-**Validation:**
-- URLs must start with `http://` or `https://`
-- Invalid URLs will be flagged automatically
-- Maximum URLs per task: 10,000
+**バリデーション:**
+- URL は `http://` または `https://` で始まる必要があります
+- 無効な URL は自動的にフラグが付けられます
+- タスクあたりの最大 URL 数: 10,000
 
-#### Method 2: From Search Results
+#### 方法 2: 検索結果から
 
-**Best for**: Leveraging existing search campaigns
+**適しているケース**: 既存の検索キャンペーンの活用
 
-1. Select **Search Results** from the source dropdown
-2. A table of your completed search tasks appears
-3. Select the search task containing URLs you want to extract from
-4. Click **Confirm**
+1. ソースドロップダウンから **Search Results** を選択
+2. 完了済みの検索タスクのテーブルが表示されます
+3. 抽出元の URL を含む検索タスクを選択
+4. **Confirm** をクリック
 
-**Benefits:**
-- Seamless integration with search feature
-- No manual URL entry needed
-- Uses previously scraped URLs
+**メリット:**
+- 検索機能とのシームレスな連携
+- 手動での URL 入力が不要
+- 以前にスクレイピングした URL を活用
 
-### Step 3: Configure Extraction Settings
+### ステップ 3: 抽出設定の構成
 
-#### Page Length
+#### ページ深度
 
-- **Default**: 10 pages per URL
-- **Range**: 1-1000 pages
-- **Purpose**: How many pages deep to crawl each website
+- **デフォルト**: 1 URL あたり 10 ページ
+- **範囲**: 1〜1000 ページ
+- **目的**: 各ウェブサイトをどれだけ深くクロールするか
 
-**Guidelines:**
-- **Small sites**: 5-10 pages
-- **Medium sites**: 10-50 pages
-- **Large sites**: 50-100 pages
-- **Very large sites**: 100+ pages (use with caution)
+**ガイドライン:**
+- **小規模サイト**: 5〜10 ページ
+- **中規模サイト**: 10〜50 ページ
+- **大規模サイト**: 50〜100 ページ
+- **超大規模サイト**: 100 ページ以上（慎重に使用）
 
-:::warning Pages vs. Time
+:::warning ページ数と時間の関係
 
-Higher page length = longer extraction time. Start conservative and scale up.
-
-:::
-
-#### Concurrency
-
-- **Default**: 1 concurrent process
-- **Range**: 1-10 concurrent processes
-- **Purpose**: How many URLs to process simultaneously
-
-**Recommendations:**
-- **Without proxies**: 1-3 concurrent
-- **With proxies**: 3-10 concurrent
-- **Start low** and increase gradually
-
-#### Max Page Number
-
-- **Default**: 100 pages
-- **Range**: 0-1000 pages
-- **Purpose**: Absolute maximum pages to process
-
-**Use Case**: Prevent runaway extraction on very large sites.
-
-#### Process Timeout
-
-- **Default**: 10 minutes
-- **Range**: 1-20 minutes
-- **Purpose**: Maximum time per URL before timeout
-
-**Adjust if:**
-- Sites load slowly → Increase timeout
-- Want faster failure → Decrease timeout
-
-### Step 4: Display Options
-
-#### Show in Browser
-
-- **No** (default): Extraction runs invisibly (faster)
-- **Yes**: Browser window visible (debugging mode)
-
-**Recommendation**: Keep at "No" for production tasks.
-
-### Step 5: Proxy Configuration (Optional)
-
-Add proxies for large-scale extraction:
-
-1. Toggle **Use Proxy**
-2. Click **Choose Proxy**
-3. Select one or more proxies
-4. Click **Confirm**
-
-:::tip When to Use Proxies
-
-Use proxies when:
-- Extracting from 50+ URLs
-- Running multiple concurrent processes
-- Previous tasks were blocked
-- Extracting from the same domains repeatedly
+ページ深度が高いほど抽出時間が長くなります。まず控えめに設定し、徐々に増やしてください。
 
 :::
 
-### Step 6: Create Task
+#### 同時実行数
 
-Click **Submit** to create your extraction task. You can:
-- **Save Only**: Save task without running
-- **Run Now**: Start extraction immediately
+- **デフォルト**: 1 同時プロセス
+- **範囲**: 1〜10 同時プロセス
+- **目的**: 同時に処理する URL の数
 
-## Managing Extraction Tasks
+**推奨値:**
+- **プロキシなし**: 1〜3 同時
+- **プロキシあり**: 3〜10 同時
+- **低く始めて**段階的に増やす
 
-### View Task List
+#### 最大ページ数
 
-Navigate to **Email Extraction** to see all your tasks.
+- **デフォルト**: 100 ページ
+- **範囲**: 0〜1000 ページ
+- **目的**: 処理するページの絶対上限
 
-**Task List Columns:**
+**用途**: 超大規模サイトでの抽出の暴走を防止。
 
-| Column | Description |
+#### 処理タイムアウト
+
+- **デフォルト**: 10 分
+- **範囲**: 1〜20 分
+- **目的**: URL ごとの最大処理時間
+
+**調整の目安:**
+- サイトの読み込みが遅い → タイムアウトを増やす
+- より早く失敗させたい → タイムアウトを減らす
+
+### ステップ 4: 表示オプション
+
+#### ブラウザで表示
+
+- **No**（デフォルト）: 抽出はバックグラウンドで実行（高速）
+- **Yes**: ブラウザウィンドウが表示される（デバッグモード）
+
+**推奨**: 本番タスクでは "No" を維持してください。
+
+### ステップ 5: プロキシ設定 (任意)
+
+大規模な抽出にはプロキシを追加します:
+
+1. **Use Proxy** を切替
+2. **Choose Proxy** をクリック
+3. 1 つ以上のプロキシを選択
+4. **Confirm** をクリック
+
+:::tip プロキシを使用すべきケース
+
+以下の場合にプロキシを使用:
+- 50 以上の URL から抽出する場合
+- 複数の同時プロセスを実行する場合
+- 以前のタスクがブロックされた場合
+- 同じドメインから繰り返し抽出する場合
+
+:::
+
+### ステップ 6: タスクの作成
+
+**Submit** をクリックして抽出タスクを作成します。以下の選択が可能です:
+- **Save Only**: 実行せずにタスクを保存
+- **Run Now**: 直ちに抽出を開始
+
+## 抽出タスクの管理
+
+### タスクリストの表示
+
+**Email Extraction** に移動してすべてのタスクを表示します。
+
+**タスクリストの列:**
+
+| 列 | 説明 |
 |--------|-------------|
-| **ID** | Unique task identifier |
-| **Type** | Manual Input or Search Results |
-| **Status** | Pending, Processing, Complete, Error |
-| **Record Time** | When task was created |
-| **Actions** | View, Edit, Delete, Download Logs |
+| **ID** | 一意のタスク識別子 |
+| **Type** | Manual Input または Search Results |
+| **Status** | Pending、Processing、Complete、Error |
+| **Record Time** | タスクの作成日時 |
+| **Actions** | 表示、編集、削除、ログのダウンロード |
 
-### Task Status
+### タスクステータス
 
-| Status | Description | Action |
+| ステータス | 説明 | アクション |
 |--------|-------------|--------|
-| **Pending** | Task created but not started | Edit, Delete |
-| **Processing** | Actively extracting emails | Monitor progress |
-| **Complete** | Finished successfully | View results |
-| **Error** | Failed with errors | View logs, Retry |
+| **Pending** | タスクは作成済みだが未開始 | 編集、削除 |
+| **Processing** | メール抽出中 | 進行状況を監視 |
+| **Complete** | 正常に完了 | 結果を表示 |
+| **Error** | エラーで失敗 | ログを表示、リトライ |
 
-### Task Actions
+### タスクアクション
 
-- **View Results** (folder icon): See extracted emails
-- **Edit** (pencil icon): Modify task settings (only pending/error tasks)
-- **Delete** (trash icon): Remove task
-- **Download Logs** (download icon): Get error logs (failed tasks only)
+- **View Results**（フォルダアイコン）: 抽出されたメールを表示
+- **Edit**（鉛筆アイコン）: タスク設定を変更（Pending/Error のタスクのみ）
+- **Delete**（ゴミ箱アイコン）: タスクを削除
+- **Download Logs**（ダウンロードアイコン）: エラーログを取得（失敗したタスクのみ）
 
-## Viewing Extracted Emails
+## 抽出されたメールの表示
 
-### Step 1: Access Results
+### ステップ 1: 結果へのアクセス
 
-1. Go to **Email Extraction** task list
-2. Find the completed task
-3. Click **View Results**
+1. **Email Extraction** タスクリストに移動
+2. 完了したタスクを見つける
+3. **View Results** をクリック
 
-### Step 2: Results Table
+### ステップ 2: 結果テーブル
 
-The results table displays:
+結果テーブルには以下が表示されます:
 
-| Column | Description |
+| 列 | 説明 |
 |--------|-------------|
-| **URL** | Source website |
-| **Emails** | Extracted email addresses (expandable) |
-| **Count** | Number of emails found |
-| **Timestamp** | When extraction occurred |
+| **URL** | 取得元ウェブサイト |
+| **Emails** | 抽出されたメールアドレス（展開可能） |
+| **Count** | 発見されたメール数 |
+| **Timestamp** | 抽出日時 |
 
-### Step 3: Expand Details
+### ステップ 3: 詳細の展開
 
-Click on a row to expand and see:
-- All emails found on that URL
-- Email list can be copied
-- View individual email addresses
+行をクリックして展開すると以下を確認できます:
+- その URL で発見されたすべてのメール
+- メールリストのコピーが可能
+- 個別のメールアドレスの表示
 
-### Step 4: Search and Filter
+### ステップ 4: 検索とフィルター
 
-- **Search**: Filter by URL or email address
-- **Pagination**: Navigate large result sets
-- **Auto-refresh**: Results update every 10 seconds during processing
+- **検索**: URL またはメールアドレスでフィルター
+- **ページネーション**: 大きな結果セットをナビゲート
+- **自動更新**: 処理中は 10 秒ごとに結果が更新
 
-## Exporting Extracted Emails
+## 抽出メールのエクスポート
 
-### Export as CSV
+### CSV としてエクスポート
 
-1. Select results you want to export (or leave blank for all)
-2. Click **Export** → **CSV**
-3. File downloads with all extracted emails
+1. エクスポートしたい結果を選択（または空欄のままですべて）
+2. **Export** → **CSV** をクリック
+3. 抽出されたすべてのメールがファイルとしてダウンロードされます
 
-**CSV Format:**
+**CSV 形式:**
 ```csv
 URL,Email,Timestamp
 https://example.com,contact@example.com,2024-01-15 10:30:00
 https://example.com,info@example.com,2024-01-15 10:30:00
 ```
 
-### Use in Email Campaigns
+### メールキャンペーンでの利用
 
-Extracted emails integrate directly with email marketing:
+抽出されたメールはメールマーケティングに直接連携できます:
 
-1. **View Results** of extraction task
-2. Click **Use in Campaign** button
-3. Emails are automatically passed to email marketing workflow
+1. 抽出タスクの **View Results** を表示
+2. **Use in Campaign** ボタンをクリック
+3. メールが自動的にメールマーケティングワークフローに渡されます
 
-For detailed instructions, see [Batch Email Sending](./batch-email-sending).
+詳しい手順については、[一括メール送信](./batch-email-sending)を参照してください。
 
-## Best Practices
+## ベストプラクティス
 
-### 1. URL Source Strategy
+### 1. URL ソースの戦略
 
-**High-Quality Sources:**
-- Industry directories
-- Member listings
-- Association websites
-- Resource pages
-- "Contact Us" pages
+**高品質なソース:**
+- 業界ディレクトリ
+- 会員名簿
+- 業界団体のウェブサイト
+- リソースページ
+- 「お問い合わせ」ページ
 
-**Avoid:**
-- Social media platforms (rarely have emails)
-- News sites (low conversion)
-- Very large portals (low quality)
+**避けるべきもの:**
+- ソーシャルメディアプラットフォーム（メールアドレスがほぼない）
+- ニュースサイト（コンバージョン率が低い）
+- 超大規模ポータル（品質が低い）
 
-### 2. Page Length Settings
+### 2. ページ深度の設定
 
-**Conservative** (Quality focus):
-- Page length: 5-10
-- Concurrency: 1-3
-- Best for: Targeted lists, high-value contacts
+**控えめ**（品質重視）:
+- ページ深度: 5〜10
+- 同時実行数: 1〜3
+- 適しているケース: ターゲットを絞ったリスト、高価値コンタクト
 
-**Moderate** (Balance):
-- Page length: 10-50
-- Concurrency: 3-5
-- Best for: General outreach campaigns
+**中程度**（バランス型）:
+- ページ深度: 10〜50
+- 同時実行数: 3〜5
+- 適しているケース: 一般的なアウトリーチキャンペーン
 
-**Aggressive** (Quantity focus):
-- Page length: 50-100+
-- Concurrency: 5-10
-- Best for: Market research, broad coverage
+**攻撃的**（量重視）:
+- ページ深度: 50〜100 以上
+- 同時実行数: 5〜10
+- 適しているケース: 市場調査、幅広いカバレッジ
 
-:::warning Quality vs. Quantity
+:::warning 品質と量のバランス
 
-Aggressive settings may extract more emails but lower quality. Focus on relevant sources for better campaign results.
-
-:::
-
-### 3. Proxy Usage
-
-**Small Tasks** (< 100 URLs):
-- Proxies not required
-- Concurrency: 1-3
-
-**Medium Tasks** (100-1000 URLs):
-- Use 2-3 proxies
-- Concurrency: 3-5
-
-**Large Tasks** (1000+ URLs):
-- Use 5+ proxies
-- Concurrency: 5-10
-- Rotate proxies regularly
-
-### 4. Deduplication
-
-aiFetchly automatically deduplicates emails within a task. For additional deduplication:
-
-- Export results to CSV
-- Use spreadsheet software or scripts
-- Compare with existing contact lists
-- Remove duplicates before campaigns
-
-### 5. Email Verification
-
-Extracted emails may not always be valid. Consider:
-
-- **Manual review**: Spot-check email formats
-- **Email verification tools**: Use third-party services
-- **Test campaigns**: Send small batches first
-- **Track bounces**: Remove undeliverable emails
-
-## Integration with Search Results
-
-The most powerful workflow combines search and extraction:
-
-### Complete Workflow
-
-1. **Run Search Task**:
-   - Search for businesses in your target industry
-   - Use AI keyword generation for comprehensive coverage
-
-2. **Extract Emails**:
-   - Create extraction task from search results
-   - Extract emails from discovered URLs
-
-3. **Quality Control**:
-   - Review extracted emails
-   - Filter by source quality
-   - Remove duplicates
-
-4. **Email Campaign**:
-   - Import to email marketing
-   - Create personalized templates
-   - Launch campaign
-
-## Advanced Techniques
-
-### Technique 1: Deep Extraction
-
-For comprehensive email collection:
-
-1. **Set Page Length**: 50-100 pages
-2. **Enable Proxies**: Use 3-5 proxies
-3. **Moderate Concurrency**: 3-5
-4. **Monitor Progress**: Check results regularly
-5. **Stop Early**: If quality drops, adjust settings
-
-### Technique 2: Pattern-Based Extraction
-
-Target specific types of pages:
-
-- **Contact pages**: URLs containing `/contact`
-- **About pages**: URLs containing `/about`
-- **Team pages**: URLs containing `/team`
-- **Member directories**: Association websites
-
-### Technique 3: Competitor Analysis
-
-Extract emails from competitor websites:
-
-1. **Identify competitors** in your niche
-2. **Extract their contact emails**
-3. **Analyze their partnerships** (link pages)
-4. **Build partnership outreach list**
-
-## Troubleshooting
-
-### Task Status: "Error"
-
-**Possible causes:**
-- Invalid URLs
-- Network connectivity issues
-- All proxies failed
-- Website blocking
-
-**Solutions:**
-1. Verify URL format (http:// or https://)
-2. Check internet connection
-3. Test proxy health
-4. Reduce concurrency
-5. Increase timeout settings
-
-### No Emails Extracted
-
-**Possible causes:**
-- Websites don't have publicly visible emails
-- Emails are in images/JavaScript (not extracted)
-- Websites use contact forms instead of emails
-- Page length too low
-
-**Solutions:**
-1. Increase page length setting
-2. Manually verify websites have emails
-3. Try different URL sources
-4. Check if sites use contact forms
-
-### Slow Processing
-
-**Possible causes:**
-- High page length
-- Many concurrent processes
-- Slow websites
-- Network latency
-
-**Solutions:**
-1. Reduce page length
-2. Decrease concurrency
-3. Increase timeout
-4. Use faster proxies
-
-### Duplicate Emails
-
-**Possible causes:**
-- Same email appears on multiple pages
-- Multiple URLs from same domain
-
-**Solutions:**
-1. aiFetchly auto-deduplicates within tasks
-2. Export and deduplicate across tasks
-3. Use spreadsheet software or scripts
-4. Use email verification tools
-
-### Blocked by Websites
-
-**Possible causes:**
-- Too many concurrent requests
-- No proxy rotation
-- Aggressive settings
-
-**Solutions:**
-1. Reduce concurrency to 1-3
-2. Use multiple proxies
-3. Increase delays between requests
-4. Respect website rate limits
-
-## Legal and Ethical Considerations
-
-### Compliance
-
-When extracting emails, consider:
-
-- **GDPR** (Europe): Strict regulations on email collection
-- **CAN-SPAM** (USA): Requirements for commercial emails
-- **CASL** (Canada): Consent requirements for electronic messages
-
-:::warning Legal Disclaimer
-
-Always ensure you have legal rights to extract and contact the email addresses. Consult legal counsel for guidance on applicable laws.
+攻撃的な設定ではより多くのメールが抽出されますが、品質は低下する可能性があります。キャンペーンの成果を向上させるため、関連性の高いソースに焦点を当ててください。
 
 :::
 
-### Best Practices
+### 3. プロキシの使用
 
-- **Public Sources Only**: Extract from publicly available information
-- **Relevant Context**: Extract from businesses/contacts relevant to your offering
-- **Respect Robots.txt**: Honor website exclusion standards
-- **Provide Opt-Out**: Include unsubscribe options in emails
-- **Value Proposition**: Offer something of value in your outreach
+**小規模タスク**（100 URL 未満）:
+- プロキシ不要
+- 同時実行数: 1〜3
 
-## Integration with Email Marketing
+**中規模タスク**（100〜1000 URL）:
+- 2〜3 のプロキシを使用
+- 同時実行数: 3〜5
 
-Once you've extracted emails:
+**大規模タスク**（1000 URL 以上）:
+- 5 以上のプロキシを使用
+- 同時実行数: 5〜10
+- プロキシを定期的にローテーション
 
-1. **Review Results**: Quality check your extracted emails
-2. **Export or Import**: Direct to email marketing or export as CSV
-3. **Select Template**: Choose or create email template
-4. **Personalize**: Use AI Email Writer for personalized content
-5. **Launch Campaign**: Send targeted outreach
+### 4. 重複除去
 
-For detailed instructions on creating campaigns, see [Batch Email Sending](./batch-email-sending).
+aiFetchly はタスク内で自動的にメールの重複を除去します。追加の重複除去には:
 
-## Next Steps
+- 結果を CSV にエクスポート
+- スプレッドシートソフトウェアやスクリプトを使用
+- 既存のコンタクトリストと照合
+- キャンペーン前に重複を削除
 
-- [Set up the Knowledge Library](../ai-outreach/knowledge-library)
-- [Create AI-powered email campaigns](../ai-outreach/ai-email-writer)
-- [Learn about the AI Marketing Assistant](../ai-outreach/ai-marketing-assistant)
+### 5. メール検証
+
+抽出されたメールが常に有効とは限りません。以下を検討してください:
+
+- **手動確認**: メール形式をランダムにチェック
+- **メール検証ツール**: サードパーティサービスを利用
+- **テストキャンペーン**: まず少量で送信
+- **バウンスの追跡**: 配信不能なメールを削除
+
+## 検索結果との連携
+
+最も強力なワークフローは、検索と抽出を組み合わせることです:
+
+### 完全なワークフロー
+
+1. **検索タスクの実行**:
+   - ターゲット業界のビジネスを検索
+   - 包括的なカバレッジのために AI キーワード生成を活用
+
+2. **メール抽出**:
+   - 検索結果から抽出タスクを作成
+   - 発見された URL からメールを抽出
+
+3. **品質管理**:
+   - 抽出されたメールを確認
+   - ソースの品質でフィルター
+   - 重複を削除
+
+4. **メールキャンペーン**:
+   - メールマーケティングにインポート
+   - パーソナライズされたテンプレートを作成
+   - キャンペーンを開始
+
+## 高度なテクニック
+
+### テクニック 1: ディープ抽出
+
+包括的なメール収集のために:
+
+1. **ページ深度を設定**: 50〜100 ページ
+2. **プロキシを有効化**: 3〜5 のプロキシを使用
+3. **中程度の同時実行**: 3〜5
+4. **進行状況を監視**: 定期的に結果を確認
+5. **早期停止**: 品質が低下した場合は設定を調整
+
+### テクニック 2: パターンベースの抽出
+
+特定の種類のページをターゲットにします:
+
+- **コンタクトページ**: `/contact` を含む URL
+- **会社概要ページ**: `/about` を含む URL
+- **チームページ**: `/team` を含む URL
+- **会員ディレクトリ**: 業界団体のウェブサイト
+
+### テクニック 3: 競合分析
+
+競合のウェブサイトからメールを抽出します:
+
+1. **ニッチ分野の競合を特定**
+2. **連絡先メールを抽出**
+3. **パートナーシップを分析**（リンクページ）
+4. **パートナーシップアウトリーチリストを構築**
+
+## トラブルシューティング
+
+### タスクステータス: "Error"
+
+**考えられる原因:**
+- 無効な URL
+- ネットワーク接続の問題
+- すべてのプロキシが失敗
+- ウェブサイトによるブロック
+
+**解決策:**
+1. URL の形式を確認（http:// または https://）
+2. インターネット接続を確認
+3. プロキシの稼働状態をテスト
+4. 同時実行数を減らす
+5. タイムアウト設定を増やす
+
+### メールが抽出されない
+
+**考えられる原因:**
+- ウェブサイトに公開メールがない
+- メールが画像/JavaScript 内にある（抽出不可）
+- ウェブサイトがメールの代わりにコンタクトフォームを使用
+- ページ深度が低すぎる
+
+**解決策:**
+1. ページ深度の設定を増やす
+2. ウェブサイトにメールが存在するか手動で確認
+3. 別の URL ソースを試す
+4. サイトがコンタクトフォームを使用していないか確認
+
+### 処理が遅い
+
+**考えられる原因:**
+- ページ深度が高い
+- 同時プロセスが多い
+- ウェブサイトの応答が遅い
+- ネットワークレイテンシ
+
+**解決策:**
+1. ページ深度を減らす
+2. 同時実行数を減らす
+3. タイムアウトを増やす
+4. より高速なプロキシを使用
+
+### 重複メール
+
+**考えられる原因:**
+- 同じメールが複数ページに表示されている
+- 同一ドメインからの複数 URL
+
+**解決策:**
+1. aiFetchly はタスク内で自動的に重複を除去します
+2. エクスポート後にタスク間で重複除去
+3. スプレッドシートソフトウェアやスクリプトを使用
+4. メール検証ツールを使用
+
+### ウェブサイトにブロックされた
+
+**考えられる原因:**
+- 同時リクエストが多すぎる
+- プロキシのローテーションがない
+- 攻撃的な設定
+
+**解決策:**
+1. 同時実行数を 1〜3 に減らす
+2. 複数のプロキシを使用
+3. リクエスト間の遅延を増やす
+4. ウェブサイトのレート制限を尊重
+
+## 法的・倫理的配慮
+
+### コンプライアンス
+
+メール抽出を行う際は以下を考慮してください:
+
+- **GDPR**（欧州）: メール収集に関する厳格な規制
+- **CAN-SPAM**（米国）: 商業メールの要件
+- **CASL**（カナダ）: 電子メッセージに関する同意要件
+
+:::warning 法的免責事項
+
+メールアドレスを抽出・連絡する法的権利があることを常に確認してください。適用法令に関する指針については、法律の専門家にご相談ください。
+
+:::
+
+### ベストプラクティス
+
+- **公開情報のみ**: 公開されている情報からのみ抽出
+- **関連するコンテキスト**: 自社の提供内容に関連するビジネス/コンタクトから抽出
+- **Robots.txt を尊重**: ウェブサイトの除外基準を遵守
+- **配信停止の提供**: メールに配信停止オプションを含める
+- **価値の提供**: アウトリーチで何らかの価値を提供する
+
+## メールマーケティングとの連携
+
+メールを抽出した後:
+
+1. **結果の確認**: 抽出されたメールの品質チェック
+2. **エクスポートまたはインポート**: メールマーケティングに直接連携または CSV でエクスポート
+3. **テンプレートの選択**: メールテンプレートを選択または作成
+4. **パーソナライズ**: AI メールライターでパーソナライズされたコンテンツを作成
+5. **キャンペーンの開始**: ターゲットを絞ったアウトリーチを送信
+
+キャンペーン作成の詳しい手順については、[一括メール送信](./batch-email-sending)を参照してください。
+
+## 次のステップ
+
+- [ナレッジライブラリの設定](../ai-outreach/knowledge-library)
+- [AI 搭載メールキャンペーンの作成](../ai-outreach/ai-email-writer)
+- [AI マーケティングアシスタントについて](../ai-outreach/ai-marketing-assistant)
 
 ---
 
-**Ready to extract emails?** Start with a small batch of URLs to test your settings, then scale up your extraction operations.
+**メール抽出を開始する準備はできましたか？** 少量の URL で設定をテストしてから、抽出作業を拡大してください。

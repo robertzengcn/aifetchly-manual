@@ -5,374 +5,374 @@ sidebar_label: Knowledge Library
 description: Build your knowledge base with documents that AI uses to generate contextually relevant content.
 ---
 
-# Knowledge Library
+# ナレッジライブラリ
 
-The Knowledge Library is aiFetchly's intelligent document management system. Upload your documents (PDFs, Word files, HTML, and more) to create a knowledge base that powers AI-generated content, ensuring your outreach is contextually accurate and personalized.
+ナレッジライブラリは、aiFetchlyのインテリジェントなドキュメント管理システムです。ドキュメント（PDF、Wordファイル、HTMLなど）をアップロードしてナレッジベースを構築し、AIが生成するコンテンツの精度を高め、アウトリーチがコンテキストに沿った正確でパーソナライズされたものになります。
 
-## What is RAG?
+## RAGとは？
 
-**RAG** (Retrieval-Augmented Generation) is a technology that:
+**RAG**（Retrieval-Augmented Generation）は以下の仕組みを持つ技術です：
 
-1. **Ingests** your documents and breaks them into smaller chunks
-2. **Creates vector embeddings** that understand the semantic meaning of your content
-3. **Retrieves relevant information** when generating content
-4. **Enhances AI responses** with your specific knowledge
+1. **取り込み**：ドキュメントを読み込み、小さなチャンクに分割します
+2. **ベクトル埋め込みの作成**：コンテンツの意味的な意味を理解するベクトル埋め込みを生成します
+3. **関連情報の検索**：コンテンツ生成時に必要な情報を検索します
+4. **AI応答の強化**：あなた固有のナレッジでAIの回答を強化します
 
-:::info Why RAG Matters
+:::info RAGが重要な理由
 
-Traditional AI systems generate generic content. With RAG, aiFetchly's AI references YOUR documents, creating personalized, context-aware emails and marketing content.
+従来のAIシステムは一般的なコンテンツを生成します。RAGにより、aiFetchlyのAIはあなたのドキュメントを参照し、パーソナライズされた、コンテキストに基づいたメールやマーケティングコンテンツを作成します。
 
 :::
 
-## Supported File Types
+## 対応ファイル形式
 
-| Format | Extensions | Best For |
+| 形式 | 拡張子 | 用途 |
 |--------|------------|----------|
-| **PDF** | `.pdf` | Brochures, whitepapers, documentation |
-| **Microsoft Word** | `.doc`, `.docx` | Proposals, contracts, product info |
-| **Text** | `.txt` | Simple text files, notes |
-| **Markdown** | `.md` | Technical documentation, README files |
-| **HTML** | `.html`, `.htm` | Web content, articles |
+| **PDF** | `.pdf` | パンフレット、ホワイトペーパー、ドキュメント |
+| **Microsoft Word** | `.doc`, `.docx` | 提案書、契約書、製品情報 |
+| **テキスト** | `.txt` | シンプルなテキストファイル、メモ |
+| **Markdown** | `.md` | 技術ドキュメント、READMEファイル |
+| **HTML** | `.html`, `.htm` | Webコンテンツ、記事 |
 
-## Uploading Documents
+## ドキュメントのアップロード
 
-### Step 1: Navigate to Knowledge Library
+### ステップ1：ナレッジライブラリを開く
 
-1. Click **Knowledge** in the left navigation menu
-2. You'll see the Knowledge Library interface
+1. 左のナビゲーションメニューで**Knowledge**をクリックします
+2. ナレッジライブラリのインターフェースが表示されます
 
-### Step 2: Upload Documents
+### ステップ2：ドキュメントのアップロード
 
-**Method 1: Drag and Drop**
+**方法1：ドラッグ＆ドロップ**
 
-1. Drag files from your computer
-2. Drop them onto the upload area
-3. Visual feedback shows files being added
+1. コンピューターからファイルをドラッグします
+2. アップロードエリアにドロップします
+3. ファイルが追加されていることを視覚的に確認できます
 
-**Method 2: File Browser**
+**方法2：ファイルブラウザ**
 
-1. Click the **Upload** button (or the upload area)
-2. Navigate to your files in the file browser
-3. Select one or multiple documents
-4. Click **Open** to upload
+1. **Upload**ボタン（またはアップロードエリア）をクリックします
+2. ファイルブラウザでファイルを探します
+3. 1つまたは複数のドキュメントを選択します
+4. **Open**をクリックしてアップロードします
 
-### Step 3: Processing
+### ステップ3：処理
 
-After upload, documents are automatically processed:
+アップロード後、ドキュメントは自動的に処理されます：
 
-1. **Saving**: Files are saved to the database
-2. **Chunking**: Documents are broken into smaller segments
-3. **Embedding**: Vector embeddings are created for semantic search
-4. **Status Update**: Processing status changes from **Pending** → **Processing** → **Completed**
+1. **保存**：ファイルがデータベースに保存されます
+2. **チャンキング**：ドキュメントが小さなセグメントに分割されます
+3. **埋め込み**：意味検索のためのベクトル埋め込みが作成されます
+4. **ステータス更新**：処理ステータスが**Pending** → **Processing** → **Completed**に変化します
 
-:::tip Processing Time
+:::tip 処理時間
 
-Processing time depends on file size:
-- Small files (< 1MB): 10-30 seconds
-- Medium files (1-5MB): 30-60 seconds
-- Large files (5-10MB): 1-3 minutes
+処理時間はファイルサイズによって異なります：
+- 小さいファイル（1MB未満）：10〜30秒
+- 中程度のファイル（1〜5MB）：30〜60秒
+- 大きいファイル（5〜10MB）：1〜3分
 
 :::
 
-## Managing Documents
+## ドキュメントの管理
 
-### Document List View
+### ドキュメントリストビュー
 
-The Knowledge Library displays all your documents with:
+ナレッジライブラリには、すべてのドキュメントが以下の情報とともに表示されます：
 
-| Column | Description |
+| 列 | 説明 |
 |--------|-------------|
-| **Name** | Document filename |
-| **Title** | Document title (editable) |
-| **Status** | Processing status (Pending/Processing/Completed/Error) |
-| **Type** | File type (PDF, DOCX, etc.) |
-| **Size** | File size |
-| **Upload Date** | When the document was uploaded |
-| **Actions** | View, download, delete, re-embed |
+| **Name** | ドキュメントのファイル名 |
+| **Title** | ドキュメントのタイトル（編集可能） |
+| **Status** | 処理ステータス（Pending/Processing/Completed/Error） |
+| **Type** | ファイルタイプ（PDF、DOCXなど） |
+| **Size** | ファイルサイズ |
+| **Upload Date** | ドキュメントのアップロード日時 |
+| **Actions** | 表示、ダウンロード、削除、再埋め込み |
 
-### Document Actions
+### ドキュメントの操作
 
-| Action | Description |
+| 操作 | 説明 |
 |--------|-------------|
-| **View** | Open document to view content |
-| **Download** | Download original file to your computer |
-| **Delete** | Remove document from knowledge base |
-| **Re-embed** | Reprocess document with new embedding model |
-| **View Logs** | See error details for failed documents |
+| **View** | ドキュメントを開いて内容を表示 |
+| **Download** | 元のファイルをコンピューターにダウンロード |
+| **Delete** | ドキュメントをナレッジベースから削除 |
+| **Re-embed** | 新しい埋め込みモデルでドキュメントを再処理 |
+| **View Logs** | 失敗したドキュメントのエラー詳細を確認 |
 
-### Search and Filter
+### 検索とフィルター
 
-- **Search by Name**: Filter documents by filename
-- **Filter by Status**: Show only completed, processing, or failed documents
-- **Filter by Type**: Show only specific file types
+- **名前で検索**：ファイル名でドキュメントを絞り込みます
+- **ステータスで絞り込み**：完了、処理中、失敗したドキュメントのみ表示
+- **タイプで絞り込み**：特定のファイルタイプのみ表示
 
-### Bulk Operations
+### 一括操作
 
-- **Select Multiple**: Check boxes next to documents
-- **Bulk Delete**: Remove multiple documents at once
-- **Clear Selection**: Deselect all documents
+- **複数選択**：ドキュメントの横にあるチェックボックスをオンにします
+- **一括削除**：複数のドキュメントを一度に削除します
+- **選択をクリア**：すべてのドキュメントの選択を解除します
 
-## Understanding Processing Status
+## 処理ステータスについて
 
-| Status | Color | Meaning | Action |
+| ステータス | 色 | 意味 | 対応 |
 |--------|-------|---------|--------|
-| **Pending** | Grey | Queued for processing | Wait for automatic processing |
-| **Processing** | Blue | Currently being embedded | Wait for completion |
-| **Completed** | Green | Ready to use in AI generation | Document is active |
-| **Error** | Red | Processing failed | View logs, try re-embedding |
-
-## Re-embedding Documents
-
-If you change embedding models or need to reprocess a document:
-
-1. Find the document in the list
-2. Click **Re-embed** button
-3. Document status changes to **Processing**
-4. New embeddings are created with current model
-5. Status updates to **Completed** when done
+| **Pending** | グレー | 処理待ち | 自動処理を待ちます |
+| **Processing** | ブルー | 埋め込み処理中 | 完了を待ちます |
+| **Completed** | グリーン | AI生成に使用可能 | ドキュメントが有効です |
+| **Error** | レッド | 処理失敗 | ログを確認し、再埋め込みを試みます |
+
+## ドキュメントの再埋め込み
+
+埋め込みモデルを変更した場合や、ドキュメントを再処理する必要がある場合：
+
+1. リストからドキュメントを見つけます
+2. **Re-embed**ボタンをクリックします
+3. ドキュメントのステータスが**Processing**に変わります
+4. 現在のモデルで新しい埋め込みが作成されます
+5. 完了するとステータスが**Completed**に更新されます
 
-**Use Cases for Re-embedding:**
-- Changed embedding model in settings
-- Previous embedding failed partially
-- Want to use updated chunking parameters
+**再埋め込みのユースケース：**
+- 設定で埋め込みモデルを変更した場合
+- 以前の埋め込みが部分的に失敗した場合
+- 更新されたチャンキングパラメータを使用したい場合
 
-## Troubleshooting
+## トラブルシューティング
 
-### Document Status: "Error"
+### ドキュメントのステータスが「Error」の場合
 
-**Possible causes:**
-- Corrupted file
-- Unsupported file format
-- File too large
-- Encoding issues
+**考えられる原因：**
+- ファイルが破損している
+- サポートされていないファイル形式
+- ファイルサイズが大きすぎる
+- エンコーディングの問題
 
-**Solutions:**
-1. **View Logs** to see specific error
-2. **Try Re-embedding** the document
-3. **Re-upload** the original file
-4. **Convert file** to a different format (e.g., DOC → PDF)
+**解決策：**
+1. **View Logs**で具体的なエラーを確認します
+2. ドキュメントの**再埋め込み**を試みます
+3. 元のファイルを**再アップロード**します
+4. ファイルを別の形式に**変換**します（例：DOC → PDF）
 
-### Slow Processing
+### 処理が遅い場合
 
-**Possible causes:**
-- Large file size
-- High system load
-- Network latency (for remote embedding)
+**考えられる原因：**
+- ファイルサイズが大きい
+- システム負荷が高い
+- ネットワーク遅延（リモート埋め込みの場合）
 
-**Solutions:**
-1. Wait for processing to complete
-2. Split large documents into smaller files
-3. Close other applications to free resources
+**解決策：**
+1. 処理が完了するまで待ちます
+2. 大きなドキュメントを小さなファイルに分割します
+3. 他のアプリケーションを閉じてリソースを解放します
 
-### Document Not Used in AI Content
+### ドキュメントがAIコンテンツに使用されない場合
 
-**Possible causes:**
-- Document not fully processed
-- Document content not relevant to query
-- RAG context not enabled
+**考えられる原因：**
+- ドキュメントの処理が完了していない
+- ドキュメントの内容がクエリに関連していない
+- RAGコンテキストが有効になっていない
 
-**Solutions:**
-1. Verify document status is **Completed**
-2. Ensure RAG context is enabled in AI Chat/Email Writer
-3. Try searching for more specific content
-4. Upload additional relevant documents
+**解決策：**
+1. ドキュメントのステータスが**Completed**であることを確認します
+2. AIチャット/メールライターでRAGコンテキストが有効になっていることを確認します
+3. より具体的な内容で検索してみます
+4. 関連する追加ドキュメントをアップロードします
 
-## Best Practices
+## ベストプラクティス
 
-### 1. Document Selection
+### 1. ドキュメントの選択
 
-**Upload documents that:**
-- Describe your products or services in detail
-- Explain your value proposition
-- Contain case studies or success stories
-- Include industry-specific terminology
-- Provide competitive advantages
+**以下のようなドキュメントをアップロードしてください：**
+- 製品やサービスの詳細な説明
+- 価値提案の説明
+- ケーススタディや成功事例
+- 業界固有の専門用語を含むもの
+- 競合優位性を示すもの
 
-**Avoid:**
-- Generic or outdated information
-- Irrelevant content
-- Very large files (> 10MB)
-- Poorly formatted documents
+**避けるべきもの：**
+- 一般的または古い情報
+- 関連性のないコンテンツ
+- 非常に大きなファイル（10MB超）
+- フォーマットが不適切なドキュメント
 
-### 2. Document Organization
+### 2. ドキュメントの整理
 
-**Naming Conventions:**
-- Use descriptive names: `Product_Brochure_2024.pdf`
-- Include version numbers: `Pricing_Guide_v2.docx`
-- Add dates: `Case_Study_January_2024.pdf`
+**命名規則：**
+- 説明的な名前を使用：`Product_Brochure_2024.pdf`
+- バージョン番号を含める：`Pricing_Guide_v2.docx`
+- 日付を追加：`Case_Study_January_2024.pdf`
 
-**Categorization:**
-- Group related documents together
-- Use consistent naming patterns
-- Tag documents for easy filtering
+**カテゴリ分け：**
+- 関連するドキュメントをグループ化する
+- 一貫した命名パターンを使用する
+- タグでドキュメントを簡単にフィルタリングする
 
-### 3. Content Quality
+### 3. コンテンツの品質
 
-**For Best Results:**
-- Use well-formatted documents
-- Include structured headings
-- Provide specific details and examples
-- Keep information up-to-date
-- Use professional language
+**最良の結果を得るために：**
+- 適切にフォーマットされたドキュメントを使用する
+- 構造化された見出しを含める
+- 具体的な詳細と例を提供する
+- 情報を最新に保つ
+- 専門的な言葉遣いを使用する
 
-### 4. Regular Maintenance
+### 4. 定期的なメンテナンス
 
-**Keep Your Knowledge Base Healthy:**
-- **Review regularly**: Remove outdated documents
-- **Update content**: Re-upload when information changes
-- **Monitor status**: Check for failed embeddings
-- **Optimize size**: Split large documents when possible
+**ナレッジベースを健全に保つ：**
+- **定期的に見直す**：古いドキュメントを削除する
+- **コンテンツを更新**：情報が変更されたら再アップロードする
+- **ステータスを監視**：失敗した埋め込みがないか確認する
+- **サイズを最適化**：可能な場合は大きなドキュメントを分割する
 
-## Integration with AI Features
+## AI機能との連携
 
-The Knowledge Library integrates with:
+ナレッジライブラリは以下の機能と連携します：
 
-### AI Email Writer
+### AIメールライター
 
-When creating AI-generated emails:
+AI生成メールを作成する際：
 
-1. **Enable RAG Context** in the email writer
-2. AI searches your Knowledge Library for relevant information
-3. Retrieved content is used to personalize emails
-4. Emails contain accurate, context-aware information
+1. メールライターで**RAGコンテキストを有効**にします
+2. AIがナレッジライブラリから関連情報を検索します
+3. 取得したコンテンツを使用してメールをパーソナライズします
+4. 正確でコンテキストに基づいた情報を含むメールが生成されます
 
-**Example:**
-- You upload a product catalog PDF
-- AI generates emails referencing specific products
-- Each email mentions products relevant to the recipient
+**例：**
+- 製品カタログのPDFをアップロードする
+- AIが特定の製品を参照するメールを生成する
+- 各メールが受信者に関連する製品に言及する
 
-### AI Marketing Assistant
+### AIマーケティングアシスタント
 
-When chatting with the AI assistant:
+AIアシスタントとチャットする際：
 
-1. **Toggle RAG Context** (📖 icon)
-2. Ask questions about your business, products, or services
-3. AI searches Knowledge Library for answers
-4. Responses are based on YOUR documentation
+1. **RAGコンテキストを切り替える**（📖アイコン）
+2. あなたのビジネス、製品、サービスについて質問します
+3. AIがナレッジライブラリから回答を検索します
+4. 回答はあなたのドキュメントに基づいています
 
-**Example Questions:**
-- "What are our key product features?"
-- "How does our pricing compare to competitors?"
-- "What's our refund policy?"
-- "Generate a marketing email for Product X"
+**質問例：**
+- "主要な製品機能は何ですか？"
+- "競合と比較して価格はどうですか？"
+- "返金ポリシーはどうなっていますか？"
+- "製品Xのマーケティングメールを作成して"
 
-## Example Use Cases
+## ユースケース例
 
-### Use Case 1: Product Marketing
+### ユースケース1：製品マーケティング
 
-**Documents to Upload:**
-- Product brochures
-- Feature specifications
-- Pricing guides
-- Comparison charts
-- Case studies
+**アップロードするドキュメント：**
+- 製品パンフレット
+- 機能仕様書
+- 価格ガイド
+- 比較表
+- ケーススタディ
 
-**Result:** AI generates detailed, accurate product emails.
+**結果：** AIが詳細で正確な製品メールを生成します。
 
-### Use Case 2: Service Businesses
+### ユースケース2：サービス業
 
-**Documents to Upload:**
-- Service descriptions
-- Process documentation
-- Client testimonials
-- Portfolio samples
-- Pricing packages
+**アップロードするドキュメント：**
+- サービス説明書
+- プロセスドキュメント
+- クライアントの声
+- ポートフォリオサンプル
+- 価格パッケージ
 
-**Result:** AI creates service-focused outreach with specific details.
+**結果：** AIが具体的な詳細を含むサービス重視のアウトリーチを作成します。
 
-### Use Case 3: Agency Outreach
+### ユースケース3：エージェンシーのアウトリーチ
 
-**Documents to Upload:**
-- Agency capabilities
-- Portfolio pieces
-- Case studies
-- Team bios
-- Service packages
+**アップロードするドキュメント：**
+- エージェンシーの提供サービス
+- ポートフォリオ作品
+- ケーススタディ
+- チーム紹介
+- サービスパッケージ
 
-**Result:** AI personalizes agency pitches to each prospect.
+**結果：** AIが各見込み客に合わせたエージェンシーピッチを作成します。
 
-### Use Case 4: SaaS Companies
+### ユースケース4：SaaS企業
 
-**Documents to Upload:**
-- Feature documentation
-- API guides
-- Pricing tiers
-- Onboarding materials
-- Webinar transcripts
+**アップロードするドキュメント：**
+- 機能ドキュメント
+- APIガイド
+- 価格ティア
+- オンボーディング資料
+- ウェビナー録画画像
 
-**Result:** AI generates technical yet accessible outreach.
+**結果：** AIが技術的でありながらアクセスしやすいアウトリーチを生成します。
 
-## Technical Details
+## 技術的な詳細
 
-### How RAG Works
+### RAGの仕組み
 
-1. **Document Ingestion**:
-   - Files are uploaded and saved to database
-   - Metadata (name, type, size, date) is recorded
+1. **ドキュメントの取り込み**：
+   - ファイルがアップロードされ、データベースに保存されます
+   - メタデータ（名前、タイプ、サイズ、日付）が記録されます
 
-2. **Text Extraction**:
-   - Text is extracted from different file formats
-   - Formatting is preserved where possible
+2. **テキスト抽出**：
+   - さまざまなファイル形式からテキストが抽出されます
+   - 可能な限りフォーマットが保持されます
 
-3. **Chunking**:
-   - Documents are split into smaller segments (chunks)
-   - Typical chunk size: 500-1000 characters
-   - Overlap between chunks maintains context
+3. **チャンキング**：
+   - ドキュメントが小さなセグメント（チャンク）に分割されます
+   - 一般的なチャンクサイズ：500〜1000文字
+   - チャンク間の重複によりコンテキストが維持されます
 
-4. **Embedding Creation**:
-   - Each chunk is converted to a vector embedding
-   - Embeddings capture semantic meaning
-   - Stored in vector database for fast retrieval
+4. **埋め込みの作成**：
+   - 各チャンクがベクトル埋め込みに変換されます
+   - 埋め込みは意味的な意味を捉えます
+   - 高速な検索のためにベクトルデータベースに保存されます
 
-5. **Semantic Search**:
-   - When generating content, AI searches for relevant chunks
-   - Similarity matching finds most relevant content
-   - Retrieved chunks are included as context
+5. **意味検索**：
+   - コンテンツ生成時に、AIが関連するチャンクを検索します
+   - 類似度マッチングで最も関連性の高いコンテンツを見つけます
+   - 取得したチャンクがコンテキストとして含まれます
 
-6. **Content Generation**:
-   - AI uses retrieved context + prompt
-   - Generates personalized, accurate content
-   - References your specific knowledge
+6. **コンテンツ生成**：
+   - AIが取得したコンテキストとプロンプトを使用します
+   - パーソナライズされた正確なコンテンツを生成します
+   - あなた固有のナレッジを参照します
 
-### Storage and Performance
+### ストレージとパフォーマンス
 
-- **Storage**: Documents stored in local SQLite database
-- **Vector Database**: Optimized for fast similarity search
-- **Performance**: Millisecond retrieval for relevant content
-- **Scalability**: Handles thousands of documents efficiently
+- **ストレージ**：ドキュメントはローカルのSQLiteデータベースに保存されます
+- **ベクトルデータベース**：高速な類似度検索用に最適化されています
+- **パフォーマンス**：関連コンテンツの検索はミリ秒単位で行われます
+- **スケーラビリティ**：数千のドキュメントを効率的に処理します
 
-## Security and Privacy
+## セキュリティとプライバシー
 
-### Data Storage
+### データストレージ
 
-- **Local Storage**: All documents stored locally on your machine
-- **No Cloud Upload**: Original files remain on your computer
-- **Encrypted**: Database can be encrypted for additional security
+- **ローカルストレージ**：すべてのドキュメントはお使いのコンピューターにローカル保存されます
+- **クラウドアップロードなし**：元のファイルはお使いのコンピューターに残ります
+- **暗号化**：追加のセキュリティのためデータベースを暗号化できます
 
-### Privacy Considerations
+### プライバシーに関する考慮事項
 
-- **Your Knowledge**: Only you have access to your documents
-- **AI Processing**: Embeddings created locally or on your servers
-- **No Training Data**: Your documents aren't used to train public AI models
+- **あなたのナレッジ**：あなたのドキュメントにアクセスできるのはあなただけです
+- **AI処理**：埋め込みはローカルまたはあなたのサーバー上で作成されます
+- **トレーニングデータとして不使用**：あなたのドキュメントは公開AIモデルのトレーニングに使用されません
 
-:::tip Confidential Information
+:::tip 機密情報について
 
-The Knowledge Library is perfect for:
-- Internal product documentation
-- Confidential pricing information
-- Proprietary business processes
-- Client-specific information
+ナレッジライブラリは以下の用途に最適です：
+- 社内製品ドキュメント
+- 機密性の高い価格情報
+- 独自のビジネスプロセス
+- クライアント固有の情報
 
 :::
 
-## Next Steps
+## 次のステップ
 
-Now that you've built your Knowledge Library:
+ナレッジライブラリを構築したら、次は：
 
-- [Create AI-generated email campaigns](./ai-email-writer)
-- [Use the AI Marketing Assistant](./ai-marketing-assistant)
-- [Set up batch email sending](../lead-generation/batch-email-sending)
+- [AI生成メールキャンペーンを作成する](./ai-email-writer)
+- [AIマーケティングアシスタントを使用する](./ai-marketing-assistant)
+- [バッチメール送信を設定する](../lead-generation/batch-email-sending)
 
 ---
 
-**Ready to build your knowledge base?** Start by uploading your product documentation, pricing guides, and marketing materials to power personalized AI outreach.
+**ナレッジベースを構築する準備はできましたか？** 製品ドキュメント、価格ガイド、マーケティング資料をアップロードして、パーソナライズされたAIアウトリーチを始めましょう。

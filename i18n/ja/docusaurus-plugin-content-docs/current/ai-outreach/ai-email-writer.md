@@ -2,80 +2,80 @@
 id: ai-email-writer
 title: AI Email Writer
 sidebar_label: AI Email Writer
-description: Create personalized, AI-generated email templates with variable substitution and Knowledge Library integration.
+description: 変数置換とナレッジライブラリ連携を備えた、パーソナライズされたAI生成メールテンプレートを作成します。
 ---
 
 # AI Email Writer
 
-The AI Email Writer is aiFetchly's intelligent email creation system. Generate personalized outreach emails, create reusable templates with dynamic variables, and leverage your Knowledge Library for context-aware messaging.
+AI Email Writerは、aiFetchlyのインテリジェントなメール作成システムです。パーソナライズされたアウトリーチメールの生成、動的変数を用いた再利用可能なテンプレートの作成、そしてナレッジライブラリを活用したコンテキストに応じたメッセージングが可能です。
 
-## Understanding AI Email Generation
+## AIメール生成について
 
-Traditional email templates are static and generic. aiFetchly's AI Email Writer:
+従来のメールテンプレートは静的で画一的なものでした。aiFetchlyのAI Email Writerは以下を実現します：
 
-- **Generates unique content** for each recipient
-- **Incorporates your knowledge base** through RAG integration
-- **Personalizes at scale** while maintaining quality
-- **Adapts to different contexts** and recipient types
+- **受信者ごとにユニークなコンテンツを生成**
+- **RAG連携によりナレッジベースを取り込み**
+- **品質を保ちながら大規模にパーソナライズ**
+- **様々なコンテキストや受信者タイプに適応**
 
-:::info AI + Knowledge Library
+:::info AI + ナレッジライブラリ
 
-For best results, [upload relevant documents](./knowledge-library) to your Knowledge Library before generating emails. The AI will reference your specific products, services, and value propositions.
+最良の結果を得るために、メールを生成する前に[関連ドキュメントをアップロード](./knowledge-library)してナレッジライブラリに登録してください。AIはあなたの製品、サービス、価値提案に関する具体的な情報を参照します。
 
 :::
 
-## Email Templates Overview
+## メールテンプレートの概要
 
-Templates are the foundation of your email campaigns. They contain:
+テンプレートはメールキャンペーンの基盤です。以下の要素で構成されます：
 
-1. **Static Content**: Base message that stays consistent
-2. **Dynamic Variables**: Placeholders that get replaced with recipient-specific data
-3. **AI Generation**: Optional AI-powered content creation
-4. **Rich Formatting**: Support for various text styles
+1. **静的コンテンツ**：常に一定のベースメッセージ
+2. **動的変数**：受信者固有のデータに置き換えられるプレースホルダー
+3. **AI生成**：オプションのAI搭載コンテンツ作成
+4. **リッチフォーマット**：各種テキストスタイルのサポート
 
-## Creating Email Templates
+## メールテンプレートの作成
 
-### Step 1: Navigate to Email Marketing
+### ステップ1：Email Marketingに移動
 
-1. Click **Email Marketing** in the left navigation menu
-2. Select **Templates** from the submenu
-3. Click **Create New Template**
+1. 左側のナビゲーションメニューで**Email Marketing**をクリック
+2. サブメニューから**Templates**を選択
+3. **Create New Template**をクリック
 
-### Step 2: Template Information
+### ステップ2：テンプレート情報の入力
 
-Enter the following details:
+以下の詳細を入力します：
 
-#### Title (Required)
+#### タイトル（必須）
 
-- **Purpose**: Identify the template in your list
-- **Example**: "Product Launch Outreach", "Partnership Proposal"
-- **Guideline**: Use descriptive, specific names
+- **目的**：テンプレート一覧で識別するための名前
+- **例**：「Product Launch Outreach」「Partnership Proposal」
+- **ガイドライン**：説明的で具体的な名前を使用
 
-#### Description (Optional)
+#### 説明（任意）
 
-- **Purpose**: Provide context about the template's use case
-- **Example**: "Initial outreach for new product launch to qualified leads"
-- **Guideline**: Include when to use, target audience, and key messaging
+- **目的**：テンプレートの使用例に関するコンテキストの提供
+- **例**：「見込み客を対象とした新製品ローンチの初期アウトリーチ」
+- **ガイドライン**：使用タイミング、ターゲット層、主要メッセージを含める
 
-### Step 3: Template Content
+### ステップ3：テンプレートコンテンツ
 
-Write your email content in the rich text editor.
+リッチテキストエディタでメールの内容を作成します。
 
-#### Using Variables
+#### 変数の使用
 
-Variables are placeholders that get replaced with actual data when sending emails.
+変数は、メール送信時に実際のデータに置き換えられるプレースホルダーです。
 
-**Available Variables:**
+**使用可能な変数：**
 
-| Variable | Description | Example Output |
+| 変数 | 説明 | 出力例 |
 |----------|-------------|----------------|
-| `{$send_time}` | Current timestamp | "2024-01-15 10:30 AM" |
-| `{$sender}` | Sender name | "John Smith" |
-| `{$receiver_email}` | Recipient's email | "contact@company.com" |
-| `{$url}` | Source URL | "https://company.com" |
-| `{$description}` | Description text | "Software company in New York" |
+| `{$send_time}` | 現在のタイムスタンプ | "2024-01-15 10:30 AM" |
+| `{$sender}` | 送信者名 | "John Smith" |
+| `{$receiver_email}` | 受信者のメールアドレス | "contact@company.com" |
+| `{$url}` | 送信元URL | "https://company.com" |
+| `{$description}` | 説明テキスト | "Software company in New York" |
 
-**Example Template with Variables:**
+**変数を使用したテンプレート例：**
 
 ```
 Subject: Partnership Opportunity from {$sender}
@@ -94,7 +94,7 @@ Best regards,
 Sent: {$send_time}
 ```
 
-**After Variable Substitution:**
+**変数置換後：**
 
 ```
 Subject: Partnership Opportunity from John Smith
@@ -113,91 +113,91 @@ John Smith
 Sent: 2024-01-15 10:30 AM
 ```
 
-### Step 4: AI-Generated Content (Optional)
+### ステップ4：AI生成コンテンツ（任意）
 
-For AI-powered content generation:
+AIによるコンテンツ生成を利用する場合：
 
-1. **Toggle "Use AI Generation"**
-2. **Provide a prompt** describing what you want
-3. **Enable RAG Context** to use Knowledge Library
-4. **Click Generate** to create content
+1. **「Use AI Generation」をオンにする**
+2. **プロンプトを入力**して生成したい内容を記述
+3. **RAG Contextを有効化**してナレッジライブラリを使用
+4. **Generateをクリック**してコンテンツを作成
 
-**Example Prompts:**
+**プロンプト例：**
 - "Write a friendly introduction email for our marketing services"
 - "Create a personalized outreach mentioning our SaaS platform features"
 - "Generate a partnership proposal email"
 
-:::tip AI + RAG Integration
+:::tip AI + RAG連携
 
-When RAG context is enabled, the AI will automatically reference your Knowledge Library to include accurate information about your products, services, and value propositions.
+RAGコンテキストを有効にすると、AIは自動的にナレッジライブラリを参照し、製品、サービス、価値提案に関する正確な情報を含めます。
 
 :::
 
-### Step 5: Preview and Test
+### ステップ5：プレビューとテスト
 
-1. **Click "Preview"** to see the template with sample variables
-2. **Test different variable combinations**
-3. **Edit content** as needed
-4. **Save Template** when satisfied
+1. **「Preview」をクリック**してサンプル変数での表示を確認
+2. **様々な変数の組み合わせをテスト**
+3. **必要に応じてコンテンツを編集**
+4. **満足したらSave Template**
 
-## Managing Templates
+## テンプレートの管理
 
-### Template List
+### テンプレート一覧
 
-Navigate to **Email Marketing** → **Templates** to see all templates.
+**Email Marketing** → **Templates**に移動してすべてのテンプレートを確認します。
 
-**Template Information:**
-- Title
-- Description
-- Creation date
-- Last modified date
-- Usage count
+**テンプレート情報：**
+- タイトル
+- 説明
+- 作成日
+- 最終更新日
+- 使用回数
 
-### Template Actions
+### テンプレートの操作
 
-| Action | Description |
+| 操作 | 説明 |
 |--------|-------------|
-| **Edit** | Modify template content and variables |
-| **Duplicate** | Create a copy of the template |
-| **Delete** | Remove template (confirm required) |
-| **Preview** | See template with sample variables |
-| **Use in Campaign** | Select for batch email sending |
+| **Edit** | テンプレートの内容と変数を変更 |
+| **Duplicate** | テンプレートのコピーを作成 |
+| **Delete** | テンプレートを削除（確認が必要） |
+| **Preview** | サンプル変数での表示を確認 |
+| **Use in Campaign** | バッチメール送信に選択 |
 
-### Best Practices for Templates
+### テンプレートのベストプラクティス
 
-#### 1. Clear Subject Lines
+#### 1. 明確な件名
 
 - ✅ "Partnership Opportunity: [Their Company] + [Your Company]"
 - ✅ "Quick Question About [Their Industry]"
-- ❌ "Hello" or "Hi"
+- ❌ "Hello" や "Hi"
 
-#### 2. Personalization
+#### 2. パーソナライゼーション
 
-- Use variables to personalize content
-- Mention specific details about the recipient
-- Reference their website, industry, or work
+- 変数を使用してコンテンツをパーソナライズ
+- 受信者に関する具体的な詳細に言及
+- 受信者のウェブサイト、業界、または活動に触れる
 
-#### 3. Value-First Approach
+#### 3. 価値優先のアプローチ
 
-- Lead with value, not just a pitch
-- Explain benefits, not just features
-- Be clear about what's in it for them
+- 単なる売り込みではなく、まず価値を提示
+- 機能だけでなくメリットを説明
+- 相手にとって何のメリットがあるかを明確に
 
-#### 4. Clear Call-to-Action
+#### 4. 明確なコールトゥアクション
 
-- Single, clear next step
-- Easy to understand
-- Low friction (e.g., "Reply to this email")
+- 単一の明確な次のステップ
+- 分かりやすい内容
+- 低いハードル（例：「このメールに返信してください」）
 
-#### 5. Professional Tone
+#### 5. プロフェッショナルなトーン
 
-- Proofread for grammar and spelling
-- Maintain professional language
-- Avoid overly casual or salesy language
+- 文法とスペルを校正
+- プロフェッショナルな言葉遣いを維持
+- カジュアルすぎる、またはセールス色の強すぎる表現を避ける
 
-## Template Examples
+## テンプレート例
 
-### Example 1: Product Outreach
+### 例1：製品アウトリーチ
 
 **Subject:** Improve Your [Industry] Workflow with [Product Name]
 
@@ -215,7 +215,7 @@ Best,
 {$sender}
 ```
 
-### Example 2: Partnership Proposal
+### 例2：パートナーシップ提案
 
 **Subject:** Partnership Opportunity Between [Their Company] & [Your Company]
 
@@ -236,7 +236,7 @@ Best regards,
 {$sender}
 ```
 
-### Example 3: Content Collaboration
+### 例3：コンテンツコラボレーション
 
 **Subject:** Content Collaboration Opportunity
 
@@ -256,7 +256,7 @@ Best,
 {$sender}
 ```
 
-### Example 4: Service Introduction
+### 例4：サービス紹介
 
 **Subject:** [Service Type] for [Their Company]
 
@@ -277,11 +277,11 @@ Best regards,
 {$sender}
 ```
 
-## Advanced Features
+## 高度な機能
 
-### Conditional Content
+### 条件付きコンテンツ
 
-Create variations based on recipient data:
+受信者データに基づいてコンテンツを出し分けます：
 
 ```
 {$if_industry}
@@ -293,26 +293,26 @@ Adjust messaging based on company size
 {$endif}
 ```
 
-### Multi-Language Support
+### 多言語サポート
 
-Create templates in multiple languages:
+複数の言語でテンプレートを作成します：
 
-1. **Duplicate template** for each language
-2. **Translate content** maintaining variable structure
-3. **Use appropriate template** based on recipient location
+1. 各言語ごとに**テンプレートを複製**
+2. 変数の構造を維持したまま**コンテンツを翻訳**
+3. 受信者の地域に応じて**適切なテンプレートを使用**
 
-### A/B Testing
+### A/Bテスト
 
-Create multiple template variations:
+複数のテンプレートバリエーションを作成します：
 
-1. **Duplicate template** 2-3 times
-2. **Make one change** per version (subject line, opening, CTA)
-3. **Test with small batches** first
-4. **Measure results** and use winning version
+1. テンプレートを2〜3回**複製**
+2. 各バージョンで**1箇所のみ変更**（件名、冒頭の挨拶、CTA）
+3. まず**小規模なバッチでテスト**
+4. **結果を測定**し、最も効果的なバージョンを採用
 
-### Dynamic Content Blocks
+### 動的コンテンツブロック
 
-Use different content sections based on variables:
+変数に基づいて異なるコンテンツセクションを使用します：
 
 ```
 {$value_proposition_1}
@@ -320,89 +320,89 @@ Alternative: {$value_proposition_2}
 Alternative: {$value_proposition_3}
 ```
 
-## Integration with Batch Email Sending
+## バッチメール送信との連携
 
-Templates are used in the batch email sending workflow:
+テンプレートはバッチメール送信ワークフローで使用されます：
 
-1. **Choose Template** in Step 2 of the batch email process
-2. **Variables are automatically populated** from your email list
-3. **Each recipient gets a personalized email**
-4. **AI can enhance** the template with Knowledge Library content
+1. バッチメール処理のステップ2で**テンプレートを選択**
+2. メールリストから**変数が自動的に設定**
+3. **各受信者にパーソナライズされたメールが送信**
+4. AIがナレッジライブラリのコンテンツでテンプレートを**強化**
 
-For detailed instructions, see [Batch Email Sending](../lead-generation/batch-email-sending).
+詳しい手順については、[バッチメール送信](../lead-generation/batch-email-sending)を参照してください。
 
-## Troubleshooting
+## トラブルシューティング
 
-### Variables Not Replaced
+### 変数が置換されない
 
-**Possible causes:**
-- Variable names misspelled
-- Missing data in email list
-- Incorrect variable syntax
+**考えられる原因：**
+- 変数名のスペルミス
+- メールリストにデータが不足
+- 変数の構文エラー
 
-**Solutions:**
-1. Check variable syntax: `{$variable_name}`
-2. Verify data exists for all variables
-3. Test with preview before sending
+**解決策：**
+1. 変数の構文を確認：`{$variable_name}`
+2. すべての変数に対応するデータが存在するか確認
+3. 送信前にプレビューでテスト
 
-### AI Generation Not Working
+### AI生成が動作しない
 
-**Possible causes:**
-- AI service not configured
-- RAG context enabled but no documents in Knowledge Library
-- Prompt too vague
+**考えられる原因：**
+- AIサービスが設定されていない
+- RAGコンテキストが有効だが、ナレッジライブラリにドキュメントがない
+- プロンプトが曖昧すぎる
 
-**Solutions:**
-1. Check AI settings in system configuration
-2. Upload relevant documents to Knowledge Library
-3. Provide specific, detailed prompts
-4. Try with RAG disabled first
+**解決策：**
+1. システム設定でAI設定を確認
+2. ナレッジライブラリに関連ドキュメントをアップロード
+3. 具体的で詳細なプロンプトを入力
+4. まずRAGを無効にして試す
 
-### Template Too Generic
+### テンプレートが一般的すぎる
 
-**Possible causes:**
-- Overuse of static text
-- Not enough variables
-- AI generation disabled
+**考えられる原因：**
+- 静的テキストの多用
+- 変数が不足
+- AI生成が無効
 
-**Solutions:**
-1. Add more variables for personalization
-2. Enable AI generation for dynamic content
-3. Use RAG context for specific information
-4. Create multiple templates for different use cases
+**解決策：**
+1. パーソナライズのための変数を追加
+2. 動的コンテンツのためにAI生成を有効化
+3. 具体的な情報のためにRAGコンテキストを使用
+4. 異なる使用例に合わせて複数のテンプレートを作成
 
-## Best Practices Summary
+## ベストプラクティスまとめ
 
-### DO ✅
+### 推奨 ✅
 
-- **Personalize content** with variables
-- **Test thoroughly** before campaigns
-- **Keep subject lines** clear and compelling
-- **Provide value** upfront
-- **Use clear CTAs**
-- **Proofread** all templates
-- **Create variations** for different audiences
-- **Leverage AI** with RAG context
+- 変数で**コンテンツをパーソナライズ**
+- キャンペーン前に**十分にテスト**
+- **件名**を明確で魅力的に
+- **価値を先に提示**
+- **明確なCTAを使用**
+- すべてのテンプレートを**校正**
+- 異なるオーディエンス向けに**バリエーションを作成**
+- RAGコンテキストで**AIを活用**
 
-### DON'T ❌
+### 非推奨 ❌
 
-- **Don't be overly salesy**
-- **Don't use vague subject lines**
-- **Don't send without testing**
-- **Don't ignore recipient context**
-- **Don't make emails too long**
-- **Don't use excessive formatting**
-- **Don't forget call-to-action**
-- **Don't send from "no-reply" addresses**
+- **セールス色を強くしすぎない**
+- **曖昧な件名を使用しない**
+- **テストせずに送信しない**
+- **受信者のコンテキストを無視しない**
+- **メールを長くしすぎない**
+- **過度なフォーマットを使用しない**
+- **コールトゥアクションを忘れない**
+- **「no-reply」アドレスから送信しない**
 
-## Next Steps
+## 次のステップ
 
-After creating your templates:
+テンプレートを作成した後：
 
-- [Configure email services (SMTP)](../lead-generation/batch-email-sending#configuring-email-services)
-- [Set up batch email sending](../lead-generation/batch-email-sending)
-- [Use the AI Marketing Assistant](./ai-marketing-assistant) for strategy
+- [メールサービスの設定（SMTP）](../lead-generation/batch-email-sending#configuring-email-services)
+- [バッチメール送信のセットアップ](../lead-generation/batch-email-sending)
+- 戦略のために[AI Marketing Assistantを使用](./ai-marketing-assistant)
 
 ---
 
-**Ready to create templates?** Start with a simple outreach template and gradually add more personalization and AI-generated content as you become familiar with the system.
+**テンプレートを作成する準備はできましたか？** シンプルなアウトリーチテンプレートから始め、システムに慣れるにつれてパーソナライゼーションやAI生成コンテンツを徐々に追加していきましょう。

@@ -2,474 +2,474 @@
 id: ai-marketing-assistant
 title: AI Marketing Assistant
 sidebar_label: AI Marketing Assistant
-description: Get strategic marketing guidance and content ideas with aiFetchly's AI-powered chat assistant.
+description: Obtenga orientación estratégica de marketing e ideas de contenido con el asistente de chat potenciado por IA de aiFetchly.
 ---
 
 # AI Marketing Assistant
 
-The AI Marketing Assistant is your intelligent marketing consultant. Powered by advanced AI with access to your Knowledge Library, it provides strategic guidance, generates content ideas, helps with campaign planning, and answers questions about your business, products, and industry.
+El Asistente de Marketing IA es su consultor de marketing inteligente. Potenciado por IA avanzada con acceso a su Biblioteca de Conocimiento, proporciona orientación estratégica, genera ideas de contenido, ayuda con la planificación de campañas y responde preguntas sobre su negocio, productos e industria.
 
-## What is the AI Marketing Assistant?
+## ¿Qué es el Asistente de Marketing IA?
 
-Unlike generic chatbots, the AI Marketing Assistant:
+A diferencia de los chatbots genéricos, el Asistente de Marketing IA:
 
-- **Knows your business** through the Knowledge Library
-- **Provides strategic guidance** for marketing decisions
-- **Generates content ideas** tailored to your offerings
-- **Assists with campaign planning** and execution
-- **Answers questions** about your specific industry
+- **Conoce su negocio** a través de la Biblioteca de Conocimiento
+- **Proporciona orientación estratégica** para decisiones de marketing
+- **Genera ideas de contenido** adaptadas a sus ofertas
+- **Asiste con la planificación de campañas** y su ejecución
+- **Responde preguntas** sobre su industria específica
 
-:::info Your Personal Marketing Consultant
+:::info Su Consultor de Marketing Personal
 
-Think of the AI Marketing Assistant as an always-available marketing expert who has studied all your documentation and understands your specific business context.
-
-:::
-
-## Accessing the AI Marketing Assistant
-
-### Opening the Chat
-
-**Method 1: Chat Icon**
-
-1. Look for the **chat icon** (💬) in the header
-2. Click the icon to open the chat panel
-
-**Method 2: Keyboard Shortcut**
-
-- **Windows/Linux**: Press `Ctrl + K`
-- **macOS**: Press `Cmd + K`
-
-### Chat Interface
-
-The chat panel displays:
-
-- **Message History**: Previous conversations and messages
-- **Input Area**: Type your questions or requests
-- **RAG Toggle**: Enable/disable Knowledge Library context
-- **Action Buttons**: New conversation, clear chat, refresh
-
-## Chat Features
-
-### RAG Context Integration
-
-Toggle the **RAG context** button (📖) to enable Knowledge Library integration.
-
-**When Enabled:**
-- AI searches your Knowledge Library for relevant information
-- Retrieved context is included in responses
-- Answers are specific to your business/products
-
-**When Disabled:**
-- AI provides general marketing guidance
-- No specific business context
-- Broader, less personalized responses
-
-:::tip Best Practice
-
-Keep RAG context enabled for questions about your specific business, products, or services. Disable for general marketing concepts and strategies.
+Piense en el Asistente de Marketing IA como un experto en marketing siempre disponible que ha estudiado toda su documentación y comprende su contexto de negocio específico.
 
 :::
 
-### Message Formatting
+## Acceso al Asistente de Marketing IA
 
-The AI Marketing Assistant supports rich text formatting:
+### Apertura del chat
 
-- **Bold text**: `**text**` or `__text__`
-- *Italic text*: `*text*` or `_text_`
-- `Inline code`: `` `code` ``
-- [Links]: `[text](url)`
+**Método 1: Icono de chat**
 
-### Conversation Management
+1. Busque el **icono de chat** (💬) en la cabecera
+2. Haga clic en el icono para abrir el panel de chat
 
-**New Conversation**
-- Click the **New Conversation** button
-- Starts a fresh chat session
-- Previous conversations are saved for reference
+**Método 2: Atajo de teclado**
 
-**Clear Chat**
-- Click **Clear Chat** to remove all messages
-- Confirmation dialog prevents accidental deletion
-- Chat history is permanently removed
+- **Windows/Linux**: Presione `Ctrl + K`
+- **macOS**: Presione `Cmd + K`
 
-**Refresh**
-- Click **Refresh** to reload chat history
-- Useful if messages aren't displaying correctly
+### Interfaz del chat
 
-## What You Can Ask
+El panel de chat muestra:
 
-The AI Marketing Assistant can help with:
+- **Historial de mensajes**: Conversaciones y mensajes anteriores
+- **Área de entrada**: Escriba sus preguntas o solicitudes
+- **Alternancia RAG**: Habilitar/deshabilitar el contexto de la Biblioteca de Conocimiento
+- **Botones de acción**: Nueva conversación, limpiar chat, actualizar
 
-### 1. Marketing Strategy
+## Funciones del chat
 
-**Example Questions:**
-- "What marketing channels work best for B2B SaaS companies?"
-- "How should I position our product against competitors?"
-- "What's a good go-to-market strategy for [product]?"
-- "How can I improve our conversion rates?"
+### Integración de contexto RAG
 
-**The AI Will:**
-- Analyze your specific situation
-- Reference your Knowledge Library for context
-- Provide actionable recommendations
-- Suggest metrics to track
+Active el botón de **contexto RAG** (📖) para habilitar la integración con la Biblioteca de Conocimiento.
 
-### 2. Content Creation
+**Cuando está habilitado:**
+- La IA busca información relevante en su Biblioteca de Conocimiento
+- El contexto recuperado se incluye en las respuestas
+- Las respuestas son específicas para su negocio/productos
 
-**Example Requests:**
-- "Write a blog post outline about [topic]"
-- "Generate 5 email subject lines for [campaign]"
-- "Create a social media content calendar for next week"
-- "Write a landing page headline for [product]"
+**Cuando está deshabilitado:**
+- La IA proporciona orientación general de marketing
+- Sin contexto específico del negocio
+- Respuestas más amplias y menos personalizadas
 
-**The AI Will:**
-- Use your product/service information
-- Generate multiple options
-- Tailor content to your target audience
-- Maintain brand voice consistency
+:::tip Mejor práctica
 
-### 3. Campaign Planning
+Mantenga el contexto RAG habilitado para preguntas sobre su negocio específico, productos o servicios. Desactívelo para conceptos generales de marketing y estrategias.
 
-**Example Questions:**
-- "What should I include in a product launch campaign?"
-- "How do I structure a drip email sequence?"
-- "What's a good A/B testing strategy for our emails?"
-- "How can we segment our email list effectively?"
+:::
 
-**The AI Will:**
-- Create step-by-step plans
-- Suggest timelines and milestones
-- Recommend tools and resources
-- Identify potential pitfalls
+### Formato de mensajes
 
-### 4. Industry Insights
+El Asistente de Marketing IA admite formato de texto enriquecido:
 
-**Example Questions:**
-- "What are the current trends in [industry]?"
-- "How do we differentiate from [competitor]?"
-- "What pain points should we address in our messaging?"
-- "Who is our ideal customer profile?"
+- **Texto en negrita**: `**texto**` o `__texto__`
+- *Texto en cursiva*: `*texto*` o `_texto_`
+- `Código en línea`: `` `código` ``
+- [Enlaces]: `[texto](url)`
 
-**The AI Will:**
-- Leverage your uploaded documentation
-- Provide industry-specific insights
-- Identify competitive advantages
-- Suggest targeting strategies
+### Gestión de conversaciones
 
-### 5. Product Knowledge
+**Nueva conversación**
+- Haga clic en el botón **New Conversation**
+- Inicia una nueva sesión de chat
+- Las conversaciones anteriores se guardan para referencia
 
-**Example Questions:**
-- "What are the key features of [product]?"
-- "How does our pricing compare to alternatives?"
-- "What are our main value propositions?"
-- "How should I describe [feature] to prospects?"
+**Limpiar chat**
+- Haga clic en **Clear Chat** para eliminar todos los mensajes
+- Un diálogo de confirmación evita la eliminación accidental
+- El historial de chat se elimina permanentemente
 
-**The AI Will:**
-- Reference your product documentation
-- Extract key selling points
-- Suggest positioning language
-- Maintain accuracy
+**Actualizar**
+- Haga clic en **Refresh** para recargar el historial de chat
+- Útil si los mensajes no se muestran correctamente
 
-## Example Conversations
+## Qué puede preguntar
 
-### Example 1: Product Launch Strategy
+El Asistente de Marketing IA puede ayudar con:
 
-**User:**
-> We're launching a new email automation tool. What should our go-to-market strategy include?
+### 1. Estrategia de marketing
 
-**AI Marketing Assistant (with RAG):**
-> Based on your product documentation, here's a go-to-market strategy for your email automation tool:
+**Preguntas de ejemplo:**
+- "¿Qué canales de marketing funcionan mejor para empresas SaaS B2B?"
+- "¿Cómo debería posicionar nuestro producto frente a los competidores?"
+- "¿Cuál es una buena estrategia de salida al mercado para [producto]?"
+- "¿Cómo puedo mejorar nuestras tasas de conversión?"
+
+**La IA hará:**
+- Analizar su situación específica
+- Referenciar su Biblioteca de Conocimiento para contexto
+- Proporcionar recomendaciones accionables
+- Sugerir métricas para rastrear
+
+### 2. Creación de contenido
+
+**Solicitudes de ejemplo:**
+- "Escriba un esquema de publicación de blog sobre [tema]"
+- "Genere 5 líneas de asunto de correo para [campaña]"
+- "Cree un calendario de contenido de redes sociales para la próxima semana"
+- "Escriba un titular de página de destino para [producto]"
+
+**La IA hará:**
+- Usar información de su producto/servicio
+- Generar múltiples opciones
+- Adaptar el contenido a su audiencia objetivo
+- Mantener la consistencia de la voz de marca
+
+### 3. Planificación de campañas
+
+**Preguntas de ejemplo:**
+- "¿Qué debería incluir en una campaña de lanzamiento de producto?"
+- "¿Cómo estructuro una secuencia de correos goteo?"
+- "¿Cuál es una buena estrategia de pruebas A/B para nuestros correos?"
+- "¿Cómo podemos segmentar nuestra lista de correos eficazmente?"
+
+**La IA hará:**
+- Crear planes paso a paso
+- Sugerir cronogramas e hitos
+- Recomendar herramientas y recursos
+- Identificar posibles obstáculos
+
+### 4. Perspectivas de la industria
+
+**Preguntas de ejemplo:**
+- "¿Cuáles son las tendencias actuales en [industria]?"
+- "¿Cómo nos diferenciamos de [competidor]?"
+- "¿Qué puntos de dolor deberíamos abordar en nuestros mensajes?"
+- "¿Quién es nuestro perfil de cliente ideal?"
+
+**La IA hará:**
+- Aprovechar su documentación cargada
+- Proporcionar perspectivas específicas de la industria
+- Identificar ventajas competitivas
+- Sugerir estrategias de segmentación
+
+### 5. Conocimiento del producto
+
+**Preguntas de ejemplo:**
+- "¿Cuáles son las características clave de [producto]?"
+- "¿Cómo se compara nuestro precio con las alternativas?"
+- "¿Cuáles son nuestras principales propuestas de valor?"
+- "¿Cómo debería describir [característica] a los prospectos?"
+
+**La IA hará:**
+- Referenciar su documentación de producto
+- Extraer puntos de venta clave
+- Sugerir lenguaje de posicionamiento
+- Mantener la precisión
+
+## Ejemplos de conversaciones
+
+### Ejemplo 1: Estrategia de lanzamiento de producto
+
+**Usuario:**
+> Estamos lanzando una nueva herramienta de automatización de correo electrónico. ¿Qué debería incluir nuestra estrategia de salida al mercado?
+
+**Asistente de Marketing IA (con RAG):**
+> Según su documentación de producto, aquí hay una estrategia de salida al mercado para su herramienta de automatización de correo:
 >
-> **Phase 1: Pre-Launch (2-4 weeks before)**
-> - Create anticipation with teaser content
-> - Build a waitlist with early access incentives
-> - Reach out to industry influencers for reviews
-> - Prepare educational content about email automation benefits
+> **Fase 1: Pre-lanzamiento (2-4 semanas antes)**
+> - Crear anticipación con contenido teaser
+> - Construir una lista de espera con incentivos de acceso anticipado
+> - Contactar a influencers de la industria para reseñas
+> - Preparar contenido educativo sobre los beneficios de la automatización de correo
 >
-> **Phase 2: Launch Week**
-> - Launch day announcement to all channels
-> - Host a live demo webinar
-> - Offer limited-time launch discount
-> - Distribute press release to industry publications
+> **Fase 2: Semana de lanzamiento**
+> - Anuncio del día de lanzamiento a todos los canales
+> - Organizar un webinar de demostración en vivo
+> - Ofrecer un descuento de lanzamiento por tiempo limitado
+> - Distribuir comunicado de prensa a publicaciones de la industria
 >
-> **Phase 3: Post-Launch (4-8 weeks after)**
-> - Share customer testimonials and case studies
-> - Create tutorial content and documentation
-> - Gather and feature user feedback
-> - Optimize based on early adoption metrics
+> **Fase 3: Post-lanzamiento (4-8 semanas después)**
+> - Compartir testimonios de clientes y casos de estudio
+> - Crear contenido tutorial y documentación
+> - Recopilar y destacar comentarios de usuarios
+> - Optimizar según métricas de adopción temprana
 >
-> Would you like me to elaborate on any of these phases?
+> ¿Le gustaría que profundice en alguna de estas fases?
 
-### Example 2: Email Campaign Improvement
+### Ejemplo 2: Mejora de campaña de correo
 
-**User:**
-> Our email open rates are low (10%). How can we improve them?
+**Usuario:**
+> Nuestras tasas de apertura de correo son bajas (10%). ¿Cómo podemos mejorarlas?
 
-**AI Marketing Assistant:**
-> Low open rates typically indicate issues with subject lines, sender reputation, or timing. Here are actionable improvements:
+**Asistente de Marketing IA:**
+> Las tasas de apertura bajas generalmente indican problemas con las líneas de asunto, la reputación del remitente o el momento de envío. Aquí hay mejoras accionables:
 >
-> **Immediate Fixes:**
-> 1. **A/B Test Subject Lines**:
->    - Personalization: "John, quick question about [topic]"
->    - Curiosity: "The mistake 80% of [industry] professionals make"
->    - Urgency: "Last chance for [offer]"
->    - Questions: "Have you seen [resource] yet?"
+> **Correcciones inmediatas:**
+> 1. **Pruebas A/B de líneas de asunto**:
+>    - Personalización: "Juan, pregunta rápida sobre [tema]"
+>    - Curiosidad: "El error que comete el 80% de los profesionales de [industria]"
+>    - Urgencia: "Última oportunidad para [oferta]"
+>    - Preguntas: "¿Ha visto [recurso] todavía?"
 >
-> 2. **Clean Your List**:
->    - Remove inactive subscribers (no opens in 6+ months)
->    - Verify email addresses
->    - Re-engage segment: "Still interested?"
+> 2. **Limpie su lista**:
+>    - Eliminar suscriptores inactivos (sin aperturas en 6+ meses)
+>    - Verificar direcciones de correo electrónico
+>    - Segmento de re-engagement: "¿Todavía interesado?"
 >
-> 3. **Optimize Send Times**:
->    - Test Tuesday/Wednesday/Thursday 10 AM - 2 PM
->    - Avoid Monday mornings and weekends
->    - Test with your specific audience
+> 3. **Optimice los horarios de envío**:
+>    - Pruebe martes/miércoles/jueves 10 AM - 2 PM
+>    - Evite lunes por la mañana y fines de semana
+>    - Pruebe con su audiencia específica
 >
-> 4. **Improve Sender Reputation**:
->    - Use consistent "From" name and email
->    - Set up SPF, DKIM, DMARC
->    - Keep spam complaint rate below 0.1%
+> 4. **Mejore la reputación del remitente**:
+>    - Use un nombre "De" y correo consistentes
+>    - Configure SPF, DKIM, DMARC
+>    - Mantenga la tasa de quejas de spam por debajo del 0.1%
 >
-> **Target: 20-25% open rate** is achievable with these improvements.
+> **Objetivo: una tasa de apertura del 20-25%** es alcanzable con estas mejoras.
 >
-> Would you like specific subject line examples for your business?
+> ¿Le gustaría ejemplos específicos de líneas de asunto para su negocio?
 
-### Example 3: Content Calendar Creation
+### Ejemplo 3: Creación de calendario de contenido
 
-**User:**
-> Create a week's worth of LinkedIn content for our marketing agency
+**Usuario:**
+> Cree contenido de LinkedIn para una semana para nuestra agencia de marketing
 
-**AI Marketing Assistant (with RAG):**
-> Here's a LinkedIn content calendar for your marketing agency, based on your services:
+**Asistente de Marketing IA (con RAG):**
+> Aquí hay un calendario de contenido de LinkedIn para su agencia de marketing, basado en sus servicios:
 >
-> **Monday - Thought Leadership**
-> Post: "The biggest misconception about [industry] marketing is [misconception]. Here's what actually works: [3 key points]"
+> **Lunes - Liderazgo de pensamiento**
+> Publicación: "El mayor mito sobre el marketing en [industria] es [mito]. Esto es lo que realmente funciona: [3 puntos clave]"
 >
-> **Tuesday - Case Study**
-> Post: "How we helped [client type] achieve [specific result]: [brief story with before/after metrics]"
+> **Martes - Caso de estudio**
+> Publicación: "Cómo ayudamos a [tipo de cliente] a lograr [resultado específico]: [breve historia con métricas antes/después]"
 >
-> **Wednesday - Educational**
-> Post: "3 [industry] metrics you're probably ignoring (but shouldn't):
-> 1. [Metric 1]
-> 2. [Metric 2]
-> 3. [Metric 3]"
+> **Miércoles - Educativo**
+> Publicación: "3 métricas de [industria] que probablemente está ignorando (pero no debería):
+> 1. [Métrica 1]
+> 2. [Métrica 2]
+> 3. [Métrica 3]"
 >
-> **Thursday - Behind the Scenes**
-> Post: "A day in the life at [Agency Name]: [team/process insight]. This is how we [unique approach]"
+> **Jueves - Detrás de escena**
+> Publicación: "Un día en la vida en [Nombre de la Agencia]: [perspectiva de equipo/proceso]. Así es como [enfoque único]"
 >
-> **Friday - Engagement**
-> Post: "Hot take: [controversial but defensible opinion about industry]. Agree or disagree?"
+> **Viernes - Engagement**
+> Publicación: "Opinión polémica: [opinión controvertida pero defendible sobre la industria]. ¿Está de acuerdo o en desacuerdo?"
 >
-> Each post includes relevant hashtags and a CTA. Would you like me to write the full content for any of these?
+> Cada publicación incluye hashtags relevantes y un CTA. ¿Le gustaría que escriba el contenido completo para alguna de estas?
 
-## Best Practices
+## Mejores prácticas
 
-### 1. Be Specific
+### 1. Sea específico
 
-**Vague:**
-> "How do I market better?"
+**Vago:**
+> "¿Cómo puedo vender mejor?"
 
-**Specific:**
-> "How should I market a B2B SaaS product to mid-market manufacturing companies?"
+**Específico:**
+> "¿Cómo debería comercializar un producto SaaS B2B para empresas medianas del sector manufacturero?"
 
-The more specific your question, the better the AI's guidance.
+Cuanto más específica sea su pregunta, mejor será la orientación de la IA.
 
-### 2. Provide Context
+### 2. Proporcione contexto
 
-**Minimal Context:**
-> "Write an email template"
+**Contexto mínimo:**
+> "Escriba una plantilla de correo"
 
-**With Context:**
-> "Write a cold outreach email template for our web development services, targeting e-commerce companies who need site speed optimization"
+**Con contexto:**
+> "Escriba una plantilla de correo de divulgación en frío para nuestros servicios de desarrollo web, dirigida a empresas de comercio electrónico que necesitan optimización de velocidad del sitio"
 
-Include relevant details about your target audience, goals, and constraints.
+Incluya detalles relevantes sobre su audiencia objetivo, objetivos y restricciones.
 
-### 3. Use RAG Context
+### 3. Use el contexto RAG
 
-Enable RAG context (📖) when asking about:
-- Your products or services
-- Your competitive positioning
-- Your pricing and packaging
-- Your target customers
-- Your brand voice
+Habilite el contexto RAG (📖) al preguntar sobre:
+- Sus productos o servicios
+- Su posicionamiento competitivo
+- Sus precios y paquetes
+- Sus clientes objetivo
+- Su voz de marca
 
-Disable RAG for:
-- General marketing concepts
-- Industry best practices
-- Theoretical frameworks
-- Creative brainstorming
+Deshabilite RAG para:
+- Conceptos generales de marketing
+- Mejores prácticas de la industria
+- Marcos teóricos
+- Lluvia de ideas creativa
 
-### 4. Iterate and Refine
+### 4. Itere y refine
 
-The AI's first response is a starting point. Follow up with:
-- "Can you make this more concise?"
-- "What about [alternative approach]?"
-- "Give me 3 more options for [specific element]"
-- "How would this work for [specific scenario]?"
+La primera respuesta de la IA es un punto de partida. Haga seguimiento con:
+- "¿Puede hacer esto más conciso?"
+- "¿Qué tal [enfoque alternativo]?"
+- "Deme 3 opciones más para [elemento específico]"
+- "¿Cómo funcionaría esto para [escenario específico]?"
 
-### 5. Combine with Human Judgment
+### 5. Combine con juicio humano
 
-The AI Marketing Assistant provides recommendations based on data and best practices, but:
-- You know your business best
-- Test suggestions before full implementation
-- Adapt recommendations to your specific situation
-- Measure results and iterate
+El Asistente de Marketing IA proporciona recomendaciones basadas en datos y mejores prácticas, pero:
+- Usted conoce mejor su negocio
+- Pruebe las sugerencias antes de implementarlas completamente
+- Adapte las recomendaciones a su situación específica
+- Mida los resultados e itere
 
-## Advanced Usage
+## Uso avanzado
 
-### Strategic Planning Sessions
+### Sesiones de planificación estratégica
 
-Use the AI for comprehensive strategy development:
+Use la IA para el desarrollo integral de estrategias:
 
-1. **Start with context**: "I'm planning our Q2 marketing strategy"
-2. **Provide details**: Target audience, budget, goals, timeline
-3. **Ask for framework**: "What should our strategy include?"
-4. **Dive deeper**: Ask follow-ups about each component
-5. **Get specific tactics**: Request actionable steps
-6. **Create execution plan**: Ask for timeline and resources
+1. **Comience con contexto**: "Estoy planificando nuestra estrategia de marketing del Q2"
+2. **Proporcione detalles**: Audiencia objetivo, presupuesto, objetivos, cronograma
+3. **Solicite un marco**: "¿Qué debería incluir nuestra estrategia?"
+4. **Profundice**: Haga seguimiento sobre cada componente
+5. **Obtenga tácticas específicas**: Solicite pasos accionables
+6. **Cree un plan de ejecución**: Solicite cronograma y recursos
 
-### Campaign Brainstorming
+### Lluvia de ideas de campañas
 
-Generate campaign ideas systematically:
+Genere ideas de campañas sistemáticamente:
 
-1. **Define objectives**: "We want to generate 50 qualified leads"
-2. **Identify audience**: "Targeting [specific persona]"
-3. **Brainstorm angles**: "What messaging approaches would work?"
-4. **Get tactics**: "What channels and formats should we use?"
-5. **Create content**: "Write copy for [specific element]"
-6. **Plan execution**: "What's the implementation timeline?"
+1. **Defina objetivos**: "Queremos generar 50 clientes potenciales calificados"
+2. **Identifique audiencia**: "Dirigido a [persona específica]"
+3. **Lluvia de ideas de enfoques**: "¿Qué enfoques de mensajería funcionarían?"
+4. **Obtenga tácticas**: "¿Qué canales y formatos deberíamos usar?"
+5. **Cree contenido**: "Escriba el texto para [elemento específico]"
+6. **Planifique la ejecución**: "¿Cuál es el cronograma de implementación?"
 
-### Competitive Analysis
+### Análisis competitivo
 
-Analyze your competitive position:
+Analice su posición competitiva:
 
-1. **Describe competitors**: "Here's what [competitor] does well..."
-2. **Identify gaps**: "What are they missing?"
-3. **Find differentiation**: "How can we stand out?"
-4. **Position effectively**: "What's our unique value proposition?"
-5. **Craft messaging**: "How do we communicate this?"
+1. **Describa competidores**: "Esto es lo que [competidor] hace bien..."
+2. **Identifique brechas**: "¿Qué les falta?"
+3. **Encuentre diferenciación**: "¿Cómo podemos destacar?"
+4. **Posicione eficazmente**: "¿Cuál es nuestra propuesta de valor única?"
+5. **Elabore mensajes**: "¿Cómo comunicamos esto?"
 
-### Problem Solving
+### Resolución de problemas
 
-Address marketing challenges:
+Aborde desafíos de marketing:
 
-1. **Describe problem**: "Our conversion rate is only 2%"
-2. **Provide context**: Traffic source, funnel details, current tests
-3. **Get diagnosis**: "What might be causing this?"
-4. **Explore solutions**: "What should we test first?"
-5. **Prioritize**: "Which 3 changes will have the most impact?"
+1. **Describa el problema**: "Nuestra tasa de conversión es solo del 2%"
+2. **Proporcione contexto**: Fuente de tráfico, detalles del embudo, pruebas actuales
+3. **Obtenga diagnóstico**: "¿Qué podría estar causando esto?"
+4. **Explore soluciones**: "¿Qué deberíamos probar primero?"
+5. **Priorice**: "¿Qué 3 cambios tendrán el mayor impacto?"
 
-## Integration with Your Workflow
+## Integración con su flujo de trabajo
 
-### Before Campaigns
+### Antes de las campañas
 
-- **Strategy validation**: "Does this approach make sense?"
-- **Audience analysis**: "Who should we target and why?"
-- **Messaging development**: "What's our core value prop?"
-- **Channel selection**: "Where should we focus our efforts?"
+- **Validación de estrategia**: "¿Este enfoque tiene sentido?"
+- **Análisis de audiencia**: "¿A quién deberíamos dirigirnos y por qué?"
+- **Desarrollo de mensajes**: "¿Cuál es nuestra propuesta de valor central?"
+- **Selección de canales**: "¿Dónde deberíamos enfocar nuestros esfuerzos?"
 
-### During Campaigns
+### Durante las campañas
 
-- **Optimization ideas**: "How can we improve performance?"
-- **Troubleshooting**: "Why isn't this working?"
-- **A/B test ideas**: "What should we test next?"
-- **Content variations**: "Give me alternative headlines"
+- **Ideas de optimización**: "¿Cómo podemos mejorar el rendimiento?"
+- **Solución de problemas**: "¿Por qué no funciona esto?"
+- **Ideas de pruebas A/B**: "¿Qué deberíamos probar a continuación?"
+- **Variaciones de contenido**: "Deme titulares alternativos"
 
-### After Campaigns
+### Después de las campañas
 
-- **Performance analysis**: "What do these results tell us?"
-- **Improvement recommendations**: "How do we do better next time?"
-- **Documentation**: "Summarize what we learned"
-- **Future planning**: "What should we test in the next campaign?"
+- **Análisis de rendimiento**: "¿Qué nos dicen estos resultados?"
+- **Recomendaciones de mejora**: "¿Cómo hacerlo mejor la próxima vez?"
+- **Documentación**: "Resuma lo que aprendimos"
+- **Planificación futura**: "¿Qué deberíamos probar en la próxima campaña?"
 
-## Tips for Better Results
+## Consejos para mejores resultados
 
-### DO ✅
+### HACER ✅
 
-- **Be specific** in your questions
-- **Provide context** about your situation
-- **Enable RAG** for business-specific questions
-- **Follow up** with clarifying questions
-- **Test recommendations** before full implementation
-- **Iterate** based on AI responses
-- **Combine AI insights** with your expertise
+- **Sea específico** en sus preguntas
+- **Proporcione contexto** sobre su situación
+- **Habilite RAG** para preguntas específicas del negocio
+- **Haga seguimiento** con preguntas aclaratorias
+- **Pruebe las recomendaciones** antes de la implementación completa
+- **Itere** basándose en las respuestas de la IA
+- **Combine insights de IA** con su experiencia
 
-### DON'T ❌
+### NO HACER ❌
 
-- **Don't be vague** about what you need
-- **Don't expect perfect answers** immediately
-- **Don't implement blindly** without testing
-- **Don't ignore** your domain expertise
-- **Don't use** for sensitive data (passwords, API keys)
-- **Don't rely solely** on AI for critical decisions
+- **No sea vago** sobre lo que necesita
+- **No espere respuestas perfectas** inmediatamente
+- **No implemente a ciegas** sin probar
+- **No ignore** su experiencia en el dominio
+- **No use** para datos sensibles (contraseñas, claves API)
+- **No dependa únicamente** de la IA para decisiones críticas
 
-## Limitations and Considerations
+## Limitaciones y consideraciones
 
-### Knowledge Accuracy
+### Precisión del conocimiento
 
-- AI may not know recent events (knowledge cutoff)
-- Always verify facts before publishing
-- Cross-reference important claims
+- La IA puede no conocer eventos recientes (fecha de corte de conocimiento)
+- Siempre verifique los hechos antes de publicar
+- Verifique las afirmaciones importantes con otras fuentes
 
-### Business Specificity
+### Especificidad del negocio
 
-- AI only knows what's in your Knowledge Library
-- Upload comprehensive, up-to-date documentation
-- Keep Knowledge Library current
+- La IA solo conoce lo que está en su Biblioteca de Conocimiento
+- Cargue documentación completa y actualizada
+- Mantenga la Biblioteca de Conocimiento actualizada
 
-### Creative Judgment
+### Juicio creativo
 
-- AI provides options, not final creative decisions
-- Use AI for ideation, human for selection
-- Test creative elements with real audiences
+- La IA proporciona opciones, no decisiones creativas finales
+- Use la IA para ideación, humanos para selección
+- Pruebe elementos creativos con audiencias reales
 
-### Strategic Context
+### Contexto estratégico
 
-- AI lacks real-world context about your market
-- Combine AI insights with market research
-- Validate recommendations with customer feedback
+- La IA carece de contexto del mundo real sobre su mercado
+- Combine insights de IA con investigación de mercado
+- Valide las recomendaciones con comentarios de clientes
 
-## Troubleshooting
+## Solución de problemas
 
-### AI Responses Not Relevant
+### Las respuestas de la IA no son relevantes
 
-**Solutions:**
-1. Enable RAG context toggle
-2. Upload relevant documents to Knowledge Library
-3. Be more specific in your questions
-4. Provide more context about your situation
+**Soluciones:**
+1. Habilite la alternancia de contexto RAG
+2. Cargue documentos relevantes a la Biblioteca de Conocimiento
+3. Sea más específico en sus preguntas
+4. Proporcione más contexto sobre su situación
 
-### Responses Too Generic
+### Las respuestas son demasiado genéricas
 
-**Solutions:**
-1. Ask for specific examples
-2. Provide your unique context
-3. Reference your specific products/services
-4. Request multiple options to choose from
+**Soluciones:**
+1. Solicite ejemplos específicos
+2. Proporcione su contexto único
+3. Referencie sus productos/servicios específicos
+4. Solicite múltiples opciones para elegir
 
-### Can't Find Previous Conversations
+### No puedo encontrar conversaciones anteriores
 
-**Solutions:**
-1. Conversations are saved automatically
-2. Scroll up to see history
-3. Click "Refresh" to reload
-4. Start a new conversation if needed
+**Soluciones:**
+1. Las conversaciones se guardan automáticamente
+2. Desplácese hacia arriba para ver el historial
+3. Haga clic en "Refresh" para recargar
+4. Inicie una nueva conversación si es necesario
 
-### AI Doesn't Understand Request
+### La IA no entiende la solicitud
 
-**Solutions:**
-1. Rephrase your question more clearly
-2. Break complex requests into smaller parts
-3. Provide examples of what you're looking for
-4. Try asking from a different angle
+**Soluciones:**
+1. Reformule su pregunta más claramente
+2. Divida solicitudes complejas en partes más pequeñas
+3. Proporcione ejemplos de lo que está buscando
+4. Intente preguntar desde un ángulo diferente
 
-## Next Steps
+## Próximos pasos
 
-Now that you understand the AI Marketing Assistant:
+Ahora que comprende el Asistente de Marketing IA:
 
-- [Build your Knowledge Library](./knowledge-library) for better context
-- [Create email templates](./ai-email-writer) with AI assistance
-- [Set up automated campaigns](../lead-generation/batch-email-sending)
+- [Construya su Biblioteca de Conocimiento](./knowledge-library) para mejor contexto
+- [Cree plantillas de correo](./ai-email-writer) con asistencia de IA
+- [Configure campañas automatizadas](../lead-generation/batch-email-sending)
 
 ---
 
-**Ready to get strategic guidance?** Open the AI Marketing Assistant, enable RAG context, and start asking questions about your specific marketing challenges and opportunities.
+**¿Listo para obtener orientación estratégica?** Abra el Asistente de Marketing IA, habilite el contexto RAG y comience a hacer preguntas sobre sus desafíos y oportunidades de marketing específicos.

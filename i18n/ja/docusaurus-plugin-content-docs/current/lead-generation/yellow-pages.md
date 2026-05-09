@@ -5,684 +5,684 @@ sidebar_label: Yellow Pages
 description: Extract business information from Yellow Pages, Yelp, and other online directories worldwide.
 ---
 
-# Yellow Pages Scraping
+# イエローページスクレイピング
 
-aiFetchly's Yellow Pages scraping feature allows you to extract comprehensive business information from multiple online directories. Collect leads from local business listings with detailed contact information, ratings, reviews, and more. Powered by AI support, you can enhance scraping accuracy and generate related keywords automatically.
+aiFetchly のイエローページスクレイピング機能を使えば、複数のオンラインビジネスディレクトリから包括的なビジネス情報を抽出できます。ローカルビジネスリストから、詳細な連絡先情報、評価、レビューなどを含むリードを収集できます。AI サポートにより、スクレイピングの精度を向上させ、関連キーワードを自動的に生成できます。
 
-## Supported Directories
+## 対応ディレクトリ
 
-| Directory | Region | Language | Rate Limit | Features |
+| ディレクトリ | 地域 | 言語 | レート制限 | 機能 |
 |-----------|--------|----------|------------|----------|
-| **YellowPages.com** | USA | English | 100 req/hour | Business details, ratings, reviews, hours |
-| **Yelp.com** | USA | English | 60 req/hour | Reviews, ratings, photos, detailed extraction |
-| **YellowPages.ca** | Canada | English | 100 req/hour | Canadian business directory, address parsing |
-| **YellowPages.com.sg** | Singapore | English | 100 req/hour | Singapore business listings |
-| **192.com** | UK | English | 100 req/hour | UK-specific business directory |
-| **11880.com** | Germany | German | 100 req/hour | German directory, cookie consent handling |
-| **Gelbeseiten.de** | Germany | German | 100 req/hour | German Yellow Pages, shadow root handling |
-| **PagesJaunes.fr** | France | French | 100 req/hour | French Yellow Pages, location required |
-| **PagineGialle.it** | Italy | Italian | 100 req/hour | Italian Yellow Pages, cookie consent |
-| **iTownPage** | Japan | Japanese | 60 req/hour | Japanese directory, dialog handling |
-| **uSonar Yellow Page** | Japan | Japanese | 60 req/hour | Japanese business listings |
-| **KoreaLocalPages** | South Korea | Korean | 60 req/hour | Korean local business directory |
+| **YellowPages.com** | 米国 | 英語 | 100 req/時 | ビジネス詳細、評価、レビュー、営業時間 |
+| **Yelp.com** | 米国 | 英語 | 60 req/時 | レビュー、評価、写真、詳細な抽出 |
+| **YellowPages.ca** | カナダ | 英語 | 100 req/時 | カナダビジネスディレクトリ、住所解析 |
+| **YellowPages.com.sg** | シンガポール | 英語 | 100 req/時 | シンガポールビジネスリスト |
+| **192.com** | 英国 | 英語 | 100 req/時 | 英国固有のビジネスディレクトリ |
+| **11880.com** | ドイツ | ドイツ語 | 100 req/時 | ドイツディレクトリ、Cookie 同意処理 |
+| **Gelbeseiten.de** | ドイツ | ドイツ語 | 100 req/時 | ドイツイエローページ、Shadow DOM 処理 |
+| **PagesJaunes.fr** | フランス | フランス語 | 100 req/時 | フランスイエローページ、場所必須 |
+| **PagineGialle.it** | イタリア | イタリア語 | 100 req/時 | イタリアイエローページ、Cookie 同意 |
+| **iTownPage** | 日本 | 日本語 | 60 req/時 | 日本語ディレクトリ、ダイアログ処理 |
+| **uSonar Yellow Page** | 日本 | 日本語 | 60 req/時 | 日本語ビジネスリスト |
+| **KoreaLocalPages** | 韓国 | 韓国語 | 60 req/時 | 韓国ローカルビジネスディレクトリ |
 
-:::tip Rate Limits
+:::tip レート制限
 
-Each directory has specific rate limits. aiFetchly automatically manages request delays to comply with these limits.
-
-:::
-
-:::info Platform Information
-
-When creating a task, select a platform from the dropdown. As you select each platform, you'll see a sidebar showing:
-- Country/Language support
-- Rate limits
-- Authentication requirements
-- Whether location is required
+各ディレクトリには固有のレート制限があります。aiFetchly はこれらの制限に準拠するため、リクエスト遅延を自動的に管理します。
 
 :::
 
-## Creating a Yellow Pages Task
+:::info プラットフォーム情報
 
-### Step 1: Navigate to Yellow Pages
-
-1. Click **Yellow Pages** in the left navigation menu
-2. You'll see the Yellow Pages task list
-3. Click **Create New Task** button
-
-### Step 2: Basic Information
-
-Enter the following required information:
-
-#### Task Name
-
-- Give your task a descriptive name
-- Example: "Restaurants in Chicago" or "Plumbers in Miami"
-
-#### Platform Selection
-
-Select the directory you want to scrape from the dropdown:
-
-**Americas:**
-- YellowPages.com (USA)
-- Yelp.com (USA)
-- YellowPages.ca (Canada)
-
-**Europe:**
-- 192.com (UK)
-- 11880.com (Germany)
-- Gelbeseiten.de (Germany)
-- PagesJaunes.fr (France) — location required
-- PagineGialle.it (Italy)
-
-**Asia-Pacific:**
-- YellowPages.com.sg (Singapore)
-- iTownPage (Japan)
-- uSonar Yellow Page (Japan)
-- KoreaLocalPages (South Korea)
-
-#### Keywords
-
-Enter your search keywords:
-- **Format**: Comma-separated or one per line
-- **Examples**: `restaurant, plumber, dentist, marketing agency`
-- **Tip**: Use specific business types or categories for better results
-
-**AI Query Keywords** (Optional):
-- Click the **AI Query Keywords** button (purple, robot icon) inside the keywords field
-- aiFetchly uses AI to generate related search terms based on your existing keywords
-- Generated keywords are combined with your originals, duplicates removed automatically
-- If no keywords are entered, AI generates suggestions from a default seed term
-
-#### Location
-
-Enter the geographic location for your search:
-- **Examples**: `New York, NY`, `Los Angeles, CA`, `Miami, Florida`
-- **Format**: City, State or City, Region
-- **Required**: For most platforms
-
-### Step 3: Performance Settings
-
-Configure how the scraping task runs:
-
-#### Max Pages
-
-- **Range**: 1-100 pages
-- **Default**: 10 pages
-- **Recommendation**: Start with 10-20 pages for testing
-
-**What this means:**
-- Each page typically contains 20-30 business listings
-- 10 pages = 200-300 potential leads
-- More pages = longer processing time
-
-#### Concurrency
-
-- **Range**: 1-10 concurrent requests
-- **Default**: 2 concurrent requests
-- **Higher values**: Faster but higher risk of being blocked
-
-:::warning Concurrency Guidelines
-
-- Start with 1-3 concurrent requests
-- Increase gradually if using proxies
-- Respect platform rate limits
+タスク作成時にドロップダウンからプラットフォームを選択すると、以下の情報を表示するサイドバーが表示されます:
+- 対応国/言語
+- レート制限
+- 認証要件
+- 場所情報が必須かどうか
 
 :::
 
-#### Delay Between Requests
+## イエローページタスクの作成
 
-- **Range**: 0-10,000 milliseconds
-- **Default**: 2000ms (2 seconds)
-- **Purpose**: Prevents rate limiting and blocking
+### ステップ 1: イエローページに移動
 
-**Recommended delays:**
-- **Yelp.com**: 3000ms (stricter rate limits)
-- **Japanese platforms** (iTownPage, uSonar): 2500ms
-- **Korean platforms** (KoreaLocalPages): 2500ms
-- **All others**: 2000ms
+1. 左側のナビゲーションメニューで **Yellow Pages** をクリック
+2. イエローページタスクリストが表示されます
+3. **Create New Task** ボタンをクリック
 
-### Step 4: Browser Configuration
+### ステップ 2: 基本情報
 
-#### Headless Mode
+以下の必須情報を入力します:
 
-- **Enabled** (default): Browser runs invisibly (faster, recommended)
-- **Disabled**: Browser window visible (useful for debugging)
+#### タスク名
 
-**Recommendation**: Keep headless mode enabled for production tasks.
+- タスクにわかりやすい名前を付けてください
+- 例: 「シカゴのレストラン」や「マイアミの配管工」
 
-#### AI Support
+#### プラットフォーム選択
 
-Toggle **AI Support** to enable AI-powered scraping assistance:
+ドロップダウンからスクレイピングするディレクトリを選択します:
 
-- When enabled, AI helps improve scraping accuracy and handle edge cases
-- Enabled by default if your account has AI features enabled
-- Look for the purple robot icon next to the toggle
+**南北アメリカ:**
+- YellowPages.com（米国）
+- Yelp.com（米国）
+- YellowPages.ca（カナダ）
 
-#### Local Browser
+**ヨーロッパ:**
+- 192.com（英国）
+- 11880.com（ドイツ）
+- Gelbeseiten.de（ドイツ）
+- PagesJaunes.fr（フランス）— 場所必須
+- PagineGialle.it（イタリア)
 
-Toggle **Use Local Browser** to use your local Chrome or Firefox installation for scraping:
+**アジア太平洋:**
+- YellowPages.com.sg（シンガポール）
+- iTownPage（日本）
+- uSonar Yellow Page（日本）
+- KoreaLocalPages（韓国）
 
-1. Toggle **Local Browser** to enable
-2. Select **Chrome** or **Firefox** from the dropdown
-3. **Benefits**: Lower detection rates, better success with anti-bot protections
+#### キーワード
 
-### Step 5: Optional Features
+検索キーワードを入力します:
+- **形式**: カンマ区切りまたは 1 行に 1 つ
+- **例**: `レストラン, 配管工, 歯科医院, マーケティング代理店`
+- **ヒント**: より良い結果を得るために、具体的な業種やカテゴリを使用
 
-#### Account Selection
+**AI クエリキーワード**（任意）:
+- キーワードフィールド内の **AI Query Keywords** ボタン（紫色のロボットアイコン）をクリック
+- aiFetchly が AI を使用して既存のキーワードに基づく関連検索語を生成
+- 生成されたキーワードは元のキーワードと組み合わされ、重複は自動的に削除
+- キーワードが入力されていない場合、AI はデフォルトのシード語から候補を生成
 
-Some platforms support authenticated scraping:
+#### 場所
 
-1. Toggle **Use Account** if available
-2. Select an account from your saved accounts
-3. Benefits:
-   - Higher success rate
-   - Access to member-only content
-   - Reduced risk of blocking
+検索の地理的な場所を入力します:
+- **例**: `New York, NY`、`Los Angeles, CA`、`Miami, Florida`
+- **形式**: 都市名、州名 または 都市名、地域名
+- **必須**: ほとんどのプラットフォームで必要
 
-#### Proxy Configuration
+### ステップ 3: パフォーマンス設定
 
-Add proxies for large-scale scraping:
+スクレイピングタスクの実行方法を設定します:
 
-1. Toggle **Use Proxy**
-2. Click **Choose Proxy**
-3. Select one or more proxies from your list
-4. Click **Confirm**
+#### 最大ページ数
 
-:::tip When to Use Proxies
+- **範囲**: 1〜100 ページ
+- **デフォルト**: 10 ページ
+- **推奨**: テストには 10〜20 ページから開始
 
-Use proxies when:
-- Scraping more than 50 pages
-- Running concurrent tasks
-- Previous tasks were blocked
+**意味:**
+- 各ページには通常 20〜30 件のビジネスリストが含まれます
+- 10 ページ = 200〜300 件の潜在的リード
+- ページ数が多いほど処理時間が長くなります
 
-:::
+#### 同時実行数
 
-### Step 6: Scheduling (Optional)
+- **範囲**: 1〜10 同時リクエスト
+- **デフォルト**: 2 同時リクエスト
+- **高い値**: より高速だが、ブロックされるリスクが高まる
 
-#### One-Time Scheduling
+:::warning 同時実行のガイドライン
 
-Set a specific date and time for the task to run:
-- Click **Schedule**
-- Select date and time
-- Task runs automatically at scheduled time
-
-#### Recurring Scheduling
-
-Set up automated recurring tasks:
-
-**Preset Options:**
-- Every 15 minutes
-- Every 30 minutes
-- Every hour
-- Every 2 hours
-- Every 6 hours
-- Every 12 hours
-- Daily
-- Weekly
-- Monthly
-
-**Custom Scheduling:**
-- Use cron expressions for advanced scheduling
-- Example: `0 9 * * 1-5` (9 AM Monday-Friday)
-
-**Schedule Preview:**
-- Shows next run time
-- Displays configuration summary
-
-### Step 7: Create Task
-
-Click one of the action buttons in the sidebar:
-
-- **Create & Start Task** (primary button): Creates the task and starts execution immediately
-- **Create Task Only**: Saves the task without running it — status will be "Pending"
-
-:::tip Task Preview
-
-As you fill in the form, the **Task Preview** sidebar shows a live summary of your configuration including task name, platform, keywords count, location, max pages, concurrency, headless mode, and local browser selection. Review this before creating the task.
+- 1〜3 の同時リクエストから開始
+- プロキシ使用時に段階的に増加
+- プラットフォームのレート制限を尊重
 
 :::
 
-### Editing a Task
+#### リクエスト間の遅延
 
-To modify an existing task:
+- **範囲**: 0〜10,000 ミリ秒
+- **デフォルト**: 2000ms（2 秒）
+- **目的**: レート制限とブロックを防止
 
-1. Go to **Yellow Pages** task list
-2. Click the **Edit** (pencil) icon on the task
-3. Modify the configuration in the form
-4. Click **Update Task** to save changes
+**推奨される遅延:**
+- **Yelp.com**: 3000ms（より厳格なレート制限）
+- **日本のプラットフォーム**（iTownPage、uSonar）: 2500ms
+- **韓国のプラットフォーム**（KoreaLocalPages）: 2500ms
+- **その他すべて**: 2000ms
 
-## Managing Yellow Pages Tasks
+### ステップ 4: ブラウザ設定
 
-### View Task List
+#### ヘッドレスモード
 
-Navigate to **Yellow Pages** to see all your tasks.
+- **有効**（デフォルト）: ブラウザはバックグラウンドで実行（高速、推奨）
+- **無効**: ブラウザウィンドウが表示される（デバッグに便利）
 
-**Task List Overview:**
-- **Real-time Statistics**: Total, running, pending, completed, failed tasks with success rate
-- **Auto-refresh**: Updates every 5 seconds; toggle on/off with the refresh button
-- **Smart Pause**: Auto-refresh pauses automatically when you switch browser tabs and resumes when you return
+**推奨**: 本番タスクではヘッドレスモードを有効にしておいてください。
 
-### Filtering and Search
+#### AI サポート
 
-Use the filter bar to narrow down tasks:
+**AI Support** を切替えて AI 搭載スクレイピングアシスタンスを有効にします:
 
-| Filter | Description |
+- 有効にすると、AI がスクレイピング精度の向上とエッジケースの処理を支援
+- アカウントで AI 機能が有効な場合、デフォルトで有効
+- トグルの横にある紫色のロボットアイコンを探してください
+
+#### ローカルブラウザ
+
+**Use Local Browser** を切替えて、ローカルの Chrome または Firefox をスクレイピングに使用:
+
+1. **Local Browser** を切替えて有効化
+2. ドロップダウンから **Chrome** または **Firefox** を選択
+3. **メリット**: 検出率の低下、アンチボット対策に対する高い成功率
+
+### ステップ 5: オプション機能
+
+#### アカウント選択
+
+一部のプラットフォームでは認証済みスクレイピングをサポート:
+
+1. 利用可能な場合、**Use Account** を切替え
+2. 保存済みのアカウントから選択
+3. メリット:
+   - 成功率の向上
+   - 会員限定コンテンツへのアクセス
+   - ブロックリスクの軽減
+
+#### プロキシ設定
+
+大規模スクレイピング用にプロキシを追加:
+
+1. **Use Proxy** を切替え
+2. **Choose Proxy** をクリック
+3. リストから 1 つ以上のプロキシを選択
+4. **Confirm** をクリック
+
+:::tip プロキシを使用すべきケース
+
+以下の場合にプロキシを使用:
+- 50 ページ以上をスクレイピングする場合
+- 同時タスクを実行する場合
+- 以前のタスクがブロックされた場合
+
+:::
+
+### ステップ 6: スケジューリング (任意)
+
+#### 一回限りのスケジュール
+
+タスクを実行する特定の日時を設定:
+- **Schedule** をクリック
+- 日付と時刻を選択
+- スケジュールされた時刻に自動的にタスクが実行
+
+#### 繰り返しスケジュール
+
+自動化された定期タスクを設定:
+
+**プリセットオプション:**
+- 15 分ごと
+- 30 分ごと
+- 1 時間ごと
+- 2 時間ごと
+- 6 時間ごと
+- 12 時間ごと
+- 毎日
+- 毎週
+- 毎月
+
+**カスタムスケジュール:**
+- 高度なスケジューリングに cron 式を使用
+- 例: `0 9 * * 1-5`（月曜〜金曜の 9 時）
+
+**スケジュールプレビュー:**
+- 次回実行時刻を表示
+- 設定の概要を表示
+
+### ステップ 7: タスクの作成
+
+サイドバーのアクションボタンのいずれかをクリック:
+
+- **Create & Start Task**（プライマリボタン）: タスクを作成し、直ちに実行を開始
+- **Create Task Only**: 実行せずにタスクを保存 — ステータスは "Pending"
+
+:::tip タスクプレビュー
+
+フォームに入力すると、**Task Preview** サイドバーにタスク名、プラットフォーム、キーワード数、場所、最大ページ数、同時実行数、ヘッドレスモード、ローカルブラウザ選択など、設定のライブサマリーが表示されます。タスク作成前に確認してください。
+
+:::
+
+### タスクの編集
+
+既存のタスクを変更するには:
+
+1. **Yellow Pages** タスクリストに移動
+2. タスクの **Edit**（鉛筆）アイコンをクリック
+3. フォームで設定を変更
+4. **Update Task** をクリックして変更を保存
+
+## イエローページタスクの管理
+
+### タスクリストの表示
+
+**Yellow Pages** に移動してすべてのタスクを表示します。
+
+**タスクリスト概要:**
+- **リアルタイム統計**: 合計、実行中、保留中、完了、失敗の各タスク数と成功率
+- **自動更新**: 5 秒ごとに更新、リフレッシュボタンでオン/オフ切替
+- **スマートポーズ**: ブラウザタブを切り替えると自動更新が自動的に一時停止し、戻ると再開
+
+### フィルタリングと検索
+
+フィルターバーを使用してタスクを絞り込みます:
+
+| フィルター | 説明 |
 |--------|-------------|
-| **Search** | Search by task name or platform |
-| **Status** | Filter by Pending, Running, Completed, Failed, Paused |
-| **Platform** | Filter by directory platform |
-| **Priority** | Filter by High, Medium, Low priority |
+| **Search** | タスク名またはプラットフォームで検索 |
+| **Status** | Pending、Running、Completed、Failed、Paused でフィルター |
+| **Platform** | ディレクトリプラットフォームでフィルター |
+| **Priority** | High、Medium、Low の優先度でフィルター |
 
-Active filters are displayed as removable chips below the filter bar. Click **Clear Filters** to reset all filters.
+アクティブなフィルターはフィルターバーの下に削除可能なチップとして表示されます。**Clear Filters** をクリックしてすべてのフィルターをリセットします。
 
-### Task Status
+### タスクステータス
 
-| Status | Description | Action |
+| ステータス | 説明 | アクション |
 |--------|-------------|--------|
-| **Pending** | Task created but not started | Start, Edit, Delete |
-| **Running** | Task is currently processing | Pause, Stop, View Progress |
-| **Paused** | Temporarily suspended | Resume, Stop |
-| **Completed** | Finished successfully | View Results, Delete |
-| **Failed** | Ended with errors | View Logs, Retry, Delete |
+| **Pending** | タスクは作成済みだが未開始 | 開始、編集、削除 |
+| **Running** | タスク処理中 | 一時停止、停止、進行状況表示 |
+| **Paused** | 一時停止中 | 再開、停止 |
+| **Completed** | 正常に完了 | 結果表示、削除 |
+| **Failed** | エラーで終了 | ログ表示、リトライ、削除 |
 
-### Task Actions
+### タスクアクション
 
-| Action | Description |
+| アクション | 説明 |
 |--------|-------------|
-| **Start** | Begin task execution |
-| **Stop** | Terminate running task |
-| **Pause** | Temporarily suspend task |
-| **Resume** | Continue paused task |
-| **Edit** | Modify task configuration |
-| **Delete** | Remove task from system |
-| **View Results** | See extracted business data |
+| **Start** | タスクの実行を開始 |
+| **Stop** | 実行中のタスクを終了 |
+| **Pause** | タスクを一時停止 |
+| **Resume** | 一時停止中のタスクを再開 |
+| **Edit** | タスク設定を変更 |
+| **Delete** | システムからタスクを削除 |
+| **View Results** | 抽出されたビジネスデータを表示 |
 
-### Cloudflare Protection Alert
+### Cloudflare 保護アラート
 
-If a task encounters Cloudflare protection, aiFetchly displays a warning notification at the top of the task list. This alert indicates that the target directory has activated anti-bot measures. To resolve this, try enabling local browser, using authenticated accounts, or adding proxies.
+タスクが Cloudflare 保護に遭遇した場合、aiFetchly はタスクリストの上部に警告通知を表示します。このアラートは、ターゲットディレクトリがアンチボット対策を有効にしていることを示します。解決するには、ローカルブラウザの有効化、認証済みアカウントの使用、またはプロキシの追加を試してください。
 
-### Bulk Operations
+### 一括操作
 
-- **Start Multiple**: Select and start multiple paused/failed tasks
-- **Stop Tasks**: Stop multiple running tasks
-- **Delete Tasks**: Remove multiple completed/failed tasks
+- **複数開始**: 複数の保留中/失敗タスクを選択して開始
+- **タスクの停止**: 複数の実行中タスクを停止
+- **タスクの削除**: 複数の完了/失敗タスクを削除
 
-## Viewing Results
+## 結果の表示
 
-### Step 1: Access Results
+### ステップ 1: 結果へのアクセス
 
-1. Go to **Yellow Pages** task list
-2. Find the completed task
-3. Click **View Results** to open the results page
+1. **Yellow Pages** タスクリストに移動
+2. 完了したタスクを見つける
+3. **View Results** をクリックして結果ページを開く
 
-### Step 2: Task Summary Card
+### ステップ 2: タスクサマリーカード
 
-The results page shows a **Task Summary Card** at the top with:
-- **Platform**: Which directory was scraped
-- **Total Results**: Number of businesses extracted
-- **Status**: Current task status (color-coded)
-- **Created Time**: When the task was created
-- **Keywords**: Displayed as chips for easy review
-- **Location**: The geographic area searched
+結果ページの上部に **Task Summary Card** が表示され、以下を含みます:
+- **Platform**: スクレイピングされたディレクトリ
+- **Total Results**: 抽出されたビジネス数
+- **Status**: 現在のタスクステータス（色分け表示）
+- **Created Time**: タスクの作成日時
+- **Keywords**: チップとして表示、簡単に確認可能
+- **Location**: 検索された地理的エリア
 
-### Step 4: Results Table
+### ステップ 4: 結果テーブル
 
-The results table displays comprehensive business information:
+結果テーブルには包括的なビジネス情報が表示されます:
 
-| Column | Description |
+| 列 | 説明 |
 |--------|-------------|
-| **Business Name** | Name of the business |
-| **Categories** | Business categories (visual chips) |
-| **Email** | Email address with copy button |
-| **Phone** | Phone number with copy button |
-| **Website** | Clickable link to website |
-| **Address** | Full address with map icon |
-| **Ratings** | Star rating with review count |
-| **Description** | Business description |
-| **Hours** | Business hours (if available) |
-| **Year Established** | Year business was founded |
-| **Employee Count** | Number of employees |
-| **Scraped At** | Timestamp of data extraction |
+| **Business Name** | ビジネス名 |
+| **Categories** | ビジネスカテゴリ（ビジュアルチップ） |
+| **Email** | メールアドレス（コピーボタン付き） |
+| **Phone** | 電話番号（コピーボタン付き） |
+| **Website** | ウェブサイトへのクリック可能なリンク |
+| **Address** | 住所（地図アイコン付き） |
+| **Ratings** | 星評価とレビュー数 |
+| **Description** | ビジネスの説明 |
+| **Hours** | 営業時間（利用可能な場合） |
+| **Year Established** | 創業年 |
+| **Employee Count** | 従業員数 |
+| **Scraped At** | データ抽出のタイムスタンプ |
 
-### Step 5: Interact with Results
+### ステップ 5: 結果の操作
 
-**Individual Actions:**
-- **Copy Email**: Copy email address to clipboard
-- **Copy Phone**: Copy phone number to clipboard
-- **Open Website**: Open business website in new tab
-- **View Details**: See full business record in modal
+**個別アクション:**
+- **Copy Email**: メールアドレスをクリップボードにコピー
+- **Copy Phone**: 電話番号をクリップボードにコピー
+- **Open Website**: ビジネスのウェブサイトを新しいタブで開く
+- **View Details**: モーダルでビジネスの完全なレコードを表示
 
-**Search & Filter:**
-- **Search**: Filter by business name, email, phone, website, or address
-- **Category Filter**: Filter results by business categories
-- **Pagination**: Navigate through large result sets
+**検索 & フィルター:**
+- **Search**: ビジネス名、メール、電話、ウェブサイト、または住所でフィルター
+- **Category Filter**: ビジネスカテゴリで結果をフィルター
+- **Pagination**: 大きな結果セットをナビゲート
 
-## Exporting Results
+## 結果のエクスポート
 
-### Export as CSV
+### CSV としてエクスポート
 
-1. Click **Export** button in the results view
-2. File downloads automatically in CSV format
-3. Filename includes task ID and date
+1. 結果表示で **Export** ボタンをクリック
+2. CSV 形式でファイルが自動的にダウンロード
+3. ファイル名にはタスク ID と日付が含まれます
 
-**Exported Data Includes:**
-- Business name and categories
-- Contact details (email, phone, website)
-- Address and location
-- Ratings and reviews
-- Business hours
-- Additional metadata
+**エクスポートされるデータ:**
+- ビジネス名とカテゴリ
+- 連絡先の詳細（メール、電話、ウェブサイト）
+- 住所と場所
+- 評価とレビュー
+- 営業時間
+- その他のメタデータ
 
-## Best Practices
+## ベストプラクティス
 
-### 1. Keyword Strategy
+### 1. キーワード戦略
 
-- **Be Specific**: Use specific business types instead of generic terms
-  - ❌ "services"
-  - ✅ "marketing agency" or "plumbing services"
+- **具体的に**: 一般的な用語ではなく具体的な業種を使用
+  - ❌ 「サービス」
+  - ✅ 「マーケティング代理店」や「配管サービス」
 
-- **Use Synonyms**: Try different terms for the same business type
-  - "restaurant" and "eatery"
-  - "plumber" and "plumbing service"
+- **同義語を使用**: 同じ業種に対して異なる用語を試す
+  - 「レストラン」と「飲食店」
+  - 「配管工」と「配管サービス」
 
-### 2. Location Targeting
+### 2. 地域ターゲティング
 
-- **Be Precise**: Use "City, State" format
+- **正確に**: 「都市名、州名」の形式を使用
   - ✅ "Chicago, IL"
   - ✅ "Los Angeles, CA"
-  - ❌ "Chicago" (might return ambiguous results)
+  - ❌ "Chicago"（曖昧な結果になる可能性）
 
-- **Start Broad, Then Narrow**:
-  1. Search in a large city (thousands of results)
-  2. Export results
-  3. Search in specific neighborhoods
+- **広域から始めて、徐々に絞り込む**:
+  1. 大都市で検索（数千件の結果）
+  2. 結果をエクスポート
+  3. 特定のエリアで検索
 
-### 3. Performance Optimization
+### 3. パフォーマンス最適化
 
-**For Small Tasks** (< 100 pages):
-- Concurrency: 1-3
-- Delay: 2000ms
-- No proxy needed
+**小規模タスク**（100 ページ未満）:
+- 同時実行数: 1〜3
+- 遅延: 2000ms
+- プロキシ不要
 
-**For Medium Tasks** (100-500 pages):
-- Concurrency: 3-5
-- Delay: 2000ms
-- Use 2-3 proxies
+**中規模タスク**（100〜500 ページ）:
+- 同時実行数: 3〜5
+- 遅延: 2000ms
+- 2〜3 のプロキシを使用
 
-**For Large Tasks** (500+ pages):
-- Concurrency: 5-10
-- Delay: 2000ms
-- Use 5+ proxies
-- Consider splitting into multiple tasks
+**大規模タスク**（500 ページ以上）:
+- 同時実行数: 5〜10
+- 遅延: 2000ms
+- 5 以上のプロキシを使用
+- 複数のタスクに分割を検討
 
-### 4. Avoiding Blocks
+### 4. ブロックの回避
 
-1. **Respect Rate Limits**: Don't exceed recommended concurrency
-2. **Use Delays**: Keep request delays at 2000ms or higher
-3. **Rotate Proxies**: Distribute requests across multiple IPs
-4. **Use Accounts**: Authenticated scraping has higher limits
-5. **Take Breaks**: Don't run large tasks continuously
-6. **Enable AI Support**: AI can help handle anti-bot protections
-7. **Use Local Browser**: Real browser fingerprint reduces detection risk
+1. **レート制限を尊重**: 推奨同時実行数を超えない
+2. **遅延を使用**: リクエスト遅延を 2000ms 以上に維持
+3. **プロキシをローテーション**: 複数の IP にリクエストを分散
+4. **アカウントを使用**: 認証済みスクレイピングは制限が緩い
+5. **休憩を挟む**: 大規模タスクを連続して実行しない
+6. **AI サポートを有効化**: AI がアンチボット対策の処理を支援
+7. **ローカルブラウザを使用**: 実際のブラウザフィンガープリントで検出リスクを低減
 
-### 5. Data Quality
+### 5. データ品質
 
-- **Verify Results**: Spot-check extracted data for accuracy
-- **Filter Categories**: Use category filters to remove irrelevant results
-- **Cross-Reference**: Combine data from multiple platforms
-- **Regular Updates**: Business information changes, refresh data regularly
+- **結果の確認**: 抽出データの正確性をランダムにチェック
+- **カテゴリでフィルター**: カテゴリフィルターを使用して無関係な結果を除外
+- **クロスリファレンス**: 複数のプラットフォームのデータを組み合わせ
+- **定期的な更新**: ビジネス情報は変化するため、データを定期的に更新
 
-## Platform-Specific Tips
+## プラットフォーム別のヒント
 
-### YellowPages.com (USA)
+### YellowPages.com（米国）
 
-**Strengths:**
-- Comprehensive business listings
-- Accurate contact information
-- Good coverage across all states
+**強み:**
+- 包括的なビジネスリスト
+- 正確な連絡先情報
+- 全州での良いカバレッジ
 
-**Tips:**
-- Use city + state for best results
-- Includes business hours and services
-- Good for B2C businesses
+**ヒント:**
+- 最良の結果を得るには都市名 + 州名を使用
+- 営業時間やサービス情報を含む
+- B2C ビジネスに適している
 
-### Yelp.com (USA)
+### Yelp.com（米国）
 
-**Strengths:**
-- Rich review data
-- Photos and detailed descriptions
-- User-generated content
+**強み:**
+- 豊富なレビューデータ
+- 写真や詳細な説明
+- ユーザー生成コンテンツ
 
-**Tips:**
-- Stricter rate limits (use 3000ms delay)
-- Great for service businesses
-- Review data helps qualify leads
+**ヒント:**
+- より厳格なレート制限（3000ms の遅延を使用）
+- サービス業に最適
+- レビューデータがリードの評価に役立つ
 
-### YellowPages.ca (Canada)
+### YellowPages.ca（カナダ）
 
-**Strengths:**
-- Canada-specific listings
-- Canadian business verification
+**強み:**
+- カナダ固有のリスト
+- カナダビジネスの検証
 
-**Tips:**
-- Essential for Canadian market
-- Use "City, Province" format
+**ヒント:**
+- カナダ市場に不可欠
+- "City, Province" 形式を使用
 
-### YellowPages.com.sg (Singapore)
+### YellowPages.com.sg（シンガポール）
 
-**Strengths:**
-- Singapore business directory
-- Comprehensive local listings
+**強み:**
+- シンガポールビジネスディレクトリ
+- 包括的なローカルリスト
 
-**Tips:**
-- Use city or district names for location
-- Good for Southeast Asian market research
+**ヒント:**
+- 場所には都市名または地区名を使用
+- 東南アジア市場調査に適している
 
-### 192.com (UK)
+### 192.com（英国）
 
-**Strengths:**
-- UK-specific business and people directory
-- Good coverage across United Kingdom
+**強み:**
+- 英国固有のビジネス・人物ディレクトリ
+- 英国全体での良好なカバレッジ
 
-**Tips:**
-- Use UK city and postcode format
-- Good for UK B2B outreach
+**ヒント:**
+- 英国の都市名と郵便番号形式を使用
+- 英国の B2B アウトリーチに適している
 
-### 11880.com (Germany)
+### 11880.com（ドイツ）
 
-**Strengths:**
-- German business directory
-- Handles cookie consent automatically
+**強み:**
+- ドイツのビジネスディレクトリ
+- Cookie 同意を自動的に処理
 
-**Tips:**
-- Use German city names for best results
-- Good for DACH market research
+**ヒント:**
+- 最良の結果にはドイツ語の都市名を使用
+- DACH 市場調査に適している
 
-### Gelbeseiten.de (Germany)
+### Gelbeseiten.de（ドイツ）
 
-**Strengths:**
-- German Yellow Pages
-- Comprehensive business listings in Germany
-- Handles complex cookie consent dialogs
+**強み:**
+- ドイツのイエローページ
+- ドイツの包括的なビジネスリスト
+- 複雑な Cookie 同意ダイアログを処理
 
-**Tips:**
-- Use German keywords for best results
-- Essential for German market
+**ヒント:**
+- 最良の結果にはドイツ語のキーワードを使用
+- ドイツ市場に不可欠
 
-### PagesJaunes.fr (France)
+### PagesJaunes.fr（フランス）
 
-**Strengths:**
-- French Yellow Pages
-- Phone number reveal feature
-- Comprehensive French business listings
+**強み:**
+- フランスのイエローページ
+- 電話番号表示機能
+- 包括的なフランスビジネスリスト
 
-**Tips:**
-- **Location is required** for this platform
-- Use French city names and postal codes
-- Good for French market outreach
+**ヒント:**
+- このプラットフォームでは **場所が必須**
+- フランス語の都市名と郵便番号を使用
+- フランス市場のアウトリーチに適している
 
-### PagineGialle.it (Italy)
+### PagineGialle.it（イタリア）
 
-**Strengths:**
-- Italian Yellow Pages
-- Comprehensive Italian business directory
-- Handles cookie consent automatically
+**強み:**
+- イタリアのイエローページ
+- 包括的なイタリアビジネスディレクトリ
+- Cookie 同意を自動的に処理
 
-**Tips:**
-- Use Italian city names for location
-- Good for Italian market research
+**ヒント:**
+- 場所にはイタリア語の都市名を使用
+- イタリア市場調査に適している
 
-### iTownPage (Japan)
+### iTownPage（日本）
 
-**Strengths:**
-- Japanese business directory
-- Handles dialog popups automatically
-- Japanese cookie consent management
+**強み:**
+- 日本語ビジネスディレクトリ
+- ダイアログポップアップを自動的に処理
+- 日本語の Cookie 同意管理
 
-**Tips:**
-- Use Japanese keywords for best results
-- Essential for Japanese local business discovery
-- Use 2500ms delay (60 req/hour rate limit)
+**ヒント:**
+- 最良の結果には日本語のキーワードを使用
+- 日本のローカルビジネス発見に不可欠
+- 2500ms の遅延を使用（60 req/時のレート制限）
 
-### uSonar Yellow Page (Japan)
+### uSonar Yellow Page（日本）
 
-**Strengths:**
-- Alternative Japanese business directory
-- Good for cross-referencing with iTownPage
+**強み:**
+- 代替の日本語ビジネスディレクトリ
+- iTownPage とのクロスリファレンスに適している
 
-**Tips:**
-- Use alongside iTownPage for broader coverage
-- Use 2500ms delay
+**ヒント:**
+- より幅広いカバレッジのために iTownPage と併用
+- 2500ms の遅延を使用
 
-### KoreaLocalPages (South Korea)
+### KoreaLocalPages（韓国）
 
-**Strengths:**
-- Korean local business directory
-- Good for Korean market entry research
+**強み:**
+- 韓国のローカルビジネスディレクトリ
+- 韓国市場参入の調査に適している
 
-**Tips:**
-- Use Korean keywords for best results
-- Use 2500ms delay (60 req/hour rate limit)
-- Good for discovering Korean businesses
+**ヒント:**
+- 最良の結果には韓国語のキーワードを使用
+- 2500ms の遅延を使用（60 req/時のレート制限）
+- 韓国のビジネス発見に適している
 
-## Integration with Email Marketing
+## メールマーケティングとの連携
 
-Extracted business emails can be used directly in email campaigns:
+抽出されたビジネスメールはメールキャンペーンに直接使用できます:
 
-1. **Export Results** from Yellow Pages task
-2. **Navigate to Email Marketing** → **Send Bulk Emails**
-3. **Import CSV** with extracted emails
-4. **Create Template** for your outreach
-5. **Launch Campaign**
+1. イエローページタスクから **結果をエクスポート**
+2. **Email Marketing** → **Send Bulk Emails** に移動
+3. 抽出されたメールで **CSV をインポート**
+4. アウトリーチ用の **テンプレートを作成**
+5. **キャンペーンを開始**
 
-For detailed instructions, see [Batch Email Sending](./batch-email-sending).
+詳しい手順については、[一括メール送信](./batch-email-sending)を参照してください。
 
-## Troubleshooting
+## トラブルシューティング
 
-### Task Status: "Failed"
+### タスクステータス: "Failed"
 
-**Possible causes:**
-- All proxies failed
-- Network connectivity issues
-- Platform blocked requests
-- Invalid keywords or location
+**考えられる原因:**
+- すべてのプロキシが失敗
+- ネットワーク接続の問題
+- プラットフォームがリクエストをブロック
+- 無効なキーワードまたは場所
 
-**Solutions:**
-1. Check proxy health
-2. Verify internet connection
-3. Reduce concurrency and increase delay
-4. Try different keywords/location
-5. Enable account authentication
-6. Enable AI Support for smarter error handling
-7. Use Local Browser to bypass anti-bot protections
+**解決策:**
+1. プロキシの稼働状態を確認
+2. インターネット接続を確認
+3. 同時実行数を減らし、遅延を増やす
+4. 別のキーワード/場所を試す
+5. アカウント認証を有効化
+6. よりスマートなエラー処理のために AI サポートを有効化
+7. アンチボット対策を回避するためにローカルブラウザを使用
 
-### No Results Returned
+### 結果が返されない
 
-**Possible causes:**
-- Keywords too specific
-- Location has no matching businesses
-- Platform returned no results
+**考えられる原因:**
+- キーワードが特定すぎる
+- 場所に一致するビジネスがない
+- プラットフォームが結果を返さなかった
 
-**Solutions:**
-1. Try broader keywords
-2. Verify location spelling
-3. Check if businesses exist on the platform manually
-4. Try nearby locations
+**解決策:**
+1. より広範なキーワードを試す
+2. 場所のスペルを確認
+3. プラットフォーム上にビジネスが存在するか手動で確認
+4. 近隣の場所を試す
 
-### Slow Processing
+### 処理が遅い
 
-**Possible causes:**
-- High max pages setting
-- Conservative delay settings
-- Platform rate limits
+**考えられる原因:**
+- 最大ページ数の設定が大きい
+- 控えめな遅延設定
+- プラットフォームのレート制限
 
-**Solutions:**
-1. Reduce max pages
-2. Slightly reduce delay (with caution)
-3. Increase concurrency (if using proxies)
+**解決策:**
+1. 最大ページ数を減らす
+2. 遅延を少し減らす（注意して）
+3. 同時実行数を増やす（プロキシ使用時）
 
-### Incomplete Data
+### データが不完全
 
-**Possible causes:**
-- Business listings missing information
-- Platform layout changes
+**考えられる原因:**
+- ビジネスリストに情報が欠落
+- プラットフォームのレイアウト変更
 
-**Solutions:**
-1. Some businesses naturally lack certain data
-2. Cross-reference with other platforms
-3. Report platform issues to support
+**解決策:**
+1. 一部のビジネスは自然に特定のデータが欠落しています
+2. 他のプラットフォームとクロスリファレンス
+3. プラットフォームの問題をサポートに報告
 
-## Advanced Workflows
+## 高度なワークフロー
 
-### Workflow 1: Local Business Outreach
+### ワークフロー 1: ローカルビジネスアウトリーチ
 
-1. **Search** for businesses in your target location
-2. **Filter** by category and ratings
-3. **Export** high-quality leads
-4. **Import** to email marketing
-5. **Create personalized campaign** using AI Email Writer
+1. ターゲット地域のビジネスを **検索**
+2. カテゴリと評価で **フィルター**
+3. 高品質なリードを **エクスポート**
+4. メールマーケティングに **インポート**
+5. AI メールライターを使用して **パーソナライズされたキャンペーンを作成**
 
-### Workflow 2: Competitive Analysis
+### ワークフロー 2: 競合分析
 
-1. **Scrape competitors** in multiple locations
-2. **Analyze ratings and reviews**
-3. **Identify service gaps**
-4. **Target underserved areas**
+1. 複数地域の **競合をスクレイピング**
+2. **評価とレビューを分析**
+3. **サービスのギャップを特定**
+4. **サービスが不足しているエリアをターゲット**
 
-### Workflow 3: Market Research
+### ワークフロー 3: 市場調査
 
-1. **Extract** all businesses in an industry
-2. **Analyze** distribution and patterns
-3. **Identify** market opportunities
-4. **Plan** expansion strategy
+1. 業界のすべてのビジネスを **抽出**
+2. 分布とパターンを **分析**
+3. 市場の機会を **特定**
+4. 拡張戦略を **計画**
 
-## Comparison: Search Engines vs. Yellow Pages
+## 比較: 検索エンジン vs イエローページ
 
-| Feature | Search Engines | Yellow Pages |
+| 機能 | 検索エンジン | イエローページ |
 |---------|---------------|--------------|
-| **Best For** | Finding websites, general research | Local businesses, verified listings |
-| **Data Quality** | Varies | Structured, verified |
-| **Contact Info** | Requires extraction | Pre-extracted emails/phones |
-| **Geographic Targeting** | Keyword-based | Location-based |
-| **Ratings/Reviews** | Sometimes | Always (Yelp) |
-| **Business Hours** | Rarely | Commonly |
+| **最適な用途** | ウェブサイトの発見、一般的な調査 | ローカルビジネス、検証済みリスト |
+| **データ品質** | バラつきあり | 構造化、検証済み |
+| **連絡先情報** | 抽出が必要 | 事前抽出済みのメール/電話 |
+| **地理的ターゲティング** | キーワードベース | 場所ベース |
+| **評価/レビュー** | 場合によりあり | 常にあり（Yelp） |
+| **営業時間** | ほぼなし | よく含まれる |
 
-:::tip Use Both Strategies
+:::tip 両方の戦略を組み合わせる
 
-Combine both approaches:
-1. Use **Search Engines** to find industry-specific websites
-2. Use **Yellow Pages** to find local businesses
-3. Cross-reference for comprehensive coverage
+両方のアプローチを組み合わせてください:
+1. **検索エンジン**を使用して業界固有のウェブサイトを見つける
+2. **イエローページ**を使用してローカルビジネスを見つける
+3. 包括的なカバレッジのためにクロスリファレンス
 
 :::
 
-## Next Steps
+## 次のステップ
 
-- [Learn about email extraction](./contact-extraction)
-- [Set up AI-powered email campaigns](../ai-outreach/ai-email-writer)
-- [Configure task scheduling](../automation/task-scheduling)
+- [メール抽出について](./contact-extraction)
+- [AI 搭載メールキャンペーンの設定](../ai-outreach/ai-email-writer)
+- [タスクスケジューリングの設定](../automation/task-scheduling)
 
 ---
 
-**Ready to find local businesses?** Start with a small task to familiarize yourself with the process, then scale up your operations.
+**ローカルビジネスを見つける準備はできましたか？** 小規模なタスクから始めてプロセスに慣れ、その後、作業を拡大してください。

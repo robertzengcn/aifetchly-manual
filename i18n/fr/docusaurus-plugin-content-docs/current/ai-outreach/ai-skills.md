@@ -2,174 +2,174 @@
 id: ai-skills
 title: AI Skills
 sidebar_label: AI Skills
-description: Manage and extend aiFetchly's AI capabilities with customizable skills - import, uninstall, enable/disable, and use in AI Chat.
+description: Gerez et etendez les capacites d'IA d'aiFetchly avec des competences personnalisables - importez, desinstallez, activez/desactivez et utilisez-les dans l'IA Chat.
 ---
 
 # AI Skills
 
-AI Skills are modular extensions that enhance aiFetchly's AI chat capabilities. Skills add specialized knowledge, custom tools, and domain-specific functionality to the AI Marketing Assistant.
+Les AI Skills sont des extensions modulaires qui enrichissent les capacites de conversation IA d'aiFetchly. Ces competences ajoutent des connaissances specialisees, des outils personnalises et des fonctionnalites specifiques a un domaine a l'Assistant Marketing IA.
 
-## What Are AI Skills?
+## Qu'est-ce que les AI Skills ?
 
-AI Skills are packaged components that extend the AI's capabilities:
+Les AI Skills sont des composants packages qui etendent les capacites de l'IA :
 
-- **Built-in Skills**: Pre-installed skills with core functionality
-- **User-Installed Skills**: Custom skills you import for specific use cases
+- **Skills integres** : Competences preinstallees avec les fonctionnalites principales
+- **Skills installes par l'utilisateur** : Competences personnalisees que vous importez pour des cas d'usage specifiques
 
-Each skill has:
-- A unique name and version
-- A category (e.g., "web-search", "data-analysis", "automation")
-- Enable/disable state
-- A manifest defining permissions and capabilities
+Chaque competence dispose de :
+- Un nom et une version uniques
+- Une categorie (par ex., « recherche-web », « analyse-de-donnees », « automatisation »)
+- Un etat active/desactive
+- Un manifeste definissant les permissions et les capacites
 
-## Accessing AI Skills
+## Acces aux AI Skills
 
-1. Click **Settings** in the left navigation menu
-2. Navigate to **Skills**
-3. View the list of installed skills with their status
+1. Cliquez sur **Settings** dans le menu de navigation de gauche
+2. Accedez a **Skills**
+3. Consultez la liste des competences installees avec leur statut
 
-## Importing Skills
+## Importation de competences
 
-### Step 1: Obtain Skill Package
+### Etape 1 : Obtenir le package de la competence
 
-Skills are distributed as `.zip` files. You can get skills from:
-- Official aiFetchly skill marketplace
-- Community-contributed skills
-- Custom-developed skills for your organization
+Les competences sont distribuees sous forme de fichiers `.zip`. Vous pouvez les obtenir aupres de :
+- La marketplace officielle des competences aiFetchly
+- Competences contribuees par la communaute
+- Competences developpees sur mesure pour votre organisation
 
-### Step 2: Import the Skill
+### Etape 2 : Importer la competence
 
-1. In the Skills page, click the **Import** button (top-right, with upload icon)
-2. A file selection dialog opens
-3. Navigate to your skill `.zip` file
-4. Select the file and confirm
+1. Dans la page Skills, cliquez sur le bouton **Import** (en haut a droite, avec l'icone de telechargement)
+2. Une boite de dialogue de selection de fichiers s'ouvre
+3. Naviguez vers votre fichier `.zip` de competence
+4. Selectionnez le fichier et confirmez
 
-### Step 3: Verify Installation
+### Etape 3 : Verifier l'installation
 
-After import:
-- The skill appears in the skills table
-- Status shows as **Enabled** by default
-- Verify the skill's category and version match expectations
+Apres l'importation :
+- La competence apparait dans le tableau des competences
+- Le statut est affiche comme **Enabled** par defaut
+- Verifiez que la categorie et la version de la competence correspondent a vos attentes
 
-:::tip Import Tips
+:::tip Conseils d'importation
 
-- Only `.zip` files are supported
-- The skill must have a valid `manifest.json` inside
-- If import fails, check the zip file integrity and manifest format
-
-:::
-
-## Managing Skills
-
-### View Installed Skills
-
-The skills table displays:
-
-| Column | Description |
-|--------|-------------|
-| **Name** | Skill identifier/name |
-| **Source** | `Built-in` or `User-installed` badge |
-| **Category** | Skill's functional category |
-| **Version** | Current version number |
-| **Status** | `Enabled` or `Disabled` badge |
-| **Actions** | Enable/disable toggle and uninstall button |
-
-### Enable/Disable Skills
-
-To toggle a skill's state:
-
-1. Locate the skill in the table
-2. Use the **toggle buttons** in the Actions column:
-   - **Check mark** (green): Enable the skill
-   - **X mark** (grey): Disable the skill
-
-**When to Disable:**
-- Skill conflicts with another skill
-- Temporary troubleshooting
-- Skill not needed for current tasks
-- Testing skill behavior
-
-**Note:** Built-in skills cannot be uninstalled, only disabled.
-
-### Uninstall Skills
-
-To remove a user-installed skill:
-
-1. Locate the skill in the table
-2. Click the **Delete** (trash can) icon in the Actions column
-3. Confirm the uninstall action in the dialog
-
-:::warning Uninstall Warning
-
-Uninstalling a skill permanently removes it. You'll need to re-import if you want to use it again.
+- Seuls les fichiers `.zip` sont pris en charge
+- La competence doit contenir un fichier `manifest.json` valide
+- En cas d'echec de l'importation, verifiez l'integrite du fichier zip et le format du manifeste
 
 :::
 
-## Using Skills in AI Chat
+## Gestion des competences
 
-Skills become available in the **AI Marketing Assistant** once enabled.
+### Consulter les competences installees
 
-### Accessing AI Chat
+Le tableau des competences affiche :
 
-1. Navigate to **AI Marketing Assistant** (or **AI Chat**)
-2. Start a new conversation or continue existing one
+| Colonne | Description |
+|---------|-------------|
+| **Name** | Identifiant/nom de la competence |
+| **Source** | Badge `Built-in` ou `User-installed` |
+| **Category** | Categorie fonctionnelle de la competence |
+| **Version** | Numero de version actuel |
+| **Status** | Badge `Enabled` ou `Disabled` |
+| **Actions** | Bascule activer/desactiver et bouton de desinstallation |
 
-### How Skills Work in Chat
+### Activer/Desactiver les competences
 
-Enabled skills automatically integrate with AI responses:
+Pour modifier l'etat d'une competence :
 
-1. **Automatic Tool Selection**: AI chooses relevant skills based on your query
-2. **Manual Invocation**: Request specific skill functionality
-3. **Combined Outputs**: Multiple skills can work together
+1. Localisez la competence dans le tableau
+2. Utilisez les **boutons de bascule** dans la colonne Actions :
+   - **Coche** (verte) : Activer la competence
+   - **Croix** (grise) : Desactiver la competence
 
-### Example Skill Usage
+**Quand desactiver une competence :**
+- La competence est en conflit avec une autre
+- Resolution temporaire de problemes
+- La competence n'est pas necessaire pour les taches en cours
+- Test du comportement de la competence
 
-**Web Search Skill:**
+**Remarque :** Les competences integrees ne peuvent pas etre desinstallees, uniquement desactivees.
+
+### Desinstaller les competences
+
+Pour supprimer une competence installee par l'utilisateur :
+
+1. Localisez la competence dans le tableau
+2. Cliquez sur l'icone **Delete** (corbeille) dans la colonne Actions
+3. Confirmez l'action de desinstallation dans la boite de dialogue
+
+:::warning Avertissement de desinstallation
+
+La desinstallation d'une competence la supprime definitivement. Vous devrez la reimporter si vous souhaitez l'utiliser a nouveau.
+
+:::
+
+## Utilisation des competences dans l'IA Chat
+
+Les competences deviennent disponibles dans l'**Assistant Marketing IA** une fois activees.
+
+### Acceder a l'IA Chat
+
+1. Accedez a **AI Marketing Assistant** (ou **AI Chat**)
+2. Demarrez une nouvelle conversation ou poursuivez une conversation existante
+
+### Fonctionnement des competences dans le Chat
+
+Les competences activees s'integrent automatiquement aux reponses de l'IA :
+
+1. **Selection automatique des outils** : L'IA choisit les competences pertinentes en fonction de votre requete
+2. **Invocation manuelle** : Demandez une fonctionnalite specifique d'une competence
+3. **Resultats combines** : Plusieurs competences peuvent travailler ensemble
+
+### Exemples d'utilisation des competences
+
+**Competence de recherche web :**
 ```
-User: "What are the latest trends in SaaS marketing?"
-AI: [Uses web search skill to find current information]
-AI: "Based on recent data, SaaS marketing trends include..."
+Utilisateur : "Quelles sont les dernieres tendances en marketing SaaS ?"
+IA : [Utilise la competence de recherche web pour trouver des informations actuelles]
+IA : "D'apres les donnees recentes, les tendances du marketing SaaS incluent..."
 ```
 
-**Data Analysis Skill:**
+**Competence d'analyse de donnees :**
 ```
-User: "Analyze this customer data and identify patterns"
-AI: [Uses data analysis skill to process the data]
-AI: "The analysis reveals these key patterns..."
-```
-
-**Automation Skill:**
-```
-User: "Set up an automated email campaign for new leads"
-AI: [Uses automation skill to configure the campaign]
-AI: "Your automated campaign is now configured with..."
+Utilisateur : "Analysez ces donnees clients et identifiez les tendances"
+IA : [Utilise la competence d'analyse de donnees pour traiter les donnees]
+IA : "L'analyse revele les tendances cles suivantes..."
 ```
 
-### Skill Indicators in Chat
+**Competence d'automatisation :**
+```
+Utilisateur : "Configurez une campagne email automatisee pour les nouveaux prospects"
+IA : [Utilise la competence d'automatisation pour configurer la campagne]
+IA : "Votre campagne automatisee est maintenant configuree avec..."
+```
 
-When a skill is used:
-- The skill name may appear in the response
-- A small icon or badge indicates skill activation
-- Tool usage is shown in the conversation flow
+### Indicateurs de competences dans le Chat
 
-### Skill Permission Prompts
+Lorsqu'une competence est utilisee :
+- Le nom de la competence peut apparaitre dans la reponse
+- Une petite icone ou un badge indique l'activation de la competence
+- L'utilisation de l'outil est affichee dans le flux de conversation
 
-Some skills require your explicit permission before execution. This is a security feature to protect your system.
+### Demandes d'autorisation des competences
 
-**When You'll See Permission Prompts:**
+Certaines competences requierent votre autorisation explicite avant leur execution. Il s'agit d'une fonctionnalite de securite pour proteger votre systeme.
 
-Skills are categorized by their permission level:
+**Quand vous verrez des demandes d'autorisation :**
 
-| Category | Permission Behavior | Examples |
-|----------|-------------------|----------|
-| **Pure** | Auto-approved, no prompt | Text processing, calculations, data formatting |
-| **Shell** | Always prompts before execution | Running system commands, file operations |
-| **Network** | May prompt for external calls | Web scraping, API calls to external services |
-| **Data** | May prompt for sensitive access | File system read/write, database access |
+Les competences sont classees selon leur niveau de permission :
 
-**The Permission Prompt:**
+| Categorie | Comportement des permissions | Exemples |
+|-----------|------------------------------|----------|
+| **Pure** | Auto-approuvee, aucune demande | Traitement de texte, calculs, formatage de donnees |
+| **Shell** | Demande toujours avant l'execution | Execution de commandes systeme, operations sur les fichiers |
+| **Network** | Peut demander pour les appels externes | Web scraping, appels API vers des services externes |
+| **Data** | Peut demander pour les acces sensibles | Lecture/ecriture du systeme de fichiers, acces a la base de donnees |
 
-When a skill needs permission, you'll see a dialog in the AI chat:
+**La demande d'autorisation :**
+
+Lorsqu'une competence necessite une autorisation, vous verrez une boite de dialogue dans l'IA Chat :
 
 ```
 ┌─────────────────────────────────────────────┐
@@ -185,129 +185,129 @@ When a skill needs permission, you'll see a dialog in the AI chat:
 └─────────────────────────────────────────────┘
 ```
 
-**Permission Options:**
+**Options d'autorisation :**
 
-- **Allow Once**: Grant permission for this single execution only
-- **Allow Always**: Remember this decision and auto-approve future requests from this skill
-- **Deny**: Block this execution (skill will fail gracefully)
+- **Allow Once** : Accorder l'autorisation pour cette seule execution
+- **Allow Always** : Retenir cette decision et auto-approuver les futures requetes de cette competence
+- **Deny** : Bloquer cette execution (la competence echouera proprement)
 
-**Managing Saved Permissions:**
+**Gestion des autorisations enregistrees :**
 
-To review or change saved permissions:
+Pour consulter ou modifier les autorisations enregistrees :
 
-1. Go to **Settings** → **AI Skills**
-2. Click on a skill to view its permission status
-3. Toggle "Always Allow" to change auto-approval behavior
-4. Disabled skills have their permissions temporarily suspended
+1. Accedez a **Settings** -> **AI Skills**
+2. Cliquez sur une competence pour voir son statut de permission
+3. Activez/desactivez « Always Allow » pour modifier le comportement d'auto-approbation
+4. Les competences desactivees ont leurs permissions temporairement suspendues
 
-:::tip Security Best Practice
+:::tip Bonne pratique de securite
 
-Start with "Allow Once" for new skills. After verifying they work correctly and safely, you can switch to "Allow Always" for convenience.
+Commencez par « Allow Once » pour les nouvelles competences. Apres avoir verifie qu'elles fonctionnent correctement et de maniere securisee, vous pouvez passer a « Allow Always » pour plus de commodite.
 
 :::
 
-## Skill Categories
+## Categories de competences
 
-Skills are organized by functional category:
+Les competences sont organisees par categorie fonctionnelle :
 
-| Category | Purpose | Example Skills |
-|----------|---------|----------------|
-| **Web Search** | Internet research, trend analysis | Search engine, social media monitoring |
-| **Data Analysis** | Processing and interpreting data | CSV analysis, statistical modeling |
-| **Automation** | Workflow automation tasks | Email automation, task scheduling |
-| **Integration** | External service connections | CRM, API connectors |
-| **Content** | Content generation and optimization | Blog writing, SEO optimization |
-| **Pure** | General-purpose utilities | Text processing, formatting |
+| Categorie | Objectif | Exemples de competences |
+|-----------|----------|------------------------|
+| **Web Search** | Recherche sur Internet, analyse de tendances | Moteur de recherche, surveillance des reseaux sociaux |
+| **Data Analysis** | Traitement et interpretation des donnees | Analyse CSV, modelisation statistique |
+| **Automation** | Taches d'automatisation des flux de travail | Automatisation des emails, planification de taches |
+| **Integration** | Connexions aux services externes | CRM, connecteurs API |
+| **Content** | Generation et optimisation de contenu | Redaction de blog, optimisation SEO |
+| **Pure** | Utilitaires a usage general | Traitement de texte, formatage |
 
-## Troubleshooting
+## Depannage
 
-### Skill Not Appearing in Chat
+### La competence n'apparait pas dans le Chat
 
-**Possible causes:**
-- Skill is disabled
-- Skill installation incomplete
-- Skill requires specific permissions
+**Causes possibles :**
+- La competence est desactivee
+- L'installation de la competence est incomplete
+- La competence necessite des permissions specifiques
 
-**Solutions:**
-1. Check skill status in Settings → Skills
-2. Enable the skill if disabled
-3. Re-import the skill if corrupted
-4. Verify skill manifest has required permissions
+**Solutions :**
+1. Verifiez le statut de la competence dans Settings -> Skills
+2. Activez la competence si elle est desactivee
+3. Reimportez la competence si elle est corrompue
+4. Verifiez que le manifeste de la competence contient les permissions requises
 
-### Import Failed
+### Echec de l'importation
 
-**Possible causes:**
-- Invalid zip file format
-- Missing or malformed `manifest.json`
-- Skill already installed
-- Corrupted download
+**Causes possibles :**
+- Format de fichier zip invalide
+- `manifest.json` manquant ou mal formate
+- La competence est deja installee
+- Telechargement corrompu
 
-**Solutions:**
-1. Verify zip file integrity
-2. Check manifest.json format and content
-3. Uninstall existing version first, then re-import
-4. Re-download the skill package
+**Solutions :**
+1. Verifiez l'integrite du fichier zip
+2. Verifiez le format et le contenu du fichier manifest.json
+3. Desinstallez d'abord la version existante, puis reimportez
+4. Telechargez a nouveau le package de la competence
 
-### Skill Causes Errors
+### La competence provoque des erreurs
 
-**Possible causes:**
-- Skill bug or incompatibility
-- Missing dependencies
-- API key not configured
+**Causes possibles :**
+- Bug ou incompatibilite de la competence
+- Dependances manquantes
+- Cle API non configuree
 
-**Solutions:**
-1. Disable the skill temporarily
-2. Check skill documentation for requirements
-3. Verify all required configurations are complete
-4. Contact skill developer for support
+**Solutions :**
+1. Desactivez temporairement la competence
+2. Consultez la documentation de la competence pour les prerequis
+3. Verifiez que toutes les configurations requises sont completes
+4. Contactez le developpeur de la competence pour obtenir de l'assistance
 
-### Built-in Skill Cannot Uninstall
+### Impossible de desinstaller une competence integree
 
-Built-in skills are core to aiFetchly functionality and cannot be removed. You can only disable them if they conflict with other skills.
+Les competences integrees sont essentielles au fonctionnement d'aiFetchly et ne peuvent pas etre supprimees. Vous pouvez uniquement les desactiver si elles entrent en conflit avec d'autres competences.
 
-## Best Practices
+## Bonnes pratiques
 
-### 1. Skill Selection
+### 1. Selection des competences
 
-**Install Only What You Need:**
-- Each skill adds complexity
-- Too many skills may cause conflicts
-- Start with essential skills, add as needed
+**Installez uniquement ce dont vous avez besoin :**
+- Chaque competence ajoute de la complexite
+- Trop de competences peuvent provoquer des conflits
+- Commencez par les competences essentielles, ajoutez-en au besoin
 
-### 2. Skill Updates
+### 2. Mises a jour des competences
 
-**Keep Skills Current:**
-- Check for skill updates regularly
-- Update skills for bug fixes and improvements
-- Test updated skills before production use
+**Maintenez vos competences a jour :**
+- Verifiez regulierement les mises a jour des competences
+- Mettez a jour les competences pour les correctifs et les ameliorations
+- Testez les competences mises a jour avant une utilisation en production
 
-### 3. Skill Organization
+### 3. Organisation des competences
 
-**Name and Categorize Well:**
-- Use descriptive skill names
-- Organize by functional category
-- Document custom skill purposes
+**Nommez et categorisez judicieusement :**
+- Utilisez des noms de competences descriptifs
+- Organisez par categorie fonctionnelle
+- Documentez l'objectif des competences personnalisees
 
-### 4. Testing
+### 4. Tests
 
-**Test Before Production:**
-- Enable skills in test mode first
-- Verify skill behavior in AI chat
-- Check for conflicts with existing skills
+**Testez avant la production :**
+- Activez les competences en mode test d'abord
+- Verifiez le comportement de la competence dans l'IA Chat
+- Verifiez l'absence de conflits avec les competences existantes
 
-### 5. Security
+### 5. Securite
 
-**Only Install Trusted Skills:**
-- Verify skill source
-- Review skill permissions
-- Monitor skill behavior
-- Remove unused skills
+**Installez uniquement des competences de confiance :**
+- Verifiez la source de la competence
+- Examinez les permissions de la competence
+- Surveillez le comportement de la competence
+- Supprimez les competences inutilisees
 
-## Skill Development (For Developers)
+## Developpement de competences (pour les developpeurs)
 
-### Manifest Structure
+### Structure du manifeste
 
-A skill's `manifest.json` should include:
+Le fichier `manifest.json` d'une competence doit inclure :
 
 ```json
 {
@@ -315,47 +315,47 @@ A skill's `manifest.json` should include:
   "version": "1.0.0",
   "category": "automation",
   "permissions": ["web-search", "data-access"],
-  "description": "Description of what this skill does"
+  "description": "Description de ce que cette competence fait"
 }
 ```
 
 ### Packaging
 
-1. Include `manifest.json` at root
-2. Add skill implementation files
-3. Include any required assets
-4. Zip the contents (not the folder)
-5. Name the file `skill-name.zip`
+1. Incluez `manifest.json` a la racine
+2. Ajoutez les fichiers d'implementation de la competence
+3. Incluez les ressources necessaires
+4. Compressez le contenu (pas le dossier)
+5. Nommez le fichier `skill-name.zip`
 
-## Integration with Other Features
+## Integration avec d'autres fonctionnalites
 
-### AI Marketing Assistant
+### Assistant Marketing IA
 
-Skills enhance AI chat capabilities:
-- More accurate responses
-- Access to external data sources
-- Automated task execution
+Les competences enrichissent les capacites de conversation de l'IA :
+- Des reponses plus precises
+- Acces a des sources de donnees externes
+- Execution automatisee de taches
 
-### MCP Tools
+### Outils MCP
 
-Skills and MCP tools can work together:
-- Skills provide domain-specific logic
-- MCP tools provide external connectivity
-- Combined for powerful automation
+Les competences et les outils MCP peuvent fonctionner ensemble :
+- Les competences fournissent une logique specifique au domaine
+- Les outils MCP fournissent une connectivite externe
+- Combines pour une automatisation puissante
 
-### Knowledge Library
+### Bibliotheque de connaissances
 
-Skills can leverage your knowledge base:
-- Search knowledge during chat
-- Apply learned patterns
-- Generate context-aware responses
+Les competences peuvent exploiter votre base de connaissances :
+- Recherche de connaissances pendant la conversation
+- Application de modeles appris
+- Generation de reponses contextuelles
 
-## Next Steps
+## Prochaines etapes
 
-- [Configure System Settings](../settings/system-settings)
-- [Learn about AI Marketing Assistant](./ai-marketing-assistant)
-- [Set up Knowledge Library](./knowledge-library)
+- [Configurer les parametres systeme](../settings/system-settings)
+- [Decouvrir l'Assistant Marketing IA](./ai-marketing-assistant)
+- [Configurer la Bibliotheque de connaissances](./knowledge-library)
 
 ---
 
-**Ready to extend AI capabilities?** Import your first skill and discover new possibilities for automation and intelligence.
+**Pret a etendre les capacites de l'IA ?** Importez votre premiere competence et decouvrez de nouvelles possibilites d'automatisation et d'intelligence.
