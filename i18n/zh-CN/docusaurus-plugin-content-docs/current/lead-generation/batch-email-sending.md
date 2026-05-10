@@ -1,8 +1,8 @@
 ---
 id: batch-email-sending
-title: Batch Email Sending
-sidebar_label: Batch Email Sending
-description: Send personalized email campaigns at scale using SMTP integration with aiFetchly.
+title: 批量邮件发送
+sidebar_label: 批量邮件发送
+description: 使用 aiFetchly 的 SMTP 集成大规模发送个性化邮件营销活动。
 ---
 
 # 批量邮件发送

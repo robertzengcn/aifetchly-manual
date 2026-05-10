@@ -1,8 +1,8 @@
 ---
 id: task-scheduling
-title: Task Scheduling
-sidebar_label: Task Scheduler
-description: Automate your workflows with aiFetchly's powerful task scheduling system.
+title: タスクスケジューリング
+sidebar_label: タスクスケジューラー
+description: aiFetchlyの強力なタスクスケジューリングシステムでワークフローを自動化します。
 ---
 
 # タスクスケジューリング

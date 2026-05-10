@@ -1,8 +1,8 @@
 ---
 id: proxy-setup
-title: Proxy Setup
-sidebar_label: Proxy Setup
-description: Learn how to configure and manage proxies for safe and efficient web scraping in aiFetchly.
+title: 代理设置
+sidebar_label: 代理设置
+description: 了解如何在 aiFetchly 中配置和管理代理，以实现安全高效的网页抓取。
 ---
 
 # 代理设置指南

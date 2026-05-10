@@ -1,7 +1,7 @@
 ---
 id: ai-email-writer
-title: AI Email Writer
-sidebar_label: AI Email Writer
+title: KI-E-Mail-Verfasser
+sidebar_label: KI-E-Mail-Verfasser
 description: Erstellen Sie personalisierte, KI-generierte E-Mail-Vorlagen mit Variablenersetzung und Integration der Wissensbibliothek.
 ---
 

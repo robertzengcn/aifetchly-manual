@@ -1,8 +1,8 @@
 ---
 id: contact-extraction
-title: Contact Extraction
-sidebar_label: Email Extraction
-description: Extract email addresses from websites and URLs in bulk with aiFetchly's powerful extraction tool.
+title: 联系人提取
+sidebar_label: 邮箱提取
+description: 使用 aiFetchly 强大的提取工具批量从网站和 URL 中提取电子邮件地址。
 ---
 
 # 邮件提取

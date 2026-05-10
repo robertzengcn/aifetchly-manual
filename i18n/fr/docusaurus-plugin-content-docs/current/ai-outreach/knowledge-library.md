@@ -1,8 +1,8 @@
 ---
 id: knowledge-library
-title: Knowledge Library
-sidebar_label: Knowledge Library
-description: Build your knowledge base with documents that AI uses to generate contextually relevant content.
+title: Bibliothèque de connaissances
+sidebar_label: Bibliothèque de connaissances
+description: Construisez votre base de connaissances avec des documents que l'IA utilise pour générer du contenu contextuellement pertinent.
 ---
 
 # Bibliothèque de connaissances

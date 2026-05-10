@@ -1,8 +1,8 @@
 ---
 id: knowledge-library
-title: Knowledge Library
-sidebar_label: Knowledge Library
-description: Build your knowledge base with documents that AI uses to generate contextually relevant content.
+title: ナレッジライブラリ
+sidebar_label: ナレッジライブラリ
+description: AIがコンテキストに応じたコンテンツを生成するために使用するドキュメントでナレッジベースを構築します。
 ---
 
 # ナレッジライブラリ

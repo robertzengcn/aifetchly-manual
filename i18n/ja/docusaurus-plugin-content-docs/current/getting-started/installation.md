@@ -1,8 +1,8 @@
 ---
 id: installation
-title: Installation
-sidebar_label: Installation
-description: How to download and install aiFetchly on Windows, macOS, or Linux.
+title: インストール
+sidebar_label: インストール
+description: Windows、macOS、LinuxへのaiFetchlyのダウンロードとインストール方法。
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

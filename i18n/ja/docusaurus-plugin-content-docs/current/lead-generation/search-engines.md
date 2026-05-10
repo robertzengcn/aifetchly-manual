@@ -1,8 +1,8 @@
 ---
 id: search-engines
-title: Search Engine Scraping
-sidebar_label: Search Engines
-description: Learn how to scrape search results from Google, Bing, and Yandex to generate leads with AI-powered analysis.
+title: 検索エンジンスクレイピング
+sidebar_label: 検索エンジン
+description: Google、Bing、Yandexから検索結果をスクレイピングし、AI分析でリードを獲得する方法。
 ---
 
 # 検索エンジンスクレイピング

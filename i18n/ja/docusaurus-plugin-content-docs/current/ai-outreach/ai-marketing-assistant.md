@@ -1,7 +1,7 @@
 ---
 id: ai-marketing-assistant
-title: AI Marketing Assistant
-sidebar_label: AI Marketing Assistant
+title: AIマーケティングアシスタント
+sidebar_label: AIマーケティングアシスタント
 description: aiFetchlyのAI搭載チャットアシスタントで戦略的なマーケティングガイダンスとコンテンツアイデアを取得しましょう。
 ---
 

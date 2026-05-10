@@ -1,8 +1,8 @@
 ---
 id: introduction
-title: Welcome to aiFetchly
-sidebar_label: Introduction
-description: An overview of aiFetchly - your AI-powered marketing automation tool for lead generation and outreach.
+title: aiFetchlyへようこそ
+sidebar_label: はじめに
+description: リード獲得とアウトリーチのためのAI搭載マーケティングオートメーションツール、aiFetchlyの概要。
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

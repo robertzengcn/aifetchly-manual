@@ -1,7 +1,7 @@
 ---
 id: ai-skills
-title: AI Skills
-sidebar_label: AI Skills
+title: KI-Fähigkeiten
+sidebar_label: KI-Fähigkeiten
 description: Verwalten und erweitern Sie die KI-Fähigkeiten von aiFetchly mit anpassbaren Skills - importieren, deinstallieren, aktivieren/deaktivieren und im KI-Chat verwenden.
 ---
 

@@ -1,7 +1,7 @@
 ---
 id: ai-skills
-title: AI Skills
-sidebar_label: AI Skills
+title: AIスキル
+sidebar_label: AIスキル
 description: aiFetchlyのAI機能を管理・拡張するカスタマイズ可能なスキル - インポート、アンインストール、有効化/無効化、AIチャットでの利用方法。
 ---
 

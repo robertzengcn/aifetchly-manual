@@ -1,7 +1,7 @@
 ---
 id: knowledge-library
-title: Knowledge Library
-sidebar_label: Knowledge Library
+title: Wissensbibliothek
+sidebar_label: Wissensbibliothek
 description: Erstellen Sie Ihre Wissensbasis mit Dokumenten, die die KI verwendet, um kontextuell relevanten Content zu generieren.
 ---
 

@@ -1,8 +1,8 @@
 ---
 id: proxy-setup
-title: Proxy Setup
-sidebar_label: Proxy Setup
-description: Learn how to configure and manage proxies for safe and efficient web scraping in aiFetchly.
+title: Configuration du proxy
+sidebar_label: Configuration du proxy
+description: Apprenez à configurer et gérer les proxys pour un scraping web sûr et efficace dans aiFetchly.
 ---
 
 # Guide de configuration des proxys

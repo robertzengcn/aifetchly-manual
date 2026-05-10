@@ -1,8 +1,8 @@
 ---
 id: system-settings
-title: System Settings
-sidebar_label: System Settings
-description: Configure aiFetchly's browser paths, captcha solving, and system preferences.
+title: 系统设置
+sidebar_label: 系统设置
+description: 配置 aiFetchly 的浏览器路径、验证码解决方案、嵌入模型和 MCP 工具。
 ---
 
 # 系统设置

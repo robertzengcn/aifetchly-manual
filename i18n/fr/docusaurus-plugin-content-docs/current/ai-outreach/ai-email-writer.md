@@ -1,8 +1,8 @@
 ---
 id: ai-email-writer
-title: AI Email Writer
-sidebar_label: AI Email Writer
-description: Créez des modèles d'e-mails personnalisés et générés par l'IA avec substitution de variables et intégration de la Bibliothèque de connaissances.
+title: Rédacteur d'emails IA
+sidebar_label: Rédacteur d'emails IA
+description: Créez des modèles d'emails personnalisés générés par l'IA avec substitution de variables et intégration de la Bibliothèque de connaissances.
 ---
 
 # AI Email Writer

@@ -1,8 +1,8 @@
 ---
 id: ai-email-writer
-title: AI Email Writer
-sidebar_label: AI Email Writer
-description: Create personalized, AI-generated email templates with variable substitution and Knowledge Library integration.
+title: AI 邮件撰写器
+sidebar_label: AI 邮件撰写器
+description: 创建个性化的 AI 生成邮件模板，支持变量替换和知识库集成。
 ---
 
 # AI 邮件撰写器

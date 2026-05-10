@@ -1,8 +1,8 @@
 ---
 id: knowledge-library
-title: Knowledge Library
-sidebar_label: Knowledge Library
-description: Build your knowledge base with documents that AI uses to generate contextually relevant content.
+title: 知识库
+sidebar_label: 知识库
+description: 构建您的知识库，上传文档供 AI 使用以生成具有上下文相关性的内容。
 ---
 
 # 知识库

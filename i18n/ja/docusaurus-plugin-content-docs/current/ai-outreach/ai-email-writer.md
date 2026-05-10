@@ -1,7 +1,7 @@
 ---
 id: ai-email-writer
-title: AI Email Writer
-sidebar_label: AI Email Writer
+title: AIメールライター
+sidebar_label: AIメールライター
 description: 変数置換とナレッジライブラリ連携を備えた、パーソナライズされたAI生成メールテンプレートを作成します。
 ---
 

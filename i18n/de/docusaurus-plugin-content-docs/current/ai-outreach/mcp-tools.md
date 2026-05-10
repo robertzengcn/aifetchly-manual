@@ -1,7 +1,7 @@
 ---
 id: mcp-tools
-title: MCP Tools
-sidebar_label: MCP Tools
+title: MCP-Tools
+sidebar_label: MCP-Tools
 description: Erweitern Sie die KI-Fähigkeiten durch die Verbindung mit externen Werkzeugen und Diensten über das Model Context Protocol (MCP).
 ---
 

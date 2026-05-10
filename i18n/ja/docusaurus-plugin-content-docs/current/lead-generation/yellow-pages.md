@@ -1,8 +1,8 @@
 ---
 id: yellow-pages
-title: Yellow Pages Scraping
-sidebar_label: Yellow Pages
-description: Extract business information from Yellow Pages, Yelp, and other online directories worldwide.
+title: イエローページスクレイピング
+sidebar_label: イエローページ
+description: 世界中のイエローページ、Yelp、その他のオンラインディレクトリからビジネス情報を抽出します。
 ---
 
 # イエローページスクレイピング

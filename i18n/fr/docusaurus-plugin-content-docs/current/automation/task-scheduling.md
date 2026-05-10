@@ -1,38 +1,38 @@
 ---
 id: task-scheduling
-title: Planification des taches
-sidebar_label: Planificateur de taches
-description: Automatisez vos flux de travail avec le puissant systeme de planification de taches de aiFetchly.
+title: Planification des tâches
+sidebar_label: Planificateur de tâches
+description: Automatisez vos flux de travail avec le puissant système de planification de tâches de aiFetchly.
 ---
 
-# Planification des taches
+# Planification des tâches
 
-Le planificateur de taches de aiFetchly vous permet d'automatiser vos flux de travail marketing en executant des taches automatiquement a des moments specifies ou en reponse a d'autres taches. Configurez des recherches recurrentes, des campagnes d'e-mails automatisees et des flux de travail complexes a plusieurs etapes.
+Le planificateur de tâches de aiFetchly vous permet d'automatiser vos flux de travail marketing en exécutant des tâches automatiquement à des moments spécifiés ou en réponse à d'autres tâches. Configurez des recherches récurrentes, des campagnes d'e-mails automatisées et des flux de travail complexes à plusieurs étapes.
 
 ## Comprendre la planification
 
-Le planificateur de taches prend en charge trois types de declencheurs de taches :
+Le planificateur de tâches prend en charge trois types de déclencheurs de tâches :
 
-| Type de declencheur | Description | Cas d'utilisation |
+| Type de déclencheur | Description | Cas d'utilisation |
 |-------------|-------------|----------|
-| **Cron** | Planification basee sur le temps utilisant des expressions cron | Taches recurrentes, travaux quotidiens/hebdomadaires/mensuels |
-| **Dependance** | Declenche par l'achevement d'une autre tache | Flux de travail a plusieurs etapes, chaines de taches |
-| **Manuel** | Execute uniquement lorsqu'il est declenche manuellement | Taches a la demande, tests |
+| **Cron** | Planification basée sur le temps utilisant des expressions cron | Tâches récurrentes, travaux quotidiens/hebdomadaires/mensuels |
+| **Dépendance** | Déclenché par l'achèvement d'une autre tâche | Flux de travail à plusieurs étapes, chaînes de tâches |
+| **Manuel** | Exécuté uniquement lorsqu'il est déclenché manuellement | Tâches à la demande, tests |
 
 :::info Tout automatiser
 
-De la generation de prospects aux campagnes d'e-mails, l'automatisation de la planification fait gagner du temps et assure une execution coherente de vos flux de travail marketing.
+De la génération de prospects aux campagnes d'e-mails, l'automatisation de la planification fait gagner du temps et assure une exécution cohérente de vos flux de travail marketing.
 
 :::
 
-## Creer une tache planifiee
+## Créer une tâche planifiée
 
-### Etape 1 : Acceder au planificateur
+### Étape 1 : Accéder au planificateur
 
 1. Cliquez sur **Schedule** dans le menu de navigation de gauche
 2. Cliquez sur le bouton **New Schedule**
 
-### Etape 2 : Informations de base
+### Étape 2 : Informations de base
 
 Entrez les informations requises suivantes :
 
@@ -42,20 +42,20 @@ Entrez les informations requises suivantes :
 - **Exemple** : « Recherche Google quotidienne », « Campagne d'e-mails hebdomadaire »
 - **Obligatoire** : Oui
 
-#### Type de tache
+#### Type de tâche
 
-Selectionnez le type de tache a planifier :
+Sélectionnez le type de tâche à planifier :
 
-- **Search** : Taches de scraping de moteurs de recherche
-- **Email Extract** : Taches d'extraction d'e-mails
+- **Search** : Tâches de scraping de moteurs de recherche
+- **Email Extract** : Tâches d'extraction d'e-mails
 - **Bulk Email** : Campagnes d'e-mails marketing
-- **Yellow Pages** : Taches de scraping d'annuaires
-- **Video Download** : Taches de telechargement de videos
+- **Yellow Pages** : Tâches de scraping d'annuaires
+- **Video Download** : Tâches de téléchargement de vidéos
 
-#### ID de tache
+#### ID de tâche
 
-- **Objectif** : Lier a l'instance de tache specifique
-- **Selection** : Choisissez parmi les taches existantes du type selectionne
+- **Objectif** : Lier à l'instance de tâche spécifique
+- **Sélection** : Choisissez parmi les tâches existantes du type sélectionné
 - **Obligatoire** : Oui
 
 #### Description
@@ -64,13 +64,13 @@ Selectionnez le type de tache a planifier :
 - **Exemple** : « Recherche quotidienne de nouvelles agences marketing dans les villes cibles »
 - **Facultatif** : Oui
 
-### Etape 3 : Configurer le declencheur
+### Étape 3 : Configurer le déclencheur
 
-#### Planification Cron (basee sur le temps)
+#### Planification Cron (basée sur le temps)
 
 Activez **Cron** et configurez le planificateur :
 
-**Options predefinies :**
+**Options prédéfinies :**
 - Chaque minute
 - Chaque heure
 - Quotidien (minuit)
@@ -84,15 +84,15 @@ Activez **Cron** et configurez le planificateur :
 - Jours ouvrables 9h
 - Weekends 10h
 
-**Generateur Cron personnalise :**
+**Générateur Cron personnalisé :**
 
 | Champ | Options | Description |
 |-------|---------|-------------|
-| **Minutes** | `*/5`, `*/15`, `*/30` ou minutes specifiques | Toutes les 5/15/30 min ou specifique |
-| **Heures** | `*/2`, `*/6`, `*/12` ou heures specifiques | Toutes les 2/6/12 heures ou specifique |
-| **Jours** | `*/2` ou jours specifiques | Tous les 2 jours ou specifique |
-| **Mois** | `*/3`, `*/6` ou mois specifiques | Tous les 3/6 mois ou specifique |
-| **Jours de la semaine** | `1-5` (jours ouvres), `0,6` (weekends) ou specifique | Jours ouvres, weekends ou specifique |
+| **Minutes** | `*/5`, `*/15`, `*/30` ou minutes spécifiques | Toutes les 5/15/30 min ou spécifique |
+| **Heures** | `*/2`, `*/6`, `*/12` ou heures spécifiques | Toutes les 2/6/12 heures ou spécifique |
+| **Jours** | `*/2` ou jours spécifiques | Tous les 2 jours ou spécifique |
+| **Mois** | `*/3`, `*/6` ou mois spécifiques | Tous les 3/6 mois ou spécifique |
+| **Jours de la semaine** | `1-5` (jours ouvrés), `0,6` (weekends) ou spécifique | Jours ouvrés, weekends ou spécifique |
 
 **Format d'expression Cron :**
 ```
@@ -107,78 +107,78 @@ Activez **Cron** et configurez le planificateur :
 
 **Exemples :**
 ```
-0 9 * * 1-5      # Jours ouvrables a 9h00
+0 9 * * 1-5      # Jours ouvrables à 9h00
 */30 * * * *     # Toutes les 30 minutes
-0 0 * * 1        # Chaque lundi a minuit
-0 9,15 * * *     # Quotidien a 9h00 et 15h00
-0 0 1 * *        # Le 1er de chaque mois a minuit
+0 0 * * 1        # Chaque lundi à minuit
+0 9,15 * * *     # Quotidien à 9h00 et 15h00
+0 0 1 * *        # Le 1er de chaque mois à minuit
 ```
 
-**Prochaine execution :**
-- Le systeme calcule et affiche automatiquement l'heure de la prochaine execution
-- Utile pour verifier votre expression cron
+**Prochaine exécution :**
+- Le système calcule et affiche automatiquement l'heure de la prochaine exécution
+- Utile pour vérifier votre expression cron
 
-#### Planification par dependance (basee sur les taches)
+#### Planification par dépendance (basée sur les tâches)
 
-Activez **Dependency** pour declencher cette tache lorsqu'une autre tache est terminee.
+Activez **Dependency** pour déclencher cette tâche lorsqu'une autre tâche est terminée.
 
 **Configuration :**
 
-1. **Planificateur parent** : Selectionnez le planificateur qui declenchera cette tache
-2. **Condition de dependance** :
-   - **On Success** : Executer uniquement si la tache parente reussit
-   - **On Completion** : Executer apres l'achevement de la tache parente (succes ou echec)
-   - **On Failure** : Executer uniquement si la tache parente echoue
+1. **Planificateur parent** : Sélectionnez le planificateur qui déclenchera cette tâche
+2. **Condition de dépendance** :
+   - **On Success** : Exécuter uniquement si la tâche parente réussit
+   - **On Completion** : Exécuter après l'achèvement de la tâche parente (succès ou échec)
+   - **On Failure** : Exécuter uniquement si la tâche parente échoue
 
-3. **Delai (minutes)** : Temps d'attente apres l'achevement de la tache parente
-   - `0` minutes : Executer immediatement
+3. **Délai (minutes)** : Temps d'attente après l'achèvement de la tâche parente
+   - `0` minutes : Exécuter immédiatement
    - `5` minutes : Attendre 5 minutes avant de commencer
    - `60` minutes : Attendre 1 heure avant de commencer
 
 **Cas d'utilisation :**
-- **E-mail apres extraction** : Extraire les e-mails, puis envoyer la campagne une fois termine
-- **Analyse apres scraping** : Scraper les donnees, puis lancer une analyse IA
-- **Campagnes multi-etapes** : Prise de contact initiale → Suivi 1 → Suivi 2
+- **E-mail après extraction** : Extraire les e-mails, puis envoyer la campagne une fois terminé
+- **Analyse après scraping** : Scraper les données, puis lancer une analyse IA
+- **Campagnes multi-étapes** : Prise de contact initiale → Suivi 1 → Suivi 2
 
-:::tip Chaines de dependance
+:::tip Chaînes de dépendance
 
-Vous pouvez creer des chaines de dependance a plusieurs niveaux :
-- Tache A (Cron) → Tache B (Dependance) → Tache C (Dependance)
+Vous pouvez créer des chaînes de dépendance à plusieurs niveaux :
+- Tâche A (Cron) → Tâche B (Dépendance) → Tâche C (Dépendance)
 
-Cela cree des flux de travail automatises puissants.
+Cela crée des flux de travail automatisés puissants.
 
 :::
 
-#### Execution manuelle
+#### Exécution manuelle
 
-Activez **Manual** pour executer les taches uniquement lorsqu'elles sont declenchees :
+Activez **Manual** pour exécuter les tâches uniquement lorsqu'elles sont déclenchées :
 
 - Pas de planification automatique
-- Execution a la demande via le bouton « Run Now »
-- Utile pour les tests ou les taches peu frequentes
+- Exécution à la demande via le bouton « Run Now »
+- Utile pour les tests ou les tâches peu fréquentes
 
-### Etape 4 : Statut actif
+### Étape 4 : Statut actif
 
 Basculez le statut du planificateur :
-- **Active** : Le planificateur s'executera selon les parametres du declencheur
-- **Inactive** : Le planificateur est desactive et ne s'executera pas
+- **Active** : Le planificateur s'exécutera selon les paramètres du déclencheur
+- **Inactive** : Le planificateur est désactivé et ne s'exécutera pas
 
-### Etape 5 : Enregistrer le planificateur
+### Étape 5 : Enregistrer le planificateur
 
-Cliquez sur **Save** pour creer le planificateur. Vous pouvez :
-- **Edit** (modifier) le planificateur ulterieurement
-- **Enable/Disable** (activer/desactiver) selon vos besoins
-- **Run Now** pour tester immediatement
+Cliquez sur **Save** pour créer le planificateur. Vous pouvez :
+- **Edit** (modifier) le planificateur ultérieurement
+- **Enable/Disable** (activer/désactiver) selon vos besoins
+- **Run Now** pour tester immédiatement
 
-## Gestion des taches planifiees
+## Gestion des tâches planifiées
 
 ### Afficher la liste des planificateurs
 
-Naviguez vers **Schedule** pour voir toutes vos taches planifiees.
+Naviguez vers **Schedule** pour voir toutes vos tâches planifiées.
 
-**Apercu des planificateurs :**
+**Aperçu des planificateurs :**
 - **Carte de statut** : Affiche le nombre total de planificateurs actifs, inactifs et en pause
-- **Filtres** : Recherche par nom, statut, type de tache, type de declencheur
+- **Filtres** : Recherche par nom, statut, type de tâche, type de déclencheur
 
 ### Tableau des planificateurs
 
@@ -186,14 +186,14 @@ La liste des planificateurs affiche :
 
 | Colonne | Description |
 |--------|-------------|
-| **Name** | Nom du planificateur avec indicateur de type de tache |
+| **Name** | Nom du planificateur avec indicateur de type de tâche |
 | **Status** | Active (vert), Inactive (gris), Paused (jaune) |
 | **Trigger Type** | Cron, Dependency ou Manual |
-| **Schedule** | Expression cron ou description de dependance |
-| **Next Run** | Prochaine heure d'execution avec compte a rebours |
-| **Last Run** | Execution la plus recente avec temps ecoule |
-| **Executions** | Nombre de succes / Nombre d'echecs |
-| **Actions** | Modifier, Supprimer, Pause/Reprendre, Executer maintenant |
+| **Schedule** | Expression cron ou description de dépendance |
+| **Next Run** | Prochaine heure d'exécution avec compte à rebours |
+| **Last Run** | Exécution la plus récente avec temps écoulé |
+| **Executions** | Nombre de succès / Nombre d'échecs |
+| **Actions** | Modifier, Supprimer, Pause/Reprendre, Exécuter maintenant |
 
 ### Actions du planificateur
 
@@ -202,60 +202,60 @@ La liste des planificateurs affiche :
 | **Edit** | Modifier la configuration du planificateur | Toujours |
 | **Delete** | Supprimer le planificateur | Toujours |
 | **Enable** | Activer un planificateur inactif | Planificateurs inactifs |
-| **Disable** | Desactiver un planificateur | Planificateurs actifs |
-| **Pause** | Suspendre temporairement l'execution | Planificateurs actifs |
+| **Disable** | Désactiver un planificateur | Planificateurs actifs |
+| **Pause** | Suspendre temporairement l'exécution | Planificateurs actifs |
 | **Resume** | Reprendre un planificateur en pause | Planificateurs en pause |
-| **Run Now** | Executer immediatement | Toujours |
+| **Run Now** | Exécuter immédiatement | Toujours |
 
-## Surveillance de l'execution
+## Surveillance de l'exécution
 
-### Afficher l'historique d'execution
+### Afficher l'historique d'exécution
 
 1. Cliquez sur **View Details** sur un planificateur
-2. Consultez le tableau de l'historique d'execution
+2. Consultez le tableau de l'historique d'exécution
 
-**Informations d'execution :**
+**Informations d'exécution :**
 
 | Colonne | Description |
 |--------|-------------|
-| **Start Time** | Quand l'execution a commence |
-| **End Time** | Quand l'execution s'est terminee (ou « Running... ») |
-| **Duration** | Combien de temps l'execution a pris (ou compteur en direct) |
+| **Start Time** | Quand l'exécution a commencé |
+| **End Time** | Quand l'exécution s'est terminée (ou « Running... ») |
+| **Duration** | Combien de temps l'exécution a pris (ou compteur en direct) |
 | **Status** | Success (vert), Failed (rouge), Running (bleu) |
-| **Result** | Resume des resultats d'execution |
-| **Error** | Message d'erreur (si l'execution a echoue) |
-| **Actions** | Voir les details, annuler l'execution en cours |
+| **Result** | Résumé des résultats d'exécution |
+| **Error** | Message d'erreur (si l'exécution a échoué) |
+| **Actions** | Voir les détails, annuler l'exécution en cours |
 
-### Statistiques d'execution
+### Statistiques d'exécution
 
-La vue detaillee affiche :
+La vue détaillée affiche :
 
-- **Taux de reussite** : Pourcentage d'executions reussies
-- **Duree moyenne** : Temps d'execution typique
-- **Executions totales** : Nombre global et repartition
-- **Derniere erreur** : Message d'echec le plus recent
-- **Prochaine execution** : Compte a rebours avant la prochaine execution
+- **Taux de réussite** : Pourcentage d'exécutions réussies
+- **Durée moyenne** : Temps d'exécution typique
+- **Exécutions totales** : Nombre global et répartition
+- **Dernière erreur** : Message d'échec le plus récent
+- **Prochaine exécution** : Compte à rebours avant la prochaine exécution
 
-### Surveillance en temps reel
+### Surveillance en temps réel
 
-Pour les taches en cours d'execution :
-- **Duree en direct** : Le compteur affiche le temps ecoule
-- **Bouton Annuler** : Arreter l'execution si necessaire
-- **Actualisation automatique** : Mise a jour du statut toutes les quelques secondes
+Pour les tâches en cours d'exécution :
+- **Durée en direct** : Le compteur affiche le temps écoulé
+- **Bouton Annuler** : Arrêter l'exécution si nécessaire
+- **Actualisation automatique** : Mise à jour du statut toutes les quelques secondes
 
-## Modeles de planification courants
+## Modèles de planification courants
 
-### Modele 1 : Generation de prospects quotidienne
+### Modèle 1 : Génération de prospects quotidienne
 
-**Planificateur** : Chaque jour ouvrable a 9h00
+**Planificateur** : Chaque jour ouvrable à 9h00
 ```
 Cron: 0 9 * * 1-5
 Task: Search Engine Scraping
 ```
 
-**Cas d'utilisation** : De nouveaux prospects chaque matin pour votre equipe commerciale.
+**Cas d'utilisation** : De nouveaux prospects chaque matin pour votre équipe commerciale.
 
-### Modele 2 : Surveillance horaire
+### Modèle 2 : Surveillance horaire
 
 **Planificateur** : Chaque heure pendant les heures de bureau
 ```
@@ -265,9 +265,9 @@ Task: Search / Yellow Pages
 
 **Cas d'utilisation** : Surveiller les nouvelles annonces commerciales pendant les heures de travail.
 
-### Modele 3 : Campagne hebdomadaire
+### Modèle 3 : Campagne hebdomadaire
 
-**Planificateur** : Chaque lundi a 10h00
+**Planificateur** : Chaque lundi à 10h00
 ```
 Cron: 0 10 * * 1
 Task: Bulk Email Sending
@@ -275,178 +275,178 @@ Task: Bulk Email Sending
 
 **Cas d'utilisation** : Newsletter hebdomadaire ou campagne de prospection.
 
-### Modele 4 : Flux de travail a plusieurs etapes
+### Modèle 4 : Flux de travail à plusieurs étapes
 
-**Tache A** (Cron) : Quotidien a 9h00 - Rechercher des prospects
-**Tache B** (Dependance) : Apres le succes de A - Extraire les e-mails
-**Tache C** (Dependance) : Apres le succes de B (delai de 30 min) - Envoyer les e-mails
+**Tâche A** (Cron) : Quotidien à 9h00 - Rechercher des prospects
+**Tâche B** (Dépendance) : Après le succès de A - Extraire les e-mails
+**Tâche C** (Dépendance) : Après le succès de B (délai de 30 min) - Envoyer les e-mails
 
-**Cas d'utilisation** : Pipeline automatise de generation de prospects et de prospection.
+**Cas d'utilisation** : Pipeline automatisé de génération de prospects et de prospection.
 
-### Modele 5 : Taches de maintenance
+### Modèle 5 : Tâches de maintenance
 
-**Planificateur** : Chaque dimanche a 3h00
+**Planificateur** : Chaque dimanche à 3h00
 ```
 Cron: 0 3 * * 0
 Task: Data cleanup or backup
 ```
 
-**Cas d'utilisation** : Maintenance de routine pendant les periodes de faible trafic.
+**Cas d'utilisation** : Maintenance de routine pendant les périodes de faible trafic.
 
 ## Bonnes pratiques
 
 ### 1. Conception du planificateur
 
-**Eviter les chevauchements :**
-- S'assurer que les taches se terminent avant la prochaine execution planifiee
-- Prendre en compte le temps d'execution moyen lors de la definition de la frequence
-- Utiliser les dependances pour sequencer les taches qui se chevauchent
+**Éviter les chevauchements :**
+- S'assurer que les tâches se terminent avant la prochaine exécution planifiée
+- Prendre en compte le temps d'exécution moyen lors de la définition de la fréquence
+- Utiliser les dépendances pour séquencer les tâches qui se chevauchent
 
 **Heures creuses :**
-- Planifier les taches gourmandes en ressources pendant les heures creuses
-- Eviter la concurrence avec l'activite des utilisateurs
-- Prendre en compte les fuseaux horaires pour les operations mondiales
+- Planifier les tâches gourmandes en ressources pendant les heures creuses
+- Éviter la concurrence avec l'activité des utilisateurs
+- Prendre en compte les fuseaux horaires pour les opérations mondiales
 
 **Temps tampon :**
-- Ajouter un tampon entre les taches dependantes
-- Prendre en compte les temps d'execution variables
-- Prevenir les retards en cascade
+- Ajouter un tampon entre les tâches dépendantes
+- Prendre en compte les temps d'exécution variables
+- Prévenir les retards en cascade
 
 ### 2. Gestion des erreurs
 
-**Surveiller les echecs :**
-- Verifier regulierement l'historique d'execution
-- Investiguer les echecs repetes
-- Ajuster les planificateurs ou les taches si necessaire
+**Surveiller les échecs :**
+- Vérifier régulièrement l'historique d'exécution
+- Investiguer les échecs répétés
+- Ajuster les planificateurs ou les tâches si nécessaire
 
 **Configurer des alertes :**
 - Examiner les planificateurs chaque semaine
-- Verifier les taches bloquees ou en pause
-- Verifier que les dependances se declenchent correctement
+- Vérifier les tâches bloquées ou en pause
+- Vérifier que les dépendances se déclenchent correctement
 
-**Degradation progressive :**
-- Utiliser les dependances « On Completion » pour continuer la chaine meme si une tache echoue
-- Creer des planificateurs alternatifs pour les taches critiques
-- Documenter les procedures d'escalade
+**Dégradation progressive :**
+- Utiliser les dépendances « On Completion » pour continuer la chaîne même si une tâche échoue
+- Créer des planificateurs alternatifs pour les tâches critiques
+- Documenter les procédures d'escalade
 
 ### 3. Gestion des ressources
 
-**Taches concurrentes :**
-- Eviter de planifier trop de taches simultanement
-- Prendre en compte les ressources systeme (CPU, memoire, reseau)
-- Decaler les taches similaires pour eviter les conflits
+**Tâches concurrentes :**
+- Éviter de planifier trop de tâches simultanément
+- Prendre en compte les ressources système (CPU, mémoire, réseau)
+- Décaler les tâches similaires pour éviter les conflits
 
 **Rotation des proxies :**
-- S'assurer qu'il y a suffisamment de proxies pour les taches planifiees concurrentes
-- Repartir la charge sur le pool de proxies
-- Surveiller la sante des proxies pour les taches planifiees
+- S'assurer qu'il y a suffisamment de proxies pour les tâches planifiées concurrentes
+- Répartir la charge sur le pool de proxies
+- Surveiller la santé des proxies pour les tâches planifiées
 
 ### 4. Tests
 
 **Tester les planificateurs :**
 - Utiliser « Run Now » pour tester avant la planification
-- Verifier d'abord avec une execution unique
-- Consulter les journaux pour tout probleme
+- Vérifier d'abord avec une exécution unique
+- Consulter les journaux pour tout problème
 
 **Valider les expressions Cron :**
-- Utiliser l'apercu « Next Run Time » pour verifier
+- Utiliser l'aperçu « Next Run Time » pour vérifier
 - Tester d'abord avec des intervalles plus courts
-- Confirmer que les parametres de fuseau horaire sont corrects
+- Confirmer que les paramètres de fuseau horaire sont corrects
 
-**Tester les dependances :**
-- Verifier que les taches parentes se terminent avec succes
-- Tester les parametres de delai
-- S'assurer que les chaines fonctionnent comme prevu
+**Tester les dépendances :**
+- Vérifier que les tâches parentes se terminent avec succès
+- Tester les paramètres de délai
+- S'assurer que les chaînes fonctionnent comme prévu
 
 ### 5. Documentation
 
 **Nommer clairement les planificateurs :**
-- Noms descriptifs avec objectif et frequence
-- Inclure le type de tache et la cible
+- Noms descriptifs avec objectif et fréquence
+- Inclure le type de tâche et la cible
 - Exemple : « Recherche Google quotidienne - Agences marketing »
 
 **Utiliser les descriptions :**
-- Documenter l'objectif et les resultats attendus
-- Noter les dependances et les relations
-- Inclure les considerations speciales
+- Documenter l'objectif et les résultats attendus
+- Noter les dépendances et les relations
+- Inclure les considérations spéciales
 
-**Etiqueter les objectifs des taches :**
-- Taguer ou categoriser les planificateurs connexes
+**Étiqueter les objectifs des tâches :**
+- Taguer ou catégoriser les planificateurs connexes
 - Grouper par projet ou campagne
 - Faciliter l'identification
 
-## Depannage
+## Dépannage
 
-### Le planificateur ne s'execute pas
+### Le planificateur ne s'exécute pas
 
 **Causes possibles :**
 - Le planificateur est inactif ou en pause
-- L'expression cron est mal configuree
+- L'expression cron est mal configurée
 - Le service du planificateur ne fonctionne pas
-- Problemes d'heure systeme/fuseau horaire
+- Problèmes d'heure système/fuseau horaire
 
 **Solutions :**
-1. Verifier que le statut est « Active »
-2. Verifier la syntaxe de l'expression cron
+1. Vérifier que le statut est « Active »
+2. Vérifier la syntaxe de l'expression cron
 3. Confirmer que le service du planificateur fonctionne
-4. Verifier l'heure systeme et les parametres de fuseau horaire
-5. Consulter les journaux d'execution pour les erreurs
+4. Vérifier l'heure système et les paramètres de fuseau horaire
+5. Consulter les journaux d'exécution pour les erreurs
 
-### La tache s'execute trop frequemment
+### La tâche s'exécute trop fréquemment
 
 **Causes possibles :**
 - L'expression cron est incorrecte
-- Plusieurs planificateurs pour la meme tache
-- Mauvaise comprehension de la syntaxe cron
+- Plusieurs planificateurs pour la même tâche
+- Mauvaise compréhension de la syntaxe cron
 
 **Solutions :**
 1. Examiner attentivement l'expression cron
-2. Verifier s'il y a des planificateurs en double
-3. Utiliser l'apercu « Next Run Time » pour verifier
+2. Vérifier s'il y a des planificateurs en double
+3. Utiliser l'aperçu « Next Run Time » pour vérifier
 4. Tester d'abord avec des intervalles plus longs
 
-### Les dependances ne se declenchent pas
+### Les dépendances ne se déclenchent pas
 
 **Causes possibles :**
-- La tache parente ne se termine pas
-- Mauvaise condition de dependance
-- Delai trop long ou trop court
+- La tâche parente ne se termine pas
+- Mauvaise condition de dépendance
+- Délai trop long ou trop court
 
 **Solutions :**
-1. Verifier l'historique d'execution de la tache parente
-2. Verifier que la condition de dependance correspond au comportement souhaite
-3. Ajuster les parametres de delai
-4. Verifier les dependances circulaires
+1. Vérifier l'historique d'exécution de la tâche parente
+2. Vérifier que la condition de dépendance correspond au comportement souhaité
+3. Ajuster les paramètres de délai
+4. Vérifier les dépendances circulaires
 
-### Les taches prennent trop de temps
+### Les tâches prennent trop de temps
 
 **Causes possibles :**
-- La configuration de la tache est trop agressive
-- Ressources systeme insuffisantes
-- Goulots d'etranglement reseau
+- La configuration de la tâche est trop agressive
+- Ressources système insuffisantes
+- Goulots d'étranglement réseau
 
 **Solutions :**
-1. Reduire la portee de la tache (pages, concurrence, etc.)
+1. Réduire la portée de la tâche (pages, concurrence, etc.)
 2. Planifier pendant les heures creuses
-3. Augmenter l'intervalle entre les executions
-4. Verifier les performances du systeme
+3. Augmenter l'intervalle entre les exécutions
+4. Vérifier les performances du système
 
-### L'historique d'execution ne s'affiche pas
+### L'historique d'exécution ne s'affiche pas
 
 **Causes possibles :**
-- La tache n'a jamais ete executee
-- L'historique a ete efface
-- Problemes de base de donnees
+- La tâche n'a jamais été exécutée
+- L'historique a été effacé
+- Problèmes de base de données
 
 **Solutions :**
-1. Executer la tache manuellement pour tester
-2. Verifier si la tache a deja ete executee
-3. Verifier la connectivite de la base de donnees
-4. Redemarrer le service du planificateur si necessaire
+1. Exécuter la tâche manuellement pour tester
+2. Vérifier si la tâche a déjà été exécutée
+3. Vérifier la connectivité de la base de données
+4. Redémarrer le service du planificateur si nécessaire
 
-## Flux de travail avances
+## Flux de travail avancés
 
-### Flux de travail 1 : Pipeline automatise de generation de prospects
+### Flux de travail 1 : Pipeline automatisé de génération de prospects
 
 **Planificateur 1** : Recherche quotidienne
 ```
@@ -454,53 +454,53 @@ Cron: 0 9 * * 1-5 (Weekdays 9 AM)
 Task: Google Search for "marketing agencies [city]"
 ```
 
-**Planificateur 2** : Extraction d'e-mails (dependance)
+**Planificateur 2** : Extraction d'e-mails (dépendance)
 ```
 Trigger: After Schedule 1 succeeds
 Delay: 0 minutes
 Task: Extract emails from Schedule 1 results
 ```
 
-**Planificateur 3** : Campagne d'e-mails (dependance)
+**Planificateur 3** : Campagne d'e-mails (dépendance)
 ```
 Trigger: After Schedule 2 completes
 Delay: 60 minutes (allow time for extraction)
 Task: Send welcome email campaign
 ```
 
-**Resultat** : Generation de prospects et prospection quotidiennes automatisees.
+**Résultat** : Génération de prospects et prospection quotidiennes automatisées.
 
 ### Flux de travail 2 : Maintenance hebdomadaire
 
-**Planificateur 1** : Nettoyage de la base de donnees
+**Planificateur 1** : Nettoyage de la base de données
 ```
 Cron: 0 3 * * 0 (Sunday 3 AM)
 Task: Remove old completed tasks
 ```
 
-**Planificateur 2** : Verification de sante des proxies (dependance)
+**Planificateur 2** : Vérification de santé des proxies (dépendance)
 ```
 Trigger: After Schedule 1 completes
 Task: Test all proxies and remove failed
 ```
 
-**Planificateur 3** : Generation de rapports (dependance)
+**Planificateur 3** : Génération de rapports (dépendance)
 ```
 Trigger: After Schedule 2 completes
 Task: Generate weekly usage report
 ```
 
-**Resultat** : Maintenance et rapports hebdomadaires automatises.
+**Résultat** : Maintenance et rapports hebdomadaires automatisés.
 
-### Flux de travail 3 : Surveillance multiregionale
+### Flux de travail 3 : Surveillance multirégionale
 
-**Planificateur 1** : Surveillance Est des Etats-Unis
+**Planificateur 1** : Surveillance Est des États-Unis
 ```
 Cron: 0 */2 * * * (Every 2 hours)
 Task: Search US East keywords
 ```
 
-**Planificateur 2** : Surveillance Ouest des Etats-Unis
+**Planificateur 2** : Surveillance Ouest des États-Unis
 ```
 Cron: 0 */2 * * * (Every 2 hours, offset)
 Task: Search US West keywords
@@ -512,24 +512,24 @@ Cron: 0 */2 * * * (Every 2 hours, offset)
 Task: Search European keywords
 ```
 
-**Resultat** : Surveillance mondiale continue avec des planificateurs decalages.
+**Résultat** : Surveillance mondiale continue avec des planificateurs décalés.
 
-## Integration avec d'autres fonctionnalites
+## Intégration avec d'autres fonctionnalités
 
-Le planificateur de taches s'integre avec :
+Le planificateur de tâches s'intègre avec :
 
-- **[Moteurs de recherche](../lead-generation/search-engines)** : Planifier des recherches recurrentes
-- **[Extraction de contacts](../lead-generation/contact-extraction)** : Extraction automatique apres les recherches
-- **[Pages Jaunes](../lead-generation/yellow-pages)** : Scraping d'annuaires regulier
-- **[Envoi d'e-mails en lot](../lead-generation/batch-email-sending)** : Campagnes automatisees
+- **[Moteurs de recherche](../lead-generation/search-engines)** : Planifier des recherches récurrentes
+- **[Extraction de contacts](../lead-generation/contact-extraction)** : Extraction automatique après les recherches
+- **[Pages Jaunes](../lead-generation/yellow-pages)** : Scraping d'annuaires régulier
+- **[Envoi d'e-mails en lot](../lead-generation/batch-email-sending)** : Campagnes automatisées
 
-## Prochaines etapes
+## Prochaines étapes
 
 Maintenant que vous comprenez la planification :
 
-- [Configurer les parametres systeme](../settings/system-settings)
+- [Configurer les paramètres système](../settings/system-settings)
 - [Consulter le manuel utilisateur complet](../getting-started/introduction)
 
 ---
 
-**Pret a automatiser ?** Commencez par planifier une simple tache de recherche quotidienne, puis construisez progressivement des flux de travail automatises plus complexes a mesure que vous vous familiarisez avec le systeme.
+**Prêt à automatiser ?** Commencez par planifier une simple tâche de recherche quotidienne, puis construisez progressivement des flux de travail automatisés plus complexes à mesure que vous vous familiarisez avec le système.

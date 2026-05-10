@@ -1,8 +1,8 @@
 ---
 id: batch-email-sending
-title: Batch Email Sending
-sidebar_label: Batch Email Sending
-description: Send personalized email campaigns at scale using SMTP integration with aiFetchly.
+title: 一括メール送信
+sidebar_label: 一括メール送信
+description: aiFetchlyのSMTP連携で大規模なパーソナライズドメールキャンペーンを送信します。
 ---
 
 # Batch Email Sending
