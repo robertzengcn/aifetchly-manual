@@ -146,19 +146,6 @@ const config: Config = {
           ],
         },
         {
-          title: "Community",
-          items: [
-            {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/aifetchly",
-            },
-            {
-              label: "Discord",
-              href: "https://discordapp.com/invite/aifetchly",
-            },
-          ],
-        },
-        {
           title: "More",
           items: [
             {
