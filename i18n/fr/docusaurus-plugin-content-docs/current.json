@@ -1,0 +1,26 @@
+{
+  "version.label": {
+    "message": "Suivant",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.Getting Started": {
+    "message": "Démarrage Rapide",
+    "description": "The label for category 'Getting Started' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Lead Generation": {
+    "message": "Génération de Leads",
+    "description": "The label for category 'Lead Generation' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.AI Outreach": {
+    "message": "Prospection IA",
+    "description": "The label for category 'AI Outreach' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Automation": {
+    "message": "Automatisation",
+    "description": "The label for category 'Automation' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Settings": {
+    "message": "Paramètres",
+    "description": "The label for category 'Settings' in sidebar 'docs'"
+  }
+}

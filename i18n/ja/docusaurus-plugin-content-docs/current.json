@@ -1,0 +1,26 @@
+{
+  "version.label": {
+    "message": "次へ",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.Getting Started": {
+    "message": "はじめに",
+    "description": "The label for category 'Getting Started' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Lead Generation": {
+    "message": "リードジェネレーション",
+    "description": "The label for category 'Lead Generation' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.AI Outreach": {
+    "message": "AI アウトリーチ",
+    "description": "The label for category 'AI Outreach' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Automation": {
+    "message": "自動化",
+    "description": "The label for category 'Automation' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Settings": {
+    "message": "設定",
+    "description": "The label for category 'Settings' in sidebar 'docs'"
+  }
+}

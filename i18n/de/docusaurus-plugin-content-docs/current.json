@@ -1,0 +1,26 @@
+{
+  "version.label": {
+    "message": "Weiter",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.Getting Started": {
+    "message": "Erste Schritte",
+    "description": "The label for category 'Getting Started' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Lead Generation": {
+    "message": "Lead-Generierung",
+    "description": "The label for category 'Lead Generation' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.AI Outreach": {
+    "message": "KI-Outreach",
+    "description": "The label for category 'AI Outreach' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Automation": {
+    "message": "Automatisierung",
+    "description": "The label for category 'Automation' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Settings": {
+    "message": "Einstellungen",
+    "description": "The label for category 'Settings' in sidebar 'docs'"
+  }
+}
