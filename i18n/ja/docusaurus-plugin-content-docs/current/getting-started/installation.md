@@ -312,7 +312,7 @@ sudo dnf upgrade aifetchly
 
 ### macOS：「アプリを開けません」
 
-これは Gatekeeper の保護です。上記の [macOS での初回起動](#first-launch-on-macos) セクションを参照してください。
+これは Gatekeeper の保護です。上記の [macOS での初回起動](#macos-での初回起動) セクションを参照してください。
 
 ### Linux：パーミッションが拒否される
 

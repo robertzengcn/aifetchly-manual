@@ -399,7 +399,7 @@ Alternative: {$value_proposition_3}
 
 テンプレートを作成した後：
 
-- [メールサービスの設定（SMTP）](../lead-generation/batch-email-sending#configuring-email-services)
+- [メールサービスの設定（SMTP）](../lead-generation/batch-email-sending#メールサービスの設定)
 - [バッチメール送信のセットアップ](../lead-generation/batch-email-sending)
 - 戦略のために[AI Marketing Assistantを使用](./ai-marketing-assistant)
 

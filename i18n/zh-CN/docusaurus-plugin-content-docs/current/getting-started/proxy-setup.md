@@ -168,7 +168,7 @@ host,port,protocols,user,pass
 | **Protocol** | HTTP、HTTPS 或 SOCKS5 |
 | **Status** | 基本检查：Pass、Failure 或 Unknown |
 | **Check Time** | 上次测试代理的时间 |
-| **Google Pass** | Google 专项检查：Pass、Fail 或 Not Checked（参见 [Google Pass 检查](#google-pass-check)） |
+| **Google Pass** | Google 专项检查：Pass、Fail 或 Not Checked（参见 [Google Pass 检查](#google-pass-检查)） |
 | **Actions** | 编辑或删除按钮 |
 
 使用工具栏上的 **Columns** 控件来显示或隐藏列（例如，密码默认关闭以保护安全）。

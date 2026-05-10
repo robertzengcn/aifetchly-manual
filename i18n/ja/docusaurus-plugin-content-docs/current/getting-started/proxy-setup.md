@@ -168,7 +168,7 @@ host,port,protocols,user,pass
 | **Protocol** | HTTP、HTTPS、または SOCKS5 |
 | **Status** | 基本チェック: Pass、Failure、または Unknown |
 | **Check Time** | プロキシが最後にテストされた日時 |
-| **Google Pass** | Google 固有のチェック: Pass、Fail、または Not Checked（[Google Pass チェック](#google-pass-check)を参照） |
+| **Google Pass** | Google 固有のチェック: Pass、Fail、または Not Checked（[Google Pass チェック](#google-pass-チェック)を参照） |
 | **Actions** | 編集または削除ボタン |
 
 ツールバーの **Columns** コントロールを使用して列の表示/非表示を切り替えられます（例: パスワードはセキュリティ上デフォルトで非表示）。

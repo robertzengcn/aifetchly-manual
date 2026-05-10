@@ -312,7 +312,7 @@ Dies ist eine Vorsichtsmaßnahme von Windows SmartScreen. Klicken Sie auf **Weit
 
 ### macOS: „App kann nicht geöffnet werden"
 
-Dies ist der Gatekeeper-Schutz. Siehe den Abschnitt [Erster Start unter macOS](#first-launch-on-macos) oben.
+Dies ist der Gatekeeper-Schutz. Siehe den Abschnitt [Erster Start unter macOS](#erster-start-unter-macos) oben.
 
 ### Linux: Berechtigung verweigert
 

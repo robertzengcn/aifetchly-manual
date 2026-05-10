@@ -399,7 +399,7 @@ Para instrucciones detalladas, consulte [Batch Email Sending](../lead-generation
 
 Después de crear sus plantillas:
 
-- [Configurar servicios de correo (SMTP)](../lead-generation/batch-email-sending#configuring-email-services)
+- [Configurar servicios de correo (SMTP)](../lead-generation/batch-email-sending#configuración-de-servicios-de-correo-electrónico)
 - [Configurar el envío masivo de correos](../lead-generation/batch-email-sending)
 - [Usar el Asistente de Marketing IA](./ai-marketing-assistant) para estrategia
 

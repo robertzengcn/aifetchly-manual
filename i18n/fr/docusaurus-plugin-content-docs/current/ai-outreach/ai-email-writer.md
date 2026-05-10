@@ -399,7 +399,7 @@ Pour des instructions détaillées, consultez [Envoi d'e-mails en lot](../lead-g
 
 Après avoir créé vos modèles :
 
-- [Configurer les services e-mail (SMTP)](../lead-generation/batch-email-sending#configuring-email-services)
+- [Configurer les services e-mail (SMTP)](../lead-generation/batch-email-sending#configuration-des-services-de-mail)
 - [Configurer l'envoi d'e-mails en lot](../lead-generation/batch-email-sending)
 - [Utiliser l'assistant marketing IA](./ai-marketing-assistant) pour la stratégie
 

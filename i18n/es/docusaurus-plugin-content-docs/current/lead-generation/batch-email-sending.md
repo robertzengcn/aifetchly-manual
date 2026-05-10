@@ -21,7 +21,7 @@ El proceso de envío masivo de correos electrónicos consta de **4 pasos**:
 :::info Requisitos previos
 
 Antes de enviar campañas, asegúrate de tener:
-- [Configurado un servicio SMTP](#configuring-email-services)
+- [Configurado un servicio SMTP](#configuración-de-servicios-de-correo-electrónico)
 - [Creado plantillas de correo](../ai-outreach/ai-email-writer)
 - [Extraído o importado listas de correos](./contact-extraction)
 

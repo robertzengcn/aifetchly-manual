@@ -312,7 +312,7 @@ sudo dnf upgrade aifetchly
 
 ### macOS："应用无法打开"
 
-这是 Gatekeeper 保护。请参见上方的 [macOS 首次启动](#first-launch-on-macos) 部分。
+这是 Gatekeeper 保护。请参见上方的 [macOS 首次启动](#macos-首次启动) 部分。
 
 ### Linux：权限被拒绝
 

@@ -312,7 +312,7 @@ C'est Windows SmartScreen qui est prudent. Cliquez sur **Plus d'infos** → **Ex
 
 ### macOS : « L'app ne peut pas être ouverte »
 
-C'est la protection Gatekeeper. Voir la section [Premier lancement sur macOS](#first-launch-on-macos) ci-dessus.
+C'est la protection Gatekeeper. Voir la section [Premier lancement sur macOS](#premier-lancement-sur-macos) ci-dessus.
 
 ### Linux : Permission refusée
 

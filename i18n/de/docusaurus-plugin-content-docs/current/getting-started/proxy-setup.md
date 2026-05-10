@@ -168,7 +168,7 @@ Die Proxy-Liste zeigt alle Ihre Proxys mit folgenden Informationen:
 | **Protocol** | HTTP, HTTPS oder SOCKS5 |
 | **Status** | Grundprüfung: Pass, Failure oder Unknown |
 | **Check Time** | Zeitpunkt der letzten Proxy-Prüfung |
-| **Google Pass** | Google-spezifische Prüfung: Pass, Fail oder Not Checked (siehe [Google Pass-Prüfung](#google-pass-check)) |
+| **Google Pass** | Google-spezifische Prüfung: Pass, Fail oder Not Checked (siehe [Google Pass-Prüfung](#google-pass-prüfung)) |
 | **Actions** | Bearbeiten- oder Löschen-Schaltflächen |
 
 Verwenden Sie die Steuerung **Columns** in der Symbolleiste, um Spalten ein- oder auszublenden (z. B. ist das Passwort standardmäßig aus Sicherheitsgründen ausgeblendet).

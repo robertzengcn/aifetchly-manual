@@ -168,7 +168,7 @@ La lista de proxies muestra todos sus proxies con la siguiente información:
 | **Protocol** | HTTP, HTTPS o SOCKS5 |
 | **Status** | Verificación básica: Pass, Failure o Unknown |
 | **Check Time** | Última vez que se probó el proxy |
-| **Google Pass** | Verificación específica de Google: Pass, Fail o Not Checked (ver [verificación Google Pass](#google-pass-check)) |
+| **Google Pass** | Verificación específica de Google: Pass, Fail o Not Checked (ver [verificación Google Pass](#verificación-google-pass)) |
 | **Actions** | Botones para editar o eliminar |
 
 Use el control **Columns** en la barra de herramientas para mostrar u ocultar columnas (por ejemplo, la contraseña está desactivada por defecto por seguridad).

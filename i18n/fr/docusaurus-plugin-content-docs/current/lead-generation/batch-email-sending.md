@@ -21,7 +21,7 @@ Le processus d'envoi d'e-mails par lot comprend **4 étapes** :
 :::info Prérequis
 
 Avant d'envoyer des campagnes, assurez-vous d'avoir :
-- [Configuré un service SMTP](#configuring-email-services)
+- [Configuré un service SMTP](#configuration-des-services-de-mail)
 - [Créé des modèles d'e-mails](../ai-outreach/ai-email-writer)
 - [Extrait ou importé des listes d'e-mails](./contact-extraction)
 
