@@ -48,8 +48,8 @@ Selecciona el tipo de tarea a programar:
 
 - **Search**: Tareas de extracción de motores de búsqueda
 - **Email Extract**: Tareas de extracción de correos
-- **Bulk Email**: Campañas de marketing por correo
-- **Yellow Pages**: Tareas de extracción de directorios
+- **Outreach Campaign**: Campañas de marketing por correo
+- **Directory Assistant**: Tareas de extracción de directorios
 - **Video Download**: Tareas de descarga de videos
 
 #### ID de tarea
@@ -250,7 +250,7 @@ Para tareas en ejecución:
 **Programación**: Cada día laborable a las 9:00 AM
 ```
 Cron: 0 9 * * 1-5
-Task: Search Engine Scraping
+Task: Market Insight Explorer
 ```
 
 **Caso de uso**: Leads frescos cada mañana para tu equipo de ventas.
@@ -270,7 +270,7 @@ Task: Search / Yellow Pages
 **Programación**: Cada lunes a las 10:00 AM
 ```
 Cron: 0 10 * * 1
-Task: Bulk Email Sending
+Task: Outreach Campaign Sending
 ```
 
 **Caso de uso**: Boletín semanal o campaña de comunicación.

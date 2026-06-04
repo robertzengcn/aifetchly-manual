@@ -1,33 +1,39 @@
 ---
 id: search-engines
-title: Search Engine Scraping
-sidebar_label: Search Engines
-description: Learn how to scrape search results from Google, Bing, and Yandex to generate leads with AI-powered analysis.
+title: Market Insight Explorer
+sidebar_label: Market Insight Explorer
+description: Learn how to organize public search results from Google and Yandex to generate leads with AI-powered analysis.
 ---
 
-# Search Engine Scraping
+# Market Insight Explorer
 
-aiFetchly's multi-engine search scraping feature allows you to collect leads from multiple search engines simultaneously. Extract business information, URLs, and contact details from search results automatically. Powered by AI analysis, you can score leads, classify industries, and extract contact information — all from your search results.
+aiFetchly's Market Insight Explorer allows you to collect leads from multiple search engines simultaneously. Organize business information, URLs, and contact details from search results automatically. Powered by AI analysis, you can score leads, classify industries, and organize public contact information — all from your search results.
+
+
+:::info Public Web Use
+
+This feature is intended only for automated organization of public web information. Make sure your market insight activity follows each target site's Robots protocol and terms of use.
+
+:::
 
 ## Supported Search Engines
 
 | Engine | Best For | Account Required | Local Browser |
 |--------|----------|------------------|---------------|
 | **Google** | General searches, global reach | Recommended | Optional |
-| **Bing** | Microsoft ecosystem, US market | Optional | Optional |
 | **Yandex** | Russian market, Cyrillic content | Recommended | **Required** |
 
 :::info Yandex Requirement
 
-Yandex scraping requires **local browser integration** for proper operation. Enable this option when creating Yandex tasks.
+Yandex market insight exploration requires **local browser integration** for proper operation. Enable this option when creating Yandex tasks.
 
 :::
 
 ## Creating a Search Task
 
-### Step 1: Navigate to Search
+### Step 1: Navigate to Market Insight Explorer
 
-1. Click **Search** in the left navigation menu
+1. Click **Market Insight Explorer** in the left navigation menu
 2. You'll see the **Search Form** page
 
 ### Step 2: Basic Search Configuration
@@ -56,12 +62,11 @@ Start with 5-10 seed keywords, then use AI generation to expand to 20-50 related
 
 Select the search engine from the dropdown:
 - Google (default)
-- Bing
 - Yandex
 
 #### Page Number
 
-Specify which page to start scraping from:
+Specify which page to start from:
 - **Start at page 1** for fresh searches
 - **Resume from page X** if continuing a previous task
 
@@ -105,11 +110,11 @@ Use multiple proxies for high-concurrency tasks to distribute load and avoid blo
 
 #### Local Browser Integration
 
-Enable local browser scraping for more human-like behavior:
+Enable local browser mode for more human-like behavior:
 
 1. Toggle **Local Browser** to enable
 2. Select your Chrome browser from the list
-3. **Required for**: Yandex scraping
+3. **Required for**: Yandex market insight exploration
 4. **Recommended for**: Google at scale
 
 **Benefits:**
@@ -119,22 +124,22 @@ Enable local browser scraping for more human-like behavior:
 
 #### Show in Browser
 
-Toggle **Show in Browser** to control browser visibility during scraping:
+Toggle **Show in Browser** to control browser visibility during processing:
 
-- **Enabled**: The browser window is visible while scraping — useful for debugging or monitoring progress
+- **Enabled**: The browser window is visible during processing — useful for debugging or monitoring progress
 - **Disabled** (default): The browser runs in headless mode for faster, background operation
 
 #### Enable AI Recovery
 
-Toggle **Enable AI Recovery** to let AI automatically recover from scraping errors:
+Toggle **Enable AI Recovery** to let AI automatically recover from public source access errors:
 
-- When enabled, aiFetchly uses AI to diagnose and recover from errors encountered during scraping
+- When enabled, aiFetchly uses AI to diagnose and recover from errors encountered during information organization
 - The system can analyze error screenshots and adjust its strategy
 - Recovery attempts are rate-limited to avoid excessive resource usage
 
 :::tip When to Use AI Recovery
 
-Enable AI Recovery when scraping engines with strong anti-bot protection (such as Google) or when running large-scale tasks where occasional errors are expected.
+Enable AI Recovery when working with engines that have strong anti-bot protection, such as Google, or when running large-scale tasks where occasional errors are expected.
 
 :::
 
@@ -148,9 +153,8 @@ Use authenticated accounts for better success rates:
 4. Click **Confirm**
 
 **Recommendations:**
-- **Google**: Use accounts for large-scale scraping
+- **Google**: Use accounts for large-scale public information organization
 - **Yandex**: Use accounts for better access
-- **Bing**: Optional, less critical
 
 ### Step 4: Execute or Save
 
@@ -180,7 +184,7 @@ Navigate to **Search** → **Result List** to see all your search tasks.
 |--------|-------------|
 | **ID** | Unique task identifier |
 | **Keywords** | Keywords used in the search |
-| **Search Engine** | Engine used (Google, Bing, etc.) |
+| **Search Engine** | Engine used (Google, Yandex) |
 | **Status** | Not Start, Processing, Complete, Error |
 | **Record Time** | Date and time created |
 | **Actions** | Run, Edit, View Results, Kill Process, Retry, Download Logs |
@@ -214,11 +218,11 @@ The results table displays:
 | **Title** | Page title from search result |
 | **Link** | URL of the search result |
 | **Keyword** | Keyword that generated this result |
-| **Record Time** | When the result was scraped |
+| **Record Time** | When the result was collected |
 | **Customer Industry** | AI-classified industry (if analyzed) |
 | **Probability** | AI lead quality score 0-100% (if analyzed) |
 | **Analysis Status** | Analysis completion status (pending/analyzing/completed/failed) |
-| **Contact Extraction** | Contact info extraction status |
+| **Contact Profile Insights** | Contact info profile insights status |
 | **Email** | Extracted email address (if extracted) |
 | **Phone** | Extracted phone number (if extracted) |
 | **Address** | Extracted physical address (if extracted) |
@@ -238,8 +242,8 @@ You can customize which columns are displayed by using the **column visibility**
 **Batch Actions:**
 - Select multiple results using checkboxes
 - **AI Analyze**: Analyze selected results for lead scoring and industry classification
-- **AI Extract Contact Info**: Extract contact information (email, phone, address) from selected URLs
-- **Extract Emails**: Navigate to the Email Extraction feature with selected URLs
+- **AI Extract Contact Info**: Organize public contact information (email, phone, address) from selected URLs
+- **Open in Contact Profile Insights**: Navigate to the Contact Profile Insights feature with selected URLs
 - **Export**: Download results as CSV (includes AI analysis fields)
 
 ## AI Website Analysis
@@ -288,7 +292,7 @@ After analysis:
 - Focus on leads scoring 70%+ for outreach
 - Filter results by industry classification
 
-## AI Contact Information Extraction
+## AI Contact Information Profile Insights
 
 Extract contact details directly from your search results using AI:
 
@@ -297,10 +301,10 @@ Extract contact details directly from your search results using AI:
 1. Check the boxes next to results you want to extract contact info from
 2. Click the **AI Extract Contact Info** button
 
-### Step 2: Monitor Extraction
+### Step 2: Monitor Profile Insights
 
 - The system visits each selected URL and extracts contact information
-- Extraction runs in the background with real-time progress updates
+- Profile Insights runs in the background with real-time progress updates
 - Status tracks each result: pending → analyzing → completed/failed
 
 ### Step 3: View Extracted Contacts
@@ -315,22 +319,22 @@ Extracted information is displayed directly in the results table:
 
 You can copy individual contact fields directly from the table using the copy buttons.
 
-## Email Extraction from Search Results
+## Contact Profile Insights from Search Results
 
-Extract emails directly from your search results:
+Open in Contact Profile Insights directly from your search results:
 
 ### Step 1: Select Results
 
-1. Check boxes next to results containing URLs you want to extract emails from
-2. Click **Extract Emails** button
+1. Check boxes next to results containing URLs you want to find public contact channels from
+2. Click **Open in Contact Profile Insights** button
 
-### Step 2: Configure Extraction
+### Step 2: Configure Profile Insights
 
-The selected URLs are automatically passed to the [Email Extraction](./contact-extraction) feature.
+The selected URLs are automatically passed to the [Contact Profile Insights](./contact-extraction) feature.
 
 ### Step 3: View Extracted Emails
 
-Navigate to the Email Extraction section to view collected emails.
+Navigate to the Contact Profile Insights section to view collected emails.
 
 ## Exporting Search Results
 
@@ -369,7 +373,7 @@ If a task fails:
 - Use keyword generation to expand coverage
 - Provide clear business context for more accurate AI scoring
 - Run AI analysis to score and classify leads
-- Use AI contact extraction to get email, phone, and address
+- Use AI contact profile insights to get email, phone, and address
 - Focus on high-score results for outreach
 
 ### 4. Engine-Specific Tips
@@ -380,10 +384,6 @@ If a task fails:
 - Enable AI Recovery for robust error handling
 - Respect rate limits (start with 1 concurrent)
 
-**Bing:**
-- More forgiving than Google
-- Can use higher concurrency
-- Good for US-focused searches
 
 **Yandex:**
 - **Must use local browser**
@@ -484,15 +484,15 @@ If a task fails:
 
 Search results integrate seamlessly with:
 
-- **[Contact Extraction](./contact-extraction)** - Extract emails from URLs
-- **[Yellow Pages](./yellow-pages)** - Cross-reference with directory listings
+- **[Contact Profile Insights](./contact-extraction)** - Open in Contact Profile Insights from URLs
+- **[Directory Assistant](./yellow-pages)** - Cross-reference with directory listings
 - **[AI Email Writer](../ai-outreach/ai-email-writer)** - Create personalized outreach
-- **[Batch Email Sending](./batch-email-sending)** - Launch campaigns
+- **[Outreach Campaign](./batch-email-sending)** - Launch campaigns
 
 ## Next Steps
 
-- [Learn about Yellow Pages scraping](./yellow-pages)
-- [Set up contact extraction](./contact-extraction)
+- [Learn about Directory Assistant](./yellow-pages)
+- [Set up contact profile insights](./contact-extraction)
 - [Create AI-powered email campaigns](../ai-outreach/ai-email-writer)
 
 ---

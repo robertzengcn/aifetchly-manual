@@ -1,17 +1,17 @@
 ---
 id: yandex-maps-scraper
-title: Yandex Maps Scraper
-sidebar_label: Yandex Maps
-description: Extrayez les informations commerciales de Yandex Maps par mot-clé et emplacement avec le Yandex Maps Scraper d'aiFetchly — idéal pour les marchés russe et de la CEI.
+title: Local Business Finder
+sidebar_label: Local Business Finder
+description: Extrayez les informations commerciales de Yandex Maps par mot-clé et emplacement avec le Local Business Finder d'aiFetchly — idéal pour les marchés russe et de la CEI.
 ---
 
-# Yandex Maps Scraper
+# Local Business Finder
 
-Le Yandex Maps Scraper d'aiFetchly vous permet de rechercher des entreprises locales sur Yandex Maps par mot-clé et emplacement. C'est l'outil idéal pour collecter des données commerciales sur les marchés russe et de la CEI, avec prise en charge de la personnalisation de la langue et de la région.
+Le Local Business Finder d'aiFetchly vous permet de rechercher des entreprises locales sur Yandex Maps par mot-clé et emplacement. C'est l'outil idéal pour collecter des données commerciales sur les marchés russe et de la CEI, avec prise en charge de la personnalisation de la langue et de la région.
 
 ## Présentation
 
-Le Yandex Maps Scraper offre une extraction complète de données d'entreprises locales :
+Le Local Business Finder offre une profile insights complète de données d'entreprises locales :
 
 1. **Entrez un mot-clé** (par exemple, « dentiste », « restaurant »)
 2. **Entrez un emplacement** (par exemple, « Moscou », « Saint-Pétersbourg », « Russie »)
@@ -21,14 +21,14 @@ Le Yandex Maps Scraper offre une extraction complète de données d'entreprises 
 
 :::tip Idéal pour
 
-Le Yandex Maps Scraper est essentiel pour les entreprises ciblant le marché russe et les pays de la CEI. Yandex Maps offre une couverture supérieure des entreprises locales en Russie, au Kazakhstan, en Biélorussie, en Turquie et dans d'autres régions où Yandex opère.
+Le Local Business Finder est essentiel pour les entreprises ciblant le marché russe et les pays de la CEI. Yandex Maps offre une couverture supérieure des entreprises locales en Russie, au Kazakhstan, en Biélorussie, en Turquie et dans d'autres régions où Yandex opère.
 
 :::
 
-## Accéder au Yandex Maps Scraper
+## Accéder au Local Business Finder
 
 1. Cliquez sur **Yandex Maps** dans le menu de navigation de gauche
-2. Le scraper s'ouvre avec deux onglets : **Recherche** et **Historique**
+2. Le assistant s'ouvre avec deux onglets : **Recherche** et **Historique**
 
 ## Effectuer une recherche
 
@@ -58,14 +58,14 @@ Entrez une ville ou une région à rechercher :
 
 :::info Limite de résultats
 
-Le nombre maximum de résultats est plafonné à une limite sûre pour garantir une extraction fiable. La plage du curseur de 1 à 50 correspond à la plage configurable par l'utilisateur.
+Le nombre maximum de résultats est plafonné à une limite sûre pour garantir une profile insights fiable. La plage du curseur de 1 à 50 correspond à la plage configurable par l'utilisateur.
 
 :::
 
 #### Inclure le site web
 
 - **Activé** (par défaut) : Tente d'extraire l'URL du site web de l'entreprise
-- **Désactivé** : Ignore l'extraction du site web pour des résultats plus rapides
+- **Désactivé** : Ignore l'profile insights du site web pour des résultats plus rapides
 
 #### Inclure les avis
 
@@ -75,7 +75,7 @@ Le nombre maximum de résultats est plafonné à une limite sûre pour garantir 
 #### Afficher le navigateur
 
 - **Désactivé** (par défaut) : Le navigateur s'exécute en mode headless (plus rapide)
-- **Activé** : La fenêtre du navigateur est visible pendant l'extraction (utile pour le débogage)
+- **Activé** : La fenêtre du navigateur est visible pendant l'profile insights (utile pour le débogage)
 
 ### Étape 3 : Paramètres de langue et de région (facultatif)
 
@@ -99,7 +99,7 @@ Ces paramètres sont spécifiques à Yandex Maps et permettent de personnaliser 
 
 #### Compte Yandex
 
-Sélectionnez un compte Yandex pour utiliser ses cookies lors de l'extraction authentifiée :
+Sélectionnez un compte Yandex pour utiliser ses cookies lors de l'profile insights authentifiée :
 
 - **Avantages** :
   - Taux de réussite plus élevé
@@ -120,12 +120,12 @@ Sélectionnez un ou plusieurs proxys pour alterner pendant la recherche :
 - **Avantages** :
   - Répartit les requêtes sur plusieurs adresses IP
   - Réduit le risque de détection
-  - Essentiel pour l'extraction à grande échelle
+  - Essentiel pour l'profile insights à grande échelle
 - Sélectionnez plusieurs proxys pour une rotation automatique par requête
 
 :::warning Recommandation de proxy
 
-Pour l'extraction Yandex Maps, l'utilisation de proxys situés dans la région cible (par exemple, des proxys russes pour les recherches à Moscou) améliore considérablement les taux de réussite.
+Pour l'profile insights Yandex Maps, l'utilisation de proxys situés dans la région cible (par exemple, des proxys russes pour les recherches à Moscou) améliore considérablement les taux de réussite.
 
 :::
 
@@ -133,7 +133,7 @@ Pour l'extraction Yandex Maps, l'utilisation de proxys situés dans la région c
 
 1. Cliquez sur **Lancer la recherche** pour commencer
 2. Un indicateur de progression circulaire et une barre de progression apparaissent
-3. Un texte d'état en temps réel affiche l'étape d'extraction en cours
+3. Un texte d'état en temps réel affiche l'étape d'profile insights en cours
 4. Un compteur affiche la progression (par exemple, « 5 / 20 entreprises »)
 5. Jusqu'à **3 recherches simultanées** peuvent s'exécuter en parallèle
 
@@ -269,17 +269,17 @@ L'onglet **Historique** conserve toutes vos recherches Yandex Maps passées.
 - **Utilisez des proxys locaux** (proxys russes pour les recherches en Russie)
 - **Recherche unique** : Proxy non requis
 - **Recherches multiples** : Utilisez 1 à 2 proxys
-- **Extraction à grande échelle** : Utilisez 3 proxys ou plus avec rotation
+- **Profile Insights à grande échelle** : Utilisez 3 proxys ou plus avec rotation
 
 ### 5. Utilisation des comptes Yandex
 
-- **Recommandé** pour toute extraction Yandex Maps
-- **Essentiel** lors de l'extraction dans des villes russes avec de nombreuses entreprises
+- **Recommandé** pour toute profile insights Yandex Maps
+- **Essentiel** lors de l'profile insights dans des villes russes avec de nombreuses entreprises
 - Les comptes avec une utilisation active de Yandex fournissent de meilleurs résultats
 
 ## Comparaison : Google Maps vs. Yandex Maps
 
-| Fonctionnalité | Google Maps Scraper | Yandex Maps Scraper |
+| Fonctionnalité | Local Business Finder | Local Business Finder |
 |----------------|-------------------|-------------------|
 | **Idéal pour** | Marchés mondiaux, pays occidentaux | Russie, CEI, Turquie |
 | **Prise en charge linguistique** | Multilingue (automatique) | Langue/région configurable |
@@ -288,7 +288,7 @@ L'onglet **Historique** conserve toutes vos recherches Yandex Maps passées.
 | **Formats d'export** | CSV, JSON | CSV, JSON, Tout copier |
 | **Suivi de progression** | Barre de progression | Progression circulaire + texte d'état |
 
-:::tip Utilisez les deux scrapers
+:::tip Utilisez les deux assistants
 
 Pour une couverture complète d'une région, exécutez des recherches sur Google Maps et Yandex Maps, puis recouisez et dédupliquez les résultats.
 
@@ -329,7 +329,7 @@ Pour une couverture complète d'une région, exécutez des recherches sur Google
 **Causes possibles :**
 - La recherche a été annulée avant la fin
 - Certaines fiches d'entreprise ne contenaient pas les données requises
-- Une limitation de débit est survenue pendant l'extraction
+- Une limitation de débit est survenue pendant l'profile insights
 
 **Solutions :**
 1. Laissez la recherche se terminer complètement
@@ -338,16 +338,16 @@ Pour une couverture complète d'une région, exécutez des recherches sur Google
 
 ## Intégration avec d'autres fonctionnalités
 
-Les résultats du Yandex Maps Scraper peuvent être utilisés avec :
+Les résultats du Local Business Finder peuvent être utilisés avec :
 
-- **[Extraction de contacts](./contact-extraction)** — Extrayez les e-mails des sites web d'entreprises trouvés dans les résultats
-- **[Google Maps Scraper](./google-maps-scraper)** — Recoupez avec Google Maps pour une couverture plus large
+- **[Profile Insights de contacts](./contact-extraction)** — Extrayez les e-mails des sites web d'entreprises trouvés dans les résultats
+- **[Local Business Finder](./google-maps-scraper)** — Recoupez avec Google Maps pour une couverture plus large
 - **[Pages Jaunes](./yellow-pages)** — Recoupez avec les annuaires
 - **[Rédacteur d'e-mails IA](../ai-outreach/ai-email-writer)** — Créez des e-mails de prospection personnalisés en utilisant les données commerciales collectées
 - **[Envoi d'e-mails en lot](./batch-email-sending)** — Lancez des campagnes d'e-mails en utilisant les informations de contact extraites
 
 ## Prochaines étapes
 
-- [Découvrir le Google Maps Scraper](./google-maps-scraper)
-- [Configurer l'extraction d'e-mails](./contact-extraction)
+- [Découvrir le Local Business Finder](./google-maps-scraper)
+- [Configurer l'profile insights d'e-mails](./contact-extraction)
 - [Créer des campagnes d'e-mails alimentées par l'IA](../ai-outreach/ai-email-writer)

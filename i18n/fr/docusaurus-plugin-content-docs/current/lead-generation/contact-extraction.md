@@ -1,17 +1,17 @@
 ---
 id: contact-extraction
-title: Extraction de contacts
-sidebar_label: Extraction d'e-mails
-description: Extrayez des adresses e-mail en masse à partir de sites web et d'URL avec le puissant outil d'extraction d'aiFetchly.
+title: Profile Insights de contacts
+sidebar_label: Profile Insights d'e-mails
+description: Extrayez des adresses e-mail en masse à partir de sites web et d'URL avec le puissant outil d'profile insights d'aiFetchly.
 ---
 
-# Extraction d'e-mails
+# Profile Insights d'e-mails
 
-La fonctionnalité d'extraction d'e-mails d'aiFetchly vous permet de collecter des adresses e-mail à grande échelle à partir de sites web. Extrayez des informations de contact à partir d'URL individuelles ou exploitez vos résultats de recherche existants pour une collecte d'e-mails ciblée.
+La fonctionnalité d'profile insights d'e-mails d'aiFetchly vous permet de collecter des adresses e-mail à grande échelle à partir de sites web. Extrayez des informations de contact à partir d'URL individuelles ou exploitez vos résultats de recherche existants pour une collecte d'e-mails ciblée.
 
-## Comprendre l'extraction d'e-mails
+## Comprendre l'profile insights d'e-mails
 
-L'extraction d'e-mails fonctionne en :
+L'profile insights d'e-mails fonctionne en :
 
 1. **Visitant chaque URL** que vous fournissez
 2. **Scannant le contenu de la page** pour détecter des modèles d'e-mails
@@ -21,7 +21,7 @@ L'extraction d'e-mails fonctionne en :
 
 :::info Cas d'utilisation
 
-L'extraction d'e-mails est idéale pour :
+L'profile insights d'e-mails est idéale pour :
 - Collecter des e-mails à partir de résultats de recherche
 - Construire des listes de contacts à partir d'annuaires professionnels
 - Rassembler des informations de contact à partir de listes de membres
@@ -29,17 +29,17 @@ L'extraction d'e-mails est idéale pour :
 
 :::
 
-## Créer une tâche d'extraction
+## Créer une tâche d'profile insights
 
-### Étape 1 : Accéder à l'extraction d'e-mails
+### Étape 1 : Accéder à l'profile insights d'e-mails
 
-1. Cliquez sur **Extraction d'e-mails** dans le menu de navigation de gauche
-2. Vous verrez la liste des tâches d'extraction
+1. Cliquez sur **Profile Insights d'e-mails** dans le menu de navigation de gauche
+2. Vous verrez la liste des tâches d'profile insights
 3. Cliquez sur le bouton **Créer une nouvelle tâche**
 
 ### Étape 2 : Choisir la méthode de saisie d'URL
 
-Sélectionnez comment vous souhaitez fournir les URL pour l'extraction :
+Sélectionnez comment vous souhaitez fournir les URL pour l'profile insights :
 
 #### Méthode 1 : Saisie manuelle d'URL
 
@@ -75,7 +75,7 @@ https://another-site.com/about-us
 - Aucune saisie manuelle d'URL nécessaire
 - Utilise les URL précédemment explorées
 
-### Étape 3 : Configurer les paramètres d'extraction
+### Étape 3 : Configurer les paramètres d'profile insights
 
 #### Profondeur de page
 
@@ -91,7 +91,7 @@ https://another-site.com/about-us
 
 :::warning Pages vs. temps
 
-Une profondeur de page plus élevée = un temps d'extraction plus long. Commencez de manière conservative et augmentez progressivement.
+Une profondeur de page plus élevée = un temps d'profile insights plus long. Commencez de manière conservative et augmentez progressivement.
 
 :::
 
@@ -112,7 +112,7 @@ Une profondeur de page plus élevée = un temps d'extraction plus long. Commence
 - **Plage** : 0 à 1 000 pages
 - **Objectif** : Maximum absolu de pages à traiter
 
-**Cas d'utilisation** : Empêche l'extraction incontrôlée sur de très grands sites.
+**Cas d'utilisation** : Empêche l'profile insights incontrôlée sur de très grands sites.
 
 #### Délai d'attente du traitement
 
@@ -128,14 +128,14 @@ Une profondeur de page plus élevée = un temps d'extraction plus long. Commence
 
 #### Afficher dans le navigateur
 
-- **Non** (par défaut) : L'extraction s'exécute de manière invisible (plus rapide)
+- **Non** (par défaut) : L'profile insights s'exécute de manière invisible (plus rapide)
 - **Oui** : Fenêtre du navigateur visible (mode débogage)
 
 **Recommandation** : Gardez sur "Non" pour les tâches de production.
 
 ### Étape 5 : Configuration du proxy (facultatif)
 
-Ajoutez des proxys pour l'extraction à grande échelle :
+Ajoutez des proxys pour l'profile insights à grande échelle :
 
 1. Activez **Utiliser un proxy**
 2. Cliquez sur **Choisir un proxy**
@@ -154,15 +154,15 @@ Utilisez des proxys lorsque :
 
 ### Étape 6 : Créer la tâche
 
-Cliquez sur **Soumettre** pour créer votre tâche d'extraction. Vous pouvez :
+Cliquez sur **Soumettre** pour créer votre tâche d'profile insights. Vous pouvez :
 - **Enregistrer uniquement** : Enregistrer la tâche sans l'exécuter
-- **Exécuter maintenant** : Démarrer l'extraction immédiatement
+- **Exécuter maintenant** : Démarrer l'profile insights immédiatement
 
-## Gestion des tâches d'extraction
+## Gestion des tâches d'profile insights
 
 ### Afficher la liste des tâches
 
-Accédez à **Extraction d'e-mails** pour voir toutes vos tâches.
+Accédez à **Profile Insights d'e-mails** pour voir toutes vos tâches.
 
 **Colonnes de la liste des tâches :**
 
@@ -179,7 +179,7 @@ Accédez à **Extraction d'e-mails** pour voir toutes vos tâches.
 | Statut | Description | Action |
 |--------|-------------|--------|
 | **En attente** | Tâche créée mais non démarrée | Modifier, Supprimer |
-| **En cours** | Extraction des e-mails en cours | Suivre la progression |
+| **En cours** | Profile Insights des e-mails en cours | Suivre la progression |
 | **Terminé** | Terminé avec succès | Voir les résultats |
 | **Erreur** | Échoué avec des erreurs | Voir les logs, Réessayer |
 
@@ -194,7 +194,7 @@ Accédez à **Extraction d'e-mails** pour voir toutes vos tâches.
 
 ### Étape 1 : Accéder aux résultats
 
-1. Allez à la liste des tâches **Extraction d'e-mails**
+1. Allez à la liste des tâches **Profile Insights d'e-mails**
 2. Trouvez la tâche terminée
 3. Cliquez sur **Voir les résultats**
 
@@ -207,7 +207,7 @@ Le tableau des résultats affiche :
 | **URL** | Site web source |
 | **E-mails** | Adresses e-mail extraites (dépliables) |
 | **Nombre** | Nombre d'e-mails trouvés |
-| **Horodatage** | Moment de l'extraction |
+| **Horodatage** | Moment de l'profile insights |
 
 ### Étape 3 : Développer les détails
 
@@ -241,7 +241,7 @@ https://example.com,info@example.com,2024-01-15 10:30:00
 
 Les e-mails extraits s'intègrent directement avec le marketing par e-mail :
 
-1. **Voir les résultats** de la tâche d'extraction
+1. **Voir les résultats** de la tâche d'profile insights
 2. Cliquez sur le bouton **Utiliser dans une campagne**
 3. Les e-mails sont automatiquement transmis au workflow de marketing par e-mail
 
@@ -321,7 +321,7 @@ Les e-mails extraits ne sont pas toujours valides. Envisagez :
 
 ## Intégration avec les résultats de recherche
 
-Le flux de travail le plus puissant combine recherche et extraction :
+Le flux de travail le plus puissant combine recherche et profile insights :
 
 ### Flux de travail complet
 
@@ -330,7 +330,7 @@ Le flux de travail le plus puissant combine recherche et extraction :
    - Utiliser la génération de mots-clés IA pour une couverture complète
 
 2. **Extraire les e-mails** :
-   - Créer une tâche d'extraction à partir des résultats de recherche
+   - Créer une tâche d'profile insights à partir des résultats de recherche
    - Extraire les e-mails des URL découvertes
 
 3. **Contrôle qualité** :
@@ -345,7 +345,7 @@ Le flux de travail le plus puissant combine recherche et extraction :
 
 ## Techniques avancées
 
-### Technique 1 : Extraction approfondie
+### Technique 1 : Profile Insights approfondie
 
 Pour une collecte d'e-mails complète :
 
@@ -355,7 +355,7 @@ Pour une collecte d'e-mails complète :
 4. **Suivre la progression** : Vérifier les résultats régulièrement
 5. **Arrêter tôt** : Si la qualité baisse, ajuster les paramètres
 
-### Technique 2 : Extraction basée sur des motifs
+### Technique 2 : Profile Insights basée sur des motifs
 
 Cibler des types de pages spécifiques :
 
@@ -447,7 +447,7 @@ Extraire les e-mails des sites concurrents :
 
 ### Conformité
 
-Lors de l'extraction d'e-mails, considérez :
+Lors de l'profile insights d'e-mails, considérez :
 
 - **RGPD** (Europe) : Réglementations strictes sur la collecte d'e-mails
 - **CAN-SPAM** (USA) : Exigences pour les e-mails commerciaux
@@ -487,4 +487,4 @@ Pour des instructions détaillées sur la création de campagnes, consultez [Env
 
 ---
 
-**Prêt à extraire des e-mails ?** Commencez avec un petit lot d'URL pour tester vos paramètres, puis augmentez progressivement vos opérations d'extraction.
+**Prêt à extraire des e-mails ?** Commencez avec un petit lot d'URL pour tester vos paramètres, puis augmentez progressivement vos opérations d'profile insights.

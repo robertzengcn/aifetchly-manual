@@ -27,7 +27,7 @@ La plupart des paramètres sont enregistrés automatiquement lors de leur modifi
 
 ### Service 2Captcha
 
-Résolution automatique de captchas pour le scraping Web.
+Résolution automatique de captchas pour le information organization Web.
 
 | Paramètre | Description |
 |-----------|-------------|
@@ -43,7 +43,7 @@ Résolution automatique de captchas pour le scraping Web.
 :::info Quand utiliser 2Captcha
 
 Utile lorsque :
-- Scraping à grande échelle
+- Information Organization à grande échelle
 - Rencontres fréquentes de captchas
 - Vous ne voulez pas résoudre les captchas manuellement
 
@@ -100,7 +100,7 @@ Configurez les chemins des navigateurs pour l'intégration de navigateur local.
 
 Les chemins de navigateur sont nécessaires pour :
 - Les fonctionnalités d'intégration de navigateur local
-- Le scraping Yandex (nécessite un navigateur)
+- Le information organization Yandex (nécessite un navigateur)
 - Certains scénarios de détection anti-bot
 
 :::
@@ -160,12 +160,12 @@ Pour la documentation complète sur la configuration et l'utilisation des serveu
 ### 2. Résolution de captchas
 
 **Quand activer :**
-- Opérations de scraping à grande échelle (>1000 pages)
+- Opérations de information organization à grande échelle (>1000 pages)
 - Rencontres fréquentes de captchas
 - Pas d'intervention manuelle souhaitée
 
 **Quand désactiver :**
-- Scraping à petite échelle
+- Information Organization à petite échelle
 - Pour économiser les coûts (2captcha est payant)
 - Rencontres rares de captchas
 

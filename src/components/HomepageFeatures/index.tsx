@@ -19,8 +19,8 @@ const FeatureList: FeatureItem[] = [
     icon: "🔍",
     description: (
       <Translate id="homepage.feature1.description">
-        Search Google, Bing, Yandex simultaneously with bulk keywords. AI
-        generates related keywords automatically and recovers from scraping
+        Search Google and Yandex simultaneously with bulk keywords. AI
+        generates related keywords automatically and recovers from public source access
         errors in real time, so you never miss a lead.
       </Translate>
     ),
@@ -28,7 +28,7 @@ const FeatureList: FeatureItem[] = [
   {
     title: translate({
       id: "homepage.feature2.title",
-      message: "Extract Contact Data with AI Precision",
+      message: "Organize Contact Profiles with AI Precision",
     }),
     icon: "🤖",
     description: (
@@ -49,7 +49,7 @@ const FeatureList: FeatureItem[] = [
     description: (
       <Translate id="homepage.feature3.description">
         Design campaigns with AI-generated templates tailored to your tone and
-        audience. Send bulk emails through your own SMTP, apply smart filters to
+        audience. Send outreach campaigns through your own SMTP, apply smart filters to
         target the right contacts, and track delivery status in real time.
       </Translate>
     ),
@@ -62,8 +62,8 @@ const FeatureList: FeatureItem[] = [
     icon: "📒",
     description: (
       <Translate id="homepage.feature4.description">
-        Scrape business names, contact info, ratings, locations, and social
-        links from yellow pages platforms worldwide. AI-assisted scraping adapts
+        Organize business names, contact info, ratings, locations, and social
+        links from global directory platforms. AI-assisted data alignment adapts
         to directory changes so your data stays accurate.
       </Translate>
     ),

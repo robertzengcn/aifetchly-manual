@@ -1,20 +1,26 @@
 ---
 id: search-engines
-title: Search Engine Scraping
-sidebar_label: Search Engines
-description: Aprende a extraer resultados de búsqueda de Google, Bing y Yandex para generar leads con análisis impulsado por IA.
+title: Market Insight Explorer
+sidebar_label: Market Insight Explorer
+description: Aprende a extraer resultados de búsqueda de Google, Yandex y Yandex para generar leads con análisis impulsado por IA.
 ---
 
 # Extracción de motores de búsqueda
 
 La función de extracción multi-motor de aiFetchly te permite recopilar leads de múltiples motores de búsqueda simultáneamente. Extrae información empresarial, URL y datos de contacto de los resultados de búsqueda automáticamente. Impulsado por análisis de IA, puedes puntuar leads, clasificar industrias y extraer información de contacto — todo desde tus resultados de búsqueda.
 
+
+:::info Uso de información pública
+
+Esta función está destinada únicamente a organizar información web pública. Asegúrate de que tu actividad de Market Insight respete el protocolo Robots y los términos de uso del sitio de destino.
+
+:::
+
 ## Motores de búsqueda compatibles
 
 | Motor | Ideal para | Cuenta requerida | Navegador local |
 |-------|------------|-------------------|-----------------|
 | **Google** | Búsquedas generales, alcance global | Recomendado | Opcional |
-| **Bing** | Ecosistema Microsoft, mercado estadounidense | Opcional | Opcional |
 | **Yandex** | Mercado ruso, contenido cirílico | Recomendado | **Requerido** |
 
 :::info Requisito de Yandex
@@ -56,7 +62,6 @@ Comienza con 5-10 palabras clave semilla, luego usa la generación por IA para a
 
 Selecciona el motor de búsqueda en el menú desplegable:
 - Google (predeterminado)
-- Bing
 - Yandex
 
 #### Número de página
@@ -150,7 +155,6 @@ Usa cuentas autenticadas para mejores tasas de éxito:
 **Recomendaciones:**
 - **Google**: Usa cuentas para extracción a gran escala
 - **Yandex**: Usa cuentas para mejor acceso
-- **Bing**: Opcional, menos crítico
 
 ### Paso 4: Ejecutar o guardar
 
@@ -180,7 +184,7 @@ Navega a **Search** → **Result List** para ver todas tus tareas de búsqueda.
 |---------|-------------|
 | **ID** | Identificador único de la tarea |
 | **Keywords** | Palabras clave utilizadas en la búsqueda |
-| **Search Engine** | Motor utilizado (Google, Bing, etc.) |
+| **Search Engine** | Motor utilizado (Google, Yandex) |
 | **Status** | Not Start, Processing, Complete, Error |
 | **Record Time** | Fecha y hora de creación |
 | **Actions** | Run, Edit, View Results, Kill Process, Retry, Download Logs |
@@ -218,7 +222,7 @@ La tabla de resultados muestra:
 | **Customer Industry** | Industria clasificada por IA (si se analizó) |
 | **Probability** | Puntuación de calidad del lead 0-100% (si se analizó) |
 | **Analysis Status** | Estado de finalización del análisis (pending/analyzing/completed/failed) |
-| **Contact Extraction** | Estado de extracción de información de contacto |
+| **Contact Profile Insights** | Estado de extracción de información de contacto |
 | **Email** | Dirección de correo extraída (si se extrajo) |
 | **Phone** | Número de teléfono extraído (si se extrajo) |
 | **Address** | Dirección física extraída (si se extrajo) |
@@ -239,7 +243,7 @@ Puedes personalizar qué columnas se muestran usando el menú de **visibilidad d
 - Selecciona múltiples resultados usando casillas de verificación
 - **AI Analyze**: Analizar los resultados seleccionados para puntuación de leads y clasificación de industria
 - **AI Extract Contact Info**: Extraer información de contacto (correo, teléfono, dirección) de las URL seleccionadas
-- **Extract Emails**: Navegar a la función de Extracción de correos con las URL seleccionadas
+- **Open in Contact Profile Insights**: Navegar a la función de Extracción de correos con las URL seleccionadas
 - **Export**: Descargar resultados como CSV (incluye campos de análisis de IA)
 
 ## Análisis de sitios web con IA
@@ -322,7 +326,7 @@ Extrae correos directamente de tus resultados de búsqueda:
 ### Paso 1: Seleccionar resultados
 
 1. Marca las casillas junto a los resultados que contienen URL de las que deseas extraer correos
-2. Haz clic en el botón **Extract Emails**
+2. Haz clic en el botón **Open in Contact Profile Insights**
 
 ### Paso 2: Configurar extracción
 
@@ -380,10 +384,6 @@ Si una tarea falla:
 - Habilita la recuperación por IA para un manejo robusto de errores
 - Respeta los límites de velocidad (comienza con 1 concurrente)
 
-**Bing:**
-- Más tolerante que Google
-- Puede usar mayor concurrencia
-- Bueno para búsquedas enfocadas en EE.UU.
 
 **Yandex:**
 - **Debe usar navegador local**

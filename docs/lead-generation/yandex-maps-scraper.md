@@ -1,17 +1,17 @@
 ---
 id: yandex-maps-scraper
-title: Yandex Maps Scraper
-sidebar_label: Yandex Maps
-description: Extract business information from Yandex Maps by keyword and location with aiFetchly's Yandex Maps Scraper — ideal for Russian and CIS markets.
+title: Local Business Finder
+sidebar_label: Local Business Finder
+description: Organize business information from Yandex Maps by keyword and location with aiFetchly's Local Business Finder — ideal for Russian and CIS markets.
 ---
 
-# Yandex Maps Scraper
+# Local Business Finder
 
-aiFetchly's Yandex Maps Scraper allows you to search Yandex Maps for local businesses by keyword and location. It is the ideal tool for collecting business data from Russian and CIS markets, with support for language and region customization.
+aiFetchly's Local Business Finder allows you to search Yandex Maps for local businesses by keyword and location. It is the ideal tool for collecting business data from Russian and CIS markets, with support for language and region customization.
 
 ## Overview
 
-The Yandex Maps Scraper provides comprehensive local business data extraction:
+The Local Business Finder provides comprehensive local business data profile insights:
 
 1. **Enter a keyword** (e.g., "dentist", "restaurant")
 2. **Enter a location** (e.g., "Moscow", "Saint Petersburg", "Russia")
@@ -21,14 +21,14 @@ The Yandex Maps Scraper provides comprehensive local business data extraction:
 
 :::tip Best For
 
-The Yandex Maps Scraper is essential for businesses targeting the Russian market and CIS countries. Yandex Maps has superior coverage of local businesses in Russia, Kazakhstan, Belarus, Turkey, and other regions where Yandex operates.
+The Local Business Finder is essential for businesses targeting the Russian market and CIS countries. Yandex Maps has superior coverage of local businesses in Russia, Kazakhstan, Belarus, Turkey, and other regions where Yandex operates.
 
 :::
 
-## Accessing the Yandex Maps Scraper
+## Accessing the Local Business Finder
 
-1. Click **Yandex Maps** in the left navigation menu
-2. The scraper opens with two tabs: **Search** and **History**
+1. Click **Local Business Finder** in the left navigation menu
+2. The page opens with two tabs: **Search** and **History**
 
 ## Running a Search
 
@@ -54,18 +54,18 @@ Enter a city or region to search in:
 
 - **Range**: 1–50 results
 - **Default**: 20 results
-- Adjust the slider to control how many businesses to extract
+- Adjust the slider to control how many businesses to include
 
 :::info Results Cap
 
-The maximum number of results is capped at a safe limit to ensure reliable extraction. The slider range of 1–50 is the user-configurable range.
+The maximum number of results is capped at a safe limit to ensure reliable profile insights. The slider range of 1–50 is the user-configurable range.
 
 :::
 
 #### Include Website
 
-- **Enabled** (default): Attempts to extract the business website URL
-- **Disabled**: Skips website extraction for faster results
+- **Enabled** (default): Attempts to include the business website URL
+- **Disabled**: Skips website lookup for faster results
 
 #### Include Reviews
 
@@ -75,7 +75,7 @@ The maximum number of results is capped at a safe limit to ensure reliable extra
 #### Show Browser
 
 - **Disabled** (default): Browser runs in headless mode (faster)
-- **Enabled**: Browser window is visible during scraping (useful for debugging)
+- **Enabled**: Browser window is visible during information organization (useful for debugging)
 
 ### Step 3: Language and Region Settings (Optional)
 
@@ -99,7 +99,7 @@ These settings are specific to Yandex Maps and help customize your search contex
 
 #### Yandex Account
 
-Select a Yandex account to use its cookies for authenticated scraping:
+Select a Yandex account to use its cookies for authenticated information organization:
 
 - **Benefits**:
   - Higher success rate
@@ -120,12 +120,12 @@ Select one or more proxies to rotate through during the search:
 - **Benefits**:
   - Distributes requests across multiple IPs
   - Reduces detection risk
-  - Essential for large-scale scraping
+  - Essential for large-scale public information organization
 - Select multiple proxies for automatic rotation per request
 
 :::warning Proxy Recommendation
 
-For Yandex Maps scraping, using proxies located in the target region (e.g., Russian proxies for Moscow searches) significantly improves success rates.
+For Yandex Maps information organization, using proxies located in the target region (e.g., Russian proxies for Moscow searches) significantly improves success rates.
 
 :::
 
@@ -133,7 +133,7 @@ For Yandex Maps scraping, using proxies located in the target region (e.g., Russ
 
 1. Click **Start Search** to begin
 2. A circular progress indicator and progress bar appear
-3. Real-time status text shows the current scraping stage
+3. Real-time status text shows the current processing stage
 4. A counter displays progress (e.g., "5 / 20 businesses")
 5. Up to **3 concurrent searches** can run simultaneously
 
@@ -269,17 +269,17 @@ The **History** tab stores all your past Yandex Maps searches.
 - **Use local proxies** (Russian proxies for Russian searches)
 - **Single search**: Proxy not required
 - **Multiple searches**: Use 1–2 proxies
-- **Large-scale scraping**: Use 3+ proxies with rotation
+- **Large-scale information organization**: Use 3+ proxies with rotation
 
 ### 5. Using Yandex Accounts
 
-- **Recommended** for all Yandex Maps scraping
-- **Essential** when scraping Russian cities with many businesses
+- **Recommended** for all Yandex Maps information organization
+- **Essential** when organizing Russian city results with many businesses
 - Accounts with active Yandex usage provide better results
 
 ## Comparison: Google Maps vs. Yandex Maps
 
-| Feature | Google Maps Scraper | Yandex Maps Scraper |
+| Feature | Local Business Finder | Local Business Finder |
 |---------|-------------------|-------------------|
 | **Best For** | Global markets, Western countries | Russia, CIS, Turkey |
 | **Language Support** | Multi-language (auto) | Configurable language/region |
@@ -288,7 +288,7 @@ The **History** tab stores all your past Yandex Maps searches.
 | **Export Formats** | CSV, JSON | CSV, JSON, Copy All |
 | **Progress Tracking** | Progress bar | Circular progress + status text |
 
-:::tip Use Both Scrapers
+:::tip Use Both Assistants
 
 For comprehensive coverage of a region, run searches on both Google Maps and Yandex Maps, then cross-reference and deduplicate the results.
 
@@ -329,7 +329,7 @@ For comprehensive coverage of a region, run searches on both Google Maps and Yan
 **Possible causes:**
 - Search was cancelled before completion
 - Some business listings lacked required data
-- Rate limiting occurred during scraping
+- Rate limiting occurred during information organization
 
 **Solutions:**
 1. Let the search complete fully
@@ -338,16 +338,16 @@ For comprehensive coverage of a region, run searches on both Google Maps and Yan
 
 ## Integration with Other Features
 
-Yandex Maps Scraper results can be used with:
+Local Business Finder results can be used with:
 
-- **[Contact Extraction](./contact-extraction)** — Extract emails from business websites found in the results
-- **[Google Maps Scraper](./google-maps-scraper)** — Cross-reference with Google Maps for broader coverage
-- **[Yellow Pages](./yellow-pages)** — Cross-reference with directory listings
+- **[Contact Profile Insights](./contact-extraction)** — Open in Contact Profile Insights from business websites found in the results
+- **[Local Business Finder](./google-maps-scraper)** — Cross-reference with Google Maps for broader coverage
+- **[Directory Assistant](./yellow-pages)** — Cross-reference with directory listings
 - **[AI Email Writer](../ai-outreach/ai-email-writer)** — Create personalized outreach emails using the collected business data
-- **[Batch Email Sending](./batch-email-sending)** — Launch email campaigns using extracted contact information
+- **[Outreach Campaign](./batch-email-sending)** — Launch email campaigns using extracted contact information
 
 ## Next Steps
 
-- [Learn about Google Maps Scraper](./google-maps-scraper)
-- [Set up email extraction](./contact-extraction)
+- [Learn about Local Business Finder](./google-maps-scraper)
+- [Set up contact profile insights](./contact-extraction)
 - [Create AI-powered email campaigns](../ai-outreach/ai-email-writer)

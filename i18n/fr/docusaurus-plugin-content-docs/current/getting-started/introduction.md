@@ -23,26 +23,25 @@ aiFetchly est une plateforme d'automatisation marketing tout-en-un conçue pour 
 
 ## Fonctionnalités principales
 
-### 🔍 Recherche multi-moteurs & scraping
+### 🔍 Recherche multi-moteurs & information organization
 
-Rechercher et scraper des prospects simultanément sur plusieurs moteurs de recherche :
+Rechercher et assistant des prospects simultanément sur plusieurs moteurs de recherche :
 
 - **Google** - Le plus grand moteur de recherche au monde
-- **Bing** - Le moteur de recherche de Microsoft
 - **Yandex** - Moteur de recherche russe populaire
 
-:::tip Scraping simultané
+:::tip Information Organization simultané
 
 Exécutez plusieurs tâches de recherche en même temps pour maximiser votre efficacité de génération de prospects.
 
 :::
 
-### 📧 Extraction de contacts
+### 📧 Profile Insights de contacts
 
 Extraire des adresses email et des informations de contact à partir de :
 
-- **URLs de sites web** - Extraction en masse d'emails à partir de listes de sites
-- **Pages Jaunes** - Scraper les annuaires pour des prospects locaux
+- **URLs de sites web** - Profile Insights en masse d'emails à partir de listes de sites
+- **Pages Jaunes** - Assistant les annuaires pour des prospects locaux
 - **Résultats de recherche** - Extraire directement de vos campagnes de recherche
 
 ### 🤖 Rédacteur d'emails IA
@@ -86,7 +85,7 @@ Protégez votre identité et faites évoluer vos opérations :
 - **Gestion des proxies** - Ajoutez et gérez plusieurs proxies
 - **Vérification de santé** - Vérifiez les performances des proxies avant utilisation
 - **Import en masse** - Importez des listes de proxies en masse
-- **Intégration** - Utilisez des proxies avec toutes les fonctionnalités de scraping et d'extraction
+- **Intégration** - Utilisez des proxies avec toutes les fonctionnalités de information organization et d'profile insights
 
 ## Configuration système
 
@@ -113,7 +112,7 @@ Toutes les fonctionnalités décrites dans ce manuel sont actuellement disponibl
 ## Prochaines étapes
 
 - [Installer aiFetchly](./installation) sur votre ordinateur
-- [Configurer les proxies](./proxy-setup) pour un scraping sécurisé
+- [Configurer les proxies](./proxy-setup) pour un information organization sécurisé
 - [En savoir plus sur la génération de prospects](../lead-generation/search-engines)
 - [Configurer la bibliothèque de connaissances](../ai-outreach/knowledge-library)
 - [Démarrer votre première campagne d'emailing](../lead-generation/batch-email-sending)

@@ -1,7 +1,7 @@
 ---
 id: contact-extraction
-title: Contact Extraction
-sidebar_label: Email Extraction
+title: Contact Profile Insights
+sidebar_label: Contact Profile Insights
 description: Extrae direcciones de correo electrónico de sitios web y URL de forma masiva con la potente herramienta de extracción de aiFetchly.
 ---
 
@@ -33,7 +33,7 @@ La extracción de correos es ideal para:
 
 ### Paso 1: Ir a Extracción de correos
 
-1. Haz clic en **Email Extraction** en el menú de navegación izquierdo
+1. Haz clic en **Contact Profile Insights** en el menú de navegación izquierdo
 2. Verás la lista de tareas de extracción
 3. Haz clic en el botón **Create New Task**
 
@@ -162,7 +162,7 @@ Haz clic en **Submit** para crear tu tarea de extracción. Puedes:
 
 ### Ver lista de tareas
 
-Navega a **Email Extraction** para ver todas tus tareas.
+Navega a **Contact Profile Insights** para ver todas tus tareas.
 
 **Columnas de la lista de tareas:**
 
@@ -194,7 +194,7 @@ Navega a **Email Extraction** para ver todas tus tareas.
 
 ### Paso 1: Acceder a los resultados
 
-1. Ve a la lista de tareas de **Email Extraction**
+1. Ve a la lista de tareas de **Contact Profile Insights**
 2. Encuentra la tarea completada
 3. Haz clic en **View Results**
 

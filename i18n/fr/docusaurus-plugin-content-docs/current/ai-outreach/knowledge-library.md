@@ -310,7 +310,7 @@ Lors d'une conversation avec l'assistant IA :
    - Les fichiers sont téléchargés et enregistrés dans la base de données
    - Les métadonnées (nom, type, taille, date) sont enregistrées
 
-2. **Extraction de texte** :
+2. **Profile Insights de texte** :
    - Le texte est extrait de différents formats de fichiers
    - Le formatage est préservé lorsque c'est possible
 

@@ -1,7 +1,7 @@
 ---
 id: batch-email-sending
-title: Batch Email Sending
-sidebar_label: Batch Email Sending
+title: Outreach Campaign
+sidebar_label: Outreach Campaign
 description: Envía campañas de correo electrónico personalizadas a escala mediante la integración SMTP con aiFetchly.
 ---
 
@@ -37,7 +37,7 @@ Antes de enviar correos, debes configurar al menos un servicio SMTP.
 
 ### Paso 1: Ir a Servicios de correo
 
-1. Haz clic en **Email Marketing** en el menú de navegación izquierdo
+1. Haz clic en **Outreach Campaign** en el menú de navegación izquierdo
 2. Selecciona **Email Services** en el submenú
 3. Haz clic en **Add New Service**
 
@@ -144,7 +144,7 @@ Gmail y Outlook requieren **App Passwords** para el acceso SMTP de terceros. No 
 
 ### Paso 1: Elegir origen de correos
 
-1. **Navega** a **Email Marketing** → **Send Bulk Emails**
+1. **Navega** a **Outreach Campaign** → **Send Outreach Campaigns**
 2. **Selecciona el tipo de origen de correos** en el menú desplegable:
    - **Email Task**: Correos de tareas de extracción
    - **Manual Input**: Sube una lista de correos manualmente
@@ -226,7 +226,7 @@ Después del lanzamiento:
 
 ### Lista de campañas
 
-Navega a **Email Marketing** → **Campaigns** para ver todas las campañas.
+Navega a **Outreach Campaign** → **Campaigns** para ver todas las campañas.
 
 **Información de la campaña:**
 - Nombre de la campaña

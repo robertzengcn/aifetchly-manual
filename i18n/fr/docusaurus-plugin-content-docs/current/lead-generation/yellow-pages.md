@@ -1,20 +1,20 @@
 ---
 id: yellow-pages
-title: Scraping des Pages Jaunes
+title: Information Organization des Pages Jaunes
 sidebar_label: Pages Jaunes
 description: Extrayez des informations commerciales des Pages Jaunes, Yelp et d'autres annuaires en ligne dans le monde entier.
 ---
 
-# Scraping des Pages Jaunes
+# Information Organization des Pages Jaunes
 
-La fonctionnalité de scraping des Pages Jaunes d'aiFetchly vous permet d'extraire des informations commerciales complètes à partir de plusieurs annuaires en ligne. Collectez des prospects à partir d'annonces d'entreprises locales avec des coordonnées détaillées, des notes, des avis et bien plus encore. Grâce au support IA, vous pouvez améliorer la précision du scraping et générer automatiquement des mots-clés associés.
+La fonctionnalité de information organization des Pages Jaunes d'aiFetchly vous permet d'extraire des informations commerciales complètes à partir de plusieurs annuaires en ligne. Collectez des prospects à partir d'annonces d'entreprises locales avec des coordonnées détaillées, des notes, des avis et bien plus encore. Grâce au support IA, vous pouvez améliorer la précision du information organization et générer automatiquement des mots-clés associés.
 
 ## Annuaires pris en charge
 
 | Annuaire | Région | Langue | Limite de débit | Fonctionnalités |
 |----------|--------|--------|-----------------|-----------------|
 | **YellowPages.com** | États-Unis | Anglais | 100 requêtes/heure | Détails d'entreprise, notes, avis, horaires |
-| **Yelp.com** | États-Unis | Anglais | 60 requêtes/heure | Avis, notes, photos, extraction détaillée |
+| **Yelp.com** | États-Unis | Anglais | 60 requêtes/heure | Avis, notes, photos, profile insights détaillée |
 | **YellowPages.ca** | Canada | Anglais | 100 requêtes/heure | Annuaire canadien, analyse d'adresse |
 | **YellowPages.com.sg** | Singapour | Anglais | 100 requêtes/heure | Annonces d'entreprises singapouriennes |
 | **192.com** | Royaume-Uni | Anglais | 100 requêtes/heure | Annuaire d'entreprises britannique |
@@ -46,7 +46,7 @@ Lors de la création d'une tâche, sélectionnez une plateforme dans le menu dé
 
 ### Étape 1 : Accéder aux Pages Jaunes
 
-1. Cliquez sur **Yellow Pages** dans le menu de navigation de gauche
+1. Cliquez sur **Directory Assistant** dans le menu de navigation de gauche
 2. Vous verrez la liste des tâches des Pages Jaunes
 3. Cliquez sur le bouton **Create New Task**
 
@@ -61,7 +61,7 @@ Entrez les informations obligatoires suivantes :
 
 #### Sélection de la plateforme
 
-Sélectionnez l'annuaire que vous souhaitez scraper dans le menu déroulant :
+Sélectionnez l'annuaire que vous souhaitez assistant dans le menu déroulant :
 
 **Amériques :**
 - YellowPages.com (États-Unis)
@@ -103,7 +103,7 @@ Entrez le lieu géographique pour votre recherche :
 
 ### Étape 3 : Paramètres de performance
 
-Configurez le mode d'exécution de la tâche de scraping :
+Configurez le mode d'exécution de la tâche de information organization :
 
 #### Pages maximum
 
@@ -153,15 +153,15 @@ Configurez le mode d'exécution de la tâche de scraping :
 
 #### Support IA
 
-Activez **AI Support** pour bénéficier de l'assistance de scraping propulsée par l'IA :
+Activez **AI Support** pour bénéficier de l'assistance de information organization propulsée par l'IA :
 
-- Lorsqu'il est activé, l'IA aide à améliorer la précision du scraping et à gérer les cas limites
+- Lorsqu'il est activé, l'IA aide à améliorer la précision du information organization et à gérer les cas limites
 - Activé par défaut si votre compte dispose des fonctionnalités IA
 - Recherchez l'icône de robot violet à côté du bouton bascule
 
 #### Navigateur local
 
-Activez **Use Local Browser** pour utiliser votre installation locale de Chrome ou Firefox pour le scraping :
+Activez **Use Local Browser** pour utiliser votre installation locale de Chrome ou Firefox pour le information organization :
 
 1. Activez **Local Browser**
 2. Sélectionnez **Chrome** ou **Firefox** dans le menu déroulant
@@ -171,7 +171,7 @@ Activez **Use Local Browser** pour utiliser votre installation locale de Chrome 
 
 #### Sélection du compte
 
-Certaines plateformes prennent en charge le scraping authentifié :
+Certaines plateformes prennent en charge le information organization authentifié :
 
 1. Activez **Use Account** si disponible
 2. Sélectionnez un compte parmi vos comptes enregistrés
@@ -182,7 +182,7 @@ Certaines plateformes prennent en charge le scraping authentifié :
 
 #### Configuration du proxy
 
-Ajoutez des proxies pour le scraping à grande échelle :
+Ajoutez des proxies pour le information organization à grande échelle :
 
 1. Activez **Use Proxy**
 2. Cliquez sur **Choose Proxy**
@@ -247,7 +247,7 @@ Lorsque vous remplissez le formulaire, la barre latérale **Task Preview** affic
 
 Pour modifier une tâche existante :
 
-1. Allez à la liste des tâches **Yellow Pages**
+1. Allez à la liste des tâches **Directory Assistant**
 2. Cliquez sur l'icône **Edit** (crayon) de la tâche
 3. Modifiez la configuration dans le formulaire
 4. Cliquez sur **Update Task** pour enregistrer les modifications
@@ -256,7 +256,7 @@ Pour modifier une tâche existante :
 
 ### Afficher la liste des tâches
 
-Naviguez vers **Yellow Pages** pour voir toutes vos tâches.
+Naviguez vers **Directory Assistant** pour voir toutes vos tâches.
 
 **Aperçu de la liste des tâches :**
 - **Statistiques en temps réel** : Total, en cours, en attente, terminées, échouées avec le taux de succès
@@ -312,7 +312,7 @@ Si une tâche rencontre une protection Cloudflare, aiFetchly affiche une notific
 
 ### Étape 1 : Accéder aux résultats
 
-1. Allez à la liste des tâches **Yellow Pages**
+1. Allez à la liste des tâches **Directory Assistant**
 2. Trouvez la tâche terminée
 3. Cliquez sur **View Results** pour ouvrir la page des résultats
 
@@ -343,7 +343,7 @@ Le tableau des résultats affiche des informations commerciales complètes :
 | **Hours** | Horaires d'ouverture (si disponibles) |
 | **Year Established** | Année de fondation de l'entreprise |
 | **Employee Count** | Nombre d'employés |
-| **Scraped At** | Horodatage de l'extraction des données |
+| **Scraped At** | Horodatage de l'profile insights des données |
 
 ### Étape 5 : Interagir avec les résultats
 
@@ -421,7 +421,7 @@ Le tableau des résultats affiche des informations commerciales complètes :
 1. **Respectez les limites de débit** : Ne dépassez pas la concurrence recommandée
 2. **Utilisez des délais** : Maintenez les délais entre les requêtes à 2000 ms ou plus
 3. **Faites tourner les proxies** : Répartissez les requêtes sur plusieurs adresses IP
-4. **Utilisez des comptes** : Le scraping authentifié a des limites plus élevées
+4. **Utilisez des comptes** : Le information organization authentifié a des limites plus élevées
 5. **Faites des pauses** : N'exécutez pas de grandes tâches en continu
 6. **Activez le support IA** : L'IA peut aider à gérer les protections anti-bot
 7. **Utilisez le navigateur local** : L'empreinte d'un vrai navigateur réduit le risque de détection
@@ -571,7 +571,7 @@ Le tableau des résultats affiche des informations commerciales complètes :
 Les e-mails d'entreprises extraits peuvent être utilisés directement dans les campagnes d'e-mail :
 
 1. **Exportez les résultats** de la tâche Pages Jaunes
-2. Naviguez vers **Email Marketing** → **Send Bulk Emails**
+2. Naviguez vers **Outreach Campaign** → **Send Outreach Campaigns**
 3. **Importez le CSV** avec les e-mails extraits
 4. **Créez un modèle** pour votre outreach
 5. **Lancez la campagne**
@@ -663,7 +663,7 @@ Pour des instructions détaillées, consultez [Envoi d'e-mails en lot](./batch-e
 |---------------|---------------------|-------------|
 | **Idéal pour** | Trouver des sites web, recherche générale | Entreprises locales, annonces vérifiées |
 | **Qualité des données** | Variable | Structurées, vérifiées |
-| **Coordonnées** | Nécessite une extraction | E-mails/téléphones pré-extraits |
+| **Coordonnées** | Nécessite une profile insights | E-mails/téléphones pré-extraits |
 | **Ciblage géographique** | Basé sur les mots-clés | Basé sur le lieu |
 | **Notes/Avis** | Parfois | Toujours (Yelp) |
 | **Horaires d'ouverture** | Rarement | Couramment |
@@ -679,7 +679,7 @@ Combinez les deux approches :
 
 ## Prochaines étapes
 
-- [En savoir plus sur l'extraction d'e-mails](./contact-extraction)
+- [En savoir plus sur l'profile insights d'e-mails](./contact-extraction)
 - [Configurer des campagnes d'e-mails IA](../ai-outreach/ai-email-writer)
 - [Configurer la planification des tâches](../automation/task-scheduling)
 

@@ -2,7 +2,7 @@
 id: proxy-setup
 title: Proxy Setup
 sidebar_label: Proxy Setup
-description: Learn how to configure and manage proxies for safe and efficient web scraping in aiFetchly.
+description: Learn how to configure and manage proxies for safe and efficient web information organization in aiFetchly.
 ---
 
 # Proxy Setup Guide
@@ -16,7 +16,7 @@ Using proxies is **optional** with aiFetchly. You can run search tasks without p
 
 :::info Optional Feature
 
-Proxies are not required to use aiFetchly. You can start scraping immediately without configuring proxies. Add proxies only if you need to avoid rate limiting or access geo-specific content.
+Proxies are not required to use aiFetchly. You can start information organization immediately without configuring proxies. Add proxies only if you need to avoid rate limiting or access geo-specific content.
 
 :::
 
@@ -30,8 +30,8 @@ aiFetchly supports three proxy protocols:
 
 | Protocol | Description | Use Case |
 |----------|-------------|----------|
-| **HTTP** | Basic HTTP proxy | General web scraping, non-SSL sites |
-| **HTTPS** | Secure HTTP proxy | Secure websites (HTTPS), recommended for most scraping |
+| **HTTP** | Basic HTTP proxy | General web information organization, non-SSL sites |
+| **HTTPS** | Secure HTTP proxy | Secure websites (HTTPS), recommended for most information organization |
 | **SOCKS5** | Socket Secure 5 | Advanced users, supports more protocols, better performance |
 
 :::tip Recommended Protocol
@@ -96,7 +96,7 @@ After adding proxies, you should verify they work:
 
 **Google Pass** — whether the same proxy can reach **Google** without being blocked as automated traffic. After **Status** shows **Pass**, the app runs a separate check (headless browser to Google). That column can update a moment later:
 
-- **Pass** — Google check succeeded; the IP is more likely to work for Google-backed scraping.
+- **Pass** — Google check succeeded; the IP is more likely to work for Google-backed information organization.
 - **Fail** — Google blocked, challenged, or the check errored (common for datacenter IPs or overused proxies).
 - **Not Checked** — No Google result yet (proxy never passed the basic check, or not checked since this feature was added).
 
@@ -193,7 +193,7 @@ Use the **Columns** control on the toolbar to show or hide columns (for example,
 
 ## Using Proxies in Search Tasks
 
-Once you've added and tested your proxies, you can use them in search and scraping tasks.
+Once you've added and tested your proxies, you can use them in search and information organization tasks.
 
 ### Step 1: Create or Edit a Search Task
 
@@ -218,7 +218,7 @@ When you run the search task, aiFetchly will:
 - Distribute requests across your selected proxies
 - Automatically rotate through proxies
 - Handle proxy failures gracefully
-- Continue scraping even if some proxies fail
+- Continue information organization even if some proxies fail
 
 :::info Proxy Rotation
 
@@ -251,7 +251,7 @@ On the **Proxy** page, set **Check timeout** (1–60 seconds, default **10**). T
 
 **Google Pass** answers: “Through this proxy, can we load Google without obvious blocking?” It uses a headless browser session (similar to real browsing), which is stricter than a simple ping or HTTP tunnel test.
 
-- **Pass** — Useful signal for Google-oriented scraping; not a guarantee for every Google surface or volume.
+- **Pass** — Useful signal for Google-oriented information organization; not a guarantee for every Google surface or volume.
 - **Fail** — Often datacenter IPs, recycled proxies, or IPs already flagged; try another proxy or provider.
 - **Not Checked** — Run **Check Proxy** on saved proxies, or the proxy has not passed the basic check yet.
 
@@ -265,7 +265,7 @@ Invest in quality proxy services. Free proxies are often slow, unreliable, or al
 
 ### 2. Regular Health Checks
 
-Test your proxies regularly, especially before running large scraping tasks.
+Test your proxies regularly, especially before running large information organization tasks.
 
 ### 3. Remove Failed Proxies
 
@@ -273,14 +273,14 @@ Keep your proxy list clean by removing failed proxies promptly.
 
 ### 4. Use Multiple Proxies
 
-For large-scale scraping, use multiple proxies to:
+For large-scale public information organization, use multiple proxies to:
 - Distribute the load
 - Reduce the risk of IP blocks
-- Increase scraping speed
+- Increase information organization speed
 
 ### 5. Match Proxy Location to Target
 
-If scraping geo-specific content, use proxies from the same region as your target audience.
+If information organization geo-specific content, use proxies from the same region as your target audience.
 
 ### 6. Monitor Proxy Performance
 
@@ -315,10 +315,10 @@ Even working proxies can get blocked if overused. Rotate them regularly.
 - Use health check results to identify stable proxies
 - Consider upgrading your proxy service
 
-### Proxies Work in Tests but Fail During Scraping
+### Proxies Work in Tests but Fail During Information Organization
 
 **Possible causes:**
-- Target website has stricter anti-scraping measures
+- Target website has stricter anti-information organization measures
 - Proxy is rate-limited by the target
 - **Status** is **Pass** but **Google Pass** is **Fail** while the task relies on Google
 
@@ -360,8 +360,8 @@ Regularly change your proxy pool to maintain security and avoid detection.
 
 Now that you've configured your proxies:
 
-- [Learn about search engine scraping](../lead-generation/search-engines)
-- [Set up contact extraction](../lead-generation/contact-extraction)
+- [Learn about search engine information organization](../lead-generation/search-engines)
+- [Set up contact profile insights](../lead-generation/contact-extraction)
 - [Configure the Knowledge Library](../ai-outreach/knowledge-library)
 
 ---

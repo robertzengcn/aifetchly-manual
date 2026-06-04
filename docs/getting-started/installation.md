@@ -200,7 +200,7 @@ After launching aiFetchly, you should see the main application window with:
 
 - Navigation menu on the left
 - Dashboard or welcome screen
-- Access to all features (Search, Email Marketing, Knowledge Library, etc.)
+- Access to all features (Search, Outreach Campaign, Knowledge Library, etc.)
 
 ## Uninstalling aiFetchly
 
@@ -343,7 +343,7 @@ sudo dnf install --skip-broken aifetchly
 
 After successfully installing aiFetchly:
 
-1. [Configure proxy settings](./proxy-setup) (recommended for scraping)
+1. [Configure proxy settings](./proxy-setup) (recommended for information organization)
 2. [Learn about lead generation](../lead-generation/search-engines)
 3. [Set up your Knowledge Library](../ai-outreach/knowledge-library)
 

@@ -35,9 +35,9 @@ Las plantillas son la base de sus campañas de correo electrónico. Contienen:
 
 ## Creación de plantillas de correo electrónico
 
-### Paso 1: Ir a Email Marketing
+### Paso 1: Ir a Outreach Campaign
 
-1. Haga clic en **Email Marketing** en el menú de navegación izquierdo
+1. Haga clic en **Outreach Campaign** en el menú de navegación izquierdo
 2. Seleccione **Templates** en el submenú
 3. Haga clic en **Create New Template**
 
@@ -144,7 +144,7 @@ Cuando el contexto RAG está habilitado, la IA hará referencia automáticamente
 
 ### Lista de plantillas
 
-Vaya a **Email Marketing** → **Templates** para ver todas las plantillas.
+Vaya a **Outreach Campaign** → **Templates** para ver todas las plantillas.
 
 **Información de la plantilla:**
 - Título
@@ -329,7 +329,7 @@ Las plantillas se usan en el flujo de trabajo de envío masivo de correos:
 3. **Cada destinatario recibe un correo electrónico personalizado**
 4. **La IA puede mejorar** la plantilla con contenido de la Biblioteca de Conocimiento
 
-Para instrucciones detalladas, consulte [Batch Email Sending](../lead-generation/batch-email-sending).
+Para instrucciones detalladas, consulte [Outreach Campaign](../lead-generation/batch-email-sending).
 
 ## Solución de problemas
 

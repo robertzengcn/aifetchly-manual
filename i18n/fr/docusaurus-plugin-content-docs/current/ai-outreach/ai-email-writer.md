@@ -35,9 +35,9 @@ Les modèles constituent la base de vos campagnes d'e-mails. Ils contiennent :
 
 ## Créer des modèles d'e-mails
 
-### Étape 1 : Accéder au module Email Marketing
+### Étape 1 : Accéder au module Outreach Campaign
 
-1. Cliquez sur **Email Marketing** dans le menu de navigation de gauche
+1. Cliquez sur **Outreach Campaign** dans le menu de navigation de gauche
 2. Sélectionnez **Templates** dans le sous-menu
 3. Cliquez sur **Create New Template**
 
@@ -144,7 +144,7 @@ Lorsque le contexte RAG est activé, l'IA fera automatiquement référence à vo
 
 ### Liste des modèles
 
-Accédez à **Email Marketing** → **Templates** pour voir tous les modèles.
+Accédez à **Outreach Campaign** → **Templates** pour voir tous les modèles.
 
 **Informations du modèle :**
 - Titre

@@ -1,7 +1,7 @@
 ---
 id: google-maps-scraper
 title: Google Maps スクレイパー
-sidebar_label: Google Maps
+sidebar_label: Local Business Finder
 description: aiFetchlyのGoogle Mapsスクレイパーを使用して、キーワードと場所でGoogle Mapsからビジネス情報を抽出します。
 ---
 

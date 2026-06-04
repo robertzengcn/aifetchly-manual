@@ -37,7 +37,7 @@ AI 邮件撰写器是 aiFetchly 的智能邮件创建系统。它可以生成个
 
 ### 第一步：进入邮件营销
 
-1. 点击左侧导航菜单中的 **Email Marketing**
+1. 点击左侧导航菜单中的 **Outreach Campaign**
 2. 从子菜单中选择 **Templates**
 3. 点击 **Create New Template**
 
@@ -144,7 +144,7 @@ Sent: 2024-01-15 10:30 AM
 
 ### 模板列表
 
-导航至 **Email Marketing** → **Templates** 查看所有模板。
+导航至 **Outreach Campaign** → **Templates** 查看所有模板。
 
 **模板信息：**
 - 标题

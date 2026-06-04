@@ -2,7 +2,7 @@
 id: proxy-setup
 title: Proxy-Einrichtung
 sidebar_label: Proxy-Einrichtung
-description: Erfahren Sie, wie Sie Proxys für sicheres und effizientes Web-Scraping in aiFetchly konfigurieren und verwalten.
+description: Erfahren Sie, wie Sie Proxys für sicheres und effizientes Web-Information Organization in aiFetchly konfigurieren und verwalten.
 ---
 
 # Proxy-Einrichtungsleitfaden
@@ -16,7 +16,7 @@ Die Verwendung von Proxys ist bei aiFetchly **optional**. Sie können Suchaufgab
 
 :::info Optionale Funktion
 
-Proxys sind nicht erforderlich, um aiFetchly zu nutzen. Sie können sofort mit dem Scraping beginnen, ohne Proxys zu konfigurieren. Fügen Sie Proxys nur hinzu, wenn Sie Ratenbeschränkungen vermeiden oder auf geospezifische Inhalte zugreifen möchten.
+Proxys sind nicht erforderlich, um aiFetchly zu nutzen. Sie können sofort mit dem Information Organization beginnen, ohne Proxys zu konfigurieren. Fügen Sie Proxys nur hinzu, wenn Sie Ratenbeschränkungen vermeiden oder auf geospezifische Inhalte zugreifen möchten.
 
 :::
 
@@ -30,8 +30,8 @@ aiFetchly unterstützt drei Proxy-Protokolle:
 
 | Protokoll | Beschreibung | Anwendungsfall |
 |----------|-------------|----------|
-| **HTTP** | Standard-HTTP-Proxy | Allgemeines Web-Scraping, Nicht-SSL-Websites |
-| **HTTPS** | Sicherer HTTP-Proxy | Sichere Websites (HTTPS), empfohlen für die meisten Scraping-Aufgaben |
+| **HTTP** | Standard-HTTP-Proxy | Allgemeines Web-Information Organization, Nicht-SSL-Websites |
+| **HTTPS** | Sicherer HTTP-Proxy | Sichere Websites (HTTPS), empfohlen für die meisten Information Organization-Aufgaben |
 | **SOCKS5** | Socket Secure 5 | Fortgeschrittene Nutzer, unterstützt weitere Protokolle, bessere Leistung |
 
 :::tip Empfohlenes Protokoll
@@ -96,7 +96,7 @@ Nach dem Hinzufügen von Proxys sollten Sie überprüfen, ob sie funktionieren:
 
 **Google Pass** — ob derselbe Proxy **Google** erreichen kann, ohne als automatisierter Datenverkehr blockiert zu werden. Nachdem **Status** **Pass** anzeigt, führt die App eine separate Prüfung durch (Headless-Browser zu Google). Diese Spalte kann sich einen Moment später aktualisieren:
 
-- **Pass** — Google-Prüfung erfolgreich; die IP funktioniert wahrscheinlicher für Google-basiertes Scraping.
+- **Pass** — Google-Prüfung erfolgreich; die IP funktioniert wahrscheinlicher für Google-basiertes Information Organization.
 - **Fail** — Google hat blockiert, eine Herausforderung gesendet oder die Prüfung war fehlerhaft (häufig bei Rechenzentrums-IPs oder übermäßig genutzten Proxys).
 - **Not Checked** — Noch kein Google-Ergebnis (Proxy hat die grundlegende Prüfung nie bestanden oder seit der Einführung dieser Funktion nicht geprüft).
 
@@ -193,7 +193,7 @@ Verwenden Sie die Steuerung **Columns** in der Symbolleiste, um Spalten ein- ode
 
 ## Proxys in Suchaufgaben verwenden
 
-Sobald Sie Ihre Proxys hinzugefügt und getestet haben, können Sie sie in Such- und Scraping-Aufgaben verwenden.
+Sobald Sie Ihre Proxys hinzugefügt und getestet haben, können Sie sie in Such- und Information Organization-Aufgaben verwenden.
 
 ### Schritt 1: Suchaufgabe erstellen oder bearbeiten
 
@@ -218,7 +218,7 @@ Wenn Sie die Suchaufgabe ausführen, wird aiFetchly:
 - Anfragen über Ihre ausgewählten Proxys verteilen
 - Automatisch zwischen Proxys rotieren
 - Proxy-Fehler elegant behandeln
-- Das Scraping fortsetzen, auch wenn einige Proxys ausfallen
+- Das Information Organization fortsetzen, auch wenn einige Proxys ausfallen
 
 :::info Proxy-Rotation
 
@@ -251,7 +251,7 @@ Auf der **Proxy**-Seite können Sie **Check timeout** festlegen (1–60 Sekunden
 
 **Google Pass** beantwortet die Frage: "Können wir über diesen Proxy Google laden, ohne offensichtlich blockiert zu werden?" Dabei wird eine Headless-Browser-Sitzung (ähnlich wie echtes Surfen) verwendet, was strenger ist als ein einfacher Ping- oder HTTP-Tunneltest.
 
-- **Pass** — Nützliches Signal für Google-orientiertes Scraping; keine Garantie für jede Google-Oberfläche oder jedes Datenvolumen.
+- **Pass** — Nützliches Signal für Google-orientiertes Information Organization; keine Garantie für jede Google-Oberfläche oder jedes Datenvolumen.
 - **Fail** — Oft Rechenzentrums-IPs, wiederverwendete Proxys oder bereits markierte IPs; versuchen Sie einen anderen Proxy oder Anbieter.
 - **Not Checked** — Führen Sie **Check Proxy** bei gespeicherten Proxys aus, oder der Proxy hat die grundlegende Prüfung noch nicht bestanden.
 
@@ -265,7 +265,7 @@ Investieren Sie in qualitativ hochwertige Proxy-Dienste. Kostenlose Proxys sind 
 
 ### 2. Regelmäßige Gesundheitsprüfungen
 
-Testen Sie Ihre Proxys regelmäßig, insbesondere bevor Sie große Scraping-Aufgaben ausführen.
+Testen Sie Ihre Proxys regelmäßig, insbesondere bevor Sie große Information Organization-Aufgaben ausführen.
 
 ### 3. Fehlgeschlagene Proxys entfernen
 
@@ -273,10 +273,10 @@ Halten Sie Ihre Proxy-Liste sauber, indem Sie fehlgeschlagene Proxys umgehend en
 
 ### 4. Mehrere Proxys verwenden
 
-Für Scraping im großen Maßstab verwenden Sie mehrere Proxys, um:
+Für Information Organization im großen Maßstab verwenden Sie mehrere Proxys, um:
 - Die Last zu verteilen
 - Das Risiko von IP-Sperren zu verringern
-- Die Scraping-Geschwindigkeit zu erhöhen
+- Die Information Organization-Geschwindigkeit zu erhöhen
 
 ### 5. Proxy-Standort an Ziel anpassen
 
@@ -315,10 +315,10 @@ Selbst funktionierende Proxys können blockiert werden, wenn sie übermäßig ge
 - Nutzen Sie die Ergebnisse der Gesundheitsprüfung, um stabile Proxys zu identifizieren
 - Erwägen Sie ein Upgrade Ihres Proxy-Dienstes
 
-### Proxys funktionieren beim Test, scheitern aber beim Scraping
+### Proxys funktionieren beim Test, scheitern aber beim Information Organization
 
 **Mögliche Ursachen:**
-- Die Zielwebsite hat strengere Anti-Scraping-Maßnahmen
+- Die Zielwebsite hat strengere Anti-Information Organization-Maßnahmen
 - Der Proxy wird von der Zielseite ratenbeschränkt
 - **Status** ist **Pass**, aber **Google Pass** ist **Fail**, während die Aufgabe auf Google angewiesen ist
 
@@ -360,7 +360,7 @@ Wechseln Sie Ihren Proxy-Pool regelmäßig, um die Sicherheit zu gewährleisten 
 
 Nachdem Sie Ihre Proxys konfiguriert haben:
 
-- [Erfahren Sie mehr über Suchmaschinen-Scraping](../lead-generation/search-engines)
+- [Erfahren Sie mehr über Suchmaschinen-Information Organization](../lead-generation/search-engines)
 - [Kontaktextraktion einrichten](../lead-generation/contact-extraction)
 - [Die Wissensbibliothek konfigurieren](../ai-outreach/knowledge-library)
 

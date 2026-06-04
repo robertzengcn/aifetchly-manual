@@ -1,20 +1,20 @@
 ---
 id: yellow-pages
-title: Yellow Pages Scraping
+title: Yellow Pages Information Organization
 sidebar_label: Yellow Pages
-description: Extract business information from Yellow Pages, Yelp, and other online directories worldwide.
+description: Organize business information from Yellow Pages, Yelp, and other online directories worldwide.
 ---
 
-# Yellow Pages Scraping
+# Yellow Pages Information Organization
 
-aiFetchly's Yellow Pages scraping feature allows you to extract comprehensive business information from multiple online directories. Collect leads from local business listings with detailed contact information, ratings, reviews, and more. Powered by AI support, you can enhance scraping accuracy and generate related keywords automatically.
+aiFetchly's Yellow Pages information organization feature allows you to extract comprehensive business information from multiple online directories. Collect leads from local business listings with detailed contact information, ratings, reviews, and more. Powered by AI support, you can enhance information organization accuracy and generate related keywords automatically.
 
 ## Supported Directories
 
 | Directory | Region | Language | Rate Limit | Features |
 |-----------|--------|----------|------------|----------|
 | **YellowPages.com** | USA | English | 100 req/hour | Business details, ratings, reviews, hours |
-| **Yelp.com** | USA | English | 60 req/hour | Reviews, ratings, photos, detailed extraction |
+| **Yelp.com** | USA | English | 60 req/hour | Reviews, ratings, photos, detailed profile insights |
 | **YellowPages.ca** | Canada | English | 100 req/hour | Canadian business directory, address parsing |
 | **YellowPages.com.sg** | Singapore | English | 100 req/hour | Singapore business listings |
 | **192.com** | UK | English | 100 req/hour | UK-specific business directory |
@@ -42,12 +42,12 @@ When creating a task, select a platform from the dropdown. As you select each pl
 
 :::
 
-## Creating a Yellow Pages Task
+## Creating a Directory Assistant Task
 
 ### Step 1: Navigate to Yellow Pages
 
-1. Click **Yellow Pages** in the left navigation menu
-2. You'll see the Yellow Pages task list
+1. Click **Directory Assistant** in the left navigation menu
+2. You'll see the Directory Assistant task list
 3. Click **Create New Task** button
 
 ### Step 2: Basic Information
@@ -103,7 +103,7 @@ Enter the geographic location for your search:
 
 ### Step 3: Performance Settings
 
-Configure how the scraping task runs:
+Configure how the information organization task runs:
 
 #### Max Pages
 
@@ -153,15 +153,15 @@ Configure how the scraping task runs:
 
 #### AI Support
 
-Toggle **AI Support** to enable AI-powered scraping assistance:
+Toggle **AI Support** to enable AI-powered information organization assistance:
 
-- When enabled, AI helps improve scraping accuracy and handle edge cases
+- When enabled, AI helps improve information organization accuracy and handle edge cases
 - Enabled by default if your account has AI features enabled
 - Look for the purple robot icon next to the toggle
 
 #### Local Browser
 
-Toggle **Use Local Browser** to use your local Chrome or Firefox installation for scraping:
+Toggle **Use Local Browser** to use your local Chrome or Firefox installation for information organization:
 
 1. Toggle **Local Browser** to enable
 2. Select **Chrome** or **Firefox** from the dropdown
@@ -171,7 +171,7 @@ Toggle **Use Local Browser** to use your local Chrome or Firefox installation fo
 
 #### Account Selection
 
-Some platforms support authenticated scraping:
+Some platforms support authenticated information organization:
 
 1. Toggle **Use Account** if available
 2. Select an account from your saved accounts
@@ -182,7 +182,7 @@ Some platforms support authenticated scraping:
 
 #### Proxy Configuration
 
-Add proxies for large-scale scraping:
+Add proxies for large-scale public information organization:
 
 1. Toggle **Use Proxy**
 2. Click **Choose Proxy**
@@ -192,7 +192,7 @@ Add proxies for large-scale scraping:
 :::tip When to Use Proxies
 
 Use proxies when:
-- Scraping more than 50 pages
+- Information Organization more than 50 pages
 - Running concurrent tasks
 - Previous tasks were blocked
 
@@ -247,16 +247,16 @@ As you fill in the form, the **Task Preview** sidebar shows a live summary of yo
 
 To modify an existing task:
 
-1. Go to **Yellow Pages** task list
+1. Go to **Directory Assistant** task list
 2. Click the **Edit** (pencil) icon on the task
 3. Modify the configuration in the form
 4. Click **Update Task** to save changes
 
-## Managing Yellow Pages Tasks
+## Managing Directory Assistant Tasks
 
 ### View Task List
 
-Navigate to **Yellow Pages** to see all your tasks.
+Navigate to **Directory Assistant** to see all your tasks.
 
 **Task List Overview:**
 - **Real-time Statistics**: Total, running, pending, completed, failed tasks with success rate
@@ -312,7 +312,7 @@ If a task encounters Cloudflare protection, aiFetchly displays a warning notific
 
 ### Step 1: Access Results
 
-1. Go to **Yellow Pages** task list
+1. Go to **Directory Assistant** task list
 2. Find the completed task
 3. Click **View Results** to open the results page
 
@@ -343,7 +343,7 @@ The results table displays comprehensive business information:
 | **Hours** | Business hours (if available) |
 | **Year Established** | Year business was founded |
 | **Employee Count** | Number of employees |
-| **Scraped At** | Timestamp of data extraction |
+| **Scraped At** | Timestamp of data profile insights |
 
 ### Step 5: Interact with Results
 
@@ -421,7 +421,7 @@ The results table displays comprehensive business information:
 1. **Respect Rate Limits**: Don't exceed recommended concurrency
 2. **Use Delays**: Keep request delays at 2000ms or higher
 3. **Rotate Proxies**: Distribute requests across multiple IPs
-4. **Use Accounts**: Authenticated scraping has higher limits
+4. **Use Accounts**: Authenticated information organization has higher limits
 5. **Take Breaks**: Don't run large tasks continuously
 6. **Enable AI Support**: AI can help handle anti-bot protections
 7. **Use Local Browser**: Real browser fingerprint reduces detection risk
@@ -566,17 +566,17 @@ The results table displays comprehensive business information:
 - Use 2500ms delay (60 req/hour rate limit)
 - Good for discovering Korean businesses
 
-## Integration with Email Marketing
+## Integration with Outreach Campaign
 
 Extracted business emails can be used directly in email campaigns:
 
-1. **Export Results** from Yellow Pages task
-2. **Navigate to Email Marketing** → **Send Bulk Emails**
+1. **Export Results** from Directory Assistant task
+2. **Navigate to Outreach Campaign** → **Send Outreach Campaigns**
 3. **Import CSV** with extracted emails
 4. **Create Template** for your outreach
 5. **Launch Campaign**
 
-For detailed instructions, see [Batch Email Sending](./batch-email-sending).
+For detailed instructions, see [Outreach Campaign](./batch-email-sending).
 
 ## Troubleshooting
 
@@ -640,7 +640,7 @@ For detailed instructions, see [Batch Email Sending](./batch-email-sending).
 1. **Search** for businesses in your target location
 2. **Filter** by category and ratings
 3. **Export** high-quality leads
-4. **Import** to email marketing
+4. **Import** to outreach campaign
 5. **Create personalized campaign** using AI Email Writer
 
 ### Workflow 2: Competitive Analysis
@@ -657,13 +657,13 @@ For detailed instructions, see [Batch Email Sending](./batch-email-sending).
 3. **Identify** market opportunities
 4. **Plan** expansion strategy
 
-## Comparison: Search Engines vs. Yellow Pages
+## Comparison: Market Insight Explorer vs. Yellow Pages
 
-| Feature | Search Engines | Yellow Pages |
+| Feature | Market Insight Explorer | Yellow Pages |
 |---------|---------------|--------------|
 | **Best For** | Finding websites, general research | Local businesses, verified listings |
 | **Data Quality** | Varies | Structured, verified |
-| **Contact Info** | Requires extraction | Pre-extracted emails/phones |
+| **Contact Info** | Requires profile insights | Pre-extracted emails/phones |
 | **Geographic Targeting** | Keyword-based | Location-based |
 | **Ratings/Reviews** | Sometimes | Always (Yelp) |
 | **Business Hours** | Rarely | Commonly |
@@ -671,15 +671,15 @@ For detailed instructions, see [Batch Email Sending](./batch-email-sending).
 :::tip Use Both Strategies
 
 Combine both approaches:
-1. Use **Search Engines** to find industry-specific websites
-2. Use **Yellow Pages** to find local businesses
+1. Use **Market Insight Explorer** to find industry-specific websites
+2. Use **Directory Assistant** to find local businesses
 3. Cross-reference for comprehensive coverage
 
 :::
 
 ## Next Steps
 
-- [Learn about email extraction](./contact-extraction)
+- [Learn about contact profile insights](./contact-extraction)
 - [Set up AI-powered email campaigns](../ai-outreach/ai-email-writer)
 - [Configure task scheduling](../automation/task-scheduling)
 

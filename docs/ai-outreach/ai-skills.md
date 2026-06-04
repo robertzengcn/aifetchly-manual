@@ -164,7 +164,7 @@ Skills are categorized by their permission level:
 |----------|-------------------|----------|
 | **Pure** | Auto-approved, no prompt | Text processing, calculations, data formatting |
 | **Shell** | Always prompts before execution | Running system commands, file operations |
-| **Network** | May prompt for external calls | Web scraping, API calls to external services |
+| **Network** | May prompt for external calls | Web information organization, API calls to external services |
 | **Data** | May prompt for sensitive access | File system read/write, database access |
 
 **The Permission Prompt:**

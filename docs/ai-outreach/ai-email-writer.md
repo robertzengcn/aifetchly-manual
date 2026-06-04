@@ -35,9 +35,9 @@ Templates are the foundation of your email campaigns. They contain:
 
 ## Creating Email Templates
 
-### Step 1: Navigate to Email Marketing
+### Step 1: Navigate to Outreach Campaign
 
-1. Click **Email Marketing** in the left navigation menu
+1. Click **Outreach Campaign** in the left navigation menu
 2. Select **Templates** from the submenu
 3. Click **Create New Template**
 
@@ -144,7 +144,7 @@ When RAG context is enabled, the AI will automatically reference your Knowledge 
 
 ### Template List
 
-Navigate to **Email Marketing** → **Templates** to see all templates.
+Navigate to **Outreach Campaign** → **Templates** to see all templates.
 
 **Template Information:**
 - Title
@@ -161,7 +161,7 @@ Navigate to **Email Marketing** → **Templates** to see all templates.
 | **Duplicate** | Create a copy of the template |
 | **Delete** | Remove template (confirm required) |
 | **Preview** | See template with sample variables |
-| **Use in Campaign** | Select for batch email sending |
+| **Use in Campaign** | Select for outreach campaign |
 
 ### Best Practices for Templates
 
@@ -320,16 +320,16 @@ Alternative: {$value_proposition_2}
 Alternative: {$value_proposition_3}
 ```
 
-## Integration with Batch Email Sending
+## Integration with Outreach Campaign
 
-Templates are used in the batch email sending workflow:
+Templates are used in the outreach campaign workflow:
 
 1. **Choose Template** in Step 2 of the batch email process
 2. **Variables are automatically populated** from your email list
 3. **Each recipient gets a personalized email**
 4. **AI can enhance** the template with Knowledge Library content
 
-For detailed instructions, see [Batch Email Sending](../lead-generation/batch-email-sending).
+For detailed instructions, see [Outreach Campaign](../lead-generation/batch-email-sending).
 
 ## Troubleshooting
 
@@ -400,7 +400,7 @@ For detailed instructions, see [Batch Email Sending](../lead-generation/batch-em
 After creating your templates:
 
 - [Configure email services (SMTP)](../lead-generation/batch-email-sending#configuring-email-services)
-- [Set up batch email sending](../lead-generation/batch-email-sending)
+- [Set up outreach campaign](../lead-generation/batch-email-sending)
 - [Use the AI Marketing Assistant](./ai-marketing-assistant) for strategy
 
 ---

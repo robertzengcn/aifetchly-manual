@@ -46,10 +46,10 @@ Enter the following required information:
 
 Select the type of task to schedule:
 
-- **Search**: Search engine scraping tasks
-- **Email Extract**: Email extraction tasks
-- **Bulk Email**: Email marketing campaigns
-- **Yellow Pages**: Directory scraping tasks
+- **Search**: Market Insight Explorer tasks
+- **Email Extract**: Contact Profile Insights tasks
+- **Outreach Campaign**: Email marketing campaigns
+- **Directory Assistant**: Directory information organization tasks
 - **Video Download**: Video downloading tasks
 
 #### Task ID
@@ -136,8 +136,8 @@ Select the type of task to schedule:
    - `60` minutes: Wait 1 hour before starting
 
 **Use Cases:**
-- **Email after Extraction**: Extract emails, then send campaign when complete
-- **Analysis after Scraping**: Scrape data, then run AI analysis
+- **Email after Profile Insights**: Open in Contact Profile Insights, then send campaign when complete
+- **Analysis after Information Organization**: Scrape data, then run AI analysis
 - **Multi-stage Campaigns**: Initial outreach → Follow-up 1 → Follow-up 2
 
 :::tip Dependency Chains
@@ -250,7 +250,7 @@ For running tasks:
 **Schedule**: Every weekday at 9:00 AM
 ```
 Cron: 0 9 * * 1-5
-Task: Search Engine Scraping
+Task: Market Insight Explorer
 ```
 
 **Use Case**: Fresh leads every morning for your sales team.
@@ -270,7 +270,7 @@ Task: Search / Yellow Pages
 **Schedule**: Every Monday at 10:00 AM
 ```
 Cron: 0 10 * * 1
-Task: Bulk Email Sending
+Task: Outreach Campaign Sending
 ```
 
 **Use Case**: Weekly email newsletter or outreach campaign.
@@ -278,7 +278,7 @@ Task: Bulk Email Sending
 ### Pattern 4: Multi-Step Workflow
 
 **Task A** (Cron): Daily at 9:00 AM - Search for leads
-**Task B** (Dependency): After A succeeds - Extract emails
+**Task B** (Dependency): After A succeeds - Open in Contact Profile Insights
 **Task C** (Dependency): After B succeeds (30 min delay) - Send emails
 
 **Use Case**: Automated lead generation and outreach pipeline.
@@ -454,17 +454,17 @@ Cron: 0 9 * * 1-5 (Weekdays 9 AM)
 Task: Google Search for "marketing agencies [city]"
 ```
 
-**Schedule 2**: Email Extraction (Dependency)
+**Schedule 2**: Contact Profile Insights (Dependency)
 ```
 Trigger: After Schedule 1 succeeds
 Delay: 0 minutes
-Task: Extract emails from Schedule 1 results
+Task: Open in Contact Profile Insights from Schedule 1 results
 ```
 
 **Schedule 3**: Email Campaign (Dependency)
 ```
 Trigger: After Schedule 2 completes
-Delay: 60 minutes (allow time for extraction)
+Delay: 60 minutes (allow time for profile insights)
 Task: Send welcome email campaign
 ```
 
@@ -518,10 +518,10 @@ Task: Search European keywords
 
 The Task Scheduler integrates with:
 
-- **[Search Engines](../lead-generation/search-engines)**: Schedule recurring searches
-- **[Contact Extraction](../lead-generation/contact-extraction)**: Auto-extract after searches
-- **[Yellow Pages](../lead-generation/yellow-pages)**: Regular directory scraping
-- **[Batch Email Sending](../lead-generation/batch-email-sending)**: Automated campaigns
+- **[Market Insight Explorer](../lead-generation/search-engines)**: Schedule recurring searches
+- **[Contact Profile Insights](../lead-generation/contact-extraction)**: Auto-extract after searches
+- **[Directory Assistant](../lead-generation/yellow-pages)**: Regular directory information organization
+- **[Outreach Campaign](../lead-generation/batch-email-sending)**: Automated campaigns
 
 ## Next Steps
 

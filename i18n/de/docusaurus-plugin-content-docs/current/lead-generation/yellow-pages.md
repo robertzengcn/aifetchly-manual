@@ -1,13 +1,13 @@
 ---
 id: yellow-pages
-title: Gelbe-Seiten-Scraping
+title: Gelbe-Seiten-Information Organization
 sidebar_label: Gelbe Seiten
 description: Extrahieren Sie Geschäftsinformationen aus Gelben Seiten, Yelp und anderen Online-Verzeichnissen weltweit.
 ---
 
-# Gelbe-Seiten-Scraping
+# Gelbe-Seiten-Information Organization
 
-Die Gelbe-Seiten-Scraping-Funktion von aiFetchly ermöglicht es Ihnen, umfassende Geschäftsinformationen aus mehreren Online-Verzeichnissen zu extrahieren. Sammeln Sie Leads aus lokalen Geschäftseinträgen mit detaillierten Kontaktinformationen, Bewertungen, Rezensionen und mehr. Mit KI-Unterstützung können Sie die Scraping-Genauigkeit verbessern und automatisch verwandte Schlüsselwörter generieren.
+Die Gelbe-Seiten-Information Organization-Funktion von aiFetchly ermöglicht es Ihnen, umfassende Geschäftsinformationen aus mehreren Online-Verzeichnissen zu extrahieren. Sammeln Sie Leads aus lokalen Geschäftseinträgen mit detaillierten Kontaktinformationen, Bewertungen, Rezensionen und mehr. Mit KI-Unterstützung können Sie die Information Organization-Genauigkeit verbessern und automatisch verwandte Schlüsselwörter generieren.
 
 ## Unterstützte Verzeichnisse
 
@@ -103,7 +103,7 @@ Geben Sie den geografischen Standort für Ihre Suche ein:
 
 ### Schritt 3: Leistungseinstellungen
 
-Konfigurieren Sie, wie der Scraping-Auftrag ausgeführt wird:
+Konfigurieren Sie, wie der Information Organization-Auftrag ausgeführt wird:
 
 #### Maximale Seiten
 
@@ -153,15 +153,15 @@ Konfigurieren Sie, wie der Scraping-Auftrag ausgeführt wird:
 
 #### KI-Unterstützung
 
-Schalten Sie **KI-Unterstützung** um, um KI-gestützte Scraping-Assistenz zu aktivieren:
+Schalten Sie **KI-Unterstützung** um, um KI-gestützte Information Organization-Assistenz zu aktivieren:
 
-- Wenn aktiviert, hilft die KI, die Scraping-Genauigkeit zu verbessern und Sonderfälle zu behandeln
+- Wenn aktiviert, hilft die KI, die Information Organization-Genauigkeit zu verbessern und Sonderfälle zu behandeln
 - Standardmäßig aktiviert, wenn Ihr Konto KI-Funktionen hat
 - Suchen Sie nach dem lilafarbenen Roboter-Symbol neben dem Schalter
 
 #### Lokaler Browser
 
-Schalten Sie **Lokalen Browser verwenden** um, um Ihre lokale Chrome- oder Firefox-Installation für das Scraping zu nutzen:
+Schalten Sie **Lokalen Browser verwenden** um, um Ihre lokale Chrome- oder Firefox-Installation für das Information Organization zu nutzen:
 
 1. **Lokaler Browser** umschalten, um zu aktivieren
 2. **Chrome** oder **Firefox** aus dem Dropdown auswählen
@@ -171,7 +171,7 @@ Schalten Sie **Lokalen Browser verwenden** um, um Ihre lokale Chrome- oder Firef
 
 #### Kontoauswahl
 
-Einige Plattformen unterstützen authentifiziertes Scraping:
+Einige Plattformen unterstützen authentifiziertes Information Organization:
 
 1. **Konto verwenden** umschalten, falls verfügbar
 2. Ein Konto aus Ihren gespeicherten Konten auswählen
@@ -182,7 +182,7 @@ Einige Plattformen unterstützen authentifiziertes Scraping:
 
 #### Proxy-Konfiguration
 
-Proxys für groß angelegtes Scraping hinzufügen:
+Proxys für groß angelegtes Information Organization hinzufügen:
 
 1. **Proxy verwenden** umschalten
 2. Klicken Sie auf **Proxy wählen**
@@ -421,7 +421,7 @@ Die Ergebnistabelle zeigt umfassende Geschäftsinformationen:
 1. **Ratenlimits beachten**: Empfohlene Gleichzeitigkeit nicht überschreiten
 2. **Verzögerungen verwenden**: Anfrageverzögerungen bei 2000ms oder höher halten
 3. **Proxys rotieren**: Anfragen über mehrere IPs verteilen
-4. **Konten verwenden**: Authentifiziertes Scraping hat höhere Limits
+4. **Konten verwenden**: Authentifiziertes Information Organization hat höhere Limits
 5. **Pausen einlegen**: Keine großen Aufträge kontinuierlich ausführen
 6. **KI-Unterstützung aktivieren**: KI kann helfen, Anti-Bot-Schutz zu behandeln
 7. **Lokalen Browser verwenden**: Echter Browser-Fingerabdruck reduziert Erkennungsrisiko

@@ -164,7 +164,7 @@ Skills werden nach ihrem Berechtigungsniveau kategorisiert:
 |----------|-------------------|----------|
 | **Pure** | Automatisch genehmigt, keine Abfrage | Textverarbeitung, Berechnungen, Datenformatierung |
 | **Shell** | Fragt immer vor der Ausführung nach | Ausführung von Systembefehlen, Dateioperationen |
-| **Network** | Kann bei externen Aufrufen nachfragen | Web-Scraping, API-Aufrufe an externe Dienste |
+| **Network** | Kann bei externen Aufrufen nachfragen | Web-Information Organization, API-Aufrufe an externe Dienste |
 | **Data** | Kann bei sensiblen Zugriffen nachfragen | Dateisystem-Lese-/Schreibzugriff, Datenbankzugriff |
 
 **Die Berechtigungsabfrage:**

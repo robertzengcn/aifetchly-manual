@@ -1,17 +1,17 @@
 ---
 id: batch-email-sending
-title: Batch Email Sending
-sidebar_label: Batch Email Sending
+title: Outreach Campaign
+sidebar_label: Outreach Campaign
 description: Send personalized email campaigns at scale using SMTP integration with aiFetchly.
 ---
 
-# Batch Email Sending
+# Outreach Campaign
 
-aiFetchly's Batch Email Sending feature allows you to launch personalized email campaigns at scale. Import emails from your extraction tasks, use AI-generated templates, and send via your own SMTP server for complete control over your outreach.
+aiFetchly's Outreach Campaign feature allows you to launch personalized email campaigns at scale. Import emails from your profile insight tasks, use AI-generated templates, and send via your own SMTP server for complete control over your outreach.
 
 ## Overview
 
-The batch email sending process consists of **4 steps**:
+The outreach campaign process consists of **4 steps**:
 
 1. **Choose Email Source** - Select where your emails come from
 2. **Choose Email Template** - Select or create your message template
@@ -23,7 +23,7 @@ The batch email sending process consists of **4 steps**:
 Before sending campaigns, ensure you have:
 - [Configured an SMTP service](#configuring-email-services)
 - [Created email templates](../ai-outreach/ai-email-writer)
-- [Extracted or imported email lists](./contact-extraction)
+- [Contact lists from profile insights or imports](./contact-extraction)
 
 :::
 
@@ -37,7 +37,7 @@ Before sending emails, you must configure at least one SMTP service.
 
 ### Step 1: Navigate to Email Services
 
-1. Click **Email Marketing** in the left navigation menu
+1. Click **Outreach Campaign** in the left navigation menu
 2. Select **Email Services** from the submenu
 3. Click **Add New Service**
 
@@ -140,20 +140,20 @@ Gmail and Outlook require **App Passwords** for third-party SMTP access. You can
 
 :::
 
-## Sending Batch Emails
+## Sending Outreach Campaigns
 
 ### Step 1: Choose Email Source
 
-1. **Navigate** to **Email Marketing** → **Send Bulk Emails**
+1. **Navigate** to **Outreach Campaign** → **Send Outreach Campaigns**
 2. **Select Email Source Type** from the dropdown:
-   - **Email Task**: Emails from extraction tasks
+   - **Email Task**: Emails from profile insight tasks
    - **Manual Input**: Upload email list manually
    - **Search Results**: Use search task results
 
 #### Using Email Tasks (Recommended)
 
 1. Select **Email Task** from dropdown
-2. **Choose extraction task** from the list
+2. **Choose profile insight task** from the list
 3. **Preview** the email list
 4. **Option**: Enable "Avoid Duplicates" to skip already-contacted emails
 
@@ -226,7 +226,7 @@ After launching:
 
 ### Campaign List
 
-Navigate to **Email Marketing** → **Campaigns** to see all campaigns.
+Navigate to **Outreach Campaign** → **Campaigns** to see all campaigns.
 
 **Campaign Information:**
 - Campaign name
@@ -475,7 +475,7 @@ Test different approaches:
 
 Target specific audiences:
 
-1. **Extract emails** by industry or location
+1. **Open in Contact Profile Insights** by industry or location
 2. **Create tailored templates** for each segment
 3. **Send targeted campaigns** to each segment
 4. **Analyze results** by segment
@@ -485,11 +485,11 @@ Target specific audiences:
 
 The complete email outreach workflow:
 
-1. **[Search Engines](./search-engines)**: Find target websites
-2. **[Contact Extraction](./contact-extraction)**: Harvest emails
+1. **[Market Insight Explorer](./search-engines)**: Find target websites
+2. **[Contact Profile Insights](./contact-extraction)**: Harvest emails
 3. **[AI Email Writer](../ai-outreach/ai-email-writer)**: Create personalized templates
 4. **[Knowledge Library](../ai-outreach/knowledge-library)**: Provide context for AI
-5. **Batch Email Sending**: Launch campaigns
+5. **Outreach Campaign**: Launch campaigns
 
 ## Next Steps
 

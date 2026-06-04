@@ -1,25 +1,31 @@
 ---
 id: search-engines
-title: Suchmaschinen-Scraping
+title: Suchmaschinen-Information Organization
 sidebar_label: Suchmaschinen
-description: Erfahren Sie, wie Sie Suchergebnisse von Google, Bing und Yandex extrahieren, um Leads mit KI-gestützter Analyse zu generieren.
+description: Erfahren Sie, wie Sie Suchergebnisse von Google, Yandex und Yandex extrahieren, um Leads mit KI-gestützter Analyse zu generieren.
 ---
 
-# Suchmaschinen-Scraping
+# Suchmaschinen-Information Organization
 
-Die Multi-Engine-Such-Scraping-Funktion von aiFetchly ermöglicht es Ihnen, Leads von mehreren Suchmaschinen gleichzeitig zu sammeln. Extrahieren Sie automatisch Geschäftsinformationen, URLs und Kontaktdaten aus Suchergebnissen. Mit KI-gestützter Analyse können Sie Leads bewerten, Branchen klassifizieren und Kontaktinformationen extrahieren — alles aus Ihren Suchergebnissen.
+Die Multi-Engine-Such-Information Organization-Funktion von aiFetchly ermöglicht es Ihnen, Leads von mehreren Suchmaschinen gleichzeitig zu sammeln. Extrahieren Sie automatisch Geschäftsinformationen, URLs und Kontaktdaten aus Suchergebnissen. Mit KI-gestützter Analyse können Sie Leads bewerten, Branchen klassifizieren und Kontaktinformationen extrahieren — alles aus Ihren Suchergebnissen.
+
+
+:::info Nutzung öffentlicher Webinformationen
+
+Diese Funktion dient nur zur strukturierten Organisation öffentlicher Webinformationen. Stelle sicher, dass deine Market Insight-Aktivität das Robots-Protokoll und die Nutzungsbedingungen der Zielwebsite einhält.
+
+:::
 
 ## Unterstützte Suchmaschinen
 
 | Suchmaschine | Am besten für | Konto erforderlich | Lokaler Browser |
 |--------|----------|------------------|---------------|
 | **Google** | Allgemeine Suchen, globale Reichweite | Empfohlen | Optional |
-| **Bing** | Microsoft-Ökosystem, US-Markt | Optional | Optional |
 | **Yandex** | Russischer Markt, kyrillische Inhalte | Empfohlen | **Erforderlich** |
 
 :::info Yandex-Anforderung
 
-Yandex-Scraping erfordert **lokale Browser-Integration** für den ordnungsgemäßen Betrieb. Aktivieren Sie diese Option beim Erstellen von Yandex-Aufgaben.
+Yandex-Information Organization erfordert **lokale Browser-Integration** für den ordnungsgemäßen Betrieb. Aktivieren Sie diese Option beim Erstellen von Yandex-Aufgaben.
 
 :::
 
@@ -56,12 +62,11 @@ Beginnen Sie mit 5-10 Seed-Schlüsselwörtern und nutzen Sie dann die KI-Generie
 
 Wählen Sie die Suchmaschine aus dem Dropdown:
 - Google (Standard)
-- Bing
 - Yandex
 
 #### Seitennummer
 
-Geben Sie an, ab welcher Seite das Scraping beginnen soll:
+Geben Sie an, ab welcher Seite das Information Organization beginnen soll:
 - **Bei Seite 1 beginnen** für neue Suchen
 - **Ab Seite X fortsetzen**, wenn ein vorheriger Auftrag fortgesetzt wird
 
@@ -105,11 +110,11 @@ Verwenden Sie mehrere Proxys für Aufgaben mit hoher Parallelität, um die Last 
 
 #### Lokale Browser-Integration
 
-Aktivieren Sie lokales Browser-Scraping für menschenähnlicheres Verhalten:
+Aktivieren Sie lokales Browser-Information Organization für menschenähnlicheres Verhalten:
 
 1. **Lokaler Browser** umschalten, um zu aktivieren
 2. Wählen Sie Ihren Chrome-Browser aus der Liste
-3. **Erforderlich für**: Yandex-Scraping
+3. **Erforderlich für**: Yandex-Information Organization
 4. **Empfohlen für**: Google im großen Maßstab
 
 **Vorteile:**
@@ -119,22 +124,22 @@ Aktivieren Sie lokales Browser-Scraping für menschenähnlicheres Verhalten:
 
 #### Im Browser anzeigen
 
-Schalten Sie **Im Browser anzeigen** um, um die Sichtbarkeit des Browsers während des Scrapings zu steuern:
+Schalten Sie **Im Browser anzeigen** um, um die Sichtbarkeit des Browsers während des Information Organizations zu steuern:
 
-- **Aktiviert**: Das Browserfenster ist während des Scrapings sichtbar — nützlich für Debugging oder zur Fortschrittsüberwachung
+- **Aktiviert**: Das Browserfenster ist während des Information Organizations sichtbar — nützlich für Debugging oder zur Fortschrittsüberwachung
 - **Deaktiviert** (Standard): Der Browser läuft im Headless-Modus für schnelleren, Hintergrundbetrieb
 
 #### KI-Wiederherstellung aktivieren
 
-Schalten Sie **KI-Wiederherstellung aktivieren** um, um der KI zu ermöglichen, sich automatisch von Scraping-Fehlern zu erholen:
+Schalten Sie **KI-Wiederherstellung aktivieren** um, um der KI zu ermöglichen, sich automatisch von Information Organization-Fehlern zu erholen:
 
-- Wenn aktiviert, verwendet aiFetchly KI, um während des Scrapings aufgetretene Fehler zu diagnostizieren und zu beheben
+- Wenn aktiviert, verwendet aiFetchly KI, um während des Information Organizations aufgetretene Fehler zu diagnostizieren und zu beheben
 - Das System kann Fehler-Screenshots analysieren und seine Strategie anpassen
 - Wiederherstellungsversuche sind ratenbegrenzt, um übermäßigen Ressourcenverbrauch zu vermeiden
 
 :::tip Wann KI-Wiederherstellung verwenden
 
-Aktivieren Sie die KI-Wiederherstellung beim Scraping von Suchmaschinen mit starkem Anti-Bot-Schutz (wie Google) oder bei großen Aufgaben, bei denen gelegentliche Fehler erwartet werden.
+Aktivieren Sie die KI-Wiederherstellung beim Information Organization von Suchmaschinen mit starkem Anti-Bot-Schutz (wie Google) oder bei großen Aufgaben, bei denen gelegentliche Fehler erwartet werden.
 
 :::
 
@@ -148,9 +153,8 @@ Verwenden Sie authentifizierte Konten für bessere Erfolgsraten:
 4. Klicken Sie auf **Bestätigen**
 
 **Empfehlungen:**
-- **Google**: Konten für groß angelegtes Scraping verwenden
+- **Google**: Konten für groß angelegtes Information Organization verwenden
 - **Yandex**: Konten für besseren Zugang verwenden
-- **Bing**: Optional, weniger kritisch
 
 ### Schritt 4: Ausführen oder Speichern
 
@@ -180,7 +184,7 @@ Navigieren Sie zu **Suche** → **Ergebnisliste**, um alle Ihre Suchaufträge zu
 |--------|-------------|
 | **ID** | Eindeutige Auftragskennung |
 | **Schlüsselwörter** | Für die Suche verwendete Schlüsselwörter |
-| **Suchmaschine** | Verwendete Suchmaschine (Google, Bing usw.) |
+| **Suchmaschine** | Verwendete Suchmaschine (Google, Yandex usw.) |
 | **Status** | Nicht gestartet, In Bearbeitung, Abgeschlossen, Fehler |
 | **Erstellungszeit** | Datum und Uhrzeit der Erstellung |
 | **Aktionen** | Ausführen, Bearbeiten, Ergebnisse anzeigen, Prozess beenden, Wiederholen, Protokolle herunterladen |
@@ -380,10 +384,6 @@ Wenn ein Auftrag fehlschlägt:
 - KI-Wiederherstellung für robuste Fehlerbehandlung aktivieren
 - Ratenlimits beachten (mit 1 gleichzeitigen starten)
 
-**Bing:**
-- Nachgiebiger als Google
-- Höhere Parallelität möglich
-- Gut für US-fokussierte Suchen
 
 **Yandex:**
 - **Lokalen Browser verwenden (zwingend)**
@@ -491,7 +491,7 @@ Suchergebnisse integrieren sich nahtlos mit:
 
 ## Nächste Schritte
 
-- [Gelbe-Seiten-Scraping kennenlernen](./yellow-pages)
+- [Gelbe-Seiten-Information Organization kennenlernen](./yellow-pages)
 - [Kontaktextraktion einrichten](./contact-extraction)
 - [KI-gestützte E-Mail-Kampagnen erstellen](../ai-outreach/ai-email-writer)
 

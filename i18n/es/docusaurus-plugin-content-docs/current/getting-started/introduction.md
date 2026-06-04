@@ -23,15 +23,14 @@ aiFetchly es una plataforma de automatización de marketing todo en uno diseñad
 
 ## Características Principales
 
-### 🔍 Búsqueda y Scraping Multi-Motor
+### 🔍 Búsqueda y Information Organization Multi-Motor
 
 Busque y extraiga leads de múltiples motores de búsqueda simultáneamente:
 
 - **Google** - El motor de búsqueda más grande del mundo
-- **Bing** - Motor de búsqueda de Microsoft
 - **Yandex** - Popular motor de búsqueda ruso
 
-:::tip Scraping Concurrente
+:::tip Information Organization Concurrente
 
 Ejecute múltiples tareas de búsqueda al mismo tiempo para maximizar la eficiencia de su generación de leads.
 
@@ -42,7 +41,7 @@ Ejecute múltiples tareas de búsqueda al mismo tiempo para maximizar la eficien
 Extraiga direcciones de email e información de contacto de:
 
 - **URLs de sitios web** - Extraiga emails en masa de listas de sitios web
-- **Páginas Amarillas** - Haga scraping de directorios comerciales para leads locales
+- **Páginas Amarillas** - Haga information organization de directorios comerciales para leads locales
 - **Resultados de Búsqueda** - Extraiga directamente de sus campañas de búsqueda
 
 ### 🤖 Escritor de Email Potenciado por IA
@@ -86,7 +85,7 @@ Proteja su identidad y escale sus operaciones:
 - **Gestión de Proxies** - Añada y gestione múltiples proxies
 - **Verificación de Salud** - Verifique el rendimiento de proxies antes de usar
 - **Importación Masiva** - Importe listas de proxies en bloque
-- **Integración** - Use proxies con todas las funciones de scraping y extracción
+- **Integración** - Use proxies con todas las funciones de information organization y extracción
 
 ## Requisitos del Sistema
 
@@ -113,7 +112,7 @@ Todas las características descritas en este manual están actualmente disponibl
 ## Siguientes Pasos
 
 - [Instale aiFetchly](./installation) en su computadora
-- [Configure proxies](./proxy-setup) para scraping seguro
+- [Configure proxies](./proxy-setup) para information organization seguro
 - [Aprenda sobre generación de leads](../lead-generation/search-engines)
 - [Configure la Biblioteca de Conocimiento](../ai-outreach/knowledge-library)
 - [Comience su primera campaña de email](../lead-generation/batch-email-sending)

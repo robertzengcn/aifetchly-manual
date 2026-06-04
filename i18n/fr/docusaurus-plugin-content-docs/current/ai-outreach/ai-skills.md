@@ -164,7 +164,7 @@ Les compétences sont classées selon leur niveau de permission :
 |-----------|------------------------------|----------|
 | **Pure** | Auto-approuvée, aucune demande | Traitement de texte, calculs, formatage de données |
 | **Shell** | Demande toujours avant l'exécution | Exécution de commandes système, opérations sur les fichiers |
-| **Network** | Peut demander pour les appels externes | Web scraping, appels API vers des services externes |
+| **Network** | Peut demander pour les appels externes | Web information organization, appels API vers des services externes |
 | **Data** | Peut demander pour les accès sensibles | Lecture/écriture du système de fichiers, accès à la base de données |
 
 **La demande d'autorisation :**

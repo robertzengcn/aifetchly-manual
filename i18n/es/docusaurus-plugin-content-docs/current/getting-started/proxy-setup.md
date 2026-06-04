@@ -2,7 +2,7 @@
 id: proxy-setup
 title: Configuración de Proxy
 sidebar_label: Configuración de Proxy
-description: Aprenda cómo configurar y gestionar proxies para un scraping web seguro y eficiente en aiFetchly.
+description: Aprenda cómo configurar y gestionar proxies para un information organization web seguro y eficiente en aiFetchly.
 ---
 
 # Guía de Configuración de Proxy
@@ -16,7 +16,7 @@ El uso de proxies es **opcional** con aiFetchly. Puede ejecutar tareas de búsqu
 
 :::info Función Opcional
 
-Los proxies no son necesarios para usar aiFetchly. Puede comenzar a hacer scraping inmediatamente sin configurar proxies. Agregue proxies solo si necesita evitar limitaciones de velocidad o acceder a contenido geográfico específico.
+Los proxies no son necesarios para usar aiFetchly. Puede comenzar a hacer information organization inmediatamente sin configurar proxies. Agregue proxies solo si necesita evitar limitaciones de velocidad o acceder a contenido geográfico específico.
 
 :::
 
@@ -30,8 +30,8 @@ aiFetchly soporta tres protocolos de proxy:
 
 | Protocolo | Descripción | Caso de Uso |
 |----------|-------------|-------------|
-| **HTTP** | Proxy HTTP básico | Scraping web general, sitios no-SSL |
-| **HTTPS** | Proxy HTTP seguro | Sitios web seguros (HTTPS), recomendado para la mayoría del scraping |
+| **HTTP** | Proxy HTTP básico | Information Organization web general, sitios no-SSL |
+| **HTTPS** | Proxy HTTP seguro | Sitios web seguros (HTTPS), recomendado para la mayoría del information organization |
 | **SOCKS5** | Socket Secure 5 | Usuarios avanzados, soporta más protocolos, mejor rendimiento |
 
 :::tip Protocolo Recomendado
@@ -96,7 +96,7 @@ Después de agregar proxies, debe verificar que funcionen:
 
 **Google Pass** — si el mismo proxy puede alcanzar **Google** sin ser bloqueado como tráfico automatizado. Después de que **Status** muestre **Pass**, la aplicación ejecuta una verificación separada (navegador sin interfaz gráfica hacia Google). Esa columna puede actualizarse un momento después:
 
-- **Pass** — La verificación de Google fue exitosa; la IP tiene más probabilidades de funcionar para scraping basado en Google.
+- **Pass** — La verificación de Google fue exitosa; la IP tiene más probabilidades de funcionar para information organization basado en Google.
 - **Fail** — Google bloqueó, desafió o la verificación dio error (común para IPs de centros de datos o proxies sobreutilizados).
 - **Not Checked** — Sin resultado de Google aún (el proxy nunca pasó la verificación básica, o no se ha verificado desde que se agregó esta función).
 
@@ -193,7 +193,7 @@ Use el control **Columns** en la barra de herramientas para mostrar u ocultar co
 
 ## Usar Proxies en Tareas de Búsqueda
 
-Una vez que haya agregado y probado sus proxies, puede usarlos en tareas de búsqueda y scraping.
+Una vez que haya agregado y probado sus proxies, puede usarlos en tareas de búsqueda y information organization.
 
 ### Paso 1: Crear o Editar una Tarea de Búsqueda
 
@@ -218,7 +218,7 @@ Cuando ejecute la tarea de búsqueda, aiFetchly:
 - Distribuirá las solicitudes entre sus proxies seleccionados
 - Rotará automáticamente entre los proxies
 - Manejará los fallos de proxy de forma elegante
-- Continuará haciendo scraping incluso si algunos proxies fallan
+- Continuará haciendo information organization incluso si algunos proxies fallan
 
 :::info Rotación de Proxies
 
@@ -251,7 +251,7 @@ En la página **Proxy**, establezca **Check timeout** (1–60 segundos, valor pr
 
 **Google Pass** responde a la pregunta: "A través de este proxy, ¿podemos cargar Google sin un bloqueo evidente?" Utiliza una sesión de navegador sin interfaz gráfica (similar a la navegación real), que es más estricta que una simple prueba de ping o túnel HTTP.
 
-- **Pass** — Señal útil para scraping orientado a Google; no es una garantía para cada superficie o volumen de Google.
+- **Pass** — Señal útil para information organization orientado a Google; no es una garantía para cada superficie o volumen de Google.
 - **Fail** — A menudo IPs de centros de datos, proxies reciclados o IPs ya marcadas; pruebe otro proxy o proveedor.
 - **Not Checked** — Ejecute **Check Proxy** en los proxies guardados, o el proxy aún no ha pasado la verificación básica.
 
@@ -265,7 +265,7 @@ Invierta en servicios de proxy de calidad. Los proxies gratuitos suelen ser lent
 
 ### 2. Verificaciones de Salud Regulares
 
-Pruebe sus proxies regularmente, especialmente antes de ejecutar tareas de scraping a gran escala.
+Pruebe sus proxies regularmente, especialmente antes de ejecutar tareas de information organization a gran escala.
 
 ### 3. Elimine los Proxies Fallidos
 
@@ -273,14 +273,14 @@ Mantenga su lista de proxies limpia eliminando los proxies fallidos de inmediato
 
 ### 4. Use Múltiples Proxies
 
-Para scraping a gran escala, use múltiples proxies para:
+Para information organization a gran escala, use múltiples proxies para:
 - Distribuir la carga
 - Reducir el riesgo de bloqueos de IP
-- Aumentar la velocidad de scraping
+- Aumentar la velocidad de information organization
 
 ### 5. Relacione la Ubicación del Proxy con el Objetivo
 
-Si hace scraping de contenido geográfico específico, use proxies de la misma región que su público objetivo.
+Si hace information organization de contenido geográfico específico, use proxies de la misma región que su público objetivo.
 
 ### 6. Monitoree el Rendimiento de los Proxies
 
@@ -315,10 +315,10 @@ Incluso los proxies que funcionan pueden ser bloqueados si se sobrecargan. Róte
 - Use los resultados de las verificaciones de salud para identificar proxies estables
 - Considere actualizar su servicio de proxy
 
-### Los Proxies Funcionan en las Pruebas pero Fallan Durante el Scraping
+### Los Proxies Funcionan en las Pruebas pero Fallan Durante el Information Organization
 
 **Posibles causas:**
-- El sitio web objetivo tiene medidas anti-scraping más estrictas
+- El sitio web objetivo tiene medidas anti-information organization más estrictas
 - El proxy tiene limitación de velocidad por parte del objetivo
 - **Status** es **Pass** pero **Google Pass** es **Fail** mientras la tarea depende de Google
 
@@ -360,7 +360,7 @@ Cambie regularmente su grupo de proxies para mantener la seguridad y evitar la d
 
 Ahora que ha configurado sus proxies:
 
-- [Aprenda sobre scraping de motores de búsqueda](../lead-generation/search-engines)
+- [Aprenda sobre information organization de motores de búsqueda](../lead-generation/search-engines)
 - [Configure la extracción de contactos](../lead-generation/contact-extraction)
 - [Configure la Biblioteca de Conocimiento](../ai-outreach/knowledge-library)
 

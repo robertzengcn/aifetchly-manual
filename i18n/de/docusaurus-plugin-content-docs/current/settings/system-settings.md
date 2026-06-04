@@ -27,7 +27,7 @@ Die meisten Einstellungen werden bei Änderung automatisch gespeichert. Achten S
 
 ### 2Captcha-Dienst
 
-Automatisierte Captcha-Lösung für Web-Scraping.
+Automatisierte Captcha-Lösung für Web-Information Organization.
 
 | Einstellung | Beschreibung |
 |---------|-------------|
@@ -100,7 +100,7 @@ Konfigurieren Sie Browser-Pfade für die lokale Browser-Integration.
 
 Browser-Pfade sind erforderlich für:
 - Lokale Browser-Integrationsfunktionen
-- Yandex-Scraping (erfordert Browser)
+- Yandex-Information Organization (erfordert Browser)
 - Bestimmte Anti-Bot-Erkennungsszenarien
 
 :::
@@ -160,12 +160,12 @@ Die vollständige Dokumentation zur Konfiguration und Verwendung von MCP-Servern
 ### 2. Captcha-Lösung
 
 **Wann aktivieren:**
-- Groß angelegte Scraping-Operationen (>1000 Seiten)
+- Groß angelegte Information Organization-Operationen (>1000 Seiten)
 - Häufige Captcha-Begegnungen
 - Keine manuelle Intervention gewünscht
 
 **Wann deaktivieren:**
-- Kleines Scraping-Volumen
+- Kleines Information Organization-Volumen
 - Um Kosten zu sparen (2captcha ist kostenpflichtig)
 - Selten Captchas auftreten
 

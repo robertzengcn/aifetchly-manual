@@ -46,10 +46,10 @@ Entrez les informations requises suivantes :
 
 Sélectionnez le type de tâche à planifier :
 
-- **Search** : Tâches de scraping de moteurs de recherche
-- **Email Extract** : Tâches d'extraction d'e-mails
-- **Bulk Email** : Campagnes d'e-mails marketing
-- **Yellow Pages** : Tâches de scraping d'annuaires
+- **Search** : Tâches de information organization de moteurs de recherche
+- **Email Extract** : Tâches d'profile insights d'e-mails
+- **Outreach Campaign** : Campagnes d'e-mails marketing
+- **Directory Assistant** : Tâches de information organization d'annuaires
 - **Video Download** : Tâches de téléchargement de vidéos
 
 #### ID de tâche
@@ -136,8 +136,8 @@ Activez **Dependency** pour déclencher cette tâche lorsqu'une autre tâche est
    - `60` minutes : Attendre 1 heure avant de commencer
 
 **Cas d'utilisation :**
-- **E-mail après extraction** : Extraire les e-mails, puis envoyer la campagne une fois terminé
-- **Analyse après scraping** : Scraper les données, puis lancer une analyse IA
+- **E-mail après profile insights** : Extraire les e-mails, puis envoyer la campagne une fois terminé
+- **Analyse après information organization** : Assistant les données, puis lancer une analyse IA
 - **Campagnes multi-étapes** : Prise de contact initiale → Suivi 1 → Suivi 2
 
 :::tip Chaînes de dépendance
@@ -250,7 +250,7 @@ Pour les tâches en cours d'exécution :
 **Planificateur** : Chaque jour ouvrable à 9h00
 ```
 Cron: 0 9 * * 1-5
-Task: Search Engine Scraping
+Task: Market Insight Explorer
 ```
 
 **Cas d'utilisation** : De nouveaux prospects chaque matin pour votre équipe commerciale.
@@ -270,7 +270,7 @@ Task: Search / Yellow Pages
 **Planificateur** : Chaque lundi à 10h00
 ```
 Cron: 0 10 * * 1
-Task: Bulk Email Sending
+Task: Outreach Campaign Sending
 ```
 
 **Cas d'utilisation** : Newsletter hebdomadaire ou campagne de prospection.
@@ -454,17 +454,17 @@ Cron: 0 9 * * 1-5 (Weekdays 9 AM)
 Task: Google Search for "marketing agencies [city]"
 ```
 
-**Planificateur 2** : Extraction d'e-mails (dépendance)
+**Planificateur 2** : Profile Insights d'e-mails (dépendance)
 ```
 Trigger: After Schedule 1 succeeds
 Delay: 0 minutes
-Task: Extract emails from Schedule 1 results
+Task: Open in Contact Profile Insights from Schedule 1 results
 ```
 
 **Planificateur 3** : Campagne d'e-mails (dépendance)
 ```
 Trigger: After Schedule 2 completes
-Delay: 60 minutes (allow time for extraction)
+Delay: 60 minutes (allow time for profile insights)
 Task: Send welcome email campaign
 ```
 
@@ -519,8 +519,8 @@ Task: Search European keywords
 Le planificateur de tâches s'intègre avec :
 
 - **[Moteurs de recherche](../lead-generation/search-engines)** : Planifier des recherches récurrentes
-- **[Extraction de contacts](../lead-generation/contact-extraction)** : Extraction automatique après les recherches
-- **[Pages Jaunes](../lead-generation/yellow-pages)** : Scraping d'annuaires régulier
+- **[Profile Insights de contacts](../lead-generation/contact-extraction)** : Profile Insights automatique après les recherches
+- **[Pages Jaunes](../lead-generation/yellow-pages)** : Information Organization d'annuaires régulier
 - **[Envoi d'e-mails en lot](../lead-generation/batch-email-sending)** : Campagnes automatisées
 
 ## Prochaines étapes

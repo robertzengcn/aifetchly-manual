@@ -1,7 +1,7 @@
 ---
 id: yandex-maps-scraper
 title: Yandex Maps スクレイパー
-sidebar_label: Yandex Maps
+sidebar_label: Local Business Finder
 description: aiFetchlyのYandex Mapsスクレイパーを使用して、キーワードと場所でYandex Mapsからビジネス情報を抽出します — ロシアおよびCIS市場に最適です。
 ---
 

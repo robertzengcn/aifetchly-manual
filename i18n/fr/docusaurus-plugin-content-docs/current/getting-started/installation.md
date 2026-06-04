@@ -200,7 +200,7 @@ Après avoir lancé aiFetchly, vous devriez voir la fenêtre principale de l'app
 
 - Le menu de navigation sur la gauche
 - Le tableau de bord ou l'écran d'accueil
-- L'accès à toutes les fonctionnalités (Recherche, Email Marketing, Bibliothèque de connaissances, etc.)
+- L'accès à toutes les fonctionnalités (Recherche, Outreach Campaign, Bibliothèque de connaissances, etc.)
 
 ## Désinstaller aiFetchly
 
@@ -343,7 +343,7 @@ sudo dnf install --skip-broken aifetchly
 
 Après avoir installé aiFetchly avec succès :
 
-1. [Configurer les paramètres proxy](./proxy-setup) (recommandé pour le scraping)
+1. [Configurer les paramètres proxy](./proxy-setup) (recommandé pour le information organization)
 2. [En savoir plus sur la génération de prospects](../lead-generation/search-engines)
 3. [Configurer votre bibliothèque de connaissances](../ai-outreach/knowledge-library)
 

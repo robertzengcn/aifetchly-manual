@@ -2,7 +2,7 @@
 id: proxy-setup
 title: Configuration du proxy
 sidebar_label: Configuration du proxy
-description: Apprenez à configurer et gérer les proxys pour un scraping web sûr et efficace dans aiFetchly.
+description: Apprenez à configurer et gérer les proxys pour un information organization web sûr et efficace dans aiFetchly.
 ---
 
 # Guide de configuration des proxys
@@ -30,8 +30,8 @@ aiFetchly prend en charge trois protocoles de proxy :
 
 | Protocole | Description | Cas d'utilisation |
 |----------|-------------|----------|
-| **HTTP** | Proxy HTTP basique | Extraction web générale, sites non-SSL |
-| **HTTPS** | Proxy HTTP sécurisé | Sites web sécurisés (HTTPS), recommandé pour la plupart des extractions |
+| **HTTP** | Proxy HTTP basique | Profile Insights web générale, sites non-SSL |
+| **HTTPS** | Proxy HTTP sécurisé | Sites web sécurisés (HTTPS), recommandé pour la plupart des profile insightss |
 | **SOCKS5** | Socket Secure 5 | Utilisateurs avancés, prend en charge davantage de protocoles, meilleures performances |
 
 :::tip Protocole recommandé
@@ -96,7 +96,7 @@ Après avoir ajouté des proxys, vous devriez vérifier qu'ils fonctionnent :
 
 **Google Pass** — indique si le même proxy peut atteindre **Google** sans être bloqué en tant que trafic automatisé. Après que **Status** affiche **Pass**, l'application exécute une vérification distincte (navigateur headless vers Google). Cette colonne peut se mettre à jour avec un léger délai :
 
-- **Pass** — La vérification Google a réussi ; l'IP a plus de chances de fonctionner pour l'extraction reposant sur Google.
+- **Pass** — La vérification Google a réussi ; l'IP a plus de chances de fonctionner pour l'profile insights reposant sur Google.
 - **Fail** — Google a bloqué, mis au défi, ou la vérification a échoué (courant pour les IPs de datacenter ou les proxys surexploités).
 - **Not Checked** — Aucun résultat Google pour le moment (le proxy n'a jamais réussi le test basique, ou non vérifié depuis l'ajout de cette fonctionnalité).
 
@@ -193,7 +193,7 @@ Utilisez le contrôle **Columns** dans la barre d'outils pour afficher ou masque
 
 ## Utiliser les proxys dans les tâches de recherche
 
-Une fois vos proxys ajoutés et testés, vous pouvez les utiliser dans vos tâches de recherche et d'extraction.
+Une fois vos proxys ajoutés et testés, vous pouvez les utiliser dans vos tâches de recherche et d'profile insights.
 
 ### Étape 1 : Créer ou modifier une tâche de recherche
 
@@ -218,7 +218,7 @@ Lorsque vous exécutez la tâche de recherche, aiFetchly va :
 - Répartir les requêtes entre vos proxys sélectionnés
 - Effectuer une rotation automatique des proxys
 - Gérer les défaillances de proxy de manière appropriée
-- Continuer l'extraction même si certains proxys échouent
+- Continuer l'profile insights même si certains proxys échouent
 
 :::info Rotation des proxys
 
@@ -251,7 +251,7 @@ Sur la page **Proxy**, définissez **Check timeout** (1 à 60 secondes, **10** p
 
 **Google Pass** répond à la question : « Via ce proxy, pouvons-nous charger Google sans blocage évident ? » Il utilise une session de navigateur headless (similaire à la navigation réelle), ce qui est plus strict qu'un simple test de ping ou de tunnel HTTP.
 
-- **Pass** — Signal utile pour l'extraction orientée Google ; ne constitue pas une garantie pour chaque surface ou volume Google.
+- **Pass** — Signal utile pour l'profile insights orientée Google ; ne constitue pas une garantie pour chaque surface ou volume Google.
 - **Fail** — Souvent des IPs de datacenter, des proxys recyclés ou des IPs déjà signalées ; essayez un autre proxy ou fournisseur.
 - **Not Checked** — Exécutez **Check Proxy** sur les proxys enregistrés, ou le proxy n'a pas encore réussi le test basique.
 
@@ -265,7 +265,7 @@ Investissez dans des services de proxy de qualité. Les proxys gratuits sont sou
 
 ### 2. Effectuer des vérifications régulières
 
-Testez vos proxys régulièrement, en particulier avant d'exécuter des tâches d'extraction à grande échelle.
+Testez vos proxys régulièrement, en particulier avant d'exécuter des tâches d'profile insights à grande échelle.
 
 ### 3. Supprimer les proxys défaillants
 
@@ -273,10 +273,10 @@ Maintenez votre liste de proxys propre en supprimant rapidement les proxys défa
 
 ### 4. Utiliser plusieurs proxys
 
-Pour l'extraction à grande échelle, utilisez plusieurs proxys pour :
+Pour l'profile insights à grande échelle, utilisez plusieurs proxys pour :
 - Répartir la charge
 - Réduire le risque de blocages d'IP
-- Augmenter la vitesse d'extraction
+- Augmenter la vitesse d'profile insights
 
 ### 5. Faire correspondre la localisation du proxy à la cible
 
@@ -315,10 +315,10 @@ Même les proxys fonctionnels peuvent être bloqués s'ils sont surutilisés. Ef
 - Utilisez les résultats des vérifications pour identifier les proxys stables
 - Envisagez de passer à un service de proxy supérieur
 
-### Les proxys fonctionnent lors des tests mais échouent pendant l'extraction
+### Les proxys fonctionnent lors des tests mais échouent pendant l'profile insights
 
 **Causes possibles :**
-- Le site cible dispose de mesures anti-extraction plus strictes
+- Le site cible dispose de mesures anti-profile insights plus strictes
 - Le proxy est soumis à une limitation de débit par la cible
 - **Status** est **Pass** mais **Google Pass** est **Fail** alors que la tâche repose sur Google
 
@@ -360,8 +360,8 @@ Changez régulièrement votre pool de proxys pour maintenir la sécurité et év
 
 Maintenant que vous avez configuré vos proxys :
 
-- [En savoir plus sur l'extraction des moteurs de recherche](../lead-generation/search-engines)
-- [Configurer l'extraction de contacts](../lead-generation/contact-extraction)
+- [En savoir plus sur l'profile insights des moteurs de recherche](../lead-generation/search-engines)
+- [Configurer l'profile insights de contacts](../lead-generation/contact-extraction)
 - [Configurer la bibliothèque de connaissances](../ai-outreach/knowledge-library)
 
 ---

@@ -1,7 +1,7 @@
 ---
 id: yandex-maps-scraper
 title: Yandex Maps 抓取工具
-sidebar_label: Yandex Maps
+sidebar_label: Local Business Finder
 description: 使用 aiFetchly 的 Yandex Maps 抓取工具，通过关键词和位置从 Yandex Maps 提取商家信息 — 非常适合俄罗斯和独联体市场。
 ---
 

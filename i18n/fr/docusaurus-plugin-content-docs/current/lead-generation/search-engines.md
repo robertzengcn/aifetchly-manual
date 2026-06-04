@@ -1,25 +1,31 @@
 ---
 id: search-engines
-title: Scraping des moteurs de recherche
+title: Information Organization des moteurs de recherche
 sidebar_label: Moteurs de recherche
-description: Apprenez à scraper les résultats de recherche de Google, Bing et Yandex pour générer des prospects avec une analyse alimentée par l'IA.
+description: Apprenez à assistant les résultats de recherche de Google, Yandex et Yandex pour générer des prospects avec une analyse alimentée par l'IA.
 ---
 
-# Scraping des moteurs de recherche
+# Information Organization des moteurs de recherche
 
-La fonction de scraping multi-moteur de recherche d'aiFetchly vous permet de collecter des prospects à partir de plusieurs moteurs de recherche simultanément. Extrayez automatiquement les informations d'entreprise, les URL et les coordonnées à partir des résultats de recherche. Grâce à l'analyse par IA, vous pouvez noter les prospects, classifier les industries et extraire les coordonnées — le tout directement à partir de vos résultats de recherche.
+La fonction de information organization multi-moteur de recherche d'aiFetchly vous permet de collecter des prospects à partir de plusieurs moteurs de recherche simultanément. Extrayez automatiquement les informations d'entreprise, les URL et les coordonnées à partir des résultats de recherche. Grâce à l'analyse par IA, vous pouvez noter les prospects, classifier les industries et extraire les coordonnées — le tout directement à partir de vos résultats de recherche.
+
+
+:::info Utilisation des informations publiques
+
+Cette fonctionnalité sert uniquement à organiser des informations web publiques. Assurez-vous que vos activités Market Insight respectent le protocole Robots et les conditions d'utilisation du site cible.
+
+:::
 
 ## Moteurs de recherche pris en charge
 
 | Moteur | Idéal pour | Compte requis | Navigateur local |
 |--------|----------|------------------|---------------|
 | **Google** | Recherches générales, portée mondiale | Recommandé | Facultatif |
-| **Bing** | Écosystème Microsoft, marché américain | Facultatif | Facultatif |
 | **Yandex** | Marché russe, contenu cyrillique | Recommandé | **Requis** |
 
 :::info Condition Yandex
 
-Le scraping Yandex nécessite une **intégration de navigateur local** pour fonctionner correctement. Activez cette option lors de la création de tâches Yandex.
+Le information organization Yandex nécessite une **intégration de navigateur local** pour fonctionner correctement. Activez cette option lors de la création de tâches Yandex.
 
 :::
 
@@ -56,12 +62,11 @@ Commencez avec 5 à 10 mots-clés de base, puis utilisez la génération par IA 
 
 Sélectionnez le moteur de recherche dans le menu déroulant :
 - Google (par défaut)
-- Bing
 - Yandex
 
 #### Numéro de page
 
-Spécifiez à quelle page commencer le scraping :
+Spécifiez à quelle page commencer le information organization :
 - **Commencer à la page 1** pour les nouvelles recherches
 - **Reprendre à la page X** si vous continuez une tâche précédente
 
@@ -105,11 +110,11 @@ Utilisez plusieurs proxies pour les tâches à haute concurrence afin de répart
 
 #### Intégration du navigateur local
 
-Activez le scraping par navigateur local pour un comportement plus humain :
+Activez le information organization par navigateur local pour un comportement plus humain :
 
 1. Activez **Local Browser**
 2. Sélectionnez votre navigateur Chrome dans la liste
-3. **Requis pour** : Le scraping Yandex
+3. **Requis pour** : Le information organization Yandex
 4. **Recommandé pour** : Google à grande échelle
 
 **Avantages :**
@@ -119,22 +124,22 @@ Activez le scraping par navigateur local pour un comportement plus humain :
 
 #### Afficher dans le navigateur
 
-Activez **Show in Browser** pour contrôler la visibilité du navigateur pendant le scraping :
+Activez **Show in Browser** pour contrôler la visibilité du navigateur pendant le information organization :
 
-- **Activé** : La fenêtre du navigateur est visible pendant le scraping — utile pour le débogage ou la surveillance de la progression
+- **Activé** : La fenêtre du navigateur est visible pendant le information organization — utile pour le débogage ou la surveillance de la progression
 - **Désactivé** (par défaut) : Le navigateur s'exécute en mode headless pour un fonctionnement plus rapide en arrière-plan
 
 #### Activer la récupération IA
 
-Activez **Enable AI Recovery** pour permettre à l'IA de récupérer automatiquement des erreurs de scraping :
+Activez **Enable AI Recovery** pour permettre à l'IA de récupérer automatiquement des erreurs de information organization :
 
-- Lorsqu'il est activé, aiFetchly utilise l'IA pour diagnostiquer et récupérer les erreurs rencontrées pendant le scraping
+- Lorsqu'il est activé, aiFetchly utilise l'IA pour diagnostiquer et récupérer les erreurs rencontrées pendant le information organization
 - Le système peut analyser les captures d'écran d'erreurs et ajuster sa stratégie
 - Les tentatives de récupération sont limitées en débit pour éviter une consommation excessive de ressources
 
 :::tip Quand utiliser la récupération IA
 
-Activez la récupération IA lors du scraping de moteurs avec une forte protection anti-bot (comme Google) ou lors de l'exécution de tâches à grande échelle où des erreurs occasionnelles sont attendues.
+Activez la récupération IA lors du information organization de moteurs avec une forte protection anti-bot (comme Google) ou lors de l'exécution de tâches à grande échelle où des erreurs occasionnelles sont attendues.
 
 :::
 
@@ -148,9 +153,8 @@ Utilisez des comptes authentifiés pour de meilleurs taux de réussite :
 4. Cliquez sur **Confirm**
 
 **Recommandations :**
-- **Google** : Utilisez des comptes pour le scraping à grande échelle
+- **Google** : Utilisez des comptes pour le information organization à grande échelle
 - **Yandex** : Utilisez des comptes pour un meilleur accès
-- **Bing** : Facultatif, moins critique
 
 ### Étape 4 : Exécuter ou Enregistrer
 
@@ -180,7 +184,7 @@ Naviguez vers **Search** → **Result List** pour voir toutes vos tâches de rec
 |--------|-------------|
 | **ID** | Identifiant unique de la tâche |
 | **Keywords** | Mots-clés utilisés dans la recherche |
-| **Search Engine** | Moteur utilisé (Google, Bing, etc.) |
+| **Search Engine** | Moteur utilisé (Google, Yandex) |
 | **Status** | Not Start, Processing, Complete, Error |
 | **Record Time** | Date et heure de création |
 | **Actions** | Run, Edit, View Results, Kill Process, Retry, Download Logs |
@@ -218,7 +222,7 @@ Le tableau des résultats affiche :
 | **Customer Industry** | Industrie classifiée par IA (si analysé) |
 | **Probability** | Score de qualité du prospect par IA 0-100% (si analysé) |
 | **Analysis Status** | Statut d'achèvement de l'analyse (pending/analyzing/completed/failed) |
-| **Contact Extraction** | Statut d'extraction des coordonnées |
+| **Contact Profile Insights** | Statut d'profile insights des coordonnées |
 | **Email** | Adresse e-mail extraite (si extraite) |
 | **Phone** | Numéro de téléphone extrait (si extrait) |
 | **Address** | Adresse physique extraite (si extraite) |
@@ -239,7 +243,7 @@ Vous pouvez personnaliser les colonnes affichées en utilisant le menu de **visi
 - Sélectionnez plusieurs résultats à l'aide des cases à cocher
 - **AI Analyze** : Analyser les résultats sélectionnés pour le scoring des prospects et la classification des industries
 - **AI Extract Contact Info** : Extraire les coordonnées (e-mail, téléphone, adresse) des URL sélectionnées
-- **Extract Emails** : Naviguer vers la fonction d'extraction d'e-mails avec les URL sélectionnées
+- **Open in Contact Profile Insights** : Naviguer vers la fonction d'profile insights d'e-mails avec les URL sélectionnées
 - **Export** : Télécharger les résultats en CSV (inclut les champs d'analyse IA)
 
 ## Analyse de site web par IA
@@ -288,7 +292,7 @@ Après l'analyse :
 - Concentrez-vous sur les prospects avec un score de 70%+ pour la prospection
 - Filtrez les résultats par classification d'industrie
 
-## Extraction de coordonnées par IA
+## Profile Insights de coordonnées par IA
 
 Extrayez les coordonnées directement de vos résultats de recherche en utilisant l'IA :
 
@@ -297,10 +301,10 @@ Extrayez les coordonnées directement de vos résultats de recherche en utilisan
 1. Cochez les cases à côté des résultats dont vous souhaitez extraire les coordonnées
 2. Cliquez sur le bouton **AI Extract Contact Info**
 
-### Étape 2 : Surveiller l'extraction
+### Étape 2 : Surveiller l'profile insights
 
 - Le système visite chaque URL sélectionnée et extrait les coordonnées
-- L'extraction s'exécute en arrière-plan avec des mises à jour de progression en temps réel
+- L'profile insights s'exécute en arrière-plan avec des mises à jour de progression en temps réel
 - Le statut suit chaque résultat : pending → analyzing → completed/failed
 
 ### Étape 3 : Afficher les contacts extraits
@@ -315,22 +319,22 @@ Les informations extraites sont affichées directement dans le tableau des résu
 
 Vous pouvez copier des champs de contact individuels directement depuis le tableau à l'aide des boutons de copie.
 
-## Extraction d'e-mails à partir des résultats de recherche
+## Profile Insights d'e-mails à partir des résultats de recherche
 
 Extrayez des e-mails directement de vos résultats de recherche :
 
 ### Étape 1 : Sélectionner les résultats
 
 1. Cochez les cases à côté des résultats contenant les URL dont vous souhaitez extraire les e-mails
-2. Cliquez sur le bouton **Extract Emails**
+2. Cliquez sur le bouton **Open in Contact Profile Insights**
 
-### Étape 2 : Configurer l'extraction
+### Étape 2 : Configurer l'profile insights
 
-Les URL sélectionnées sont automatiquement transmises à la fonction [Extraction d'e-mails](./contact-extraction).
+Les URL sélectionnées sont automatiquement transmises à la fonction [Profile Insights d'e-mails](./contact-extraction).
 
 ### Étape 3 : Afficher les e-mails extraits
 
-Naviguez vers la section d'extraction d'e-mails pour voir les e-mails collectés.
+Naviguez vers la section d'profile insights d'e-mails pour voir les e-mails collectés.
 
 ## Exportation des résultats de recherche
 
@@ -369,7 +373,7 @@ Si une tâche échoue :
 - Utilisez la génération de mots-clés pour étendre la couverture
 - Fournissez un contexte commercial clair pour un scoring IA plus précis
 - Exécutez des analyses IA pour noter et classer les prospects
-- Utilisez l'extraction de contacts par IA pour obtenir e-mail, téléphone et adresse
+- Utilisez l'profile insights de contacts par IA pour obtenir e-mail, téléphone et adresse
 - Concentrez-vous sur les résultats à score élevé pour la prospection
 
 ### 4. Conseils spécifiques par moteur
@@ -380,10 +384,6 @@ Si une tâche échoue :
 - Activez la récupération IA pour une gestion robuste des erreurs
 - Respectez les limites de débit (commencez avec 1 simultané)
 
-**Bing :**
-- Plus indulgent que Google
-- Peut utiliser une concurrence plus élevée
-- Bon pour les recherches axées sur les États-Unis
 
 **Yandex :**
 - **Doit utiliser le navigateur local**
@@ -484,15 +484,15 @@ Si une tâche échoue :
 
 Les résultats de recherche s'intègrent de manière transparente avec :
 
-- **[Extraction de contacts](./contact-extraction)** - Extraire les e-mails des URL
+- **[Profile Insights de contacts](./contact-extraction)** - Extraire les e-mails des URL
 - **[Pages Jaunes](./yellow-pages)** - Croiser avec les annuaires
 - **[Rédacteur d'e-mails IA](../ai-outreach/ai-email-writer)** - Créer des prospections personnalisées
 - **[Envoi d'e-mails par lot](./batch-email-sending)** - Lancer des campagnes
 
 ## Prochaines étapes
 
-- [En savoir plus sur le scraping des Pages Jaunes](./yellow-pages)
-- [Configurer l'extraction de contacts](./contact-extraction)
+- [En savoir plus sur le information organization des Pages Jaunes](./yellow-pages)
+- [Configurer l'profile insights de contacts](./contact-extraction)
 - [Créer des campagnes d'e-mails alimentées par l'IA](../ai-outreach/ai-email-writer)
 
 ---

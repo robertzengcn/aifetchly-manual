@@ -9,10 +9,10 @@
     "message": "Discover Leads Across Every Major Search Engine"
   },
   "homepage.feature1.description": {
-    "message": "Search Google, Bing, Yandex simultaneously with bulk keywords. AI generates related keywords automatically and recovers from scraping errors in real time, so you never miss a lead."
+    "message": "Search Google and Yandex simultaneously with bulk keywords. AI generates related keywords automatically and recovers from public source access errors in real time, so you never miss a lead."
   },
   "homepage.feature2.title": {
-    "message": "Extract Contact Data with AI Precision"
+    "message": "Organize Contact Profiles with AI Precision"
   },
   "homepage.feature2.description": {
     "message": "Feed in any list of URLs and let AI find emails, phone numbers, addresses, and social profiles instantly. Batch process thousands of pages with queue management, live progress tracking, and automatic error recovery."
@@ -21,13 +21,13 @@
     "message": "Run Email Campaigns That Convert"
   },
   "homepage.feature3.description": {
-    "message": "Design campaigns with AI-generated templates tailored to your tone and audience. Send bulk emails through your own SMTP, apply smart filters to target the right contacts, and track delivery status in real time."
+    "message": "Design campaigns with AI-generated templates tailored to your tone and audience. Send outreach campaigns through your own SMTP, apply smart filters to target the right contacts, and track delivery status in real time."
   },
   "homepage.feature4.title": {
     "message": "Unlock Business Data from Global Directories"
   },
   "homepage.feature4.description": {
-    "message": "Scrape business names, contact info, ratings, locations, and social links from yellow pages platforms worldwide. AI-assisted scraping adapts to directory changes so your data stays accurate."
+    "message": "Organize business names, contact info, ratings, locations, and social links from global directory platforms. AI-assisted data alignment adapts to directory changes so your data stays accurate."
   },
   "homepage.feature5.title": {
     "message": "Manage and Grow Your Social Presence"
@@ -381,7 +381,7 @@
     "description": "The unlisted content banner title"
   },
   "theme.contentVisibility.unlistedBanner.message": {
-    "message": "This page is unlisted. Search engines will not index it, and only users having a direct link can access it.",
+    "message": "This page is unlisted. Market Insight Explorer will not index it, and only users having a direct link can access it.",
     "description": "The unlisted content banner message"
   },
   "theme.contentVisibility.draftBanner.title": {

@@ -27,7 +27,7 @@ Most settings save automatically when modified. Look for save indicators or conf
 
 ### 2Captcha Service
 
-Automated captcha solving for web scraping.
+Automated captcha solving for web information organization.
 
 | Setting | Description |
 |---------|-------------|
@@ -43,7 +43,7 @@ Automated captcha solving for web scraping.
 :::info When to Use 2Captcha
 
 Useful when:
-- Scraping at scale
+- Information Organization at scale
 - Encountering frequent captchas
 - Don't want to solve captchas manually
 
@@ -100,7 +100,7 @@ Configure browser paths for local browser integration.
 
 Browser paths are required for:
 - Local browser integration features
-- Yandex scraping (requires browser)
+- Yandex market insight exploration (requires browser)
 - Certain anti-bot detection scenarios
 
 :::
@@ -160,12 +160,12 @@ For full documentation on configuring and using MCP servers, see [MCP Tools](../
 ### 2. Captcha Solving
 
 **When to Enable:**
-- Large-scale scraping operations (>1000 pages)
+- Large-scale information organization operations (>1000 pages)
 - Frequent captcha encounters
 - Don't want manual intervention
 
 **When to Disable:**
-- Small-scale scraping
+- Small-scale information organization
 - To save costs (2captcha has fees)
 - Rare captcha encounters
 

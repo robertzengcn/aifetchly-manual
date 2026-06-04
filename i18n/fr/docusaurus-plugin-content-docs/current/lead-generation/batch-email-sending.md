@@ -7,7 +7,7 @@ description: Envoyez des campagnes d'e-mails personnalisées à grande échelle 
 
 # Envoi d'e-mails par lot
 
-La fonctionnalité d'envoi d'e-mails par lot d'aiFetchly vous permet de lancer des campagnes d'e-mails personnalisées à grande échelle. Importez des e-mails depuis vos tâches d'extraction, utilisez des modèles générés par l'IA et envoyez via votre propre serveur SMTP pour un contrôle total de vos actions de prospection.
+La fonctionnalité d'envoi d'e-mails par lot d'aiFetchly vous permet de lancer des campagnes d'e-mails personnalisées à grande échelle. Importez des e-mails depuis vos tâches d'profile insights, utilisez des modèles générés par l'IA et envoyez via votre propre serveur SMTP pour un contrôle total de vos actions de prospection.
 
 ## Vue d'ensemble
 
@@ -37,7 +37,7 @@ Avant d'envoyer des e-mails, vous devez configurer au moins un service SMTP.
 
 ### Étape 1 : Accéder aux services d'e-mail
 
-1. Cliquez sur **Email Marketing** dans le menu de navigation de gauche
+1. Cliquez sur **Outreach Campaign** dans le menu de navigation de gauche
 2. Sélectionnez **Email Services** dans le sous-menu
 3. Cliquez sur **Add New Service**
 
@@ -144,16 +144,16 @@ Gmail et Outlook nécessitent des **mots de passe d'application** pour l'accès 
 
 ### Étape 1 : Choisir la source des e-mails
 
-1. **Accédez à** **Email Marketing** → **Send Bulk Emails**
+1. **Accédez à** **Outreach Campaign** → **Send Outreach Campaigns**
 2. **Sélectionnez le type de source d'e-mail** dans le menu déroulant :
-   - **Email Task** : E-mails provenant des tâches d'extraction
+   - **Email Task** : E-mails provenant des tâches d'profile insights
    - **Manual Input** : Importer manuellement une liste d'e-mails
    - **Search Results** : Utiliser les résultats de tâches de recherche
 
 #### Utilisation des tâches d'e-mail (Recommandé)
 
 1. Sélectionnez **Email Task** dans le menu déroulant
-2. **Choisissez une tâche d'extraction** dans la liste
+2. **Choisissez une tâche d'profile insights** dans la liste
 3. **Prévisualisez** la liste d'e-mails
 4. **Option** : Activez "Avoid Duplicates" pour ignorer les e-mails déjà contactés
 
@@ -226,7 +226,7 @@ Après le lancement :
 
 ### Liste des campagnes
 
-Accédez à **Email Marketing** → **Campaigns** pour voir toutes les campagnes.
+Accédez à **Outreach Campaign** → **Campaigns** pour voir toutes les campagnes.
 
 **Informations sur la campagne :**
 - Nom de la campagne
@@ -486,7 +486,7 @@ Ciblez des audiences spécifiques :
 Le workflow complet de prospection par e-mail :
 
 1. **[Moteurs de recherche](./search-engines)** : Trouver des sites web cibles
-2. **[Extraction de contacts](./contact-extraction)** : Collecter les e-mails
+2. **[Profile Insights de contacts](./contact-extraction)** : Collecter les e-mails
 3. **[Rédacteur d'e-mails IA](../ai-outreach/ai-email-writer)** : Créer des modèles personnalisés
 4. **[Bibliothèque de connaissances](../ai-outreach/knowledge-library)** : Fournir du contexte à l'IA
 5. **Envoi d'e-mails par lot** : Lancer les campagnes

@@ -1,7 +1,7 @@
 ---
 id: google-maps-scraper
 title: Google Maps 抓取工具
-sidebar_label: Google Maps
+sidebar_label: Local Business Finder
 description: 使用 aiFetchly 的 Google Maps 抓取工具，通过关键词和位置从 Google Maps 提取商家信息。
 ---
 

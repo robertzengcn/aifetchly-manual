@@ -1,17 +1,17 @@
 ---
 id: contact-extraction
-title: Contact Extraction
-sidebar_label: Email Extraction
-description: Extract email addresses from websites and URLs in bulk with aiFetchly's powerful extraction tool.
+title: Contact Profile Insights
+sidebar_label: Contact Profile Insights
+description: Organize public email addresses from websites and URLs in bulk with aiFetchly's powerful profile insights tool.
 ---
 
-# Email Extraction
+# Contact Profile Insights
 
-aiFetchly's Email Extraction feature allows you to harvest email addresses from websites at scale. Extract contact information from individual URLs or leverage your existing search results for targeted email collection.
+aiFetchly's Contact Profile Insights feature allows you to harvest email addresses from websites at scale. Organize public contact information from individual URLs or leverage your existing search results for targeted email collection.
 
-## Understanding Email Extraction
+## Understanding Contact Profile Insights
 
-Email extraction works by:
+Contact Profile Insights works by:
 
 1. **Visiting each URL** you provide
 2. **Scanning page content** for email patterns
@@ -21,25 +21,25 @@ Email extraction works by:
 
 :::info Use Cases
 
-Email extraction is perfect for:
+Contact Profile Insights is perfect for:
 - Collecting emails from search results
 - Building contact lists from industry directories
 - Gathering contact info from member listings
-- Extracting emails from resource pages
+- Finding public contact channels from resource pages
 
 :::
 
-## Creating an Extraction Task
+## Creating a Profile Insight Task
 
-### Step 1: Navigate to Email Extraction
+### Step 1: Navigate to Contact Profile Insights
 
-1. Click **Email Extraction** in the left navigation menu
-2. You'll see the extraction task list
+1. Click **Contact Profile Insights** in the left navigation menu
+2. You'll see the profile insight task list
 3. Click **Create New Task** button
 
 ### Step 2: Choose URL Input Method
 
-Select how you want to provide URLs for extraction:
+Select how you want to provide URLs for analysis:
 
 #### Method 1: Manual URL Input
 
@@ -67,21 +67,21 @@ https://another-site.com/about-us
 
 1. Select **Search Results** from the source dropdown
 2. A table of your completed search tasks appears
-3. Select the search task containing URLs you want to extract from
+3. Select the search task containing URLs you want to analyze
 4. Click **Confirm**
 
 **Benefits:**
 - Seamless integration with search feature
 - No manual URL entry needed
-- Uses previously scraped URLs
+- Uses URLs collected by Market Insight Explorer
 
-### Step 3: Configure Extraction Settings
+### Step 3: Configure Profile Insights Settings
 
 #### Page Length
 
 - **Default**: 10 pages per URL
 - **Range**: 1-1000 pages
-- **Purpose**: How many pages deep to crawl each website
+- **Purpose**: How many pages to review on each website
 
 **Guidelines:**
 - **Small sites**: 5-10 pages
@@ -91,7 +91,7 @@ https://another-site.com/about-us
 
 :::warning Pages vs. Time
 
-Higher page length = longer extraction time. Start conservative and scale up.
+Higher page length = longer analysis time. Start conservative and scale up.
 
 :::
 
@@ -112,7 +112,7 @@ Higher page length = longer extraction time. Start conservative and scale up.
 - **Range**: 0-1000 pages
 - **Purpose**: Absolute maximum pages to process
 
-**Use Case**: Prevent runaway extraction on very large sites.
+**Use Case**: Prevent overly long analysis on very large sites.
 
 #### Process Timeout
 
@@ -128,14 +128,14 @@ Higher page length = longer extraction time. Start conservative and scale up.
 
 #### Show in Browser
 
-- **No** (default): Extraction runs invisibly (faster)
+- **No** (default): Profile Insights runs invisibly (faster)
 - **Yes**: Browser window visible (debugging mode)
 
 **Recommendation**: Keep at "No" for production tasks.
 
 ### Step 5: Proxy Configuration (Optional)
 
-Add proxies for large-scale extraction:
+Add proxies for large-scale profile insights:
 
 1. Toggle **Use Proxy**
 2. Click **Choose Proxy**
@@ -145,24 +145,24 @@ Add proxies for large-scale extraction:
 :::tip When to Use Proxies
 
 Use proxies when:
-- Extracting from 50+ URLs
+- Organizing from 50+ URLs
 - Running multiple concurrent processes
 - Previous tasks were blocked
-- Extracting from the same domains repeatedly
+- Organizing from the same domains repeatedly
 
 :::
 
 ### Step 6: Create Task
 
-Click **Submit** to create your extraction task. You can:
+Click **Submit** to create your profile insight task. You can:
 - **Save Only**: Save task without running
-- **Run Now**: Start extraction immediately
+- **Run Now**: Start profile insights immediately
 
-## Managing Extraction Tasks
+## Managing Profile Insight Tasks
 
 ### View Task List
 
-Navigate to **Email Extraction** to see all your tasks.
+Navigate to **Contact Profile Insights** to see all your tasks.
 
 **Task List Columns:**
 
@@ -179,7 +179,7 @@ Navigate to **Email Extraction** to see all your tasks.
 | Status | Description | Action |
 |--------|-------------|--------|
 | **Pending** | Task created but not started | Edit, Delete |
-| **Processing** | Actively extracting emails | Monitor progress |
+| **Processing** | Actively finding public contact channels | Monitor progress |
 | **Complete** | Finished successfully | View results |
 | **Error** | Failed with errors | View logs, Retry |
 
@@ -194,7 +194,7 @@ Navigate to **Email Extraction** to see all your tasks.
 
 ### Step 1: Access Results
 
-1. Go to **Email Extraction** task list
+1. Go to **Contact Profile Insights** task list
 2. Find the completed task
 3. Click **View Results**
 
@@ -207,7 +207,7 @@ The results table displays:
 | **URL** | Source website |
 | **Emails** | Extracted email addresses (expandable) |
 | **Count** | Number of emails found |
-| **Timestamp** | When extraction occurred |
+| **Timestamp** | When profile insights occurred |
 
 ### Step 3: Expand Details
 
@@ -239,13 +239,13 @@ https://example.com,info@example.com,2024-01-15 10:30:00
 
 ### Use in Email Campaigns
 
-Extracted emails integrate directly with email marketing:
+Extracted emails integrate directly with outreach campaign:
 
-1. **View Results** of extraction task
+1. **View Results** of profile insight task
 2. Click **Use in Campaign** button
-3. Emails are automatically passed to email marketing workflow
+3. Emails are automatically passed to outreach campaign workflow
 
-For detailed instructions, see [Batch Email Sending](./batch-email-sending).
+For detailed instructions, see [Outreach Campaign](./batch-email-sending).
 
 ## Best Practices
 
@@ -321,7 +321,7 @@ Extracted emails may not always be valid. Consider:
 
 ## Integration with Search Results
 
-The most powerful workflow combines search and extraction:
+The most powerful workflow combines search and profile insights:
 
 ### Complete Workflow
 
@@ -329,23 +329,23 @@ The most powerful workflow combines search and extraction:
    - Search for businesses in your target industry
    - Use AI keyword generation for comprehensive coverage
 
-2. **Extract Emails**:
-   - Create extraction task from search results
-   - Extract emails from discovered URLs
+2. **Open in Contact Profile Insights**:
+   - Create profile insight task from search results
+   - Open in Contact Profile Insights from discovered URLs
 
 3. **Quality Control**:
    - Review extracted emails
    - Filter by source quality
    - Remove duplicates
 
-4. **Email Campaign**:
-   - Import to email marketing
+4. **Outreach Campaign**:
+   - Import to outreach campaign
    - Create personalized templates
    - Launch campaign
 
 ## Advanced Techniques
 
-### Technique 1: Deep Extraction
+### Technique 1: Deep Profile Insights
 
 For comprehensive email collection:
 
@@ -355,7 +355,7 @@ For comprehensive email collection:
 4. **Monitor Progress**: Check results regularly
 5. **Stop Early**: If quality drops, adjust settings
 
-### Technique 2: Pattern-Based Extraction
+### Technique 2: Pattern-Based Profile Insights
 
 Target specific types of pages:
 
@@ -366,7 +366,7 @@ Target specific types of pages:
 
 ### Technique 3: Competitor Analysis
 
-Extract emails from competitor websites:
+Open in Contact Profile Insights from competitor websites:
 
 1. **Identify competitors** in your niche
 2. **Extract their contact emails**
@@ -447,7 +447,7 @@ Extract emails from competitor websites:
 
 ### Compliance
 
-When extracting emails, consider:
+When finding public contact channels, consider:
 
 - **GDPR** (Europe): Strict regulations on email collection
 - **CAN-SPAM** (USA): Requirements for commercial emails
@@ -461,23 +461,23 @@ Always ensure you have legal rights to extract and contact the email addresses. 
 
 ### Best Practices
 
-- **Public Sources Only**: Extract from publicly available information
-- **Relevant Context**: Extract from businesses/contacts relevant to your offering
+- **Public Sources Only**: Use publicly available information
+- **Relevant Context**: Focus on businesses and contacts relevant to your offering
 - **Respect Robots.txt**: Honor website exclusion standards
 - **Provide Opt-Out**: Include unsubscribe options in emails
 - **Value Proposition**: Offer something of value in your outreach
 
-## Integration with Email Marketing
+## Integration with Outreach Campaign
 
 Once you've extracted emails:
 
 1. **Review Results**: Quality check your extracted emails
-2. **Export or Import**: Direct to email marketing or export as CSV
+2. **Export or Import**: Direct to outreach campaign or export as CSV
 3. **Select Template**: Choose or create email template
 4. **Personalize**: Use AI Email Writer for personalized content
 5. **Launch Campaign**: Send targeted outreach
 
-For detailed instructions on creating campaigns, see [Batch Email Sending](./batch-email-sending).
+For detailed instructions on creating campaigns, see [Outreach Campaign](./batch-email-sending).
 
 ## Next Steps
 
@@ -487,4 +487,4 @@ For detailed instructions on creating campaigns, see [Batch Email Sending](./bat
 
 ---
 
-**Ready to extract emails?** Start with a small batch of URLs to test your settings, then scale up your extraction operations.
+**Ready to find public contact channels?** Start with a small batch of URLs to test your settings, then scale up your profile insights operations.

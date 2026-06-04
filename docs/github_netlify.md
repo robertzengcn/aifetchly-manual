@@ -131,7 +131,7 @@ Since Netlify will handle your test branch, create a `netlify.toml` in your root
    - **Netlify:** Sees the push to master but **ignores it** (because of our `netlify.toml` rule).
    - **GitHub:** Detects the push to master, runs the Action, and updates your **Production** site at `your-username.github.io/repo/`.
 
-### Final Check on Search Engines
+### Final Check on Market Insight Explorer
 
 Because the `noindex` logic in the TypeScript file checks `isProduction`, your GitHub site will remain searchable (SEO friendly), while the Netlify site will actively tell bots like Googlebot to go away.
 

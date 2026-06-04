@@ -1,17 +1,17 @@
 ---
 id: google-maps-scraper
-title: Google Maps Scraper
-sidebar_label: Google Maps
-description: Extrayez les informations commerciales de Google Maps par mot-clé et emplacement avec le Google Maps Scraper d'aiFetchly.
+title: Local Business Finder
+sidebar_label: Local Business Finder
+description: Extrayez les informations commerciales de Google Maps par mot-clé et emplacement avec le Local Business Finder d'aiFetchly.
 ---
 
-# Google Maps Scraper
+# Local Business Finder
 
-Le Google Maps Scraper d'aiFetchly vous permet de rechercher des entreprises locales sur Google Maps par mot-clé et emplacement. Collectez des données commerciales complètes, y compris les noms, catégories, notes, avis, adresses, numéros de téléphone et URL de sites web — le tout à partir des résultats de recherche Google Maps.
+Le Local Business Finder d'aiFetchly vous permet de rechercher des entreprises locales sur Google Maps par mot-clé et emplacement. Collectez des données commerciales complètes, y compris les noms, catégories, notes, avis, adresses, numéros de téléphone et URL de sites web — le tout à partir des résultats de recherche Google Maps.
 
 ## Présentation
 
-Le Google Maps Scraper offre une interface simplifiée pour l'extraction de données d'entreprises locales :
+Le Local Business Finder offre une interface simplifiée pour l'profile insights de données d'entreprises locales :
 
 1. **Entrez un mot-clé** (par exemple, « dentiste », « restaurant italien »)
 2. **Entrez un emplacement** (par exemple, « Paris », « Lyon », « 75001 »)
@@ -21,14 +21,14 @@ Le Google Maps Scraper offre une interface simplifiée pour l'extraction de donn
 
 :::tip Idéal pour
 
-Le Google Maps Scraper est idéal pour trouver des entreprises locales avec des données structurées, y compris des adresses vérifiées, des numéros de téléphone, des notes et des horaires d'ouverture — des informations plus fiables que les résultats de recherche web généraux.
+Le Local Business Finder est idéal pour trouver des entreprises locales avec des données structurées, y compris des adresses vérifiées, des numéros de téléphone, des notes et des horaires d'ouverture — des informations plus fiables que les résultats de recherche web généraux.
 
 :::
 
-## Accéder au Google Maps Scraper
+## Accéder au Local Business Finder
 
 1. Cliquez sur **Google Maps** dans le menu de navigation de gauche
-2. Le scraper s'ouvre avec deux onglets : **Recherche** et **Historique**
+2. Le assistant s'ouvre avec deux onglets : **Recherche** et **Historique**
 
 ## Effectuer une recherche
 
@@ -59,7 +59,7 @@ Entrez une ville, une adresse ou un code postal :
 #### Inclure le site web
 
 - **Activé** (par défaut) : Tente d'extraire l'URL du site web de l'entreprise
-- **Désactivé** : Ignore l'extraction du site web pour des résultats plus rapides
+- **Désactivé** : Ignore l'profile insights du site web pour des résultats plus rapides
 
 #### Inclure les avis
 
@@ -69,11 +69,11 @@ Entrez une ville, une adresse ou un code postal :
 #### Afficher le navigateur
 
 - **Désactivé** (par défaut) : Le navigateur s'exécute en mode headless (plus rapide)
-- **Activé** : La fenêtre du navigateur est visible pendant l'extraction (utile pour le débogage)
+- **Activé** : La fenêtre du navigateur est visible pendant l'profile insights (utile pour le débogage)
 
 :::warning Afficher le navigateur
 
-L'activation de cette option affichera la fenêtre du navigateur sur votre écran pendant la recherche. Ceci est destiné au débogage uniquement et peut ralentir le processus d'extraction.
+L'activation de cette option affichera la fenêtre du navigateur sur votre écran pendant la recherche. Ceci est destiné au débogage uniquement et peut ralentir le processus d'profile insights.
 
 :::
 
@@ -81,7 +81,7 @@ L'activation de cette option affichera la fenêtre du navigateur sur votre écra
 
 #### Compte Google
 
-Sélectionnez un compte Google pour utiliser ses cookies lors de l'extraction authentifiée :
+Sélectionnez un compte Google pour utiliser ses cookies lors de l'profile insights authentifiée :
 
 - **Avantages** :
   - Taux de réussite plus élevé
@@ -102,13 +102,13 @@ Sélectionnez un ou plusieurs proxys pour alterner pendant la recherche :
 - **Avantages** :
   - Répartit les requêtes sur plusieurs adresses IP
   - Réduit le risque de détection
-  - Essentiel pour l'extraction à grande échelle
+  - Essentiel pour l'profile insights à grande échelle
 - Sélectionnez plusieurs proxys pour une rotation automatique par requête
 
 ### Étape 4 : Lancer la recherche
 
 1. Cliquez sur **Lancer la recherche** pour commencer
-2. Une barre de progression apparaît affichant l'état de l'extraction en temps réel
+2. Une barre de progression apparaît affichant l'état de l'profile insights en temps réel
 3. La recherche s'exécute de manière asynchrone — vous pouvez continuer à utiliser les autres fonctionnalités
 4. Jusqu'à **3 recherches simultanées** peuvent s'exécuter en parallèle
 
@@ -237,12 +237,12 @@ L'onglet **Historique** conserve toutes vos recherches Google Maps passées.
 
 - **Recherche unique** : Proxy non requis
 - **Recherches multiples en séquence** : Utilisez 1 à 2 proxys
-- **Extraction à grande échelle** : Utilisez 3 proxys ou plus avec rotation
+- **Profile Insights à grande échelle** : Utilisez 3 proxys ou plus avec rotation
 
 ### 5. Utilisation des comptes Google
 
 - **Recommandé** pour les recherches renvoyant plus de 30 résultats
-- **Essentiel** lors de l'extraction dans des zones populaires avec de nombreuses entreprises
+- **Essentiel** lors de l'profile insights dans des zones populaires avec de nombreuses entreprises
 - Les comptes avec une utilisation active de Google Maps fournissent de meilleurs résultats
 
 ## Dépannage
@@ -278,7 +278,7 @@ L'onglet **Historique** conserve toutes vos recherches Google Maps passées.
 **Causes possibles :**
 - La recherche a été annulée avant la fin
 - Certaines fiches d'entreprise ne contenaient pas les données requises
-- Une limitation de débit est survenue pendant l'extraction
+- Une limitation de débit est survenue pendant l'profile insights
 
 **Solutions :**
 1. Laissez la recherche se terminer complètement
@@ -287,15 +287,15 @@ L'onglet **Historique** conserve toutes vos recherches Google Maps passées.
 
 ## Intégration avec d'autres fonctionnalités
 
-Les résultats du Google Maps Scraper peuvent être utilisés avec :
+Les résultats du Local Business Finder peuvent être utilisés avec :
 
-- **[Extraction de contacts](./contact-extraction)** — Extrayez les e-mails des sites web d'entreprises trouvés dans les résultats
+- **[Profile Insights de contacts](./contact-extraction)** — Extrayez les e-mails des sites web d'entreprises trouvés dans les résultats
 - **[Pages Jaunes](./yellow-pages)** — Recoupez avec les annuaires pour des données plus complètes
 - **[Rédacteur d'e-mails IA](../ai-outreach/ai-email-writer)** — Créez des e-mails de prospection personnalisés en utilisant les données commerciales collectées
 - **[Envoi d'e-mails en lot](./batch-email-sending)** — Lancez des campagnes d'e-mails en utilisant les informations de contact extraites
 
 ## Prochaines étapes
 
-- [Découvrir le Yandex Maps Scraper](./yandex-maps-scraper)
-- [Configurer l'extraction d'e-mails](./contact-extraction)
+- [Découvrir le Local Business Finder](./yandex-maps-scraper)
+- [Configurer l'profile insights d'e-mails](./contact-extraction)
 - [Créer des campagnes d'e-mails alimentées par l'IA](../ai-outreach/ai-email-writer)

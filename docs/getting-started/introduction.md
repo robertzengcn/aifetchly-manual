@@ -16,33 +16,32 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 aiFetchly is an all-in-one marketing automation platform designed for businesses and marketers who need to:
 
 - **Find leads** across multiple search engines and online directories
-- **Extract contact information** from websites and business listings
+- **Organize public contact information** from websites and business listings
 - **Generate personalized emails** using AI with context from your own documents
-- **Automate campaigns** with scheduling and batch email sending
+- **Automate campaigns** with scheduling and outreach campaign
 - **Get AI assistance** for marketing strategies and content creation
 
 ## Key Features
 
-### 🔍 Multi-Engine Search & Scraping
+### 🔍 Multi-Engine Search & Information Organization
 
-Search and scrape leads from multiple search engines simultaneously:
+Search and organize lead information from multiple search engines simultaneously:
 
 - **Google** - The world's largest search engine
-- **Bing** - Microsoft's search engine
 - **Yandex** - Popular Russian search engine
 
-:::tip Concurrent Scraping
+:::tip Concurrent Information Organization
 
 Run multiple search tasks at the same time to maximize your lead generation efficiency.
 
 :::
 
-### 📧 Contact Extraction
+### 📧 Contact Profile Insights
 
-Extract email addresses and contact information from:
+Organize public email addresses and contact information from:
 
-- **Website URLs** - Bulk extract emails from lists of websites
-- **Yellow Pages** - Scrape business directories for local leads
+- **Website URLs** - Bulk find public contact channels from lists of websites
+- **Directory Assistant** - Organize business directories for local leads
 - **Search Results** - Directly extract from your search campaigns
 
 ### 🤖 AI-Powered Email Writer
@@ -53,7 +52,7 @@ Create personalized outreach emails using advanced AI:
 - **Template System** - Save and reuse email templates with variable substitution
 - **RAG Technology** - Retrieval-Augmented Generation ensures contextually relevant content
 
-### ✉️ Batch Email Sending
+### ✉️ Outreach Campaign
 
 Send personalized email campaigns at scale:
 
@@ -86,7 +85,7 @@ Protect your identity and scale your operations:
 - **Proxy Management** - Add and manage multiple proxies
 - **Health Checking** - Verify proxy performance before use
 - **Batch Import** - Import proxy lists in bulk
-- **Integration** - Use proxies with all scraping and extraction features
+- **Integration** - Use proxies with all information organization and profile insights features
 
 ## System Requirements
 
@@ -113,7 +112,7 @@ All features described in this manual are currently available to all users. Futu
 ## Next Steps
 
 - [Install aiFetchly](./installation) on your computer
-- [Configure proxies](./proxy-setup) for safe scraping
+- [Configure proxies](./proxy-setup) for safe information organization
 - [Learn about lead generation](../lead-generation/search-engines)
 - [Set up the Knowledge Library](../ai-outreach/knowledge-library)
 - [Start your first email campaign](../lead-generation/batch-email-sending)

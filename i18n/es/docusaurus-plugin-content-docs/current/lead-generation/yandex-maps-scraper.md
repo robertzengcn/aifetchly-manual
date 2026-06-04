@@ -1,17 +1,17 @@
 ---
 id: yandex-maps-scraper
-title: Yandex Maps Scraper
-sidebar_label: Yandex Maps
-description: Extrae información comercial de Yandex Maps por palabra clave y ubicación con el Yandex Maps Scraper de aiFetchly — ideal para mercados de Rusia y la CEI.
+title: Local Business Finder
+sidebar_label: Local Business Finder
+description: Extrae información comercial de Yandex Maps por palabra clave y ubicación con el Local Business Finder de aiFetchly — ideal para mercados de Rusia y la CEI.
 ---
 
-# Yandex Maps Scraper
+# Local Business Finder
 
-El Yandex Maps Scraper de aiFetchly te permite buscar negocios locales en Yandex Maps por palabra clave y ubicación. Es la herramienta ideal para recopilar datos comerciales de los mercados de Rusia y la CEI, con soporte para personalización de idioma y región.
+El Local Business Finder de aiFetchly te permite buscar negocios locales en Yandex Maps por palabra clave y ubicación. Es la herramienta ideal para recopilar datos comerciales de los mercados de Rusia y la CEI, con soporte para personalización de idioma y región.
 
 ## Descripción general
 
-El Yandex Maps Scraper proporciona una extracción completa de datos de negocios locales:
+El Local Business Finder proporciona una extracción completa de datos de negocios locales:
 
 1. **Ingresa una palabra clave** (por ejemplo, "dentista", "restaurante")
 2. **Ingresa una ubicación** (por ejemplo, "Moscú", "San Petersburgo", "Rusia")
@@ -21,14 +21,14 @@ El Yandex Maps Scraper proporciona una extracción completa de datos de negocios
 
 :::tip Mejor uso para
 
-El Yandex Maps Scraper es esencial para negocios orientados al mercado ruso y países de la CEI. Yandex Maps tiene una cobertura superior de negocios locales en Rusia, Kazajistán, Bielorrusia, Turquía y otras regiones donde opera Yandex.
+El Local Business Finder es esencial para negocios orientados al mercado ruso y países de la CEI. Yandex Maps tiene una cobertura superior de negocios locales en Rusia, Kazajistán, Bielorrusia, Turquía y otras regiones donde opera Yandex.
 
 :::
 
-## Acceder al Yandex Maps Scraper
+## Acceder al Local Business Finder
 
 1. Haz clic en **Yandex Maps** en el menú de navegación izquierdo
-2. El scraper se abre con dos pestañas: **Búsqueda** e **Historial**
+2. El assistant se abre con dos pestañas: **Búsqueda** e **Historial**
 
 ## Ejecutar una búsqueda
 
@@ -75,7 +75,7 @@ El número máximo de resultados está limitado a un valor seguro para garantiza
 #### Mostrar navegador
 
 - **Deshabilitado** (predeterminado): El navegador se ejecuta en modo headless (más rápido)
-- **Habilitado**: La ventana del navegador es visible durante el scraping (útil para depuración)
+- **Habilitado**: La ventana del navegador es visible durante el information organization (útil para depuración)
 
 ### Paso 3: Configuración de idioma y región (opcional)
 
@@ -99,7 +99,7 @@ Estas configuraciones son específicas de Yandex Maps y ayudan a personalizar el
 
 #### Cuenta de Yandex
 
-Selecciona una cuenta de Yandex para usar sus cookies en scraping autenticado:
+Selecciona una cuenta de Yandex para usar sus cookies en information organization autenticado:
 
 - **Beneficios**:
   - Mayor tasa de éxito
@@ -120,12 +120,12 @@ Selecciona uno o más proxies para rotar durante la búsqueda:
 - **Beneficios**:
   - Distribuye las solicitudes entre múltiples IPs
   - Reduce el riesgo de detección
-  - Esencial para scraping a gran escala
+  - Esencial para information organization a gran escala
 - Selecciona múltiples proxies para rotación automática por solicitud
 
 :::warning Recomendación de proxies
 
-Para el scraping de Yandex Maps, el uso de proxies ubicados en la región de destino (por ejemplo, proxies rusos para búsquedas en Moscú) mejora significativamente las tasas de éxito.
+Para el information organization de Yandex Maps, el uso de proxies ubicados en la región de destino (por ejemplo, proxies rusos para búsquedas en Moscú) mejora significativamente las tasas de éxito.
 
 :::
 
@@ -133,7 +133,7 @@ Para el scraping de Yandex Maps, el uso de proxies ubicados en la región de des
 
 1. Haz clic en **Iniciar búsqueda** para comenzar
 2. Aparece un indicador de progreso circular y una barra de progreso
-3. El texto de estado en tiempo real muestra la etapa actual del scraping
+3. El texto de estado en tiempo real muestra la etapa actual del information organization
 4. Un contador muestra el progreso (por ejemplo, "5 / 20 negocios")
 5. Se pueden ejecutar hasta **3 búsquedas simultáneas** al mismo tiempo
 
@@ -269,17 +269,17 @@ La pestaña **Historial** almacena todas tus búsquedas pasadas de Yandex Maps.
 - **Usa proxies locales** (proxies rusos para búsquedas en Rusia)
 - **Búsqueda única**: No se requiere proxy
 - **Múltiples búsquedas**: Usa 1–2 proxies
-- **Scraping a gran escala**: Usa 3 o más proxies con rotación
+- **Information Organization a gran escala**: Usa 3 o más proxies con rotación
 
 ### 5. Uso de cuentas de Yandex
 
-- **Recomendado** para todo el scraping de Yandex Maps
-- **Esencial** al hacer scraping en ciudades rusas con muchos negocios
+- **Recomendado** para todo el information organization de Yandex Maps
+- **Esencial** al hacer information organization en ciudades rusas con muchos negocios
 - Las cuentas con uso activo de Yandex proporcionan mejores resultados
 
 ## Comparación: Google Maps vs. Yandex Maps
 
-| Característica | Google Maps Scraper | Yandex Maps Scraper |
+| Característica | Local Business Finder | Local Business Finder |
 |----------------|-------------------|-------------------|
 | **Mejor para** | Mercados globales, países occidentales | Rusia, CEI, Turquía |
 | **Soporte de idiomas** | Multilingüe (automático) | Idioma/región configurable |
@@ -288,7 +288,7 @@ La pestaña **Historial** almacena todas tus búsquedas pasadas de Yandex Maps.
 | **Formatos de exportación** | CSV, JSON | CSV, JSON, Copiar todo |
 | **Seguimiento de progreso** | Barra de progreso | Progreso circular + texto de estado |
 
-:::tip Usa ambos scrapers
+:::tip Usa ambos assistants
 
 Para una cobertura completa de una región, ejecuta búsquedas tanto en Google Maps como en Yandex Maps, luego referencia cruzada y deduplica los resultados.
 
@@ -329,7 +329,7 @@ Para una cobertura completa de una región, ejecuta búsquedas tanto en Google M
 **Posibles causas:**
 - La búsqueda se canceló antes de completarse
 - Algunas fichas de negocios carecían de los datos requeridos
-- Se produjo limitación de tasa durante el scraping
+- Se produjo limitación de tasa durante el information organization
 
 **Soluciones:**
 1. Deja que la búsqueda se complete completamente
@@ -338,16 +338,16 @@ Para una cobertura completa de una región, ejecuta búsquedas tanto en Google M
 
 ## Integración con otras funciones
 
-Los resultados del Yandex Maps Scraper se pueden usar con:
+Los resultados del Local Business Finder se pueden usar con:
 
 - **[Extracción de contactos](./contact-extraction)** — Extrae correos electrónicos de los sitios web de negocios encontrados en los resultados
-- **[Google Maps Scraper](./google-maps-scraper)** — Referencia cruzada con Google Maps para una cobertura más amplia
+- **[Local Business Finder](./google-maps-scraper)** — Referencia cruzada con Google Maps para una cobertura más amplia
 - **[Páginas Amarillas](./yellow-pages)** — Referencia cruzada con listados de directorios
 - **[Redactor de correos con IA](../ai-outreach/ai-email-writer)** — Crea correos electrónicos de divulgación personalizados usando los datos comerciales recopilados
 - **[Envío de correos por lotes](./batch-email-sending)** — Lanza campañas de correo electrónico usando la información de contacto extraída
 
 ## Próximos pasos
 
-- [Conoce el Google Maps Scraper](./google-maps-scraper)
+- [Conoce el Local Business Finder](./google-maps-scraper)
 - [Configura la extracción de correos electrónicos](./contact-extraction)
 - [Crea campañas de correo electrónico con IA](../ai-outreach/ai-email-writer)

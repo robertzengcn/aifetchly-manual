@@ -1,17 +1,17 @@
 ---
 id: google-maps-scraper
-title: Google Maps Scraper
-sidebar_label: Google Maps
-description: Extract business information from Google Maps by keyword and location with aiFetchly's Google Maps Scraper.
+title: Local Business Finder
+sidebar_label: Local Business Finder
+description: Organize business information from Google Maps by keyword and location with aiFetchly's Local Business Finder.
 ---
 
-# Google Maps Scraper
+# Local Business Finder
 
-aiFetchly's Google Maps Scraper allows you to search Google Maps for local businesses by keyword and location. Collect comprehensive business data including names, categories, ratings, reviews, addresses, phone numbers, and website URLs — all from Google Maps search results.
+aiFetchly's Local Business Finder allows you to search Google Maps for local businesses by keyword and location. Collect comprehensive business data including names, categories, ratings, reviews, addresses, phone numbers, and website URLs — all from Google Maps search results.
 
 ## Overview
 
-The Google Maps Scraper provides a streamlined interface for extracting local business data:
+The Local Business Finder provides a streamlined interface for organizing local business data:
 
 1. **Enter a keyword** (e.g., "dentist", "Italian restaurant")
 2. **Enter a location** (e.g., "New York", "London", "90210")
@@ -21,14 +21,14 @@ The Google Maps Scraper provides a streamlined interface for extracting local bu
 
 :::tip Best For
 
-The Google Maps Scraper is ideal for finding local businesses with structured data including verified addresses, phone numbers, ratings, and business hours — information that's more reliable than general web search results.
+The Local Business Finder is ideal for finding local businesses with structured data including verified addresses, phone numbers, ratings, and business hours — information that's more reliable than general web search results.
 
 :::
 
-## Accessing the Google Maps Scraper
+## Accessing the Local Business Finder
 
-1. Click **Google Maps** in the left navigation menu
-2. The scraper opens with two tabs: **Search** and **History**
+1. Click **Local Business Finder** in the left navigation menu
+2. The page opens with two tabs: **Search** and **History**
 
 ## Running a Search
 
@@ -54,12 +54,12 @@ Enter a city, address, or zip code:
 
 - **Range**: 1–50 results
 - **Default**: 20 results
-- Adjust the slider to control how many businesses to extract
+- Adjust the slider to control how many businesses to include
 
 #### Include Website
 
-- **Enabled** (default): Attempts to extract the business website URL
-- **Disabled**: Skips website extraction for faster results
+- **Enabled** (default): Attempts to include the business website URL
+- **Disabled**: Skips website lookup for faster results
 
 #### Include Reviews
 
@@ -69,11 +69,11 @@ Enter a city, address, or zip code:
 #### Show Browser
 
 - **Disabled** (default): Browser runs in headless mode (faster)
-- **Enabled**: Browser window is visible during scraping (useful for debugging)
+- **Enabled**: Browser window is visible during information organization (useful for debugging)
 
 :::warning Show Browser
 
-Enabling this option will display the browser window on your screen during the search. This is intended for debugging only and may slow down the scraping process.
+Enabling this option will display the browser window on your screen during the search. This is intended for debugging only and may slow down the information organization process.
 
 :::
 
@@ -81,7 +81,7 @@ Enabling this option will display the browser window on your screen during the s
 
 #### Google Account
 
-Select a Google account to use its cookies for authenticated scraping:
+Select a Google account to use its cookies for authenticated information organization:
 
 - **Benefits**:
   - Higher success rate
@@ -102,13 +102,13 @@ Select one or more proxies to rotate through during the search:
 - **Benefits**:
   - Distributes requests across multiple IPs
   - Reduces detection risk
-  - Essential for large-scale scraping
+  - Essential for large-scale public information organization
 - Select multiple proxies for automatic rotation per request
 
 ### Step 4: Start the Search
 
 1. Click **Start Search** to begin
-2. A progress bar appears showing real-time scraping status
+2. A progress bar appears showing real-time progress status
 3. The search runs asynchronously — you can continue using other features
 4. Up to **3 concurrent searches** can run simultaneously
 
@@ -237,12 +237,12 @@ The **History** tab stores all your past Google Maps searches.
 
 - **Single search**: Proxy not required
 - **Multiple searches in sequence**: Use 1–2 proxies
-- **Large-scale scraping**: Use 3+ proxies with rotation
+- **Large-scale information organization**: Use 3+ proxies with rotation
 
 ### 5. Using Google Accounts
 
 - **Recommended** for searches returning 30+ results
-- **Essential** when scraping popular areas with many businesses
+- **Essential** when organizing popular areas with many businesses
 - Accounts with active Google Maps usage provide better results
 
 ## Troubleshooting
@@ -278,7 +278,7 @@ The **History** tab stores all your past Google Maps searches.
 **Possible causes:**
 - Search was cancelled before completion
 - Some business listings lacked required data
-- Rate limiting occurred during scraping
+- Rate limiting occurred during information organization
 
 **Solutions:**
 1. Let the search complete fully
@@ -287,15 +287,15 @@ The **History** tab stores all your past Google Maps searches.
 
 ## Integration with Other Features
 
-Google Maps Scraper results can be used with:
+Local Business Finder results can be used with:
 
-- **[Contact Extraction](./contact-extraction)** — Extract emails from business websites found in the results
-- **[Yellow Pages](./yellow-pages)** — Cross-reference with directory listings for more comprehensive data
+- **[Contact Profile Insights](./contact-extraction)** — Open in Contact Profile Insights from business websites found in the results
+- **[Directory Assistant](./yellow-pages)** — Cross-reference with directory listings for more comprehensive data
 - **[AI Email Writer](../ai-outreach/ai-email-writer)** — Create personalized outreach emails using the collected business data
-- **[Batch Email Sending](./batch-email-sending)** — Launch email campaigns using extracted contact information
+- **[Outreach Campaign](./batch-email-sending)** — Launch email campaigns using extracted contact information
 
 ## Next Steps
 
-- [Learn about Yandex Maps Scraper](./yandex-maps-scraper)
-- [Set up email extraction](./contact-extraction)
+- [Learn about Local Business Finder](./yandex-maps-scraper)
+- [Set up contact profile insights](./contact-extraction)
 - [Create AI-powered email campaigns](../ai-outreach/ai-email-writer)

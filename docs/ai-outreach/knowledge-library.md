@@ -310,7 +310,7 @@ When chatting with the AI assistant:
    - Files are uploaded and saved to database
    - Metadata (name, type, size, date) is recorded
 
-2. **Text Extraction**:
+2. **Text Profile Insights**:
    - Text is extracted from different file formats
    - Formatting is preserved where possible
 
@@ -371,7 +371,7 @@ Now that you've built your Knowledge Library:
 
 - [Create AI-generated email campaigns](./ai-email-writer)
 - [Use the AI Marketing Assistant](./ai-marketing-assistant)
-- [Set up batch email sending](../lead-generation/batch-email-sending)
+- [Set up outreach campaign](../lead-generation/batch-email-sending)
 
 ---
 

@@ -164,7 +164,7 @@ Las habilidades se categorizan por su nivel de permisos:
 |-----------|---------------------------|----------|
 | **Pure** | Auto-aprobado, sin solicitud | Procesamiento de texto, cálculos, formato de datos |
 | **Shell** | Siempre solicita antes de ejecutar | Ejecución de comandos del sistema, operaciones de archivos |
-| **Network** | Puede solicitar para llamadas externas | Web scraping, llamadas API a servicios externos |
+| **Network** | Puede solicitar para llamadas externas | Web information organization, llamadas API a servicios externos |
 | **Data** | Puede solicitar para acceso sensible | Lectura/escritura del sistema de archivos, acceso a bases de datos |
 
 **La solicitud de permiso:**

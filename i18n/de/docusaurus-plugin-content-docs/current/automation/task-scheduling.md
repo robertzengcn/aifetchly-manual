@@ -46,10 +46,10 @@ Geben Sie die folgenden erforderlichen Informationen ein:
 
 Wählen Sie den Typ der zu planenden Aufgabe:
 
-- **Search**: Suchmaschinen-Scraping-Aufgaben
+- **Search**: Suchmaschinen-Information Organization-Aufgaben
 - **Email Extract**: E-Mail-Extraktionsaufgaben
-- **Bulk Email**: E-Mail-Marketing-Kampagnen
-- **Yellow Pages**: Verzeichnis-Scraping-Aufgaben
+- **Outreach Campaign**: E-Mail-Marketing-Kampagnen
+- **Directory Assistant**: Verzeichnis-Information Organization-Aufgaben
 - **Video Download**: Video-Download-Aufgaben
 
 #### Aufgaben-ID
@@ -137,7 +137,7 @@ Aktivieren Sie **Dependency**, um diese Aufgabe auszulösen, wenn eine andere Au
 
 **Anwendungsfälle:**
 - **E-Mail nach Extraktion**: E-Mails extrahieren, dann Kampagne nach Abschluss senden
-- **Analyse nach Scraping**: Daten scrapen, dann KI-Analyse durchführen
+- **Analyse nach Information Organization**: Daten scrapen, dann KI-Analyse durchführen
 - **Mehrstufige Kampagnen**: Erste Kontaktaufnahme → Follow-up 1 → Follow-up 2
 
 :::tip Abhängigkeitsketten
@@ -250,7 +250,7 @@ Für laufende Aufgaben:
 **Zeitplan**: Jeden Werktag um 9:00 Uhr
 ```
 Cron: 0 9 * * 1-5
-Task: Search Engine Scraping
+Task: Market Insight Explorer
 ```
 
 **Anwendungsfall**: Jeden Morgen neue Leads für Ihr Vertriebsteam.
@@ -270,7 +270,7 @@ Task: Search / Yellow Pages
 **Zeitplan**: Jeden Montag um 10:00 Uhr
 ```
 Cron: 0 10 * * 1
-Task: Bulk Email Sending
+Task: Outreach Campaign Sending
 ```
 
 **Anwendungsfall**: Wöchentlicher E-Mail-Newsletter oder Outreach-Kampagne.
@@ -458,13 +458,13 @@ Task: Google Search for "marketing agencies [city]"
 ```
 Trigger: After Schedule 1 succeeds
 Delay: 0 minutes
-Task: Extract emails from Schedule 1 results
+Task: Open in Contact Profile Insights from Schedule 1 results
 ```
 
 **Zeitplan 3**: E-Mail-Kampagne (Abhängigkeit)
 ```
 Trigger: After Schedule 2 completes
-Delay: 60 minutes (allow time for extraction)
+Delay: 60 minutes (allow time for profile insights)
 Task: Send welcome email campaign
 ```
 
@@ -520,7 +520,7 @@ Der Aufgabenplaner integriert sich mit:
 
 - **[Suchmaschinen](../lead-generation/search-engines)**: Wiederkehrende Suchen planen
 - **[Kontaktextraktion](../lead-generation/contact-extraction)**: Automatische Extraktion nach Suchen
-- **[Gelbe Seiten](../lead-generation/yellow-pages)**: Regelmäßiges Verzeichnis-Scraping
+- **[Gelbe Seiten](../lead-generation/yellow-pages)**: Regelmäßiges Verzeichnis-Information Organization
 - **[Massen-E-Mail-Versand](../lead-generation/batch-email-sending)**: Automatisierte Kampagnen
 
 ## Nächste Schritte

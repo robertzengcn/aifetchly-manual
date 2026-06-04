@@ -1,17 +1,17 @@
 ---
 id: google-maps-scraper
-title: Google Maps Scraper
-sidebar_label: Google Maps
-description: Extrae información comercial de Google Maps por palabra clave y ubicación con el Google Maps Scraper de aiFetchly.
+title: Local Business Finder
+sidebar_label: Local Business Finder
+description: Extrae información comercial de Google Maps por palabra clave y ubicación con el Local Business Finder de aiFetchly.
 ---
 
-# Google Maps Scraper
+# Local Business Finder
 
-El Google Maps Scraper de aiFetchly te permite buscar negocios locales en Google Maps por palabra clave y ubicación. Recopila datos comerciales completos incluyendo nombres, categorías, calificaciones, reseñas, direcciones, números de teléfono y URLs de sitios web, todo directamente desde los resultados de búsqueda de Google Maps.
+El Local Business Finder de aiFetchly te permite buscar negocios locales en Google Maps por palabra clave y ubicación. Recopila datos comerciales completos incluyendo nombres, categorías, calificaciones, reseñas, direcciones, números de teléfono y URLs de sitios web, todo directamente desde los resultados de búsqueda de Google Maps.
 
 ## Descripción general
 
-El Google Maps Scraper proporciona una interfaz optimizada para extraer datos de negocios locales:
+El Local Business Finder proporciona una interfaz optimizada para extraer datos de negocios locales:
 
 1. **Ingresa una palabra clave** (por ejemplo, "dentista", "restaurante italiano")
 2. **Ingresa una ubicación** (por ejemplo, "Nueva York", "Londres", "90210")
@@ -21,14 +21,14 @@ El Google Maps Scraper proporciona una interfaz optimizada para extraer datos de
 
 :::tip Mejor uso para
 
-El Google Maps Scraper es ideal para encontrar negocios locales con datos estructurados que incluyen direcciones verificadas, números de teléfono, calificaciones y horarios de atención, información más confiable que los resultados de búsqueda web generales.
+El Local Business Finder es ideal para encontrar negocios locales con datos estructurados que incluyen direcciones verificadas, números de teléfono, calificaciones y horarios de atención, información más confiable que los resultados de búsqueda web generales.
 
 :::
 
-## Acceder al Google Maps Scraper
+## Acceder al Local Business Finder
 
 1. Haz clic en **Google Maps** en el menú de navegación izquierdo
-2. El scraper se abre con dos pestañas: **Búsqueda** e **Historial**
+2. El assistant se abre con dos pestañas: **Búsqueda** e **Historial**
 
 ## Ejecutar una búsqueda
 
@@ -69,11 +69,11 @@ Ingresa una ciudad, dirección o código postal:
 #### Mostrar navegador
 
 - **Deshabilitado** (predeterminado): El navegador se ejecuta en modo headless (más rápido)
-- **Habilitado**: La ventana del navegador es visible durante el scraping (útil para depuración)
+- **Habilitado**: La ventana del navegador es visible durante el information organization (útil para depuración)
 
 :::warning Mostrar navegador
 
-Habilitar esta opción mostrará la ventana del navegador en tu pantalla durante la búsqueda. Esto está destinado solo para depuración y puede ralentizar el proceso de scraping.
+Habilitar esta opción mostrará la ventana del navegador en tu pantalla durante la búsqueda. Esto está destinado solo para depuración y puede ralentizar el proceso de information organization.
 
 :::
 
@@ -81,7 +81,7 @@ Habilitar esta opción mostrará la ventana del navegador en tu pantalla durante
 
 #### Cuenta de Google
 
-Selecciona una cuenta de Google para usar sus cookies en scraping autenticado:
+Selecciona una cuenta de Google para usar sus cookies en information organization autenticado:
 
 - **Beneficios**:
   - Mayor tasa de éxito
@@ -102,13 +102,13 @@ Selecciona uno o más proxies para rotar durante la búsqueda:
 - **Beneficios**:
   - Distribuye las solicitudes entre múltiples IPs
   - Reduce el riesgo de detección
-  - Esencial para scraping a gran escala
+  - Esencial para information organization a gran escala
 - Selecciona múltiples proxies para rotación automática por solicitud
 
 ### Paso 4: Inicia la búsqueda
 
 1. Haz clic en **Iniciar búsqueda** para comenzar
-2. Aparece una barra de progreso que muestra el estado del scraping en tiempo real
+2. Aparece una barra de progreso que muestra el estado del information organization en tiempo real
 3. La búsqueda se ejecuta de forma asíncrona; puedes seguir usando otras funciones
 4. Se pueden ejecutar hasta **3 búsquedas simultáneas** al mismo tiempo
 
@@ -237,12 +237,12 @@ La pestaña **Historial** almacena todas tus búsquedas pasadas de Google Maps.
 
 - **Búsqueda única**: No se requiere proxy
 - **Múltiples búsquedas en secuencia**: Usa 1–2 proxies
-- **Scraping a gran escala**: Usa 3 o más proxies con rotación
+- **Information Organization a gran escala**: Usa 3 o más proxies con rotación
 
 ### 5. Uso de cuentas de Google
 
 - **Recomendado** para búsquedas que devuelven más de 30 resultados
-- **Esencial** al hacer scraping en áreas populares con muchos negocios
+- **Esencial** al hacer information organization en áreas populares con muchos negocios
 - Las cuentas con uso activo de Google Maps proporcionan mejores resultados
 
 ## Solución de problemas
@@ -278,7 +278,7 @@ La pestaña **Historial** almacena todas tus búsquedas pasadas de Google Maps.
 **Posibles causas:**
 - La búsqueda se canceló antes de completarse
 - Algunas fichas de negocios carecían de los datos requeridos
-- Se produjo limitación de tasa durante el scraping
+- Se produjo limitación de tasa durante el information organization
 
 **Soluciones:**
 1. Deja que la búsqueda se complete completamente
@@ -287,7 +287,7 @@ La pestaña **Historial** almacena todas tus búsquedas pasadas de Google Maps.
 
 ## Integración con otras funciones
 
-Los resultados del Google Maps Scraper se pueden usar con:
+Los resultados del Local Business Finder se pueden usar con:
 
 - **[Extracción de contactos](./contact-extraction)** — Extrae correos electrónicos de los sitios web de negocios encontrados en los resultados
 - **[Páginas Amarillas](./yellow-pages)** — Referencia cruzada con listados de directorios para datos más completos
@@ -296,6 +296,6 @@ Los resultados del Google Maps Scraper se pueden usar con:
 
 ## Próximos pasos
 
-- [Conoce el Yandex Maps Scraper](./yandex-maps-scraper)
+- [Conoce el Local Business Finder](./yandex-maps-scraper)
 - [Configura la extracción de correos electrónicos](./contact-extraction)
 - [Crea campañas de correo electrónico con IA](../ai-outreach/ai-email-writer)

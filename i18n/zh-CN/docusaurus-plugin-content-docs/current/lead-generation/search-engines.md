@@ -2,19 +2,25 @@
 id: search-engines
 title: 搜索引擎抓取
 sidebar_label: 搜索引擎
-description: 了解如何从 Google、Bing 和 Yandex 抓取搜索结果，通过 AI 驱动的分析来生成潜在客户。
+description: 了解如何从 Google 和 Yandex 抓取搜索结果，通过 AI 驱动的分析来生成潜在客户。
 ---
 
 # 搜索引擎抓取
 
 aiFetchly 的多引擎搜索抓取功能允许您同时从多个搜索引擎收集潜在客户。自动从搜索结果中提取企业信息、URL 和联系方式。借助 AI 分析功能，您可以对潜在客户进行评分、行业分类并提取联系信息——全部从搜索结果中完成。
 
+
+:::info 公开网页使用说明
+
+本功能仅用于公开网页信息的自动化结构化整理。请确保您的市场洞察检索行为符合目标网站的 Robots 协议和使用条款。
+
+:::
+
 ## 支持的搜索引擎
 
 | 引擎 | 最佳用途 | 是否需要账号 | 本地浏览器 |
 |--------|----------|------------------|---------------|
 | **Google** | 通用搜索，全球覆盖 | 推荐 | 可选 |
-| **Bing** | 微软生态系统，美国市场 | 可选 | 可选 |
 | **Yandex** | 俄罗斯市场，西里尔文内容 | 推荐 | **必需** |
 
 :::info Yandex 要求
@@ -56,7 +62,6 @@ Yandex 抓取需要**本地浏览器集成**才能正常运行。在创建 Yande
 
 从下拉菜单中选择搜索引擎：
 - Google（默认）
-- Bing
 - Yandex
 
 #### 页码
@@ -150,7 +155,6 @@ Yandex 抓取需要**本地浏览器集成**才能正常运行。在创建 Yande
 **建议：**
 - **Google**：大规模抓取时使用账号
 - **Yandex**：使用账号以获得更好的访问权限
-- **Bing**：可选，不那么关键
 
 ### 第 4 步：执行或保存
 
@@ -180,7 +184,7 @@ Yandex 抓取需要**本地浏览器集成**才能正常运行。在创建 Yande
 |--------|-------------|
 | **ID** | 唯一任务标识符 |
 | **Keywords** | 搜索中使用的关键词 |
-| **Search Engine** | 使用的引擎（Google、Bing 等） |
+| **Search Engine** | 使用的引擎（Google、Yandex） |
 | **Status** | Not Start、Processing、Complete、Error |
 | **Record Time** | 创建日期和时间 |
 | **Actions** | Run、Edit、View Results、Kill Process、Retry、Download Logs |
@@ -218,7 +222,7 @@ Yandex 抓取需要**本地浏览器集成**才能正常运行。在创建 Yande
 | **Customer Industry** | AI 分类的行业（如已分析） |
 | **Probability** | AI 潜在客户质量评分 0-100%（如已分析） |
 | **Analysis Status** | 分析完成状态（pending/analyzing/completed/failed） |
-| **Contact Extraction** | 联系信息提取状态 |
+| **Contact Profile Insights** | 联系信息提取状态 |
 | **Email** | 提取的电子邮件地址（如已提取） |
 | **Phone** | 提取的电话号码（如已提取） |
 | **Address** | 提取的物理地址（如已提取） |
@@ -239,7 +243,7 @@ Yandex 抓取需要**本地浏览器集成**才能正常运行。在创建 Yande
 - 使用复选框选择多个结果
 - **AI Analyze**：分析选定结果的潜在客户评分和行业分类
 - **AI Extract Contact Info**：从选定 URL 提取联系信息（电子邮件、电话、地址）
-- **Extract Emails**：使用选定的 URL 跳转到电子邮件提取功能
+- **Open in Contact Profile Insights**：使用选定的 URL 跳转到电子邮件提取功能
 - **Export**：将结果下载为 CSV（包含 AI 分析字段）
 
 ## AI 网站分析
@@ -322,7 +326,7 @@ AI 为每个分析结果生成以下内容：
 ### 第 1 步：选择结果
 
 1. 勾选包含要提取电子邮件的 URL 的结果旁边的复选框
-2. 点击 **Extract Emails** 按钮
+2. 点击 **Open in Contact Profile Insights** 按钮
 
 ### 第 2 步：配置提取
 
@@ -380,10 +384,6 @@ AI 为每个分析结果生成以下内容：
 - 启用 AI 恢复以实现稳健的错误处理
 - 遵守速率限制（从 1 个并发开始）
 
-**Bing：**
-- 比 Google 更宽松
-- 可以使用更高的并发
-- 适合以美国为重点的搜索
 
 **Yandex：**
 - **必须使用本地浏览器**

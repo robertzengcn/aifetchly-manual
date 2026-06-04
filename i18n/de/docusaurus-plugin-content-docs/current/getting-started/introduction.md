@@ -23,15 +23,14 @@ aiFetchly ist eine All-in-One-Marketing-Automatisierungsplattform für Unternehm
 
 ## Hauptfunktionen
 
-### 🔍 Multi-Suchmaschinen-Suche & Scraping
+### 🔍 Multi-Suchmaschinen-Suche & Information Organization
 
 Gleichzeitiges Suchen und Scrapen von Leads über mehrere Suchmaschinen:
 
 - **Google** - Die größte Suchmaschine der Welt
-- **Bing** - Microsofts Suchmaschine
 - **Yandex** - Beliebte russische Suchmaschine
 
-:::tip Gleichzeitiges Scraping
+:::tip Gleichzeitiges Information Organization
 
 Führen Sie mehrere Suchaufgaben gleichzeitig aus, um Ihre Lead-Generierungseffizienz zu maximieren.
 
@@ -86,7 +85,7 @@ Identität schützen und Operationen skalieren:
 - **Proxy-Verwaltung** - Mehrere Proxys hinzufügen und verwalten
 - **Gesundheitsprüfung** - Proxy-Leistung vor der Nutzung überprüfen
 - **Massenimport** - Proxy-Listen massenhaft importieren
-- **Integration** - Proxys mit allen Scraping- und Extraktionsfunktionen verwenden
+- **Integration** - Proxys mit allen Information Organization- und Extraktionsfunktionen verwenden
 
 ## Systemanforderungen
 
@@ -113,7 +112,7 @@ Alle in diesem Handbuch beschriebenen Funktionen sind derzeit für alle Benutzer
 ## Nächste Schritte
 
 - [aiFetchly installieren](./installation) auf Ihrem Computer
-- [Proxys konfigurieren](./proxy-setup) für sicheres Scraping
+- [Proxys konfigurieren](./proxy-setup) für sicheres Information Organization
 - [Lead-Generierung kennenlernen](../lead-generation/search-engines)
 - [Wissensbibliothek einrichten](../ai-outreach/knowledge-library)
 - [Erste E-Mail-Kampagne starten](../lead-generation/batch-email-sending)

@@ -6,7 +6,7 @@
     "message": "すべての主要な検索エンジンでリードを発見"
   },
   "homepage.feature1.description": {
-    "message": "Google、Bing、Yandex を同時に_bulk_キーワードで検索。AI が自動的に関連キーワードを生成し、リアルタイムでスクレイピングエラーから回復するため、リードを見逃すことはありません。"
+    "message": "Google、Yandex を同時に_bulk_キーワードで検索。AI が自動的に関連キーワードを生成し、リアルタイムでスクレイピングエラーから回復するため、リードを見逃すことはありません。"
   },
   "homepage.feature2.title": {
     "message": "AI の精度で連絡先データを抽出"

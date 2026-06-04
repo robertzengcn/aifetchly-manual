@@ -37,7 +37,7 @@ Vorlagen sind das Fundament Ihrer E-Mail-Kampagnen. Sie enthalten:
 
 ### Schritt 1: Zum E-Mail-Marketing navigieren
 
-1. Klicken Sie auf **Email Marketing** im linken Navigationsmenü
+1. Klicken Sie auf **Outreach Campaign** im linken Navigationsmenü
 2. Wählen Sie **Templates** aus dem Untermenü
 3. Klicken Sie auf **Create New Template**
 
@@ -144,7 +144,7 @@ Wenn der RAG-Kontext aktiviert ist, greift die KI automatisch auf Ihre Wissensbi
 
 ### Vorlagenliste
 
-Navigieren Sie zu **Email Marketing** → **Templates**, um alle Vorlagen zu sehen.
+Navigieren Sie zu **Outreach Campaign** → **Templates**, um alle Vorlagen zu sehen.
 
 **Vorlageninformationen:**
 - Titel
