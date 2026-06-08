@@ -2,7 +2,7 @@
 id: search-engines
 title: Suchmaschinen-Information Organization
 sidebar_label: Suchmaschinen
-description: Erfahren Sie, wie Sie Suchergebnisse von Google, Yandex und Yandex extrahieren, um Leads mit KI-gestützter Analyse zu generieren.
+description: Erfahren Sie, wie Sie Suchergebnisse von Google, Bing und Yandex extrahieren, um Leads mit KI-gestützter Analyse zu generieren.
 ---
 
 # Suchmaschinen-Information Organization
@@ -21,6 +21,7 @@ Diese Funktion dient nur zur strukturierten Organisation öffentlicher Webinform
 | Suchmaschine | Am besten für | Konto erforderlich | Lokaler Browser |
 |--------|----------|------------------|---------------|
 | **Google** | Allgemeine Suchen, globale Reichweite | Empfohlen | Optional |
+| **Bing** | Allgemeine Suchen, Microsoft Search-Abdeckung | Empfohlen | Optional |
 | **Yandex** | Russischer Markt, kyrillische Inhalte | Empfohlen | **Erforderlich** |
 
 :::info Yandex-Anforderung
@@ -62,6 +63,7 @@ Beginnen Sie mit 5-10 Seed-Schlüsselwörtern und nutzen Sie dann die KI-Generie
 
 Wählen Sie die Suchmaschine aus dem Dropdown:
 - Google (Standard)
+- Bing
 - Yandex
 
 #### Seitennummer
@@ -115,7 +117,7 @@ Aktivieren Sie lokales Browser-Information Organization für menschenähnlichere
 1. **Lokaler Browser** umschalten, um zu aktivieren
 2. Wählen Sie Ihren Chrome-Browser aus der Liste
 3. **Erforderlich für**: Yandex-Information Organization
-4. **Empfohlen für**: Google im großen Maßstab
+4. **Empfohlen für**: Google und Bing im großen Maßstab
 
 **Vorteile:**
 - Niedrigere Erkennungsraten
@@ -139,7 +141,7 @@ Schalten Sie **KI-Wiederherstellung aktivieren** um, um der KI zu ermöglichen, 
 
 :::tip Wann KI-Wiederherstellung verwenden
 
-Aktivieren Sie die KI-Wiederherstellung beim Information Organization von Suchmaschinen mit starkem Anti-Bot-Schutz (wie Google) oder bei großen Aufgaben, bei denen gelegentliche Fehler erwartet werden.
+Aktivieren Sie die KI-Wiederherstellung beim Information Organization von Suchmaschinen mit starkem Anti-Bot-Schutz (wie Google oder Bing) oder bei großen Aufgaben, bei denen gelegentliche Fehler erwartet werden.
 
 :::
 
@@ -154,6 +156,7 @@ Verwenden Sie authentifizierte Konten für bessere Erfolgsraten:
 
 **Empfehlungen:**
 - **Google**: Konten für groß angelegtes Information Organization verwenden
+- **Bing**: Konten für groß angelegtes Information Organization verwenden
 - **Yandex**: Konten für besseren Zugang verwenden
 
 ### Schritt 4: Ausführen oder Speichern
@@ -184,7 +187,7 @@ Navigieren Sie zu **Suche** → **Ergebnisliste**, um alle Ihre Suchaufträge zu
 |--------|-------------|
 | **ID** | Eindeutige Auftragskennung |
 | **Schlüsselwörter** | Für die Suche verwendete Schlüsselwörter |
-| **Suchmaschine** | Verwendete Suchmaschine (Google, Yandex usw.) |
+| **Suchmaschine** | Verwendete Suchmaschine (Google, Bing, Yandex) |
 | **Status** | Nicht gestartet, In Bearbeitung, Abgeschlossen, Fehler |
 | **Erstellungszeit** | Datum und Uhrzeit der Erstellung |
 | **Aktionen** | Ausführen, Bearbeiten, Ergebnisse anzeigen, Prozess beenden, Wiederholen, Protokolle herunterladen |
@@ -384,6 +387,11 @@ Wenn ein Auftrag fehlschlägt:
 - KI-Wiederherstellung für robuste Fehlerbehandlung aktivieren
 - Ratenlimits beachten (mit 1 gleichzeitigen starten)
 
+**Bing:**
+- Authentifizierte Konten für große Aufgaben verwenden
+- Lokalen Browser beim Skalieren aktivieren
+- KI-Wiederherstellung für robuste Fehlerbehandlung aktivieren
+- Ratenlimits beachten (mit 1 gleichzeitigen starten)
 
 **Yandex:**
 - **Lokalen Browser verwenden (zwingend)**

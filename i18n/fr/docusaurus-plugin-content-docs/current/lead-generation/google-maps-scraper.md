@@ -1,38 +1,53 @@
 ---
-id: google-maps-scraper
+id: local-business-finder
 title: Local Business Finder
 sidebar_label: Local Business Finder
-description: Extrayez les informations commerciales de Google Maps par mot-clé et emplacement avec le Local Business Finder d'aiFetchly.
+description: Extrayez les informations commerciales de Google Maps et Yandex Maps par mot-clé et emplacement avec le Local Business Finder d'aiFetchly.
 ---
 
 # Local Business Finder
 
-Le Local Business Finder d'aiFetchly vous permet de rechercher des entreprises locales sur Google Maps par mot-clé et emplacement. Collectez des données commerciales complètes, y compris les noms, catégories, notes, avis, adresses, numéros de téléphone et URL de sites web — le tout à partir des résultats de recherche Google Maps.
+Le Local Business Finder d'aiFetchly vous permet de rechercher des entreprises locales en utilisant deux sources de données : **Google Maps** (couverture mondiale) et **Yandex Maps** (idéal pour les marchés russes et de la CEI). Collectez des données commerciales complètes, y compris les noms, catégories, notes, avis, adresses, numéros de téléphone et URL de sites web.
 
 ## Présentation
 
 Le Local Business Finder offre une interface simplifiée pour l'profile insights de données d'entreprises locales :
 
-1. **Entrez un mot-clé** (par exemple, « dentiste », « restaurant italien »)
-2. **Entrez un emplacement** (par exemple, « Paris », « Lyon », « 75001 »)
-3. **Configurez les options** (nombre maximum de résultats, inclusion du site web, avis, etc.)
-4. **Lancez la recherche** et suivez la progression en temps réel
-5. **Exportez les résultats** en CSV ou JSON
+1. **Choisissez une source de données** — Google Maps ou Yandex Maps
+2. **Entrez un mot-clé** (par exemple, « dentiste », « restaurant italien »)
+3. **Entrez un emplacement** (par exemple, « Paris », « Moscou », « 75001 »)
+4. **Configurez les options** (nombre maximum de résultats, inclusion du site web, avis, etc.)
+5. **Lancez la recherche** et suivez la progression en temps réel
+6. **Exportez les résultats** en CSV, JSON ou copiez dans le presse-papiers
 
-:::tip Idéal pour
+:::tip Choisir une source de données
 
-Le Local Business Finder est idéal pour trouver des entreprises locales avec des données structurées, y compris des adresses vérifiées, des numéros de téléphone, des notes et des horaires d'ouverture — des informations plus fiables que les résultats de recherche web généraux.
+- **Google Maps** — Idéal pour les marchés mondiaux et les pays occidentaux. Couverture mondiale supérieure.
+- **Yandex Maps** — Essentiel pour la Russie, les pays de la CEI (Kazakhstan, Biélorussie) et la Turquie. Prend en charge la personnalisation de la langue et de la région.
+
+Pour une couverture complète d'une région, effectuez des recherches sur les deux sources de données, puis recoupez et dédupliquez les résultats.
 
 :::
 
 ## Accéder au Local Business Finder
 
-1. Cliquez sur **Google Maps** dans le menu de navigation de gauche
+1. Cliquez sur **Local Business Finder** dans le menu de navigation de gauche
 2. Le assistant s'ouvre avec deux onglets : **Recherche** et **Historique**
 
 ## Effectuer une recherche
 
-### Étape 1 : Saisir les critères de recherche
+### Étape 1 : Choisir la source de données
+
+Sélectionnez votre source de données préférée en haut du formulaire de recherche :
+
+| Caractéristique | Google Maps | Yandex Maps |
+|-----------------|-------------|-------------|
+| **Idéal pour** | Marchés mondiaux, pays occidentaux | Russie, CEI, Turquie |
+| **Prise en charge des langues** | Multilingue (automatique) | Langue/région configurable |
+| **Couverture des entreprises** | Meilleure au niveau mondial | Meilleure en Russie/CEI |
+| **Type de compte** | Compte Google | Compte Yandex |
+
+### Étape 2 : Saisir les critères de recherche
 
 #### Mot-clé commercial (obligatoire)
 
@@ -40,21 +55,28 @@ Entrez un type ou un nom d'entreprise à rechercher :
 
 - **Exemples** : `dentiste`, `restaurant italien`, `plombier`, `agence marketing`
 - **Conseil** : Utilisez des types d'entreprise spécifiques pour des résultats plus ciblés
+- **Conseil Yandex** : Les mots-clés fonctionnent mieux dans la langue locale (ex. utilisez des mots-clés russes pour les emplacements russes)
 
 #### Emplacement (obligatoire)
 
 Entrez une ville, une adresse ou un code postal :
 
-- **Exemples** : `Paris`, `Lyon`, `75001`, `Marseille, France`
+- **Exemples** : `Paris`, `Londres`, `75001`, `Moscou`, `Saint-Pétersbourg`, `Almaty, Kazakhstan`
 - **Conseil** : Des emplacements plus précis donnent des résultats plus pertinents
 
-### Étape 2 : Configurer les options de recherche
+### Étape 3 : Configurer les options de recherche
 
 #### Nombre maximum de résultats
 
 - **Plage** : 1 à 50 résultats
 - **Par défaut** : 20 résultats
 - Ajustez le curseur pour contrôler le nombre d'entreprises à extraire
+
+:::info Plafond de résultats
+
+Le nombre maximum de résultats est plafonné à une limite sûre pour garantir une extraction fiable. La plage du curseur de 1 à 50 est la plage configurable par l'utilisateur.
+
+:::
 
 #### Inclure le site web
 
@@ -77,21 +99,39 @@ L'activation de cette option affichera la fenêtre du navigateur sur votre écra
 
 :::
 
-### Étape 3 : Paramètres de compte et de proxy (facultatif)
+### Étape 4 : Paramètres de langue et de région (Yandex Maps uniquement)
 
-#### Compte Google
+Ces paramètres sont spécifiques à Yandex Maps et permettent de personnaliser le contexte de recherche.
 
-Sélectionnez un compte Google pour utiliser ses cookies lors de l'profile insights authentifiée :
+#### Langue
+
+- Définissez le code de langue de l'interface Yandex Maps
+- **Exemples** : `ru` (russe), `en` (anglais), `tr` (turc)
+- Laissez vide pour utiliser la langue par défaut
+- **Conseil** : Utilisez la langue locale pour de meilleurs résultats de recherche dans cette région
+
+#### Région
+
+- Définissez le code de région pour le contexte de recherche
+- **Exemples** : `ru` (Russie), `kz` (Kazakhstan), `by` (Biélorussie)
+- Laissez vide pour utiliser la région par défaut
+- **Conseil** : Définir la région correcte améliore la précision des résultats
+
+### Étape 5 : Paramètres de compte et de proxy (facultatif)
+
+#### Compte Google / Compte Yandex
+
+Sélectionnez un compte pour utiliser ses cookies lors de l'profile insights authentifiée :
 
 - **Avantages** :
   - Taux de réussite plus élevé
   - Accès à des informations commerciales plus détaillées
   - Risque réduit d'être bloqué
-- Seuls les comptes Google apparaissent dans le menu déroulant
+- Google Maps affiche uniquement les comptes Google ; Yandex Maps affiche uniquement les comptes Yandex
 
 :::tip Ajouter des comptes
 
-Pour ajouter des comptes Google, accédez à **Paramètres** et configurez vos comptes sociaux. Consultez les [Paramètres système](../settings/system-settings) pour plus de détails.
+Pour ajouter des comptes, accédez à **Paramètres** et configurez vos comptes sociaux. Consultez les [Paramètres système](../settings/system-settings) pour plus de détails.
 
 :::
 
@@ -105,7 +145,13 @@ Sélectionnez un ou plusieurs proxys pour alterner pendant la recherche :
   - Essentiel pour l'profile insights à grande échelle
 - Sélectionnez plusieurs proxys pour une rotation automatique par requête
 
-### Étape 4 : Lancer la recherche
+:::warning Recommandation de proxy
+
+Pour Yandex Maps, l'utilisation de proxys situés dans la région cible (ex. proxys russes pour les recherches à Moscou) améliore considérablement les taux de réussite.
+
+:::
+
+### Étape 6 : Lancer la recherche
 
 1. Cliquez sur **Lancer la recherche** pour commencer
 2. Une barre de progression apparaît affichant l'état de l'profile insights en temps réel
@@ -114,7 +160,7 @@ Sélectionnez un ou plusieurs proxys pour alterner pendant la recherche :
 
 :::info Recherches simultanées
 
-Vous pouvez exécuter jusqu'à 3 recherches Google Maps en même temps. Si vous tentez d'en lancer une 4e, vous serez invité à attendre la fin de l'une d'entre elles.
+Vous pouvez exécuter jusqu'à 3 recherches en même temps. Si vous tentez d'en lancer une 4e, vous serez invité à attendre la fin de l'une d'entre elles.
 
 :::
 
@@ -133,7 +179,7 @@ Une fois une recherche terminée, les résultats s'affichent dans un tableau de 
 
 | Colonne | Description |
 |---------|-------------|
-| **Nom** | Nom de l'entreprise (lien cliquable vers Google Maps si disponible) |
+| **Nom** | Nom de l'entreprise (lien cliquable vers Maps si disponible) |
 | **Catégorie** | Catégorie de l'entreprise (par exemple, « Restaurant », « Dentiste ») |
 | **Note** | Note en étoiles (avec icône d'étoile) |
 | **Avis** | Nombre d'avis |
@@ -143,7 +189,7 @@ Une fois une recherche terminée, les résultats s'affichent dans un tableau de 
 
 :::tip Cliquer sur les noms d'entreprises
 
-Les noms d'entreprises avec un lien Google Maps sont cliquables — ils ouvrent la fiche de l'entreprise sur Google Maps dans un nouvel onglet.
+Les noms d'entreprises avec un lien Maps sont cliquables — ils ouvrent la fiche de l'entreprise dans un nouvel onglet.
 
 :::
 
@@ -160,16 +206,23 @@ L'en-tête affiche :
 Si aucune entreprise n'est trouvée, un message s'affiche indiquant qu'aucun résultat ne correspond à vos critères de recherche. Essayez de :
 
 - Utiliser des mots-clés plus larges
+- Utiliser des mots-clés dans la langue locale (pour Yandex Maps)
 - Élargir la zone de localisation
 - Augmenter le paramètre de nombre maximum de résultats
 
 ## Exporter les résultats
 
+### Tout copier
+
+1. Cliquez sur **Tout copier** dans l'en-tête des résultats
+2. Tous les résultats sont copiés dans votre presse-papiers au format JSON
+3. Collez dans n'importe quel éditeur de texte ou tableur
+
 ### Exporter en CSV
 
 1. Cliquez sur **Exporter CSV** dans l'en-tête des résultats
 2. Un fichier CSV se télécharge automatiquement
-3. Le nom du fichier inclut le mot-clé et l'emplacement (par exemple, `google-maps-dentiste-Paris.csv`)
+3. Le nom du fichier inclut le mot-clé et l'emplacement (par exemple, `maps-dentiste-Paris.csv`)
 
 **Colonnes CSV incluses :**
 Nom, Catégorie, Note, Nombre d'avis, Adresse, Téléphone, Site web, Horaires, URL Maps
@@ -182,7 +235,7 @@ Nom, Catégorie, Note, Nombre d'avis, Adresse, Téléphone, Site web, Horaires, 
 
 ## Historique des recherches
 
-L'onglet **Historique** conserve toutes vos recherches Google Maps passées.
+L'onglet **Historique** conserve toutes vos recherches passées.
 
 ### Consulter l'historique
 
@@ -217,13 +270,17 @@ L'onglet **Historique** conserve toutes vos recherches Google Maps passées.
 - **Essayez des variantes** : Recherchez plusieurs termes pour une couverture exhaustive
   - `dentiste` et `cabinet dentaire`
   - `plombier` et `service de plomberie`
+- **Utilisez la langue locale pour Yandex** : Mots-clés en russe pour les emplacements russes
+  - ✅ `стоматолог` (dentiste en russe) pour Moscou
+  - ✅ `dentiste` pour les zones francophones
 
 ### 2. Ciblage géographique
 
 - **Utilisez des emplacements précis** pour de meilleurs résultats :
   - ✅ `Manhattan, New York`
-  - ✅ `90210`
-  - ❌ `États-Unis`
+  - ✅ `Moscou`
+  - ✅ `75001`
+  - ❌ `France` ou `Russie` (trop large)
 - **Recherchez plusieurs zones** pour couvrir une région plus large :
   - Exécutez des recherches distinctes pour chaque quartier ou arrondissement
 
@@ -233,17 +290,24 @@ L'onglet **Historique** conserve toutes vos recherches Google Maps passées.
 - **Recherche standard** : 20 résultats (par défaut)
 - **Exhaustif** : 50 résultats pour une couverture complète
 
-### 4. Utilisation des proxys
+### 4. Langue et région (Yandex Maps)
+
+- **Définissez la langue sur `ru`** pour les régions russophones
+- **Définissez la région pour qu'elle corresponde au pays cible** pour de meilleurs résultats
+- **Laissez vide** si vous n'êtes pas sûr — Yandex utilisera les valeurs par défaut en fonction de l'emplacement
+
+### 5. Utilisation des proxys
 
 - **Recherche unique** : Proxy non requis
 - **Recherches multiples en séquence** : Utilisez 1 à 2 proxys
 - **Profile Insights à grande échelle** : Utilisez 3 proxys ou plus avec rotation
+- **Yandex Maps** : Utilisez des proxys locaux (proxys russes pour les recherches en Russie)
 
-### 5. Utilisation des comptes Google
+### 6. Utilisation des comptes
 
-- **Recommandé** pour les recherches renvoyant plus de 30 résultats
-- **Essentiel** lors de l'profile insights dans des zones populaires avec de nombreuses entreprises
-- Les comptes avec une utilisation active de Google Maps fournissent de meilleurs résultats
+- **Compte Google** : Recommandé pour les recherches renvoyant plus de 30 résultats ; essentiel dans les zones populaires avec de nombreuses entreprises
+- **Compte Yandex** : Recommandé pour toutes les recherches Yandex Maps ; essentiel pour les villes russes avec de nombreuses entreprises
+- Les comptes avec une utilisation active fournissent de meilleurs résultats
 
 ## Dépannage
 
@@ -251,27 +315,29 @@ L'onglet **Historique** conserve toutes vos recherches Google Maps passées.
 
 **Causes possibles :**
 - Problèmes de connectivité réseau
-- Google Maps a bloqué la requête
+- Le service de Maps a bloqué la requête
 - Mot-clé ou emplacement invalide
 
 **Solutions :**
 1. Vérifiez votre connexion Internet
 2. Essayez un mot-clé ou un emplacement différent
-3. Utilisez un compte Google pour un accès authentifié
-4. Activez les proxys pour la rotation d'adresses IP
+3. Utilisez un compte pour un accès authentifié
+4. Activez les proxys — de préférence avec des IP dans la région cible
 5. Réduisez le paramètre de nombre maximum de résultats
+6. (Yandex Maps) Essayez de définir les codes de langue et de région corrects
 
 ### Aucun résultat trouvé
 
 **Causes possibles :**
 - Le mot-clé ne correspond à aucune entreprise dans la zone
 - L'emplacement est trop spécifique ou trop vague
-- Google Maps a renvoyé des résultats vides
+- Paramètre de langue ou de région incorrect (Yandex Maps)
 
 **Solutions :**
-1. Essayez des mots-clés plus larges (par exemple, `restaurant` au lieu de `restaurant italien`)
+1. Essayez des mots-clés plus larges ou dans la langue locale
 2. Utilisez une ville plus grande ou une zone plus étendue
-3. Vérifiez manuellement sur Google Maps que le type d'entreprise existe dans la zone
+3. Vérifiez manuellement sur le service de Maps que le type d'entreprise existe dans la zone
+4. (Yandex Maps) Vérifiez vos paramètres de langue et de région
 
 ### Résultats partiels
 
@@ -289,13 +355,12 @@ L'onglet **Historique** conserve toutes vos recherches Google Maps passées.
 
 Les résultats du Local Business Finder peuvent être utilisés avec :
 
-- **[Profile Insights de contacts](./contact-extraction)** — Extrayez les e-mails des sites web d'entreprises trouvés dans les résultats
+- **[Profile Insights de contacts](./contact-extraction)** — Ouvrir dans le profile insights de contacts à partir des sites web d'entreprises trouvés dans les résultats
 - **[Pages Jaunes](./yellow-pages)** — Recoupez avec les annuaires pour des données plus complètes
 - **[Rédacteur d'e-mails IA](../ai-outreach/ai-email-writer)** — Créez des e-mails de prospection personnalisés en utilisant les données commerciales collectées
 - **[Envoi d'e-mails en lot](./batch-email-sending)** — Lancez des campagnes d'e-mails en utilisant les informations de contact extraites
 
 ## Prochaines étapes
 
-- [Découvrir le Local Business Finder](./yandex-maps-scraper)
-- [Configurer l'profile insights d'e-mails](./contact-extraction)
+- [Configurer le profile insights de contacts](./contact-extraction)
 - [Créer des campagnes d'e-mails alimentées par l'IA](../ai-outreach/ai-email-writer)

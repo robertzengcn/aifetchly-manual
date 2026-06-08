@@ -2,7 +2,7 @@
 id: search-engines
 title: Market Insight Explorer
 sidebar_label: Market Insight Explorer
-description: Aprende a extraer resultados de búsqueda de Google, Yandex y Yandex para generar leads con análisis impulsado por IA.
+description: Aprende a extraer resultados de búsqueda de Google, Bing y Yandex para generar leads con análisis impulsado por IA.
 ---
 
 # Extracción de motores de búsqueda
@@ -21,6 +21,7 @@ Esta función está destinada únicamente a organizar información web pública.
 | Motor | Ideal para | Cuenta requerida | Navegador local |
 |-------|------------|-------------------|-----------------|
 | **Google** | Búsquedas generales, alcance global | Recomendado | Opcional |
+| **Bing** | Búsquedas generales, cobertura de Microsoft Search | Recomendado | Opcional |
 | **Yandex** | Mercado ruso, contenido cirílico | Recomendado | **Requerido** |
 
 :::info Requisito de Yandex
@@ -62,6 +63,7 @@ Comienza con 5-10 palabras clave semilla, luego usa la generación por IA para a
 
 Selecciona el motor de búsqueda en el menú desplegable:
 - Google (predeterminado)
+- Bing
 - Yandex
 
 #### Número de página
@@ -115,7 +117,7 @@ Habilita la extracción con navegador local para un comportamiento más humano:
 1. Activa **Local Browser** para habilitar
 2. Selecciona tu navegador Chrome de la lista
 3. **Requerido para**: Extracción de Yandex
-4. **Recomendado para**: Google a gran escala
+4. **Recomendado para**: Google y Bing a gran escala
 
 **Beneficios:**
 - Menores tasas de detección
@@ -139,7 +141,7 @@ Activa **Enable AI Recovery** para permitir que la IA se recupere automáticamen
 
 :::tip Cuándo usar recuperación por IA
 
-Habilita la recuperación por IA al extraer de motores con fuerte protección anti-bot (como Google) o al ejecutar tareas a gran escala donde se esperan errores ocasionales.
+Habilita la recuperación por IA al extraer de motores con fuerte protección anti-bot (como Google o Bing) o al ejecutar tareas a gran escala donde se esperan errores ocasionales.
 
 :::
 
@@ -154,6 +156,7 @@ Usa cuentas autenticadas para mejores tasas de éxito:
 
 **Recomendaciones:**
 - **Google**: Usa cuentas para extracción a gran escala
+- **Bing**: Usa cuentas para extracción a gran escala
 - **Yandex**: Usa cuentas para mejor acceso
 
 ### Paso 4: Ejecutar o guardar
@@ -184,7 +187,7 @@ Navega a **Search** → **Result List** para ver todas tus tareas de búsqueda.
 |---------|-------------|
 | **ID** | Identificador único de la tarea |
 | **Keywords** | Palabras clave utilizadas en la búsqueda |
-| **Search Engine** | Motor utilizado (Google, Yandex) |
+| **Search Engine** | Motor utilizado (Google, Bing, Yandex) |
 | **Status** | Not Start, Processing, Complete, Error |
 | **Record Time** | Fecha y hora de creación |
 | **Actions** | Run, Edit, View Results, Kill Process, Retry, Download Logs |
@@ -384,6 +387,11 @@ Si una tarea falla:
 - Habilita la recuperación por IA para un manejo robusto de errores
 - Respeta los límites de velocidad (comienza con 1 concurrente)
 
+**Bing:**
+- Usa cuentas autenticadas para tareas grandes
+- Habilita el navegador local al escalar
+- Habilita la recuperación por IA para un manejo robusto de errores
+- Respeta los límites de velocidad (comienza con 1 concurrente)
 
 **Yandex:**
 - **Debe usar navegador local**

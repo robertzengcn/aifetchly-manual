@@ -30,8 +30,7 @@ const sidebars: SidebarsConfig = {
       collapsed: false,
       items: [
         "lead-generation/search-engines",
-        "lead-generation/google-maps-scraper",
-        "lead-generation/yandex-maps-scraper",
+        "lead-generation/local-business-finder",
         "lead-generation/yellow-pages",
         "lead-generation/contact-extraction",
         "lead-generation/batch-email-sending",

@@ -1,38 +1,53 @@
 ---
-id: google-maps-scraper
+id: local-business-finder
 title: Local Business Finder
 sidebar_label: Local Business Finder
-description: Extrae información comercial de Google Maps por palabra clave y ubicación con el Local Business Finder de aiFetchly.
+description: Extrae información comercial de Google Maps y Yandex Maps por palabra clave y ubicación con el Local Business Finder de aiFetchly.
 ---
 
 # Local Business Finder
 
-El Local Business Finder de aiFetchly te permite buscar negocios locales en Google Maps por palabra clave y ubicación. Recopila datos comerciales completos incluyendo nombres, categorías, calificaciones, reseñas, direcciones, números de teléfono y URLs de sitios web, todo directamente desde los resultados de búsqueda de Google Maps.
+El Local Business Finder de aiFetchly te permite buscar negocios locales usando dos fuentes de datos: **Google Maps** (cobertura global) e **Yandex Maps** (ideal para mercados de Rusia y la CEI). Recopila datos comerciales completos incluyendo nombres, categorías, calificaciones, reseñas, direcciones, números de teléfono y URLs de sitios web.
 
 ## Descripción general
 
 El Local Business Finder proporciona una interfaz optimizada para extraer datos de negocios locales:
 
-1. **Ingresa una palabra clave** (por ejemplo, "dentista", "restaurante italiano")
-2. **Ingresa una ubicación** (por ejemplo, "Nueva York", "Londres", "90210")
-3. **Configura las opciones** (resultados máximos, inclusión de sitio web, reseñas, etc.)
-4. **Inicia la búsqueda** y supervisa el progreso en tiempo real
-5. **Exporta los resultados** como CSV o JSON
+1. **Elige una fuente de datos** — Google Maps o Yandex Maps
+2. **Ingresa una palabra clave** (por ejemplo, "dentista", "restaurante italiano")
+3. **Ingresa una ubicación** (por ejemplo, "Nueva York", "Moscú", "90210")
+4. **Configura las opciones** (resultados máximos, inclusión de sitio web, reseñas, etc.)
+5. **Inicia la búsqueda** y supervisa el progreso en tiempo real
+6. **Exporta los resultados** como CSV, JSON o copia al portapapeles
 
-:::tip Mejor uso para
+:::tip Elección de la fuente de datos
 
-El Local Business Finder es ideal para encontrar negocios locales con datos estructurados que incluyen direcciones verificadas, números de teléfono, calificaciones y horarios de atención, información más confiable que los resultados de búsqueda web generales.
+- **Google Maps** — Mejor para mercados globales y países occidentales. Cobertura mundial superior.
+- **Yandex Maps** — Esencial para Rusia, países de la CEI (Kazajistán, Bielorrusia) y Turquía. Soporta personalización de idioma y región.
+
+Para una cobertura completa de una región, ejecuta búsquedas en ambas fuentes de datos y luego cruza y desduplica los resultados.
 
 :::
 
 ## Acceder al Local Business Finder
 
-1. Haz clic en **Google Maps** en el menú de navegación izquierdo
+1. Haz clic en **Local Business Finder** en el menú de navegación izquierdo
 2. El assistant se abre con dos pestañas: **Búsqueda** e **Historial**
 
 ## Ejecutar una búsqueda
 
-### Paso 1: Ingresa los criterios de búsqueda
+### Paso 1: Elige la fuente de datos
+
+Selecciona tu fuente de datos preferida en la parte superior del formulario de búsqueda:
+
+| Característica | Google Maps | Yandex Maps |
+|----------------|-------------|-------------|
+| **Mejor para** | Mercados globales, países occidentales | Rusia, CEI, Turquía |
+| **Soporte de idiomas** | Multiidioma (automático) | Idioma/región configurable |
+| **Cobertura de negocios** | Mejor a nivel global | Mejor en Rusia/CEI |
+| **Tipo de cuenta** | Cuenta de Google | Cuenta de Yandex |
+
+### Paso 2: Ingresa los criterios de búsqueda
 
 #### Palabra clave del negocio (obligatorio)
 
@@ -40,21 +55,28 @@ Ingresa un tipo o nombre de negocio para buscar:
 
 - **Ejemplos**: `dentista`, `restaurante italiano`, `plomero`, `agencia de marketing`
 - **Consejo**: Usa tipos de negocio específicos para obtener resultados más orientados
+- **Consejo para Yandex**: Las palabras clave funcionan mejor en el idioma local (ej. usa palabras clave en ruso para ubicaciones rusas)
 
 #### Ubicación (obligatoria)
 
 Ingresa una ciudad, dirección o código postal:
 
-- **Ejemplos**: `Nueva York`, `Londres`, `90210`, `París, Francia`
+- **Ejemplos**: `Nueva York`, `Londres`, `90210`, `Moscú`, `San Petersburgo`, `Almaty, Kazajistán`
 - **Consejo**: Las ubicaciones más específicas producen resultados más relevantes
 
-### Paso 2: Configura las opciones de búsqueda
+### Paso 3: Configura las opciones de búsqueda
 
 #### Resultados máximos
 
 - **Rango**: 1–50 resultados
 - **Predeterminado**: 20 resultados
 - Ajusta el control deslizante para controlar cuántos negocios extraer
+
+:::info Límite de resultados
+
+El número máximo de resultados tiene un límite seguro para garantizar una extracción confiable. El rango del control deslizante de 1–50 es el rango configurable por el usuario.
+
+:::
 
 #### Incluir sitio web
 
@@ -77,21 +99,39 @@ Habilitar esta opción mostrará la ventana del navegador en tu pantalla durante
 
 :::
 
-### Paso 3: Configuración de cuenta y proxy (opcional)
+### Paso 4: Configuración de idioma y región (solo Yandex Maps)
 
-#### Cuenta de Google
+Estos ajustes son específicos de Yandex Maps y ayudan a personalizar el contexto de búsqueda.
 
-Selecciona una cuenta de Google para usar sus cookies en information organization autenticado:
+#### Idioma
+
+- Establece el código de idioma de la interfaz de Yandex Maps
+- **Ejemplos**: `ru` (ruso), `en` (inglés), `tr` (turco)
+- Déjalo vacío para usar el idioma predeterminado
+- **Consejo**: Usa el idioma local para obtener mejores resultados de búsqueda en esa región
+
+#### Región
+
+- Establece el código de región para el contexto de búsqueda
+- **Ejemplos**: `ru` (Rusia), `kz` (Kazajistán), `by` (Bielorrusia)
+- Déjalo vacío para usar la región predeterminada
+- **Consejo**: Establecer la región correcta mejora la precisión de los resultados
+
+### Paso 5: Configuración de cuenta y proxy (opcional)
+
+#### Cuenta de Google / Cuenta de Yandex
+
+Selecciona una cuenta para usar sus cookies en information organization autenticado:
 
 - **Beneficios**:
   - Mayor tasa de éxito
   - Acceso a información comercial más detallada
   - Menor riesgo de ser bloqueado
-- Solo se muestran cuentas de Google en el menú desplegable
+- Google Maps solo muestra cuentas de Google; Yandex Maps solo muestra cuentas de Yandex
 
 :::tip Agregar cuentas
 
-Para agregar cuentas de Google, navega a **Configuración** y configura tus cuentas sociales. Consulta [Configuración del sistema](../settings/system-settings) para más detalles.
+Para agregar cuentas, navega a **Configuración** y configura tus cuentas sociales. Consulta [Configuración del sistema](../settings/system-settings) para más detalles.
 
 :::
 
@@ -105,7 +145,13 @@ Selecciona uno o más proxies para rotar durante la búsqueda:
   - Esencial para information organization a gran escala
 - Selecciona múltiples proxies para rotación automática por solicitud
 
-### Paso 4: Inicia la búsqueda
+:::warning Recomendación de proxy
+
+Para Yandex Maps, usar proxies ubicados en la región objetivo (ej. proxies rusos para búsquedas en Moscú) mejora significativamente las tasas de éxito.
+
+:::
+
+### Paso 6: Inicia la búsqueda
 
 1. Haz clic en **Iniciar búsqueda** para comenzar
 2. Aparece una barra de progreso que muestra el estado del information organization en tiempo real
@@ -114,7 +160,7 @@ Selecciona uno o más proxies para rotar durante la búsqueda:
 
 :::info Búsquedas simultáneas
 
-Puedes ejecutar hasta 3 búsquedas de Google Maps al mismo tiempo. Si intentas iniciar una cuarta, se te pedirá que esperes a que finalice una.
+Puedes ejecutar hasta 3 búsquedas al mismo tiempo. Si intentas iniciar una cuarta, se te pedirá que esperes a que finalice una.
 
 :::
 
@@ -133,7 +179,7 @@ Una vez completada la búsqueda, los resultados se muestran en una tabla de dato
 
 | Columna | Descripción |
 |---------|-------------|
-| **Nombre** | Nombre del negocio (enlace clickeable a Google Maps si está disponible) |
+| **Nombre** | Nombre del negocio (enlace clickeable a Maps si está disponible) |
 | **Categoría** | Categoría del negocio (por ejemplo, "Restaurante", "Dentista") |
 | **Calificación** | Calificación en estrellas (con ícono de estrella) |
 | **Reseñas** | Número de reseñas |
@@ -143,7 +189,7 @@ Una vez completada la búsqueda, los resultados se muestran en una tabla de dato
 
 :::tip Haz clic en los nombres de los negocios
 
-Los nombres de negocios con un enlace a Google Maps son clickeables; abren la ficha del negocio en Google Maps en una nueva pestaña.
+Los nombres de negocios con un enlace a Maps son clickeables; abren la ficha del negocio en una nueva pestaña.
 
 :::
 
@@ -160,16 +206,23 @@ El encabezado muestra:
 Si no se encuentran negocios, se muestra un mensaje indicando que no hay resultados para tus criterios de búsqueda. Prueba:
 
 - Usar palabras clave más amplias
+- Usar palabras clave en el idioma local (para Yandex Maps)
 - Ampliar el área de ubicación
 - Aumentar la configuración de resultados máximos
 
 ## Exportar resultados
 
+### Copiar todo
+
+1. Haz clic en **Copiar todo** en el encabezado de resultados
+2. Todos los resultados se copian al portapapeles como JSON
+3. Pega en cualquier editor de texto u hoja de cálculo
+
 ### Exportar como CSV
 
 1. Haz clic en **Exportar CSV** en el encabezado de resultados
 2. Se descarga automáticamente un archivo CSV
-3. El nombre del archivo incluye la palabra clave y la ubicación (por ejemplo, `google-maps-dentista-NuevaYork.csv`)
+3. El nombre del archivo incluye la palabra clave y la ubicación (por ejemplo, `maps-dentista-NuevaYork.csv`)
 
 **Las columnas CSV incluyen:**
 Nombre, Categoría, Calificación, Cantidad de reseñas, Dirección, Teléfono, Sitio web, Horario, URL de Maps
@@ -182,7 +235,7 @@ Nombre, Categoría, Calificación, Cantidad de reseñas, Dirección, Teléfono, 
 
 ## Historial de búsqueda
 
-La pestaña **Historial** almacena todas tus búsquedas pasadas de Google Maps.
+La pestaña **Historial** almacena todas tus búsquedas pasadas.
 
 ### Ver el historial
 
@@ -217,13 +270,17 @@ La pestaña **Historial** almacena todas tus búsquedas pasadas de Google Maps.
 - **Prueba variaciones**: Busca múltiples términos para una cobertura completa
   - `dentista` y `clínica dental`
   - `plomero` y `servicio de plomería`
+- **Usa el idioma local para Yandex**: Palabras clave en ruso para ubicaciones rusas
+  - ✅ `стоматолог` (dentista en ruso) para Moscú
+  - ✅ `dentista` para áreas en inglés
 
 ### 2. Segmentación por ubicación
 
 - **Usa ubicaciones específicas** para mejores resultados:
   - ✅ `Manhattan, Nueva York`
+  - ✅ `Moscú`
   - ✅ `90210`
-  - ❌ `EE.UU.`
+  - ❌ `EE.UU.` o `Rusia` (demasiado amplio)
 - **Busca múltiples áreas** para cubrir una región más amplia:
   - Ejecuta búsquedas separadas para cada vecindario o distrito
 
@@ -233,17 +290,24 @@ La pestaña **Historial** almacena todas tus búsquedas pasadas de Google Maps.
 - **Búsqueda estándar**: 20 resultados (predeterminado)
 - **Búsqueda exhaustiva**: 50 resultados para una cobertura completa
 
-### 4. Uso de proxies
+### 4. Idioma y región (Yandex Maps)
+
+- **Establece el idioma en `ru`** para regiones rusoparlantes
+- **Establece la región para que coincida con el país objetivo** para mejores resultados
+- **Déjalo vacío** si no estás seguro — Yandex usará los valores predeterminados según la ubicación
+
+### 5. Uso de proxies
 
 - **Búsqueda única**: No se requiere proxy
 - **Múltiples búsquedas en secuencia**: Usa 1–2 proxies
 - **Information Organization a gran escala**: Usa 3 o más proxies con rotación
+- **Yandex Maps**: Usa proxies locales (proxies rusos para búsquedas en Rusia)
 
-### 5. Uso de cuentas de Google
+### 6. Uso de cuentas
 
-- **Recomendado** para búsquedas que devuelven más de 30 resultados
-- **Esencial** al hacer information organization en áreas populares con muchos negocios
-- Las cuentas con uso activo de Google Maps proporcionan mejores resultados
+- **Cuenta de Google**: Recomendada para búsquedas que devuelven más de 30 resultados; esencial en áreas populares con muchos negocios
+- **Cuenta de Yandex**: Recomendada para todas las búsquedas en Yandex Maps; esencial para ciudades rusas con muchos negocios
+- Las cuentas con uso activo proporcionan mejores resultados
 
 ## Solución de problemas
 
@@ -251,27 +315,29 @@ La pestaña **Historial** almacena todas tus búsquedas pasadas de Google Maps.
 
 **Posibles causas:**
 - Problemas de conectividad de red
-- Google Maps bloqueó la solicitud
+- El servicio de Maps bloqueó la solicitud
 - Palabra clave o ubicación no válida
 
 **Soluciones:**
 1. Verifica tu conexión a Internet
 2. Prueba con una palabra clave o ubicación diferente
-3. Usa una cuenta de Google para acceso autenticado
-4. Habilita proxies para rotación de IP
+3. Usa una cuenta para acceso autenticado
+4. Habilita proxies — preferiblemente con IPs en la región objetivo
 5. Reduce la configuración de resultados máximos
+6. (Yandex Maps) Prueba configurando los códigos correctos de idioma y región
 
 ### No se encontraron resultados
 
 **Posibles causas:**
 - La palabra clave no coincide con ningún negocio en la zona
 - La ubicación es demasiado específica o demasiado vaga
-- Google Maps devolvió resultados vacíos
+- Configuración incorrecta de idioma o región (Yandex Maps)
 
 **Soluciones:**
-1. Prueba palabras clave más amplias (por ejemplo, `restaurante` en lugar de `restaurante italiano`)
+1. Prueba palabras clave más amplias o en el idioma local
 2. Usa una ciudad más grande o un área más amplia
-3. Verifica manualmente que el tipo de negocio exista en la zona en Google Maps
+3. Verifica manualmente que el tipo de negocio exista en la zona en el servicio de Maps
+4. (Yandex Maps) Verifica tu configuración de idioma y región
 
 ### Resultados parciales
 
@@ -289,13 +355,12 @@ La pestaña **Historial** almacena todas tus búsquedas pasadas de Google Maps.
 
 Los resultados del Local Business Finder se pueden usar con:
 
-- **[Extracción de contactos](./contact-extraction)** — Extrae correos electrónicos de los sitios web de negocios encontrados en los resultados
+- **[Extracción de contactos](./contact-extraction)** — Abrir en extracción de contactos desde los sitios web de negocios encontrados en los resultados
 - **[Páginas Amarillas](./yellow-pages)** — Referencia cruzada con listados de directorios para datos más completos
 - **[Redactor de correos con IA](../ai-outreach/ai-email-writer)** — Crea correos electrónicos de divulgación personalizados usando los datos comerciales recopilados
 - **[Envío de correos por lotes](./batch-email-sending)** — Lanza campañas de correo electrónico usando la información de contacto extraída
 
 ## Próximos pasos
 
-- [Conoce el Local Business Finder](./yandex-maps-scraper)
-- [Configura la extracción de correos electrónicos](./contact-extraction)
+- [Configura la extracción de contactos](./contact-extraction)
 - [Crea campañas de correo electrónico con IA](../ai-outreach/ai-email-writer)

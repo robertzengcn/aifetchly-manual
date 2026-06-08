@@ -2,7 +2,7 @@
 id: search-engines
 title: Market Insight Explorer
 sidebar_label: Market Insight Explorer
-description: Learn how to organize public search results from Google and Yandex to generate leads with AI-powered analysis.
+description: Learn how to organize public search results from Google, Bing, and Yandex to generate leads with AI-powered analysis.
 ---
 
 # Market Insight Explorer
@@ -21,6 +21,7 @@ This feature is intended only for automated organization of public web informati
 | Engine | Best For | Account Required | Local Browser |
 |--------|----------|------------------|---------------|
 | **Google** | General searches, global reach | Recommended | Optional |
+| **Bing** | General searches, Microsoft search coverage | Recommended | Optional |
 | **Yandex** | Russian market, Cyrillic content | Recommended | **Required** |
 
 :::info Yandex Requirement
@@ -62,6 +63,7 @@ Start with 5-10 seed keywords, then use AI generation to expand to 20-50 related
 
 Select the search engine from the dropdown:
 - Google (default)
+- Bing
 - Yandex
 
 #### Page Number
@@ -115,7 +117,7 @@ Enable local browser mode for more human-like behavior:
 1. Toggle **Local Browser** to enable
 2. Select your Chrome browser from the list
 3. **Required for**: Yandex market insight exploration
-4. **Recommended for**: Google at scale
+4. **Recommended for**: Google and Bing at scale
 
 **Benefits:**
 - Lower detection rates
@@ -139,7 +141,7 @@ Toggle **Enable AI Recovery** to let AI automatically recover from public source
 
 :::tip When to Use AI Recovery
 
-Enable AI Recovery when working with engines that have strong anti-bot protection, such as Google, or when running large-scale tasks where occasional errors are expected.
+Enable AI Recovery when working with engines that have strong anti-bot protection, such as Google or Bing, or when running large-scale tasks where occasional errors are expected.
 
 :::
 
@@ -154,6 +156,7 @@ Use authenticated accounts for better success rates:
 
 **Recommendations:**
 - **Google**: Use accounts for large-scale public information organization
+- **Bing**: Use accounts for large-scale public information organization
 - **Yandex**: Use accounts for better access
 
 ### Step 4: Execute or Save
@@ -184,7 +187,7 @@ Navigate to **Search** → **Result List** to see all your search tasks.
 |--------|-------------|
 | **ID** | Unique task identifier |
 | **Keywords** | Keywords used in the search |
-| **Search Engine** | Engine used (Google, Yandex) |
+| **Search Engine** | Engine used (Google, Bing, Yandex) |
 | **Status** | Not Start, Processing, Complete, Error |
 | **Record Time** | Date and time created |
 | **Actions** | Run, Edit, View Results, Kill Process, Retry, Download Logs |
@@ -384,6 +387,11 @@ If a task fails:
 - Enable AI Recovery for robust error handling
 - Respect rate limits (start with 1 concurrent)
 
+**Bing:**
+- Use authenticated accounts for large tasks
+- Enable local browser when scaling up
+- Enable AI Recovery for robust error handling
+- Respect rate limits (start with 1 concurrent)
 
 **Yandex:**
 - **Must use local browser**

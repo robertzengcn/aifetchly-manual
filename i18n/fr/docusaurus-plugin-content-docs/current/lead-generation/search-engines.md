@@ -2,7 +2,7 @@
 id: search-engines
 title: Information Organization des moteurs de recherche
 sidebar_label: Moteurs de recherche
-description: Apprenez à assistant les résultats de recherche de Google, Yandex et Yandex pour générer des prospects avec une analyse alimentée par l'IA.
+description: Apprenez à assistant les résultats de recherche de Google, Bing et Yandex pour générer des prospects avec une analyse alimentée par l'IA.
 ---
 
 # Information Organization des moteurs de recherche
@@ -21,6 +21,7 @@ Cette fonctionnalité sert uniquement à organiser des informations web publique
 | Moteur | Idéal pour | Compte requis | Navigateur local |
 |--------|----------|------------------|---------------|
 | **Google** | Recherches générales, portée mondiale | Recommandé | Facultatif |
+| **Bing** | Recherches générales, couverture Microsoft Search | Recommandé | Facultatif |
 | **Yandex** | Marché russe, contenu cyrillique | Recommandé | **Requis** |
 
 :::info Condition Yandex
@@ -62,6 +63,7 @@ Commencez avec 5 à 10 mots-clés de base, puis utilisez la génération par IA 
 
 Sélectionnez le moteur de recherche dans le menu déroulant :
 - Google (par défaut)
+- Bing
 - Yandex
 
 #### Numéro de page
@@ -115,7 +117,7 @@ Activez le information organization par navigateur local pour un comportement pl
 1. Activez **Local Browser**
 2. Sélectionnez votre navigateur Chrome dans la liste
 3. **Requis pour** : Le information organization Yandex
-4. **Recommandé pour** : Google à grande échelle
+4. **Recommandé pour** : Google et Bing à grande échelle
 
 **Avantages :**
 - Taux de détection plus faibles
@@ -139,7 +141,7 @@ Activez **Enable AI Recovery** pour permettre à l'IA de récupérer automatique
 
 :::tip Quand utiliser la récupération IA
 
-Activez la récupération IA lors du information organization de moteurs avec une forte protection anti-bot (comme Google) ou lors de l'exécution de tâches à grande échelle où des erreurs occasionnelles sont attendues.
+Activez la récupération IA lors du information organization de moteurs avec une forte protection anti-bot (comme Google ou Bing) ou lors de l'exécution de tâches à grande échelle où des erreurs occasionnelles sont attendues.
 
 :::
 
@@ -154,6 +156,7 @@ Utilisez des comptes authentifiés pour de meilleurs taux de réussite :
 
 **Recommandations :**
 - **Google** : Utilisez des comptes pour le information organization à grande échelle
+- **Bing** : Utilisez des comptes pour le information organization à grande échelle
 - **Yandex** : Utilisez des comptes pour un meilleur accès
 
 ### Étape 4 : Exécuter ou Enregistrer
@@ -184,7 +187,7 @@ Naviguez vers **Search** → **Result List** pour voir toutes vos tâches de rec
 |--------|-------------|
 | **ID** | Identifiant unique de la tâche |
 | **Keywords** | Mots-clés utilisés dans la recherche |
-| **Search Engine** | Moteur utilisé (Google, Yandex) |
+| **Search Engine** | Moteur utilisé (Google, Bing, Yandex) |
 | **Status** | Not Start, Processing, Complete, Error |
 | **Record Time** | Date et heure de création |
 | **Actions** | Run, Edit, View Results, Kill Process, Retry, Download Logs |
@@ -384,6 +387,11 @@ Si une tâche échoue :
 - Activez la récupération IA pour une gestion robuste des erreurs
 - Respectez les limites de débit (commencez avec 1 simultané)
 
+**Bing :**
+- Utilisez des comptes authentifiés pour les grandes tâches
+- Activez le navigateur local lors de la montée en charge
+- Activez la récupération IA pour une gestion robuste des erreurs
+- Respectez les limites de débit (commencez avec 1 simultané)
 
 **Yandex :**
 - **Doit utiliser le navigateur local**
