@@ -1,40 +1,42 @@
 ---
 id: contact-extraction
-title: Profile Insights de contacts
-sidebar_label: Profile Insights d'e-mails
-description: Extrayez des adresses e-mail en masse à partir de sites web et d'URL avec le puissant outil d'profile insights d'aiFetchly.
+title: Contact Profile Insights
+sidebar_label: Contact Profile Insights
+description: Créez des profils de contact à partir de sites web et d'URL avec découverte d'e-mails, enrichissement IA optionnel, contrôles de tâches et résultats exportables.
 ---
 
-# Profile Insights d'e-mails
+# Contact Profile Insights
 
-La fonctionnalité d'profile insights d'e-mails d'aiFetchly vous permet de collecter des adresses e-mail à grande échelle à partir de sites web. Extrayez des informations de contact à partir d'URL individuelles ou exploitez vos résultats de recherche existants pour une collecte d'e-mails ciblée.
+Contact Profile Insights d'aiFetchly crée des profils de contact structurés à partir de sites web à grande échelle. Utilisez-le pour collecter des e-mails publics depuis des URL individuelles ou des résultats de recherche existants, et enrichir éventuellement chaque profil avec des numéros de téléphone, adresses et liens sociaux détectés par l'IA.
 
-## Comprendre l'profile insights d'e-mails
+## Comprendre Contact Profile Insights
 
-L'profile insights d'e-mails fonctionne en :
+Contact Profile Insights fonctionne en :
 
 1. **Visitant chaque URL** que vous fournissez
 2. **Scannant le contenu de la page** pour détecter des modèles d'e-mails
 3. **Suivant les liens internes** (facultatif)
-4. **Compilant tous les e-mails découverts** dans une liste structurée
-5. **Dédoublonnant** automatiquement les résultats
+4. **Sélectionnant les meilleures pages candidates** pour l'enrichissement IA optionnel
+5. **Compilant les e-mails découverts et les champs enrichis** dans une liste structurée
+6. **Dédoublonnant** automatiquement les résultats
 
 :::info Cas d'utilisation
 
-L'profile insights d'e-mails est idéale pour :
+Contact Profile Insights est idéal pour :
 - Collecter des e-mails à partir de résultats de recherche
 - Construire des listes de contacts à partir d'annuaires professionnels
 - Rassembler des informations de contact à partir de listes de membres
 - Extraire des e-mails à partir de pages de ressources
+- Enrichir les profils avec téléphones, adresses et profils sociaux
 
 :::
 
-## Créer une tâche d'profile insights
+## Créer une tâche de profil de contact
 
-### Étape 1 : Accéder à l'profile insights d'e-mails
+### Étape 1 : Accéder à Contact Profile Insights
 
-1. Cliquez sur **Profile Insights d'e-mails** dans le menu de navigation de gauche
-2. Vous verrez la liste des tâches d'profile insights
+1. Cliquez sur **Contact Profile Insights** dans le menu de navigation de gauche
+2. Vous verrez la liste des tâches de profils de contact
 3. Cliquez sur le bouton **Créer une nouvelle tâche**
 
 ### Étape 2 : Choisir la méthode de saisie d'URL
@@ -75,12 +77,12 @@ https://another-site.com/about-us
 - Aucune saisie manuelle d'URL nécessaire
 - Utilise les URL précédemment explorées
 
-### Étape 3 : Configurer les paramètres d'profile insights
+### Étape 3 : Configurer les paramètres de profil
 
 #### Profondeur de page
 
 - **Par défaut** : 10 pages par URL
-- **Plage** : 1 à 1 000 pages
+- **Plage recommandée** : 1 à 1 000 pages
 - **Objectif** : Combien de pages explorer en profondeur pour chaque site web
 
 **Recommandations :**
@@ -98,7 +100,6 @@ Une profondeur de page plus élevée = un temps d'profile insights plus long. Co
 #### Concurrence
 
 - **Par défaut** : 1 processus simultané
-- **Plage** : 1 à 10 processus simultanés
 - **Objectif** : Combien d'URL traiter simultanément
 
 **Recommandations :**
@@ -133,14 +134,23 @@ Une profondeur de page plus élevée = un temps d'profile insights plus long. Co
 
 **Recommandation** : Gardez sur "Non" pour les tâches de production.
 
-### Étape 5 : Configuration du proxy (facultatif)
+### Étape 5 : Enrichissement IA (facultatif)
+
+Lorsque l'IA est activée pour votre compte, le formulaire affiche **Enable AI Enrichment**.
+
+- **Désactivé** : Extrait uniquement les e-mails.
+- **Activé** : Utilise l'IA pour enrichir chaque résultat avec téléphone, adresse et liens sociaux lorsque ces informations peuvent être trouvées.
+
+L'enrichissement IA est utile lorsque vous avez besoin de profils de contact plus complets pour la prospection ou la qualification. Il peut allonger le traitement, et certaines lignes peuvent afficher **Skipped** ou **Failed** si le contenu utile est insuffisant ou si la demande d'enrichissement ne peut pas aboutir.
+
+### Étape 6 : Configuration du proxy (facultatif)
 
 Ajoutez des proxys pour l'profile insights à grande échelle :
 
-1. Activez **Utiliser un proxy**
-2. Cliquez sur **Choisir un proxy**
-3. Sélectionnez un ou plusieurs proxys
-4. Cliquez sur **Confirmer**
+1. Cliquez sur **Choisir un proxy**
+2. Sélectionnez un ou plusieurs proxys
+3. Confirmez la sélection
+4. Les proxys sélectionnés apparaissent sous forme de pastilles dans le sélecteur
 
 :::tip Quand utiliser des proxys
 
@@ -152,11 +162,11 @@ Utilisez des proxys lorsque :
 
 :::
 
-### Étape 6 : Créer la tâche
+### Étape 7 : Créer ou mettre à jour la tâche
 
-Cliquez sur **Soumettre** pour créer votre tâche d'profile insights. Vous pouvez :
-- **Enregistrer uniquement** : Enregistrer la tâche sans l'exécuter
-- **Exécuter maintenant** : Démarrer l'profile insights immédiatement
+Cliquez sur **Soumettre** pour créer une nouvelle tâche de profils de contact. Les nouvelles tâches sont envoyées au processus backend et l'application revient à la liste des tâches lorsque la tâche démarre.
+
+Lorsque vous modifiez une tâche existante, le bouton devient **Save**. L'enregistrement met à jour la source des URL, la profondeur de page, la concurrence, le délai, les proxys, la visibilité du navigateur et l'enrichissement IA.
 
 ## Gestion des tâches d'profile insights
 
@@ -172,25 +182,27 @@ Accédez à **Profile Insights d'e-mails** pour voir toutes vos tâches.
 | **Type** | Saisie manuelle ou Résultats de recherche |
 | **Statut** | En attente, En cours, Terminé, Erreur |
 | **Heure d'enregistrement** | Moment de la création de la tâche |
-| **Actions** | Voir, Modifier, Supprimer, Télécharger les logs |
+| **Actions** | Voir, Arrêter, Démarrer/Redémarrer, Modifier, Supprimer, Télécharger les logs |
 
 ### Statut des tâches
 
 | Statut | Description | Action |
 |--------|-------------|--------|
 | **En attente** | Tâche créée mais non démarrée | Modifier, Supprimer |
-| **En cours** | Profile Insights des e-mails en cours | Suivre la progression |
-| **Terminé** | Terminé avec succès | Voir les résultats |
-| **Erreur** | Échoué avec des erreurs | Voir les logs, Réessayer |
+| **En cours** | Recherche active de canaux de contact publics | Arrêter la tâche ou suivre la progression |
+| **Terminé** | Terminé avec succès | Voir les résultats, modifier les paramètres ou redémarrer |
+| **Erreur** | Échoué avec des erreurs | Télécharger les logs, modifier, supprimer ou redémarrer |
 
 ### Actions sur les tâches
 
 - **Voir les résultats** (icône dossier) : Voir les e-mails extraits
-- **Modifier** (icône crayon) : Modifier les paramètres de la tâche (uniquement tâches en attente/en erreur)
-- **Supprimer** (icône corbeille) : Supprimer la tâche
+- **Arrêter** (icône stop) : Arrêter une tâche en cours
+- **Démarrer/Redémarrer** (icône lecture) : Démarrer une tâche qui n'est pas en cours
+- **Modifier** (icône crayon) : Modifier les paramètres de la tâche
+- **Supprimer** (icône corbeille) : Supprimer les tâches en attente ou en erreur
 - **Télécharger les logs** (icône téléchargement) : Obtenir les logs d'erreurs (uniquement tâches échouées)
 
-## Afficher les e-mails extraits
+## Afficher les résultats de profils de contact
 
 ### Étape 1 : Accéder aux résultats
 
@@ -204,37 +216,39 @@ Le tableau des résultats affiche :
 
 | Colonne | Description |
 |---------|-------------|
+| **ID** | Identifiant unique du résultat |
 | **URL** | Site web source |
-| **E-mails** | Adresses e-mail extraites (dépliables) |
-| **Nombre** | Nombre d'e-mails trouvés |
-| **Horodatage** | Moment de l'profile insights |
+| **Heure d'enregistrement** | Moment où le résultat a été collecté |
+| **Téléphone** | Téléphone enrichi par l'IA lorsqu'il est disponible |
+| **Adresse** | Adresse enrichie par l'IA lorsqu'elle est disponible |
+| **Liens sociaux** | Liens de profils sociaux enrichis par l'IA lorsqu'ils sont disponibles |
+| **Statut IA** | Statut d'enrichissement : Not enriched, Processing, Completed, Failed ou Skipped |
 
 ### Étape 3 : Développer les détails
 
 Cliquez sur une ligne pour la développer et voir :
 - Tous les e-mails trouvés sur cette URL
 - La liste d'e-mails peut être copiée
-- Voir les adresses e-mail individuelles
+- Téléphone, adresse et liens sociaux enrichis lorsqu'ils existent
 
 ### Étape 4 : Recherche et filtrage
 
 - **Recherche** : Filtrer par URL ou adresse e-mail
 - **Pagination** : Naviguer dans les grands ensembles de résultats
-- **Actualisation automatique** : Les résultats se mettent à jour toutes les 10 secondes pendant le traitement
+- **Export** : Télécharger les résultats de la tâche au format CSV
 
-## Exporter les e-mails extraits
+## Exporter les résultats de profils de contact
 
 ### Exporter en CSV
 
-1. Sélectionnez les résultats que vous souhaitez exporter (ou laissez vide pour tous)
-2. Cliquez sur **Exporter** → **CSV**
-3. Le fichier se télécharge avec tous les e-mails extraits
+1. Ouvrez les détails des résultats d'une tâche
+2. Cliquez sur **Export**
+3. aiFetchly exporte les résultats de la tâche en CSV et renvoie le chemin du fichier enregistré
 
 **Format CSV :**
 ```csv
-URL,Email,Timestamp
-https://example.com,contact@example.com,2024-01-15 10:30:00
-https://example.com,info@example.com,2024-01-15 10:30:00
+URL,Email,Phone,Address,Social Links,AI Status,Timestamp
+https://example.com,contact@example.com,+1-555-0100,"123 Market St","https://linkedin.com/company/example",completed,2026-06-08 10:30:00
 ```
 
 ### Utiliser dans les campagnes d'e-mail
@@ -242,8 +256,8 @@ https://example.com,info@example.com,2024-01-15 10:30:00
 Les e-mails extraits s'intègrent directement avec le marketing par e-mail :
 
 1. **Voir les résultats** de la tâche d'profile insights
-2. Cliquez sur le bouton **Utiliser dans une campagne**
-3. Les e-mails sont automatiquement transmis au workflow de marketing par e-mail
+2. Exportez les résultats de la tâche ou choisissez la tâche dans le sélecteur de source d'e-mails de la campagne
+3. Utilisez les e-mails collectés et les champs enrichis pour la vérification et la personnalisation
 
 Pour des instructions détaillées, consultez [Envoi d'e-mails en lot](./batch-email-sending).
 
@@ -261,23 +275,26 @@ Pour des instructions détaillées, consultez [Envoi d'e-mails en lot](./batch-e
 **À éviter :**
 - Plateformes de réseaux sociaux (rarement des e-mails)
 - Sites d'actualités (faible conversion)
- Très grands portails (faible qualité)
+- Très grands portails (faible qualité)
 
 ### 2. Paramètres de profondeur de page
 
 **Conservateur** (axé sur la qualité) :
 - Profondeur de page : 5-10
 - Concurrence : 1-3
+- Enrichissement IA : activé pour les contacts à haute valeur
 - Idéal pour : Listes ciblées, contacts à haute valeur
 
 **Modéré** (équilibre) :
 - Profondeur de page : 10-50
 - Concurrence : 3-5
+- Enrichissement IA : activé lorsque la qualité du profil compte
 - Idéal pour : Campagnes de prospection générales
 
 **Agressif** (axé sur la quantité) :
 - Profondeur de page : 50-100+
 - Concurrence : 5-10
+- Enrichissement IA : à utiliser sélectivement pour maîtriser le temps de traitement
 - Idéal pour : Études de marché, couverture large
 
 :::warning Qualité vs. quantité
@@ -329,12 +346,12 @@ Le flux de travail le plus puissant combine recherche et profile insights :
    - Rechercher des entreprises dans votre secteur cible
    - Utiliser la génération de mots-clés IA pour une couverture complète
 
-2. **Extraire les e-mails** :
-   - Créer une tâche d'profile insights à partir des résultats de recherche
-   - Extraire les e-mails des URL découvertes
+2. **Ouvrir dans Contact Profile Insights** :
+   - Créer une tâche de profils à partir des résultats de recherche
+   - Ouvrir Contact Profile Insights depuis les URL découvertes
 
 3. **Contrôle qualité** :
-   - Examiner les e-mails extraits
+   - Examiner les e-mails extraits et les champs enrichis
    - Filtrer par qualité de la source
    - Supprimer les doublons
 
@@ -404,6 +421,30 @@ Extraire les e-mails des sites concurrents :
 3. Essayer différentes sources d'URL
 4. Vérifier si les sites utilisent des formulaires de contact
 
+### Enrichissement IA indisponible
+
+**Causes possibles :**
+- L'IA n'est pas activée pour votre compte
+- L'application n'a pas pu charger l'état IA actuel
+
+**Solutions :**
+1. Vérifier que les fonctions IA sont activées dans votre compte ou espace de travail
+2. Rouvrir le formulaire de tâche après activation de l'IA
+3. Exécuter la tâche sans enrichissement IA si vous avez seulement besoin d'adresses e-mail
+
+### Le statut IA affiche Failed ou Skipped
+
+**Causes possibles :**
+- La page ne contient pas assez de contexte de contact utile
+- Le site a bloqué l'accès aux pages de contact
+- L'enrichissement IA a expiré ou échoué pour ce résultat
+
+**Solutions :**
+1. Développer la ligne et examiner les e-mails qui ont tout de même été extraits
+2. Augmenter la profondeur de page pour les sites dont les pages de contact sont plus profondes
+3. Réduire la concurrence ou utiliser des proxys si les pages sont bloquées
+4. Redémarrer la tâche après ajustement des paramètres
+
 ### Traitement lent
 
 **Causes possibles :**
@@ -472,10 +513,11 @@ Assurez-vous toujours d'avoir les droits légaux pour extraire et contacter les 
 Une fois que vous avez extrait les e-mails :
 
 1. **Examiner les résultats** : Vérifier la qualité de vos e-mails extraits
-2. **Exporter ou importer** : Directement dans le marketing par e-mail ou exporter en CSV
-3. **Sélectionner un modèle** : Choisir ou créer un modèle d'e-mail
-4. **Personnaliser** : Utiliser le rédacteur d'e-mails IA pour un contenu personnalisé
-5. **Lancer la campagne** : Envoyer une prospection ciblée
+2. **Examiner l'enrichissement** : Vérifier téléphone, adresse, liens sociaux et statut IA lorsque l'enrichissement IA était activé
+3. **Exporter ou importer** : Choisir la tâche dans une campagne ou exporter en CSV
+4. **Sélectionner un modèle** : Choisir ou créer un modèle d'e-mail
+5. **Personnaliser** : Utiliser le rédacteur d'e-mails IA pour un contenu personnalisé
+6. **Lancer la campagne** : Envoyer une prospection ciblée
 
 Pour des instructions détaillées sur la création de campagnes, consultez [Envoi d'e-mails en lot](./batch-email-sending).
 
@@ -487,4 +529,4 @@ Pour des instructions détaillées sur la création de campagnes, consultez [Env
 
 ---
 
-**Prêt à extraire des e-mails ?** Commencez avec un petit lot d'URL pour tester vos paramètres, puis augmentez progressivement vos opérations d'profile insights.
+**Prêt à trouver des canaux de contact publics ?** Commencez avec un petit lot d'URL pour tester vos paramètres, puis augmentez progressivement vos opérations de profils de contact.

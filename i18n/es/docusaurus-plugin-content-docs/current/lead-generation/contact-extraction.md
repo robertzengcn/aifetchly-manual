@@ -2,39 +2,41 @@
 id: contact-extraction
 title: Contact Profile Insights
 sidebar_label: Contact Profile Insights
-description: Extrae direcciones de correo electrónico de sitios web y URL de forma masiva con la potente herramienta de extracción de aiFetchly.
+description: Crea perfiles de contacto desde sitios web y URL con descubrimiento de correos, enriquecimiento de IA opcional, controles de tareas y resultados exportables.
 ---
 
-# Extracción de correos electrónicos
+# Contact Profile Insights
 
-La función de extracción de correos electrónicos de aiFetchly te permite recopilar direcciones de correo electrónico de sitios web a escala. Extrae información de contacto de URL individuales o aprovecha tus resultados de búsqueda existentes para una recopilación de correos específica.
+Contact Profile Insights de aiFetchly crea perfiles de contacto estructurados desde sitios web a escala. Úsalo para recopilar correos públicos desde URL individuales o resultados de búsqueda existentes, y opcionalmente enriquecer cada perfil con teléfonos, direcciones y enlaces sociales detectados por IA.
 
-## Comprensión de la extracción de correos electrónicos
+## Comprensión de Contact Profile Insights
 
-La extracción de correos funciona de la siguiente manera:
+Contact Profile Insights funciona de la siguiente manera:
 
 1. **Visita cada URL** que proporcionas
 2. **Escanea el contenido de la página** en busca de patrones de correo electrónico
 3. **Sigue enlaces internos** (opcional)
-4. **Compila todos los correos descubiertos** en una lista estructurada
-5. **Elimina duplicados** de los resultados automáticamente
+4. **Selecciona páginas candidatas sólidas** para el enriquecimiento de IA opcional
+5. **Compila correos descubiertos y campos enriquecidos** en una lista estructurada
+6. **Elimina duplicados** de los resultados automáticamente
 
 :::info Casos de uso
 
-La extracción de correos es ideal para:
+Contact Profile Insights es ideal para:
 - Recopilar correos de resultados de búsqueda
 - Construir listas de contacto desde directorios de la industria
 - Recopilar información de contacto de listados de miembros
 - Extraer correos de páginas de recursos
+- Enriquecer perfiles con teléfonos, direcciones y perfiles sociales
 
 :::
 
-## Crear una tarea de extracción
+## Crear una tarea de perfil de contacto
 
-### Paso 1: Ir a Extracción de correos
+### Paso 1: Ir a Contact Profile Insights
 
 1. Haz clic en **Contact Profile Insights** en el menú de navegación izquierdo
-2. Verás la lista de tareas de extracción
+2. Verás la lista de tareas de perfiles de contacto
 3. Haz clic en el botón **Create New Task**
 
 ### Paso 2: Elegir método de entrada de URL
@@ -75,12 +77,12 @@ https://otro-sitio.com/about-us
 - No es necesario introducir URL manualmente
 - Utiliza las URL previamente extraídas
 
-### Paso 3: Configurar ajustes de extracción
+### Paso 3: Configurar ajustes de perfil
 
 #### Profundidad de páginas
 
 - **Predeterminado**: 10 páginas por URL
-- **Rango**: 1-1000 páginas
+- **Rango recomendado**: 1-1000 páginas
 - **Propósito**: Cuántas páginas rastrear en profundidad por cada sitio web
 
 **Directrices:**
@@ -98,7 +100,6 @@ Mayor profundidad de páginas = mayor tiempo de extracción. Comienza de forma c
 #### Concurrencia
 
 - **Predeterminado**: 1 proceso concurrente
-- **Rango**: 1-10 procesos concurrentes
 - **Propósito**: Cuántas URL procesar simultáneamente
 
 **Recomendaciones:**
@@ -133,14 +134,23 @@ Mayor profundidad de páginas = mayor tiempo de extracción. Comienza de forma c
 
 **Recomendación**: Mantén en "No" para tareas de producción.
 
-### Paso 5: Configuración de proxy (Opcional)
+### Paso 5: Enriquecimiento con IA (Opcional)
+
+Cuando la IA está habilitada para tu cuenta, el formulario de tarea muestra **Enable AI Enrichment**.
+
+- **Desactivado**: Extrae solo correos.
+- **Activado**: Usa IA para enriquecer cada resultado con teléfono, dirección y enlaces sociales cuando esos datos se puedan encontrar.
+
+El enriquecimiento con IA es útil cuando necesitas perfiles de contacto más completos para prospección o calificación. Puede añadir tiempo de procesamiento, y algunas filas pueden mostrar **Skipped** o **Failed** si no hay suficiente contenido útil o si la solicitud de enriquecimiento no se completa.
+
+### Paso 6: Configuración de proxy (Opcional)
 
 Añade proxies para extracciones a gran escala:
 
-1. Activa **Use Proxy**
-2. Haz clic en **Choose Proxy**
-3. Selecciona uno o más proxies
-4. Haz clic en **Confirm**
+1. Haz clic en **Choose Proxy**
+2. Selecciona uno o más proxies
+3. Confirma la selección
+4. Los proxies seleccionados aparecen como chips en el selector de proxy
 
 :::tip Cuándo usar proxies
 
@@ -152,11 +162,11 @@ Usa proxies cuando:
 
 :::
 
-### Paso 6: Crear tarea
+### Paso 7: Crear o actualizar tarea
 
-Haz clic en **Submit** para crear tu tarea de extracción. Puedes:
-- **Save Only**: Guarda la tarea sin ejecutarla
-- **Run Now**: Inicia la extracción inmediatamente
+Haz clic en **Submit** para crear una nueva tarea de perfiles de contacto. Las tareas nuevas se envían al proceso backend y la aplicación vuelve a la lista de tareas cuando la tarea empieza.
+
+Al editar una tarea existente, el botón cambia a **Save**. Guardar actualiza el origen de URL, profundidad de página, concurrencia, tiempo de espera, proxies, visibilidad del navegador y enriquecimiento con IA.
 
 ## Gestión de tareas de extracción
 
@@ -172,25 +182,27 @@ Navega a **Contact Profile Insights** para ver todas tus tareas.
 | **Type** | Manual Input o Search Results |
 | **Status** | Pending, Processing, Complete, Error |
 | **Record Time** | Cuándo se creó la tarea |
-| **Actions** | View, Edit, Delete, Download Logs |
+| **Actions** | View, Stop, Start/Restart, Edit, Delete, Download Logs |
 
 ### Estado de la tarea
 
 | Estado | Descripción | Acción |
 |--------|-------------|--------|
 | **Pending** | Tarea creada pero no iniciada | Edit, Delete |
-| **Processing** | Extrayendo correos activamente | Monitorear progreso |
-| **Complete** | Finalizada exitosamente | Ver resultados |
-| **Error** | Falló con errores | Ver registros, Retry |
+| **Processing** | Buscando canales de contacto públicos activamente | Detener tarea o monitorear progreso |
+| **Complete** | Finalizada exitosamente | Ver resultados, editar ajustes o reiniciar |
+| **Error** | Falló con errores | Descargar registros, editar ajustes, eliminar o reiniciar |
 
 ### Acciones de tarea
 
 - **View Results** (icono de carpeta): Ver correos extraídos
-- **Edit** (icono de lápiz): Modificar ajustes de la tarea (solo tareas pendientes/con error)
-- **Delete** (icono de papelera): Eliminar tarea
+- **Stop** (icono de detener): Detener una tarea que se está procesando
+- **Start/Restart** (icono de reproducción): Iniciar una tarea que no se está procesando
+- **Edit** (icono de lápiz): Modificar ajustes de la tarea
+- **Delete** (icono de papelera): Eliminar tareas pendientes o con error
 - **Download Logs** (icono de descarga): Obtener registros de errores (solo tareas fallidas)
 
-## Ver correos extraídos
+## Ver resultados de perfiles de contacto
 
 ### Paso 1: Acceder a los resultados
 
@@ -204,37 +216,39 @@ La tabla de resultados muestra:
 
 | Columna | Descripción |
 |---------|-------------|
+| **ID** | Identificador único del resultado |
 | **URL** | Sitio web de origen |
-| **Emails** | Direcciones de correo extraídas (expandible) |
-| **Count** | Número de correos encontrados |
-| **Timestamp** | Cuándo ocurrió la extracción |
+| **Record Time** | Cuándo se recopiló el resultado |
+| **Phone** | Teléfono enriquecido por IA cuando está disponible |
+| **Address** | Dirección enriquecida por IA cuando está disponible |
+| **Social Links** | Enlaces sociales enriquecidos por IA cuando están disponibles |
+| **AI Status** | Estado de enriquecimiento: Not enriched, Processing, Completed, Failed o Skipped |
 
 ### Paso 3: Expandir detalles
 
 Haz clic en una fila para expandirla y ver:
 - Todos los correos encontrados en esa URL
 - La lista de correos se puede copiar
-- Ver direcciones de correo individuales
+- Teléfono, dirección y enlaces sociales enriquecidos cuando existen
 
 ### Paso 4: Búsqueda y filtrado
 
 - **Search**: Filtra por URL o dirección de correo
 - **Pagination**: Navega conjuntos de resultados grandes
-- **Auto-refresh**: Los resultados se actualizan cada 10 segundos durante el procesamiento
+- **Export**: Descarga los resultados de la tarea como archivo CSV
 
-## Exportar correos extraídos
+## Exportar resultados de perfiles de contacto
 
 ### Exportar como CSV
 
-1. Selecciona los resultados que deseas exportar (o deja en blanco para todos)
-2. Haz clic en **Export** → **CSV**
-3. El archivo se descarga con todos los correos extraídos
+1. Abre los detalles de resultados de una tarea
+2. Haz clic en **Export**
+3. aiFetchly exporta los resultados de la tarea como CSV y devuelve la ruta del archivo guardado
 
 **Formato CSV:**
 ```csv
-URL,Email,Timestamp
-https://example.com,contact@example.com,2024-01-15 10:30:00
-https://example.com,info@example.com,2024-01-15 10:30:00
+URL,Email,Phone,Address,Social Links,AI Status,Timestamp
+https://example.com,contact@example.com,+1-555-0100,"123 Market St","https://linkedin.com/company/example",completed,2026-06-08 10:30:00
 ```
 
 ### Usar en campañas de correo
@@ -242,8 +256,8 @@ https://example.com,info@example.com,2024-01-15 10:30:00
 Los correos extraídos se integran directamente con el marketing por correo:
 
 1. **View Results** de la tarea de extracción
-2. Haz clic en el botón **Use in Campaign**
-3. Los correos se transfieren automáticamente al flujo de marketing por correo
+2. Exporta los resultados de la tarea o elige la tarea desde el selector de origen de correos de la campaña
+3. Usa los correos recopilados y los campos enriquecidos para revisión y personalización
 
 Para instrucciones detalladas, consulta [Envío masivo de correos](./batch-email-sending).
 
@@ -268,16 +282,19 @@ Para instrucciones detalladas, consulta [Envío masivo de correos](./batch-email
 **Conservadora** (Enfoque en calidad):
 - Profundidad: 5-10
 - Concurrencia: 1-3
+- Enriquecimiento con IA: Activado para contactos de alto valor
 - Ideal para: Listas específicas, contactos de alto valor
 
 **Moderada** (Equilibrio):
 - Profundidad: 10-50
 - Concurrencia: 3-5
+- Enriquecimiento con IA: Activado cuando importa la calidad del perfil
 - Ideal para: Campañas de comunicación generales
 
 **Agresiva** (Enfoque en cantidad):
 - Profundidad: 50-100+
 - Concurrencia: 5-10
+- Enriquecimiento con IA: Úsalo selectivamente para controlar el tiempo de procesamiento
 - Ideal para: Investigación de mercado, cobertura amplia
 
 :::warning Calidad vs. Cantidad
@@ -329,12 +346,12 @@ El flujo de trabajo más potente combina búsqueda y extracción:
    - Busca empresas en tu industria objetivo
    - Usa la generación de palabras clave por IA para una cobertura integral
 
-2. **Extraer correos**:
-   - Crea una tarea de extracción desde los resultados de búsqueda
-   - Extrae correos de las URL descubiertas
+2. **Abrir en Contact Profile Insights**:
+   - Crea una tarea de perfiles desde los resultados de búsqueda
+   - Abre Contact Profile Insights desde las URL descubiertas
 
 3. **Control de calidad**:
-   - Revisa los correos extraídos
+   - Revisa los correos extraídos y los campos enriquecidos
    - Filtra por calidad de la fuente
    - Elimina duplicados
 
@@ -404,6 +421,30 @@ Extrae correos de sitios web de la competencia:
 3. Prueba con diferentes fuentes de URL
 4. Comprueba si los sitios usan formularios de contacto
 
+### Enriquecimiento con IA no disponible
+
+**Posibles causas:**
+- La IA no está habilitada para tu cuenta
+- La aplicación no pudo cargar el estado de IA actual
+
+**Soluciones:**
+1. Confirma que las funciones de IA estén habilitadas en tu cuenta o espacio de trabajo
+2. Vuelve a abrir el formulario de tarea después de habilitar la IA
+3. Ejecuta la tarea sin enriquecimiento con IA si solo necesitas direcciones de correo
+
+### El estado de IA muestra Failed o Skipped
+
+**Posibles causas:**
+- La página no contiene suficiente contexto de contacto útil
+- El sitio bloqueó el acceso a las páginas de contacto
+- El enriquecimiento con IA agotó el tiempo o falló para ese resultado
+
+**Soluciones:**
+1. Expande la fila y revisa los correos que sí se extrajeron
+2. Aumenta la profundidad de página para sitios donde las páginas de contacto estén más profundas
+3. Reduce la concurrencia o usa proxies si las páginas se bloquean
+4. Reinicia la tarea después de ajustar la configuración
+
 ### Procesamiento lento
 
 **Posibles causas:**
@@ -472,10 +513,11 @@ Asegúrate siempre de tener derechos legales para extraer y contactar las direcc
 Una vez que hayas extraído los correos:
 
 1. **Revisa los resultados**: Verifica la calidad de tus correos extraídos
-2. **Exporta o importa**: Dirige al marketing por correo o exporta como CSV
-3. **Selecciona plantilla**: Elige o crea una plantilla de correo
-4. **Personaliza**: Usa AI Email Writer para contenido personalizado
-5. **Lanza la campaña**: Envía comunicaciones específicas
+2. **Revisa el enriquecimiento**: Comprueba teléfono, dirección, enlaces sociales y estado de IA cuando el enriquecimiento con IA estuvo activado
+3. **Exporta o importa**: Elige la tarea en una campaña o exporta como CSV
+4. **Selecciona plantilla**: Elige o crea una plantilla de correo
+5. **Personaliza**: Usa AI Email Writer para contenido personalizado
+6. **Lanza la campaña**: Envía comunicaciones específicas
 
 Para instrucciones detalladas sobre la creación de campañas, consulta [Envío masivo de correos](./batch-email-sending).
 
@@ -487,4 +529,4 @@ Para instrucciones detalladas sobre la creación de campañas, consulta [Envío 
 
 ---
 
-**¿Listo para extraer correos?** Comienza con un lote pequeño de URL para probar tus ajustes, luego escala tus operaciones de extracción.
+**¿Listo para encontrar canales de contacto públicos?** Comienza con un lote pequeño de URL para probar tus ajustes, luego escala tus operaciones de perfiles de contacto.

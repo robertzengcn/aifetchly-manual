@@ -1,40 +1,42 @@
 ---
 id: contact-extraction
-title: Kontaktextraktion
-sidebar_label: E-Mail-Extraktion
-description: Extrahieren Sie E-Mail-Adressen massenhaft von Websites und URLs mit dem leistungsstarken Extraktionstool von aiFetchly.
+title: Contact Profile Insights
+sidebar_label: Contact Profile Insights
+description: Erstellen Sie Kontaktprofile aus Websites und URLs mit E-Mail-Erkennung, optionaler KI-Anreicherung, Aufgabensteuerung und exportierbaren Ergebnissen.
 ---
 
-# E-Mail-Extraktion
+# Contact Profile Insights
 
-Die E-Mail-Extraktionsfunktion von aiFetchly ermöglicht es Ihnen, E-Mail-Adressen im großen Maßstab von Websites zu sammeln. Extrahieren Sie Kontaktinformationen von einzelnen URLs oder nutzen Sie Ihre vorhandenen Suchergebnisse für gezielte E-Mail-Sammlung.
+Contact Profile Insights von aiFetchly erstellt strukturierte Kontaktprofile aus Websites im großen Maßstab. Nutzen Sie einzelne URLs oder vorhandene Suchergebnisse, um öffentliche E-Mails zu sammeln, und reichern Sie jedes Profil optional mit KI-erkannten Telefonnummern, Adressen und Social Links an.
 
-## Grundlagen der E-Mail-Extraktion
+## Grundlagen von Contact Profile Insights
 
-Die E-Mail-Extraktion funktioniert durch:
+Contact Profile Insights funktioniert durch:
 
 1. **Aufrufen jeder URL**, die Sie angeben
 2. **Scannen des Seiteninhalts** nach E-Mail-Mustern
 3. **Folgen interner Links** (optional)
-4. **Zusammenstellen aller gefundenen E-Mails** in einer strukturierten Liste
-5. **Automatische Deduplizierung** der Ergebnisse
+4. **Auswählen starker Kandidatenseiten** für optionale KI-Anreicherung
+5. **Zusammenstellen gefundener E-Mails und angereicherter Felder** in einer strukturierten Liste
+6. **Automatische Deduplizierung** der Ergebnisse
 
 :::info Anwendungsfälle
 
-E-Mail-Extraktion eignet sich ideal für:
+Contact Profile Insights eignet sich ideal für:
 - Sammeln von E-Mails aus Suchergebnissen
 - Aufbau von Kontaktlisten aus Branchenverzeichnissen
 - Sammeln von Kontaktinformationen aus Mitgliederlisten
 - Extrahieren von E-Mails aus Ressourcenseiten
+- Anreichern von Profilen mit Telefonnummern, Adressen und sozialen Profilen
 
 :::
 
-## Eine Extraktionsaufgabe erstellen
+## Eine Kontaktprofil-Aufgabe erstellen
 
-### Schritt 1: Zur E-Mail-Extraktion navigieren
+### Schritt 1: Zu Contact Profile Insights navigieren
 
-1. Klicken Sie auf **E-Mail-Extraktion** im linken Navigationsmenü
-2. Sie sehen die Liste der Extraktionsaufgaben
+1. Klicken Sie auf **Contact Profile Insights** im linken Navigationsmenü
+2. Sie sehen die Liste der Kontaktprofil-Aufgaben
 3. Klicken Sie auf die Schaltfläche **Neue Aufgabe erstellen**
 
 ### Schritt 2: URL-Eingabemethode wählen
@@ -75,12 +77,12 @@ https://another-site.com/about-us
 - Keine manuelle URL-Eingabe erforderlich
 - Verwendet zuvor gecrawlte URLs
 
-### Schritt 3: Extraktionseinstellungen konfigurieren
+### Schritt 3: Profileinstellungen konfigurieren
 
 #### Seitentiefe
 
 - **Standard**: 10 Seiten pro URL
-- **Bereich**: 1-1000 Seiten
+- **Empfohlener Bereich**: 1-1000 Seiten
 - **Zweck**: Wie viele Seiten tief jede Website gecrawlt wird
 
 **Richtlinien:**
@@ -98,7 +100,6 @@ Höhere Seitentiefe = längere Extraktionszeit. Beginnen Sie konservativ und ska
 #### Parallelität
 
 - **Standard**: 1 gleichzeitiger Prozess
-- **Bereich**: 1-10 gleichzeitige Prozesse
 - **Zweck**: Wie viele URLs gleichzeitig verarbeitet werden
 
 **Empfehlungen:**
@@ -133,14 +134,23 @@ Höhere Seitentiefe = längere Extraktionszeit. Beginnen Sie konservativ und ska
 
 **Empfehlung**: Für Produktionsaufgaben bei "Nein" belassen.
 
-### Schritt 5: Proxy-Konfiguration (Optional)
+### Schritt 5: KI-Anreicherung (optional)
+
+Wenn KI für Ihr Konto aktiviert ist, zeigt das Aufgabenformular **Enable AI Enrichment** an.
+
+- **Aus**: Extrahiert nur E-Mails.
+- **Ein**: Nutzt KI, um jedes Ergebnis mit Telefonnummer, Adresse und Social Links anzureichern, wenn diese Angaben gefunden werden können.
+
+KI-Anreicherung ist hilfreich, wenn Sie vollständigere Kontaktprofile für Outreach oder Qualifizierung benötigen. Sie kann die Verarbeitung verlängern, und einzelne Zeilen können **Skipped** oder **Failed** anzeigen, wenn nicht genügend nutzbarer Seiteninhalt vorhanden ist oder die KI-Anreicherung nicht abgeschlossen werden kann.
+
+### Schritt 6: Proxy-Konfiguration (Optional)
 
 Proxys für groß angelegte Extraktion hinzufügen:
 
-1. **Proxy verwenden** umschalten
-2. **Proxy wählen** klicken
-3. Einen oder mehrere Proxys auswählen
-4. **Bestätigen** klicken
+1. Klicken Sie auf **Proxy wählen**
+2. Wählen Sie einen oder mehrere Proxys aus
+3. Bestätigen Sie die Auswahl
+4. Die ausgewählten Proxys erscheinen als Chips im Proxy-Auswahlfeld
 
 :::tip Wann Proxys verwendet werden sollten
 
@@ -152,11 +162,11 @@ Verwenden Sie Proxys, wenn:
 
 :::
 
-### Schritt 6: Aufgabe erstellen
+### Schritt 7: Aufgabe erstellen oder aktualisieren
 
-Klicken Sie auf **Absenden**, um Ihre Extraktionsaufgabe zu erstellen. Sie können:
-- **Nur speichern**: Aufgabe ohne Ausführung speichern
-- **Jetzt ausführen**: Extraktion sofort starten
+Klicken Sie auf **Absenden**, um eine neue Kontaktprofil-Aufgabe zu erstellen. Neue Aufgaben werden an den Backend-Prozess übergeben, und die App kehrt zur Aufgabenliste zurück, sobald die Aufgabe startet.
+
+Beim Bearbeiten einer bestehenden Aufgabe ändert sich die Schaltfläche zu **Save**. Das Speichern aktualisiert URL-Quelle, Seitentiefe, Parallelität, Timeout, Proxys, Browseranzeige und KI-Anreicherung.
 
 ## Extraktionsaufgaben verwalten
 
@@ -172,25 +182,27 @@ Navigieren Sie zu **E-Mail-Extraktion**, um alle Ihre Aufgaben zu sehen.
 | **Typ** | Manuelle Eingabe oder Suchergebnisse |
 | **Status** | Ausstehend, In Bearbeitung, Abgeschlossen, Fehler |
 | **Erfassungszeit** | Zeitpunkt der Aufgabenerstellung |
-| **Aktionen** | Anzeigen, Bearbeiten, Löschen, Logs herunterladen |
+| **Aktionen** | Anzeigen, Stoppen, Starten/Neu starten, Bearbeiten, Löschen, Logs herunterladen |
 
 ### Aufgabenstatus
 
 | Status | Beschreibung | Aktion |
 |--------|--------------|--------|
 | **Ausstehend** | Aufgabe erstellt, aber nicht gestartet | Bearbeiten, Löschen |
-| **In Bearbeitung** | E-Mails werden aktiv extrahiert | Fortschritt überwachen |
-| **Abgeschlossen** | Erfolgreich beendet | Ergebnisse anzeigen |
-| **Fehler** | Mit Fehlern fehlgeschlagen | Logs anzeigen, Erneut versuchen |
+| **In Bearbeitung** | Öffentliche Kontaktkanäle werden aktiv gesucht | Aufgabe stoppen oder Fortschritt überwachen |
+| **Abgeschlossen** | Erfolgreich beendet | Ergebnisse anzeigen, Einstellungen bearbeiten oder neu starten |
+| **Fehler** | Mit Fehlern fehlgeschlagen | Logs herunterladen, bearbeiten, löschen oder neu starten |
 
 ### Aufgabenaktionen
 
 - **Ergebnisse anzeigen** (Ordner-Symbol): Extrahierte E-Mails ansehen
-- **Bearbeiten** (Stift-Symbol): Aufgabeneinstellungen ändern (nur ausstehende/Fehler-Aufgaben)
-- **Löschen** (Papierkorb-Symbol): Aufgabe entfernen
+- **Stoppen** (Stop-Symbol): Eine laufende Aufgabe stoppen
+- **Starten/Neu starten** (Play-Symbol): Eine Aufgabe starten, die gerade nicht verarbeitet wird
+- **Bearbeiten** (Stift-Symbol): Aufgabeneinstellungen ändern
+- **Löschen** (Papierkorb-Symbol): Ausstehende Aufgaben oder Fehler-Aufgaben entfernen
 - **Logs herunterladen** (Download-Symbol): Fehlerprotokolle abrufen (nur fehlgeschlagene Aufgaben)
 
-## Extrahierte E-Mails anzeigen
+## Kontaktprofil-Ergebnisse anzeigen
 
 ### Schritt 1: Ergebnisse aufrufen
 
@@ -204,37 +216,39 @@ Die Ergebnistabelle zeigt:
 
 | Spalte | Beschreibung |
 |--------|--------------|
+| **ID** | Eindeutige Ergebniskennung |
 | **URL** | Quell-Website |
-| **E-Mails** | Extrahierte E-Mail-Adressen (erweiterbar) |
-| **Anzahl** | Anzahl der gefundenen E-Mails |
-| **Zeitstempel** | Zeitpunkt der Extraktion |
+| **Erfassungszeit** | Zeitpunkt, zu dem das Ergebnis gesammelt wurde |
+| **Phone** | KI-angereicherte Telefonnummer, sofern verfügbar |
+| **Address** | KI-angereicherte Adresse, sofern verfügbar |
+| **Social Links** | KI-angereicherte Social-Profile-Links, sofern verfügbar |
+| **AI Status** | Anreicherungsstatus: Not enriched, Processing, Completed, Failed oder Skipped |
 
 ### Schritt 3: Details erweitern
 
 Klicken Sie auf eine Zeile, um sie zu erweitern und zu sehen:
 - Alle auf dieser URL gefundenen E-Mails
 - E-Mail-Liste kann kopiert werden
-- Einzelne E-Mail-Adressen anzeigen
+- Angereicherte Telefonnummer, Adresse und Social Links, sofern vorhanden
 
 ### Schritt 4: Suche und Filterung
 
 - **Suche**: Nach URL oder E-Mail-Adresse filtern
 - **Paginierung**: Große Ergebnisssätze durchblättern
-- **Automatische Aktualisierung**: Ergebnisse werden während der Verarbeitung alle 10 Sekunden aktualisiert
+- **Export**: Aufgabenergebnisse als CSV-Datei herunterladen
 
-## Extrahierte E-Mails exportieren
+## Kontaktprofil-Ergebnisse exportieren
 
 ### Als CSV exportieren
 
-1. Wählen Sie die Ergebnisse aus, die Sie exportieren möchten (oder leer lassen für alle)
-2. Klicken Sie auf **Exportieren** → **CSV**
-3. Datei wird mit allen extrahierten E-Mails heruntergeladen
+1. Öffnen Sie die Ergebnisdetails einer Aufgabe
+2. Klicken Sie auf **Export**
+3. aiFetchly exportiert die Aufgabenergebnisse als CSV und gibt den gespeicherten Dateipfad zurück
 
 **CSV-Format:**
 ```csv
-URL,Email,Timestamp
-https://example.com,contact@example.com,2024-01-15 10:30:00
-https://example.com,info@example.com,2024-01-15 10:30:00
+URL,Email,Phone,Address,Social Links,AI Status,Timestamp
+https://example.com,contact@example.com,+1-555-0100,"123 Market St","https://linkedin.com/company/example",completed,2026-06-08 10:30:00
 ```
 
 ### In E-Mail-Kampagnen verwenden
@@ -242,8 +256,8 @@ https://example.com,info@example.com,2024-01-15 10:30:00
 Extrahierte E-Mails lassen sich direkt in E-Mail-Marketing integrieren:
 
 1. **Ergebnisse anzeigen** der Extraktionsaufgabe
-2. **In Kampagne verwenden** Schaltfläche klicken
-3. E-Mails werden automatisch an den E-Mail-Marketing-Workflow übergeben
+2. Exportieren Sie die Aufgabenergebnisse oder wählen Sie die Aufgabe im E-Mail-Quellenauswahlfeld der Kampagne
+3. Nutzen Sie die gesammelten E-Mails und angereicherten Felder für Prüfung und Personalisierung
 
 Ausführliche Anleitungen finden Sie unter [Massen-E-Mail-Versand](./batch-email-sending).
 
@@ -268,16 +282,19 @@ Ausführliche Anleitungen finden Sie unter [Massen-E-Mail-Versand](./batch-email
 **Konservativ** (Qualitätsfokus):
 - Seitentiefe: 5-10
 - Parallelität: 1-3
+- KI-Anreicherung: Ein für hochwertige Ziele
 - Am besten für: Gezielte Listen, hochwertige Kontakte
 
 **Moderat** (Ausgewogen):
 - Seitentiefe: 10-50
 - Parallelität: 3-5
+- KI-Anreicherung: Ein, wenn Profilqualität wichtig ist
 - Am besten für: Allgemeine Outreach-Kampagnen
 
 **Aggressiv** (Mengenfokus):
 - Seitentiefe: 50-100+
 - Parallelität: 5-10
+- KI-Anreicherung: Selektiv verwenden, um Verarbeitungszeit zu steuern
 - Am besten für: Marktforschung, breite Abdeckung
 
 :::warning Qualität vs. Menge
@@ -329,12 +346,12 @@ Der leistungsstärkste Workflow kombiniert Suche und Extraktion:
    - Nach Unternehmen in Ihrer Zielbranche suchen
    - KI-Schlüsselwortgenerierung für umfassende Abdeckung nutzen
 
-2. **E-Mails extrahieren**:
-   - Extraktionsaufgabe aus Suchergebnissen erstellen
-   - E-Mails von entdeckten URLs extrahieren
+2. **In Contact Profile Insights öffnen**:
+   - Kontaktprofil-Aufgabe aus Suchergebnissen erstellen
+   - Contact Profile Insights aus den entdeckten URLs öffnen
 
 3. **Qualitätskontrolle**:
-   - Extrahierte E-Mails überprüfen
+   - Extrahierte E-Mails und angereicherte Kontaktfelder überprüfen
    - Nach Quellqualität filtern
    - Duplikate entfernen
 
@@ -404,6 +421,30 @@ E-Mails von Wettbewerbswebsites extrahieren:
 3. Andere URL-Quellen ausprobieren
 4. Prüfen, ob Sites Kontaktformulare verwenden
 
+### KI-Anreicherung nicht verfügbar
+
+**Mögliche Ursachen:**
+- KI ist für Ihr Konto nicht aktiviert
+- Die App konnte den aktuellen KI-Kontostatus nicht laden
+
+**Lösungen:**
+1. Bestätigen Sie, dass KI-Funktionen in Ihrem Konto oder Arbeitsbereich aktiviert sind
+2. Öffnen Sie das Aufgabenformular erneut, nachdem KI aktiviert wurde
+3. Führen Sie die Aufgabe ohne KI-Anreicherung aus, wenn Sie nur E-Mail-Adressen benötigen
+
+### KI-Status zeigt Failed oder Skipped
+
+**Mögliche Ursachen:**
+- Die Seite enthielt nicht genügend nützlichen Kontaktkontext
+- Die Website blockierte den Zugriff auf Kontaktseiten
+- Die KI-Anreicherung lief ab oder schlug für dieses Ergebnis fehl
+
+**Lösungen:**
+1. Erweitern Sie die Zeile und prüfen Sie die trotzdem extrahierten E-Mails
+2. Erhöhen Sie die Seitentiefe für Websites, bei denen Kontaktseiten tiefer liegen
+3. Reduzieren Sie die Parallelität oder verwenden Sie Proxys, wenn Seiten blockiert werden
+4. Starten Sie die Aufgabe nach dem Anpassen der Einstellungen neu
+
 ### Langsame Verarbeitung
 
 **Mögliche Ursachen:**
@@ -472,10 +513,11 @@ Stellen Sie immer sicher, dass Sie die rechtlichen Berechtigungen haben, E-Mail-
 Nachdem Sie E-Mails extrahiert haben:
 
 1. **Ergebnisse überprüfen**: Qualitätsprüfung Ihrer extrahierten E-Mails
-2. **Exportieren oder Importieren**: Direkt ins E-Mail-Marketing oder als CSV exportieren
-3. **Vorlage auswählen**: E-Mail-Vorlage wählen oder erstellen
-4. **Personalisieren**: KI-E-Mail-Writer für personalisierte Inhalte nutzen
-5. **Kampagne starten**: Gezielten Outreach versenden
+2. **Anreicherung prüfen**: Telefonnummer, Adresse, Social Links und KI-Status prüfen, wenn KI-Anreicherung aktiviert war
+3. **Exportieren oder Importieren**: Aufgabe in einer Kampagne auswählen oder als CSV exportieren
+4. **Vorlage auswählen**: E-Mail-Vorlage wählen oder erstellen
+5. **Personalisieren**: KI-E-Mail-Writer für personalisierte Inhalte nutzen
+6. **Kampagne starten**: Gezielten Outreach versenden
 
 Ausführliche Anleitungen zur Erstellung von Kampagnen finden Sie unter [Massen-E-Mail-Versand](./batch-email-sending).
 
@@ -487,4 +529,4 @@ Ausführliche Anleitungen zur Erstellung von Kampagnen finden Sie unter [Massen-
 
 ---
 
-**Bereit, E-Mails zu extrahieren?** Beginnen Sie mit einem kleinen Stapel URLs, um Ihre Einstellungen zu testen, und skalieren Sie dann Ihre Extraktionsvorgänge.
+**Bereit, öffentliche Kontaktkanäle zu finden?** Beginnen Sie mit einem kleinen Stapel URLs, um Ihre Einstellungen zu testen, und skalieren Sie dann Ihre Kontaktprofil-Vorgänge.
