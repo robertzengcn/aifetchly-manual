@@ -50,13 +50,16 @@ Sélectionnez le type de tâche à planifier :
 - **Email Extract** : Tâches d'profile insights d'e-mails
 - **Outreach Campaign** : Campagnes d'e-mails marketing
 - **Directory Assistant** : Tâches de information organization d'annuaires
-- **Video Download** : Tâches de téléchargement de vidéos
+- **Google Maps** : Tâches de scraping Google Maps
+- **Yandex Maps** : Tâches de scraping Yandex Maps
+- **AI Message** : Tâches de messages IA avec intégration d'outils
 
 #### ID de tâche
 
 - **Objectif** : Lier à l'instance de tâche spécifique
 - **Sélection** : Choisissez parmi les tâches existantes du type sélectionné
 - **Obligatoire** : Oui
+- **Note** : Pour les tâches AI Message, la configuration de la tâche est créée en ligne lors de la configuration du planificateur (voir [Configuration des tâches AI Message](#configuration-des-tâches-ai-message) ci-dessous)
 
 #### Description
 
@@ -64,7 +67,61 @@ Sélectionnez le type de tâche à planifier :
 - **Exemple** : « Recherche quotidienne de nouvelles agences marketing dans les villes cibles »
 - **Facultatif** : Oui
 
-### Étape 3 : Configurer le déclencheur
+### Configuration des tâches AI Message
+
+Lorsque vous sélectionnez **AI Message** comme type de tâche, un formulaire de configuration supplémentaire apparaît pour définir la tâche IA. Cette section n'apparaît pas pour les autres types de tâches.
+
+#### Nom de la tâche
+
+- **Objectif** : Identifier la tâche de message IA
+- **Obligatoire** : Oui
+- **Exemple** : « Analyse quotidienne des leads », « Réponse automatique aux demandes »
+
+#### Message IA
+
+- **Objectif** : Le prompt/message à envoyer au modèle IA
+- **Obligatoire** : Oui
+- **Exemple** : « Analyse les résultats de recherche d'aujourd'hui et identifie les 10 leads les plus prometteurs selon la taille de l'entreprise et le secteur »
+- **Supporte** : Texte multiligne avec des instructions détaillées
+
+#### Outils autorisés
+
+Sélectionnez les outils que l'agent IA peut utiliser pendant l'exécution :
+
+| Niveau de risque | Couleur | Description |
+|----------------|-------|-------------|
+| **Faible** | Vert | Opérations sécurisées en lecture seule |
+| **Moyen** | Jaune | Opérations avec impact modéré |
+| **Élevé** | Rouge | Opérations modifiant des données ou effectuant des actions significatives |
+| **Bloqué** | — | Outils non autorisés pour les tâches planifiées |
+
+- **Objectif** : Contrôler les actions que l'IA peut effectuer de manière autonome
+- **Sélection** : Sélection multiple parmi les outils planifiables disponibles
+- **Par défaut** : Aucun outil sélectionné
+
+#### Auto-approuver les outils
+
+- **Objectif** : Permettre à l'IA d'exécuter les appels d'outils sans approbation manuelle
+- **Par défaut** : Désactivé
+- **Avertissement** : L'activation de cette option signifie que l'IA peut exécuter automatiquement les outils. Examinez attentivement la liste des outils autorisés avant d'activer.
+
+:::caution Sécurité de l'auto-approbation
+
+Lorsque l'auto-approbation est activée, l'IA exécutera les outils approuvés sans attendre de confirmation humaine. N'activez cette fonctionnalité que pour des configurations de tâches bien testées avec une liste d'outils soigneusement sélectionnée. Définissez toujours des limites de sécurité appropriées.
+
+:::
+
+#### Limites de sécurité
+
+Configurez des limites pour maintenir la tâche IA dans des limites sûres :
+
+| Paramètre | Par défaut | Minimum | Description |
+|---------|---------|-----|-------------|
+| **Appels d'outils max** | 10 | 1 | Nombre maximum d'appels d'outils par exécution |
+| **Temps d'exécution max** | 300 000 ms (5 min) | 1 000 ms | Temps d'exécution maximum |
+| **Appels de continuation max** | 10 | 1 | Nombre maximum de cycles de continuation |
+
+Ces limites empêchent les tâches hors de contrôle de consommer des ressources excessives ou de s'exécuter indéfiniment.
 
 #### Planification Cron (basée sur le temps)
 
@@ -293,6 +350,22 @@ Task: Data cleanup or backup
 
 **Cas d'utilisation** : Maintenance de routine pendant les périodes de faible trafic.
 
+### Modèle 6 : Analyse des leads par IA
+
+**Planificateur** : Chaque jour ouvrable à 10h00
+```
+Cron: 0 10 * * 1-5
+Task: AI Message
+```
+
+**Configuration IA** :
+- **Message** : « Examine les résultats de recherche d'hier, analyse la qualité des leads et génère un rapport résumé des contacts les plus prometteurs »
+- **Outils autorisés** : Sélectionner les outils d'analyse de données pertinents
+- **Auto-approuver** : Activé (avec liste d'outils soigneusement examinée)
+- **Temps d'exécution max** : 300 000 ms (5 minutes)
+
+**Cas d'utilisation** : Analyse quotidienne automatisée des leads collectés par IA.
+
 ## Bonnes pratiques
 
 ### 1. Conception du planificateur
@@ -431,6 +504,31 @@ Task: Data cleanup or backup
 3. Augmenter l'intervalle entre les exécutions
 4. Vérifier les performances du système
 
+### Problèmes de tâches AI Message
+
+**Tâche atteignant les limites de sécurité :**
+- **Causes possibles** : Appels d'outils max, temps d'exécution max ou appels de continuation max atteints
+- **Solutions** :
+  1. Examiner la clarté et la spécificité du message IA
+  2. Augmenter les limites de sécurité si la tâche nécessite légitimement plus de ressources
+  3. Réduire la portée du message de la tâche
+  4. Vérifier les journaux d'exécution pour identifier quelle limite a été atteinte
+
+**Tâche IA produisant des résultats inattendus :**
+- **Causes possibles** : Prompt vague, outils incorrects sélectionnés ou contexte insuffisant
+- **Solutions** :
+  1. Affiner le message IA avec des instructions plus spécifiques
+  2. Examiner et ajuster la liste des outils autorisés
+  3. Tester avec auto-approbation désactivée pour examiner manuellement les appels d'outils
+  4. Ajouter plus de contexte au prompt système
+
+**Appels d'outils bloqués :**
+- **Causes possibles** : Outil absent de la liste autorisée ou marqué comme bloqué pour les tâches planifiées
+- **Solutions** :
+  1. Ajouter l'outil requis à la liste des outils autorisés
+  2. Vérifier que l'outil est disponible pour l'exécution planifiée
+  3. Vérifier le niveau de risque de l'outil et confirmer qu'il n'est pas bloqué par la politique
+
 ### L'historique d'exécution ne s'affiche pas
 
 **Causes possibles :**
@@ -514,6 +612,38 @@ Task: Search European keywords
 
 **Résultat** : Surveillance mondiale continue avec des planificateurs décalés.
 
+### Flux de travail 4 : Pipeline de leads amélioré par IA
+
+**Planificateur 1** : Recherche quotidienne
+```
+Cron: 0 9 * * 1-5 (Jours ouvrables 9h)
+Task: Google Maps - Recherche de « restaurants [ville] »
+```
+
+**Planificateur 2** : Profile insights de contacts (dépendance)
+```
+Trigger: Après le succès du Planificateur 1
+Delay: 0 minutes
+Task: Profile insights des contacts à partir des résultats du Planificateur 1
+```
+
+**Planificateur 3** : Analyse IA (dépendance)
+```
+Trigger: Après le succès du Planificateur 2
+Delay: 30 minutes
+Task: AI Message - « Analyse les contacts extraits et rédige des messages de prospection personnalisés pour les 20 meilleurs leads »
+Limites de sécurité : Appels d'outils max : 15, Temps d'exécution max : 600000ms (10 min)
+```
+
+**Planificateur 4** : Campagne d'e-mails (dépendance)
+```
+Trigger: Après le succès du Planificateur 3
+Delay: 60 minutes
+Task: Outreach Campaign - Envoyer les messages générés par IA
+```
+
+**Résultat** : Pipeline entièrement automatisé de la recherche à l'analyse IA jusqu'à la prospection.
+
 ## Intégration avec d'autres fonctionnalités
 
 Le planificateur de tâches s'intègre avec :
@@ -521,7 +651,9 @@ Le planificateur de tâches s'intègre avec :
 - **[Moteurs de recherche](../lead-generation/search-engines)** : Planifier des recherches récurrentes
 - **[Profile Insights de contacts](../lead-generation/contact-extraction)** : Profile Insights automatique après les recherches
 - **[Pages Jaunes](../lead-generation/yellow-pages)** : Information Organization d'annuaires régulier
+- **[Scraping Google Maps](../lead-generation/local-business-finder)** : Planifier la collecte de données Google Maps
 - **[Envoi d'e-mails en lot](../lead-generation/batch-email-sending)** : Campagnes automatisées
+- **AI Message** : Planifier des tâches IA avec intégration d'outils pour l'analyse et les actions automatisées
 
 ## Prochaines étapes
 

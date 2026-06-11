@@ -50,13 +50,16 @@ Selecciona el tipo de tarea a programar:
 - **Email Extract**: Tareas de extracción de correos
 - **Outreach Campaign**: Campañas de marketing por correo
 - **Directory Assistant**: Tareas de extracción de directorios
-- **Video Download**: Tareas de descarga de videos
+- **Google Maps**: Tareas de extracción de Google Maps
+- **Yandex Maps**: Tareas de extracción de Yandex Maps
+- **AI Message**: Tareas de mensajes con IA e integración de herramientas
 
 #### ID de tarea
 
 - **Propósito**: Vincular a la instancia de tarea específica
 - **Selección**: Elige entre las tareas existentes del tipo seleccionado
 - **Obligatorio**: Sí
+- **Nota**: Para tareas de AI Message, la configuración de la tarea se crea en línea al configurar la programación (consulta [Configuración de tareas AI Message](#configuración-de-tareas-ai-message) a continuación)
 
 #### Descripción
 
@@ -64,7 +67,61 @@ Selecciona el tipo de tarea a programar:
 - **Ejemplo**: "Búsqueda diaria de nuevas agencias de marketing en ciudades objetivo"
 - **Opcional**: Sí
 
-### Paso 3: Configurar activador
+### Configuración de tareas AI Message
+
+Cuando seleccionas **AI Message** como tipo de tarea, aparece un formulario de configuración adicional para definir la tarea de IA. Esta sección no aparece para otros tipos de tareas.
+
+#### Nombre de la tarea
+
+- **Propósito**: Identificar la tarea de mensaje de IA
+- **Obligatorio**: Sí
+- **Ejemplo**: "Análisis diario de leads", "Auto-responder consultas"
+
+#### Mensaje de IA
+
+- **Propósito**: El prompt/mensaje a enviar al modelo de IA
+- **Obligatorio**: Sí
+- **Ejemplo**: "Analiza los resultados de búsqueda de hoy e identifica los 10 leads más prometedores según el tamaño de la empresa y la industria"
+- **Soporta**: Texto multilínea con instrucciones detalladas
+
+#### Herramientas permitidas
+
+Selecciona qué herramientas puede usar el agente de IA durante la ejecución:
+
+| Nivel de riesgo | Color | Descripción |
+|----------------|-------|-------------|
+| **Bajo** | Verde | Operaciones seguras de solo lectura |
+| **Medio** | Amarillo | Operaciones con impacto moderado |
+| **Alto** | Rojo | Operaciones que modifican datos o realizan acciones significativas |
+| **Bloqueado** | — | Herramientas no permitidas para tareas programadas |
+
+- **Propósito**: Controlar qué acciones puede realizar la IA de forma autónoma
+- **Selección**: Selección múltiple de herramientas programables disponibles
+- **Predeterminado**: Sin herramientas seleccionadas
+
+#### Auto-aprobar herramientas
+
+- **Propósito**: Permitir que la IA ejecute llamadas de herramientas sin aprobación manual
+- **Predeterminado**: Desactivado (deshabilitado)
+- **Advertencia**: Habilitar esto significa que la IA puede ejecutar herramientas automáticamente. Revisa la lista de herramientas permitidas antes de habilitar.
+
+:::caution Seguridad de auto-aprobación
+
+Cuando la auto-aprobación está habilitada, la IA ejecutará las herramientas aprobadas sin esperar confirmación humana. Solo habilita esto para configuraciones de tareas bien probadas con una lista de herramientas cuidadosamente seleccionada. Siempre configura los límites de seguridad apropiados.
+
+:::
+
+#### Límites de seguridad
+
+Configura límites para mantener la tarea de IA dentro de los límites seguros:
+
+| Configuración | Predeterminado | Mínimo | Descripción |
+|---------|---------|-----|-------------|
+| **Máx. llamadas de herramientas** | 10 | 1 | Número máximo de llamadas de herramientas por ejecución |
+| **Máx. tiempo de ejecución** | 300,000 ms (5 min) | 1,000 ms | Tiempo máximo de ejecución |
+| **Máx. llamadas de continuación** | 10 | 1 | Número máximo de ciclos de continuación |
+
+Estos límites evitan que las tareas descontroladas consuman recursos excesivos o se ejecuten indefinidamente.
 
 #### Programación Cron (Basada en tiempo)
 
@@ -293,6 +350,22 @@ Task: Limpieza de datos o respaldo
 
 **Caso de uso**: Mantenimiento rutinario durante períodos de bajo tráfico.
 
+### Patrón 6: Análisis de leads con IA
+
+**Programación**: Cada día laborable a las 10:00 AM
+```
+Cron: 0 10 * * 1-5
+Task: AI Message
+```
+
+**Configuración de IA**:
+- **Mensaje**: "Revisa los resultados de búsqueda de ayer, analiza la calidad de los leads y genera un informe resumido de los contactos más prometedores"
+- **Herramientas permitidas**: Seleccionar herramientas relevantes de análisis de datos
+- **Auto-aprobar**: Habilitado (con lista de herramientas revisada cuidadosamente)
+- **Máx. tiempo de ejecución**: 300,000 ms (5 minutos)
+
+**Caso de uso**: Análisis diario automatizado de leads recopilados usando IA.
+
 ## Mejores prácticas
 
 ### 1. Diseño de programación
@@ -431,6 +504,31 @@ Task: Limpieza de datos o respaldo
 3. Aumenta el intervalo entre ejecuciones
 4. Comprueba el rendimiento del sistema
 
+### Problemas con tareas AI Message
+
+**Tarea alcanzando límites de seguridad:**
+- **Posibles causas**: Se alcanzó el máximo de llamadas de herramientas, tiempo máximo de ejecución o máximo de llamadas de continuación
+- **Soluciones**:
+  1. Revisa la claridad y especificidad del mensaje de IA
+  2. Aumenta los límites de seguridad si la tarea legítimamente necesita más recursos
+  3. Reduce el alcance del mensaje de la tarea
+  4. Verifica los registros de ejecución para determinar qué límite se alcanzó
+
+**Tarea de IA produciendo resultados inesperados:**
+- **Posibles causas**: Prompt vago, herramientas incorrectas seleccionadas o contexto insuficiente
+- **Soluciones**:
+  1. Refina el mensaje de IA con instrucciones más específicas
+  2. Revisa y ajusta la lista de herramientas permitidas
+  3. Prueba con auto-aprobación deshabilitada para revisar manualmente las llamadas de herramientas
+  4. Agrega más contexto al prompt del sistema
+
+**Llamadas de herramientas bloqueadas:**
+- **Posibles causas**: Herramienta no en la lista permitida o marcada como bloqueada para tareas programadas
+- **Soluciones**:
+  1. Agrega la herramienta requerida a la lista de herramientas permitidas
+  2. Verifica que la herramienta esté disponible para ejecución programada
+  3. Verifica el nivel de riesgo de la herramienta y confirma que no esté bloqueada por política
+
 ### El historial de ejecución no se muestra
 
 **Posibles causas:**
@@ -514,6 +612,38 @@ Task: Buscar palabras clave europeas
 
 **Resultado**: Monitoreo global continuo con programaciones escalonadas.
 
+### Flujo de trabajo 4: Pipeline de leads mejorado con IA
+
+**Programación 1**: Búsqueda diaria
+```
+Cron: 0 9 * * 1-5 (Días laborables 9 AM)
+Task: Google Maps - Búsqueda de "restaurantes [ciudad]"
+```
+
+**Programación 2**: Extracción de contactos (Dependencia)
+```
+Activador: Después de que la Programación 1 tenga éxito
+Retraso: 0 minutos
+Task: Extracción de contactos de los resultados de la Programación 1
+```
+
+**Programación 3**: Análisis con IA (Dependencia)
+```
+Activador: Después de que la Programación 2 tenga éxito
+Retraso: 30 minutos
+Task: AI Message - "Analiza los contactos extraídos y redacta mensajes de comunicación personalizados para los 20 leads más prometedores"
+Límites de seguridad: Máx. llamadas de herramientas: 15, Máx. tiempo de ejecución: 600000ms (10 min)
+```
+
+**Programación 4**: Campaña de correo (Dependencia)
+```
+Activador: Después de que la Programación 3 tenga éxito
+Retraso: 60 minutos
+Task: Outreach Campaign - Enviar mensajes generados por IA
+```
+
+**Resultado**: Pipeline completamente automatizado desde búsqueda hasta análisis con IA hasta comunicación.
+
 ## Integración con otras funciones
 
 El Programador de tareas se integra con:
@@ -521,7 +651,9 @@ El Programador de tareas se integra con:
 - **[Motores de búsqueda](../lead-generation/search-engines)**: Programar búsquedas recurrentes
 - **[Extracción de contactos](../lead-generation/contact-extraction)**: Auto-extraer después de búsquedas
 - **[Páginas Amarillas](../lead-generation/yellow-pages)**: Extracción regular de directorios
+- **[Extracción de Google Maps](../lead-generation/local-business-finder)**: Programar recopilación de datos de Google Maps
 - **[Envío masivo de correos](../lead-generation/batch-email-sending)**: Campañas automatizadas
+- **AI Message**: Programar tareas de IA con integración de herramientas para análisis y acciones automatizadas
 
 ## Próximos pasos
 

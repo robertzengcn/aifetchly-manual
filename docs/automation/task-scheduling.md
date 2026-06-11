@@ -50,19 +50,78 @@ Select the type of task to schedule:
 - **Email Extract**: Contact Profile Insights tasks
 - **Outreach Campaign**: Email marketing campaigns
 - **Directory Assistant**: Directory information organization tasks
-- **Video Download**: Video downloading tasks
+- **Google Maps**: Google Maps scraper tasks
+- **Yandex Maps**: Yandex Maps scraper tasks
+- **AI Message**: AI-powered message tasks with tool integration
 
 #### Task ID
 
 - **Purpose**: Link to the specific task instance
 - **Selection**: Choose from existing tasks of the selected type
 - **Required**: Yes
+- **Note**: For AI Message tasks, the task configuration is created inline when setting up the schedule (see [AI Message Task Configuration](#ai-message-task-configuration) below)
 
 #### Description
 
 - **Purpose**: Provide context about the schedule's purpose
 - **Example**: "Daily search for new marketing agencies in target cities"
 - **Optional**: Yes
+
+### AI Message Task Configuration
+
+When you select **AI Message** as the task type, an additional configuration form appears to define the AI task. This section does not appear for other task types.
+
+#### Task Name
+
+- **Purpose**: Identify the AI message task
+- **Required**: Yes
+- **Example**: "Daily Lead Analysis", "Auto-respond to inquiries"
+
+#### AI Message
+
+- **Purpose**: The prompt/message to send to the AI model
+- **Required**: Yes
+- **Example**: "Analyze today's search results and identify the top 10 most promising leads based on company size and industry"
+- **Supports**: Multi-line text with detailed instructions
+
+#### Allowed Tools
+
+Select which tools the AI agent can use during execution:
+
+| Tool Risk Level | Color | Description |
+|----------------|-------|-------------|
+| **Low** | Green | Safe read-only operations |
+| **Medium** | Yellow | Operations with moderate impact |
+| **High** | Red | Operations that modify data or perform significant actions |
+| **Blocked** | — | Tools not permitted for scheduled tasks |
+
+- **Purpose**: Control what actions the AI can perform autonomously
+- **Selection**: Multi-select from available schedulable tools
+- **Default**: No tools selected
+
+#### Auto-Approve Tools
+
+- **Purpose**: Allow the AI to execute tool calls without manual approval
+- **Default**: Off (disabled)
+- **Warning**: Enabling this means the AI can run tools automatically. Review allowed tools carefully before enabling.
+
+:::caution Auto-Approve Safety
+
+When auto-approve is enabled, the AI will execute approved tools without waiting for human confirmation. Only enable this for well-tested task configurations with a carefully curated tool list. Always set appropriate safety limits.
+
+:::
+
+#### Safety Limits
+
+Configure limits to keep the AI task within safe boundaries:
+
+| Setting | Default | Min | Description |
+|---------|---------|-----|-------------|
+| **Max Tool Calls** | 10 | 1 | Maximum number of tool calls per execution |
+| **Max Runtime** | 300,000 ms (5 min) | 1,000 ms | Maximum execution time |
+| **Max Continue Calls** | 10 | 1 | Maximum number of continuation cycles |
+
+These limits prevent runaway tasks from consuming excessive resources or executing indefinitely.
 
 ### Step 3: Configure Trigger
 
@@ -293,6 +352,22 @@ Task: Data cleanup or backup
 
 **Use Case**: Routine maintenance during low-traffic periods.
 
+### Pattern 6: AI-Powered Lead Analysis
+
+**Schedule**: Every weekday at 10:00 AM
+```
+Cron: 0 10 * * 1-5
+Task: AI Message
+```
+
+**AI Configuration**:
+- **Message**: "Review yesterday's search results, analyze lead quality, and generate a summary report of the most promising contacts"
+- **Allowed Tools**: Select relevant data analysis tools
+- **Auto-Approve**: Enabled (with carefully reviewed tool list)
+- **Max Runtime**: 300,000 ms (5 minutes)
+
+**Use Case**: Automated daily analysis of collected leads using AI.
+
 ## Best Practices
 
 ### 1. Schedule Design
@@ -431,6 +506,31 @@ Task: Data cleanup or backup
 3. Increase interval between runs
 4. Check system performance
 
+### AI Message Task Issues
+
+**Task hitting safety limits:**
+- **Possible causes**: Max tool calls, max runtime, or max continue calls reached
+- **Solutions**:
+  1. Review the AI message prompt for clarity and specificity
+  2. Increase safety limits if the task legitimately needs more resources
+  3. Reduce the scope of the task prompt
+  4. Check execution logs for which limit was hit
+
+**AI task producing unexpected results:**
+- **Possible causes**: Vague prompt, wrong tools selected, or insufficient context
+- **Solutions**:
+  1. Refine the AI message with more specific instructions
+  2. Review and adjust the allowed tools list
+  3. Test with auto-approve disabled to manually review tool calls
+  4. Add more context to the system prompt
+
+**Tool calls being blocked:**
+- **Possible causes**: Tool not in allowed list, or tool marked as blocked for scheduled tasks
+- **Solutions**:
+  1. Add the required tool to the allowed tools list
+  2. Verify the tool is available for scheduled execution
+  3. Check tool risk level and ensure it's not blocked by policy
+
 ### Execution History Not Showing
 
 **Possible causes:**
@@ -514,6 +614,38 @@ Task: Search European keywords
 
 **Result**: Continuous global monitoring with staggered schedules.
 
+### Workflow 4: AI-Enhanced Lead Pipeline
+
+**Schedule 1**: Daily Search
+```
+Cron: 0 9 * * 1-5 (Weekdays 9 AM)
+Task: Google Maps - Search for "restaurants [city]"
+```
+
+**Schedule 2**: Contact Extraction (Dependency)
+```
+Trigger: After Schedule 1 succeeds
+Delay: 0 minutes
+Task: Contact Profile Insights from Schedule 1 results
+```
+
+**Schedule 3**: AI Analysis (Dependency)
+```
+Trigger: After Schedule 2 succeeds
+Delay: 30 minutes
+Task: AI Message - "Analyze the extracted contacts and draft personalized outreach messages for the top 20 leads"
+Safety Limits: Max Tool Calls: 15, Max Runtime: 600000ms (10 min)
+```
+
+**Schedule 4**: Email Campaign (Dependency)
+```
+Trigger: After Schedule 3 succeeds
+Delay: 60 minutes
+Task: Outreach Campaign - Send AI-generated messages
+```
+
+**Result**: Fully automated pipeline from search to AI analysis to outreach.
+
 ## Integration with Other Features
 
 The Task Scheduler integrates with:
@@ -521,7 +653,9 @@ The Task Scheduler integrates with:
 - **[Market Insight Explorer](../lead-generation/search-engines)**: Schedule recurring searches
 - **[Contact Profile Insights](../lead-generation/contact-extraction)**: Auto-extract after searches
 - **[Directory Assistant](../lead-generation/yellow-pages)**: Regular directory information organization
+- **[Google Maps Scraper](../lead-generation/local-business-finder)**: Schedule Google Maps data collection
 - **[Outreach Campaign](../lead-generation/batch-email-sending)**: Automated campaigns
+- **AI Message**: Schedule AI-powered tasks with tool integration for automated analysis and actions
 
 ## Next Steps
 

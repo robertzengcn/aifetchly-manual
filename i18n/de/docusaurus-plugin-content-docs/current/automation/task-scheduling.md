@@ -50,13 +50,16 @@ Wählen Sie den Typ der zu planenden Aufgabe:
 - **Email Extract**: E-Mail-Extraktionsaufgaben
 - **Outreach Campaign**: E-Mail-Marketing-Kampagnen
 - **Directory Assistant**: Verzeichnis-Information Organization-Aufgaben
-- **Video Download**: Video-Download-Aufgaben
+- **Google Maps**: Google Maps-Scraping-Aufgaben
+- **Yandex Maps**: Yandex Maps-Scraping-Aufgaben
+- **AI Message**: KI-gestützte Nachrichtenaufgaben mit Tool-Integration
 
 #### Aufgaben-ID
 
 - **Zweck**: Mit der spezifischen Aufgabeninstanz verknüpfen
 - **Auswahl**: Aus vorhandenen Aufgaben des ausgewählten Typs wählen
 - **Erforderlich**: Ja
+- **Hinweis**: Für AI Message-Aufgaben wird die Aufgabenkonfiguration beim Einrichten des Zeitplans inline erstellt (siehe [AI Message Aufgabenkonfiguration](#ai-message-aufgabenkonfiguration) unten)
 
 #### Beschreibung
 
@@ -64,7 +67,61 @@ Wählen Sie den Typ der zu planenden Aufgabe:
 - **Beispiel**: "Tägliche Suche nach neuen Marketingagenturen in Zielstädten"
 - **Optional**: Ja
 
-### Schritt 3: Trigger konfigurieren
+### AI Message Aufgabenkonfiguration
+
+Wenn Sie **AI Message** als Aufgabentyp auswählen, wird ein zusätzliches Konfigurationsformular zur Definition der KI-Aufgabe angezeigt. Dieser Abschnitt erscheint nicht bei anderen Aufgabentypen.
+
+#### Aufgabenname
+
+- **Zweck**: Die KI-Nachrichtenaufgabe identifizieren
+- **Erforderlich**: Ja
+- **Beispiel**: "Tägliche Lead-Analyse", "Anfragen automatisch beantworten"
+
+#### KI-Nachricht
+
+- **Zweck**: Der Prompt/Nachricht, die an das KI-Modell gesendet wird
+- **Erforderlich**: Ja
+- **Beispiel**: "Analysiere die heutigen Suchergebnisse und identifiziere die 10 vielversprechendsten Leads nach Unternehmensgröße und Branche"
+- **Unterstützt**: Mehrzeiliger Text mit detaillierten Anweisungen
+
+#### Erlaubte Tools
+
+Wählen Sie, welche Tools der KI-Agent während der Ausführung verwenden darf:
+
+| Risikostufe | Farbe | Beschreibung |
+|----------------|-------|-------------|
+| **Niedrig** | Grün | Sichere Lesezugriffe |
+| **Mittel** | Gelb | Operationen mit mäßiger Auswirkung |
+| **Hoch** | Rot | Operationen, die Daten ändern oder erhebliche Aktionen durchführen |
+| **Blockiert** | — | Tools, die für geplante Aufgaben nicht zugelassen sind |
+
+- **Zweck**: Steuern, welche Aktionen die KI autonom ausführen kann
+- **Auswahl**: Mehrfachauswahl aus verfügbaren planbaren Tools
+- **Standard**: Keine Tools ausgewählt
+
+#### Tools automatisch genehmigen
+
+- **Zweck**: Der KI erlauben, Tool-Aufrufe ohne manuelle Genehmigung auszuführen
+- **Standard**: Aus (deaktiviert)
+- **Warnung**: Durch die Aktivierung kann die KI Tools automatisch ausführen. Überprüfen Sie die Liste der erlaubten Tools vor der Aktivierung sorgfältig.
+
+:::caution Sicherheit der automatischen Genehmigung
+
+Wenn die automatische Genehmigung aktiviert ist, führt die KI genehmigte Tools aus, ohne auf menschliche Bestätigung zu warten. Aktivieren Sie dies nur für gut getestete Aufgabenkonfigurationen mit einer sorgfältig kuratierten Tool-Liste. Legen Sie immer angemessene Sicherheitsgrenzen fest.
+
+:::
+
+#### Sicherheitslimits
+
+Konfigurieren Sie Limits, um die KI-Aufgabe innerhalb sicherer Grenzen zu halten:
+
+| Einstellung | Standard | Minimum | Beschreibung |
+|---------|---------|-----|-------------|
+| **Max. Tool-Aufrufe** | 10 | 1 | Maximale Anzahl von Tool-Aufrufen pro Ausführung |
+| **Max. Laufzeit** | 300.000 ms (5 Min.) | 1.000 ms | Maximale Ausführungszeit |
+| **Max. Fortsetzungsaufrufe** | 10 | 1 | Maximale Anzahl von Fortsetzungszyklen |
+
+Diese Limits verhindern, dass entfesselte Aufgaben übermäßige Ressourcen verbrauchen oder unbegrenzt ausgeführt werden.
 
 #### Cron-Planung (Zeitbasiert)
 
@@ -293,6 +350,22 @@ Task: Data cleanup or backup
 
 **Anwendungsfall**: Regelmäßige Wartung in Zeiten mit wenig Traffic.
 
+### Muster 6: KI-gestützte Lead-Analyse
+
+**Zeitplan**: Jeden Werktag um 10:00 Uhr
+```
+Cron: 0 10 * * 1-5
+Task: AI Message
+```
+
+**KI-Konfiguration**:
+- **Nachricht**: "Überprüfe die Suchergebnisse von gestern, analysiere die Lead-Qualität und erstelle einen Zusammenfassungsbericht der vielversprechendsten Kontakte"
+- **Erlaubte Tools**: Relevante Datenanalysetools auswählen
+- **Automatisch genehmigen**: Aktiviert (mit sorgfältig geprüfter Tool-Liste)
+- **Max. Laufzeit**: 300.000 ms (5 Minuten)
+
+**Anwendungsfall**: Automatisierte tägliche Analyse gesammelter Leads mittels KI.
+
 ## Best Practices
 
 ### 1. Zeitplandesign
@@ -431,6 +504,31 @@ Task: Data cleanup or backup
 3. Intervall zwischen Ausführungen vergrößern
 4. Systemleistung prüfen
 
+### AI Message Aufgabenprobleme
+
+**Aufgabe erreicht Sicherheitslimits:**
+- **Mögliche Ursachen**: Max. Tool-Aufrufe, max. Laufzeit oder max. Fortsetzungsaufrufe erreicht
+- **Lösungen**:
+  1. KI-Nachricht-Prompt auf Klarheit und Spezifität überprüfen
+  2. Sicherheitslimits erhöhen, wenn die Aufgabe legitimerweise mehr Ressourcen benötigt
+  3. Umfang des Aufgaben-Prompts reduzieren
+  4. Ausführungsprotokolle prüfen, um zu sehen, welches Limit erreicht wurde
+
+**KI-Aufgabe liefert unerwartete Ergebnisse:**
+- **Mögliche Ursachen**: Vager Prompt, falsche Tools ausgewählt oder unzureichender Kontext
+- **Lösungen**:
+  1. KI-Nachricht mit spezifischeren Anweisungen verfeinern
+  2. Liste der erlaubten Tools überprüfen und anpassen
+  3. Mit deaktivierter automatischer Genehmigung testen, um Tool-Aufrufe manuell zu prüfen
+  4. Mehr Kontext zum System-Prompt hinzufügen
+
+**Tool-Aufrufe werden blockiert:**
+- **Mögliche Ursachen**: Tool nicht in der Erlaubt-Liste oder als blockiert für geplante Aufgaben markiert
+- **Lösungen**:
+  1. Erforderliches Tool zur Liste der erlaubten Tools hinzufügen
+  2. Überprüfen, ob das Tool für die geplante Ausführung verfügbar ist
+  3. Risikostufe des Tools prüfen und bestätigen, dass es nicht durch Richtlinien blockiert ist
+
 ### Ausführungsverlauf wird nicht angezeigt
 
 **Mögliche Ursachen:**
@@ -514,6 +612,38 @@ Task: Search European keywords
 
 **Ergebnis**: Kontinuierliche globale Überwachung mit versetzten Zeitplänen.
 
+### Workflow 4: KI-erweiterte Lead-Pipeline
+
+**Zeitplan 1**: Tägliche Suche
+```
+Cron: 0 9 * * 1-5 (Werktage 9 Uhr)
+Task: Google Maps - Suche nach "Restaurants [Stadt]"
+```
+
+**Zeitplan 2**: Kontaktextraktion (Abhängigkeit)
+```
+Trigger: Nach Erfolg von Zeitplan 1
+Delay: 0 Minuten
+Task: Kontaktextraktion aus den Ergebnissen von Zeitplan 1
+```
+
+**Zeitplan 3**: KI-Analyse (Abhängigkeit)
+```
+Trigger: Nach Erfolg von Zeitplan 2
+Delay: 30 Minuten
+Task: AI Message - "Analysiere die extrahierten Kontakte und erstelle personalisierte Outreach-Nachrichten für die Top-20-Leads"
+Sicherheitslimits: Max. Tool-Aufrufe: 15, Max. Laufzeit: 600000ms (10 Min.)
+```
+
+**Zeitplan 4**: E-Mail-Kampagne (Abhängigkeit)
+```
+Trigger: Nach Erfolg von Zeitplan 3
+Delay: 60 Minuten
+Task: Outreach Campaign - KI-generierte Nachrichten senden
+```
+
+**Ergebnis**: Vollautomatisierte Pipeline von der Suche über KI-Analyse bis zum Outreach.
+
 ## Integration mit anderen Funktionen
 
 Der Aufgabenplaner integriert sich mit:
@@ -521,7 +651,9 @@ Der Aufgabenplaner integriert sich mit:
 - **[Suchmaschinen](../lead-generation/search-engines)**: Wiederkehrende Suchen planen
 - **[Kontaktextraktion](../lead-generation/contact-extraction)**: Automatische Extraktion nach Suchen
 - **[Gelbe Seiten](../lead-generation/yellow-pages)**: Regelmäßiges Verzeichnis-Information Organization
+- **[Google Maps Scraper](../lead-generation/local-business-finder)**: Google Maps-Datenerfassung planen
 - **[Massen-E-Mail-Versand](../lead-generation/batch-email-sending)**: Automatisierte Kampagnen
+- **AI Message**: KI-gestützte Aufgaben mit Tool-Integration für automatisierte Analyse und Aktionen planen
 
 ## Nächste Schritte
 
