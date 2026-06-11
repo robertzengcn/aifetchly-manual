@@ -13,11 +13,11 @@ Der Aufgabenplaner von aiFetchly ermöglicht es Ihnen, Ihre Marketing-Workflows 
 
 Der Aufgabenplaner unterstützt drei Arten von Aufgabentriggern:
 
-| Triggertyp | Beschreibung | Am besten für |
+- Triggertyp | Beschreibung | Am besten für |
 |-------------|-------------|----------|
-| **Cron** | Zeitbasierte Planung mit Cron-Ausdrücken | Wiederkehrende Aufgaben, tägliche/wöchentliche/monatliche Jobs |
-| **Abhängigkeit** | Wird durch den Abschluss einer anderen Aufgabe ausgelöst | Mehrstufige Workflows, Aufgabenketten |
-| **Manuell** | Wird nur bei manueller Auslösung ausgeführt | On-Demand-Aufgaben, Tests |
+- **Cron** | Zeitbasierte Planung mit Cron-Ausdrücken | Wiederkehrende Aufgaben, tägliche/wöchentliche/monatliche Jobs |
+- **Abhängigkeit** | Wird durch den Abschluss einer anderen Aufgabe ausgelöst | Mehrstufige Workflows, Aufgabenketten |
+- **Manuell** | Wird nur bei manueller Auslösung ausgeführt | On-Demand-Aufgaben, Tests |
 
 :::info Alles automatisieren
 
@@ -46,10 +46,10 @@ Geben Sie die folgenden erforderlichen Informationen ein:
 
 Wählen Sie den Typ der zu planenden Aufgabe:
 
-- **Search**: Suchmaschinen-Information Organization-Aufgaben
+- **Search**: Suchmaschinen-Scraping-Aufgaben
 - **Email Extract**: E-Mail-Extraktionsaufgaben
 - **Outreach Campaign**: E-Mail-Marketing-Kampagnen
-- **Directory Assistant**: Verzeichnis-Information Organization-Aufgaben
+- **Directory Assistant**: Verzeichnis-Scraping-Aufgaben
 - **Google Maps**: Google Maps-Scraping-Aufgaben
 - **Yandex Maps**: Yandex Maps-Scraping-Aufgaben
 - **AI Message**: KI-gestützte Nachrichtenaufgaben mit Tool-Integration
@@ -88,12 +88,12 @@ Wenn Sie **AI Message** als Aufgabentyp auswählen, wird ein zusätzliches Konfi
 
 Wählen Sie, welche Tools der KI-Agent während der Ausführung verwenden darf:
 
-| Risikostufe | Farbe | Beschreibung |
+- Risikostufe | Farbe | Beschreibung |
 |----------------|-------|-------------|
-| **Niedrig** | Grün | Sichere Lesezugriffe |
-| **Mittel** | Gelb | Operationen mit mäßiger Auswirkung |
-| **Hoch** | Rot | Operationen, die Daten ändern oder erhebliche Aktionen durchführen |
-| **Blockiert** | — | Tools, die für geplante Aufgaben nicht zugelassen sind |
+- **Niedrig** | Grün | Sichere Lesezugriffe |
+- **Mittel** | Gelb | Operationen mit mäßiger Auswirkung |
+- **Hoch** | Rot | Operationen, die Daten ändern oder erhebliche Aktionen durchführen |
+- **Blockiert** | — | Tools, die für geplante Aufgaben nicht zugelassen sind |
 
 - **Zweck**: Steuern, welche Aktionen die KI autonom ausführen kann
 - **Auswahl**: Mehrfachauswahl aus verfügbaren planbaren Tools
@@ -115,13 +115,15 @@ Wenn die automatische Genehmigung aktiviert ist, führt die KI genehmigte Tools 
 
 Konfigurieren Sie Limits, um die KI-Aufgabe innerhalb sicherer Grenzen zu halten:
 
-| Einstellung | Standard | Minimum | Beschreibung |
+- Einstellung | Standard | Minimum | Beschreibung |
 |---------|---------|-----|-------------|
-| **Max. Tool-Aufrufe** | 10 | 1 | Maximale Anzahl von Tool-Aufrufen pro Ausführung |
-| **Max. Laufzeit** | 300.000 ms (5 Min.) | 1.000 ms | Maximale Ausführungszeit |
-| **Max. Fortsetzungsaufrufe** | 10 | 1 | Maximale Anzahl von Fortsetzungszyklen |
+- **Max. Tool-Aufrufe** | 10 | 1 | Maximale Anzahl von Tool-Aufrufen pro Ausführung |
+- **Max. Laufzeit** | 300.000 ms (5 Min.) | 1.000 ms | Maximale Ausführungszeit |
+- **Max. Fortsetzungsaufrufe** | 10 | 1 | Maximale Anzahl von Fortsetzungszyklen |
 
 Diese Limits verhindern, dass entfesselte Aufgaben übermäßige Ressourcen verbrauchen oder unbegrenzt ausgeführt werden.
+
+### Schritt 3: Trigger konfigurieren
 
 #### Cron-Planung (Zeitbasiert)
 
@@ -143,13 +145,13 @@ Aktivieren Sie **Cron** und konfigurieren Sie den Zeitplan:
 
 **Benutzerdefinierter Cron-Builder:**
 
-| Feld | Optionen | Beschreibung |
+- Feld | Optionen | Beschreibung |
 |-------|---------|-------------|
-| **Minuten** | `*/5`, `*/15`, `*/30` oder bestimmte Minuten | Alle 5/15/30 Min. oder spezifisch |
-| **Stunden** | `*/2`, `*/6`, `*/12` oder bestimmte Stunden | Alle 2/6/12 Stunden oder spezifisch |
-| **Tage** | `*/2` oder bestimmte Tage | Alle 2 Tage oder spezifisch |
-| **Monate** | `*/3`, `*/6` oder bestimmte Monate | Alle 3/6 Monate oder spezifisch |
-| **Wochentage** | `1-5` (Werktage), `0,6` (Wochenenden) oder spezifisch | Werktage, Wochenenden oder spezifisch |
+- **Minuten** | `*/5`, `*/15`, `*/30` oder bestimmte Minuten | Alle 5/15/30 Min. oder spezifisch |
+- **Stunden** | `*/2`, `*/6`, `*/12` oder bestimmte Stunden | Alle 2/6/12 Stunden oder spezifisch |
+- **Tage** | `*/2` oder bestimmte Tage | Alle 2 Tage oder spezifisch |
+- **Monate** | `*/3`, `*/6` oder bestimmte Monate | Alle 3/6 Monate oder spezifisch |
+- **Wochentage** | `1-5` (Werktage), `0,6` (Wochenenden) oder spezifisch | Werktage, Wochenenden oder spezifisch |
 
 **Cron-Ausdrucksformat:**
 ```
@@ -194,7 +196,7 @@ Aktivieren Sie **Dependency**, um diese Aufgabe auszulösen, wenn eine andere Au
 
 **Anwendungsfälle:**
 - **E-Mail nach Extraktion**: E-Mails extrahieren, dann Kampagne nach Abschluss senden
-- **Analyse nach Information Organization**: Daten scrapen, dann KI-Analyse durchführen
+- **Analyse nach Extraktion**: Daten scrapen, dann KI-Analyse durchführen
 - **Mehrstufige Kampagnen**: Erste Kontaktaufnahme → Follow-up 1 → Follow-up 2
 
 :::tip Abhängigkeitsketten
@@ -241,28 +243,28 @@ Navigieren Sie zu **Schedule**, um alle Ihre geplanten Aufgaben zu sehen.
 
 Die Zeitplanliste zeigt:
 
-| Spalte | Beschreibung |
+- Spalte | Beschreibung |
 |--------|-------------|
-| **Name** | Zeitplanname mit Aufgabentyp-Indikator |
-| **Status** | Active (grün), Inactive (grau), Paused (gelb) |
-| **Trigger Type** | Cron, Dependency oder Manual |
-| **Schedule** | Cron-Ausdruck oder Abhängigkeitsbeschreibung |
-| **Next Run** | Nächste Ausführungszeit mit Countdown |
-| **Last Run** | Letzte Ausführung mit vergangener Zeit |
-| **Executions** | Anzahl Erfolge / Anzahl Fehler |
-| **Actions** | Bearbeiten, Löschen, Pausieren/Fortsetzen, Jetzt ausführen |
+- **Name** | Zeitplanname mit Aufgabentyp-Indikator |
+- **Status** | Active (grün), Inactive (grau), Paused (gelb) |
+- **Trigger Type** | Cron, Dependency oder Manual |
+- **Schedule** | Cron-Ausdruck oder Abhängigkeitsbeschreibung |
+- **Next Run** | Nächste Ausführungszeit mit Countdown |
+- **Last Run** | Letzte Ausführung mit vergangener Zeit |
+- **Executions** | Anzahl Erfolge / Anzahl Fehler |
+- **Actions** | Bearbeiten, Löschen, Pausieren/Fortsetzen, Jetzt ausführen |
 
 ### Zeitplanaktionen
 
-| Aktion | Beschreibung | Verfügbar wenn |
+- Aktion | Beschreibung | Verfügbar wenn |
 |--------|-------------|----------------|
-| **Edit** | Zeitplankonfiguration ändern | Immer |
-| **Delete** | Zeitplan entfernen | Immer |
-| **Enable** | Einen inaktiven Zeitplan aktivieren | Inaktive Zeitpläne |
-| **Disable** | Einen Zeitplan deaktivieren | Aktive Zeitpläne |
-| **Pause** | Ausführung vorübergehend stoppen | Aktive Zeitpläne |
-| **Resume** | Pausierten Zeitplan fortsetzen | Pausierte Zeitpläne |
-| **Run Now** | Sofort ausführen | Immer |
+- **Edit** | Zeitplankonfiguration ändern | Immer |
+- **Delete** | Zeitplan entfernen | Immer |
+- **Enable** | Einen inaktiven Zeitplan aktivieren | Inaktive Zeitpläne |
+- **Disable** | Einen Zeitplan deaktivieren | Aktive Zeitpläne |
+- **Pause** | Ausführung vorübergehend stoppen | Aktive Zeitpläne |
+- **Resume** | Pausierten Zeitplan fortsetzen | Pausierte Zeitpläne |
+- **Run Now** | Sofort ausführen | Immer |
 
 ## Ausführung überwachen
 
@@ -273,15 +275,15 @@ Die Zeitplanliste zeigt:
 
 **Ausführungsinformationen:**
 
-| Spalte | Beschreibung |
+- Spalte | Beschreibung |
 |--------|-------------|
-| **Start Time** | Wann die Ausführung begann |
-| **End Time** | Wann die Ausführung abgeschlossen wurde (oder "Running...") |
-| **Duration** | Wie lange die Ausführung dauerte (oder Live-Zähler) |
-| **Status** | Success (grün), Failed (rot), Running (blau) |
-| **Result** | Zusammenfassung der Ausführungsergebnisse |
-| **Error** | Fehlermeldung (falls Ausführung fehlgeschlagen) |
-| **Actions** | Details anzeigen, laufende abbrechen |
+- **Start Time** | Wann die Ausführung begann |
+- **End Time** | Wann die Ausführung abgeschlossen wurde (oder "Running...") |
+- **Duration** | Wie lange die Ausführung dauerte (oder Live-Zähler) |
+- **Status** | Success (grün), Failed (rot), Running (blau) |
+- **Result** | Zusammenfassung der Ausführungsergebnisse |
+- **Error** | Fehlermeldung (falls Ausführung fehlgeschlagen) |
+- **Actions** | Details anzeigen, laufende abbrechen |
 
 ### Ausführungsstatistiken
 
@@ -383,7 +385,7 @@ Task: AI Message
 **Pufferzeit:**
 - Puffer zwischen abhängigen Aufgaben hinzufügen
 - Variable Ausführungszeiten berücksichtigen
-| Kaskadenverzögerungen verhindern
+- Kaskadenverzögerungen verhindern
 
 ### 2. Fehlerbehandlung
 
@@ -395,58 +397,58 @@ Task: AI Message
 **Warnungen einrichten:**
 - Zeitpläne wöchentlich überprüfen
 - Auf steckengebliebene oder pausierte Aufgaben prüfen
-| Abhängigkeiten korrekt auslösen lassen
+- Abhängigkeiten korrekt auslösen lassen
 
 **Graceful Degradation:**
 - "On Completion"-Abhängigkeiten verwenden, um die Kette fortzusetzen, auch wenn eine Aufgabe fehlschlägt
 - Alternative Zeitpläne für kritische Aufgaben erstellen
-| Eskalationsverfahren dokumentieren
+- Eskalationsverfahren dokumentieren
 
 ### 3. Ressourcenmanagement
 
 **Gleichzeitige Aufgaben:**
 - Nicht zu viele Aufgaben gleichzeitig planen
 - Systemressourcen (CPU, Speicher, Netzwerk) berücksichtigen
-| Ähnliche Aufgaben versetzen, um Konflikte zu vermeiden
+- Ähnliche Aufgaben versetzen, um Konflikte zu vermeiden
 
 **Proxy-Rotation:**
 - Ausreichende Proxys für gleichzeitige geplante Aufgaben sicherstellen
-| Last über den Proxy-Pool verteilen
-| Proxy-Gesundheit für geplante Aufgaben überwachen
+- Last über den Proxy-Pool verteilen
+- Proxy-Gesundheit für geplante Aufgaben überwachen
 
 ### 4. Tests
 
 **Zeitpläne testen:**
 - Vor der Planung mit "Run Now" testen
-| Zuerst mit einmaliger Ausführung verifizieren
-| Protokolle auf Probleme prüfen
+- Zuerst mit einmaliger Ausführung verifizieren
+- Protokolle auf Probleme prüfen
 
 **Cron-Ausdrücke validieren:**
 - "Next Run Time"-Vorschau zur Überprüfung verwenden
-| Zuerst mit kürzeren Intervallen testen
-| Zeitzoneneinstellungen bestätigen
+- Zuerst mit kürzeren Intervallen testen
+- Zeitzoneneinstellungen bestätigen
 
 **Abhängigkeiten testen:**
-| Übergeordnete Aufgaben erfolgreich abschließen lassen
-| Verzögerungseinstellungen testen
-| Sicherstellen, dass Ketten wie erwartet funktionieren
+- Übergeordnete Aufgaben erfolgreich abschließen lassen
+- Verzögerungseinstellungen testen
+- Sicherstellen, dass Ketten wie erwartet funktionieren
 
 ### 5. Dokumentation
 
 **Zeitpläne klar benennen:**
 - Beschreibende Namen mit Zweck und Häufigkeit
-| Aufgabentyp und Ziel angeben
-| Beispiel: "Tägliche Google-Suche - Marketingagenturen"
+- Aufgabentyp und Ziel angeben
+- Beispiel: "Tägliche Google-Suche - Marketingagenturen"
 
 **Beschreibungen nutzen:**
-| Zweck und erwartete Ergebnisse dokumentieren
-| Abhängigkeiten und Beziehungen notieren
-| Besondere Hinweise aufnehmen
+- Zweck und erwartete Ergebnisse dokumentieren
+- Abhängigkeiten und Beziehungen notieren
+- Besondere Hinweise aufnehmen
 
 **Aufgabenzwecke kennzeichnen:**
-| Verwandte Zeitpläne markieren oder kategorisieren
-| Nach Projekt oder Kampagne gruppieren
-| Identifikation erleichtern
+- Verwandte Zeitpläne markieren oder kategorisieren
+- Nach Projekt oder Kampagne gruppieren
+- Identifikation erleichtern
 
 ## Fehlerbehebung
 
@@ -455,8 +457,8 @@ Task: AI Message
 **Mögliche Ursachen:**
 - Zeitplan ist inaktiv oder pausiert
 - Cron-Ausdruck falsch konfiguriert
-| Planer-Dienst wird nicht ausgeführt
-| Systemzeit/Zeitzonen-Probleme
+- Planer-Dienst wird nicht ausgeführt
+- Systemzeit/Zeitzonen-Probleme
 
 **Lösungen:**
 1. Überprüfen Sie, ob der Status "Active" ist
@@ -469,8 +471,8 @@ Task: AI Message
 
 **Mögliche Ursachen:**
 - Cron-Ausdruck falsch
-| Mehrere Zeitpläne für dieselbe Aufgabe
-| Cron-Syntax missverstanden
+- Mehrere Zeitpläne für dieselbe Aufgabe
+- Cron-Syntax missverstanden
 
 **Lösungen:**
 1. Cron-Ausdruck sorgfältig überprüfen
@@ -481,9 +483,9 @@ Task: AI Message
 ### Abhängigkeiten werden nicht ausgelöst
 
 **Mögliche Ursachen:**
-| Übergeordnete Aufgabe wird nicht abgeschlossen
-| Falsche Abhängigkeitsbedingung
-| Verzögerung zu lang oder zu kurz
+- Übergeordnete Aufgabe wird nicht abgeschlossen
+- Falsche Abhängigkeitsbedingung
+- Verzögerung zu lang oder zu kurz
 
 **Lösungen:**
 1. Ausführungsverlauf der übergeordneten Aufgabe prüfen
@@ -494,9 +496,9 @@ Task: AI Message
 ### Aufgaben dauern zu lange
 
 **Mögliche Ursachen:**
-| Aufgabenkonfiguration zu aggressiv
-| Systemressourcen unzureichend
-| Netzwerk-Engpässe
+- Aufgabenkonfiguration zu aggressiv
+- Systemressourcen unzureichend
+- Netzwerk-Engpässe
 
 **Lösungen:**
 1. Aufgaben-Umfang reduzieren (Seiten, Parallelität usw.)
@@ -532,9 +534,9 @@ Task: AI Message
 ### Ausführungsverlauf wird nicht angezeigt
 
 **Mögliche Ursachen:**
-| Aufgabe wurde noch nie ausgeführt
-| Verlauf wurde gelöscht
-| Datenbankprobleme
+- Aufgabe wurde noch nie ausgeführt
+- Verlauf wurde gelöscht
+- Datenbankprobleme
 
 **Lösungen:**
 1. Aufgabe manuell zum Testen ausführen
@@ -548,22 +550,22 @@ Task: AI Message
 
 **Zeitplan 1**: Tägliche Suche
 ```
-Cron: 0 9 * * 1-5 (Weekdays 9 AM)
-Task: Google Search for "marketing agencies [city]"
+Cron: 0 9 * * 1-5 (Werktage 9 Uhr)
+Task: Google-Suche nach "Marketingagenturen [Stadt]"
 ```
 
 **Zeitplan 2**: E-Mail-Extraktion (Abhängigkeit)
 ```
-Trigger: After Schedule 1 succeeds
-Delay: 0 minutes
-Task: Open in Contact Profile Insights from Schedule 1 results
+Trigger: Nach Erfolg von Zeitplan 1
+Delay: 0 Minuten
+Task: E-Mails aus den Ergebnissen von Zeitplan 1 extrahieren
 ```
 
 **Zeitplan 3**: E-Mail-Kampagne (Abhängigkeit)
 ```
-Trigger: After Schedule 2 completes
-Delay: 60 minutes (allow time for profile insights)
-Task: Send welcome email campaign
+Trigger: Nach Abschluss von Zeitplan 2
+Delay: 60 Minuten (Zeit für die Extraktion)
+Task: Willkommens-E-Mail-Kampagne senden
 ```
 
 **Ergebnis**: Automatisierte tägliche Lead-Generierung und Outreach.
@@ -572,20 +574,20 @@ Task: Send welcome email campaign
 
 **Zeitplan 1**: Datenbankbereinigung
 ```
-Cron: 0 3 * * 0 (Sunday 3 AM)
-Task: Remove old completed tasks
+Cron: 0 3 * * 0 (Sonntag 3 Uhr)
+Task: Alte abgeschlossene Aufgaben entfernen
 ```
 
 **Zeitplan 2**: Proxy-Gesundheitsprüfung (Abhängigkeit)
 ```
-Trigger: After Schedule 1 completes
-Task: Test all proxies and remove failed
+Trigger: Nach Abschluss von Zeitplan 1
+Task: Alle Proxys testen und fehlerhafte entfernen
 ```
 
 **Zeitplan 3**: Berichtserstellung (Abhängigkeit)
 ```
-Trigger: After Schedule 2 completes
-Task: Generate weekly usage report
+Trigger: Nach Abschluss von Zeitplan 2
+Task: Wöchentlichen Nutzungsbericht generieren
 ```
 
 **Ergebnis**: Automatisierte wöchentliche Wartung und Berichterstellung.
@@ -594,20 +596,20 @@ Task: Generate weekly usage report
 
 **Zeitplan 1**: US-Ostküstenüberwachung
 ```
-Cron: 0 */2 * * * (Every 2 hours)
-Task: Search US East keywords
+Cron: 0 */2 * * * (Alle 2 Stunden)
+Task: US-Ost-Schlüsselwörter suchen
 ```
 
 **Zeitplan 2**: US-Westküstenüberwachung
 ```
-Cron: 0 */2 * * * (Every 2 hours, offset)
-Task: Search US West keywords
+Cron: 0 */2 * * * (Alle 2 Stunden, versetzt)
+Task: US-West-Schlüsselwörter suchen
 ```
 
 **Zeitplan 3**: Europa-Überwachung
 ```
-Cron: 0 */2 * * * (Every 2 hours, offset)
-Task: Search European keywords
+Cron: 0 */2 * * * (Alle 2 Stunden, versetzt)
+Task: Europäische Schlüsselwörter suchen
 ```
 
 **Ergebnis**: Kontinuierliche globale Überwachung mit versetzten Zeitplänen.
@@ -650,7 +652,7 @@ Der Aufgabenplaner integriert sich mit:
 
 - **[Suchmaschinen](../lead-generation/search-engines)**: Wiederkehrende Suchen planen
 - **[Kontaktextraktion](../lead-generation/contact-extraction)**: Automatische Extraktion nach Suchen
-- **[Gelbe Seiten](../lead-generation/yellow-pages)**: Regelmäßiges Verzeichnis-Information Organization
+- **[Gelbe Seiten](../lead-generation/yellow-pages)**: Regelmäßiges Verzeichnis-Scraping
 - **[Google Maps Scraper](../lead-generation/local-business-finder)**: Google Maps-Datenerfassung planen
 - **[Massen-E-Mail-Versand](../lead-generation/batch-email-sending)**: Automatisierte Kampagnen
 - **AI Message**: KI-gestützte Aufgaben mit Tool-Integration für automatisierte Analyse und Aktionen planen

@@ -123,6 +123,8 @@ Configura límites para mantener la tarea de IA dentro de los límites seguros:
 
 Estos límites evitan que las tareas descontroladas consuman recursos excesivos o se ejecuten indefinidamente.
 
+### Paso 3: Configurar activador
+
 #### Programación Cron (Basada en tiempo)
 
 **Habilita Cron** y configura la programación:

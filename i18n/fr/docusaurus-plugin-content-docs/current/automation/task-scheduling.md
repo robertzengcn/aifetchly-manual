@@ -46,10 +46,10 @@ Entrez les informations requises suivantes :
 
 Sélectionnez le type de tâche à planifier :
 
-- **Search** : Tâches de information organization de moteurs de recherche
-- **Email Extract** : Tâches d'profile insights d'e-mails
+- **Search** : Tâches d'extraction de moteurs de recherche
+- **Email Extract** : Tâches d'extraction d'e-mails
 - **Outreach Campaign** : Campagnes d'e-mails marketing
-- **Directory Assistant** : Tâches de information organization d'annuaires
+- **Directory Assistant** : Tâches d'extraction d'annuaires
 - **Google Maps** : Tâches de scraping Google Maps
 - **Yandex Maps** : Tâches de scraping Yandex Maps
 - **AI Message** : Tâches de messages IA avec intégration d'outils
@@ -123,6 +123,8 @@ Configurez des limites pour maintenir la tâche IA dans des limites sûres :
 
 Ces limites empêchent les tâches hors de contrôle de consommer des ressources excessives ou de s'exécuter indéfiniment.
 
+### Étape 3 : Configurer le déclencheur
+
 #### Planification Cron (basée sur le temps)
 
 Activez **Cron** et configurez le planificateur :
@@ -193,8 +195,8 @@ Activez **Dependency** pour déclencher cette tâche lorsqu'une autre tâche est
    - `60` minutes : Attendre 1 heure avant de commencer
 
 **Cas d'utilisation :**
-- **E-mail après profile insights** : Extraire les e-mails, puis envoyer la campagne une fois terminé
-- **Analyse après information organization** : Assistant les données, puis lancer une analyse IA
+- **E-mail après extraction** : Extraire les e-mails, puis envoyer la campagne une fois terminé
+- **Analyse après extraction** : Extraire les données, puis lancer une analyse IA
 - **Campagnes multi-étapes** : Prise de contact initiale → Suivi 1 → Suivi 2
 
 :::tip Chaînes de dépendance
@@ -548,22 +550,22 @@ Task: AI Message
 
 **Planificateur 1** : Recherche quotidienne
 ```
-Cron: 0 9 * * 1-5 (Weekdays 9 AM)
-Task: Google Search for "marketing agencies [city]"
+Cron: 0 9 * * 1-5 (Jours ouvrables 9h)
+Task: Recherche Google de « agences marketing [ville] »
 ```
 
-**Planificateur 2** : Profile Insights d'e-mails (dépendance)
+**Planificateur 2** : Extraction d'e-mails (dépendance)
 ```
-Trigger: After Schedule 1 succeeds
+Trigger: Après le succès du Planificateur 1
 Delay: 0 minutes
-Task: Open in Contact Profile Insights from Schedule 1 results
+Task: Extraire les e-mails des résultats du Planificateur 1
 ```
 
 **Planificateur 3** : Campagne d'e-mails (dépendance)
 ```
-Trigger: After Schedule 2 completes
-Delay: 60 minutes (allow time for profile insights)
-Task: Send welcome email campaign
+Trigger: Après l'achèvement du Planificateur 2
+Delay: 60 minutes (temps pour l'extraction)
+Task: Envoyer la campagne d'e-mails de bienvenue
 ```
 
 **Résultat** : Génération de prospects et prospection quotidiennes automatisées.
@@ -572,20 +574,20 @@ Task: Send welcome email campaign
 
 **Planificateur 1** : Nettoyage de la base de données
 ```
-Cron: 0 3 * * 0 (Sunday 3 AM)
-Task: Remove old completed tasks
+Cron: 0 3 * * 0 (Dimanche 3h)
+Task: Supprimer les anciennes tâches terminées
 ```
 
 **Planificateur 2** : Vérification de santé des proxies (dépendance)
 ```
-Trigger: After Schedule 1 completes
-Task: Test all proxies and remove failed
+Trigger: Après l'achèvement du Planificateur 1
+Task: Tester tous les proxies et supprimer les échoués
 ```
 
 **Planificateur 3** : Génération de rapports (dépendance)
 ```
-Trigger: After Schedule 2 completes
-Task: Generate weekly usage report
+Trigger: Après l'achèvement du Planificateur 2
+Task: Générer le rapport d'utilisation hebdomadaire
 ```
 
 **Résultat** : Maintenance et rapports hebdomadaires automatisés.
@@ -594,20 +596,20 @@ Task: Generate weekly usage report
 
 **Planificateur 1** : Surveillance Est des États-Unis
 ```
-Cron: 0 */2 * * * (Every 2 hours)
-Task: Search US East keywords
+Cron: 0 */2 * * * (Toutes les 2 heures)
+Task: Rechercher les mots-clés Est des États-Unis
 ```
 
 **Planificateur 2** : Surveillance Ouest des États-Unis
 ```
-Cron: 0 */2 * * * (Every 2 hours, offset)
-Task: Search US West keywords
+Cron: 0 */2 * * * (Toutes les 2 heures, décalé)
+Task: Rechercher les mots-clés Ouest des États-Unis
 ```
 
 **Planificateur 3** : Surveillance Europe
 ```
-Cron: 0 */2 * * * (Every 2 hours, offset)
-Task: Search European keywords
+Cron: 0 */2 * * * (Toutes les 2 heures, décalé)
+Task: Rechercher les mots-clés européens
 ```
 
 **Résultat** : Surveillance mondiale continue avec des planificateurs décalés.
@@ -649,7 +651,7 @@ Task: Outreach Campaign - Envoyer les messages générés par IA
 Le planificateur de tâches s'intègre avec :
 
 - **[Moteurs de recherche](../lead-generation/search-engines)** : Planifier des recherches récurrentes
-- **[Profile Insights de contacts](../lead-generation/contact-extraction)** : Profile Insights automatique après les recherches
+- **[Extraction de contacts](../lead-generation/contact-extraction)** : Extraction automatique après les recherches
 - **[Pages Jaunes](../lead-generation/yellow-pages)** : Information Organization d'annuaires régulier
 - **[Scraping Google Maps](../lead-generation/local-business-finder)** : Planifier la collecte de données Google Maps
 - **[Envoi d'e-mails en lot](../lead-generation/batch-email-sending)** : Campagnes automatisées
