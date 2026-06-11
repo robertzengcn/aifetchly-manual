@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.9.2">
 <title data-rh="true">タスクスケジューリング | aiFetchly Manual</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://robertzengcn.github.io/aiFetchly/ja/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://robertzengcn.github.io/aiFetchly/ja/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://robertzengcn.github.io/aiFetchly/ja/docs/automation/task-scheduling"><meta data-rh="true" property="og:locale" content="ja"><meta data-rh="true" property="og:locale:alternate" content="en"><meta data-rh="true" property="og:locale:alternate" content="zh_CN"><meta data-rh="true" property="og:locale:alternate" content="es"><meta data-rh="true" property="og:locale:alternate" content="fr"><meta data-rh="true" property="og:locale:alternate" content="de"><meta data-rh="true" name="docusaurus_locale" content="ja"><meta data-rh="true" name="docsearch:language" content="ja"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="タスクスケジューリング | aiFetchly Manual"><meta data-rh="true" name="description" content="aiFetchlyの強力なタスクスケジューリングシステムでワークフローを自動化します。"><meta data-rh="true" property="og:description" content="aiFetchlyの強力なタスクスケジューリングシステムでワークフローを自動化します。"><link data-rh="true" rel="icon" href="/aiFetchly/ja/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://robertzengcn.github.io/aiFetchly/ja/docs/automation/task-scheduling"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/docs/automation/task-scheduling" hreflang="en"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/zh-CN/docs/automation/task-scheduling" hreflang="zh-CN"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/es/docs/automation/task-scheduling" hreflang="es"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/fr/docs/automation/task-scheduling" hreflang="fr"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/de/docs/automation/task-scheduling" hreflang="de"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/ja/docs/automation/task-scheduling" hreflang="ja"><link data-rh="true" rel="alternate" href="https://robertzengcn.github.io/aiFetchly/docs/automation/task-scheduling" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"タスクスケジューラー","item":"https://robertzengcn.github.io/aiFetchly/ja/docs/automation/task-scheduling"}]}</script><link rel="stylesheet" href="/aiFetchly/ja/assets/css/styles.ac14db2c.css">
-<script src="/aiFetchly/ja/assets/js/runtime~main.35f19076.js" defer="defer"></script>
+<script src="/aiFetchly/ja/assets/js/runtime~main.0e6f460b.js" defer="defer"></script>
 <script src="/aiFetchly/ja/assets/js/main.bb38dea1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -38,13 +38,16 @@
 <li class=""><strong>Email Extract</strong>: メール抽出タスク</li>
 <li class=""><strong>Outreach Campaign</strong>: メールマーケティングキャンペーン</li>
 <li class=""><strong>Directory Assistant</strong>: ディレクトリスクレイピングタスク</li>
-<li class=""><strong>Video Download</strong>: 動画ダウンロードタスク</li>
+<li class=""><strong>Google Maps</strong>: Google Maps スクレイピングタスク</li>
+<li class=""><strong>Yandex Maps</strong>: Yandex Maps スクレイピングタスク</li>
+<li class=""><strong>AI Message</strong>: ツール統合を備えた AI メッセージタスク</li>
 </ul>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="タスク-id">タスク ID<a href="#タスク-id" class="hash-link" aria-label="タスク ID への直接リンク" title="タスク ID への直接リンク" translate="no">​</a></h4>
 <ul>
 <li class=""><strong>目的</strong>: 特定のタスクインスタンスにリンク</li>
 <li class=""><strong>選択</strong>: 選択したタイプの既存タスクから選択</li>
 <li class=""><strong>必須</strong>: はい</li>
+<li class=""><strong>注意</strong>: AI Message タスクの場合、スケジュール設定時にタスク設定がインラインで作成されます（下記の <a href="#ai-message-%E3%82%BF%E3%82%B9%E3%82%AF%E8%A8%AD%E5%AE%9A" class="">AI Message タスク設定</a>を参照）</li>
 </ul>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="説明">説明<a href="#説明" class="hash-link" aria-label="説明 への直接リンク" title="説明 への直接リンク" translate="no">​</a></h4>
 <ul>
@@ -52,7 +55,40 @@
 <li class=""><strong>例</strong>: 「ターゲット都市の新しいマーケティング代理店を毎日検索」</li>
 <li class=""><strong>任意</strong>: はい</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ステップ-3-トリガーの設定">ステップ 3: トリガーの設定<a href="#ステップ-3-トリガーの設定" class="hash-link" aria-label="ステップ 3: トリガーの設定 への直接リンク" title="ステップ 3: トリガーの設定 への直接リンク" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ai-message-タスク設定">AI Message タスク設定<a href="#ai-message-タスク設定" class="hash-link" aria-label="AI Message タスク設定 への直接リンク" title="AI Message タスク設定 への直接リンク" translate="no">​</a></h3>
+<p><strong>AI Message</strong> をタスクタイプとして選択すると、AI タスクを定義するための追加設定フォームが表示されます。このセクションは他のタスクタイプでは表示されません。</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="タスク名">タスク名<a href="#タスク名" class="hash-link" aria-label="タスク名 への直接リンク" title="タスク名 への直接リンク" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>目的</strong>: AI メッセージタスクの識別</li>
+<li class=""><strong>必須</strong>: はい</li>
+<li class=""><strong>例</strong>: 「毎日のリード分析」、「問い合わせ自動返信」</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="ai-メッセージ">AI メッセージ<a href="#ai-メッセージ" class="hash-link" aria-label="AI メッセージ への直接リンク" title="AI メッセージ への直接リンク" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>目的</strong>: AI モデルに送信するプロンプト/メッセージ</li>
+<li class=""><strong>必須</strong>: はい</li>
+<li class=""><strong>例</strong>: 「今日の検索結果を分析し、企業規模と業界に基づいて最も有望な上位 10 件のリードを特定する」</li>
+<li class=""><strong>サポート</strong>: 詳細な指示を含む複数行テキスト</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="許可ツール">許可ツール<a href="#許可ツール" class="hash-link" aria-label="許可ツール への直接リンク" title="許可ツール への直接リンク" translate="no">​</a></h4>
+<p>実行中に AI エージェントが使用できるツールを選択：</p>
+<table><thead><tr><th>ツールリスクレベル</th><th>色</th><th>説明</th></tr></thead><tbody><tr><td><strong>低</strong></td><td>緑</td><td>安全な読み取り専用操作</td></tr><tr><td><strong>中</strong></td><td>黄</td><td>中程度の影響を持つ操作</td></tr><tr><td><strong>高</strong></td><td>赤</td><td>データを変更または重要なアクションを実行する操作</td></tr><tr><td><strong>ブロック</strong></td><td>—</td><td>スケジュールタスクで許可されていないツール</td></tr></tbody></table>
+<ul>
+<li class=""><strong>目的</strong>: AI が自律的に実行できるアクションを制御</li>
+<li class=""><strong>選択</strong>: 利用可能なスケジュール可能ツールから複数選択</li>
+<li class=""><strong>デフォルト</strong>: ツール未選択</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="ツールの自動承認">ツールの自動承認<a href="#ツールの自動承認" class="hash-link" aria-label="ツールの自動承認 への直接リンク" title="ツールの自動承認 への直接リンク" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>目的</strong>: 手動承認なしで AI がツール呼び出しを実行できるようにする</li>
+<li class=""><strong>デフォルト</strong>: オフ（無効）</li>
+<li class=""><strong>警告</strong>: 有効にすると、AI がツールを自動的に実行できるようになります。有効にする前に、許可ツールリストを慎重に確認してください。</li>
+</ul>
+<div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>自動承認の安全性</div><div class="admonitionContent_BuS1"><p>自動承認が有効な場合、AI は人間の確認を待たずに承認済みツールを実行します。十分にテストされたタスク設定と慎重に選別されたツールリストにのみ有効にしてください。適切な安全制限を常に設定してください。</p></div></div>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="安全制限">安全制限<a href="#安全制限" class="hash-link" aria-label="安全制限 への直接リンク" title="安全制限 への直接リンク" translate="no">​</a></h4>
+<p>AI タスクを安全な境界内に保つための制限を設定：</p>
+<table><thead><tr><th>設定</th><th>デフォルト</th><th>最小値</th><th>説明</th></tr></thead><tbody><tr><td><strong>最大ツール呼び出し</strong></td><td>10</td><td>1</td><td>実行あたりの最大ツール呼び出し回数</td></tr><tr><td><strong>最大実行時間</strong></td><td>300,000 ms（5 分）</td><td>1,000 ms</td><td>最大実行時間</td></tr><tr><td><strong>最大継続呼び出し</strong></td><td>10</td><td>1</td><td>最大継続サイクル数</td></tr></tbody></table>
+<p>これらの制限は、暴走タスクが過剰なリソースを消費したり、無期限に実行されたりするのを防ぎます。</p>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="cron-スケジューリング時間ベース">Cron スケジューリング（時間ベース）<a href="#cron-スケジューリング時間ベース" class="hash-link" aria-label="Cron スケジューリング（時間ベース） への直接リンク" title="Cron スケジューリング（時間ベース） への直接リンク" translate="no">​</a></h4>
 <p><strong>Enable Cron</strong> を有効にしてスケジュールを設定:</p>
 <p><strong>プリセットオプション:</strong></p>
@@ -193,6 +229,17 @@
 <p><strong>スケジュール</strong>: 毎週日曜日 3:00</p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Cron: 0 3 * * 0</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Task: データクリーンアップまたはバックアップ</span><br></span></code></pre></div></div>
 <p><strong>ユースケース</strong>: トラフィックの少ない時間帯の定期的なメンテナンス。</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="パターン-6-ai-搭載リード分析">パターン 6: AI 搭載リード分析<a href="#パターン-6-ai-搭載リード分析" class="hash-link" aria-label="パターン 6: AI 搭載リード分析 への直接リンク" title="パターン 6: AI 搭載リード分析 への直接リンク" translate="no">​</a></h3>
+<p><strong>スケジュール</strong>: 平日毎日 10:00</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Cron: 0 10 * * 1-5</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Task: AI Message</span><br></span></code></pre></div></div>
+<p><strong>AI 設定</strong>:</p>
+<ul>
+<li class=""><strong>メッセージ</strong>: 「昨日の検索結果を確認し、リードの品質を分析して、最も有望なコンタクトの概要レポートを生成する」</li>
+<li class=""><strong>許可ツール</strong>: 関連するデータ分析ツールを選択</li>
+<li class=""><strong>自動承認</strong>: 有効（慎重にレビューされたツールリスト）</li>
+<li class=""><strong>最大実行時間</strong>: 300,000 ms（5 分）</li>
+</ul>
+<p><strong>ユースケース</strong>: AI を使用した収集リードの自動毎日分析。</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="ベストプラクティス">ベストプラクティス<a href="#ベストプラクティス" class="hash-link" aria-label="ベストプラクティス への直接リンク" title="ベストプラクティス への直接リンク" translate="no">​</a></h2>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-スケジュール設計">1. スケジュール設計<a href="#1-スケジュール設計" class="hash-link" aria-label="1. スケジュール設計 への直接リンク" title="1. スケジュール設計 への直接リンク" translate="no">​</a></h3>
 <p><strong>重複を回避:</strong></p>
@@ -342,6 +389,42 @@
 <li class="">実行間隔を延ばす</li>
 <li class="">システムパフォーマンスを確認</li>
 </ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ai-message-タスクの問題">AI Message タスクの問題<a href="#ai-message-タスクの問題" class="hash-link" aria-label="AI Message タスクの問題 への直接リンク" title="AI Message タスクの問題 への直接リンク" translate="no">​</a></h3>
+<p><strong>タスクが安全制限に達している：</strong></p>
+<ul>
+<li class=""><strong>考えられる原因</strong>: 最大ツール呼び出し、最大実行時間、または最大継続呼び出しに達した</li>
+<li class=""><strong>解決策</strong>:<!-- -->
+<ol>
+<li class="">AI メッセージプロンプトの明確さと具体性を確認</li>
+<li class="">タスクが正当により多くのリソースを必要とする場合、安全制限を増やす</li>
+<li class="">タスクプロンプトの範囲を縮小</li>
+<li class="">実行ログを確認し、どの制限に達したかを確認</li>
+</ol>
+</li>
+</ul>
+<p><strong>AI タスクが予期しない結果を生成：</strong></p>
+<ul>
+<li class=""><strong>考えられる原因</strong>: 曖昧なプロンプト、誤ったツール選択、または不十分なコンテキスト</li>
+<li class=""><strong>解決策</strong>:<!-- -->
+<ol>
+<li class="">より具体的な指示で AI メッセージを洗練</li>
+<li class="">許可ツールリストを確認・調整</li>
+<li class="">自動承認を無効にしてテストし、ツール呼び出しを手動で確認</li>
+<li class="">システムプロンプトにコンテキストを追加</li>
+</ol>
+</li>
+</ul>
+<p><strong>ツール呼び出しがブロックされている：</strong></p>
+<ul>
+<li class=""><strong>考えられる原因</strong>: ツールが許可リストにない、またはスケジュールタスクでブロックされている</li>
+<li class=""><strong>解決策</strong>:<!-- -->
+<ol>
+<li class="">必要なツールを許可ツールリストに追加</li>
+<li class="">ツールがスケジュール実行に使用可能か確認</li>
+<li class="">ツールのリスクレベルを確認し、ポリシーでブロックされていないことを確認</li>
+</ol>
+</li>
+</ul>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="実行履歴が表示されない">実行履歴が表示されない<a href="#実行履歴が表示されない" class="hash-link" aria-label="実行履歴が表示されない への直接リンク" title="実行履歴が表示されない への直接リンク" translate="no">​</a></h3>
 <p><strong>考えられる原因:</strong></p>
 <ul>
@@ -381,13 +464,25 @@
 <p><strong>スケジュール 3</strong>: ヨーロッパ監視</p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Cron: 0 */2 * * * (2 時間ごと、オフセット)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Task: ヨーロッパのキーワードを検索</span><br></span></code></pre></div></div>
 <p><strong>結果</strong>: ずらしスケジュールによる継続的なグローバル監視。</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ワークフロー-4-ai-拡張リードパイプライン">ワークフロー 4: AI 拡張リードパイプライン<a href="#ワークフロー-4-ai-拡張リードパイプライン" class="hash-link" aria-label="ワークフロー 4: AI 拡張リードパイプライン への直接リンク" title="ワークフロー 4: AI 拡張リードパイプライン への直接リンク" translate="no">​</a></h3>
+<p><strong>スケジュール 1</strong>: 毎日の検索</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Cron: 0 9 * * 1-5 (平日 9:00)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Task: Google Maps - &quot;restaurants [city]&quot; を検索</span><br></span></code></pre></div></div>
+<p><strong>スケジュール 2</strong>: コンタクト抽出（依存）</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Trigger: スケジュール 1 の成功後</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Delay: 0 分</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Task: スケジュール 1 の結果からコンタクト抽出</span><br></span></code></pre></div></div>
+<p><strong>スケジュール 3</strong>: AI 分析（依存）</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Trigger: スケジュール 2 の成功後</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Delay: 30 分</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Task: AI Message - &quot;抽出されたコンタクトを分析し、上位 20 件の最も有望なリードにパーソナライズされたアウトリーチメッセージを作成する&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">安全制限: 最大ツール呼び出し: 15, 最大実行時間: 600000ms（10 分）</span><br></span></code></pre></div></div>
+<p><strong>スケジュール 4</strong>: メールキャンペーン（依存）</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Trigger: スケジュール 3 の成功後</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Delay: 60 分</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Task: Outreach Campaign - AI 生成メッセージを送信</span><br></span></code></pre></div></div>
+<p><strong>結果</strong>: 検索から AI 分析、アウトリーチまでの完全自動化パイプライン。</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="他の機能との連携">他の機能との連携<a href="#他の機能との連携" class="hash-link" aria-label="他の機能との連携 への直接リンク" title="他の機能との連携 への直接リンク" translate="no">​</a></h2>
 <p>タスクスケジューラーは以下と連携します:</p>
 <ul>
 <li class=""><strong><a class="" href="/aiFetchly/ja/docs/lead-generation/search-engines">検索エンジン</a></strong>: 定期的な検索をスケジュール</li>
 <li class=""><strong><a class="" href="/aiFetchly/ja/docs/lead-generation/contact-extraction">コンタクト抽出</a></strong>: 検索後に自動抽出</li>
 <li class=""><strong><a class="" href="/aiFetchly/ja/docs/lead-generation/yellow-pages">イエローページ</a></strong>: 定期的なディレクトリスクレイピング</li>
+<li class=""><strong><a class="" href="/aiFetchly/ja/docs/lead-generation/local-business-finder">Google Maps スクレイパー</a></strong>: Google Maps データ収集をスケジュール</li>
 <li class=""><strong><a class="" href="/aiFetchly/ja/docs/lead-generation/batch-email-sending">一括メール送信</a></strong>: 自動キャンペーン</li>
+<li class=""><strong>AI Message</strong>: ツール統合を備えた AI タスクをスケジュールし、自動分析とアクションを実行</li>
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="次のステップ">次のステップ<a href="#次のステップ" class="hash-link" aria-label="次のステップ への直接リンク" title="次のステップ への直接リンク" translate="no">​</a></h2>
 <p>スケジューリングについて理解できたら:</p>
@@ -396,6 +491,6 @@
 <li class=""><a class="" href="/aiFetchly/ja/docs/getting-started/introduction">完全なユーザーマニュアルの確認</a></li>
 </ul>
 <hr>
-<p><strong>自動化を始める準備はできましたか？</strong> まずはシンプルな毎日の検索タスクをスケジュールし、システムに慣れてきたら徐々により複雑な自動化ワークフローを構築してください。</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="ドキュメントページ"><a class="pagination-nav__link pagination-nav__link--prev" href="/aiFetchly/ja/docs/ai-outreach/ai-marketing-assistant"><div class="pagination-nav__sublabel">前へ</div><div class="pagination-nav__label">AIマーケティングアシスタント</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/aiFetchly/ja/docs/settings/system-settings"><div class="pagination-nav__sublabel">次へ</div><div class="pagination-nav__label">システム設定</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#スケジューリングについて" class="table-of-contents__link toc-highlight">スケジューリングについて</a></li><li><a href="#スケジュールタスクの作成" class="table-of-contents__link toc-highlight">スケジュールタスクの作成</a><ul><li><a href="#ステップ-1-スケジューラーに移動" class="table-of-contents__link toc-highlight">ステップ 1: スケジューラーに移動</a></li><li><a href="#ステップ-2-基本情報" class="table-of-contents__link toc-highlight">ステップ 2: 基本情報</a></li><li><a href="#ステップ-3-トリガーの設定" class="table-of-contents__link toc-highlight">ステップ 3: トリガーの設定</a></li><li><a href="#ステップ-4-アクティブステータス" class="table-of-contents__link toc-highlight">ステップ 4: アクティブステータス</a></li><li><a href="#ステップ-5-スケジュールの保存" class="table-of-contents__link toc-highlight">ステップ 5: スケジュールの保存</a></li></ul></li><li><a href="#スケジュールタスクの管理" class="table-of-contents__link toc-highlight">スケジュールタスクの管理</a><ul><li><a href="#スケジュールリストの表示" class="table-of-contents__link toc-highlight">スケジュールリストの表示</a></li><li><a href="#スケジュールテーブル" class="table-of-contents__link toc-highlight">スケジュールテーブル</a></li><li><a href="#スケジュールアクション" class="table-of-contents__link toc-highlight">スケジュールアクション</a></li></ul></li><li><a href="#実行の監視" class="table-of-contents__link toc-highlight">実行の監視</a><ul><li><a href="#実行履歴の表示" class="table-of-contents__link toc-highlight">実行履歴の表示</a></li><li><a href="#実行統計" class="table-of-contents__link toc-highlight">実行統計</a></li><li><a href="#リアルタイム監視" class="table-of-contents__link toc-highlight">リアルタイム監視</a></li></ul></li><li><a href="#一般的なスケジューリングパターン" class="table-of-contents__link toc-highlight">一般的なスケジューリングパターン</a><ul><li><a href="#パターン-1-毎日のリードジェネレーション" class="table-of-contents__link toc-highlight">パターン 1: 毎日のリードジェネレーション</a></li><li><a href="#パターン-2-毎時の監視" class="table-of-contents__link toc-highlight">パターン 2: 毎時の監視</a></li><li><a href="#パターン-3-週次キャンペーン" class="table-of-contents__link toc-highlight">パターン 3: 週次キャンペーン</a></li><li><a href="#パターン-4-マルチステップワークフロー" class="table-of-contents__link toc-highlight">パターン 4: マルチステップワークフロー</a></li><li><a href="#パターン-5-メンテナンスタスク" class="table-of-contents__link toc-highlight">パターン 5: メンテナンスタスク</a></li></ul></li><li><a href="#ベストプラクティス" class="table-of-contents__link toc-highlight">ベストプラクティス</a><ul><li><a href="#1-スケジュール設計" class="table-of-contents__link toc-highlight">1. スケジュール設計</a></li><li><a href="#2-エラー処理" class="table-of-contents__link toc-highlight">2. エラー処理</a></li><li><a href="#3-リソース管理" class="table-of-contents__link toc-highlight">3. リソース管理</a></li><li><a href="#4-テスト" class="table-of-contents__link toc-highlight">4. テスト</a></li><li><a href="#5-ドキュメンテーション" class="table-of-contents__link toc-highlight">5. ドキュメンテーション</a></li></ul></li><li><a href="#トラブルシューティング" class="table-of-contents__link toc-highlight">トラブルシューティング</a><ul><li><a href="#スケジュールが実行されない" class="table-of-contents__link toc-highlight">スケジュールが実行されない</a></li><li><a href="#タスクが頻繁すぎる頻度で実行される" class="table-of-contents__link toc-highlight">タスクが頻繁すぎる頻度で実行される</a></li><li><a href="#依存関係が発火しない" class="table-of-contents__link toc-highlight">依存関係が発火しない</a></li><li><a href="#タスクに時間がかかりすぎる" class="table-of-contents__link toc-highlight">タスクに時間がかかりすぎる</a></li><li><a href="#実行履歴が表示されない" class="table-of-contents__link toc-highlight">実行履歴が表示されない</a></li></ul></li><li><a href="#高度なワークフロー" class="table-of-contents__link toc-highlight">高度なワークフロー</a><ul><li><a href="#ワークフロー-1-自動リードジェネレーションパイプライン" class="table-of-contents__link toc-highlight">ワークフロー 1: 自動リードジェネレーションパイプライン</a></li><li><a href="#ワークフロー-2-週次メンテナンス" class="table-of-contents__link toc-highlight">ワークフロー 2: 週次メンテナンス</a></li><li><a href="#ワークフロー-3-マルチリージョン監視" class="table-of-contents__link toc-highlight">ワークフロー 3: マルチリージョン監視</a></li></ul></li><li><a href="#他の機能との連携" class="table-of-contents__link toc-highlight">他の機能との連携</a></li><li><a href="#次のステップ" class="table-of-contents__link toc-highlight">次のステップ</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">ドキュメント</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/ja/docs/getting-started/introduction">はじめに</a></li><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/ja/docs/lead-generation/search-engines">リードジェネレーション</a></li><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/ja/docs/ai-outreach/knowledge-library">AI アウトリーチ</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">その他</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/robertzengcn/aiFetchly" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 aiFetchly. Docusaurus で構築。</div></div></div></footer></div>
+<p><strong>自動化を始める準備はできましたか？</strong> まずはシンプルな毎日の検索タスクをスケジュールし、システムに慣れてきたら徐々により複雑な自動化ワークフローを構築してください。</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="ドキュメントページ"><a class="pagination-nav__link pagination-nav__link--prev" href="/aiFetchly/ja/docs/ai-outreach/ai-marketing-assistant"><div class="pagination-nav__sublabel">前へ</div><div class="pagination-nav__label">AIマーケティングアシスタント</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/aiFetchly/ja/docs/settings/system-settings"><div class="pagination-nav__sublabel">次へ</div><div class="pagination-nav__label">システム設定</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#スケジューリングについて" class="table-of-contents__link toc-highlight">スケジューリングについて</a></li><li><a href="#スケジュールタスクの作成" class="table-of-contents__link toc-highlight">スケジュールタスクの作成</a><ul><li><a href="#ステップ-1-スケジューラーに移動" class="table-of-contents__link toc-highlight">ステップ 1: スケジューラーに移動</a></li><li><a href="#ステップ-2-基本情報" class="table-of-contents__link toc-highlight">ステップ 2: 基本情報</a></li><li><a href="#ai-message-タスク設定" class="table-of-contents__link toc-highlight">AI Message タスク設定</a></li><li><a href="#ステップ-4-アクティブステータス" class="table-of-contents__link toc-highlight">ステップ 4: アクティブステータス</a></li><li><a href="#ステップ-5-スケジュールの保存" class="table-of-contents__link toc-highlight">ステップ 5: スケジュールの保存</a></li></ul></li><li><a href="#スケジュールタスクの管理" class="table-of-contents__link toc-highlight">スケジュールタスクの管理</a><ul><li><a href="#スケジュールリストの表示" class="table-of-contents__link toc-highlight">スケジュールリストの表示</a></li><li><a href="#スケジュールテーブル" class="table-of-contents__link toc-highlight">スケジュールテーブル</a></li><li><a href="#スケジュールアクション" class="table-of-contents__link toc-highlight">スケジュールアクション</a></li></ul></li><li><a href="#実行の監視" class="table-of-contents__link toc-highlight">実行の監視</a><ul><li><a href="#実行履歴の表示" class="table-of-contents__link toc-highlight">実行履歴の表示</a></li><li><a href="#実行統計" class="table-of-contents__link toc-highlight">実行統計</a></li><li><a href="#リアルタイム監視" class="table-of-contents__link toc-highlight">リアルタイム監視</a></li></ul></li><li><a href="#一般的なスケジューリングパターン" class="table-of-contents__link toc-highlight">一般的なスケジューリングパターン</a><ul><li><a href="#パターン-1-毎日のリードジェネレーション" class="table-of-contents__link toc-highlight">パターン 1: 毎日のリードジェネレーション</a></li><li><a href="#パターン-2-毎時の監視" class="table-of-contents__link toc-highlight">パターン 2: 毎時の監視</a></li><li><a href="#パターン-3-週次キャンペーン" class="table-of-contents__link toc-highlight">パターン 3: 週次キャンペーン</a></li><li><a href="#パターン-4-マルチステップワークフロー" class="table-of-contents__link toc-highlight">パターン 4: マルチステップワークフロー</a></li><li><a href="#パターン-5-メンテナンスタスク" class="table-of-contents__link toc-highlight">パターン 5: メンテナンスタスク</a></li><li><a href="#パターン-6-ai-搭載リード分析" class="table-of-contents__link toc-highlight">パターン 6: AI 搭載リード分析</a></li></ul></li><li><a href="#ベストプラクティス" class="table-of-contents__link toc-highlight">ベストプラクティス</a><ul><li><a href="#1-スケジュール設計" class="table-of-contents__link toc-highlight">1. スケジュール設計</a></li><li><a href="#2-エラー処理" class="table-of-contents__link toc-highlight">2. エラー処理</a></li><li><a href="#3-リソース管理" class="table-of-contents__link toc-highlight">3. リソース管理</a></li><li><a href="#4-テスト" class="table-of-contents__link toc-highlight">4. テスト</a></li><li><a href="#5-ドキュメンテーション" class="table-of-contents__link toc-highlight">5. ドキュメンテーション</a></li></ul></li><li><a href="#トラブルシューティング" class="table-of-contents__link toc-highlight">トラブルシューティング</a><ul><li><a href="#スケジュールが実行されない" class="table-of-contents__link toc-highlight">スケジュールが実行されない</a></li><li><a href="#タスクが頻繁すぎる頻度で実行される" class="table-of-contents__link toc-highlight">タスクが頻繁すぎる頻度で実行される</a></li><li><a href="#依存関係が発火しない" class="table-of-contents__link toc-highlight">依存関係が発火しない</a></li><li><a href="#タスクに時間がかかりすぎる" class="table-of-contents__link toc-highlight">タスクに時間がかかりすぎる</a></li><li><a href="#ai-message-タスクの問題" class="table-of-contents__link toc-highlight">AI Message タスクの問題</a></li><li><a href="#実行履歴が表示されない" class="table-of-contents__link toc-highlight">実行履歴が表示されない</a></li></ul></li><li><a href="#高度なワークフロー" class="table-of-contents__link toc-highlight">高度なワークフロー</a><ul><li><a href="#ワークフロー-1-自動リードジェネレーションパイプライン" class="table-of-contents__link toc-highlight">ワークフロー 1: 自動リードジェネレーションパイプライン</a></li><li><a href="#ワークフロー-2-週次メンテナンス" class="table-of-contents__link toc-highlight">ワークフロー 2: 週次メンテナンス</a></li><li><a href="#ワークフロー-3-マルチリージョン監視" class="table-of-contents__link toc-highlight">ワークフロー 3: マルチリージョン監視</a></li><li><a href="#ワークフロー-4-ai-拡張リードパイプライン" class="table-of-contents__link toc-highlight">ワークフロー 4: AI 拡張リードパイプライン</a></li></ul></li><li><a href="#他の機能との連携" class="table-of-contents__link toc-highlight">他の機能との連携</a></li><li><a href="#次のステップ" class="table-of-contents__link toc-highlight">次のステップ</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">ドキュメント</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/ja/docs/getting-started/introduction">はじめに</a></li><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/ja/docs/lead-generation/search-engines">リードジェネレーション</a></li><li class="footer__item"><a class="footer__link-item" href="/aiFetchly/ja/docs/ai-outreach/knowledge-library">AI アウトリーチ</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">その他</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/robertzengcn/aiFetchly" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 aiFetchly. Docusaurus で構築。</div></div></div></footer></div>
 </body>
 </html>
