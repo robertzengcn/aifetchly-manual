@@ -179,7 +179,7 @@ Choose one of the following options:
 
 ### View Task List
 
-Navigate to **Search** → **Result List** to see all your search tasks.
+Navigate to **Market Insight** → **Market Insight List** to see all your search tasks.
 
 **Task List Columns:**
 
@@ -207,7 +207,7 @@ Navigate to **Search** → **Result List** to see all your search tasks.
 
 ### Step 1: Open Results
 
-1. Go to **Search** → **Result List**
+1. Go to **Market Insight** → **Market Insight List**
 2. Find your task
 3. Click **View Results** to see detailed results
 
@@ -352,7 +352,7 @@ Navigate to the Contact Profile Insights section to view collected emails.
 
 If a task fails:
 
-1. Go to **Search** → **Result List**
+1. Go to **Market Insight** → **Market Insight List**
 2. Find the failed task
 3. Click **Download Logs**
 4. Review logs to diagnose issues
