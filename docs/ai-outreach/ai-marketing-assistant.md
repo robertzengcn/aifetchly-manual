@@ -9,6 +9,12 @@ description: Get strategic marketing guidance and content ideas with aiFetchly's
 
 The AI Marketing Assistant is your intelligent marketing consultant. Powered by advanced AI with access to your Knowledge Library, it provides strategic guidance, generates content ideas, helps with campaign planning, and answers questions about your business, products, and industry.
 
+:::tip Looking for the new interface?
+
+If **AI Chat V2** is enabled on your account, clicking the chat icon opens the redesigned V2 experience — same Knowledge Library, Skills, and MCP tools, plus Plan Mode, a live context-usage badge, subagents, and inline plan approval. See [AI Chat V2](./ai-chat-v2) for details. The legacy assistant documented on this page remains available.
+
+:::
+
 ## What is the AI Marketing Assistant?
 
 Unlike generic chatbots, the AI Marketing Assistant:
@@ -466,6 +472,7 @@ Address marketing challenges:
 
 Now that you understand the AI Marketing Assistant:
 
+- [AI Chat V2](./ai-chat-v2) — the redesigned chat with Plan Mode and subagents.
 - [Build your Knowledge Library](./knowledge-library) for better context
 - [Create email templates](./ai-email-writer) with AI assistance
 - [Set up automated campaigns](../lead-generation/batch-email-sending)

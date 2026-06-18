@@ -206,6 +206,20 @@ Start with "Allow Once" for new skills. After verifying they work correctly and 
 
 :::
 
+:::warning Shell-execution skills are session-scoped
+
+For skills in the **shell execution** category, "Always Allow" is **remembered only for the current app session**. When you restart aiFetchly, the AI will ask for approval again. This is a deliberate safety measure — shell commands can do anything on your machine, so the permission must not persist across restarts.
+
+Other skill categories (web search, file read, automation, etc.) remember "Always Allow" permanently, as normal.
+
+:::
+
+## Installing skills via plugins
+
+Skills can also arrive as part of a **plugin** — a bundle that packages one or more skills plus optional MCP servers in a single installable package. Plugin-owned skills appear in this list with an owner-plugin label.
+
+To install plugins (from local zip, local folder, git, GitHub, npm, or URL), use the **[Plugin Manager](./plugin-manager)**.
+
 ## Skill Categories
 
 Skills are organized by functional category:

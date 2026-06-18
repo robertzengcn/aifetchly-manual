@@ -35,6 +35,12 @@ MCP Tools are accessed from the AI Chat interface, not from the main Settings pa
 
 :::
 
+:::tip Bundling MCP servers in a plugin
+
+You can also install MCP servers as part of a **plugin** — a single package that bundles one or more MCP servers (and optionally AI Skills). Plugin-owned MCP servers appear here with an owner-plugin label and can be managed from the **[Plugin Manager](./plugin-manager)** as well.
+
+:::
+
 ## Adding MCP Servers
 
 ### Step 1: Open the Add Dialog
