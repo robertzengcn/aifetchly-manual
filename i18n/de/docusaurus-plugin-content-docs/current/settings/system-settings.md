@@ -292,6 +292,12 @@ AI Skills sind modulare Erweiterungen, die die KI-Chat-Funktionen von aiFetchly 
 
 Die vollständige Dokumentation zum Importieren, Verwalten und Verwenden von AI Skills finden Sie unter [AI Skills](../ai-outreach/ai-skills).
 
+## Hook-Verwaltung
+
+**Hooks** sind Lifecycle-Trigger, die benutzerdefinierte Logik rund um die Werkzeugaufrufe des KI-Assistenten ausführen — sie können jeden Aufruf beobachten, blockieren, umschreiben oder kommentieren. aiFetchly wird mit integrierten Sicherheits-Hooks ausgeliefert (zum Beispiel Blockieren gefährlicher Shell-Löschungen) und ermöglicht Ihnen das Hinzufügen eigener Command-Hooks, die Richtlinien durchsetzen, Kontext hinzufügen und ein Audit-Protokoll führen. Das gesamte Subsystem lässt sich über diese Seite global ein- und ausschalten.
+
+Die vollständige Dokumentation zu Ereignissen, Matchern, Command-Hooks und dem Audit-Protokoll finden Sie unter [Hooks](./hooks).
+
 ## Nächste Schritte
 
 Nach dem Konfigurieren der Systemeinstellungen:

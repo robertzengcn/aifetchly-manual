@@ -292,6 +292,12 @@ AI Skills are modular extensions that enhance aiFetchly's AI chat capabilities. 
 
 For full documentation on importing, managing, and using AI Skills, see [AI Skills](../ai-outreach/ai-skills).
 
+## Hooks Management
+
+**Hooks** are lifecycle triggers that run custom logic around the AI assistant's tool calls — they can observe, block, rewrite, or annotate each call. aiFetchly ships with built-in safety hooks (for example, blocking dangerous shell deletes) and lets you add your own command hooks that enforce policy, add context, and keep an audit trail. The whole subsystem can be toggled globally from this page.
+
+For full documentation on events, matchers, command hooks, and the audit log, see [Hooks](./hooks).
+
 ## Next Steps
 
 After configuring system settings:

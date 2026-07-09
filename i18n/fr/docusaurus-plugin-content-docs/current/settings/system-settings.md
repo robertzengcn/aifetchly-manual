@@ -292,6 +292,12 @@ Les compétences IA sont des extensions modulaires qui améliorent les capacité
 
 Pour la documentation complète sur l'importation, la gestion et l'utilisation des compétences IA, consultez [Compétences IA](../ai-outreach/ai-skills).
 
+## Gestion des Hooks
+
+**Les hooks** sont des déclencheurs de cycle de vie qui exécutent une logique personnalisée autour des appels d'outils de l'assistant IA — ils peuvent observer, bloquer, réécrire ou annoter chaque appel. aiFetchly est livré avec des hooks de sécurité intégrés (par exemple, le blocage des suppressions shell dangereuses) et vous permet d'ajouter vos propres hooks de commande qui appliquent une politique, ajoutent du contexte et conservent un journal d'audit. L'ensemble du sous-système peut être activé ou désactivé globalement depuis cette page.
+
+Pour la documentation complète sur les événements, les matchers, les hooks de commande et le journal d'audit, consultez [Hooks](./hooks).
+
 ## Prochaines étapes
 
 Après avoir configuré les paramètres système :

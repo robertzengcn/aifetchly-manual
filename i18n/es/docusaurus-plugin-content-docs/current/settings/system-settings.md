@@ -292,6 +292,12 @@ Las Skills de IA son extensiones modulares que mejoran las capacidades de chat d
 
 Para la documentación completa sobre la importación, gestión y uso de Skills de IA, consulta [AI Skills](../ai-outreach/ai-skills).
 
+## Gestión de Hooks
+
+**Los hooks** son disparadores de ciclo de vida que ejecutan lógica personalizada en torno a las llamadas a herramientas del asistente de IA: pueden observar, bloquear, reescribir o anotar cada llamada. aiFetchly incluye hooks de seguridad integrados (por ejemplo, bloquear borrados peligrosos de shell) y te permite añadir tus propios hooks de comando que aplican políticas, añaden contexto y mantienen un registro de auditoría. Todo el subsistema se puede activar o desactivar globalmente desde esta página.
+
+Para la documentación completa sobre eventos, matchers, hooks de comando y el registro de auditoría, consulta [Hooks](./hooks).
+
 ## Próximos pasos
 
 Después de configurar los ajustes del sistema:

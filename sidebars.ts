@@ -61,7 +61,7 @@ const sidebars: SidebarsConfig = {
       label: "Settings",
       collapsible: false,
       collapsed: false,
-      items: ["settings/system-settings"],
+      items: ["settings/system-settings", "settings/hooks"],
     },
   ],
 };
