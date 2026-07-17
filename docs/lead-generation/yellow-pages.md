@@ -44,11 +44,12 @@ When creating a task, select a platform from the dropdown. As you select each pl
 
 ## Creating a Directory Assistant Task
 
-### Step 1: Navigate to Yellow Pages
+### Step 1: Navigate to Directory Assistant
 
-1. Click **Directory Assistant** in the left navigation menu
-2. You'll see the Directory Assistant task list
-3. Click **Create New Task** button
+1. Click **Insights** in the left navigation menu
+2. Select the **Directory Assistant** card
+3. You'll see the Directory Assistant task list
+4. Click **Create New Task** button
 
 ### Step 2: Basic Information
 
@@ -247,7 +248,7 @@ As you fill in the form, the **Task Preview** sidebar shows a live summary of yo
 
 To modify an existing task:
 
-1. Go to **Directory Assistant** task list
+1. Open **Insights** from the left navigation menu, then select **Directory Assistant**
 2. Click the **Edit** (pencil) icon on the task
 3. Modify the configuration in the form
 4. Click **Update Task** to save changes
@@ -256,7 +257,7 @@ To modify an existing task:
 
 ### View Task List
 
-Navigate to **Directory Assistant** to see all your tasks.
+Open **Insights** from the left navigation menu, then select **Directory Assistant** to see all your tasks.
 
 **Task List Overview:**
 - **Real-time Statistics**: Total, running, pending, completed, failed tasks with success rate
@@ -312,7 +313,7 @@ If a task encounters Cloudflare protection, aiFetchly displays a warning notific
 
 ### Step 1: Access Results
 
-1. Go to **Directory Assistant** task list
+1. Open **Insights** from the left navigation menu, then select **Directory Assistant**
 2. Find the completed task
 3. Click **View Results** to open the results page
 
@@ -571,10 +572,11 @@ The results table displays comprehensive business information:
 Extracted business emails can be used directly in email campaigns:
 
 1. **Export Results** from Directory Assistant task
-2. **Navigate to Outreach Campaign** → **Send Outreach Campaigns**
-3. **Import CSV** with extracted emails
-4. **Create Template** for your outreach
-5. **Launch Campaign**
+2. Open **Insights** from the left navigation menu, then select **Outreach Campaign**
+3. Select **Outreach Tasks**
+4. **Import CSV** with extracted emails
+5. **Create Template** for your outreach
+6. **Launch Campaign**
 
 For detailed instructions, see [Outreach Campaign](./batch-email-sending).
 

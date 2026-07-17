@@ -37,9 +37,10 @@ Templates are the foundation of your email campaigns. They contain:
 
 ### Step 1: Navigate to Outreach Campaign
 
-1. Click **Outreach Campaign** in the left navigation menu
-2. Select **Templates** from the submenu
-3. Click **Create New Template**
+1. Click **Insights** in the left navigation menu
+2. Select the **Outreach Campaign** card
+3. Select **Email Templates**
+4. Click **Create New Template**
 
 ### Step 2: Template Information
 
@@ -144,7 +145,7 @@ When RAG context is enabled, the AI will automatically reference your Knowledge 
 
 ### Template List
 
-Navigate to **Outreach Campaign** → **Templates** to see all templates.
+Open **Insights** from the left navigation menu, then select **Outreach Campaign** and **Email Templates** to see all templates.
 
 **Template Information:**
 - Title

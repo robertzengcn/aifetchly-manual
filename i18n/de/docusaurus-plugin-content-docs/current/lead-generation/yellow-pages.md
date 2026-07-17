@@ -44,11 +44,12 @@ Beim Erstellen eines Auftrags wählen Sie eine Plattform aus dem Dropdown aus. B
 
 ## Einen Gelbe-Seiten-Auftrag erstellen
 
-### Schritt 1: Zu Gelbe Seiten navigieren
+### Schritt 1: Zu Directory Assistant navigieren
 
-1. Klicken Sie auf **Gelbe Seiten** im linken Navigationsmenü
-2. Sie sehen die Gelbe-Seiten-Auftragsliste
-3. Klicken Sie auf **Neuen Auftrag erstellen**
+1. Klicken Sie im linken Navigationsmenü auf **Insights**
+2. Wählen Sie die Karte **Directory Assistant**
+3. Sie sehen die Gelbe-Seiten-Auftragsliste
+4. Klicken Sie auf **Neuen Auftrag erstellen**
 
 ### Schritt 2: Grundlegende Informationen
 
@@ -247,7 +248,7 @@ Während Sie das Formular ausfüllen, zeigt die **Auftrag-Vorschau**-Seitenleist
 
 So ändern Sie einen vorhandenen Auftrag:
 
-1. Gehen Sie zur **Gelbe Seiten**-Auftragsliste
+1. Öffnen Sie **Insights** im linken Navigationsmenü und wählen Sie **Directory Assistant**
 2. Klicken Sie auf das **Bearbeiten**-Symbol (Bleistift) auf dem Auftrag
 3. Ändern Sie die Konfiguration im Formular
 4. Klicken Sie auf **Auftrag aktualisieren**, um die Änderungen zu speichern
@@ -256,7 +257,7 @@ So ändern Sie einen vorhandenen Auftrag:
 
 ### Auftragsliste anzeigen
 
-Navigieren Sie zu **Gelbe Seiten**, um alle Ihre Aufträge zu sehen.
+Öffnen Sie **Insights** im linken Navigationsmenü und wählen Sie **Directory Assistant**, um alle Ihre Aufträge zu sehen.
 
 **Auftragslistenübersicht:**
 - **Echtzeit-Statistiken**: Gesamt, laufend, ausstehend, abgeschlossen, fehlgeschlagen mit Erfolgsrate
@@ -312,7 +313,7 @@ Wenn ein Auftrag auf Cloudflare-Schutz stößt, zeigt aiFetchly eine Warnmeldung
 
 ### Schritt 1: Ergebnisse aufrufen
 
-1. Gehen Sie zur **Gelbe Seiten**-Auftragsliste
+1. Öffnen Sie **Insights** im linken Navigationsmenü und wählen Sie **Directory Assistant**
 2. Finden Sie den abgeschlossenen Auftrag
 3. Klicken Sie auf **Ergebnisse anzeigen**, um die Ergebnisseite zu öffnen
 
@@ -571,10 +572,11 @@ Die Ergebnistabelle zeigt umfassende Geschäftsinformationen:
 Extrahierte Geschäfts-E-Mails können direkt in E-Mail-Kampagnen verwendet werden:
 
 1. **Ergebnisse exportieren** aus dem Gelbe-Seiten-Auftrag
-2. Navigieren Sie zu **E-Mail-Marketing** → **Massen-E-Mails senden**
-3. **CSV importieren** mit extrahierten E-Mails
-4. **Vorlage erstellen** für Ihre Akquise
-5. **Kampagne starten**
+2. Öffnen Sie **Insights** im linken Navigationsmenü und wählen Sie **Outreach Campaign**
+3. Wählen Sie **Outreach Tasks**
+4. **CSV importieren** mit extrahierten E-Mails
+5. **Vorlage erstellen** für Ihre Akquise
+6. **Kampagne starten**
 
 Ausführliche Anleitungen finden Sie unter [Batch-E-Mail-Versand](./batch-email-sending).
 

@@ -34,8 +34,10 @@ Le information organization Yandex nécessite une **intégration de navigateur l
 
 ### Étape 1 : Accéder à la recherche
 
-1. Cliquez sur **Search** dans le menu de navigation de gauche
-2. Vous verrez la page **Search Form**
+1. Cliquez sur **Insights** dans le menu de navigation de gauche
+2. Sélectionnez la carte **Market Insight**
+3. Vous verrez la liste des tâches Market Insight
+4. Cliquez sur **Create Search Task** pour ouvrir le formulaire de recherche
 
 ### Étape 2 : Configuration de base de la recherche
 
@@ -179,7 +181,7 @@ Choisissez l'une des options suivantes :
 
 ### Afficher la liste des tâches
 
-Naviguez vers **Search** → **Result List** pour voir toutes vos tâches de recherche.
+Ouvrez **Insights** dans le menu de navigation de gauche, puis sélectionnez **Market Insight** pour voir toutes vos tâches de recherche.
 
 **Colonnes de la liste des tâches :**
 
@@ -207,7 +209,7 @@ Naviguez vers **Search** → **Result List** pour voir toutes vos tâches de rec
 
 ### Étape 1 : Ouvrir les résultats
 
-1. Allez dans **Search** → **Result List**
+1. Ouvrez **Insights** dans le menu de navigation de gauche, puis sélectionnez **Market Insight**
 2. Trouvez votre tâche
 3. Cliquez sur **View Results** pour voir les résultats détaillés
 
@@ -337,7 +339,7 @@ Les URL sélectionnées sont automatiquement transmises à la fonction [Profile 
 
 ### Étape 3 : Afficher les e-mails extraits
 
-Naviguez vers la section d'profile insights d'e-mails pour voir les e-mails collectés.
+Ouvrez **Insights** dans le menu de navigation de gauche, puis sélectionnez **Contact Profile** pour voir les e-mails collectés.
 
 ## Exportation des résultats de recherche
 
@@ -352,7 +354,7 @@ Naviguez vers la section d'profile insights d'e-mails pour voir les e-mails coll
 
 Si une tâche échoue :
 
-1. Allez dans **Search** → **Result List**
+1. Ouvrez **Insights** dans le menu de navigation de gauche, puis sélectionnez **Market Insight**
 2. Trouvez la tâche échouée
 3. Cliquez sur **Download Logs**
 4. Consultez les journaux pour diagnostiquer les problèmes

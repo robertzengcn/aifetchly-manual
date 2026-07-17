@@ -34,8 +34,10 @@ La extracción de Yandex requiere **integración con navegador local** para su c
 
 ### Paso 1: Ir a Búsqueda
 
-1. Haz clic en **Search** en el menú de navegación izquierdo
-2. Verás la página del **Formulario de búsqueda**
+1. Haz clic en **Insights** en el menú de navegación izquierdo
+2. Selecciona la tarjeta **Market Insight**
+3. Verás la lista de tareas de Market Insight
+4. Haz clic en **Create Search Task** para abrir el formulario de búsqueda
 
 ### Paso 2: Configuración básica de búsqueda
 
@@ -179,7 +181,7 @@ Elige una de las siguientes opciones:
 
 ### Ver lista de tareas
 
-Navega a **Search** → **Result List** para ver todas tus tareas de búsqueda.
+Abre **Insights** en el menú de navegación izquierdo y selecciona **Market Insight** para ver todas tus tareas de búsqueda.
 
 **Columnas de la lista de tareas:**
 
@@ -207,7 +209,7 @@ Navega a **Search** → **Result List** para ver todas tus tareas de búsqueda.
 
 ### Paso 1: Abrir resultados
 
-1. Ve a **Search** → **Result List**
+1. Abre **Insights** en el menú de navegación izquierdo y selecciona **Market Insight**
 2. Encuentra tu tarea
 3. Haz clic en **View Results** para ver los resultados detallados
 
@@ -337,7 +339,7 @@ Las URL seleccionadas se transfieren automáticamente a la función de [Extracci
 
 ### Paso 3: Ver correos extraídos
 
-Navega a la sección de Extracción de correos para ver los correos recopilados.
+Abre **Insights** en el menú de navegación izquierdo y selecciona **Contact Profile** para ver los correos recopilados.
 
 ## Exportar resultados de búsqueda
 
@@ -352,7 +354,7 @@ Navega a la sección de Extracción de correos para ver los correos recopilados.
 
 Si una tarea falla:
 
-1. Ve a **Search** → **Result List**
+1. Abre **Insights** en el menú de navegación izquierdo y selecciona **Market Insight**
 2. Encuentra la tarea fallida
 3. Haz clic en **Download Logs**
 4. Revisa los registros para diagnosticar problemas

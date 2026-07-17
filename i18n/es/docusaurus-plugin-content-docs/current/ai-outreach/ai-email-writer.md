@@ -37,9 +37,10 @@ Las plantillas son la base de sus campañas de correo electrónico. Contienen:
 
 ### Paso 1: Ir a Outreach Campaign
 
-1. Haga clic en **Outreach Campaign** en el menú de navegación izquierdo
-2. Seleccione **Templates** en el submenú
-3. Haga clic en **Create New Template**
+1. Haga clic en **Insights** en el menú de navegación izquierdo
+2. Seleccione la tarjeta **Outreach Campaign**
+3. Seleccione **Email Templates**
+4. Haga clic en **Create New Template**
 
 ### Paso 2: Información de la plantilla
 
@@ -144,7 +145,7 @@ Cuando el contexto RAG está habilitado, la IA hará referencia automáticamente
 
 ### Lista de plantillas
 
-Vaya a **Outreach Campaign** → **Templates** para ver todas las plantillas.
+Abra **Insights** en el menú de navegación izquierdo, seleccione **Outreach Campaign** y luego **Email Templates** para ver todas las plantillas.
 
 **Información de la plantilla:**
 - Título

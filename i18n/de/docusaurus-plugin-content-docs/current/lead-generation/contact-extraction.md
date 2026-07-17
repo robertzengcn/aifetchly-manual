@@ -35,9 +35,10 @@ Contact Profile Insights eignet sich ideal für:
 
 ### Schritt 1: Zu Contact Profile Insights navigieren
 
-1. Klicken Sie auf **Contact Profile Insights** im linken Navigationsmenü
-2. Sie sehen die Liste der Kontaktprofil-Aufgaben
-3. Klicken Sie auf die Schaltfläche **Neue Aufgabe erstellen**
+1. Klicken Sie im linken Navigationsmenü auf **Insights**
+2. Wählen Sie die Karte **Contact Profile**
+3. Sie sehen die Liste der Kontaktprofil-Aufgaben
+4. Klicken Sie auf die Schaltfläche **Neue Aufgabe erstellen**
 
 ### Schritt 2: URL-Eingabemethode wählen
 
@@ -172,7 +173,7 @@ Beim Bearbeiten einer bestehenden Aufgabe ändert sich die Schaltfläche zu **Sa
 
 ### Aufgabenliste anzeigen
 
-Navigieren Sie zu **E-Mail-Extraktion**, um alle Ihre Aufgaben zu sehen.
+Öffnen Sie **Insights** im linken Navigationsmenü und wählen Sie **Contact Profile**, um alle Ihre Aufgaben zu sehen.
 
 **Spalten der Aufgabenliste:**
 
@@ -206,7 +207,7 @@ Navigieren Sie zu **E-Mail-Extraktion**, um alle Ihre Aufgaben zu sehen.
 
 ### Schritt 1: Ergebnisse aufrufen
 
-1. Gehen Sie zur **E-Mail-Extraktion**-Aufgabenliste
+1. Öffnen Sie **Insights** im linken Navigationsmenü und wählen Sie **Contact Profile**
 2. Finden Sie die abgeschlossene Aufgabe
 3. Klicken Sie auf **Ergebnisse anzeigen**
 

@@ -31,8 +31,9 @@ Pour une couverture complète d'une région, effectuez des recherches sur les de
 
 ## Accéder au Local Business Finder
 
-1. Cliquez sur **Local Business Finder** dans le menu de navigation de gauche
-2. Le assistant s'ouvre avec deux onglets : **Recherche** et **Historique**
+1. Cliquez sur **Insights** dans le menu de navigation de gauche
+2. Sélectionnez la carte **Local Business Finder**
+3. Le assistant s'ouvre avec deux onglets : **Recherche** et **Historique**
 
 ## Effectuer une recherche
 

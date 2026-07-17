@@ -35,9 +35,10 @@ Contact Profile Insights は以下のような用途に最適です:
 
 ### ステップ 1: Contact Profile Insights に移動
 
-1. 左側のナビゲーションメニューで **Contact Profile Insights** をクリック
-2. 連絡先プロフィールのタスクリストが表示されます
-3. **Create New Task** ボタンをクリック
+1. 左側のナビゲーションメニューで **Insights** をクリック
+2. **Contact Profile** カードを選択
+3. 連絡先プロフィールのタスクリストが表示されます
+4. **Create New Task** ボタンをクリック
 
 ### ステップ 2: URL 入力方法の選択
 
@@ -172,7 +173,7 @@ AI エンリッチメントは、営業活動や評価のためにより完全�
 
 ### タスクリストの表示
 
-**Contact Profile Insights** に移動してすべてのタスクを表示します。
+左側のナビゲーションメニューで **Insights** を開き、**Contact Profile** を選択してすべてのタスクを表示します。
 
 **タスクリストの列:**
 
@@ -206,7 +207,7 @@ AI エンリッチメントは、営業活動や評価のためにより完全�
 
 ### ステップ 1: 結果へのアクセス
 
-1. **Contact Profile Insights** タスクリストに移動
+1. 左側のナビゲーションメニューで **Insights** を開き、**Contact Profile** を選択
 2. 完了したタスクを見つける
 3. **View Results** をクリック
 

@@ -34,8 +34,10 @@ Yandex market insight exploration requires **local browser integration** for pro
 
 ### Step 1: Navigate to Market Insight Explorer
 
-1. Click **Market Insight Explorer** in the left navigation menu
-2. You'll see the **Search Form** page
+1. Click **Insights** in the left navigation menu
+2. Select the **Market Insight** card
+3. You'll see the Market Insight task list
+4. Click **Create Search Task** to open the search form
 
 ### Step 2: Basic Search Configuration
 
@@ -179,7 +181,7 @@ Choose one of the following options:
 
 ### View Task List
 
-Navigate to **Market Insight** → **Market Insight List** to see all your search tasks.
+Open **Insights** from the left navigation menu, then select **Market Insight** to see all your search tasks.
 
 **Task List Columns:**
 
@@ -207,7 +209,7 @@ Navigate to **Market Insight** → **Market Insight List** to see all your searc
 
 ### Step 1: Open Results
 
-1. Go to **Market Insight** → **Market Insight List**
+1. Open **Insights** from the left navigation menu, then select **Market Insight**
 2. Find your task
 3. Click **View Results** to see detailed results
 
@@ -337,7 +339,7 @@ The selected URLs are automatically passed to the [Contact Profile Insights](./c
 
 ### Step 3: View Extracted Emails
 
-Navigate to the Contact Profile Insights section to view collected emails.
+Open **Insights** from the left navigation menu, then select **Contact Profile** to view collected emails.
 
 ## Exporting Search Results
 
@@ -352,7 +354,7 @@ Navigate to the Contact Profile Insights section to view collected emails.
 
 If a task fails:
 
-1. Go to **Market Insight** → **Market Insight List**
+1. Open **Insights** from the left navigation menu, then select **Market Insight**
 2. Find the failed task
 3. Click **Download Logs**
 4. Review logs to diagnose issues

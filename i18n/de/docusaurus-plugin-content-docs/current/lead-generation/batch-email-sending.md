@@ -37,9 +37,10 @@ Bevor Sie E-Mails senden, müssen Sie mindestens einen SMTP-Dienst konfigurieren
 
 ### Schritt 1: Zu E-Mail-Diensten navigieren
 
-1. Klicken Sie auf **E-Mail-Marketing** im linken Navigationsmenü
-2. Wählen Sie **E-Mail-Dienste** aus dem Untermenü
-3. Klicken Sie auf **Neuen Dienst hinzufügen**
+1. Klicken Sie im linken Navigationsmenü auf **Insights**
+2. Wählen Sie die Karte **Outreach Campaign**
+3. Wählen Sie **E-Mail-Dienste**
+4. Klicken Sie auf **Neuen Dienst hinzufügen**
 
 ### Schritt 2: SMTP-Konfiguration
 
@@ -144,8 +145,9 @@ Gmail und Outlook erfordern **App-Passwörter** für den SMTP-Zugriff durch Drit
 
 ### Schritt 1: E-Mail-Quelle wählen
 
-1. **Navigieren** Sie zu **E-Mail-Marketing** → **Massen-E-Mails senden**
-2. **E-Mail-Quelltyp** aus dem Dropdown auswählen:
+1. Öffnen Sie **Insights** im linken Navigationsmenü und wählen Sie **Outreach Campaign**
+2. Wählen Sie **Outreach Tasks**
+3. **E-Mail-Quelltyp** aus dem Dropdown auswählen:
    - **E-Mail-Aufgabe**: E-Mails aus Extraktionsaufgaben
    - **Manuelle Eingabe**: E-Mail-Liste manuell hochladen
    - **Suchergebnisse**: Suchaufgabenergebnisse verwenden
@@ -226,7 +228,7 @@ Nach dem Start:
 
 ### Kampagnenliste
 
-Navigieren Sie zu **E-Mail-Marketing** → **Kampagnen**, um alle Kampagnen zu sehen.
+Öffnen Sie **Insights** im linken Navigationsmenü, wählen Sie **Outreach Campaign** und dann **Outreach Tasks**, um alle Kampagnen zu sehen.
 
 **Kampagneninformationen:**
 - Kampagnenname

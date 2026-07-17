@@ -35,9 +35,10 @@ Contact Profile Insights est idéal pour :
 
 ### Étape 1 : Accéder à Contact Profile Insights
 
-1. Cliquez sur **Contact Profile Insights** dans le menu de navigation de gauche
-2. Vous verrez la liste des tâches de profils de contact
-3. Cliquez sur le bouton **Créer une nouvelle tâche**
+1. Cliquez sur **Insights** dans le menu de navigation de gauche
+2. Sélectionnez la carte **Contact Profile**
+3. Vous verrez la liste des tâches de profils de contact
+4. Cliquez sur le bouton **Créer une nouvelle tâche**
 
 ### Étape 2 : Choisir la méthode de saisie d'URL
 
@@ -172,7 +173,7 @@ Lorsque vous modifiez une tâche existante, le bouton devient **Save**. L'enregi
 
 ### Afficher la liste des tâches
 
-Accédez à **Profile Insights d'e-mails** pour voir toutes vos tâches.
+Ouvrez **Insights** dans le menu de navigation de gauche, puis sélectionnez **Contact Profile** pour voir toutes vos tâches.
 
 **Colonnes de la liste des tâches :**
 
@@ -206,7 +207,7 @@ Accédez à **Profile Insights d'e-mails** pour voir toutes vos tâches.
 
 ### Étape 1 : Accéder aux résultats
 
-1. Allez à la liste des tâches **Profile Insights d'e-mails**
+1. Ouvrez **Insights** dans le menu de navigation de gauche, puis sélectionnez **Contact Profile**
 2. Trouvez la tâche terminée
 3. Cliquez sur **Voir les résultats**
 

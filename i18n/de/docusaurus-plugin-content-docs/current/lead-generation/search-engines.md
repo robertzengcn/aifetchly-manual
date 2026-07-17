@@ -34,8 +34,10 @@ Yandex-Information Organization erfordert **lokale Browser-Integration** für de
 
 ### Schritt 1: Zur Suche navigieren
 
-1. Klicken Sie auf **Suche** im linken Navigationsmenü
-2. Sie sehen die **Suchformular**-Seite
+1. Klicken Sie im linken Navigationsmenü auf **Insights**
+2. Wählen Sie die Karte **Market Insight**
+3. Sie sehen die Market-Insight-Auftragsliste
+4. Klicken Sie auf **Create Search Task**, um das Suchformular zu öffnen
 
 ### Schritt 2: Grundlegende Suchkonfiguration
 
@@ -179,7 +181,7 @@ Wählen Sie eine der folgenden Optionen:
 
 ### Auftragsliste anzeigen
 
-Navigieren Sie zu **Suche** → **Ergebnisliste**, um alle Ihre Suchaufträge zu sehen.
+Öffnen Sie **Insights** im linken Navigationsmenü und wählen Sie **Market Insight**, um alle Ihre Suchaufträge zu sehen.
 
 **Spalten der Auftragsliste:**
 
@@ -207,7 +209,7 @@ Navigieren Sie zu **Suche** → **Ergebnisliste**, um alle Ihre Suchaufträge zu
 
 ### Schritt 1: Ergebnisse öffnen
 
-1. Gehen Sie zu **Suche** → **Ergebnisliste**
+1. Öffnen Sie **Insights** im linken Navigationsmenü und wählen Sie **Market Insight**
 2. Finden Sie Ihren Auftrag
 3. Klicken Sie auf **Ergebnisse anzeigen**, um detaillierte Ergebnisse zu sehen
 
@@ -337,7 +339,7 @@ Die ausgewählten URLs werden automatisch an die Funktion [E-Mail-Extraktion](./
 
 ### Schritt 3: Extrahierte E-Mails anzeigen
 
-Navigieren Sie zum Bereich E-Mail-Extraktion, um die gesammelten E-Mails anzuzeigen.
+Öffnen Sie **Insights** im linken Navigationsmenü und wählen Sie **Contact Profile**, um die gesammelten E-Mails anzuzeigen.
 
 ## Suchergebnisse exportieren
 
@@ -352,7 +354,7 @@ Navigieren Sie zum Bereich E-Mail-Extraktion, um die gesammelten E-Mails anzuzei
 
 Wenn ein Auftrag fehlschlägt:
 
-1. Gehen Sie zu **Suche** → **Ergebnisliste**
+1. Öffnen Sie **Insights** im linken Navigationsmenü und wählen Sie **Market Insight**
 2. Finden Sie den fehlgeschlagenen Auftrag
 3. Klicken Sie auf **Protokolle herunterladen**
 4. Überprüfen Sie die Protokolle zur Problemdiagnose

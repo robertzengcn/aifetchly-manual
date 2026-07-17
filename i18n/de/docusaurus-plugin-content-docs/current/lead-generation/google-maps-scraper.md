@@ -31,8 +31,9 @@ Für eine umfassende Abdeckung einer Region können Sie Suchen auf beiden Datenq
 
 ## Aufrufen des Local Business Finders
 
-1. Klicken Sie auf **Local Business Finder** im linken Navigationsmenü
-2. Die Seite öffnet sich mit zwei Registerkarten: **Suche** und **Verlauf**
+1. Klicken Sie im linken Navigationsmenü auf **Insights**
+2. Wählen Sie die Karte **Local Business Finder**
+3. Die Seite öffnet sich mit zwei Registerkarten: **Suche** und **Verlauf**
 
 ## Suche ausführen
 

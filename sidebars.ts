@@ -25,6 +25,21 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: "category",
+      label: "AI Outreach",
+      collapsible: false,
+      collapsed: false,
+      items: [
+        "ai-outreach/knowledge-library",
+        "ai-outreach/mcp-tools",
+        "ai-outreach/hooks",
+        "ai-outreach/subagents",
+        "ai-outreach/ai-skills",
+        "ai-outreach/ai-email-writer",
+        "ai-outreach/ai-marketing-assistant",
+      ],
+    },
+    {
+      type: "category",
       label: "Lead Generation",
       collapsible: false,
       collapsed: false,
@@ -34,19 +49,6 @@ const sidebars: SidebarsConfig = {
         "lead-generation/yellow-pages",
         "lead-generation/contact-extraction",
         "lead-generation/batch-email-sending",
-      ],
-    },
-    {
-      type: "category",
-      label: "AI Outreach",
-      collapsible: false,
-      collapsed: false,
-      items: [
-        "ai-outreach/knowledge-library",
-        "ai-outreach/mcp-tools",
-        "ai-outreach/ai-skills",
-        "ai-outreach/ai-email-writer",
-        "ai-outreach/ai-marketing-assistant",
       ],
     },
     {

@@ -31,8 +31,9 @@ Para una cobertura completa de una región, ejecuta búsquedas en ambas fuentes 
 
 ## Acceder al Local Business Finder
 
-1. Haz clic en **Local Business Finder** en el menú de navegación izquierdo
-2. El assistant se abre con dos pestañas: **Búsqueda** e **Historial**
+1. Haz clic en **Insights** en el menú de navegación izquierdo
+2. Selecciona la tarjeta **Local Business Finder**
+3. El assistant se abre con dos pestañas: **Búsqueda** e **Historial**
 
 ## Ejecutar una búsqueda
 

@@ -31,8 +31,9 @@ Local Business Finderは、ローカルビジネスデータを整理するた�
 
 ## Local Business Finderへのアクセス
 
-1. 左側のナビゲーションメニューで**Local Business Finder**をクリックします
-2. ページが**検索**と**履歴**の2つのタブで開きます
+1. 左側のナビゲーションメニューで **Insights** をクリック
+2. **Local Business Finder** カードを選択
+3. ページが**検索**と**履歴**の2つのタブで開きます
 
 ## 検索の実行
 

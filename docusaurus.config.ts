@@ -136,12 +136,12 @@ const config: Config = {
               to: "/docs/getting-started/introduction",
             },
             {
-              label: "Lead Generation",
-              to: "/docs/lead-generation/search-engines",
-            },
-            {
               label: "AI Outreach",
               to: "/docs/ai-outreach/knowledge-library",
+            },
+            {
+              label: "Lead Generation",
+              to: "/docs/lead-generation/search-engines",
             },
           ],
         },

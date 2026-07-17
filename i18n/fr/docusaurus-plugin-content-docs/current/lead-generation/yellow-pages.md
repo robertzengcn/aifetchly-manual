@@ -44,11 +44,12 @@ Lors de la création d'une tâche, sélectionnez une plateforme dans le menu dé
 
 ## Création d'une tâche Pages Jaunes
 
-### Étape 1 : Accéder aux Pages Jaunes
+### Étape 1 : Accéder à Directory Assistant
 
-1. Cliquez sur **Directory Assistant** dans le menu de navigation de gauche
-2. Vous verrez la liste des tâches des Pages Jaunes
-3. Cliquez sur le bouton **Create New Task**
+1. Cliquez sur **Insights** dans le menu de navigation de gauche
+2. Sélectionnez la carte **Directory Assistant**
+3. Vous verrez la liste des tâches des Pages Jaunes
+4. Cliquez sur le bouton **Create New Task**
 
 ### Étape 2 : Informations de base
 
@@ -247,7 +248,7 @@ Lorsque vous remplissez le formulaire, la barre latérale **Task Preview** affic
 
 Pour modifier une tâche existante :
 
-1. Allez à la liste des tâches **Directory Assistant**
+1. Ouvrez **Insights** dans le menu de navigation de gauche, puis sélectionnez **Directory Assistant**
 2. Cliquez sur l'icône **Edit** (crayon) de la tâche
 3. Modifiez la configuration dans le formulaire
 4. Cliquez sur **Update Task** pour enregistrer les modifications
@@ -256,7 +257,7 @@ Pour modifier une tâche existante :
 
 ### Afficher la liste des tâches
 
-Naviguez vers **Directory Assistant** pour voir toutes vos tâches.
+Ouvrez **Insights** dans le menu de navigation de gauche, puis sélectionnez **Directory Assistant** pour voir toutes vos tâches.
 
 **Aperçu de la liste des tâches :**
 - **Statistiques en temps réel** : Total, en cours, en attente, terminées, échouées avec le taux de succès
@@ -312,7 +313,7 @@ Si une tâche rencontre une protection Cloudflare, aiFetchly affiche une notific
 
 ### Étape 1 : Accéder aux résultats
 
-1. Allez à la liste des tâches **Directory Assistant**
+1. Ouvrez **Insights** dans le menu de navigation de gauche, puis sélectionnez **Directory Assistant**
 2. Trouvez la tâche terminée
 3. Cliquez sur **View Results** pour ouvrir la page des résultats
 
@@ -571,10 +572,11 @@ Le tableau des résultats affiche des informations commerciales complètes :
 Les e-mails d'entreprises extraits peuvent être utilisés directement dans les campagnes d'e-mail :
 
 1. **Exportez les résultats** de la tâche Pages Jaunes
-2. Naviguez vers **Outreach Campaign** → **Send Outreach Campaigns**
-3. **Importez le CSV** avec les e-mails extraits
-4. **Créez un modèle** pour votre outreach
-5. **Lancez la campagne**
+2. Ouvrez **Insights** dans le menu de navigation de gauche, puis sélectionnez **Outreach Campaign**
+3. Sélectionnez **Outreach Tasks**
+4. **Importez le CSV** avec les e-mails extraits
+5. **Créez un modèle** pour votre outreach
+6. **Lancez la campagne**
 
 Pour des instructions détaillées, consultez [Envoi d'e-mails en lot](./batch-email-sending).
 

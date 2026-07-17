@@ -44,11 +44,12 @@ aiFetchly 的黄页抓取功能允许您从多个在线目录中提取全面的�
 
 ## 创建黄页任务
 
-### 步骤 1：进入黄页
+### 步骤 1：进入 Directory Assistant
 
-1. 点击左侧导航菜单中的 **Directory Assistant**
-2. 您将看到黄页任务列表
-3. 点击 **Create New Task** 按钮
+1. 点击左侧导航菜单中的 **Insights**
+2. 选择 **Directory Assistant** 卡片
+3. 您将看到黄页任务列表
+4. 点击 **Create New Task** 按钮
 
 ### 步骤 2：基本信息
 
@@ -247,7 +248,7 @@ aiFetchly 的黄页抓取功能允许您从多个在线目录中提取全面的�
 
 要修改现有任务：
 
-1. 进入 **Directory Assistant** 任务列表
+1. 从左侧导航菜单打开 **Insights**，然后选择 **Directory Assistant**
 2. 点击任务上的 **Edit**（铅笔）图标
 3. 在表单中修改配置
 4. 点击 **Update Task** 保存更改
@@ -256,7 +257,7 @@ aiFetchly 的黄页抓取功能允许您从多个在线目录中提取全面的�
 
 ### 查看任务列表
 
-导航到 **Directory Assistant** 查看所有任务。
+从左侧导航菜单打开 **Insights**，然后选择 **Directory Assistant** 查看所有任务。
 
 **任务列表概览：**
 - **实时统计**：总数、运行中、待处理、已完成、失败的任务及成功率
@@ -312,7 +313,7 @@ aiFetchly 的黄页抓取功能允许您从多个在线目录中提取全面的�
 
 ### 步骤 1：访问结果
 
-1. 进入 **Directory Assistant** 任务列表
+1. 从左侧导航菜单打开 **Insights**，然后选择 **Directory Assistant**
 2. 找到已完成的任务
 3. 点击 **View Results** 打开结果页面
 
@@ -571,10 +572,11 @@ aiFetchly 的黄页抓取功能允许您从多个在线目录中提取全面的�
 提取的商家电子邮件可直接用于邮件营销活动：
 
 1. 从黄页任务**导出结果**
-2. 导航到 **Outreach Campaign** → **Send Outreach Campaigns**
-3. **导入 CSV** 包含提取的电子邮件
-4. 为您的推广**创建模板**
-5. **启动活动**
+2. 从左侧导航菜单打开 **Insights**，然后选择 **Outreach Campaign**
+3. 选择 **Outreach Tasks**
+4. **导入 CSV** 包含提取的电子邮件
+5. 为您的推广**创建模板**
+6. **启动活动**
 
 详细说明请参阅[批量邮件发送](./batch-email-sending)。
 

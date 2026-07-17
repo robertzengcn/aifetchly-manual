@@ -44,11 +44,12 @@ Al crear una tarea, selecciona una plataforma del menú desplegable. Al seleccio
 
 ## Crear una tarea de Páginas Amarillas
 
-### Paso 1: Ir a Páginas Amarillas
+### Paso 1: Ir a Directory Assistant
 
-1. Haz clic en **Directory Assistant** en el menú de navegación izquierdo
-2. Verás la lista de tareas de Páginas Amarillas
-3. Haz clic en el botón **Create New Task**
+1. Haz clic en **Insights** en el menú de navegación izquierdo
+2. Selecciona la tarjeta **Directory Assistant**
+3. Verás la lista de tareas de Páginas Amarillas
+4. Haz clic en el botón **Create New Task**
 
 ### Paso 2: Información básica
 
@@ -247,7 +248,7 @@ A medida que rellenas el formulario, la barra lateral de **Task Preview** muestr
 
 Para modificar una tarea existente:
 
-1. Ve a la lista de tareas de **Directory Assistant**
+1. Abre **Insights** en el menú de navegación izquierdo y selecciona **Directory Assistant**
 2. Haz clic en el icono de **Edit** (lápiz) en la tarea
 3. Modifica la configuración en el formulario
 4. Haz clic en **Update Task** para guardar los cambios
@@ -256,7 +257,7 @@ Para modificar una tarea existente:
 
 ### Ver lista de tareas
 
-Navega a **Directory Assistant** para ver todas tus tareas.
+Abre **Insights** en el menú de navegación izquierdo y selecciona **Directory Assistant** para ver todas tus tareas.
 
 **Resumen de la lista de tareas:**
 - **Estadísticas en tiempo real**: Total, en ejecución, pendientes, completadas, fallidas con tasa de éxito
@@ -312,7 +313,7 @@ Si una tarea encuentra protección Cloudflare, aiFetchly muestra una notificaci�
 
 ### Paso 1: Acceder a los resultados
 
-1. Ve a la lista de tareas de **Directory Assistant**
+1. Abre **Insights** en el menú de navegación izquierdo y selecciona **Directory Assistant**
 2. Encuentra la tarea completada
 3. Haz clic en **View Results** para abrir la página de resultados
 
@@ -571,10 +572,11 @@ La tabla de resultados muestra información empresarial completa:
 Los correos empresariales extraídos pueden usarse directamente en campañas de correo:
 
 1. **Exporta los resultados** de la tarea de Páginas Amarillas
-2. **Navega a Outreach Campaign** → **Send Outreach Campaigns**
-3. **Importa el CSV** con los correos extraídos
-4. **Crea una plantilla** para tus comunicaciones
-5. **Lanza la campaña**
+2. Abre **Insights** en el menú de navegación izquierdo y selecciona **Outreach Campaign**
+3. Selecciona **Outreach Tasks**
+4. **Importa el CSV** con los correos extraídos
+5. **Crea una plantilla** para tus comunicaciones
+6. **Lanza la campaña**
 
 Para instrucciones detalladas, consulta [Envío masivo de correos](./batch-email-sending).
 

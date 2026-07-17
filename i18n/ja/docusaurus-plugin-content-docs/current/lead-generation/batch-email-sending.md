@@ -37,9 +37,10 @@ aiFetchly の一括メール送信機能を使えば、パーソナライズさ�
 
 ### ステップ 1: メールサービスに移動
 
-1. 左側のナビゲーションメニューで **Outreach Campaign** をクリック
-2. サブメューから **Email Services** を選択
-3. **Add New Service** をクリック
+1. 左側のナビゲーションメニューで **Insights** をクリック
+2. **Outreach Campaign** カードを選択
+3. **Email Services** を選択
+4. **Add New Service** をクリック
 
 ### ステップ 2: SMTP 設定
 
@@ -144,8 +145,9 @@ Gmail と Outlook では、サードパーティの SMTP アクセスに **ア�
 
 ### ステップ 1: メールソースの選択
 
-1. **Outreach Campaign** → **Send Outreach Campaigns** に移動
-2. ドロップダウンから **メールソースの種類** を選択:
+1. 左側のナビゲーションメニューで **Insights** を開き、**Outreach Campaign** を選択
+2. **Outreach Tasks** を選択
+3. ドロップダウンから **メールソースの種類** を選択:
    - **Email Task**: 抽出タスクからのメール
    - **Manual Input**: メールリストを手動でアップロード
    - **Search Results**: 検索タスクの結果を使用
@@ -226,7 +228,7 @@ Gmail と Outlook では、サードパーティの SMTP アクセスに **ア�
 
 ### キャンペーンリスト
 
-**Outreach Campaign** → **Campaigns** に移動してすべてのキャンペーンを表示します。
+左側のナビゲーションメニューで **Insights** を開き、**Outreach Campaign**、**Outreach Tasks** の順に選択してすべてのキャンペーンを表示します。
 
 **キャンペーン情報:**
 - キャンペーン名

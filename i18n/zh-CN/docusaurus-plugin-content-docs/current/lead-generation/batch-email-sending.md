@@ -37,9 +37,10 @@ aiFetchly 的批量邮件发送功能允许您大规模发起个性化邮件营�
 
 ### 第 1 步：进入邮件服务
 
-1. 在左侧导航菜单中点击 **Outreach Campaign**
-2. 从子菜单中选择 **Email Services**
-3. 点击 **Add New Service**
+1. 在左侧导航菜单中点击 **Insights**
+2. 选择 **Outreach Campaign** 卡片
+3. 选择 **Email Services**
+4. 点击 **Add New Service**
 
 ### 第 2 步：SMTP 配置
 
@@ -144,8 +145,9 @@ Gmail 和 Outlook 需要**应用专用密码**才能进行第三方 SMTP 访问�
 
 ### 第 1 步：选择邮件来源
 
-1. **导航到** **Outreach Campaign** → **Send Outreach Campaigns**
-2. **从下拉菜单中选择邮件来源类型**：
+1. 从左侧导航菜单打开 **Insights**，然后选择 **Outreach Campaign**
+2. 选择 **Outreach Tasks**
+3. **从下拉菜单中选择邮件来源类型**：
    - **Email Task**：来自提取任务的邮件
    - **Manual Input**：手动上传邮件列表
    - **Search Results**：使用搜索任务结果
@@ -226,7 +228,7 @@ Gmail 和 Outlook 需要**应用专用密码**才能进行第三方 SMTP 访问�
 
 ### 营销活动列表
 
-导航到 **Outreach Campaign** → **Campaigns** 查看所有营销活动。
+从左侧导航菜单打开 **Insights**，选择 **Outreach Campaign**，然后选择 **Outreach Tasks** 查看所有营销活动。
 
 **营销活动信息：**
 - 营销活动名称

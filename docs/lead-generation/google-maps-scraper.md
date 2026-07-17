@@ -31,8 +31,9 @@ For comprehensive coverage of a region, run searches on both data sources, then 
 
 ## Accessing the Local Business Finder
 
-1. Click **Local Business Finder** in the left navigation menu
-2. The page opens with two tabs: **Search** and **History**
+1. Click **Insights** in the left navigation menu
+2. Select the **Local Business Finder** card
+3. The page opens with two tabs: **Search** and **History**
 
 ## Running a Search
 

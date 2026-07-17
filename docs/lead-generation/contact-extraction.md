@@ -35,9 +35,10 @@ Contact Profile Insights is perfect for:
 
 ### Step 1: Navigate to Contact Profile Insights
 
-1. Click **Contact Profile Insights** in the left navigation menu
-2. You'll see the profile insight task list
-3. Click **Create New Task** button
+1. Click **Insights** in the left navigation menu
+2. Select the **Contact Profile** card
+3. You'll see the profile insight task list
+4. Click **Create New Task** button
 
 ### Step 2: Choose URL Input Method
 
@@ -172,7 +173,7 @@ When editing an existing task, the button changes to **Save**. Saving updates th
 
 ### View Task List
 
-Navigate to **Contact Profile Insights** to see all your tasks.
+Open **Insights** from the left navigation menu, then select **Contact Profile** to see all your tasks.
 
 **Task List Columns:**
 
@@ -206,7 +207,7 @@ Navigate to **Contact Profile Insights** to see all your tasks.
 
 ### Step 1: Access Results
 
-1. Go to **Contact Profile Insights** task list
+1. Open **Insights** from the left navigation menu, then select **Contact Profile**
 2. Find the completed task
 3. Click **View Results**
 

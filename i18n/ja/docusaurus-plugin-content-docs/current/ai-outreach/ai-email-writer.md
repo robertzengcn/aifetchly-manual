@@ -37,9 +37,10 @@ AI Email Writerは、aiFetchlyのインテリジェントなメール作成シ�
 
 ### ステップ1：Outreach Campaignに移動
 
-1. 左側のナビゲーションメニューで**Outreach Campaign**をクリック
-2. サブメニューから**Templates**を選択
-3. **Create New Template**をクリック
+1. 左側のナビゲーションメニューで **Insights** をクリック
+2. **Outreach Campaign** カードを選択
+3. **Email Templates** を選択
+4. **Create New Template** をクリック
 
 ### ステップ2：テンプレート情報の入力
 
@@ -144,7 +145,7 @@ RAGコンテキストを有効にすると、AIは自動的にナレッジライ
 
 ### テンプレート一覧
 
-**Outreach Campaign** → **Templates**に移動してすべてのテンプレートを確認します。
+左側のナビゲーションメニューで **Insights** を開き、**Outreach Campaign**、**Email Templates** の順に選択してすべてのテンプレートを確認します。
 
 **テンプレート情報：**
 - タイトル

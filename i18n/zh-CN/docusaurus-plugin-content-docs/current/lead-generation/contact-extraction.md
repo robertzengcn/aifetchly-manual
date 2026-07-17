@@ -35,9 +35,10 @@ Contact Profile Insights 适用于：
 
 ### 第 1 步：进入 Contact Profile Insights
 
-1. 在左侧导航菜单中点击 **Contact Profile Insights**
-2. 您将看到联系人档案任务列表
-3. 点击 **Create New Task** 按钮
+1. 在左侧导航菜单中点击 **Insights**
+2. 选择 **Contact Profile** 卡片
+3. 您将看到联系人档案任务列表
+4. 点击 **Create New Task** 按钮
 
 ### 第 2 步：选择 URL 输入方式
 
@@ -172,7 +173,7 @@ AI Enrichment 适合需要更完整联系人档案来做外联或线索评估的
 
 ### 查看任务列表
 
-导航到 **Contact Profile Insights** 查看所有任务。
+从左侧导航菜单打开 **Insights**，然后选择 **Contact Profile** 查看所有任务。
 
 **任务列表列说明：**
 
@@ -206,7 +207,7 @@ AI Enrichment 适合需要更完整联系人档案来做外联或线索评估的
 
 ### 第 1 步：访问结果
 
-1. 进入 **Contact Profile Insights** 任务列表
+1. 从左侧导航菜单打开 **Insights**，然后选择 **Contact Profile**
 2. 找到已完成的任务
 3. 点击 **View Results**
 

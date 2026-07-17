@@ -35,9 +35,10 @@ Contact Profile Insights es ideal para:
 
 ### Paso 1: Ir a Contact Profile Insights
 
-1. Haz clic en **Contact Profile Insights** en el menú de navegación izquierdo
-2. Verás la lista de tareas de perfiles de contacto
-3. Haz clic en el botón **Create New Task**
+1. Haz clic en **Insights** en el menú de navegación izquierdo
+2. Selecciona la tarjeta **Contact Profile**
+3. Verás la lista de tareas de perfiles de contacto
+4. Haz clic en el botón **Create New Task**
 
 ### Paso 2: Elegir método de entrada de URL
 
@@ -172,7 +173,7 @@ Al editar una tarea existente, el botón cambia a **Save**. Guardar actualiza el
 
 ### Ver lista de tareas
 
-Navega a **Contact Profile Insights** para ver todas tus tareas.
+Abre **Insights** en el menú de navegación izquierdo y selecciona **Contact Profile** para ver todas tus tareas.
 
 **Columnas de la lista de tareas:**
 
@@ -206,7 +207,7 @@ Navega a **Contact Profile Insights** para ver todas tus tareas.
 
 ### Paso 1: Acceder a los resultados
 
-1. Ve a la lista de tareas de **Contact Profile Insights**
+1. Abre **Insights** en el menú de navegación izquierdo y selecciona **Contact Profile**
 2. Encuentra la tarea completada
 3. Haz clic en **View Results**
 

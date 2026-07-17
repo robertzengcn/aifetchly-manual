@@ -37,9 +37,10 @@ Avant d'envoyer des e-mails, vous devez configurer au moins un service SMTP.
 
 ### Étape 1 : Accéder aux services d'e-mail
 
-1. Cliquez sur **Outreach Campaign** dans le menu de navigation de gauche
-2. Sélectionnez **Email Services** dans le sous-menu
-3. Cliquez sur **Add New Service**
+1. Cliquez sur **Insights** dans le menu de navigation de gauche
+2. Sélectionnez la carte **Outreach Campaign**
+3. Sélectionnez **Email Services**
+4. Cliquez sur **Add New Service**
 
 ### Étape 2 : Configuration SMTP
 
@@ -144,8 +145,9 @@ Gmail et Outlook nécessitent des **mots de passe d'application** pour l'accès 
 
 ### Étape 1 : Choisir la source des e-mails
 
-1. **Accédez à** **Outreach Campaign** → **Send Outreach Campaigns**
-2. **Sélectionnez le type de source d'e-mail** dans le menu déroulant :
+1. Ouvrez **Insights** dans le menu de navigation de gauche, puis sélectionnez **Outreach Campaign**
+2. Sélectionnez **Outreach Tasks**
+3. **Sélectionnez le type de source d'e-mail** dans le menu déroulant :
    - **Email Task** : E-mails provenant des tâches d'profile insights
    - **Manual Input** : Importer manuellement une liste d'e-mails
    - **Search Results** : Utiliser les résultats de tâches de recherche
@@ -226,7 +228,7 @@ Après le lancement :
 
 ### Liste des campagnes
 
-Accédez à **Outreach Campaign** → **Campaigns** pour voir toutes les campagnes.
+Ouvrez **Insights** dans le menu de navigation de gauche, sélectionnez **Outreach Campaign**, puis **Outreach Tasks** pour voir toutes les campagnes.
 
 **Informations sur la campagne :**
 - Nom de la campagne

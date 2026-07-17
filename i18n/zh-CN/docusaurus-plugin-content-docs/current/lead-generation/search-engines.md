@@ -34,8 +34,10 @@ Yandex 抓取需要**本地浏览器集成**才能正常运行。在创建 Yande
 
 ### 第 1 步：进入搜索
 
-1. 点击左侧导航菜单中的 **Search**
-2. 您将看到 **Search Form** 页面
+1. 点击左侧导航菜单中的 **Insights**
+2. 选择 **Market Insight** 卡片
+3. 您将看到 Market Insight 任务列表
+4. 点击 **Create Search Task** 打开搜索表单
 
 ### 第 2 步：基本搜索配置
 
@@ -179,7 +181,7 @@ Yandex 抓取需要**本地浏览器集成**才能正常运行。在创建 Yande
 
 ### 查看任务列表
 
-导航至 **Search** → **Result List** 查看所有搜索任务。
+从左侧导航菜单打开 **Insights**，然后选择 **Market Insight** 查看所有搜索任务。
 
 **任务列表列：**
 
@@ -207,7 +209,7 @@ Yandex 抓取需要**本地浏览器集成**才能正常运行。在创建 Yande
 
 ### 第 1 步：打开结果
 
-1. 进入 **Search** → **Result List**
+1. 从左侧导航菜单打开 **Insights**，然后选择 **Market Insight**
 2. 找到您的任务
 3. 点击 **View Results** 查看详细结果
 
@@ -337,7 +339,7 @@ AI 为每个分析结果生成以下内容：
 
 ### 第 3 步：查看提取的电子邮件
 
-导航到电子邮件提取部分查看收集到的电子邮件。
+从左侧导航菜单打开 **Insights**，然后选择 **Contact Profile** 查看收集到的电子邮件。
 
 ## 导出搜索结果
 
@@ -352,7 +354,7 @@ AI 为每个分析结果生成以下内容：
 
 如果任务失败：
 
-1. 进入 **Search** → **Result List**
+1. 从左侧导航菜单打开 **Insights**，然后选择 **Market Insight**
 2. 找到失败的任务
 3. 点击 **Download Logs**
 4. 查看日志以诊断问题
