@@ -360,8 +360,8 @@ Regularly change your proxy pool to maintain security and avoid detection.
 
 Now that you've configured your proxies:
 
-- [Learn about search engine information organization](../lead-generation/search-engines)
-- [Set up contact profile insights](../lead-generation/contact-extraction)
+- [Learn about search engine information organization](./search-engines)
+- [Set up contact profile insights](./contact-extraction)
 - [Configure the Knowledge Library](../ai-outreach/knowledge-library)
 
 ---

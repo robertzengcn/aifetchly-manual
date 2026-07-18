@@ -360,8 +360,8 @@ Cambie regularmente su grupo de proxies para mantener la seguridad y evitar la d
 
 Ahora que ha configurado sus proxies:
 
-- [Aprenda sobre information organization de motores de búsqueda](../lead-generation/search-engines)
-- [Configure la extracción de contactos](../lead-generation/contact-extraction)
+- [Aprenda sobre information organization de motores de búsqueda](./search-engines)
+- [Configure la extracción de contactos](./contact-extraction)
 - [Configure la Biblioteca de Conocimiento](../ai-outreach/knowledge-library)
 
 ---

@@ -112,7 +112,7 @@ aiFetchly は **Electron** で構築されたデスクトップアプリケー�
 ## 次のステップ
 
 - コンピューターに[aiFetchlyをインストール](./installation)
-- 安全なスクレイピングのために[プロキシを設定](./proxy-setup)
+- 安全なスクレイピングのために[プロキシを設定](../lead-generation/proxy-setup)
 - [リード獲得について学ぶ](../lead-generation/search-engines)
 - [ナレッジライブラリを設定](../ai-outreach/knowledge-library)
 - [最初のメールキャンペーンを開始](../lead-generation/batch-email-sending)

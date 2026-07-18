@@ -360,8 +360,8 @@ HTTPS プロキシは、お使いの端末とプロキシサーバー間の通�
 
 プロキシの設定が完了したら：
 
-- [検索エンジンスクレイピングについて学ぶ](../lead-generation/search-engines)
-- [コンタクト抽出の設定](../lead-generation/contact-extraction)
+- [検索エンジンスクレイピングについて学ぶ](./search-engines)
+- [コンタクト抽出の設定](./contact-extraction)
 - [ナレッジライブラリの設定](../ai-outreach/knowledge-library)
 
 ---

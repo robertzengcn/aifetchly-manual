@@ -21,7 +21,7 @@ const sidebars: SidebarsConfig = {
       label: "Getting Started",
       collapsible: false,
       collapsed: false,
-      items: ["getting-started/installation", "getting-started/proxy-setup"],
+      items: ["getting-started/installation"],
     },
     {
       type: "category",
@@ -30,6 +30,7 @@ const sidebars: SidebarsConfig = {
       collapsed: false,
       items: [
         "ai-outreach/knowledge-library",
+        "ai-outreach/workspace-memory",
         "ai-outreach/mcp-tools",
         "ai-outreach/hooks",
         "ai-outreach/subagents",
@@ -44,6 +45,7 @@ const sidebars: SidebarsConfig = {
       collapsible: false,
       collapsed: false,
       items: [
+        "lead-generation/proxy-setup",
         "lead-generation/search-engines",
         "lead-generation/local-business-finder",
         "lead-generation/yellow-pages",

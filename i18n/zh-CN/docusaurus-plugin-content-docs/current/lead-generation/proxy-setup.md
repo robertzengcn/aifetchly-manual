@@ -360,8 +360,8 @@ HTTPS 代理会加密您与代理服务器之间的流量，提供更好的安�
 
 配置好代理后：
 
-- [了解搜索引擎抓取](../lead-generation/search-engines)
-- [设置联系信息提取](../lead-generation/contact-extraction)
+- [了解搜索引擎抓取](./search-engines)
+- [设置联系信息提取](./contact-extraction)
 - [配置知识库](../ai-outreach/knowledge-library)
 
 ---

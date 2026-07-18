@@ -343,7 +343,7 @@ sudo dnf install --skip-broken aifetchly
 
 After successfully installing aiFetchly:
 
-1. [Configure proxy settings](./proxy-setup) (recommended for information organization)
+1. [Configure proxy settings](../lead-generation/proxy-setup) (recommended for information organization)
 2. [Learn about lead generation](../lead-generation/search-engines)
 3. [Set up your Knowledge Library](../ai-outreach/knowledge-library)
 
