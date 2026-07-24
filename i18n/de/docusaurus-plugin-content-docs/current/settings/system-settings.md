@@ -298,6 +298,12 @@ Die vollständige Dokumentation zum Importieren, Verwalten und Verwenden von AI 
 
 Die vollständige Dokumentation zu Ereignissen, Matchern, Command-Hooks und dem Audit-Protokoll finden Sie unter [Hooks](./hooks).
 
+## KI-Anbieter
+
+Die Seite **KI-Anbieter** ermöglicht Ihnen die Auswahl, woher der KI-Chat sein Modell bezieht: aiFetchlys **gehostete** KI (in einem Abonnement enthalten) oder ein eigener **benutzerdefinierter / lokaler Anbieter**. Wenn Sie aiFetchly auf einen beliebigen OpenAI-kompatiblen Endpunkt verweisen — etwa Ollama, LM Studio, OpenAI, OpenRouter, vLLM, LocalAI oder einen benutzerdefinierten Server —, können Sie den KI-Chat mit Ihrem eigenen Modell nutzen, auch ohne ein aiFetchly-KI-Abonnement. Konfigurieren Sie die Anbieter-Voreinstellung, die Basis-URL, einen optionalen API-Schlüssel und das Standardmodell, aktualisieren Sie dann die Modelle und testen Sie die Verbindung, um die erkannten Fähigkeiten zu sehen (Modelle, Chat, Streaming, Tools, Vision). API-Schlüssel werden in Ruhe verschlüsselt und nach dem Speichern nie wieder angezeigt. Gehostete KI-Funktionen (Schlüsselwortgenerierung, E-Mail-Vorlagen, Rerank, Embeddings) erfordern unabhängig von dieser Einstellung weiterhin ein Abonnement.
+
+Die vollständige Dokumentation zu Anbietermethoden, Voreinstellungen, Verbindungstests und Sicherheit finden Sie unter [KI-Anbieter](./ai-provider).
+
 ## Nächste Schritte
 
 Nach dem Konfigurieren der Systemeinstellungen:

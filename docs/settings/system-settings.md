@@ -298,6 +298,12 @@ For full documentation on importing, managing, and using AI Skills, see [AI Skil
 
 For full documentation on events, matchers, command hooks, and the audit log, see [Hooks](./hooks).
 
+## AI Provider
+
+The **AI Provider** page lets you choose where AI Chat gets its model from: aiFetchly's **Hosted** AI (included with a subscription) or a **Custom / Local Provider** of your own. Pointing aiFetchly at any OpenAI-compatible endpoint — such as Ollama, LM Studio, OpenAI, OpenRouter, vLLM, LocalAI, or a custom server — lets you use AI Chat with your own model, even without an aiFetchly AI subscription. Configure the provider preset, base URL, optional API key, and default model, then refresh models and test the connection to see detected capabilities (models, chat, streaming, tools, vision). API keys are encrypted at rest and never shown again after saving. Hosted-only AI features (keyword generation, email templates, rerank, embeddings) still require a subscription regardless of this setting.
+
+For full documentation on provider modes, presets, connection testing, and security, see [AI Provider](./ai-provider).
+
 ## Next Steps
 
 After configuring system settings:

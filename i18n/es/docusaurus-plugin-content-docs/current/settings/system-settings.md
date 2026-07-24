@@ -298,6 +298,13 @@ Para la documentación completa sobre la importación, gestión y uso de Skills 
 
 Para la documentación completa sobre eventos, matchers, hooks de comando y el registro de auditoría, consulta [Hooks](./hooks).
 
+## Proveedor de IA
+
+La página **Proveedor de IA** te permite elegir de dónde obtiene su modelo AI Chat: la IA **alojada** de aiFetchly (incluida con una suscripción) o un **proveedor personalizado / local** propio. Apuntar aiFetchly a cualquier endpoint compatible con OpenAI —como Ollama, LM Studio, OpenAI, OpenRouter, vLLM, LocalAI o un servidor personalizado— te permite usar AI Chat con tu propio modelo, incluso sin una suscripción de IA de aiFetchly. Configura el preset del proveedor, la URL base, la API key opcional y el modelo predeterminado; luego refresca los modelos y prueba la conexión para ver las capacidades detectadas (modelos, chat, streaming, herramientas, visión). Las API keys se cifran en reposo y nunca se vuelven a mostrar tras guardarlas. Las funciones de IA puramente alojadas (generación de palabras clave, plantillas de correo, rerank, embeddings) siguen requiriendo una suscripción independientemente de este ajuste.
+
+Para la documentación completa sobre modos de proveedor, presets, prueba de conexión y seguridad, consulta [Proveedor de IA](./ai-provider).
+
+
 ## Próximos pasos
 
 Después de configurar los ajustes del sistema:
