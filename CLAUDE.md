@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is the documentation site for Aifetchly, built with [Docusaurus](https://docusaurus.io/). It's a static site generator that uses React, TypeScript, and MDX for content.
+This is the **user manual** for aiFetchly, a desktop application built with Electron. The documentation site is built with [Docusaurus](https://docusaurus.io/) using React, TypeScript, and MDX for content.
 
 ## Development Commands
 
