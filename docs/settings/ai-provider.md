@@ -20,10 +20,18 @@ Custom providers let you use **AI Chat with your own model — even without an a
 
 Custom providers speak the standard OpenAI chat-completions contract (`/v1/chat/completions` and, when supported, `/v1/models`). aiFetchly does not bundle provider-specific SDKs — it talks to your endpoint directly from the app's backend, so your API key never leaves your machine.
 
+:::info Voice settings live here too
+
+This page also contains **Voice** settings for AI Chat — on-device speech-to-text (push-to-talk) and spoken responses (text-to-speech). Voice runs locally on your machine and is independent of your AI provider. See [Voice settings](#voice-settings) below.
+
+:::
+
 ## Opening the AI Provider page
 
-1. Click **Settings** in the left navigation menu.
-2. Open the **AI Provider** page (under System Settings).
+1. Click **System Setting** in the left navigation menu.
+2. Click the **AI Provider** button on the System Settings page.
+
+You can also open it from AI Chat — click the provider chip next to the model selector (for example `Hosted` or `Local: Ollama`).
 
 ## Provider mode
 
@@ -153,7 +161,7 @@ Each badge has one of these states:
 
 :::tip When Tools is unsupported or unknown
 
-If your provider does not (reliably) support tool calling, AI Chat automatically uses a conservative approval mode and will not send tool definitions for plain chat. Tool-required and Plan-Mode workflows that depend on tools may be disabled or warn you. For full tool/Plan-Mode support, use a tool-capable model or Hosted aiFetchly.
+If the connection test does not confirm tool support, AI Chat shows the warning *"This local provider has not confirmed tool support. Tools are disabled for this conversation."* and disables tools for that conversation. Tool-dependent workflows (including Plan Mode) will not run until you switch to a tool-capable model or Hosted aiFetchly. Re-run **Test Connection** after changing your model to re-probe tool support.
 
 :::
 
@@ -171,6 +179,48 @@ If the provider is unreachable, AI Chat shows a clear provider error instead of 
 :::info Related: AI Chat V2
 
 Provider mode is shared across the chat surfaces. See [AI Chat V2](../ai-outreach/ai-chat-v2) for the chat experience itself, including Plan Mode and the context-usage badge.
+
+:::
+
+## Voice settings
+
+The AI Provider page also includes a **Voice** panel for on-device speech in AI Chat — speech-to-text (voice input) and text-to-speech (spoken responses). Voice runs locally on your machine using the `sherpa-onnx` engine and is independent of your AI provider.
+
+### Voice input
+
+| Setting | What it does |
+|---|---|
+| **Enable voice input** | Shows a microphone button in the AI Chat composer (push-to-talk). Off by default. |
+| **Send voice transcript automatically** | Sends the transcript as soon as transcription finishes, instead of placing it in the composer for review. |
+| **STT language** | The language you'll speak: Auto, English, 中文, Español, Français, Deutsch, or 日本語. |
+| **STT model** | The speech-to-text model. Only installed models are selectable. |
+| **Max recording duration** | How long a single recording can run, in seconds (1–600; default 60). |
+
+### Spoken responses
+
+| Setting | What it does |
+|---|---|
+| **Enable spoken responses** | Reads the AI's text replies aloud. You can also toggle this anytime from the volume button in the AI Chat header. |
+| **Speak only after voice input** | When on, the AI speaks only its replies to your voice messages (hands-free conversation), not every reply. |
+| **TTS language** | The language for spoken replies: Auto, English, 中文, Español, Français, Deutsch, or 日本語. |
+| **TTS voice / model** | The voice used for spoken replies. Only installed voices are selectable. |
+| **Speech speed** | Playback speed, from 0.5× to 2.0×. |
+
+### Voice models
+
+Voice input and spoken responses each need a speech model. The **Voice models** section lists the available STT and TTS models with their status — **Download**, **Installed**, or **Cancel** (during download) — and shows live download progress.
+
+Models download on demand the first time you enable or use a feature, so turning voice on for the first time triggers a one-time download. You can also pre-download models here.
+
+:::info Voice is local and private
+
+Speech recognition and synthesis happen entirely on your device. Your microphone audio is processed locally and is **not** sent to a server or stored. Only the resulting transcript is kept — as a normal chat message.
+
+:::
+
+:::note Voice doesn't grant chat access
+
+Voice is local and free, but it doesn't grant chat access. To send a transcribed message and get a reply you still need either an aiFetchly AI subscription (Hosted) or a working custom/local provider. See [AI Chat V2 → Voice](../ai-outreach/ai-chat-v2#voice) for how voice is used in chat.
 
 :::
 

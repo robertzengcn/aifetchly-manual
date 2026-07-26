@@ -2,360 +2,201 @@
 id: ai-skills
 title: Compétences IA
 sidebar_label: Compétences IA
-description: Gérez et étendez les capacités d'IA d'aiFetchly avec des compétences personnalisables - importez, désinstallez, activez/désactivez et utilisez-les dans l'IA Chat.
+description: Gérez et étendez les capacités IA d'aiFetchly avec des compétences — importez, activez/désactivez, désinstallez, et comprenez le fonctionnement des permissions et des demandes d'approbation des compétences dans l'AI Chat.
 ---
 
 # Compétences IA
 
-Les AI Skills sont des extensions modulaires qui enrichissent les capacités de conversation IA d'aiFetchly. Ces compétences ajoutent des connaissances spécialisées, des outils personnalisés et des fonctionnalités spécifiques à un domaine à l'Assistant Marketing IA.
+Les AI Skills sont des extensions modulaires qui ajoutent des outils que l'IA peut appeler durant une conversation — des capacités spécialisées telles que le scraping web, l'automatisation, l'accès aux fichiers ou les commandes shell. Lorsqu'une compétence est activée, l'IA peut décider de l'utiliser pour répondre à votre requête.
 
-## Qu'est-ce que les AI Skills ?
+## Qu'est-ce qu'une compétence ?
 
-Les AI Skills sont des composants packagés qui étendent les capacités de l'IA :
+Une compétence est un outil empaqueté avec :
 
-- **Skills intégrés** : Compétences préinstallées avec les fonctionnalités principales
-- **Skills installés par l'utilisateur** : Compétences personnalisées que vous importez pour des cas d'usage spécifiques
+- Un **nom** et une **version** uniques.
+- Une **source** : **Intégré** (livré avec aiFetchly) ou **Installé par l'utilisateur** (importé par vous, ou fournie avec un plugin).
+- Une **catégorie de permission** — dérivée des permissions déclarées par la compétence (voir [Catégories de permission](#permission-categories)).
+- Un état **activé/désactivé**.
 
-Chaque compétence dispose de :
-- Un nom et une version uniques
-- Une catégorie (par ex., « recherche-web », « analyse-de-données », « automatisation »)
-- Un état activé/désactivé
-- Un manifeste définissant les permissions et les capacités
+## Accéder aux AI Skills
 
-## Accès aux AI Skills
+1. Cliquez sur **System Setting** dans le menu de navigation de gauche.
+2. Cliquez sur **Manage Skills** (ou **AI Skills**).
 
-1. Cliquez sur **Settings** dans le menu de navigation de gauche
-2. Accédez à **Skills**
-3. Consultez la liste des compétences installées avec leur statut
+La page liste toutes les compétences installées dans un tableau.
 
-## Importation de compétences
+## Le tableau des compétences
 
-### Étape 1 : Obtenir le package de la compétence
+| Colonne | Description |
+|--------|-------------|
+| **Name** | Identifiant de la compétence. Si la compétence provient d'un plugin, une puce _« via plugin: {name} »_ apparaît à côté. |
+| **Source** | Badge **Intégré** ou **Installé par l'utilisateur**. |
+| **Category** | Catégorie de permission de la compétence (`pure`, `network`, `filesystem`, `automation` ou `shell`). |
+| **Version** | Numéro de version de la compétence. |
+| **Status** | **Enabled** ou **Disabled**. |
+| **Actions** | Bascule activer/désactiver et bouton de désinstallation — **affichées uniquement pour les compétences installées par l'utilisateur**. |
 
-Les compétences sont distribuées sous forme de fichiers `.zip`. Vous pouvez les obtenir auprès de :
-- La marketplace officielle des compétences aiFetchly
-- Compétences contribuées par la communauté
-- Compétences développées sur mesure pour votre organisation
+:::note Les compétences intégrées sont toujours actives
 
-### Étape 2 : Importer la compétence
+Les compétences intégrées n'affichent **ni** la bascule activer/désactiver **ni** le bouton de désinstallation. Elles ne peuvent pas être désactivées ni supprimées depuis cette page.
 
-1. Dans la page Skills, cliquez sur le bouton **Import** (en haut à droite, avec l'icône de téléchargement)
-2. Une boîte de dialogue de sélection de fichiers s'ouvre
-3. Naviguez vers votre fichier `.zip` de compétence
-4. Sélectionnez le fichier et confirmez
+:::
 
-### Étape 3 : Vérifier l'installation
+## Importer une compétence
 
-Après l'importation :
-- La compétence apparaît dans le tableau des compétences
-- Le statut est affiché comme **Enabled** par défaut
-- Vérifiez que la catégorie et la version de la compétence correspondent à vos attentes
+Les compétences sont importées sous forme de packages `.zip`.
+
+1. Cliquez sur **Import** (en haut à droite, icône de téléchargement).
+2. Choisissez un fichier `.zip` de compétence.
+3. aiFetchly valide le package (manifeste, permissions, fichier d'entrée) et l'installe.
 
 :::tip Conseils d'importation
 
-- Seuls les fichiers `.zip` sont pris en charge
-- La compétence doit contenir un fichier `manifest.json` valide
-- En cas d'échec de l'importation, vérifiez l'intégrité du fichier zip et le format du manifeste
+- Seuls les fichiers `.zip` sont pris en charge par le bouton Import.
+- Le package doit contenir un fichier `manifest.json` valide (voir [Format du package de compétence](#skill-package-format)).
+- Les compétences fournies avec un plugin n'ont pas besoin d'être importées — elles apparaissent automatiquement lorsque leur plugin est installé.
 
 :::
 
-## Gestion des compétences
+Les compétences peuvent également arriver automatiquement depuis :
 
-### Consulter les compétences installées
+- **Plugins** — un plugin fournit une ou plusieurs compétences ; elles apparaissent ici avec une puce _« via plugin »_. Installez ou supprimez-les via le **[Plugin Manager](./plugin-manager)**.
+- **Dossiers de compétences locaux** (avancé) — les compétences placées sous `~/.aifetchly/skills/<name>/` sont découvertes automatiquement.
 
-Le tableau des compétences affiche :
+## Activer, désactiver et désinstaller
 
-| Colonne | Description |
-|---------|-------------|
-| **Name** | Identifiant/nom de la compétence |
-| **Source** | Badge `Built-in` ou `User-installed` |
-| **Category** | Catégorie fonctionnelle de la compétence |
-| **Version** | Numéro de version actuel |
-| **Status** | Badge `Enabled` ou `Disabled` |
-| **Actions** | Bascule activer/désactiver et bouton de désinstallation |
+Pour les compétences **installées par l'utilisateur** :
 
-### Activer/Désactiver les compétences
+- **Activer / désactiver** — utilisez la bascule coche (activer) / croix (désactiver) dans la colonne Actions.
+- **Désinstaller** — cliquez sur l'icône corbeille et confirmez. La désinstallation est définitive ; réimportez le `.zip` pour réutiliser la compétence.
 
-Pour modifier l'état d'une compétence :
+Les compétences intégrées n'ont aucun contrôle Actions — elles sont toujours activées.
 
-1. Localisez la compétence dans le tableau
-2. Utilisez les **boutons de bascule** dans la colonne Actions :
-   - **Coche** (verte) : Activer la compétence
-   - **Croix** (grise) : Désactiver la compétence
+## Fonctionnement des compétences dans le chat
 
-**Quand désactiver une compétence :**
-- La compétence est en conflit avec une autre
-- Résolution temporaire de problèmes
-- La compétence n'est pas nécessaire pour les tâches en cours
-- Test du comportement de la compétence
+Une fois une compétence activée, l'IA peut choisir de l'appeler lorsqu'elle est pertinente. Vous n'invoquez pas les compétences par leur nom (bien que vous puissiez en demander une explicitement, par ex. *« utilisez le scraper web sur cette URL »*).
 
-**Remarque :** Les compétences intégrées ne peuvent pas être désinstallées, uniquement désactivées.
+### Catégories de compétences
 
-### Désinstaller les compétences
+Chaque compétence appartient à une **catégorie de permission** qui détermine comment elle est approuvée lorsque l'IA l'appelle. La catégorie est la première `permission` déclarée par la compétence (dans son manifeste), ou `pure` si aucune n'est déclarée :
 
-Pour supprimer une compétence installée par l'utilisateur :
+| Catégorie | Ce que la compétence peut faire |
+|--------|----------------------|
+| `pure` | Utilitaires à usage général — traitement de texte, calculs, formatage. Aucun accès spécial. |
+| `network` | Accès réseau/HTTP sortant (récupération de pages, appels d'API). |
+| `filesystem` | Lecture/écriture de fichiers locaux. |
+| `automation` | Automatisation du navigateur, scraping, publications sociales et actions scriptées similaires. |
+| `shell` | Exécute des commandes shell système. (Uniquement `shell_execute` intégré — jamais importable.) |
 
-1. Localisez la compétence dans le tableau
-2. Cliquez sur l'icône **Delete** (corbeille) dans la colonne Actions
-3. Confirmez l'action de désinstallation dans la boîte de dialogue
+La catégorie est affichée brute et en minuscules dans le tableau (par exemple `network`, `automation`).
 
-:::warning Avertissement de désinstallation
+### Demandes d'approbation
 
-La désinstallation d'une compétence la supprime définitivement. Vous devrez la réimporter si vous souhaitez l'utiliser à nouveau.
+Lorsque l'IA appelle une compétence, aiFetchly peut vous demander de l'approuver avant son exécution. L'apparition d'une demande dépend de la catégorie de la compétence **et** de votre mode actuel d'approbation des outils dans le chat :
 
-:::
+| Catégorie | Comportement de l'approbation |
+|--------|-------------------|
+| `pure` | Toujours auto-approuvée — aucune demande. |
+| `shell` | **Demande toujours à chaque commande.** Jamais auto-approuvée (voir ci-dessous). |
+| `network` / `filesystem` / `automation` | Demande d'approbation sous le mode par défaut _« demander une approbation »_. Sous les modes _« approuver pour moi »_ ou _« accès complet »_, elles sont auto-approuvées. |
 
-## Utilisation des compétences dans l'IA Chat
+Lorsqu'une demande apparaît, vous verrez une carte d'approbation avec trois actions :
 
-Les compétences deviennent disponibles dans l'**Assistant Marketing IA** une fois activées.
+- **Autoriser une fois** — exécuter uniquement cet appel.
+- **Toujours autoriser** — mémoriser la décision afin que les futurs appels à cette compétence ne déclenchent pas de demande.
+- **Refuser** — bloquer cet appel.
 
-### Accéder à l'IA Chat
+Pour les compétences **shell**, la carte est intitulée **« Exécution de commande shell »**, affiche un aperçu de la commande (commande, répertoire de travail, shell, délai d'attente), et le troisième bouton s'intitule **« Toujours autoriser (cette session) »** au lieu de « Toujours autoriser ».
 
-1. Accédez à **AI Marketing Assistant** (ou **AI Chat**)
-2. Démarrez une nouvelle conversation ou poursuivez une conversation existante
+:::warning L'approbation shell est effectivement unique
 
-### Fonctionnement des compétences dans le Chat
-
-Les compétences activées s'intègrent automatiquement aux réponses de l'IA :
-
-1. **Sélection automatique des outils** : L'IA choisit les compétences pertinentes en fonction de votre requête
-2. **Invocation manuelle** : Demandez une fonctionnalité spécifique d'une compétence
-3. **Résultats combinés** : Plusieurs compétences peuvent travailler ensemble
-
-### Exemples d'utilisation des compétences
-
-**Compétence de recherche web :**
-```
-Utilisateur : "Quelles sont les dernières tendances en marketing SaaS ?"
-IA : [Utilise la compétence de recherche web pour trouver des informations actuelles]
-IA : "D'après les données récentes, les tendances du marketing SaaS incluent..."
-```
-
-**Compétence d'analyse de données :**
-```
-Utilisateur : "Analysez ces données clients et identifiez les tendances"
-IA : [Utilise la compétence d'analyse de données pour traiter les données]
-IA : "L'analyse révèle les tendances clés suivantes..."
-```
-
-**Compétence d'automatisation :**
-```
-Utilisateur : "Configurez une campagne email automatisée pour les nouveaux prospects"
-IA : [Utilise la compétence d'automatisation pour configurer la campagne]
-IA : "Votre campagne automatisée est maintenant configurée avec..."
-```
-
-### Indicateurs de compétences dans le Chat
-
-Lorsqu'une compétence est utilisée :
-- Le nom de la compétence peut apparaître dans la réponse
-- Une petite icône ou un badge indique l'activation de la compétence
-- L'utilisation de l'outil est affichée dans le flux de conversation
-
-### Demandes d'autorisation des compétences
-
-Certaines compétences requièrent votre autorisation explicite avant leur exécution. Il s'agit d'une fonctionnalité de sécurité pour protéger votre système.
-
-**Quand vous verrez des demandes d'autorisation :**
-
-Les compétences sont classées selon leur niveau de permission :
-
-| Catégorie | Comportement des permissions | Exemples |
-|-----------|------------------------------|----------|
-| **Pure** | Auto-approuvée, aucune demande | Traitement de texte, calculs, formatage de données |
-| **Shell** | Demande toujours avant l'exécution | Exécution de commandes système, opérations sur les fichiers |
-| **Network** | Peut demander pour les appels externes | Web information organization, appels API vers des services externes |
-| **Data** | Peut demander pour les accès sensibles | Lecture/écriture du système de fichiers, accès à la base de données |
-
-**La demande d'autorisation :**
-
-Lorsqu'une compétence nécessite une autorisation, vous verrez une boîte de dialogue dans l'IA Chat :
-
-```
-┌─────────────────────────────────────────────┐
-│  Skill Permission Request                  │
-├─────────────────────────────────────────────┤
-│  Skill: shell_execute                       │
-│  Category: Shell                            │
-│                                             │
-│  This skill wants to run:                  │
-│  $ ls -la /path/to/directory               │
-│                                             │
-│  [Allow Once]  [Allow Always]  [Deny]      │
-└─────────────────────────────────────────────┘
-```
-
-**Options d'autorisation :**
-
-- **Allow Once** : Accorder l'autorisation pour cette seule exécution
-- **Allow Always** : Retenir cette décision et auto-approuver les futures requêtes de cette compétence
-- **Deny** : Bloquer cette exécution (la compétence échouera proprement)
-
-**Gestion des autorisations enregistrées :**
-
-Pour consulter ou modifier les autorisations enregistrées :
-
-1. Accédez à **Settings** -> **AI Skills**
-2. Cliquez sur une compétence pour voir son statut de permission
-3. Activez/désactivez « Always Allow » pour modifier le comportement d'auto-approbation
-4. Les compétences désactivées ont leurs permissions temporairement suspendues
-
-:::tip Bonne pratique de sécurité
-
-Commencez par « Allow Once » pour les nouvelles compétences. Après avoir vérifié qu'elles fonctionnent correctement et de manière sécurisée, vous pouvez passer à « Allow Always » pour plus de commodité.
+Pour les compétences `shell`, « Toujours autoriser » n'est **pas** honoré pour les commandes suivantes. Chaque commande shell déclenchera à nouveau une demande — il s'agit d'une mesure de sécurité intentionnelle, car les commandes shell peuvent faire n'importe quoi sur votre machine. Seules les catégories non-shell mémorisent véritablement « Toujours autoriser » de façon permanente.
 
 :::
 
-## Catégories de compétences
+## Format du package de compétence
 
-Les compétences sont organisées par catégorie fonctionnelle :
-
-| Catégorie | Objectif | Exemples de compétences |
-|-----------|----------|------------------------|
-| **Web Search** | Recherche sur Internet, analyse de tendances | Moteur de recherche, surveillance des réseaux sociaux |
-| **Data Analysis** | Traitement et interprétation des données | Analyse CSV, modélisation statistique |
-| **Automation** | Tâches d'automatisation des flux de travail | Automatisation des emails, planification de tâches |
-| **Integration** | Connexions aux services externes | CRM, connecteurs API |
-| **Content** | Génération et optimisation de contenu | Rédaction de blog, optimisation SEO |
-| **Pure** | Utilitaires à usage général | Traitement de texte, formatage |
-
-## Dépannage
-
-### La compétence n'apparaît pas dans le Chat
-
-**Causes possibles :**
-- La compétence est désactivée
-- L'installation de la compétence est incomplète
-- La compétence nécessite des permissions spécifiques
-
-**Solutions :**
-1. Vérifiez le statut de la compétence dans Settings -> Skills
-2. Activez la compétence si elle est désactivée
-3. Réimportez la compétence si elle est corrompue
-4. Vérifiez que le manifeste de la compétence contient les permissions requises
-
-### Échec de l'importation
-
-**Causes possibles :**
-- Format de fichier zip invalide
-- `manifest.json` manquant ou mal formaté
-- La compétence est déjà installée
-- Téléchargement corrompu
-
-**Solutions :**
-1. Vérifiez l'intégrité du fichier zip
-2. Vérifiez le format et le contenu du fichier manifest.json
-3. Désinstallez d'abord la version existante, puis réimportez
-4. Téléchargez à nouveau le package de la compétence
-
-### La compétence provoque des erreurs
-
-**Causes possibles :**
-- Bug ou incompatibilité de la compétence
-- Dépendances manquantes
-- Clé API non configurée
-
-**Solutions :**
-1. Désactivez temporairement la compétence
-2. Consultez la documentation de la compétence pour les prérequis
-3. Vérifiez que toutes les configurations requises sont complétées
-4. Contactez le développeur de la compétence pour obtenir de l'assistance
-
-### Impossible de désinstaller une compétence intégrée
-
-Les compétences intégrées sont essentielles au fonctionnement d'aiFetchly et ne peuvent pas être supprimées. Vous pouvez uniquement les désactiver si elles entrent en conflit avec d'autres compétences.
-
-## Bonnes pratiques
-
-### 1. Sélection des compétences
-
-**Installez uniquement ce dont vous avez besoin :**
-- Chaque compétence ajoute de la complexité
-- Trop de compétences peuvent provoquer des conflits
-- Commencez par les compétences essentielles, ajoutez-en au besoin
-
-### 2. Mises à jour des compétences
-
-**Maintenez vos compétences à jour :**
-- Vérifiez régulièrement les mises à jour des compétences
-- Mettez à jour les compétences pour les correctifs et les améliorations
-- Testez les compétences mises à jour avant une utilisation en production
-
-### 3. Organisation des compétences
-
-**Nommez et catégorisez judicieusement :**
-- Utilisez des noms de compétences descriptifs
-- Organisez par catégorie fonctionnelle
-- Documentez l'objectif des compétences personnalisées
-
-### 4. Tests
-
-**Testez avant la production :**
-- Activez les compétences en mode test d'abord
-- Vérifiez le comportement de la compétence dans l'IA Chat
-- Vérifiez l'absence de conflits avec les compétences existantes
-
-### 5. Sécurité
-
-**Installez uniquement des compétences de confiance :**
-- Vérifiez la source de la compétence
-- Examinez les permissions de la compétence
-- Surveillez le comportement de la compétence
-- Supprimez les compétences inutilisées
-
-## Développement de compétences (pour les développeurs)
-
-### Structure du manifeste
-
-Le fichier `manifest.json` d'une compétence doit inclure :
+Un `.zip` de compétence doit contenir un `manifest.json`. Le manifeste minimal viable ressemble à ceci :
 
 ```json
 {
   "name": "my-custom-skill",
   "version": "1.0.0",
-  "category": "automation",
-  "permissions": ["web-search", "data-access"],
-  "description": "Description de ce que cette compétence fait"
+  "description": "What this skill does, shown to the AI.",
+  "runtime": "javascript",
+  "entry": "index.js",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "url": { "type": "string" }
+    },
+    "required": ["url"]
+  },
+  "permissions": ["network"]
 }
 ```
 
-### Packaging
+### Champs obligatoires du manifeste
 
-1. Incluez `manifest.json` à la racine
-2. Ajoutez les fichiers d'implémentation de la compétence
-3. Incluez les ressources nécessaires
-4. Compressez le contenu (pas le dossier)
-5. Nommez le fichier `skill-name.zip`
+| Champ | Description |
+|-------|-------------|
+| `name` | Identifiant unique de la compétence. |
+| `version` | Chaîne de version, par ex. `1.0.0`. |
+| `description` | Courte description — l'IA la lit pour décider quand utiliser la compétence. |
+| `runtime` | `javascript` ou `python`. |
+| `entry` | Le fichier d'entrée dans le package (par ex. `index.js` ou `main.py`). |
+| `parameters` | Un objet JSON Schema décrivant les paramètres d'entrée de la compétence. |
 
-## Intégration avec d'autres fonctionnalités
+### Champs facultatifs du manifeste
 
-### Assistant Marketing IA
+| Champ | Description |
+|-------|-------------|
+| `permissions` | Tableau de chaînes de permission. **Les valeurs valides sont uniquement `network`, `filesystem`, `automation`.** La première entrée détermine la catégorie de la compétence (voir [Catégories de compétences](#skill-categories)). Les valeurs inconnues sont rejetées à l'import. |
 
-Les compétences enrichissent les capacités de conversation de l'IA :
-- Des réponses plus précises
-- Accès à des sources de données externes
-- Exécution automatisée de tâches
+:::danger Les permissions sont strictement validées
 
-### Outils MCP
+Seuls `network`, `filesystem` et `automation` sont acceptés. Les valeurs telles que `web-search`, `data-access` ou `shell` seront rejetées et la compétence ne sera pas importée. Il n'y a pas de champ `category` distinct — la catégorie est dérivée de la première entrée de `permissions` (ou `pure` si aucune n'est fournie).
 
-Les compétences et les outils MCP peuvent fonctionner ensemble :
-- Les compétences fournissent une logique spécifique au domaine
-- Les outils MCP fournissent une connectivité externe
-- Combinés pour une automatisation puissante
+:::
 
-### Bibliothèque de connaissances
+### Empaquetage
 
-Les compétences peuvent exploiter votre base de connaissances :
-- Recherche de connaissances pendant la conversation
-- Application de modèles appris
-- Génération de réponses contextuelles
+1. Placez un `manifest.json` valide à la racine du package.
+2. Ajoutez les fichiers d'exécution/d'entrée référencés par `entry`.
+3. Compressez le **contenu**, pas le dossier parent.
+4. Nommez le fichier `skill-name.zip`.
+
+## Dépannage
+
+### Échec de l'importation
+
+**Causes possibles :** zip invalide, `manifest.json` manquant ou mal formé, valeur de `permissions` invalide, ou un champ obligatoire manquant (`runtime`, `entry`, `parameters`).
+
+**Solutions :**
+1. Vérifiez l'intégrité du zip.
+2. Vérifiez que `manifest.json` contient tous les champs obligatoires avec des valeurs valides.
+3. Confirmez que `permissions` utilise uniquement `network`, `filesystem` ou `automation`.
+4. Confirmez que `runtime` vaut `javascript` ou `python` et que `entry` pointe vers un fichier réel.
+
+### Une compétence n'apparaît pas dans le chat
+
+**Causes possibles :** la compétence est désactivée, ou (pour les compétences de plugin) son plugin est désactivé.
+
+**Solutions :**
+1. Vérifiez le statut de la compétence dans le tableau et activez-la.
+2. Pour les compétences de plugin, vérifiez le **[Plugin Manager](./plugin-manager)** — le plugin propriétaire doit être activé.
+
+### L'IA continue de demander une approbation
+
+- Vous utilisez une compétence **shell**. Les approbations shell sont uniques par conception.
+- Pour les autres catégories, basculez le mode d'approbation des outils du chat sur _« approuver pour moi »_ pour réduire les demandes (note : cela auto-approuve les compétences non-shell).
+
+### Une compétence intégrée n'a pas de bascule
+
+C'est intentionnel. Les compétences intégrées sont toujours activées et ne peuvent pas être désactivées ni désinstallées depuis cette page.
 
 ## Prochaines étapes
 
-- [Configurer les paramètres système](../settings/system-settings)
-- [Découvrir l'Assistant Marketing IA](./ai-marketing-assistant)
-- [Configurer la Bibliothèque de connaissances](./knowledge-library)
-
----
-
-**Prêt à étendre les capacités de l'IA ?** Importez votre première compétence et découvrez de nouvelles possibilités d'automatisation et d'intelligence.
+- [Plugin Manager](./plugin-manager) — installez des plugins qui fournissent des compétences, des commandes, des agents, des hooks et des serveurs MCP.
+- [Subagents](./subagents) — des spécialistes ciblés que l'IA peut déployer.
+- [AI Chat V2](./ai-chat-v2) — l'endroit où les compétences sont invoquées.

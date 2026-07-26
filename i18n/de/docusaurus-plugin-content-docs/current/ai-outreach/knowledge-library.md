@@ -9,6 +9,12 @@ description: Erstellen Sie Ihre Wissensbasis mit Dokumenten, die die KI verwende
 
 Die Wissensbibliothek ist aiFetchlys intelligentes Dokumentenmanagementsystem. Laden Sie Ihre Dokumente hoch (PDFs, Word-Dateien, HTML und mehr), um eine Wissensbasis zu erstellen, die KI-generierte Inhalte unterstützt und sicherstellt, dass Ihre Kommunikation kontextuell präzise und personalisiert ist.
 
+:::info Abonnement erforderlich
+
+Die Wissensbibliothek – einschließlich des kostenlosen lokalen Einbettungsmodells – erfordert ein aiFetchly-Abonnement. Wenn für Ihr Konto keine KI aktiviert ist, zeigt die Seite eine Aufforderung **Abonnement erforderlich**.
+
+:::
+
 ## Was ist RAG?
 
 **RAG** (Retrieval-Augmented Generation) ist eine Technologie, die:
@@ -126,7 +132,7 @@ Die Wissensbibliothek zeigt alle Ihre Dokumente mit folgenden Informationen:
 Wenn Sie Einbettungsmodelle ändern oder ein Dokument erneut verarbeiten müssen:
 
 1. Suchen Sie das Dokument in der Liste
-2. Klicken Sie auf **Neu einbetten**
+2. Klicken Sie auf die Schaltfläche **Neu einbetten**
 3. Der Dokumentstatus ändert sich zu **In Bearbeitung**
 4. Neue Einbettungen werden mit dem aktuellen Modell erstellt
 5. Der Status aktualisiert sich auf **Abgeschlossen**, sobald fertig
@@ -135,6 +141,66 @@ Wenn Sie Einbettungsmodelle ändern oder ein Dokument erneut verarbeiten müssen
 - Einbettungsmodell in den Einstellungen geändert
 - Vorherige Einbettung teilweise fehlgeschlagen
 - Aktualisierte Chunking-Parameter verwenden möchten
+
+Informationen zur Auswahl oder Änderung des Modells finden Sie unten unter [Einbettungsmodell-Einstellungen](#einbettungsmodell-einstellungen).
+
+## Einbettungsmodell-Einstellungen
+
+Einbettungen wandeln Ihren Text in Vektoren um, die die KI semantisch durchsucht. Sie wählen in den **Einstellungen** aus, welches Einbettungsmodell aiFetchly verwendet.
+
+### Einbettungseinstellungen öffnen
+
+1. Öffnen Sie die **Wissensbibliothek**.
+2. Klicken Sie im Header auf **Einstellungen**.
+
+Im Dialog wird ein Dropdown-Menü **Einbettungsmodell** angezeigt, das alle verfügbaren Modelle, Ihr **Aktuelles Modell** und eine Schaltfläche **Modell aktualisieren** enthält.
+
+### Lokale vs. Remote-Modelle
+
+Das Dropdown-Menü vereint zwei Arten von Modellen:
+
+| Typ | Beispiel | Hinweise |
+|------|---------|-------|
+| **Lokal (kostenlos)** | `Xenova/all-MiniLM-L6-v2 (free)` | Läuft vollständig auf Ihrem Gerät (384-dimensional). Kostenlos, privat und funktioniert offline, sobald es zwischengespeichert ist. |
+| **Remote** | Vom Server bereitgestellte Modelle | Werden auf dem aiFetchly-KI-Server erzeugt. Kostenlos oder kostenpflichtig, je nach Tarif. |
+
+Kostenlose Modelle – lokal oder Remote – zeigen im Dropdown einen grünen **Kostenlos**-Chip. Das lokale Modell wird immer angezeigt, selbst wenn die Liste der Remote-Modelle nicht geladen werden kann, damit es stets eine funktionierende Option gibt.
+
+:::tip Lokales Modell = privat + kostenlos
+
+Das lokale Modell läuft über Transformers.js auf Ihrer eigenen CPU. Wenn es ausgewählt ist, wird Ihr Dokumenttext **niemals an den Remote-Einbettungs-Endpunkt gesendet** – die Einbettungen werden vollständig auf Ihrem Gerät erzeugt. Wählen Sie es für Datenschutz, keine Kosten und Offline-Nutzung.
+
+:::
+
+:::note Erste Nutzung lädt das Modell herunter
+
+Wenn Sie das lokale Modell zum ersten Mal verwenden, lädt aiFetchly die Modellgewichte (von Hugging Face) herunter und speichert sie auf der Festplatte zwischen. Die erste Indizierung läuft daher langsamer; spätere Durchläufe verwenden das zwischengespeicherte Modell und sind schnell.
+
+:::
+
+Wählen Sie ein Modell und klicken Sie auf **Modell aktualisieren**. Das neue Modell gilt für **zukünftige** Indizierungen und Neu-Einbettungen. Bestehende Dokumente behalten das Modell, mit dem sie ursprünglich eingebettet wurden, bis Sie sie neu einbetten.
+
+### Automatischer Fallback während der Indizierung
+
+Wenn Sie ein Remote-Modell verwenden und die Einbettung nach Wiederholungsversuchen fehlschlägt (z. B. durch einen Netzwerk- oder Serverfehler), führt aiFetchly automatisch Folgendes aus:
+
+1. Verwirft alle teilweisen Vektoren für dieses Dokument, damit die Einbettungsräume nicht vermischt werden.
+2. Bettet das gesamte Dokument mit dem **lokalen, kostenlosen Modell** neu ein.
+3. Trägt das lokale Modell auf dem Dokument ein.
+
+Sie sehen: *"Remote-Einbettung fehlgeschlagen. AiFetchly hat stattdessen das lokale, kostenlose Einbettungsmodell verwendet."*
+
+Wenn auch das lokale Modell fehlschlägt, wird das Dokument als **Fehler** markiert: *"Einbettungserzeugung nach Remote-Wiederholung und lokalem Fallback fehlgeschlagen. Details finden Sie im Fehlerprotokoll des Dokuments."*
+
+:::warning Kontingentfehler führen zu keinem Fallback
+
+Wenn das Remote-Versagen ein Abrechnungs- oder Kontingentlimit ist, führt aiFetchly **keinen** stillen Fallback durch – es zeigt *"Remote-Einbettungskontingent oder Abrechnungslimit erreicht"*, damit Sie Ihren Tarif aufladen können. Wechseln Sie zum lokalen Modell (oder betten Sie nach Behebung des Kontingentproblems neu ein), um fortzufahren.
+
+:::
+
+### Durchsuchen einer Bibliothek mit gemischten Modellen
+
+Wenn einige Dokumente mit einem Remote-Modell und andere mit dem lokalen Modell eingebettet wurden, wird jedes Dokument mit dem Modell durchsucht, mit dem es eingebettet wurde – die beiden Einbettungsräume sind nicht austauschbar. Wenn der Remote-Endpunkt während einer Suche nicht verfügbar ist, werden die remote-indizierten Dokumente bei dieser Suche übersprungen und nur die lokal indizierten Dokumente liefern Ergebnisse.
 
 ## Fehlerbehebung
 
@@ -158,11 +224,13 @@ Wenn Sie Einbettungsmodelle ändern oder ein Dokument erneut verarbeiten müssen
 - Große Dateigröße
 - Hohe Systemauslastung
 - Netzwerklatenz (bei Remote-Einbettung)
+- Erstmalige Verwendung des lokalen Einbettungsmodells (es lädt einmal Modellgewichte herunter)
 
 **Lösungen:**
 1. Auf Abschluss der Verarbeitung warten
 2. Große Dokumente in kleinere Dateien aufteilen
 3. Andere Anwendungen schließen, um Ressourcen freizugeben
+4. Wenn Sie gerade auf das lokale Modell gewechselt sind, lädt der erste Durchlauf das Modell herunter und speichert es zwischen – spätere Durchläufe sind schnell
 
 ### Dokument wird nicht in KI-Inhalten verwendet
 
@@ -197,9 +265,9 @@ Wenn Sie Einbettungsmodelle ändern oder ein Dokument erneut verarbeiten müssen
 ### 2. Dokumentenorganisation
 
 **Namenskonventionen:**
-- Beschreibende Namen verwenden: `Produktbroschuere_2024.pdf`
-- Versionsnummern einbeziehen: `Preisliste_v2.docx`
-- Daten hinzufügen: `Fallstudie_Januar_2024.pdf`
+- Beschreibende Namen verwenden: `Product_Brochure_2024.pdf`
+- Versionsnummern einbeziehen: `Pricing_Guide_v2.docx`
+- Daten hinzufügen: `Case_Study_January_2024.pdf`
 
 **Kategorisierung:**
 - Verwandte Dokumente zusammen gruppieren
@@ -352,7 +420,7 @@ Beim Chatten mit dem KI-Assistenten:
 ### Datenschutzaspekte
 
 - **Ihr Wissen**: Nur Sie haben Zugriff auf Ihre Dokumente
-- **KI-Verarbeitung**: Einbettungen lokal oder auf Ihren Servern erstellt
+- **KI-Verarbeitung**: Mit dem lokalen Einbettungsmodell verlässt Ihr Text niemals Ihr Gerät; mit einem Remote-Modell werden die Einbettungen auf dem Server von aiFetchly erzeugt
 - **Keine Trainingsdaten**: Ihre Dokumente werden nicht zum Training öffentlicher KI-Modelle verwendet
 
 :::tip Vertrauliche Informationen
@@ -371,7 +439,7 @@ Nachdem Sie Ihre Wissensbibliothek aufgebaut haben:
 
 - [KI-generierte E-Mail-Kampagnen erstellen](./ai-email-writer)
 - [Den KI-Marketing-Assistenten verwenden](./ai-marketing-assistant)
-- [Batch-E-Mail-Versand einrichten](../lead-generation/batch-email-sending)
+- [Outreach-Kampagne einrichten](../lead-generation/batch-email-sending)
 
 ---
 

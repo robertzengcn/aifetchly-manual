@@ -20,10 +20,18 @@ Benutzerdefinierte Anbieter ermöglichen Ihnen die Nutzung des **KI-Chats mit Ih
 
 Benutzerdefinierte Anbieter verwenden den Standard-Chat-Completions-Vertrag von OpenAI (`/v1/chat/completions` und, sofern unterstützt, `/v1/models`). aiFetchly enthält keine anbieterspezifischen SDKs — es kommuniziert direkt vom Backend der Anwendung mit Ihrem Endpunkt, sodass Ihr API-Schlüssel nie Ihren Rechner verlässt.
 
+:::info Spracheinstellungen finden Sie auch hier
+
+Diese Seite enthält außerdem die **Sprache (Voice)**-Einstellungen für AI Chat — auf-Geräte-Spracherkennung (Push-to-Talk) und gesprochene Antworten (Text-to-Speech). Die Sprachfunktion läuft lokal auf Ihrem Rechner und ist unabhängig von Ihrem KI-Anbieter. Siehe [Spracheinstellungen](#spracheinstellungen) unten.
+
+:::
+
 ## Öffnen der Seite „KI-Anbieter"
 
-1. Klicken Sie im linken Navigationsmenü auf **Settings** (Einstellungen).
-2. Öffnen Sie die Seite **AI Provider** (KI-Anbieter) unter System Settings (Systemeinstellungen).
+1. Klicken Sie im linken Navigationsmenü auf **System Setting** (Systemeinstellung).
+2. Klicken Sie auf die Schaltfläche **AI Provider** (KI-Anbieter) auf der System-Settings-Seite.
+
+Sie können die Seite auch über AI Chat öffnen — klicken Sie auf den Anbieter-Chip neben der Modellauswahl (z. B. `Hosted` oder `Local: Ollama`).
 
 ## Anbietermodus
 
@@ -153,7 +161,7 @@ Jedes Badge hat einen dieser Zustände:
 
 :::tip Wenn Tools nicht unterstützt oder unbekannt ist
 
-Wenn Ihr Anbieter Tool-Aufrufe (zuverlässig) nicht unterstützt, verwendet der KI-Chat automatisch einen konservativen Freigabemodus und sendet für normalen Chat keine Tool-Definitionen. Tool-abhängige Workflows und der Plan-Modus, die auf Tools angewiesen sind, können deaktiviert sein oder Sie warnen. Für volle Tool-/Plan-Modus-Unterstützung verwenden Sie ein toolfähiges Modell oder gehostetes aiFetchly.
+Wenn der Verbindungstest die Tool-Unterstützung nicht bestätigt, zeigt AI Chat die Warnung *„Dieser lokale Anbieter hat die Tool-Unterstützung nicht bestätigt. Tools sind für diese Unterhaltung deaktiviert."* und deaktiviert Tools für diese Unterhaltung. Tool-abhängige Workflows (einschließlich Plan-Modus) werden erst ausgeführt, wenn Sie zu einem toolfähigen Modell oder gehostetem aiFetchly wechseln. Führen Sie nach dem Modellwechsel **Test Connection** erneut aus, um die Tool-Unterstützung neu zu prüfen.
 
 :::
 
@@ -171,6 +179,48 @@ Wenn der Anbieter nicht erreichbar ist, zeigt der KI-Chat einen klaren Anbieterf
 :::info Verwandt: AI Chat V2
 
 Der Anbietermodus gilt übergreifend für die Chat-Oberflächen. Siehe [AI Chat V2](../ai-outreach/ai-chat-v2) für das Chat-Erlebnis selbst, einschließlich Plan-Modus und Kontextnutzungs-Badge.
+
+:::
+
+## Spracheinstellungen
+
+Die Seite „KI-Anbieter" enthält außerdem ein Panel **Sprache (Voice)** für die auf dem Gerät ausgeführte Sprachfunktion im AI Chat — Spracherkennung (Spracheingabe) und Sprachsynthese (gesprochene Antworten). Die Sprachfunktion läuft lokal auf Ihrem Rechner über die Engine `sherpa-onnx` und ist unabhängig von Ihrem KI-Anbieter.
+
+### Spracheingabe
+
+| Einstellung | Funktion |
+|---|---|
+| **Spracheingabe aktivieren (Enable voice input)** | Zeigt eine Mikrofon-Schaltfläche im AI-Chat-Composer an (Push-to-Talk). Standardmäßig deaktiviert. |
+| **Sprachtranskript automatisch senden (Send voice transcript automatically)** | Sendet das Transkript sobald die Transkription abgeschlossen ist, anstatt es zum Prüfen in den Composer einzufügen. |
+| **STT-Sprache (STT language)** | Die Sprache, die Sie sprechen: Auto, English, 中文, Español, Français, Deutsch oder 日本語. |
+| **STT-Modell (STT model)** | Das Spracherkennungsmodell. Nur installierte Modelle sind auswählbar. |
+| **Maximale Aufnahmedauer (Max recording duration)** | Wie lange eine einzelne Aufnahme dauern darf, in Sekunden (1–600; Standard 60). |
+
+### Gesprochene Antworten
+
+| Einstellung | Funktion |
+|---|---|
+| **Gesprochene Antworten aktivieren (Enable spoken responses)** | Liest die Textantworten der KI laut vor. Sie können dies jederzeit auch über die Lautstärketaste im AI-Chat-Header ein-/ausschalten. |
+| **Nur nach Spracheingabe sprechen (Speak only after voice input)** | Wenn aktiviert, spricht die KI nur ihre Antworten auf Ihre Sprachnachrichten (freihändige Unterhaltung), nicht jede Antwort. |
+| **TTS-Sprache (TTS language)** | Die Sprache für gesprochene Antworten: Auto, English, 中文, Español, Français, Deutsch oder 日本語. |
+| **TTS-Stimme / Modell (TTS voice / model)** | Die Stimme für gesprochene Antworten. Nur installierte Stimmen sind auswählbar. |
+| **Sprechgeschwindigkeit (Speech speed)** | Wiedergabegeschwindigkeit, von 0.5× bis 2.0×. |
+
+### Sprachmodelle
+
+Sowohl die Spracheingabe als auch die gesprochenen Antworten benötigen jeweils ein Sprachmodell. Der Abschnitt **Sprachmodelle (Voice models)** listet die verfügbaren STT- und TTS-Modelle mit ihrem Status auf — **Herunterladen (Download)**, **Installiert (Installed)** oder **Abbrechen (Cancel)** (während des Downloads) — und zeigt den Live-Download-Fortschritt an.
+
+Modelle werden bei Bedarf heruntergeladen, wenn Sie eine Funktion zum ersten Mal aktivieren oder verwenden. Beim erstmaligen Einschalten der Sprachfunktion wird also ein einmaliger Download ausgelöst. Sie können Modelle auch hier vorab herunterladen.
+
+:::info Sprache ist lokal und privat
+
+Spracherkennung und Sprachsynthese erfolgen vollständig auf Ihrem Gerät. Ihr Mikrofonaudio wird lokal verarbeitet und **nicht** an einen Server gesendet oder gespeichert. Nur das resultierende Transkript wird aufbewahrt — als normale Chat-Nachricht.
+
+:::
+
+:::note Sprache gewährt keinen Chat-Zugriff
+
+Die Sprachfunktion ist lokal und kostenlos, gewährt aber keinen Chat-Zugriff. Um eine transkribierte Nachricht zu senden und eine Antwort zu erhalten, benötigen Sie weiterhin entweder ein aiFetchly-KI-Abonnement (Gehostet) oder einen funktionierenden benutzerdefinierten/lokalen Anbieter. Siehe [AI Chat V2 → Sprache](../ai-outreach/ai-chat-v2#voice) für die Nutzung der Sprachfunktion im Chat.
 
 :::
 

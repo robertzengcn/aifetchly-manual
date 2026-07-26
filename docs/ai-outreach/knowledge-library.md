@@ -9,6 +9,12 @@ description: Build your knowledge base with documents that AI uses to generate c
 
 The Knowledge Library is aiFetchly's intelligent document management system. Upload your documents (PDFs, Word files, HTML, and more) to create a knowledge base that powers AI-generated content, ensuring your outreach is contextually accurate and personalized.
 
+:::info Subscription required
+
+The Knowledge Library — including the free local embedding model — requires an aiFetchly subscription. If your account doesn't have AI enabled, the page shows a **Subscription Required** prompt.
+
+:::
+
 ## What is RAG?
 
 **RAG** (Retrieval-Augmented Generation) is a technology that:
@@ -136,6 +142,66 @@ If you change embedding models or need to reprocess a document:
 - Previous embedding failed partially
 - Want to use updated chunking parameters
 
+See [Embedding model settings](#embedding-model-settings) below for how to choose or change the model.
+
+## Embedding model settings
+
+Embeddings convert your text into vectors the AI searches semantically. You pick which embedding model aiFetchly uses from **Settings**.
+
+### Opening embedding settings
+
+1. Open the **Knowledge Library**.
+2. Click **Settings** in the header.
+
+The dialog shows an **Embedding Model** dropdown listing every available model, your **Current Model**, and an **Update Model** button.
+
+### Local vs. remote models
+
+The dropdown combines two kinds of models:
+
+| Type | Example | Notes |
+|------|---------|-------|
+| **Local (free)** | `Xenova/all-MiniLM-L6-v2 (free)` | Runs entirely on your device (384-dimensional). Free, private, and works offline once cached. |
+| **Remote** | Server-provided models | Generated on aiFetchly's AI server. Free or paid depending on your plan. |
+
+Free models — local or remote — show a green **Free** chip in the dropdown. The local model is always listed, even if the remote model list can't be loaded, so there is always a working option.
+
+:::tip Local model = private + free
+
+The local model runs on your own CPU via Transformers.js. When it's selected, your document text is **never sent to the remote embedding endpoint** — embeddings are generated entirely on your machine. Choose it for privacy, zero cost, and offline use.
+
+:::
+
+:::note First use downloads the model
+
+The first time you use the local model, aiFetchly downloads the model weights (from Hugging Face) and caches them on disk. The first indexing run is therefore slower; later runs reuse the cached model and are fast.
+
+:::
+
+Choose a model and click **Update Model**. The new model applies to **future** indexing and re-embedding. Existing documents keep the model they were originally embedded with until you re-embed them.
+
+### Automatic fallback during indexing
+
+If you use a remote model and embedding fails (for example, a network or server error) after retries, aiFetchly automatically:
+
+1. Discards any partial vectors for that document so embedding spaces aren't mixed.
+2. Re-embeds the whole document with the **local free model**.
+3. Records the local model on the document.
+
+You'll see: *"Remote embedding failed. AiFetchly used the local free embedding model instead."*
+
+If the local model also fails, the document is marked **Error** with: *"Embedding generation failed after remote retry and local fallback. Check the document error log for details."*
+
+:::warning Quota errors don't fall back
+
+If the remote failure is a billing or quota limit, aiFetchly does **not** fall back silently — it shows *"Remote embedding quota or billing limit reached"* so you can top up your plan. Switch to the local model (or re-embed after resolving the quota issue) to continue.
+
+:::
+
+### Searching a mixed-model library
+
+If some documents were embedded with a remote model and others with the local model, each document is searched using the model it was embedded with — the two embedding spaces are not interchangeable. If the remote endpoint is unavailable during a search, the remote-indexed documents are skipped for that search and only the local-indexed documents return results.
+
 ## Troubleshooting
 
 ### Document Status: "Error"
@@ -158,11 +224,13 @@ If you change embedding models or need to reprocess a document:
 - Large file size
 - High system load
 - Network latency (for remote embedding)
+- First-time use of the local embedding model (it downloads model weights once)
 
 **Solutions:**
 1. Wait for processing to complete
 2. Split large documents into smaller files
 3. Close other applications to free resources
+4. If you just switched to the local model, the first run downloads and caches the model — later runs are fast
 
 ### Document Not Used in AI Content
 
@@ -352,7 +420,7 @@ When chatting with the AI assistant:
 ### Privacy Considerations
 
 - **Your Knowledge**: Only you have access to your documents
-- **AI Processing**: Embeddings created locally or on your servers
+- **AI Processing**: With the local embedding model, text never leaves your device; with a remote model, embeddings are generated on aiFetchly's server
 - **No Training Data**: Your documents aren't used to train public AI models
 
 :::tip Confidential Information

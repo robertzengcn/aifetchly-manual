@@ -32,11 +32,13 @@ const sidebars: SidebarsConfig = {
         "ai-outreach/knowledge-library",
         "ai-outreach/workspace-memory",
         "ai-outreach/mcp-tools",
-        "ai-outreach/hooks",
         "ai-outreach/subagents",
+        "ai-outreach/plugin-manager",
         "ai-outreach/ai-skills",
         "ai-outreach/ai-email-writer",
         "ai-outreach/ai-marketing-assistant",
+        "ai-outreach/ai-chat-v2",
+        "ai-outreach/slash-commands",
       ],
     },
     {
@@ -65,7 +67,11 @@ const sidebars: SidebarsConfig = {
       label: "Settings",
       collapsible: false,
       collapsed: false,
-      items: ["settings/system-settings", "settings/hooks"],
+      items: [
+        "settings/system-settings",
+        "settings/ai-provider",
+        "settings/hooks",
+      ],
     },
   ],
 };

@@ -11,11 +11,20 @@ Subagents are reusable specialist AI agent definitions. They describe a focused 
 
 Plugins can install subagents alongside AI Skills and MCP servers, and you can also create manual subagents for your own recurring workflows.
 
+## How the AI uses subagents
+
+You don't invoke subagents directly. At the start of a chat, aiFetchly injects an **Available AiFetchly agents** list into the AI's context — each entry shows the agent's runtime ID, description, and source. When a task fits, the AI calls the **`run_subagent`** tool with that ID. The subagent then runs with its own system prompt, allowed tools, and runtime limits, and returns its result to the main AI.
+
+## Built-in agents
+
+aiFetchly ships with one built-in subagent:
+
+- **Lead Researcher** (`agent-lead-researcher`) — a `specialist` that gathers public business context for a lead (industry, summary, products, signals) using the search-scraper and Knowledge Library tools, and returns a structured JSON object with source URLs and a confidence score. It is read-only.
+
 ## Opening Subagents
 
-1. Click **Settings** in the left navigation.
-2. Open **System Settings**.
-3. Click **Manage Subagents**.
+1. Click **System Setting** in the left navigation menu.
+2. Click **Manage Subagents**.
 
 The Subagents page shows a compact table, search and filter controls, a detail dialog, and an **Add Subagent** action.
 
@@ -25,8 +34,8 @@ The Subagents page shows a compact table, search and filter controls, a detail d
 |---|---|
 | **Built-in** | Agents shipped with aiFetchly. They are read-only. |
 | **Plugin** | Agents installed by a plugin. They are read-only from the Subagents page, but can be enabled or disabled. |
-| **Workspace** | Agents loaded from workspace files. Edit the workspace agent file to change them. |
-| **Manual** | Agents created by you in aiFetchly. These can be edited, enabled, disabled, or deleted. |
+| **Workspace** | Agents loaded from the workspace's `.aifetchly/agents/` files. They can be enabled or disabled here; edit the workspace file to change their definition. Workspace agents only load once the workspace is trusted. |
+| **Manual** | Agents created by you in aiFetchly, **or** defined as Markdown files under `~/.aifetchly/agents/`. These can be edited, enabled, disabled, or deleted. |
 
 Use the source filter to show all subagents or only one source.
 
@@ -39,12 +48,14 @@ The Subagents table includes:
 | **Agent** | Display name and runtime ID. |
 | **Description** | Short summary of what the agent does. |
 | **Source** | Built-in, Plugin, Workspace, or Manual. |
+| **Plugin** | The owning plugin, when applicable. |
 | **Mode** | Agent role, such as `specialist`, `verifier`, `coordinator`, or `formatter`. |
 | **Tools** | Number of tools the agent is allowed to use. |
+| **Model** | The agent's default model, if one is set. |
 | **Status** | Enabled or Disabled, with warning indicators for unhealthy agents. |
 | **Actions** | Enable or disable switch where available. |
 
-You can search by agent ID, name, description, or plugin name. The status filter can show all agents, enabled agents, or disabled agents.
+You can search by agent ID, name, description, or plugin name. The status filter can show **all** agents, **enabled** agents, **disabled** agents, or agents that **have warnings**.
 
 ## Viewing Details
 
@@ -112,10 +123,11 @@ A plugin subagent can include:
 
 - `name`
 - `description`
-- `tools`
+- `tools` (and/or `skills`, which are merged into the allowed tools)
 - `model`
 - `mode`
-- Runtime limits
+- Runtime limits (`maxToolCalls`, `maxRuntimeMs`, `maxTurns`)
+- An optional `outputSchema`
 - Markdown instructions that become the system prompt
 
 Plugin-owned subagents are namespaced by the plugin, such as `lead-pack:researcher`. Nested folders can create deeper IDs, such as `lead-pack:review:verifier`.

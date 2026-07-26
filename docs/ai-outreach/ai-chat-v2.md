@@ -23,6 +23,8 @@ V2 and the legacy assistant run side by side. If the V2 feature flag is on, clic
 | **Streaming reconnect** | If the stream drops, V2 retries and shows a reconnect indicator instead of silently hanging. |
 | **Typing indicator** | Visible while the AI is thinking or running a tool. |
 | **Stop button** | Cancels the in-flight stream and any running tool call. |
+| **Slash commands** | Type `/` in the composer to run actions (`/clear`, `/status`, `/plugin`) or expand reusable prompt templates you create yourself. See [Slash Commands](./slash-commands). |
+| **Voice** | Speak your message and hear the AI reply — on-device speech-to-text and text-to-speech. See [Voice](#voice). |
 
 ## Opening V2
 
@@ -160,6 +162,56 @@ The AI can run shell commands only with your explicit approval. Even if you clic
 
 When a conversation approaches the context limit, V2 can compact the session: it summarizes earlier turns into a shorter form so the conversation can continue without losing key context. The compact runs as its own background task; you'll see a notice when it happens.
 
+## Slash commands
+
+Type `/` at the start of the composer to open the slash-command menu. Built-in commands like `/clear`, `/help`, `/status`, and `/plugin` run instantly, and you can create your own reusable prompt templates (for example `/outreach <website>`) as Markdown files in `~/.aifetchly/commands/`. See the dedicated **[Slash Commands](./slash-commands)** page for the full list, custom-command authoring, and the keyboard shortcuts.
+
+## Voice
+
+AI Chat V2 supports **voice input** (speech-to-text) and **spoken responses** (text-to-speech). Both run **on your device** using the `sherpa-onnx` speech engine — your microphone audio is processed locally and is not sent to a server.
+
+Voice is off by default. Turn it on in **[AI Provider → Voice settings](../settings/ai-provider#voice-settings)**.
+
+### Speak to the AI (voice input)
+
+When voice input is enabled, a **microphone button** appears in the composer:
+
+1. Click the mic to **start recording** (push-to-talk). Click again (or the stop control) to stop.
+2. The composer shows a recording state while you speak. Recording auto-stops at the maximum duration (default 60 seconds).
+3. After you stop, aiFetchly transcribes your speech locally and inserts the transcript into the composer as editable text.
+4. Review or edit the transcript, then send it as usual.
+
+:::tip Auto-send
+
+Enable **Send voice transcript automatically** in voice settings to send the transcript the moment transcription finishes, skipping the review step.
+
+:::
+
+The transcript becomes a normal chat message — stored and sent as text, exactly like a typed message.
+
+The first time you use voice input, aiFetchly downloads the speech model (a one-time download). If the model isn't installed yet, the mic button shows a **missing model** state with an install action.
+
+### Hear the AI reply (spoken responses)
+
+The **volume button** in the chat header toggles spoken responses on and off:
+
+- **On** (highlighted): the AI's text replies are read aloud as they stream.
+- **Off**: silent — replies appear as text only.
+
+aiFetchly reads only the natural-language reply — not code blocks, tool calls, tables, or permission prompts.
+
+:::note Speak only after voice input
+
+In voice settings you can set the AI to speak **only its replies to your voice messages** (a hands-free back-and-forth) instead of every reply.
+
+:::
+
+While the AI is speaking, a **stop-speaking** control lets you halt playback. Starting a new voice recording, switching conversations, or clicking the chat **Stop** button also stops speech.
+
+### Voice doesn't grant chat access
+
+Speech recognition and synthesis are local and free, but to send a message and get a reply you still need chat access — either an aiFetchly AI subscription (Hosted) or a working [custom/local provider](../settings/ai-provider). If no chat model is available, your speech can still be transcribed locally, but the message can't be sent until chat is available.
+
 ## Tips for getting the most out of V2
 
 ### DO ✅
@@ -201,6 +253,7 @@ When a conversation approaches the context limit, V2 can compact the session: it
 
 ## Next steps
 
+- [Slash Commands](./slash-commands) — run actions and reusable prompts with `/`.
 - [AI Marketing Assistant](./ai-marketing-assistant) — the legacy chat, still supported.
 - [Plugin Manager](./plugin-manager) — install plugins from local folder, git, GitHub, npm, or URL.
 - [AI Skills](./ai-skills) — what skills are and how to use them.

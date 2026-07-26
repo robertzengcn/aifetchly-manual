@@ -1,13 +1,19 @@
 ---
 id: knowledge-library
-title: Knowledge Library
-sidebar_label: Knowledge Library
-description: Construya su base de conocimiento con documentos que la IA usa para generar contenido contextualmente relevante.
+title: Biblioteca de Conocimiento
+sidebar_label: Biblioteca de Conocimiento
+description: Construya su base de conocimiento con documentos que la IA utiliza para generar contenido contextualmente relevante.
 ---
 
-# Knowledge Library
+# Biblioteca de Conocimiento
 
-La Biblioteca de Conocimiento es el sistema inteligente de gestión de documentos de aiFetchly. Cargue sus documentos (PDFs, archivos Word, HTML y más) para crear una base de conocimiento que potencia el contenido generado por IA, asegurando que su divulgación sea contextualmente precisa y personalizada.
+La Biblioteca de Conocimiento es el sistema inteligente de gestión de documentos de aiFetchly. Cargue sus documentos (PDFs, archivos de Word, HTML y más) para crear una base de conocimiento que potencia el contenido generado por IA, asegurando que su divulgación sea contextualmente precisa y personalizada.
+
+:::info Se requiere suscripción
+
+La Biblioteca de Conocimiento — incluido el modelo de embedding local gratuito — requiere una suscripción a aiFetchly. Si su cuenta no tiene la IA habilitada, la página muestra un mensaje de **Suscripción Requerida**.
+
+:::
 
 ## ¿Qué es RAG?
 
@@ -63,7 +69,7 @@ Después de la carga, los documentos se procesan automáticamente:
 1. **Guardado**: Los archivos se guardan en la base de datos
 2. **Fragmentación**: Los documentos se dividen en segmentos más pequeños
 3. **Embedding**: Se crean embeddings vectoriales para búsqueda semántica
-4. **Actualización de estado**: El estado de procesamiento cambia de **Pending** → **Processing** → **Completed**
+4. **Actualización de estado**: El estado de procesamiento cambia de **Pendiente** → **Procesando** → **Completado**
 
 :::tip Tiempo de procesamiento
 
@@ -84,7 +90,7 @@ La Biblioteca de Conocimiento muestra todos sus documentos con:
 |---------|-------------|
 | **Name** | Nombre del archivo del documento |
 | **Title** | Título del documento (editable) |
-| **Status** | Estado de procesamiento (Pending/Processing/Completed/Error) |
+| **Status** | Estado de procesamiento (Pendiente/Procesando/Completado/Error) |
 | **Type** | Tipo de archivo (PDF, DOCX, etc.) |
 | **Size** | Tamaño del archivo |
 | **Upload Date** | Cuándo se cargó el documento |
@@ -116,9 +122,9 @@ La Biblioteca de Conocimiento muestra todos sus documentos con:
 
 | Estado | Color | Significado | Acción |
 |--------|-------|-------------|--------|
-| **Pending** | Gris | En cola para procesamiento | Esperar el procesamiento automático |
-| **Processing** | Azul | Actualmente siendo procesado | Esperar a que se complete |
-| **Completed** | Verde | Listo para usar en generación de IA | El documento está activo |
+| **Pendiente** | Gris | En cola para procesamiento | Esperar el procesamiento automático |
+| **Procesando** | Azul | Actualmente siendo procesado | Esperar a que se complete |
+| **Completado** | Verde | Listo para usar en generación de IA | El documento está activo |
 | **Error** | Rojo | El procesamiento falló | Ver logs, intentar re-embeder |
 
 ## Re-embeder documentos
@@ -127,14 +133,74 @@ Si cambia los modelos de embedding o necesita reprocesar un documento:
 
 1. Busque el documento en la lista
 2. Haga clic en el botón **Re-embed**
-3. El estado del documento cambia a **Processing**
+3. El estado del documento cambia a **Procesando**
 4. Se crean nuevos embeddings con el modelo actual
-5. El estado se actualiza a **Completed** cuando termina
+5. El estado se actualiza a **Completado** cuando termina
 
 **Casos de uso para re-embeder:**
 - Cambió el modelo de embedding en la configuración
 - El embedding anterior falló parcialmente
 - Desea usar parámetros de fragmentación actualizados
+
+Consulte [Configuración del modelo de embedding](#configuración-del-modelo-de-embedding) más abajo para saber cómo elegir o cambiar el modelo.
+
+## Configuración del modelo de embedding
+
+Los embeddings convierten su texto en vectores que la IA busca de forma semántica. Usted elige qué modelo de embedding utiliza aiFetchly desde **Configuración**.
+
+### Apertura de la configuración de embedding
+
+1. Abra la **Biblioteca de Conocimiento**.
+2. Haga clic en **Configuración** en el encabezado.
+
+El diálogo muestra un menú desplegable de **Modelo de Embedding** que lista todos los modelos disponibles, su **Modelo Actual**, y un botón **Actualizar Modelo**.
+
+### Modelos locales y remotos
+
+El menú desplegable combina dos tipos de modelos:
+
+| Tipo | Ejemplo | Notas |
+|------|---------|-------|
+| **Local (gratis)** | `Xenova/all-MiniLM-L6-v2 (free)` | Se ejecuta completamente en su dispositivo (384 dimensional). Gratuito, privado y funciona sin conexión una vez cacheado. |
+| **Remoto** | Modelos proporcionados por el servidor | Generados en el servidor de IA de aiFetchly. Gratuitos o de pago según su plan. |
+
+Los modelos gratuitos — locales o remotos — muestran una etiqueta verde **Gratis** en el menú desplegable. El modelo local siempre aparece, incluso si la lista de modelos remotos no puede cargarse, por lo que siempre hay una opción funcional.
+
+:::tip Modelo local = privado + gratuito
+
+El modelo local se ejecuta en su propia CPU a través de Transformers.js. Cuando está seleccionado, el texto de sus documentos **nunca se envía al endpoint de embedding remoto** — los embeddings se generan completamente en su máquina. Elija esta opción para privacidad, costo cero y uso sin conexión.
+
+:::
+
+:::note El primer uso descarga el modelo
+
+La primera vez que utiliza el modelo local, aiFetchly descarga los pesos del modelo (desde Hugging Face) y los cachea en el disco. Por ello, la primera indexación es más lenta; las ejecuciones posteriores reutilizan el modelo cacheado y son rápidas.
+
+:::
+
+Elija un modelo y haga clic en **Actualizar Modelo**. El nuevo modelo se aplica a la indexación y re-embedding **futuros**. Los documentos existentes conservan el modelo con el que fueron embebidos originalmente hasta que los vuelva a embeber.
+
+### Respaldo automático durante la indexación
+
+Si utiliza un modelo remoto y el embedding falla (por ejemplo, por un error de red o del servidor) tras varios reintentos, aiFetchly automáticamente:
+
+1. Descarta cualquier vector parcial de ese documento para no mezclar los espacios de embedding.
+2. Re-embebe todo el documento con el **modelo local gratuito**.
+3. Registra el modelo local en el documento.
+
+Verá: *"El embedding remoto falló. AiFetchly usó el modelo de embedding local gratuito en su lugar."*
+
+Si el modelo local también falla, el documento se marca como **Error** con: *"La generación de embeddings falló tras el reintento remoto y el respaldo local. Consulte el registro de errores del documento para obtener más detalles."*
+
+:::warning Los errores de cuota no se respaldan
+
+Si el fallo remoto es un límite de facturación o cuota, aiFetchly **no** respalda silenciosamente — muestra *"Se alcanzó el límite de cuota o facturación del embedding remoto"* para que pueda recargar su plan. Cambie al modelo local (o vuelva a embeber tras resolver el problema de cuota) para continuar.
+
+:::
+
+### Búsqueda en una biblioteca con modelos mixtos
+
+Si algunos documentos fueron embebidos con un modelo remoto y otros con el modelo local, cada documento se busca utilizando el modelo con el que fue embebido — los dos espacios de embedding no son intercambiables. Si el endpoint remoto no está disponible durante una búsqueda, los documentos indexados remotamente se omiten en esa búsqueda y solo los documentos indexados localmente devuelven resultados.
 
 ## Solución de problemas
 
@@ -158,11 +224,13 @@ Si cambia los modelos de embedding o necesita reprocesar un documento:
 - Tamaño de archivo grande
 - Alta carga del sistema
 - Latencia de red (para embedding remoto)
+- Primer uso del modelo de embedding local (descarga los pesos del modelo una vez)
 
 **Soluciones:**
 1. Espere a que se complete el procesamiento
 2. Divida documentos grandes en archivos más pequeños
 3. Cierre otras aplicaciones para liberar recursos
+4. Si acaba de cambiar al modelo local, la primera ejecución descarga y cachea el modelo — las ejecuciones posteriores son rápidas
 
 ### El documento no se usa en el contenido de IA
 
@@ -172,7 +240,7 @@ Si cambia los modelos de embedding o necesita reprocesar un documento:
 - El contexto RAG no está habilitado
 
 **Soluciones:**
-1. Verifique que el estado del documento sea **Completed**
+1. Verifique que el estado del documento sea **Completado**
 2. Asegúrese de que el contexto RAG esté habilitado en AI Chat/Email Writer
 3. Intente buscar contenido más específico
 4. Cargue documentos relevantes adicionales
@@ -197,9 +265,9 @@ Si cambia los modelos de embedding o necesita reprocesar un documento:
 ### 2. Organización de documentos
 
 **Convenciones de nomenclatura:**
-- Use nombres descriptivos: `Folleto_Producto_2024.pdf`
-- Incluya números de versión: `Guia_Precios_v2.docx`
-- Agregue fechas: `Caso_Estudio_Enero_2024.pdf`
+- Use nombres descriptivos: `Product_Brochure_2024.pdf`
+- Incluya números de versión: `Pricing_Guide_v2.docx`
+- Agregue fechas: `Case_Study_January_2024.pdf`
 
 **Categorización:**
 - Agrupe documentos relacionados
@@ -352,7 +420,7 @@ Al chatear con el asistente de IA:
 ### Consideraciones de privacidad
 
 - **Su conocimiento**: Solo usted tiene acceso a sus documentos
-- **Procesamiento de IA**: Embeddings creados localmente o en sus servidores
+- **Procesamiento de IA**: Con el modelo de embedding local, el texto nunca sale de su dispositivo; con un modelo remoto, los embeddings se generan en el servidor de aiFetchly
 - **Sin datos de entrenamiento**: Sus documentos no se usan para entrenar modelos de IA públicos
 
 :::tip Información confidencial

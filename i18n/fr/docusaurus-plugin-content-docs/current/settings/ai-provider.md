@@ -20,10 +20,18 @@ Les fournisseurs personnalisés vous permettent d'utiliser **AI Chat avec votre 
 
 Les fournisseurs personnalisés utilisent le contrat standard de chat-completions d'OpenAI (`/v1/chat/completions` et, lorsqu'il est pris en charge, `/v1/models`). aiFetchly n'embarque pas de SDK propre à chaque fournisseur — il communique avec votre endpoint directement depuis le backend de l'application, afin que votre clé API ne quitte jamais votre machine.
 
+:::info Les paramètres vocaux sont aussi ici
+
+Cette page contient aussi les paramètres **Voix** pour AI Chat : reconnaissance vocale sur l'appareil (appuyer pour parler) et réponses parlées (synthèse vocale). La voix s'exécute localement sur votre machine et est indépendante de votre fournisseur d'IA. Voir [Paramètres vocaux](#paramètres-vocaux) ci-dessous.
+
+:::
+
 ## Ouvrir la page Fournisseur d'IA
 
-1. Cliquez sur **Settings** (Paramètres) dans le menu de navigation de gauche.
-2. Ouvrez la page **AI Provider** (Fournisseur d'IA), sous System Settings (Paramètres système).
+1. Cliquez sur **System Setting** (Réglage système) dans le menu de navigation de gauche.
+2. Cliquez sur le bouton **AI Provider** (Fournisseur d'IA) sur la page System Settings.
+
+Vous pouvez aussi l'ouvrir depuis AI Chat — cliquez sur la puce du fournisseur à côté du sélecteur de modèle (par exemple `Hosted` ou `Local: Ollama`).
 
 ## Mode de fournisseur
 
@@ -153,7 +161,7 @@ Chaque badge a l'un de ces états :
 
 :::tip Quand Tools est non pris en charge ou inconnu
 
-Si votre fournisseur ne prend pas en charge (fiablement) les appels d'outils, AI Chat utilise automatiquement un mode d'approbation conservateur et n'envoie pas de définitions d'outils pour le chat simple. Les flux nécessitant des outils et le Mode Plan qui en dépendent peuvent être désactivés ou vous avertir. Pour une prise en charge complète des outils/Mode Plan, utilisez un modèle compatible avec les outils ou aiFetchly hébergé.
+Si le test de connexion ne confirme pas la prise en charge des outils, AI Chat affiche l'avertissement *« Ce fournisseur local n'a pas confirmé la prise en charge des outils. Les outils sont désactivés pour cette conversation. »* et désactive les outils pour cette conversation. Les flux dépendant des outils (y compris le Mode Plan) ne s'exécuteront pas tant que vous ne passerez pas à un modèle compatible avec les outils ou à aiFetchly hébergé. Relancez **Test Connection** après avoir changé de modèle pour revérifier la prise en charge des outils.
 
 :::
 
@@ -171,6 +179,48 @@ Si le fournisseur est inaccessible, AI Chat affiche une erreur claire de fournis
 :::info À voir aussi : AI Chat V2
 
 Le mode de fournisseur est commun aux surfaces de chat. Voir [AI Chat V2](../ai-outreach/ai-chat-v2) pour l'expérience de chat elle-même, y compris le Mode Plan et le badge d'utilisation du contexte.
+
+:::
+
+## Paramètres vocaux
+
+La page Fournisseur d'IA inclut aussi un panneau **Voix** pour la voix sur l'appareil dans AI Chat — reconnaissance vocale (saisie vocale) et synthèse vocale (réponses parlées). La voix s'exécute localement sur votre machine via le moteur `sherpa-onnx` et est indépendante de votre fournisseur d'IA.
+
+### Saisie vocale
+
+| Paramètre | Ce qu'il fait |
+|---|---|
+| **Activer la saisie vocale** | Affiche un bouton microphone dans le composeur d'AI Chat (appuyer pour parler). Désactivé par défaut. |
+| **Envoyer la transcription vocale automatiquement** | Envoie la transcription dès qu'elle est terminée, au lieu de la placer dans le composeur pour révision. |
+| **Langue STT** | La langue que vous parlerez : Auto, English, 中文, Español, Français, Deutsch ou 日本語. |
+| **Modèle STT** | Le modèle de reconnaissance vocale. Seuls les modèles installés sont sélectionnables. |
+| **Durée maximale d'enregistrement** | Combien de temps un enregistrement unique peut durer, en secondes (1–600 ; 60 par défaut). |
+
+### Réponses parlées
+
+| Paramètre | Ce qu'il fait |
+|---|---|
+| **Activer les réponses parlées** | Lit à voix haute les réponses textuelles de l'IA. Vous pouvez aussi basculer ce réglage à tout moment depuis le bouton volume dans l'en-tête d'AI Chat. |
+| **Parler uniquement après saisie vocale** | Quand activé, l'IA ne prononce que ses réponses à vos messages vocaux (conversation mains libres), pas chaque réponse. |
+| **Langue TTS** | La langue des réponses parlées : Auto, English, 中文, Español, Français, Deutsch ou 日本語. |
+| **Voix / modèle TTS** | La voix utilisée pour les réponses parlées. Seules les voix installées sont sélectionnables. |
+| **Vitesse de lecture** | Vitesse de lecture, de 0.5× à 2.0×. |
+
+### Modèles vocaux
+
+La saisie vocale et les réponses parlées nécessitent chacune un modèle vocal. La section **Modèles vocaux** liste les modèles STT et TTS disponibles avec leur statut — **Télécharger (Download)**, **Installé (Installed)** ou **Annuler (Cancel)** (pendant le téléchargement) — et affiche la progression en temps réel.
+
+Les modèles sont téléchargés à la demande la première fois que vous activez ou utilisez une fonctionnalité, donc l'activation de la voix pour la première fois déclenche un téléchargement unique. Vous pouvez aussi pré-télécharger les modèles ici.
+
+:::info La voix est locale et privée
+
+La reconnaissance et la synthèse vocale se font entièrement sur votre appareil. L'audio de votre microphone est traité localement et n'est **pas** envoyé à un serveur ni stocké. Seule la transcription résultante est conservée — comme un message de chat normal.
+
+:::
+
+:::note La voix n'accorde pas l'accès au chat
+
+La voix est locale et gratuite, mais elle n'accorde pas l'accès au chat. Pour envoyer un message transcrit et obtenir une réponse, vous avez toujours besoin soit d'un abonnement IA aiFetchly (Hosted), soit d'un fournisseur personnalisé/local fonctionnel. Voir [AI Chat V2 → Voix](../ai-outreach/ai-chat-v2#voice) pour la façon dont la voix est utilisée dans le chat.
 
 :::
 

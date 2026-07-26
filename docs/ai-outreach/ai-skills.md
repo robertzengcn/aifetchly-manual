@@ -2,374 +2,201 @@
 id: ai-skills
 title: AI Skills
 sidebar_label: AI Skills
-description: Manage and extend aiFetchly's AI capabilities with customizable skills - import, uninstall, enable/disable, and use in AI Chat.
+description: Manage and extend aiFetchly's AI capabilities with skills — import, enable/disable, uninstall, and understand how skill permissions and approval prompts work in AI Chat.
 ---
 
 # AI Skills
 
-AI Skills are modular extensions that enhance aiFetchly's AI chat capabilities. Skills add specialized knowledge, custom tools, and domain-specific functionality to the AI Marketing Assistant.
+AI Skills are modular extensions that add tools the AI can call during a chat — specialized capabilities such as web scraping, automation, file access, or shell commands. When a skill is enabled, the AI can decide to use it to answer your request.
 
-## What Are AI Skills?
+## What is a skill?
 
-AI Skills are packaged components that extend the AI's capabilities:
+A skill is a packaged tool with:
 
-- **Built-in Skills**: Pre-installed skills with core functionality
-- **User-Installed Skills**: Custom skills you import for specific use cases
-
-Each skill has:
-- A unique name and version
-- A category (e.g., "web-search", "data-analysis", "automation")
-- Enable/disable state
-- A manifest defining permissions and capabilities
+- A unique **name** and **version**.
+- A **source**: **Built-in** (shipped with aiFetchly) or **User Installed** (imported by you, or bundled with a plugin).
+- A **permission category** — derived from the skill's declared permissions (see [Permission categories](#permission-categories)).
+- An **enable/disable** state.
 
 ## Accessing AI Skills
 
-1. Click **Settings** in the left navigation menu
-2. Navigate to **Skills**
-3. View the list of installed skills with their status
+1. Click **System Setting** in the left navigation menu.
+2. Click **Manage Skills** (or **AI Skills**).
 
-## Importing Skills
+The page lists every installed skill in a table.
 
-### Step 1: Obtain Skill Package
-
-Skills are distributed as `.zip` files. You can get skills from:
-- Official aiFetchly skill marketplace
-- Community-contributed skills
-- Custom-developed skills for your organization
-
-### Step 2: Import the Skill
-
-1. In the Skills page, click the **Import** button (top-right, with upload icon)
-2. A file selection dialog opens
-3. Navigate to your skill `.zip` file
-4. Select the file and confirm
-
-### Step 3: Verify Installation
-
-After import:
-- The skill appears in the skills table
-- Status shows as **Enabled** by default
-- Verify the skill's category and version match expectations
-
-:::tip Import Tips
-
-- Only `.zip` files are supported
-- The skill must have a valid `manifest.json` inside
-- If import fails, check the zip file integrity and manifest format
-
-:::
-
-## Managing Skills
-
-### View Installed Skills
-
-The skills table displays:
+## The skills table
 
 | Column | Description |
 |--------|-------------|
-| **Name** | Skill identifier/name |
-| **Source** | `Built-in` or `User-installed` badge |
-| **Category** | Skill's functional category |
-| **Version** | Current version number |
-| **Status** | `Enabled` or `Disabled` badge |
-| **Actions** | Enable/disable toggle and uninstall button |
+| **Name** | Skill identifier. If the skill came from a plugin, a _"via plugin: {name}"_ chip appears next to it. |
+| **Source** | **Built-in** or **User Installed** badge. |
+| **Category** | The skill's permission category (`pure`, `network`, `filesystem`, `automation`, or `shell`). |
+| **Version** | Skill version number. |
+| **Status** | **Enabled** or **Disabled**. |
+| **Actions** | Enable/disable toggle and uninstall button — **shown only for user-installed skills**. |
 
-### Enable/Disable Skills
+:::note Built-in skills are always on
 
-To toggle a skill's state:
-
-1. Locate the skill in the table
-2. Use the **toggle buttons** in the Actions column:
-   - **Check mark** (green): Enable the skill
-   - **X mark** (grey): Disable the skill
-
-**When to Disable:**
-- Skill conflicts with another skill
-- Temporary troubleshooting
-- Skill not needed for current tasks
-- Testing skill behavior
-
-**Note:** Built-in skills cannot be uninstalled, only disabled.
-
-### Uninstall Skills
-
-To remove a user-installed skill:
-
-1. Locate the skill in the table
-2. Click the **Delete** (trash can) icon in the Actions column
-3. Confirm the uninstall action in the dialog
-
-:::warning Uninstall Warning
-
-Uninstalling a skill permanently removes it. You'll need to re-import if you want to use it again.
+Built-in skills render **neither** the enable/disable toggle **nor** the uninstall button. They cannot be disabled or removed from this page.
 
 :::
 
-## Using Skills in AI Chat
+## Importing a skill
 
-Skills become available in the **AI Marketing Assistant** once enabled.
+Skills are imported as `.zip` packages.
 
-### Accessing AI Chat
+1. Click **Import** (top-right, upload icon).
+2. Choose a skill `.zip` file.
+3. aiFetchly validates the package (manifest, permissions, entry file) and installs it.
 
-1. Navigate to **AI Marketing Assistant** (or **AI Chat**)
-2. Start a new conversation or continue existing one
+:::tip Import tips
 
-### How Skills Work in Chat
-
-Enabled skills automatically integrate with AI responses:
-
-1. **Automatic Tool Selection**: AI chooses relevant skills based on your query
-2. **Manual Invocation**: Request specific skill functionality
-3. **Combined Outputs**: Multiple skills can work together
-
-### Example Skill Usage
-
-**Web Search Skill:**
-```
-User: "What are the latest trends in SaaS marketing?"
-AI: [Uses web search skill to find current information]
-AI: "Based on recent data, SaaS marketing trends include..."
-```
-
-**Data Analysis Skill:**
-```
-User: "Analyze this customer data and identify patterns"
-AI: [Uses data analysis skill to process the data]
-AI: "The analysis reveals these key patterns..."
-```
-
-**Automation Skill:**
-```
-User: "Set up an automated email campaign for new leads"
-AI: [Uses automation skill to configure the campaign]
-AI: "Your automated campaign is now configured with..."
-```
-
-### Skill Indicators in Chat
-
-When a skill is used:
-- The skill name may appear in the response
-- A small icon or badge indicates skill activation
-- Tool usage is shown in the conversation flow
-
-### Skill Permission Prompts
-
-Some skills require your explicit permission before execution. This is a security feature to protect your system.
-
-**When You'll See Permission Prompts:**
-
-Skills are categorized by their permission level:
-
-| Category | Permission Behavior | Examples |
-|----------|-------------------|----------|
-| **Pure** | Auto-approved, no prompt | Text processing, calculations, data formatting |
-| **Shell** | Always prompts before execution | Running system commands, file operations |
-| **Network** | May prompt for external calls | Web information organization, API calls to external services |
-| **Data** | May prompt for sensitive access | File system read/write, database access |
-
-**The Permission Prompt:**
-
-When a skill needs permission, you'll see a dialog in the AI chat:
-
-```
-┌─────────────────────────────────────────────┐
-│  Skill Permission Request                  │
-├─────────────────────────────────────────────┤
-│  Skill: shell_execute                       │
-│  Category: Shell                            │
-│                                             │
-│  This skill wants to run:                  │
-│  $ ls -la /path/to/directory               │
-│                                             │
-│  [Allow Once]  [Allow Always]  [Deny]      │
-└─────────────────────────────────────────────┘
-```
-
-**Permission Options:**
-
-- **Allow Once**: Grant permission for this single execution only
-- **Allow Always**: Remember this decision and auto-approve future requests from this skill
-- **Deny**: Block this execution (skill will fail gracefully)
-
-**Managing Saved Permissions:**
-
-To review or change saved permissions:
-
-1. Go to **Settings** → **AI Skills**
-2. Click on a skill to view its permission status
-3. Toggle "Always Allow" to change auto-approval behavior
-4. Disabled skills have their permissions temporarily suspended
-
-:::tip Security Best Practice
-
-Start with "Allow Once" for new skills. After verifying they work correctly and safely, you can switch to "Allow Always" for convenience.
+- Only `.zip` files are supported by the Import button.
+- The package must contain a valid `manifest.json` (see [Skill package format](#skill-package-format)).
+- Plugin-bundled skills do not need to be imported — they appear automatically when their plugin is installed.
 
 :::
 
-:::warning Shell-execution skills are session-scoped
+Skills can also arrive automatically from:
 
-For skills in the **shell execution** category, "Always Allow" is **remembered only for the current app session**. When you restart aiFetchly, the AI will ask for approval again. This is a deliberate safety measure — shell commands can do anything on your machine, so the permission must not persist across restarts.
+- **Plugins** — a plugin bundles one or more skills; they appear here with a _"via plugin"_ chip. Install or remove them via the **[Plugin Manager](./plugin-manager)**.
+- **Local skill folders** (advanced) — skills placed under `~/.aifetchly/skills/<name>/` are auto-discovered.
 
-Other skill categories (web search, file read, automation, etc.) remember "Always Allow" permanently, as normal.
+## Enabling, disabling, and uninstalling
+
+For **user-installed** skills:
+
+- **Enable / disable** — use the check (enable) / cross (disable) toggle in the Actions column.
+- **Uninstall** — click the trash icon and confirm. Uninstalling is permanent; re-import the `.zip` to use the skill again.
+
+Built-in skills have no Actions controls — they are always enabled.
+
+## How skills work in chat
+
+Once a skill is enabled, the AI can choose to call it when relevant. You don't invoke skills by name (though you can ask for one explicitly, e.g. *"use the web scraper on this URL"*).
+
+### Skill categories
+
+Each skill belongs to a **permission category** that determines how it's approved when the AI calls it. The category is the skill's first declared `permission` (from its manifest), or `pure` if none is declared:
+
+| Category | What the skill can do |
+|--------|----------------------|
+| `pure` | General-purpose utilities — text processing, calculations, formatting. No special access. |
+| `network` | Outbound network/HTTP access (fetching pages, calling APIs). |
+| `filesystem` | Local file read/write. |
+| `automation` | Browser automation, scraping, social posting, and similar scripted actions. |
+| `shell` | Runs system shell commands. (Built-in `shell_execute` only — never importable.) |
+
+The category is shown raw and lowercase in the table (for example `network`, `automation`).
+
+### Approval prompts
+
+When the AI calls a skill, aiFetchly may ask you to approve it before it runs. Whether a prompt appears depends on the skill's category **and** your current chat tool-approval mode:
+
+| Category | Approval behavior |
+|--------|-------------------|
+| `pure` | Always auto-approved — no prompt. |
+| `shell` | **Always prompts on every command.** Never auto-approved (see below). |
+| `network` / `filesystem` / `automation` | Prompted under the default _"ask for approval"_ mode. Under _"approve for me"_ or _"full access"_ modes these are auto-approved. |
+
+When a prompt appears you'll see an approval card with three actions:
+
+- **Allow Once** — run this one call only.
+- **Always Allow** — remember the decision so future calls to this skill don't prompt.
+- **Deny** — block this call.
+
+For **shell** skills, the card is titled **"Shell Command Execution"**, shows a preview of the command (command, working directory, shell, timeout), and the third button reads **"Always Allow (This Session)"** instead of "Always Allow".
+
+:::warning Shell approval is effectively one-shot
+
+For `shell` skills, "Always Allow" is **not** honored for subsequent commands. Each shell command will prompt again — this is an intentional safety measure, because shell commands can do anything on your machine. Only non-shell categories truly remember "Always Allow" permanently.
 
 :::
 
-## Installing skills via plugins
+## Skill package format
 
-Skills can also arrive as part of a **plugin** — a bundle that packages one or more skills plus optional MCP servers in a single installable package. Plugin-owned skills appear in this list with an owner-plugin label.
-
-To install plugins (from local zip, local folder, git, GitHub, npm, or URL), use the **[Plugin Manager](./plugin-manager)**.
-
-## Skill Categories
-
-Skills are organized by functional category:
-
-| Category | Purpose | Example Skills |
-|----------|---------|----------------|
-| **Web Search** | Internet research, trend analysis | Search engine, social media monitoring |
-| **Data Analysis** | Processing and interpreting data | CSV analysis, statistical modeling |
-| **Automation** | Workflow automation tasks | Email automation, task scheduling |
-| **Integration** | External service connections | CRM, API connectors |
-| **Content** | Content generation and optimization | Blog writing, SEO optimization |
-| **Pure** | General-purpose utilities | Text processing, formatting |
-
-## Troubleshooting
-
-### Skill Not Appearing in Chat
-
-**Possible causes:**
-- Skill is disabled
-- Skill installation incomplete
-- Skill requires specific permissions
-
-**Solutions:**
-1. Check skill status in Settings → Skills
-2. Enable the skill if disabled
-3. Re-import the skill if corrupted
-4. Verify skill manifest has required permissions
-
-### Import Failed
-
-**Possible causes:**
-- Invalid zip file format
-- Missing or malformed `manifest.json`
-- Skill already installed
-- Corrupted download
-
-**Solutions:**
-1. Verify zip file integrity
-2. Check manifest.json format and content
-3. Uninstall existing version first, then re-import
-4. Re-download the skill package
-
-### Skill Causes Errors
-
-**Possible causes:**
-- Skill bug or incompatibility
-- Missing dependencies
-- API key not configured
-
-**Solutions:**
-1. Disable the skill temporarily
-2. Check skill documentation for requirements
-3. Verify all required configurations are complete
-4. Contact skill developer for support
-
-### Built-in Skill Cannot Uninstall
-
-Built-in skills are core to aiFetchly functionality and cannot be removed. You can only disable them if they conflict with other skills.
-
-## Best Practices
-
-### 1. Skill Selection
-
-**Install Only What You Need:**
-- Each skill adds complexity
-- Too many skills may cause conflicts
-- Start with essential skills, add as needed
-
-### 2. Skill Updates
-
-**Keep Skills Current:**
-- Check for skill updates regularly
-- Update skills for bug fixes and improvements
-- Test updated skills before production use
-
-### 3. Skill Organization
-
-**Name and Categorize Well:**
-- Use descriptive skill names
-- Organize by functional category
-- Document custom skill purposes
-
-### 4. Testing
-
-**Test Before Production:**
-- Enable skills in test mode first
-- Verify skill behavior in AI chat
-- Check for conflicts with existing skills
-
-### 5. Security
-
-**Only Install Trusted Skills:**
-- Verify skill source
-- Review skill permissions
-- Monitor skill behavior
-- Remove unused skills
-
-## Skill Development (For Developers)
-
-### Manifest Structure
-
-A skill's `manifest.json` should include:
+A skill `.zip` must contain a `manifest.json`. The minimum viable manifest looks like this:
 
 ```json
 {
   "name": "my-custom-skill",
   "version": "1.0.0",
-  "category": "automation",
-  "permissions": ["web-search", "data-access"],
-  "description": "Description of what this skill does"
+  "description": "What this skill does, shown to the AI.",
+  "runtime": "javascript",
+  "entry": "index.js",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "url": { "type": "string" }
+    },
+    "required": ["url"]
+  },
+  "permissions": ["network"]
 }
 ```
 
+### Required manifest fields
+
+| Field | Description |
+|-------|-------------|
+| `name` | Unique skill identifier. |
+| `version` | Version string, e.g. `1.0.0`. |
+| `description` | Short description — the AI reads this to decide when to use the skill. |
+| `runtime` | `javascript` or `python`. |
+| `entry` | The entry file inside the package (e.g. `index.js` or `main.py`). |
+| `parameters` | A JSON Schema object describing the skill's input parameters. |
+
+### Optional manifest fields
+
+| Field | Description |
+|-------|-------------|
+| `permissions` | Array of permission strings. **Valid values are `network`, `filesystem`, `automation` only.** The first entry determines the skill's category (see [Skill categories](#skill-categories)). Unknown values are rejected at import. |
+
+:::danger Permissions are strictly validated
+
+Only `network`, `filesystem`, and `automation` are accepted. Values like `web-search`, `data-access`, or `shell` will be rejected and the skill will not import. There is no separate `category` field — the category is derived from the first `permissions` entry (or `pure` if none is given).
+
+:::
+
 ### Packaging
 
-1. Include `manifest.json` at root
-2. Add skill implementation files
-3. Include any required assets
-4. Zip the contents (not the folder)
-5. Name the file `skill-name.zip`
+1. Put a valid `manifest.json` at the root of the package.
+2. Add the runtime/entry files referenced by `entry`.
+3. Zip the **contents**, not the wrapping folder.
+4. Name the file `skill-name.zip`.
 
-## Integration with Other Features
+## Troubleshooting
 
-### AI Marketing Assistant
+### Import failed
 
-Skills enhance AI chat capabilities:
-- More accurate responses
-- Access to external data sources
-- Automated task execution
+**Possible causes:** invalid zip, missing or malformed `manifest.json`, an invalid `permissions` value, or a missing required field (`runtime`, `entry`, `parameters`).
 
-### MCP Tools
+**Solutions:**
+1. Verify the zip integrity.
+2. Check `manifest.json` has all required fields with valid values.
+3. Confirm `permissions` only uses `network`, `filesystem`, or `automation`.
+4. Confirm `runtime` is `javascript` or `python` and `entry` points to a real file.
 
-Skills and MCP tools can work together:
-- Skills provide domain-specific logic
-- MCP tools provide external connectivity
-- Combined for powerful automation
+### A skill doesn't appear in chat
 
-### Knowledge Library
+**Possible causes:** the skill is disabled, or (for plugin skills) its plugin is disabled.
 
-Skills can leverage your knowledge base:
-- Search knowledge during chat
-- Apply learned patterns
-- Generate context-aware responses
+**Solutions:**
+1. Check the skill's status in the table and enable it.
+2. For plugin skills, check the **[Plugin Manager](./plugin-manager)** — the owning plugin must be enabled.
 
-## Next Steps
+### The AI keeps asking for approval
 
-- [Configure System Settings](../settings/system-settings)
-- [Learn about AI Marketing Assistant](./ai-marketing-assistant)
-- [Set up Knowledge Library](./knowledge-library)
+- You're using a **shell** skill. Shell approvals are one-shot by design.
+- For other categories, switch the chat tool-approval mode to _"approve for me"_ to reduce prompts (note: this auto-approves non-shell skills).
 
----
+### Built-in skill has no toggle
 
-**Ready to extend AI capabilities?** Import your first skill and discover new possibilities for automation and intelligence.
+This is intentional. Built-in skills are always enabled and cannot be disabled or uninstalled from this page.
+
+## Next steps
+
+- [Plugin Manager](./plugin-manager) — install plugins that bundle skills, commands, agents, hooks, and MCP servers.
+- [Subagents](./subagents) — scoped specialists the AI can dispatch.
+- [AI Chat V2](./ai-chat-v2) — where skills are invoked.
