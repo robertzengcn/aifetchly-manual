@@ -80,6 +80,12 @@ Die Verarbeitungszeit hängt von der Dateigröße ab:
 
 :::
 
+## Inhalte von Websites importieren
+
+Zusätzlich zum Hochladen von Dateien können Sie **öffentliche Webseiten direkt über eine URL importieren**. aiFetchly lädt jede Seite, wandelt sie in Markdown um und indiziert sie über dieselbe RAG-Pipeline – importierte Seiten sind also sofort durchsuchbar. Wählen Sie eine einzelne Seite, eine Liste von URLs oder ein begrenztes Same-Origin-Crawling.
+
+Siehe [Website in die Wissensbibliothek importieren](./website-import) für die vollständige Anleitung, Optionen, Grenzwerte und Sicherheitsdetails.
+
 ## Dokumente verwalten
 
 ### Dokumentenlistenansicht

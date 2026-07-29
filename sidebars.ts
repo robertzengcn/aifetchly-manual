@@ -30,6 +30,7 @@ const sidebars: SidebarsConfig = {
       collapsed: false,
       items: [
         "ai-outreach/knowledge-library",
+        "ai-outreach/website-import",
         "ai-outreach/workspace-memory",
         "ai-outreach/mcp-tools",
         "ai-outreach/subagents",

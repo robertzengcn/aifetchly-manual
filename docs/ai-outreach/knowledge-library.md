@@ -80,6 +80,12 @@ Processing time depends on file size:
 
 :::
 
+## Importing content from websites
+
+In addition to uploading files, you can import **public webpages directly by URL**. aiFetchly fetches each page, converts it to markdown, and indexes it through the same RAG pipeline — so imported pages are immediately searchable. Choose a single page, a list of URLs, or a bounded same-origin site crawl.
+
+See [Import Website into Knowledge Library](./website-import) for the full guide, options, limits, and security details.
+
 ## Managing Documents
 
 ### Document List View

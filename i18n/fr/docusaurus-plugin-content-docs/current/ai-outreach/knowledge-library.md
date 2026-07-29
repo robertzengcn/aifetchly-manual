@@ -80,6 +80,12 @@ Le temps de traitement dépend de la taille du fichier :
 
 :::
 
+## Importer du contenu depuis des sites web
+
+En plus de téléverser des fichiers, vous pouvez importer **des pages web publiques directement via une URL**. aiFetchly récupère chaque page, la convertit en markdown et l'indexe via le même pipeline RAG — les pages importées sont donc immédiatement consultables. Choisissez une page unique, une liste d'URL ou une exploration limitée de même origine.
+
+Voir [Importer un site web dans la bibliothèque de connaissances](./website-import) pour le guide complet, les options, les limites et les détails de sécurité.
+
 ## Gestion des documents
 
 ### Vue de la liste des documents
