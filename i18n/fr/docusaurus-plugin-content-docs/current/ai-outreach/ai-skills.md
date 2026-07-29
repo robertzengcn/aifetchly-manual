@@ -29,7 +29,7 @@ La page liste toutes les compétences installées dans un tableau.
 
 | Colonne | Description |
 |--------|-------------|
-| **Name** | Identifiant de la compétence. Si la compétence provient d'un plugin, une puce _« via plugin: {name} »_ apparaît à côté. |
+| **Name** | Identifiant de la compétence. Si la compétence provient d'un plugin, une puce _« via plugin: \{name\} »_ apparaît à côté. |
 | **Source** | Badge **Intégré** ou **Installé par l'utilisateur**. |
 | **Category** | Catégorie de permission de la compétence (`pure`, `network`, `filesystem`, `automation` ou `shell`). |
 | **Version** | Numéro de version de la compétence. |

@@ -29,7 +29,7 @@ AIスキルは、チャット中にAIが呼び出せるツールを追加する�
 
 | 列 | 説明 |
 |--------|-------------|
-| **Name** | スキルの識別子。スキルがプラグイン由来の場合、横に _"via plugin: {name}"_ チップが表示されます。 |
+| **Name** | スキルの識別子。スキルがプラグイン由来の場合、横に _"via plugin: \{name\}"_ チップが表示されます。 |
 | **Source** | **Built-in** または **User Installed** のバッジ。 |
 | **Category** | スキルの権限カテゴリ（`pure`、`network`、`filesystem`、`automation`、または `shell`）。 |
 | **Version** | スキルのバージョン番号。 |

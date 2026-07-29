@@ -29,7 +29,7 @@ The page lists every installed skill in a table.
 
 | Column | Description |
 |--------|-------------|
-| **Name** | Skill identifier. If the skill came from a plugin, a _"via plugin: {name}"_ chip appears next to it. |
+| **Name** | Skill identifier. If the skill came from a plugin, a _"via plugin: \{name\}"_ chip appears next to it. |
 | **Source** | **Built-in** or **User Installed** badge. |
 | **Category** | The skill's permission category (`pure`, `network`, `filesystem`, `automation`, or `shell`). |
 | **Version** | Skill version number. |

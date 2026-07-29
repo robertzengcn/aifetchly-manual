@@ -29,7 +29,7 @@ Die Seite listet jeden installierten Skill in einer Tabelle auf.
 
 | Spalte | Beschreibung |
 |--------|-------------|
-| **Name** | Skill-Bezeichner. Wenn der Skill aus einem Plugin stammt, erscheint daneben ein _"via plugin: {name}"_-Chip. |
+| **Name** | Skill-Bezeichner. Wenn der Skill aus einem Plugin stammt, erscheint daneben ein _"via plugin: \{name\}"_-Chip. |
 | **Quelle** | **Integriert**- oder **Benutzerinstalliert**-Badge. |
 | **Kategorie** | Die Berechtigungskategorie des Skills (`pure`, `network`, `filesystem`, `automation` oder `shell`). |
 | **Version** | Versionsnummer des Skills. |

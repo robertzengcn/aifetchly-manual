@@ -2,7 +2,7 @@
 id: ai-skills
 title: AI Skills
 sidebar_label: AI Skills
-description: Administre y extienda las capacidades de IA de aiFetchly con habilidades: importe, habilite/deshabilite, desinstale y comprenda cómo funcionan los permisos de las habilidades y las solicitudes de aprobación en AI Chat.
+description: Administre y extienda las capacidades de IA de aiFetchly con habilidades — importe, habilite/deshabilite, desinstale y comprenda cómo funcionan los permisos de las habilidades y las solicitudes de aprobación en AI Chat.
 ---
 
 # AI Skills
@@ -29,7 +29,7 @@ La página muestra cada habilidad instalada en una tabla.
 
 | Columna | Descripción |
 |--------|-------------|
-| **Nombre** | Identificador de la habilidad. Si la habilidad proviene de un plugin, aparece una insignia _"via plugin: {name}"_ junto a ella. |
+| **Nombre** | Identificador de la habilidad. Si la habilidad proviene de un plugin, aparece una insignia _"via plugin: \{name\}"_ junto a ella. |
 | **Origen** | Insignia **Integrada** o **Instalada por el usuario**. |
 | **Categoría** | La categoría de permiso de la habilidad (`pure`, `network`, `filesystem`, `automation` o `shell`). |
 | **Versión** | Número de versión de la habilidad. |
