@@ -164,7 +164,7 @@ When a conversation approaches the context limit, V2 can compact the session: it
 
 ## Slash commands
 
-Type `/` at the start of the composer to open the slash-command menu. Built-in commands like `/clear`, `/help`, `/status`, and `/plugin` run instantly, and you can create your own reusable prompt templates (for example `/outreach <website>`) as Markdown files in `~/.aifetchly/commands/`. See the dedicated **[Slash Commands](./slash-commands)** page for the full list, custom-command authoring, and the keyboard shortcuts.
+Type `/` at the start of the composer to open the slash-command menu. Built-in commands like `/clear`, `/help`, `/status`, and `/plugin` run instantly, and you can create your own reusable prompt templates (for example `/outreach <website>`) as Markdown files in `~/.aifetchly/commands/`. See the dedicated **[Slash Commands](./slash-commands)** page for the full list, custom-command authoring, and the keyboard shortcuts. For bounded autonomous work, use **`/goal`** to set a verifiable objective and **`/loop`** to run iterations toward it — see [Goal and Loop Commands](./goal-and-loop).
 
 ## Voice
 

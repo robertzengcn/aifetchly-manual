@@ -71,6 +71,8 @@ Diese werden mit aiFetchly mitgeliefert und sind immer verfügbar. Sie werden so
 | `/skills` | Listet die aktuell verfügbaren KI-Fähigkeiten/Tools in diesem System auf. |
 | `/agents` | Listet verfügbare aiFetchly-Agenten auf (eingebaute und dynamische). |
 | `/reload-config` | Untersucht `~/.aifetchly` neu und lädt die Konfiguration erneut. |
+| `/goal` | Setzt das aktive AI-Chat-Ziel oder ersetzt es und aktiviert den Plan-Modus. |
+| `/loop` | Führt begrenzte autonome Iterationen in Richtung des aktiven Ziels aus. |
 | `/plugin` | Verwaltet Plugin-Marktplätze und installiert Plugins aus dem Chat. |
 
 ### `/help`
@@ -114,6 +116,17 @@ Beispiele:
 
 Siehe [Plugin-Manager](./plugin-manager) für den vollständigen Plugin-Lebenszyklus.
 
+
+### `/goal` und `/loop`
+
+Im Gegensatz zu den anderen oben genannten Built-ins sind diese beiden KI-gesteuert und arbeiten zusammen: `/goal` setzt ein dauerhaftes, überprüfbares Ziel (und aktiviert den Plan-Modus), und `/loop <maxIterations>` führt eine begrenzte Anzahl autonomer Iterationen in Richtung dieses Ziels aus. Der Abschluss ist evidenzbasiert — der Assistent kann sein eigenes Ziel nicht selbst als erledigt erklären.
+
+```text
+/goal Build a Facebook campaign scraper and verify it works
+/loop 5
+```
+
+Siehe die dedizierte Seite **[Ziel- und Schleifen-Befehle](./goal-and-loop)** für Akzeptanzkriterien, Verifizierungsmethoden, Schleifenlimits, Stoppbedingungen und Statusbedeutungen.
 ## Befehlsquellen und Rangfolge
 
 Befehle aus den vier Quellen werden zu einer einzigen Liste zusammengeführt. Wenn zwei Befehle denselben Namen haben, entscheidet diese Rangfolge, welcher ausgeführt wird:

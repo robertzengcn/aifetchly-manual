@@ -71,6 +71,8 @@ These ship with aiFetchly and are always available. They run instantly without c
 | `/skills` | List currently available AI skills/tools in this system. |
 | `/agents` | List available AiFetchly agents (built-in and dynamic). |
 | `/reload-config` | Rescan `~/.aifetchly` and reload configuration. |
+| `/goal` | Set or replace the active AI Chat goal and enter Plan Mode. |
+| `/loop` | Run bounded autonomous iterations toward the active goal. |
 | `/plugin` | Manage plugin marketplaces and install plugins from chat. |
 
 ### `/help`
@@ -113,6 +115,17 @@ Examples:
 ```
 
 See [Plugin Manager](./plugin-manager) for the full plugin lifecycle.
+
+### `/goal` and `/loop`
+
+Unlike the other built-ins above, these two are AI-driven and work together: `/goal` sets a durable, verifiable objective (and enters Plan Mode), and `/loop <maxIterations>` runs a bounded number of autonomous iterations toward it. Completion is evidence-driven — the assistant cannot declare its own goal done.
+
+```text
+/goal Build a Facebook campaign scraper and verify it works
+/loop 5
+```
+
+See the dedicated **[Goal and Loop Commands](./goal-and-loop)** page for acceptance criteria, verification methods, loop limits, stop conditions, and status meanings.
 
 ## Command sources and precedence
 

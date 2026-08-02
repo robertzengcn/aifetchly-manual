@@ -71,6 +71,8 @@ Celles-ci sont fournies avec aiFetchly et sont toujours disponibles. Elles s'ex�
 | `/skills` | Liste les compétences/outils IA actuellement disponibles dans ce système. |
 | `/agents` | Liste les agents AiFetchly disponibles (intégrés et dynamiques). |
 | `/reload-config` | Réanalyse `~/.aifetchly` et recharge la configuration. |
+| `/goal` | Définit ou remplace l'objectif AI Chat actif et entre en Mode Plan. |
+| `/loop` | Exécute des itérations autonomes bornées vers l'objectif actif. |
 | `/plugin` | Gère les marketplaces de plugins et installe des plugins depuis le chat. |
 
 ### `/help`
@@ -114,6 +116,17 @@ Exemples :
 
 Consultez [Gestionnaire de plugins](./plugin-manager) pour le cycle de vie complet des plugins.
 
+
+### `/goal` et `/loop`
+
+Contrairement aux autres commandes intégrées ci-dessus, ces deux-ci sont pilotées par l'IA et fonctionnent ensemble : `/goal` définit un objectif durable et vérifiable (et entre en Mode Plan), et `/loop <maxIterations>` exécute un nombre borné d'itérations autonomes vers cet objectif. L'achèvement est fondé sur des preuves — l'assistant ne peut pas déclarer son propre objectif terminé.
+
+```text
+/goal Build a Facebook campaign scraper and verify it works
+/loop 5
+```
+
+Consultez la page dédiée **[Commandes d'objectif et de boucle](./goal-and-loop)** pour les critères d'acceptation, les méthodes de vérification, les limites de boucle, les conditions d'arrêt et la signification des états.
 ## Sources des commandes et précédence
 
 Les commandes des quatre sources sont fusionnées en une seule liste. Lorsque deux commandes portent le même nom, cette précédence détermine laquelle s'exécute :

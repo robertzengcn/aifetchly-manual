@@ -71,6 +71,8 @@ Estos vienen incluidos con aiFetchly y siempre están disponibles. Se ejecutan i
 | `/skills` | Lista las habilidades/herramientas de IA disponibles actualmente en este sistema. |
 | `/agents` | Lista los agentes de aiFetchly disponibles (integrados y dinámicos). |
 | `/reload-config` | Reescanea `~/.aifetchly` y recarga la configuración. |
+| `/goal` | Establece o reemplaza el objetivo activo de AI Chat y entra en Modo Plan. |
+| `/loop` | Ejecuta iteraciones autónomas limitadas hacia el objetivo activo. |
 | `/plugin` | Administra mercados de plugins e instala plugins desde el chat. |
 
 ### `/help`
@@ -114,6 +116,17 @@ Ejemplos:
 
 Consulte [Plugin Manager](./plugin-manager) para el ciclo de vida completo del plugin.
 
+
+### `/goal` y `/loop`
+
+A diferencia de los demás integrados de arriba, estos dos son controlados por IA y funcionan juntos: `/goal` define un objetivo duradero y verificable (y entra en Modo Plan), y `/loop <maxIterations>` ejecuta un número limitado de iteraciones autónomas hacia ese objetivo. La finalización se basa en evidencia — el asistente no puede declarar su propio objetivo como completado.
+
+```text
+/goal Build a Facebook campaign scraper and verify it works
+/loop 5
+```
+
+Consulte la página dedicada **[Comandos de Objetivo y Bucle](./goal-and-loop)** para los criterios de aceptación, los métodos de verificación, los límites del bucle, las condiciones de parada y el significado de los estados.
 ## Orígenes de comandos y precedencia
 
 Los comandos de los cuatro orígenes se combinan en una sola lista. Cuando dos comandos comparten el mismo nombre, esta precedencia decide cuál se ejecuta:

@@ -40,6 +40,7 @@ const sidebars: SidebarsConfig = {
         "ai-outreach/ai-marketing-assistant",
         "ai-outreach/ai-chat-v2",
         "ai-outreach/slash-commands",
+        "ai-outreach/goal-and-loop",
       ],
     },
     {
