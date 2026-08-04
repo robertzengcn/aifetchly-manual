@@ -164,7 +164,7 @@ Wenn eine Konversation sich dem Kontextlimit nähert, kann V2 die Sitzung kompak
 
 ## Slash-Befehle
 
-Tippen Sie `/` am Anfang des Composers, um das Slash-Befehl-Menü zu öffnen. Eingebaute Befehle wie `/clear`, `/help`, `/status` und `/plugin` werden sofort ausgeführt, und Sie können eigene wiederverwendbare Prompt-Vorlagen (zum Beispiel `/outreach <website>`) als Markdown-Dateien in `~/.aifetchly/commands/` erstellen. Siehe die dedizierte Seite **[Slash-Befehle](./slash-commands)** für die vollständige Liste, das Verfassen benutzerdefinierter Befehle und die Tastenkombinationen. Für begrenzte autonome Arbeit verwenden Sie **`/goal`** zum Setzen eines überprüfbaren Ziels und **`/loop`** zum Ausführen von Iterationen dorthin — siehe [Ziel- und Schleifen-Befehle](./goal-and-loop).
+Tippen Sie `/` am Anfang des Composers, um das Slash-Befehl-Menü zu öffnen. Eingebaute Befehle wie `/clear`, `/help`, `/status` und `/plugin` werden sofort ausgeführt, und Sie können eigene wiederverwendbare Prompt-Vorlagen (zum Beispiel `/outreach <website>`) als Markdown-Dateien in `~/.aifetchly/commands/` erstellen. Siehe die dedizierte Seite **[Slash-Befehle](./slash-commands)** für die vollständige Liste, das Verfassen benutzerdefinierter Befehle und die Tastenkombinationen. Für begrenzte autonome Arbeit verwenden Sie **`/goal`** zum Setzen eines überprüfbaren Ziels und **`/loop`** zum Ausführen von Iterationen dorthin; um etwas im Lauf der Zeit zu überwachen, verwenden Sie **`/loop 5m <prompt>`**, um einen Prompt in festem Intervall im selben Chat zu wiederholen — siehe [Ziel- und Schleifen-Befehle](./goal-and-loop).
 
 ## Sprache
 

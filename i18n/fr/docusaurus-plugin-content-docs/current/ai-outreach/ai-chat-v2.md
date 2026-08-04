@@ -164,7 +164,7 @@ Quand une conversation approche de la limite de contexte, V2 peut compacter la s
 
 ## Commandes Slash
 
-Saisissez `/` au début du composeur pour ouvrir le menu de commandes slash. Les commandes intégrées comme `/clear`, `/help`, `/status` et `/plugin` s'exécutent instantanément, et vous pouvez créer vos propres modèles d'invite réutilisables (par exemple `/outreach <website>`) sous forme de fichiers Markdown dans `~/.aifetchly/commands/`. Voir la page dédiée **[Commandes Slash](./slash-commands)** pour la liste complète, la création de commandes personnalisées et les raccourcis clavier. Pour un travail autonome borné, utilisez **`/goal`** pour définir un objectif vérifiable et **`/loop`** pour exécuter des itérations vers celui-ci — voir [Commandes d'objectif et de boucle](./goal-and-loop).
+Saisissez `/` au début du composeur pour ouvrir le menu de commandes slash. Les commandes intégrées comme `/clear`, `/help`, `/status` et `/plugin` s'exécutent instantanément, et vous pouvez créer vos propres modèles d'invite réutilisables (par exemple `/outreach <website>`) sous forme de fichiers Markdown dans `~/.aifetchly/commands/`. Voir la page dédiée **[Commandes Slash](./slash-commands)** pour la liste complète, la création de commandes personnalisées et les raccourcis clavier. Pour un travail autonome borné, utilisez **`/goal`** pour définir un objectif vérifiable et **`/loop`** pour exécuter des itérations vers celui-ci ; pour surveiller quelque chose dans le temps, utilisez **`/loop 5m <prompt>`** pour relancer un prompt à intervalle fixe dans le même chat — voir [Commandes d'objectif et de boucle](./goal-and-loop).
 
 ## Voix
 

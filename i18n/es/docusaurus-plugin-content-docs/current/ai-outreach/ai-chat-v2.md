@@ -164,7 +164,7 @@ Cuando una conversación se acerca al límite de contexto, V2 puede compactar la
 
 ## Comandos slash
 
-Escriba `/` al inicio del compositor para abrir el menú de comandos slash. Los comandos integrados como `/clear`, `/help`, `/status` y `/plugin` se ejecutan al instante, y usted puede crear sus propias plantillas de prompt reutilizables (por ejemplo `/outreach <website>`) como archivos Markdown en `~/.aifetchly/commands/`. Consulte la página dedicada de **[Comandos Slash](./slash-commands)** para la lista completa, la creación de comandos personalizados y los atajos de teclado. Para trabajo autónomo limitado, use **`/goal`** para definir un objetivo verificable y **`/loop`** para ejecutar iteraciones hacia él — consulte [Comandos de Objetivo y Bucle](./goal-and-loop).
+Escriba `/` al inicio del compositor para abrir el menú de comandos slash. Los comandos integrados como `/clear`, `/help`, `/status` y `/plugin` se ejecutan al instante, y usted puede crear sus propias plantillas de prompt reutilizables (por ejemplo `/outreach <website>`) como archivos Markdown en `~/.aifetchly/commands/`. Consulte la página dedicada de **[Comandos Slash](./slash-commands)** para la lista completa, la creación de comandos personalizados y los atajos de teclado. Para trabajo autónomo limitado, use **`/goal`** para definir un objetivo verificable y **`/loop`** para ejecutar iteraciones hacia él; para monitorizar algo a lo largo del tiempo, use **`/loop 5m <prompt>`** para repetir un prompt en un intervalo fijo dentro del mismo chat — consulte [Comandos de Objetivo y Bucle](./goal-and-loop).
 
 ## Voz
 
