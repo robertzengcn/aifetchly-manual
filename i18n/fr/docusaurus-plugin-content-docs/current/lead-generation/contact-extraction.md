@@ -526,7 +526,6 @@ Pour des instructions détaillées sur la création de campagnes, consultez [Env
 
 - [Configurer la bibliothèque de connaissances](../ai-outreach/knowledge-library)
 - [Créer des campagnes d'e-mail alimentées par l'IA](../ai-outreach/ai-email-writer)
-- [En savoir plus sur l'assistant marketing IA](../ai-outreach/ai-marketing-assistant)
 
 ---
 

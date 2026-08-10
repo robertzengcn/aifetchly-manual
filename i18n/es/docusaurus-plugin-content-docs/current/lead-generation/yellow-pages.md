@@ -1,5 +1,6 @@
 ---
 id: yellow-pages
+draft: true
 title: Yellow Pages Information Organization
 sidebar_label: Yellow Pages
 description: Extrae información empresarial de Yellow Pages, Yelp y otros directorios en línea de todo el mundo.

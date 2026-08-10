@@ -444,7 +444,6 @@ The Knowledge Library is perfect for:
 Now that you've built your Knowledge Library:
 
 - [Create AI-generated email campaigns](./ai-email-writer)
-- [Use the AI Marketing Assistant](./ai-marketing-assistant)
 - [Set up outreach campaign](../lead-generation/batch-email-sending)
 
 ---

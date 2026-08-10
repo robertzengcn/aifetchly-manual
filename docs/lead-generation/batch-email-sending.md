@@ -495,7 +495,6 @@ The complete email outreach workflow:
 
 ## Next Steps
 
-- [Set up the AI Marketing Assistant](../ai-outreach/ai-marketing-assistant) for strategy
 - [Configure task scheduling](../automation/task-scheduling) for automation
 - [Review system settings](../settings/system-settings)
 

@@ -402,7 +402,6 @@ After creating your templates:
 
 - [Configure email services (SMTP)](../lead-generation/batch-email-sending#configuring-email-services)
 - [Set up outreach campaign](../lead-generation/batch-email-sending)
-- [Use the AI Marketing Assistant](./ai-marketing-assistant) for strategy
 
 ---
 

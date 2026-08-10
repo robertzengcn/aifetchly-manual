@@ -1,5 +1,6 @@
 ---
 id: yellow-pages
+draft: true
 title: Gelbe-Seiten-Information Organization
 sidebar_label: Gelbe Seiten
 description: Extrahieren Sie Geschäftsinformationen aus Gelben Seiten, Yelp und anderen Online-Verzeichnissen weltweit.

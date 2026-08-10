@@ -1,5 +1,6 @@
 ---
 id: ai-marketing-assistant
+draft: true
 title: AI 营销助手
 sidebar_label: AI 营销助手
 description: 通过 aiFetchly 的 AI 驱动聊天助手，获取战略营销指导和内容创意。

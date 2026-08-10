@@ -1,18 +1,18 @@
 {
   "homepage.description": {
-    "message": "リードジェネレーションとアウトリーチのための AI 搭載マーケティングオートメーション"
+    "message": "ビジネス自動化のためのローカルファーストの AI エージェントワークスペース"
   },
   "homepage.feature1.title": {
-    "message": "すべての主要な検索エンジンでリードを発見"
+    "message": "あなたのローカル AI エージェントワークスペース"
   },
   "homepage.feature1.description": {
-    "message": "Google、Yandex を同時に_bulk_キーワードで検索。AI が自動的に関連キーワードを生成し、リアルタイムでスクレイピングエラーから回復するため、リードを見逃すことはありません。"
+    "message": "デスクトップのチャットから AI エージェントに調査、ファイル分析、データ抽出、メッセージ作成を依頼できます。エージェントは許可されたツール、あなたのナレッジベースを活用し、専門のサブエージェントに委任します。すべてローカルファーストで、権限に基づく制御のもと動作します。"
   },
   "homepage.feature2.title": {
-    "message": "AI の精度で連絡先データを抽出"
+    "message": "お好みの AI モデルを利用"
   },
   "homepage.feature2.description": {
-    "message": "URL のリストを入力すると、AI が即座にメール、電話番号、住所、SNS プロファイルを見つけます。キュー管理、ライブ進捗追跡、自動エラー回復で数千ページをバッチ処理します。"
+    "message": "Ollama、LM Studio、OpenAI、OpenRouter、vLLM など、OpenAI 互換のプロバイダーならどれでも AI エージェントに接続できます。ローカルモデルでもサードパーティ API でも、API キーは端末から出ることはありません。"
   },
   "homepage.feature3.title": {
     "message": "成約するメールキャンペーンを実行"

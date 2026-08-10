@@ -404,7 +404,6 @@ MCP tools complement the Knowledge Library:
 
 ## Next Steps
 
-- [Learn about AI Marketing Assistant](./ai-marketing-assistant)
 - [Explore AI Skills](./ai-skills)
 - [Set up Knowledge Library](./knowledge-library)
 

@@ -495,13 +495,11 @@ Si una tarea falla:
 Los resultados de búsqueda se integran perfectamente con:
 
 - **[Extracción de contactos](./contact-extraction)** - Extrae correos de URL
-- **[Páginas amarillas](./yellow-pages)** - Referencia cruzada con listados de directorios
 - **[AI Email Writer](../ai-outreach/ai-email-writer)** - Crea comunicaciones personalizadas
 - **[Envío masivo de correos](./batch-email-sending)** - Lanza campañas
 
 ## Próximos pasos
 
-- [Conoce la extracción de Páginas amarillas](./yellow-pages)
 - [Configura la extracción de contactos](./contact-extraction)
 - [Crea campañas de correo impulsadas por IA](../ai-outreach/ai-email-writer)
 

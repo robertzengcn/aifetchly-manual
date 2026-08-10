@@ -495,7 +495,6 @@ Le workflow complet de prospection par e-mail :
 
 ## Prochaines étapes
 
-- [Configurer l'assistant marketing IA](../ai-outreach/ai-marketing-assistant) pour la stratégie
 - [Configurer la planification des tâches](../automation/task-scheduling) pour l'automatisation
 - [Consulter les paramètres système](../settings/system-settings)
 

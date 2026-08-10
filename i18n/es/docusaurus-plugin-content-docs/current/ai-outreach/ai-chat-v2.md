@@ -254,7 +254,6 @@ El reconocimiento y la síntesis de voz son locales y gratuitos, pero para envia
 ## Próximos pasos
 
 - [Comandos Slash](./slash-commands) — ejecute acciones y prompts reutilizables con `/`.
-- [Asistente de Marketing IA](./ai-marketing-assistant) — el chat heredado, aún soportado.
 - [Gestor de Plugins](./plugin-manager) — instale plugins desde carpeta local, git, GitHub, npm o URL.
 - [AI Skills](./ai-skills) — qué son las habilidades y cómo usarlas.
 - [Herramientas MCP](./mcp-tools) — conexión de servicios externos.

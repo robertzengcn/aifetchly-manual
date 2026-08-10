@@ -495,7 +495,6 @@ Der vollständige E-Mail-Akquise-Workflow:
 
 ## Nächste Schritte
 
-- [Den KI-Marketing-Assistenten einrichten](../ai-outreach/ai-marketing-assistant) für Strategie
 - [Aufgabenplanung konfigurieren](../automation/task-scheduling) für Automatisierung
 - [Systemeinstellungen überprüfen](../settings/system-settings)
 

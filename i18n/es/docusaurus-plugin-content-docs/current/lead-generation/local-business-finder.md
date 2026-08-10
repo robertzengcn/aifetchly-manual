@@ -357,7 +357,6 @@ La pestaña **Historial** almacena todas tus búsquedas pasadas.
 Los resultados del Local Business Finder se pueden usar con:
 
 - **[Extracción de contactos](./contact-extraction)** — Abrir en extracción de contactos desde los sitios web de negocios encontrados en los resultados
-- **[Páginas Amarillas](./yellow-pages)** — Referencia cruzada con listados de directorios para datos más completos
 - **[Redactor de correos con IA](../ai-outreach/ai-email-writer)** — Crea correos electrónicos de divulgación personalizados usando los datos comerciales recopilados
 - **[Envío de correos por lotes](./batch-email-sending)** — Lanza campañas de correo electrónico usando la información de contacto extraída
 

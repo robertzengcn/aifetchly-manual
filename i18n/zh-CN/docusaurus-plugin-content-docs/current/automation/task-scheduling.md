@@ -652,7 +652,6 @@ Task: Outreach Campaign - 发送 AI 生成的消息
 
 - **[搜索引擎](../lead-generation/search-engines)**：调度定期搜索
 - **[联系方式提取](../lead-generation/contact-extraction)**：搜索后自动提取
-- **[黄页](../lead-generation/yellow-pages)**：定期目录抓取
 - **[Google 地图抓取](../lead-generation/local-business-finder)**：调度 Google 地图数据采集
 - **[批量邮件发送](../lead-generation/batch-email-sending)**：自动化营销活动
 - **AI Message**：调度支持工具集成的 AI 任务，用于自动分析和操作

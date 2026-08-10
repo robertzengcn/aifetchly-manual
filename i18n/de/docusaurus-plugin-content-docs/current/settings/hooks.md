@@ -406,5 +406,4 @@ Das ist beabsichtigt. Integrierte Hooks gehören dem Code; Sie können sie nur e
 
 - [AI Skills](../ai-outreach/ai-skills) — die Fähigkeiten, die Hooks steuern können
 - [MCP-Tools](../ai-outreach/mcp-tools) — externe Werkzeuge, deren Aufrufe Hooks beobachten
-- [KI-Marketing-Assistent](../ai-outreach/ai-marketing-assistant) — woher Werkzeugaufrufe stammen
 - [Systemeinstellungen](./system-settings) — allgemeine Konfiguration

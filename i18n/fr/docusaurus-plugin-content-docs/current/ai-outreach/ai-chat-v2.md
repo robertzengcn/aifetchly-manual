@@ -254,7 +254,6 @@ La reconnaissance et la synthèse vocale sont locales et gratuites, mais pour en
 ## Étapes suivantes
 
 - [Commandes Slash](./slash-commands) — exécutez des actions et des invites réutilisables avec `/`.
-- [Assistant Marketing IA](./ai-marketing-assistant) — le chat classique, toujours pris en charge.
 - [Gestionnaire de plugins](./plugin-manager) — installez des plugins depuis un dossier local, git, GitHub, npm ou une URL.
 - [Compétences IA](./ai-skills) — ce que sont les compétences et comment les utiliser.
 - [Outils MCP](./mcp-tools) — connecter des services externes.

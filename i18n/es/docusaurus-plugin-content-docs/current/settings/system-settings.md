@@ -312,7 +312,6 @@ Después de configurar los ajustes del sistema:
 - [Volver a Primeros pasos](../getting-started/introduction)
 - [Configura tu primera tarea de búsqueda](../lead-generation/search-engines)
 - [Configura servicios de correo](../lead-generation/batch-email-sending)
-- [Conoce el Asistente de Marketing IA](../ai-outreach/ai-marketing-assistant)
 
 ---
 

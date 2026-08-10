@@ -254,7 +254,6 @@ AI が話している間、**再生を停止**コントロールで再生を止�
 ## 次のステップ
 
 - [スラッシュコマンド](./slash-commands) — `/` でアクションと再利用可能なプロンプトを実行。
-- [AI Marketing Assistant](./ai-marketing-assistant) — 従来のチャット、引き続きサポートされます。
 - [プラグインマネージャー](./plugin-manager) — ローカルフォルダー、git、GitHub、npm、URL からプラグインをインストール。
 - [AI Skills](./ai-skills) — スキルとは何か、どう使うか。
 - [MCP Tools](./mcp-tools) — 外部サービスの接続。

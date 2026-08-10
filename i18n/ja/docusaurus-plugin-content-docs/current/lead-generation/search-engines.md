@@ -495,13 +495,11 @@ AI を使用して検索結果から直接連絡先の詳細を抽出します:
 検索結果は以下とシームレスに連携します:
 
 - **[コンタクト抽出](./contact-extraction)** - URL からメールを抽出
-- **[イエローページ](./yellow-pages)** - ディレクトリリストとクロスリファレンス
 - **[AI メールライター](../ai-outreach/ai-email-writer)** - パーソナライズされたアウトリーチを作成
 - **[一括メール送信](./batch-email-sending)** - キャンペーンを開始
 
 ## 次のステップ
 
-- [イエローページスクレイピングについて](./yellow-pages)
 - [コンタクト抽出の設定](./contact-extraction)
 - [AI 搭載メールキャンペーンの作成](../ai-outreach/ai-email-writer)
 

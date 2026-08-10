@@ -406,5 +406,4 @@ process.stdin.on("end", () => {
 
 - [AI 技能](../ai-outreach/ai-skills) —— 钩子可以门控的能力
 - [MCP 工具](../ai-outreach/mcp-tools) —— 钩子所观察其调用的外部工具
-- [AI 营销助手](../ai-outreach/ai-marketing-assistant) —— 工具调用的来源
 - [系统设置](./system-settings) —— 整体配置

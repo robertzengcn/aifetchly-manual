@@ -311,7 +311,6 @@ After configuring system settings:
 - [Return to Getting Started](../getting-started/introduction)
 - [Set up your first search task](../lead-generation/search-engines)
 - [Configure email services](../lead-generation/batch-email-sending)
-- [Learn about AI Marketing Assistant](../ai-outreach/ai-marketing-assistant)
 
 ---
 

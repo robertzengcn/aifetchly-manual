@@ -357,7 +357,6 @@ L'onglet **Historique** conserve toutes vos recherches passées.
 Les résultats du Local Business Finder peuvent être utilisés avec :
 
 - **[Profile Insights de contacts](./contact-extraction)** — Ouvrir dans le profile insights de contacts à partir des sites web d'entreprises trouvés dans les résultats
-- **[Pages Jaunes](./yellow-pages)** — Recoupez avec les annuaires pour des données plus complètes
 - **[Rédacteur d'e-mails IA](../ai-outreach/ai-email-writer)** — Créez des e-mails de prospection personnalisés en utilisant les données commerciales collectées
 - **[Envoi d'e-mails en lot](./batch-email-sending)** — Lancez des campagnes d'e-mails en utilisant les informations de contact extraites
 

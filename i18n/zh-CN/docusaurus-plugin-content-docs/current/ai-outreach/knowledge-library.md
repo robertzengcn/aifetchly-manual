@@ -444,7 +444,6 @@ description: 构建您的知识库，上传文档供 AI 使用以生成具有上
 知识库构建完成后，您可以继续：
 
 - [创建 AI 生成的邮件营销活动](./ai-email-writer)
-- [使用 AI 营销助手](./ai-marketing-assistant)
 - [设置批量邮件发送](../lead-generation/batch-email-sending)
 
 ---

@@ -402,7 +402,6 @@ Nachdem Sie Ihre Vorlagen erstellt haben:
 
 - [E-Mail-Dienste konfigurieren (SMTP)](../lead-generation/batch-email-sending#e-mail-dienste-konfigurieren)
 - [Batch-E-Mail-Versand einrichten](../lead-generation/batch-email-sending)
-- [Den KI-Marketing-Assistenten nutzen](./ai-marketing-assistant) für Ihre Strategie
 
 ---
 

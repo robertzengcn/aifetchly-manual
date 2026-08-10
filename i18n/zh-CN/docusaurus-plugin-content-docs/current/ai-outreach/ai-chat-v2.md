@@ -254,7 +254,6 @@ aiFetchly 只朗读自然语言回复——不会朗读代码块、工具调用�
 ## 下一步
 
 - [斜杠命令](./slash-commands) —— 通过 `/` 执行操作和可复用提示。
-- [AI 营销助手](./ai-marketing-assistant) —— 旧版聊天，仍受支持。
 - [插件管理器](./plugin-manager) —— 从本地文件夹、git、GitHub、npm 或 URL 安装插件。
 - [AI Skills](./ai-skills) —— 什么是 Skills 以及如何使用它们。
 - [MCP 工具](./mcp-tools) —— 连接外部服务。

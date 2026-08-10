@@ -444,7 +444,6 @@ La Bibliothèque de connaissances est parfaite pour :
 Maintenant que vous avez construit votre Bibliothèque de connaissances :
 
 - [Créer des campagnes d'e-mails générées par l'IA](./ai-email-writer)
-- [Utiliser l'Assistant marketing IA](./ai-marketing-assistant)
 - [Configurer l'envoi d'e-mails par lot](../lead-generation/batch-email-sending)
 
 ---

@@ -1,5 +1,6 @@
 ---
 id: ai-marketing-assistant
+draft: true
 title: AI Marketing Assistant
 sidebar_label: AI Marketing Assistant
 description: Obtenga orientación estratégica de marketing e ideas de contenido con el asistente de chat potenciado por IA de aiFetchly.

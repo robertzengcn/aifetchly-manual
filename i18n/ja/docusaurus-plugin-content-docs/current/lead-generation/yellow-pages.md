@@ -1,5 +1,6 @@
 ---
 id: yellow-pages
+draft: true
 title: イエローページスクレイピング
 sidebar_label: イエローページ
 description: 世界中のイエローページ、Yelp、その他のオンラインディレクトリからビジネス情報を抽出します。

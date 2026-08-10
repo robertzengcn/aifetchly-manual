@@ -14,29 +14,29 @@ const FeatureList: FeatureItem[] = [
   {
     title: translate({
       id: "homepage.feature1.title",
-      message: "Discover Leads Across Every Major Search Engine",
+      message: "Your Local AI Agent Workspace",
     }),
-    icon: "🔍",
+    icon: "🤖",
     description: (
       <Translate id="homepage.feature1.description">
-        Search Google and Yandex simultaneously with bulk keywords. AI
-        generates related keywords automatically and recovers from public source access
-        errors in real time, so you never miss a lead.
+        Ask an AI agent to run research, analyze files, extract data, and
+        prepare messages from a single desktop chat. The agent calls approved
+        tools, uses your knowledge library, delegates to specialist subagents, and
+        stays local-first with permission-gated control.
       </Translate>
     ),
   },
   {
     title: translate({
       id: "homepage.feature2.title",
-      message: "Organize Contact Profiles with AI Precision",
+      message: "Bring Your Own AI Model",
     }),
-    icon: "🤖",
+    icon: "🧠",
     description: (
       <Translate id="homepage.feature2.description">
-        Feed in any list of URLs and let AI find emails, phone numbers,
-        addresses, and social profiles instantly. Batch process thousands of
-        pages with queue management, live progress tracking, and automatic error
-        recovery.
+        Point your AI agent at any OpenAI-compatible provider — Ollama, LM
+        Studio, OpenAI, OpenRouter, or vLLM. Use local servers or third-party
+        APIs; your API key never leaves your machine.
       </Translate>
     ),
   },

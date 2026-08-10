@@ -1,5 +1,6 @@
 ---
 id: yellow-pages
+draft: true
 title: Yellow Pages Information Organization
 sidebar_label: Yellow Pages
 description: Organize business information from Yellow Pages, Yelp, and other online directories worldwide.

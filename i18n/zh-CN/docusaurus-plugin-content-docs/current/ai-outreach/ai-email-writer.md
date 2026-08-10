@@ -402,7 +402,6 @@ Alternative: {$value_proposition_3}
 
 - [配置邮件服务 (SMTP)](../lead-generation/batch-email-sending#配置邮件服务)
 - [设置批量邮件发送](../lead-generation/batch-email-sending)
-- [使用 AI 营销助手](./ai-marketing-assistant) 制定策略
 
 ---
 

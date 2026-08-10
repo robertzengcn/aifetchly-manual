@@ -652,7 +652,6 @@ Task: Outreach Campaign - AI 生成メッセージを送信
 
 - **[検索エンジン](../lead-generation/search-engines)**: 定期的な検索をスケジュール
 - **[コンタクト抽出](../lead-generation/contact-extraction)**: 検索後に自動抽出
-- **[イエローページ](../lead-generation/yellow-pages)**: 定期的なディレクトリスクレイピング
 - **[Google Maps スクレイパー](../lead-generation/local-business-finder)**: Google Maps データ収集をスケジュール
 - **[一括メール送信](../lead-generation/batch-email-sending)**: 自動キャンペーン
 - **AI Message**: ツール統合を備えた AI タスクをスケジュールし、自動分析とアクションを実行

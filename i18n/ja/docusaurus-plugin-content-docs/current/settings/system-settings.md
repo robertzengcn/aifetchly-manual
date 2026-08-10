@@ -311,7 +311,6 @@ AI スキルのインポート、管理、使用に関する完全なドキュ�
 - [入門ガイドに戻る](../getting-started/introduction)
 - [最初の検索タスクを設定する](../lead-generation/search-engines)
 - [メールサービスを構成する](../lead-generation/batch-email-sending)
-- [AI マーケティングアシスタントについて学ぶ](../ai-outreach/ai-marketing-assistant)
 
 ---
 

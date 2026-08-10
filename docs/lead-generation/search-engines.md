@@ -495,13 +495,11 @@ If a task fails:
 Search results integrate seamlessly with:
 
 - **[Contact Profile Insights](./contact-extraction)** - Open in Contact Profile Insights from URLs
-- **[Directory Assistant](./yellow-pages)** - Cross-reference with directory listings
 - **[AI Email Writer](../ai-outreach/ai-email-writer)** - Create personalized outreach
 - **[Outreach Campaign](./batch-email-sending)** - Launch campaigns
 
 ## Next Steps
 
-- [Learn about Directory Assistant](./yellow-pages)
 - [Set up contact profile insights](./contact-extraction)
 - [Create AI-powered email campaigns](../ai-outreach/ai-email-writer)
 

@@ -495,7 +495,6 @@ Gmail 和 Outlook 需要**应用专用密码**才能进行第三方 SMTP 访问�
 
 ## 下一步
 
-- [设置 AI 营销助手](../ai-outreach/ai-marketing-assistant)制定策略
 - [配置任务调度](../automation/task-scheduling)实现自动化
 - [查看系统设置](../settings/system-settings)
 

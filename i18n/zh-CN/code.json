@@ -1,6 +1,6 @@
 {
   "homepage.description": {
-    "message": "AI 驱动的营销自动化，用于潜在客户开发和外联"
+    "message": "面向业务自动化的本地优先 AI Agent 工作空间"
   },
   "homepage.gettingStartedButton": {
     "message": "开始使用 - 5 分钟⏱️"
@@ -9,13 +9,13 @@
     "message": "跨所有主流搜索引擎发现潜在客户"
   },
   "homepage.feature1.description": {
-    "message": "使用批量关键词同时搜索 Google、Yandex。AI 自动生成相关关键词并实时恢复抓取错误，让您不错过任何潜在客户。"
+    "message": "在桌面端的单一聊天中，让 AI Agent 为您开展研究、分析文件、提取数据并撰写消息。Agent 可调用已授权的工具、使用您的知识库，并委派给专业的子 Agent，全程本地优先、权限可控。"
   },
   "homepage.feature2.title": {
-    "message": "使用 AI 精确提取联系人数据"
+    "message": "自带 AI 模型"
   },
   "homepage.feature2.description": {
-    "message": "输入任何 URL 列表，让 AI 即时查找电子邮件、电话号码、地址和社交资料。通过队列管理、实时进度跟踪和自动错误恢复，批量处理数千个页面。"
+    "message": "将您的 AI Agent 连接至任何 OpenAI 兼容的服务商 — Ollama、LM Studio、OpenAI、OpenRouter 或 vLLM。使用本地模型或第三方 API，您的 API 密钥永不离开您的设备。"
   },
   "homepage.feature3.title": {
     "message": "运行可转化的电子邮件活动"

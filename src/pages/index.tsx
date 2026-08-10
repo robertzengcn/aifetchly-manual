@@ -42,7 +42,7 @@ export default function Home(): ReactNode {
       description={translate({
         id: "homepage.description",
         message:
-          "AI-Powered Marketing Automation for Lead Generation and Outreach",
+          "Local-First AI Agent Workspace for Business Automation",
       })}
     >
       <HomepageHeader />

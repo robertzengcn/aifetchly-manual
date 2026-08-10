@@ -406,5 +406,4 @@ Esto es intencional. Los hooks integrados son propiedad del código; solo puedes
 
 - [AI Skills](../ai-outreach/ai-skills) — las capacidades que los hooks pueden filtrar
 - [MCP Tools](../ai-outreach/mcp-tools) — herramientas externas cuyas llamadas observan los hooks
-- [Asistente de Marketing IA](../ai-outreach/ai-marketing-assistant) — de donde originan las llamadas a herramientas
 - [Configuración del sistema](./system-settings) — configuración general

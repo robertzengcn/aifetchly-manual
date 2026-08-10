@@ -495,7 +495,6 @@ El flujo de trabajo completo de comunicación por correo:
 
 ## Próximos pasos
 
-- [Configura el Asistente de Marketing IA](../ai-outreach/ai-marketing-assistant) para estrategia
 - [Configura la programación de tareas](../automation/task-scheduling) para automatización
 - [Revisa la configuración del sistema](../settings/system-settings)
 

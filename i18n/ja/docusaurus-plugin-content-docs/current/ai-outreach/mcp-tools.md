@@ -398,7 +398,6 @@ MCPツールはナレッジライブラリを補完します。
 
 ## 次のステップ
 
-- [AIマーケティングアシスタントについて](./ai-marketing-assistant)
 - [AIスキルを探す](./ai-skills)
 - [ナレッジライブラリを設定する](./knowledge-library)
 

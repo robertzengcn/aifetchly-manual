@@ -1,21 +1,21 @@
 {
   "homepage.description": {
-    "message": "AI-Powered Marketing Automation for Lead Generation and Outreach"
+    "message": "Local-First AI Agent Workspace for Business Automation"
   },
   "homepage.gettingStartedButton": {
     "message": "Get Started - 5 Minutes ⏱️"
   },
   "homepage.feature1.title": {
-    "message": "Discover Leads Across Every Major Search Engine"
+    "message": "Your Local AI Agent Workspace"
   },
   "homepage.feature1.description": {
-    "message": "Search Google and Yandex simultaneously with bulk keywords. AI generates related keywords automatically and recovers from public source access errors in real time, so you never miss a lead."
+    "message": "Ask an AI agent to run research, analyze files, extract data, and prepare messages from a single desktop chat. The agent calls approved tools, uses its knowledge base, and delegates to specialist subagents, staying local-first with permission-gated control."
   },
   "homepage.feature2.title": {
-    "message": "Organize Contact Profiles with AI Precision"
+    "message": "Bring Your Own AI Model"
   },
   "homepage.feature2.description": {
-    "message": "Feed in any list of URLs and let AI find emails, phone numbers, addresses, and social profiles instantly. Batch process thousands of pages with queue management, live progress tracking, and automatic error recovery."
+    "message": "Point your AI agent at any OpenAI-compatible provider — Ollama, LM Studio, OpenAI, OpenRouter, or vLLM. Use local models or third-party APIs; your API key never leaves your machine."
   },
   "homepage.feature3.title": {
     "message": "Run Email Campaigns That Convert"

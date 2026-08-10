@@ -526,7 +526,6 @@ aiFetchly 自动在任务内去重邮件。额外去重方法：
 
 - [设置知识库](../ai-outreach/knowledge-library)
 - [创建 AI 驱动的邮件营销活动](../ai-outreach/ai-email-writer)
-- [了解 AI 营销助手](../ai-outreach/ai-marketing-assistant)
 
 ---
 

@@ -1,18 +1,18 @@
 {
   "homepage.description": {
-    "message": "Automatización de Marketing con IA para Generación de Leads y Outreach"
+    "message": "Espacio de trabajo local con agente de IA para automatización empresarial"
   },
   "homepage.feature1.title": {
-    "message": "Descubra Leads en Todos los Principales Buscadores"
+    "message": "Su espacio de trabajo local con agente de IA"
   },
   "homepage.feature1.description": {
-    "message": "Busque en Google and Yandex simultáneamente con palabras clave masivas. La IA genera palabras clave relacionadas automáticamente y se recupera de errores de information organization en tiempo real, para que nunca pierda un lead."
+    "message": "Pida a un agente de IA que realice investigaciones, analice archivos, extraiga datos y prepare mensajes desde un único chat de escritorio. El agente usa herramientas aprobadas, su base de conocimientos y delega con subagentes especializados, permaneciendo local y con control basado en permisos."
   },
   "homepage.feature2.title": {
-    "message": "Extraiga Datos de Contacto con Precisión de IA"
+    "message": "Traiga su Propio Modelo de IA"
   },
   "homepage.feature2.description": {
-    "message": "Ingrese cualquier lista de URLs y deje que la IA encuentre correos electrónicos, números de teléfono, direcciones y perfiles sociales al instante. Procese por lotes miles de páginas con gestión de colas, seguimiento de progreso en vivo y recuperación automática de errores."
+    "message": "Conecte su agente de IA a cualquier proveedor compatible con OpenAI: Ollama, LM Studio, OpenAI, OpenRouter o vLLM. Use modelos locales o APIs de terceros; su clave de API nunca sale de su equipo."
   },
   "homepage.feature3.title": {
     "message": "Ejecute Campañas de Email Que Convierten"

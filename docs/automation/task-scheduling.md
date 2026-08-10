@@ -652,7 +652,6 @@ The Task Scheduler integrates with:
 
 - **[Market Insight Explorer](../lead-generation/search-engines)**: Schedule recurring searches
 - **[Contact Profile Insights](../lead-generation/contact-extraction)**: Auto-extract after searches
-- **[Directory Assistant](../lead-generation/yellow-pages)**: Regular directory information organization
 - **[Google Maps Scraper](../lead-generation/local-business-finder)**: Schedule Google Maps data collection
 - **[Outreach Campaign](../lead-generation/batch-email-sending)**: Automated campaigns
 - **AI Message**: Schedule AI-powered tasks with tool integration for automated analysis and actions

@@ -495,7 +495,6 @@ Gmail と Outlook では、サードパーティの SMTP アクセスに **ア�
 
 ## 次のステップ
 
-- [AI マーケティングアシスタント](../ai-outreach/ai-marketing-assistant)を設定して戦略を立てる
 - [タスクスケジューリング](../automation/task-scheduling)を設定して自動化
 - [システム設定](../settings/system-settings)を確認
 

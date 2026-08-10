@@ -1,18 +1,18 @@
 {
   "homepage.description": {
-    "message": "KI-gestützte Marketing-Automatisierung für Lead-Generierung und Outreach"
+    "message": "Lokale KI-Agent-Arbeitsumgebung für Geschäftsautomatisierung"
   },
   "homepage.feature1.title": {
-    "message": "Entdecken Sie Leads in allen wichtigen Suchmaschinen"
+    "message": "Ihr lokaler KI-Agent-Arbeitsbereich"
   },
   "homepage.feature1.description": {
-    "message": "Suchen Sie gleichzeitig bei Google and Yandex mit Massenschlüsselwörtern. KI generiert automatisch verwandte Schlüsselwörter und erholt sich in Echtzeit von Information Organization-Fehlern, damit Sie keinen Lead verpassen."
+    "message": "Lassen Sie einen KI-Agent Recherchen durchführen, Dateien analysieren, Daten extrahieren und Nachrichten erstellen – direkt aus einem Desktop-Chat. Der Agent verwendet freigegebene Tools, Ihre Wissensbibliothek und spezielle Unteragenten, und bleibt dabei lokal mit berechtigungsgesteuerter Kontrolle."
   },
   "homepage.feature2.title": {
-    "message": "Extrahieren Sie Kontaktdaten mit KI-Präzision"
+    "message": "Bringen Sie Ihr eigenes KI-Modell mit"
   },
   "homepage.feature2.description": {
-    "message": "Geben Sie jede URL-Liste ein und lassen Sie die KI sofort E-Mails, Telefonnummern, Adressen und Social Profiles finden. Verarbeiten Sie Tausende von Seiten im Batch mit Warteschlangenverwaltung, Live-Fortschrittsverfolgung und automatischer Fehlerwiederherstellung."
+    "message": "Richten Sie Ihren KI-Agent auf jeden OpenAI-kompatiblen Anbieter aus — Ollama, LM Studio, OpenAI, OpenRouter oder vLLM. Nutzen Sie lokale Modelle oder Drittanbieter-APIs; Ihr API-Schlüssel verlässt nie Ihren Rechner."
   },
   "homepage.feature3.title": {
     "message": "Führen Sie E-Mail-Kampagnen durch, die konvertieren"

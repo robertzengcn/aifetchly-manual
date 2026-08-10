@@ -406,5 +406,4 @@ This is intentional. Built-in hooks are code-owned; you can only toggle them on 
 
 - [AI Skills](../ai-outreach/ai-skills) — the capabilities hooks can gate
 - [MCP Tools](../ai-outreach/mcp-tools) — external tools whose calls hooks observe
-- [AI Marketing Assistant](../ai-outreach/ai-marketing-assistant) — where tool calls originate
 - [System Settings](./system-settings) — overall configuration

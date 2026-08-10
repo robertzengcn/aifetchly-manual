@@ -495,13 +495,11 @@ AI 为每个分析结果生成以下内容：
 搜索结果可与以下功能无缝集成：
 
 - **[联系提取](./contact-extraction)** - 从 URL 中提取电子邮件
-- **[黄页](./yellow-pages)** - 与目录列表交叉参考
 - **[AI 邮件撰写器](../ai-outreach/ai-email-writer)** - 创建个性化推广邮件
 - **[批量邮件发送](./batch-email-sending)** - 启动营销活动
 
 ## 下一步
 
-- [了解黄页抓取](./yellow-pages)
 - [设置联系提取](./contact-extraction)
 - [创建 AI 驱动的电子邮件营销活动](../ai-outreach/ai-email-writer)
 

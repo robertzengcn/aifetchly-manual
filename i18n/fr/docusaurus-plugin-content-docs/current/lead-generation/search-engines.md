@@ -495,13 +495,11 @@ Si une tâche échoue :
 Les résultats de recherche s'intègrent de manière transparente avec :
 
 - **[Profile Insights de contacts](./contact-extraction)** - Extraire les e-mails des URL
-- **[Pages Jaunes](./yellow-pages)** - Croiser avec les annuaires
 - **[Rédacteur d'e-mails IA](../ai-outreach/ai-email-writer)** - Créer des prospections personnalisées
 - **[Envoi d'e-mails par lot](./batch-email-sending)** - Lancer des campagnes
 
 ## Prochaines étapes
 
-- [En savoir plus sur le information organization des Pages Jaunes](./yellow-pages)
 - [Configurer l'profile insights de contacts](./contact-extraction)
 - [Créer des campagnes d'e-mails alimentées par l'IA](../ai-outreach/ai-email-writer)
 

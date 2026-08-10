@@ -357,7 +357,6 @@ Die Registerkarte **Verlauf** speichert alle Ihre vergangenen Suchen.
 Die Ergebnisse des Local Business Finders können verwendet werden mit:
 
 - **[Kontaktprofil-Einblicke](./contact-extraction)** — In Kontaktprofil-Einblicke von Unternehmenswebsites aus den Ergebnissen öffnen
-- **[Verzeichnis-Assistent](./yellow-pages)** — Abgleich mit Verzeichniseinträgen für umfassendere Daten
 - **[KI-E-Mail-Writer](../ai-outreach/ai-email-writer)** — Personalisierte E-Mails für die Kontaktaufnahme mit den gesammelten Unternehmensdaten erstellen
 - **[Outreach-Kampagne](./batch-email-sending)** — E-Mail-Kampagnen mit extrahierten Kontaktinformationen starten
 

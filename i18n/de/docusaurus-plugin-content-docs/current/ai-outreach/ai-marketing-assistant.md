@@ -1,5 +1,6 @@
 ---
 id: ai-marketing-assistant
+draft: true
 title: KI-Marketing-Assistent
 sidebar_label: KI-Marketing-Assistent
 description: Erhalten Sie strategische Marketingberatung und Content-Ideen mit dem KI-gestützten Chat-Assistenten von aiFetchly.

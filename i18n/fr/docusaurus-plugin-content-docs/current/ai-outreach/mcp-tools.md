@@ -398,7 +398,6 @@ Les outils MCP complètent la Bibliothèque de connaissances :
 
 ## Prochaines étapes
 
-- [En savoir plus sur l'Assistant Marketing IA](./ai-marketing-assistant)
 - [Explorer les compétences IA](./ai-skills)
 - [Configurer la Bibliothèque de connaissances](./knowledge-library)
 

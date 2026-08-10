@@ -526,7 +526,6 @@ aiFetchly はタスク内で自動的にメールの重複を除去します。�
 
 - [ナレッジライブラリの設定](../ai-outreach/knowledge-library)
 - [AI 搭載メールキャンペーンの作成](../ai-outreach/ai-email-writer)
-- [AI マーケティングアシスタントについて](../ai-outreach/ai-marketing-assistant)
 
 ---
 

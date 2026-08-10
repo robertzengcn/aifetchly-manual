@@ -444,7 +444,6 @@ AIアシスタントとチャットする際：
 ナレッジライブラリを構築したら、次は：
 
 - [AI生成メールキャンペーンを作成する](./ai-email-writer)
-- [AIマーケティングアシスタントを使用する](./ai-marketing-assistant)
 - [バッチメール送信を設定する](../lead-generation/batch-email-sending)
 
 ---

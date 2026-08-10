@@ -526,7 +526,6 @@ For detailed instructions on creating campaigns, see [Outreach Campaign](./batch
 
 - [Set up the Knowledge Library](../ai-outreach/knowledge-library)
 - [Create AI-powered email campaigns](../ai-outreach/ai-email-writer)
-- [Learn about the AI Marketing Assistant](../ai-outreach/ai-marketing-assistant)
 
 ---
 

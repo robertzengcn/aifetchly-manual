@@ -1,5 +1,6 @@
 ---
 id: yellow-pages
+draft: true
 title: Information Organization des Pages Jaunes
 sidebar_label: Pages Jaunes
 description: Extrayez des informations commerciales des Pages Jaunes, Yelp et d'autres annuaires en ligne dans le monde entier.

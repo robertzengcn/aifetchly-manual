@@ -398,7 +398,6 @@ MCP-Tools ergänzen die Wissensbibliothek:
 
 ## Nächste Schritte
 
-- [KI-Marketing-Assistenten kennenlernen](./ai-marketing-assistant)
 - [KI-Skills erkunden](./ai-skills)
 - [Wissensbibliothek einrichten](./knowledge-library)
 

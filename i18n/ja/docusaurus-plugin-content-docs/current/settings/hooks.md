@@ -406,5 +406,4 @@ process.stdin.on("end", () => {
 
 - [AI スキル](../ai-outreach/ai-skills) — フックがゲートできる機能
 - [MCP ツール](../ai-outreach/mcp-tools) — フックが監視する呼び出しの対象となる外部ツール
-- [AI マーケティングアシスタント](../ai-outreach/ai-marketing-assistant) — ツール呼び出しの発生元
 - [システム設定](./system-settings) — 全体の構成

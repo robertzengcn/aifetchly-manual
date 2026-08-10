@@ -398,7 +398,6 @@ MCP 工具与知识库互为补充：
 
 ## 下一步
 
-- [了解 AI 营销助手](./ai-marketing-assistant)
 - [探索 AI 技能](./ai-skills)
 - [设置知识库](./knowledge-library)
 

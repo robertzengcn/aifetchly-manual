@@ -495,13 +495,11 @@ Wenn ein Auftrag fehlschlägt:
 Suchergebnisse integrieren sich nahtlos mit:
 
 - **[Kontaktextraktion](./contact-extraction)** — E-Mails aus URLs extrahieren
-- **[Gelbe Seiten](./yellow-pages)** — Mit Verzeichnislistungen abgleichen
 - **[KI-E-Mail-Writer](../ai-outreach/ai-email-writer)** — Personalisierte Akquise erstellen
 - **[Batch-E-Mail-Versand](./batch-email-sending)** — Kampagnen starten
 
 ## Nächste Schritte
 
-- [Gelbe-Seiten-Information Organization kennenlernen](./yellow-pages)
 - [Kontaktextraktion einrichten](./contact-extraction)
 - [KI-gestützte E-Mail-Kampagnen erstellen](../ai-outreach/ai-email-writer)
 

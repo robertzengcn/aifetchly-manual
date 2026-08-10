@@ -311,7 +311,6 @@ Nach dem Konfigurieren der Systemeinstellungen:
 - [Zurück zu Erste Schritte](../getting-started/introduction)
 - [Ihren ersten Suchauftrag einrichten](../lead-generation/search-engines)
 - [E-Mail-Dienste konfigurieren](../lead-generation/batch-email-sending)
-- [KI-Marketing-Assistenten kennenlernen](../ai-outreach/ai-marketing-assistant)
 
 ---
 

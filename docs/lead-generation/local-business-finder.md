@@ -357,7 +357,6 @@ The **History** tab stores all your past searches.
 Local Business Finder results can be used with:
 
 - **[Contact Profile Insights](./contact-extraction)** — Open in Contact Profile Insights from business websites found in the results
-- **[Directory Assistant](./yellow-pages)** — Cross-reference with directory listings for more comprehensive data
 - **[AI Email Writer](../ai-outreach/ai-email-writer)** — Create personalized outreach emails using the collected business data
 - **[Outreach Campaign](./batch-email-sending)** — Launch email campaigns using extracted contact information
 

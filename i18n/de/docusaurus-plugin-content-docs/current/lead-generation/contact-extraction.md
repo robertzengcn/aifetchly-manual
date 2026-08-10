@@ -526,7 +526,6 @@ Ausführliche Anleitungen zur Erstellung von Kampagnen finden Sie unter [Massen-
 
 - [Wissensbibliothek einrichten](../ai-outreach/knowledge-library)
 - [KI-gestützte E-Mail-Kampagnen erstellen](../ai-outreach/ai-email-writer)
-- [Mehr über den KI-Marketing-Assistenten erfahren](../ai-outreach/ai-marketing-assistant)
 
 ---
 

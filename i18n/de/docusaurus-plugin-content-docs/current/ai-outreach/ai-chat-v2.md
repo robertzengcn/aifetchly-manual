@@ -254,7 +254,6 @@ Spracherkennung und -synthese sind lokal und kostenlos, aber um eine Nachricht z
 ## Nächste Schritte
 
 - [Slash-Befehle](./slash-commands) — führen Sie Aktionen und wiederverwendbare Prompts mit `/` aus.
-- [AI Marketing Assistant](./ai-marketing-assistant) — der klassische Chat, weiterhin unterstützt.
 - [Plugin-Manager](./plugin-manager) — installieren Sie Plugins aus lokalem Ordner, Git, GitHub, npm oder URL.
 - [KI-Fähigkeiten](./ai-skills) — was Fähigkeiten sind und wie Sie sie verwenden.
 - [MCP-Tools](./mcp-tools) — externe Dienste verbinden.

@@ -652,7 +652,6 @@ Le planificateur de tâches s'intègre avec :
 
 - **[Moteurs de recherche](../lead-generation/search-engines)** : Planifier des recherches récurrentes
 - **[Extraction de contacts](../lead-generation/contact-extraction)** : Extraction automatique après les recherches
-- **[Pages Jaunes](../lead-generation/yellow-pages)** : Information Organization d'annuaires régulier
 - **[Scraping Google Maps](../lead-generation/local-business-finder)** : Planifier la collecte de données Google Maps
 - **[Envoi d'e-mails en lot](../lead-generation/batch-email-sending)** : Campagnes automatisées
 - **AI Message** : Planifier des tâches IA avec intégration d'outils pour l'analyse et les actions automatisées

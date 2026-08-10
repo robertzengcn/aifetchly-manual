@@ -254,7 +254,6 @@ Speech recognition and synthesis are local and free, but to send a message and g
 ## Next steps
 
 - [Slash Commands](./slash-commands) — run actions and reusable prompts with `/`.
-- [AI Marketing Assistant](./ai-marketing-assistant) — the legacy chat, still supported.
 - [Plugin Manager](./plugin-manager) — install plugins from local folder, git, GitHub, npm, or URL.
 - [AI Skills](./ai-skills) — what skills are and how to use them.
 - [MCP Tools](./mcp-tools) — connecting external services.
