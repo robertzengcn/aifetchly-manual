@@ -21,14 +21,14 @@ const config: Config = {
   // Set URL based on deployment environment
   url: isNetlify
     ? process.env.DEPLOY_PRIME_URL || "https://aifetchly-manual.netlify.app"
-    : "https://robertzengcn.github.io",
+    : "https://docs.aifetchly.com",
 
-  // GitHub Pages needs repo name as baseUrl; Netlify uses root
-  baseUrl: isGitHubActions ? "/aiFetchly/" : "/",
+  // Custom-domain deploys should serve from the domain root.
+  baseUrl: "/",
 
   // GitHub pages deployment config.
   organizationName: "robertzengcn", // Usually your GitHub org/user name.
-  projectName: "aiFetchly", // Usually your repo name.
+  projectName: "aifetchly-manual", // Usually your repo name.
 
   // Block search engines on non-production (Netlify test) deploys
   headTags: [
@@ -115,7 +115,7 @@ const config: Config = {
           label: "Docs",
         },
         {
-          href: "https://github.com/robertzengcn/aiFetchly",
+          href: "https://github.com/robertzengcn/aifetchly-manual",
           label: "GitHub",
           position: "right",
         },
@@ -150,7 +150,7 @@ const config: Config = {
           items: [
             {
               label: "GitHub",
-              href: "https://github.com/robertzengcn/aiFetchly",
+              href: "https://github.com/robertzengcn/aifetchly-manual",
             },
           ],
         },
