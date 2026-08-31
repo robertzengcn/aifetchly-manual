@@ -18,7 +18,12 @@ function HomepageHeader() {
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle">
+          {translate({
+            id: "homepage.description",
+            message: "Desktop AI Agent for Business Automation",
+          })}
+        </p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
@@ -41,8 +46,7 @@ export default function Home(): ReactNode {
       title={`${siteConfig.title}`}
       description={translate({
         id: "homepage.description",
-        message:
-          "Local-First AI Agent Workspace for Business Automation",
+        message: "Desktop AI Agent for Business Automation",
       })}
     >
       <HomepageHeader />

@@ -15,7 +15,7 @@ const isProduction =
 
 const config: Config = {
   title: "aiFetchly Manual",
-  tagline: "AI-Powered Marketing Automation for Lead Generation and Outreach",
+  tagline: "Desktop AI Agent for Business Automation",
   favicon: "img/favicon.ico",
 
   // Set URL based on deployment environment
