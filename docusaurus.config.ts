@@ -115,7 +115,7 @@ const config: Config = {
           label: "Docs",
         },
         {
-          href: "https://github.com/robertzengcn/aifetchly-manual",
+          href: "https://github.com/robertzengcn/aiFetchly",
           label: "GitHub",
           position: "right",
         },
@@ -149,13 +149,17 @@ const config: Config = {
           title: "More",
           items: [
             {
+              label: "aiFetchly",
+              href: "https://www.aifetchly.com",
+            },
+            {
               label: "GitHub",
-              href: "https://github.com/robertzengcn/aifetchly-manual",
+              href: "https://github.com/robertzengcn/aiFetchly",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} aiFetchly. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} aiFetchly.`,
     },
     prism: {
       theme: prismThemes.github,
