@@ -9,6 +9,8 @@ description: Construya su base de conocimiento con documentos que la IA utiliza 
 
 La Biblioteca de Conocimiento es el sistema inteligente de gestión de documentos de aiFetchly. Cargue sus documentos (PDFs, archivos de Word, HTML y más) para crear una base de conocimiento que potencia el contenido generado por IA, asegurando que su divulgación sea contextualmente precisa y personalizada.
 
+![Knowledge Library](/img/knowledge-library.png)
+
 :::info Se requiere suscripción
 
 La Biblioteca de Conocimiento — incluido el modelo de embedding local gratuito — requiere una suscripción a aiFetchly. Si su cuenta no tiene la IA habilitada, la página muestra un mensaje de **Suscripción Requerida**.

@@ -9,6 +9,8 @@ description: Build your knowledge base with documents that AI uses to generate c
 
 The Knowledge Library is aiFetchly's intelligent document management system. Upload your documents (PDFs, Word files, HTML, and more) to create a knowledge base that powers AI-generated content, ensuring your outreach is contextually accurate and personalized.
 
+![Knowledge Library](/img/knowledge-library.png)
+
 :::info Subscription required
 
 The Knowledge Library — including the free local embedding model — requires an aiFetchly subscription. If your account doesn't have AI enabled, the page shows a **Subscription Required** prompt.

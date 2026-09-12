@@ -9,6 +9,8 @@ description: Erstellen Sie Ihre Wissensbasis mit Dokumenten, die die KI verwende
 
 Die Wissensbibliothek ist aiFetchlys intelligentes Dokumentenmanagementsystem. Laden Sie Ihre Dokumente hoch (PDFs, Word-Dateien, HTML und mehr), um eine Wissensbasis zu erstellen, die KI-generierte Inhalte unterstützt und sicherstellt, dass Ihre Kommunikation kontextuell präzise und personalisiert ist.
 
+![Knowledge Library](/img/knowledge-library.png)
+
 :::info Abonnement erforderlich
 
 Die Wissensbibliothek – einschließlich des kostenlosen lokalen Einbettungsmodells – erfordert ein aiFetchly-Abonnement. Wenn für Ihr Konto keine KI aktiviert ist, zeigt die Seite eine Aufforderung **Abonnement erforderlich**.

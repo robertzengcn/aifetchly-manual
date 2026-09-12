@@ -9,6 +9,8 @@ description: 构建您的知识库，上传文档供 AI 使用以生成具有上
 
 知识库是 aiFetchly 的智能文档管理系统。上传您的文档（PDF、Word、HTML 等格式），构建为 AI 内容生成提供支撑的知识库，确保您的外联内容精准且个性化。
 
+![Knowledge Library](/img/knowledge-library.png)
+
 :::info 需要订阅
 
 知识库（包括免费的本地嵌入模型）需要 aiFetchly 订阅。如果您的账户未启用 AI，页面会显示**需要订阅**提示。
