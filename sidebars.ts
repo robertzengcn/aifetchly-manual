@@ -50,9 +50,6 @@ const sidebars: SidebarsConfig = {
       collapsed: false,
       items: [
         "lead-generation/proxy-setup",
-        "lead-generation/search-engines",
-        "lead-generation/local-business-finder",
-        "lead-generation/yellow-pages",
         "lead-generation/contact-extraction",
         "lead-generation/batch-email-sending",
       ],

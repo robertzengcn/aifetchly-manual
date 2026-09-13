@@ -487,11 +487,10 @@ Target specific audiences:
 
 The complete email outreach workflow:
 
-1. **[Market Insight Explorer](./search-engines)**: Find target websites
-2. **[Contact Profile Insights](./contact-extraction)**: Harvest emails
-3. **[AI Email Writer](../ai-outreach/ai-email-writer)**: Create personalized templates
-4. **[Knowledge Library](../ai-outreach/knowledge-library)**: Provide context for AI
-5. **Outreach Campaign**: Launch campaigns
+1. **[Contact Profile Insights](./contact-extraction)**: Harvest emails
+2. **[AI Email Writer](../ai-outreach/ai-email-writer)**: Create personalized templates
+3. **[Knowledge Library](../ai-outreach/knowledge-library)**: Provide context for AI
+4. **Outreach Campaign**: Launch campaigns
 
 ## Next Steps
 

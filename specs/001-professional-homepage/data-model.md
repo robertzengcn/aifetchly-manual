@@ -66,13 +66,6 @@ interface HomepageFeaturesProps {
 ```typescript
 const FeatureList: FeatureItem[] = [
   {
-    id: 'multi-engine-search',
-    title: 'Multi-Engine Search',
-    description: 'Scrape leads from Google, Bing, Yandex, and Yahoo simultaneously',
-    icon: SearchIcon,
-    link: '/docs/lead-generation/search-engines'
-  },
-  {
     id: 'contact-extraction',
     title: 'Contact Extraction',
     description: 'Extract emails and contacts from websites, Yellow Pages, and search results',
@@ -171,12 +164,11 @@ See `FeatureList` array above. Each feature includes:
 **Source**: `lucide-react` package (npm)
 
 **Icons Used**:
-1. `Search` - Multi-Engine Search
-2. `Users` - Contact Extraction
-3. `Mail` - AI Email Writer
-4. `Send` - Batch Email Sending
-5. `Sparkles` - AI Marketing Assistant
-6. `Clock` - Task Scheduling
+1. `Users` - Contact Extraction
+2. `Mail` - AI Email Writer
+3. `Send` - Batch Email Sending
+4. `Sparkles` - AI Marketing Assistant
+5. `Clock` - Task Scheduling
 
 **Asset Type**: SVG components (no separate files)
 

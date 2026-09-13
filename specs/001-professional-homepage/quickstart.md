@@ -124,7 +124,6 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import Heading from '@theme/Heading';
 import {
-  Search,
   Users,
   Mail,
   Send,
@@ -141,17 +140,6 @@ type FeatureItem = {
 };
 
 const FeatureList: FeatureItem[] = [
-  {
-    title: 'Multi-Engine Search',
-    icon: Search,
-    description: (
-      <>
-        Scrape leads from <strong>Google, Bing, Yandex, and Yahoo</strong> simultaneously
-        to maximize your reach and efficiency.
-      </>
-    ),
-    link: '/docs/lead-generation/search-engines',
-  },
   {
     title: 'Contact Extraction',
     icon: Users,
@@ -558,15 +546,14 @@ import {render, screen} from '@testing-library/react';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 describe('HomepageFeatures', () => {
-  it('renders 6 feature cards', () => {
+  it('renders 5 feature cards', () => {
     render(<HomepageFeatures />);
     const cards = screen.getAllByRole('link');
-    expect(cards).toHaveLength(6);
+    expect(cards).toHaveLength(5);
   });
 
   it('renders feature titles', () => {
     render(<HomepageFeatures />);
-    expect(screen.getByText('Multi-Engine Search')).toBeInTheDocument();
     expect(screen.getByText('Contact Extraction')).toBeInTheDocument();
     expect(screen.getByText('AI Email Writer')).toBeInTheDocument();
     expect(screen.getByText('Batch Email Sending')).toBeInTheDocument();
@@ -576,8 +563,8 @@ describe('HomepageFeatures', () => {
 
   it('each card links to correct documentation', () => {
     render(<HomepageFeatures />);
-    const searchCard = screen.getByText('Multi-Engine Search').closest('a');
-    expect(searchCard).toHaveAttribute('href', '/docs/lead-generation/search-engines');
+    const searchCard = screen.getByText('Contact Extraction').closest('a');
+    expect(searchCard).toHaveAttribute('href', '/docs/lead-generation/contact-extraction');
   });
 
   it('icons have proper role attribute', () => {

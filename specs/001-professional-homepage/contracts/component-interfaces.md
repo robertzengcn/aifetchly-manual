@@ -209,11 +209,11 @@ const featureItemSchema = {
 **Example Valid Feature**:
 ```typescript
 {
-  id: 'multi-engine-search',
-  title: 'Multi-Engine Search',
-  description: 'Scrape leads from Google, Bing, Yandex, and Yahoo simultaneously',
-  icon: Search,
-  link: '/docs/lead-generation/search-engines'
+  id: 'contact-extraction',
+  title: 'Contact Extraction',
+  description: 'Extract emails and contacts from websites and search results',
+  icon: Users,
+  link: '/docs/lead-generation/contact-extraction'
 }
 ```
 

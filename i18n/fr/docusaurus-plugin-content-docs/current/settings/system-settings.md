@@ -310,7 +310,7 @@ Pour la documentation complète sur les modes de fournisseur, les préréglages,
 Après avoir configuré les paramètres système :
 
 - [Retour aux premiers pas](../getting-started/introduction)
-- [Configurer votre première tâche de recherche](../lead-generation/search-engines)
+- [Configurer l'analyse des profils de contacts](../lead-generation/contact-extraction)
 - [Configurer les services de messagerie](../lead-generation/batch-email-sending)
 
 ---

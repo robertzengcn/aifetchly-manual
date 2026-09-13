@@ -360,7 +360,6 @@ Changez régulièrement votre pool de proxys pour maintenir la sécurité et év
 
 Maintenant que vous avez configuré vos proxys :
 
-- [En savoir plus sur l'profile insights des moteurs de recherche](./search-engines)
 - [Configurer l'profile insights de contacts](./contact-extraction)
 - [Configurer la bibliothèque de connaissances](../ai-outreach/knowledge-library)
 

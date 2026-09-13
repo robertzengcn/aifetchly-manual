@@ -487,11 +487,10 @@ Dirígete a audiencias específicas:
 
 El flujo de trabajo completo de comunicación por correo:
 
-1. **[Motores de búsqueda](./search-engines)**: Encuentra sitios web objetivo
-2. **[Extracción de contactos](./contact-extraction)**: Recopila correos
-3. **[AI Email Writer](../ai-outreach/ai-email-writer)**: Crea plantillas personalizadas
-4. **[Biblioteca de conocimiento](../ai-outreach/knowledge-library)**: Proporciona contexto para la IA
-5. **Envío masivo de correos**: Lanza campañas
+1. **[Extracción de contactos](./contact-extraction)**: Recopila correos
+2. **[AI Email Writer](../ai-outreach/ai-email-writer)**: Crea plantillas personalizadas
+3. **[Biblioteca de conocimiento](../ai-outreach/knowledge-library)**: Proporciona contexto para la IA
+4. **Envío masivo de correos**: Lanza campañas
 
 ## Próximos pasos
 

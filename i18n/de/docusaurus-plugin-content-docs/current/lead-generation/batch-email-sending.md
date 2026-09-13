@@ -487,11 +487,10 @@ Spezifische Zielgruppen ansprechen:
 
 Der vollständige E-Mail-Akquise-Workflow:
 
-1. **[Suchmaschinen](./search-engines)**: Ziel-Websites finden
-2. **[Kontaktextraktion](./contact-extraction)**: E-Mails sammeln
-3. **[KI-E-Mail-Writer](../ai-outreach/ai-email-writer)**: Personalisierte Vorlagen erstellen
-4. **[Wissensbibliothek](../ai-outreach/knowledge-library)**: Kontext für die KI bereitstellen
-5. **Batch-E-Mail-Versand**: Kampagnen starten
+1. **[Kontaktextraktion](./contact-extraction)**: E-Mails sammeln
+2. **[KI-E-Mail-Writer](../ai-outreach/ai-email-writer)**: Personalisierte Vorlagen erstellen
+3. **[Wissensbibliothek](../ai-outreach/knowledge-library)**: Kontext für die KI bereitstellen
+4. **Batch-E-Mail-Versand**: Kampagnen starten
 
 ## Nächste Schritte
 

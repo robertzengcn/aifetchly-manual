@@ -487,11 +487,10 @@ Gmail 和 Outlook 需要**应用专用密码**才能进行第三方 SMTP 访问�
 
 完整的邮件外联工作流程：
 
-1. **[搜索引擎](./search-engines)**：查找目标网站
-2. **[联系方式提取](./contact-extraction)**：采集邮件地址
-3. **[AI 邮件撰写](../ai-outreach/ai-email-writer)**：创建个性化模板
-4. **[知识库](../ai-outreach/knowledge-library)**：为 AI 提供上下文
-5. **批量邮件发送**：发起营销活动
+1. **[联系方式提取](./contact-extraction)**：采集邮件地址
+2. **[AI 邮件撰写](../ai-outreach/ai-email-writer)**：创建个性化模板
+3. **[知识库](../ai-outreach/knowledge-library)**：为 AI 提供上下文
+4. **批量邮件发送**：发起营销活动
 
 ## 下一步
 

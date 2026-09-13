@@ -487,11 +487,10 @@ Gmail と Outlook では、サードパーティの SMTP アクセスに **ア�
 
 完全なメールアウトリーチワークフロー:
 
-1. **[検索エンジン](./search-engines)**: ターゲットウェブサイトを見つける
-2. **[コンタクト抽出](./contact-extraction)**: メールアドレスを収集
-3. **[AI メールライター](../ai-outreach/ai-email-writer)**: パーソナライズされたテンプレートを作成
-4. **[ナレッジライブラリ](../ai-outreach/knowledge-library)**: AI にコンテキストを提供
-5. **一括メール送信**: キャンペーンを開始
+1. **[コンタクト抽出](./contact-extraction)**: メールアドレスを収集
+2. **[AI メールライター](../ai-outreach/ai-email-writer)**: パーソナライズされたテンプレートを作成
+3. **[ナレッジライブラリ](../ai-outreach/knowledge-library)**: AI にコンテキストを提供
+4. **一括メール送信**: キャンペーンを開始
 
 ## 次のステップ
 

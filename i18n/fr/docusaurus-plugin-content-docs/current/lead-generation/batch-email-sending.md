@@ -487,11 +487,10 @@ Ciblez des audiences spécifiques :
 
 Le workflow complet de prospection par e-mail :
 
-1. **[Moteurs de recherche](./search-engines)** : Trouver des sites web cibles
-2. **[Profile Insights de contacts](./contact-extraction)** : Collecter les e-mails
-3. **[Rédacteur d'e-mails IA](../ai-outreach/ai-email-writer)** : Créer des modèles personnalisés
-4. **[Bibliothèque de connaissances](../ai-outreach/knowledge-library)** : Fournir du contexte à l'IA
-5. **Envoi d'e-mails par lot** : Lancer les campagnes
+1. **[Profile Insights de contacts](./contact-extraction)** : Collecter les e-mails
+2. **[Rédacteur d'e-mails IA](../ai-outreach/ai-email-writer)** : Créer des modèles personnalisés
+3. **[Bibliothèque de connaissances](../ai-outreach/knowledge-library)** : Fournir du contexte à l'IA
+4. **Envoi d'e-mails par lot** : Lancer les campagnes
 
 ## Prochaines étapes
 

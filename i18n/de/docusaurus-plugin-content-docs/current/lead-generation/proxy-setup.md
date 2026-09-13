@@ -360,7 +360,6 @@ Wechseln Sie Ihren Proxy-Pool regelmäßig, um die Sicherheit zu gewährleisten 
 
 Nachdem Sie Ihre Proxys konfiguriert haben:
 
-- [Erfahren Sie mehr über Suchmaschinen-Information Organization](./search-engines)
 - [Kontaktextraktion einrichten](./contact-extraction)
 - [Die Wissensbibliothek konfigurieren](../ai-outreach/knowledge-library)
 

@@ -309,7 +309,7 @@ For full documentation on provider modes, presets, connection testing, and secur
 After configuring system settings:
 
 - [Return to Getting Started](../getting-started/introduction)
-- [Set up your first search task](../lead-generation/search-engines)
+- [Set up contact profile insights](../lead-generation/contact-extraction)
 - [Configure email services](../lead-generation/batch-email-sending)
 
 ---
