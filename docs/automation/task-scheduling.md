@@ -650,8 +650,6 @@ Task: Outreach Campaign - Send AI-generated messages
 
 The Task Scheduler integrates with:
 
-- **[Contact Profile Insights](../lead-generation/contact-extraction)**: Auto-extract after searches
-- **[Outreach Campaign](../lead-generation/batch-email-sending)**: Automated campaigns
 - **AI Message**: Schedule AI-powered tasks with tool integration for automated analysis and actions
 
 ## Next Steps

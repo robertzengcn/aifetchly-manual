@@ -446,7 +446,6 @@ Die Wissensbibliothek ist ideal für:
 Nachdem Sie Ihre Wissensbibliothek aufgebaut haben:
 
 - [KI-generierte E-Mail-Kampagnen erstellen](./ai-email-writer)
-- [Outreach-Kampagne einrichten](../lead-generation/batch-email-sending)
 
 ---
 

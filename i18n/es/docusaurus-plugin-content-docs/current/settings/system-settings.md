@@ -310,8 +310,6 @@ Para la documentación completa sobre modos de proveedor, presets, prueba de con
 Después de configurar los ajustes del sistema:
 
 - [Volver a Primeros pasos](../getting-started/introduction)
-- [Configura el perfil de contactos](../lead-generation/contact-extraction)
-- [Configura servicios de correo](../lead-generation/batch-email-sending)
 
 ---
 

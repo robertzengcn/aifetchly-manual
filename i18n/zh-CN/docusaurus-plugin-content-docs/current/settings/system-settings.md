@@ -309,8 +309,6 @@ AI 技能是增强 aiFetchly AI 聊天功能的模块化扩展。技能可以导
 配置系统设置后：
 
 - [返回入门指南](../getting-started/introduction)
-- [设置联系人档案洞察](../lead-generation/contact-extraction)
-- [配置电子邮件服务](../lead-generation/batch-email-sending)
 
 ---
 

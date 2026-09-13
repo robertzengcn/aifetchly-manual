@@ -50,8 +50,6 @@ const sidebars: SidebarsConfig = {
       collapsed: false,
       items: [
         "lead-generation/proxy-setup",
-        "lead-generation/contact-extraction",
-        "lead-generation/batch-email-sending",
       ],
     },
     {

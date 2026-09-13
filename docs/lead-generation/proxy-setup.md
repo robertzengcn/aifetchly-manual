@@ -360,7 +360,6 @@ Regularly change your proxy pool to maintain security and avoid detection.
 
 Now that you've configured your proxies:
 
-- [Set up contact profile insights](./contact-extraction)
 - [Configure the Knowledge Library](../ai-outreach/knowledge-library)
 
 ---

@@ -344,8 +344,7 @@ sudo dnf install --skip-broken aifetchly
 成功安装 aiFetchly 后：
 
 1. [配置代理设置](../lead-generation/proxy-setup)（推荐用于抓取）
-2. [设置联系人档案洞察](../lead-generation/contact-extraction)
-3. [设置知识库](../ai-outreach/knowledge-library)
+2. [设置知识库](../ai-outreach/knowledge-library)
 
 ---
 

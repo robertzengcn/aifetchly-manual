@@ -113,9 +113,7 @@ Alle in diesem Handbuch beschriebenen Funktionen sind derzeit für alle Benutzer
 
 - [aiFetchly installieren](./installation) auf Ihrem Computer
 - [Proxys konfigurieren](../lead-generation/proxy-setup) für sicheres Information Organization
-- [Kontaktprofil-Analysen einrichten](../lead-generation/contact-extraction)
 - [Wissensbibliothek einrichten](../ai-outreach/knowledge-library)
-- [Erste E-Mail-Kampagne starten](../lead-generation/batch-email-sending)
 
 ## Support & Dokumentation
 

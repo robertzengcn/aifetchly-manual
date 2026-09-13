@@ -321,17 +321,6 @@ Alternative: {$value_proposition_2}
 Alternative: {$value_proposition_3}
 ```
 
-## Intégration avec l'envoi d'e-mails en lot
-
-Les modèles sont utilisés dans le flux d'envoi d'e-mails en lot :
-
-1. **Choisissez un modèle** à l'étape 2 du processus d'envoi d'e-mails en lot
-2. **Les variables sont automatiquement renseignées** à partir de votre liste d'e-mails
-3. **Chaque destinataire reçoit un e-mail personnalisé**
-4. **L'IA peut enrichir** le modèle avec le contenu de la Bibliothèque de connaissances
-
-Pour des instructions détaillées, consultez [Envoi d'e-mails en lot](../lead-generation/batch-email-sending).
-
 ## Dépannage
 
 ### Variables non remplacées
@@ -400,8 +389,7 @@ Pour des instructions détaillées, consultez [Envoi d'e-mails en lot](../lead-g
 
 Après avoir créé vos modèles :
 
-- [Configurer les services e-mail (SMTP)](../lead-generation/batch-email-sending#configuration-des-services-de-mail)
-- [Configurer l'envoi d'e-mails en lot](../lead-generation/batch-email-sending)
+- [Construire votre Bibliothèque de connaissances](./knowledge-library) pour un meilleur contexte IA
 
 ---
 

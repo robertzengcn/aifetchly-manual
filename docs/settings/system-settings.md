@@ -309,8 +309,6 @@ For full documentation on provider modes, presets, connection testing, and secur
 After configuring system settings:
 
 - [Return to Getting Started](../getting-started/introduction)
-- [Set up contact profile insights](../lead-generation/contact-extraction)
-- [Configure email services](../lead-generation/batch-email-sending)
 
 ---
 

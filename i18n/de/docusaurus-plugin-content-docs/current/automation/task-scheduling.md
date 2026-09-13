@@ -650,8 +650,6 @@ Task: Outreach Campaign - KI-generierte Nachrichten senden
 
 Der Aufgabenplaner integriert sich mit:
 
-- **[Kontaktextraktion](../lead-generation/contact-extraction)**: Automatische Extraktion nach Suchen
-- **[Massen-E-Mail-Versand](../lead-generation/batch-email-sending)**: Automatisierte Kampagnen
 - **AI Message**: KI-gestützte Aufgaben mit Tool-Integration für automatisierte Analyse und Aktionen planen
 
 ## Nächste Schritte

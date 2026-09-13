@@ -650,8 +650,6 @@ Task: Outreach Campaign - Enviar mensajes generados por IA
 
 El Programador de tareas se integra con:
 
-- **[Extracción de contactos](../lead-generation/contact-extraction)**: Auto-extraer después de búsquedas
-- **[Envío masivo de correos](../lead-generation/batch-email-sending)**: Campañas automatizadas
 - **AI Message**: Programar tareas de IA con integración de herramientas para análisis y acciones automatizadas
 
 ## Próximos pasos

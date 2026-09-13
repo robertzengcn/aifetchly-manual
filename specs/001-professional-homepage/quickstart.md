@@ -124,9 +124,7 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import Heading from '@theme/Heading';
 import {
-  Users,
   Mail,
-  Send,
   Sparkles,
   Clock,
 } from 'lucide-react';
@@ -141,17 +139,6 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Contact Extraction',
-    icon: Users,
-    description: (
-      <>
-        Extract email addresses and contacts from <strong>websites, Yellow Pages,
-        and search results</strong> with precision.
-      </>
-    ),
-    link: '/docs/lead-generation/contact-extraction',
-  },
-  {
     title: 'AI Email Writer',
     icon: Mail,
     description: (
@@ -161,17 +148,6 @@ const FeatureList: FeatureItem[] = [
       </>
     ),
     link: '/docs/ai-outreach/ai-email-writer',
-  },
-  {
-    title: 'Batch Email Sending',
-    icon: Send,
-    description: (
-      <>
-        Send <strong>personalized email campaigns</strong> at scale with SMTP integration,
-        smart filters, and duplicate prevention.
-      </>
-    ),
-    link: '/docs/ai-outreach/batch-email-sending',
   },
   {
     title: 'AI Marketing Assistant',
@@ -546,25 +522,23 @@ import {render, screen} from '@testing-library/react';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 describe('HomepageFeatures', () => {
-  it('renders 5 feature cards', () => {
+  it('renders 3 feature cards', () => {
     render(<HomepageFeatures />);
     const cards = screen.getAllByRole('link');
-    expect(cards).toHaveLength(5);
+    expect(cards).toHaveLength(3);
   });
 
   it('renders feature titles', () => {
     render(<HomepageFeatures />);
-    expect(screen.getByText('Contact Extraction')).toBeInTheDocument();
     expect(screen.getByText('AI Email Writer')).toBeInTheDocument();
-    expect(screen.getByText('Batch Email Sending')).toBeInTheDocument();
     expect(screen.getByText('AI Marketing Assistant')).toBeInTheDocument();
     expect(screen.getByText('Task Scheduling')).toBeInTheDocument();
   });
 
   it('each card links to correct documentation', () => {
     render(<HomepageFeatures />);
-    const searchCard = screen.getByText('Contact Extraction').closest('a');
-    expect(searchCard).toHaveAttribute('href', '/docs/lead-generation/contact-extraction');
+    const searchCard = screen.getByText('AI Email Writer').closest('a');
+    expect(searchCard).toHaveAttribute('href', '/docs/ai-outreach/ai-email-writer');
   });
 
   it('icons have proper role attribute', () => {

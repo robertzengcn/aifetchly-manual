@@ -13,7 +13,7 @@
   },
   "link.item.label.Lead Generation": {
     "message": "リードジェネレーション",
-    "description": "The label of footer link with label=Lead Generation linking to /docs/lead-generation/contact-extraction"
+    "description": "The label of footer link with label=Lead Generation linking to /docs/lead-generation/proxy-setup"
   },
   "link.item.label.AI Outreach": {
     "message": "AI アウトリーチ",

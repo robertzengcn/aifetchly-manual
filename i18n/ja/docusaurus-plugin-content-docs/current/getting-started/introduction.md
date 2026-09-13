@@ -113,9 +113,7 @@ aiFetchly は **Electron** で構築されたデスクトップアプリケー�
 
 - コンピューターに[aiFetchlyをインストール](./installation)
 - 安全なスクレイピングのために[プロキシを設定](../lead-generation/proxy-setup)
-- [コンタクトプロフィール分析を設定](../lead-generation/contact-extraction)
 - [ナレッジライブラリを設定](../ai-outreach/knowledge-library)
-- [最初のメールキャンペーンを開始](../lead-generation/batch-email-sending)
 
 ## サポートとドキュメント
 

@@ -141,7 +141,7 @@ const config: Config = {
             },
             {
               label: "Lead Generation",
-              to: "/docs/lead-generation/contact-extraction",
+              to: "/docs/lead-generation/proxy-setup",
             },
           ],
         },

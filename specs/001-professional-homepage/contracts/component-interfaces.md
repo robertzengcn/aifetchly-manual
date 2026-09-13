@@ -209,11 +209,11 @@ const featureItemSchema = {
 **Example Valid Feature**:
 ```typescript
 {
-  id: 'contact-extraction',
-  title: 'Contact Extraction',
-  description: 'Extract emails and contacts from websites and search results',
-  icon: Users,
-  link: '/docs/lead-generation/contact-extraction'
+  id: 'ai-email-writer',
+  title: 'AI Email Writer',
+  description: 'Generate personalized outreach emails using AI with your knowledge base',
+  icon: Mail,
+  link: '/docs/ai-outreach/ai-email-writer'
 }
 ```
 

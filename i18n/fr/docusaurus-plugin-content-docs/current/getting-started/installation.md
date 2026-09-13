@@ -344,8 +344,7 @@ sudo dnf install --skip-broken aifetchly
 Après avoir installé aiFetchly avec succès :
 
 1. [Configurer les paramètres proxy](../lead-generation/proxy-setup) (recommandé pour le information organization)
-2. [Configurer l'analyse des profils de contacts](../lead-generation/contact-extraction)
-3. [Configurer votre bibliothèque de connaissances](../ai-outreach/knowledge-library)
+2. [Configurer votre bibliothèque de connaissances](../ai-outreach/knowledge-library)
 
 ---
 

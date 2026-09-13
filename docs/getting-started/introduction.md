@@ -113,9 +113,7 @@ All features described in this manual are currently available to all users. Futu
 
 - [Install aiFetchly](./installation) on your computer
 - [Configure proxies](../lead-generation/proxy-setup) for safe information organization
-- [Set up contact profile insights](../lead-generation/contact-extraction)
 - [Set up the Knowledge Library](../ai-outreach/knowledge-library)
-- [Start your first email campaign](../lead-generation/batch-email-sending)
 
 ## Support & Documentation
 

@@ -650,8 +650,6 @@ Task: Outreach Campaign - Envoyer les messages générés par IA
 
 Le planificateur de tâches s'intègre avec :
 
-- **[Extraction de contacts](../lead-generation/contact-extraction)** : Extraction automatique après les recherches
-- **[Envoi d'e-mails en lot](../lead-generation/batch-email-sending)** : Campagnes automatisées
 - **AI Message** : Planifier des tâches IA avec intégration d'outils pour l'analyse et les actions automatisées
 
 ## Prochaines étapes

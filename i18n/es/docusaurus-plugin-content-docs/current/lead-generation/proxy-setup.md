@@ -360,7 +360,6 @@ Cambie regularmente su grupo de proxies para mantener la seguridad y evitar la d
 
 Ahora que ha configurado sus proxies:
 
-- [Configure la extracción de contactos](./contact-extraction)
 - [Configure la Biblioteca de Conocimiento](../ai-outreach/knowledge-library)
 
 ---

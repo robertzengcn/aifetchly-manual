@@ -309,8 +309,6 @@ AI スキルのインポート、管理、使用に関する完全なドキュ�
 システム設定の構成が完了したら：
 
 - [入門ガイドに戻る](../getting-started/introduction)
-- [コンタクトプロフィール分析を設定](../lead-generation/contact-extraction)
-- [メールサービスを構成する](../lead-generation/batch-email-sending)
 
 ---
 

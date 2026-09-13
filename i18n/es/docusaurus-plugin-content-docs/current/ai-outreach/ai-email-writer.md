@@ -321,17 +321,6 @@ Alternativa: {$value_proposition_2}
 Alternativa: {$value_proposition_3}
 ```
 
-## Integración con el envío masivo de correos
-
-Las plantillas se usan en el flujo de trabajo de envío masivo de correos:
-
-1. **Elija una plantilla** en el Paso 2 del proceso de envío masivo
-2. **Las variables se completan automáticamente** desde su lista de correos
-3. **Cada destinatario recibe un correo electrónico personalizado**
-4. **La IA puede mejorar** la plantilla con contenido de la Biblioteca de Conocimiento
-
-Para instrucciones detalladas, consulte [Outreach Campaign](../lead-generation/batch-email-sending).
-
 ## Solución de problemas
 
 ### Variables no reemplazadas
@@ -400,8 +389,7 @@ Para instrucciones detalladas, consulte [Outreach Campaign](../lead-generation/b
 
 Después de crear sus plantillas:
 
-- [Configurar servicios de correo (SMTP)](../lead-generation/batch-email-sending#configuración-de-servicios-de-correo-electrónico)
-- [Configurar el envío masivo de correos](../lead-generation/batch-email-sending)
+- [Construya su Biblioteca de Conocimiento](./knowledge-library) para obtener un mejor contexto de IA
 
 ---
 

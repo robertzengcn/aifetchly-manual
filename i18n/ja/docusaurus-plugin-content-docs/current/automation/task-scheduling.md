@@ -650,8 +650,6 @@ Task: Outreach Campaign - AI 生成メッセージを送信
 
 タスクスケジューラーは以下と連携します:
 
-- **[コンタクト抽出](../lead-generation/contact-extraction)**: 検索後に自動抽出
-- **[一括メール送信](../lead-generation/batch-email-sending)**: 自動キャンペーン
 - **AI Message**: ツール統合を備えた AI タスクをスケジュールし、自動分析とアクションを実行
 
 ## 次のステップ

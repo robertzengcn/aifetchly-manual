@@ -446,7 +446,6 @@ La Biblioteca de Conocimiento es perfecta para:
 Ahora que ha construido su Biblioteca de Conocimiento:
 
 - [Cree campañas de correo generadas por IA](./ai-email-writer)
-- [Configure el envío masivo de correos](../lead-generation/batch-email-sending)
 
 ---
 

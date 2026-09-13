@@ -113,9 +113,7 @@ aiFetchly 是一个基于 **Electron** 构建的桌面应用程序，支持：
 
 - 在您的电脑上[安装 aiFetchly](./installation)
 - [配置代理](../lead-generation/proxy-setup)以进行安全抓取
-- [设置联系人档案洞察](../lead-generation/contact-extraction)
 - [设置知识库](../ai-outreach/knowledge-library)
-- [开始您的第一个邮件活动](../lead-generation/batch-email-sending)
 
 ## 支持与文档
 

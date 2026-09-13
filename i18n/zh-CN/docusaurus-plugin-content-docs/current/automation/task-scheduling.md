@@ -650,8 +650,6 @@ Task: Outreach Campaign - 发送 AI 生成的消息
 
 任务调度器与以下功能集成：
 
-- **[联系方式提取](../lead-generation/contact-extraction)**：搜索后自动提取
-- **[批量邮件发送](../lead-generation/batch-email-sending)**：自动化营销活动
 - **AI Message**：调度支持工具集成的 AI 任务，用于自动分析和操作
 
 ## 下一步
