@@ -467,9 +467,9 @@ AIを包括的な戦略策定に活用します：
 
 AI Marketing Assistantについて理解できたら：
 
+- [AI Chat V2](./ai-chat-v2)：プランモードとサブエージェントを備えた再設計されたチャット。
 - より良いコンテキストのために[ナレッジライブラリを構築](./knowledge-library)する
 - AIアシストで[メールテンプレートを作成](./ai-email-writer)する
-- [自動キャンペーンを設定](../lead-generation/batch-email-sending)する
 
 ---
 

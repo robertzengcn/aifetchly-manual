@@ -344,8 +344,7 @@ sudo dnf install --skip-broken aifetchly
 aiFetchly のインストールが完了したら：
 
 1. [プロキシ設定を構成](../lead-generation/proxy-setup)（スクレイピングに推奨）
-2. [リード獲得について学ぶ](../lead-generation/search-engines)
-3. [ナレッジライブラリを設定](../ai-outreach/knowledge-library)
+2. [ナレッジライブラリを設定](../ai-outreach/knowledge-library)
 
 ---
 

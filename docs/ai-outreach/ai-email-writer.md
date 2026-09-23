@@ -321,17 +321,6 @@ Alternative: {$value_proposition_2}
 Alternative: {$value_proposition_3}
 ```
 
-## Integration with Outreach Campaign
-
-Templates are used in the outreach campaign workflow:
-
-1. **Choose Template** in Step 2 of the batch email process
-2. **Variables are automatically populated** from your email list
-3. **Each recipient gets a personalized email**
-4. **AI can enhance** the template with Knowledge Library content
-
-For detailed instructions, see [Outreach Campaign](../lead-generation/batch-email-sending).
-
 ## Troubleshooting
 
 ### Variables Not Replaced
@@ -400,8 +389,7 @@ For detailed instructions, see [Outreach Campaign](../lead-generation/batch-emai
 
 After creating your templates:
 
-- [Configure email services (SMTP)](../lead-generation/batch-email-sending#configuring-email-services)
-- [Set up outreach campaign](../lead-generation/batch-email-sending)
+- [Build your Knowledge Library](./knowledge-library) for better AI context
 
 ---
 

@@ -309,8 +309,6 @@ AI スキルのインポート、管理、使用に関する完全なドキュ�
 システム設定の構成が完了したら：
 
 - [入門ガイドに戻る](../getting-started/introduction)
-- [最初の検索タスクを設定する](../lead-generation/search-engines)
-- [メールサービスを構成する](../lead-generation/batch-email-sending)
 
 ---
 

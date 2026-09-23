@@ -321,17 +321,6 @@ Alternative: {$value_proposition_2}
 Alternative: {$value_proposition_3}
 ```
 
-## バッチメール送信との連携
-
-テンプレートはバッチメール送信ワークフローで使用されます：
-
-1. バッチメール処理のステップ2で**テンプレートを選択**
-2. メールリストから**変数が自動的に設定**
-3. **各受信者にパーソナライズされたメールが送信**
-4. AIがナレッジライブラリのコンテンツでテンプレートを**強化**
-
-詳しい手順については、[バッチメール送信](../lead-generation/batch-email-sending)を参照してください。
-
 ## トラブルシューティング
 
 ### 変数が置換されない
@@ -400,8 +389,7 @@ Alternative: {$value_proposition_3}
 
 テンプレートを作成した後：
 
-- [メールサービスの設定（SMTP）](../lead-generation/batch-email-sending#メールサービスの設定)
-- [バッチメール送信のセットアップ](../lead-generation/batch-email-sending)
+- AIコンテキストを向上させるため[ナレッジライブラリを構築](./knowledge-library)
 
 ---
 

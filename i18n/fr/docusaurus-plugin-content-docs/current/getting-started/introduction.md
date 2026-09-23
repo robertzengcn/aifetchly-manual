@@ -113,9 +113,7 @@ Toutes les fonctionnalités décrites dans ce manuel sont actuellement disponibl
 
 - [Installer aiFetchly](./installation) sur votre ordinateur
 - [Configurer les proxies](../lead-generation/proxy-setup) pour un information organization sécurisé
-- [En savoir plus sur la génération de prospects](../lead-generation/search-engines)
 - [Configurer la bibliothèque de connaissances](../ai-outreach/knowledge-library)
-- [Démarrer votre première campagne d'emailing](../lead-generation/batch-email-sending)
 
 ## Support & Documentation
 

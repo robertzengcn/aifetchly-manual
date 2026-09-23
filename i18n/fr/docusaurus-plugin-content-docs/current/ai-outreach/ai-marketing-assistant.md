@@ -467,9 +467,9 @@ Traitez les défis marketing :
 
 Maintenant que vous comprenez l'Assistant Marketing IA :
 
+- [AI Chat V2](./ai-chat-v2) : le chat repensé avec le mode Plan et les sous-agents.
 - [Construisez votre Bibliothèque de connaissances](./knowledge-library) pour un meilleur contexte
 - [Créez des modèles d'e-mails](./ai-email-writer) avec l'assistance de l'IA
-- [Configurez des campagnes automatisées](../lead-generation/batch-email-sending)
 
 ---
 

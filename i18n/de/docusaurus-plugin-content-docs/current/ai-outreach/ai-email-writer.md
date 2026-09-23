@@ -321,17 +321,6 @@ Alternative: {$value_proposition_2}
 Alternative: {$value_proposition_3}
 ```
 
-## Integration mit Batch-E-Mail-Versand
-
-Vorlagen werden im Batch-E-Mail-Versand-Workflow verwendet:
-
-1. **Wählen Sie eine Vorlage** in Schritt 2 des Batch-E-Mail-Prozesses
-2. **Variablen werden automatisch befüllt** aus Ihrer E-Mail-Liste
-3. **Jeder Empfänger erhält eine personalisierte E-Mail**
-4. **KI kann die Vorlage erweitern** mit Inhalten aus der Wissensbibliothek
-
-Ausführliche Anleitungen finden Sie unter [Batch-E-Mail-Versand](../lead-generation/batch-email-sending).
-
 ## Fehlerbehebung
 
 ### Variablen werden nicht ersetzt
@@ -400,8 +389,7 @@ Ausführliche Anleitungen finden Sie unter [Batch-E-Mail-Versand](../lead-genera
 
 Nachdem Sie Ihre Vorlagen erstellt haben:
 
-- [E-Mail-Dienste konfigurieren (SMTP)](../lead-generation/batch-email-sending#e-mail-dienste-konfigurieren)
-- [Batch-E-Mail-Versand einrichten](../lead-generation/batch-email-sending)
+- [Bauen Sie Ihre Wissensbibliothek auf](./knowledge-library) für besseren KI-Kontext
 
 ---
 

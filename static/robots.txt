@@ -1,0 +1,5 @@
+# aiFetchly Manual — robots.txt
+# All crawlers, including AI bots, are allowed to crawl and index this site.
+
+User-agent: *
+Allow: /

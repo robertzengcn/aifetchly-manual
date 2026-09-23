@@ -476,7 +476,6 @@ Now that you understand the AI Marketing Assistant:
 - [AI Chat V2](./ai-chat-v2) — the redesigned chat with Plan Mode and subagents.
 - [Build your Knowledge Library](./knowledge-library) for better context
 - [Create email templates](./ai-email-writer) with AI assistance
-- [Set up automated campaigns](../lead-generation/batch-email-sending)
 
 ---
 

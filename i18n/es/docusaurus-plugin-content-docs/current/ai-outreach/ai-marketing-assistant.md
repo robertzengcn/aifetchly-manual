@@ -467,9 +467,9 @@ Aborde desafíos de marketing:
 
 Ahora que comprende el Asistente de Marketing IA:
 
+- [AI Chat V2](./ai-chat-v2): el chat rediseñado con Modo Plan y subagentes.
 - [Construya su Biblioteca de Conocimiento](./knowledge-library) para mejor contexto
 - [Cree plantillas de correo](./ai-email-writer) con asistencia de IA
-- [Configure campañas automatizadas](../lead-generation/batch-email-sending)
 
 ---
 

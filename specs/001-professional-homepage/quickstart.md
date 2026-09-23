@@ -124,10 +124,7 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import Heading from '@theme/Heading';
 import {
-  Search,
-  Users,
   Mail,
-  Send,
   Sparkles,
   Clock,
 } from 'lucide-react';
@@ -142,28 +139,6 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Multi-Engine Search',
-    icon: Search,
-    description: (
-      <>
-        Scrape leads from <strong>Google, Bing, Yandex, and Yahoo</strong> simultaneously
-        to maximize your reach and efficiency.
-      </>
-    ),
-    link: '/docs/lead-generation/search-engines',
-  },
-  {
-    title: 'Contact Extraction',
-    icon: Users,
-    description: (
-      <>
-        Extract email addresses and contacts from <strong>websites, Yellow Pages,
-        and search results</strong> with precision.
-      </>
-    ),
-    link: '/docs/lead-generation/contact-extraction',
-  },
-  {
     title: 'AI Email Writer',
     icon: Mail,
     description: (
@@ -173,17 +148,6 @@ const FeatureList: FeatureItem[] = [
       </>
     ),
     link: '/docs/ai-outreach/ai-email-writer',
-  },
-  {
-    title: 'Batch Email Sending',
-    icon: Send,
-    description: (
-      <>
-        Send <strong>personalized email campaigns</strong> at scale with SMTP integration,
-        smart filters, and duplicate prevention.
-      </>
-    ),
-    link: '/docs/ai-outreach/batch-email-sending',
   },
   {
     title: 'AI Marketing Assistant',
@@ -558,26 +522,23 @@ import {render, screen} from '@testing-library/react';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 describe('HomepageFeatures', () => {
-  it('renders 6 feature cards', () => {
+  it('renders 3 feature cards', () => {
     render(<HomepageFeatures />);
     const cards = screen.getAllByRole('link');
-    expect(cards).toHaveLength(6);
+    expect(cards).toHaveLength(3);
   });
 
   it('renders feature titles', () => {
     render(<HomepageFeatures />);
-    expect(screen.getByText('Multi-Engine Search')).toBeInTheDocument();
-    expect(screen.getByText('Contact Extraction')).toBeInTheDocument();
     expect(screen.getByText('AI Email Writer')).toBeInTheDocument();
-    expect(screen.getByText('Batch Email Sending')).toBeInTheDocument();
     expect(screen.getByText('AI Marketing Assistant')).toBeInTheDocument();
     expect(screen.getByText('Task Scheduling')).toBeInTheDocument();
   });
 
   it('each card links to correct documentation', () => {
     render(<HomepageFeatures />);
-    const searchCard = screen.getByText('Multi-Engine Search').closest('a');
-    expect(searchCard).toHaveAttribute('href', '/docs/lead-generation/search-engines');
+    const searchCard = screen.getByText('AI Email Writer').closest('a');
+    expect(searchCard).toHaveAttribute('href', '/docs/ai-outreach/ai-email-writer');
   });
 
   it('icons have proper role attribute', () => {

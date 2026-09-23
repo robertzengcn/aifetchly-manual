@@ -467,9 +467,9 @@ AI 营销助手基于数据和最佳实践提供建议，但请注意：
 
 现在您已了解 AI 营销助手的功能：
 
+- [AI Chat V2](./ai-chat-v2) — 重新设计的聊天，支持计划模式和小助手。
 - [构建您的知识库](./knowledge-library)以获取更好的上下文支持
 - [借助 AI 创建邮件模板](./ai-email-writer)
-- [设置自动化营销活动](../lead-generation/batch-email-sending)
 
 ---
 

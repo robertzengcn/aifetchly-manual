@@ -321,17 +321,6 @@ Alternative: {$value_proposition_2}
 Alternative: {$value_proposition_3}
 ```
 
-## 与批量邮件发送的集成
-
-模板在批量邮件发送工作流中使用：
-
-1. **选择模板**在批量邮件流程的第二步
-2. **变量自动填充**来自您的邮件列表
-3. **每位收件人收到个性化邮件**
-4. **AI 可以增强**模板，融入知识库内容
-
-详细说明请参阅[批量邮件发送](../lead-generation/batch-email-sending)。
-
 ## 故障排除
 
 ### 变量未被替换
@@ -400,8 +389,7 @@ Alternative: {$value_proposition_3}
 
 创建模板后：
 
-- [配置邮件服务 (SMTP)](../lead-generation/batch-email-sending#配置邮件服务)
-- [设置批量邮件发送](../lead-generation/batch-email-sending)
+- [构建您的知识库](./knowledge-library)以获得更好的 AI 上下文
 
 ---
 

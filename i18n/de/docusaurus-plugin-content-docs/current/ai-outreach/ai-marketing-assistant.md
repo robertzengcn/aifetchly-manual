@@ -467,9 +467,9 @@ Bearbeiten Sie Marketingherausforderungen:
 
 Nachdem Sie den AI Marketing Assistant kennengelernt haben:
 
+- [AI Chat V2](./ai-chat-v2) – der neu gestaltete Chat mit Plan-Modus und Subagenten.
 - [Bauen Sie Ihre Wissensbibliothek auf](./knowledge-library) für besseren Kontext
 - [Erstellen Sie E-Mail-Vorlagen](./ai-email-writer) mit KI-Unterstützung
-- [Richten Sie automatisierte Kampagnen ein](../lead-generation/batch-email-sending)
 
 ---
 

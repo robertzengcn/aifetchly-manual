@@ -13,18 +13,22 @@
   },
   "link.item.label.Lead Generation": {
     "message": "Generación de Leads",
-    "description": "The label of footer link with label=Lead Generation linking to /docs/lead-generation/search-engines"
+    "description": "The label of footer link with label=Lead Generation linking to /docs/lead-generation/proxy-setup"
   },
   "link.item.label.AI Outreach": {
     "message": "Contacto con IA",
     "description": "The label of footer link with label=AI Outreach linking to /docs/ai-outreach/knowledge-library"
   },
+  "link.item.label.aiFetchly": {
+    "message": "aiFetchly",
+    "description": "The label of footer link with label=aiFetchly linking to https://www.aifetchly.com"
+  },
   "link.item.label.GitHub": {
     "message": "GitHub",
-    "description": "The label of footer link with label=GitHub linking to https://github.com/facebook/docusaurus"
+    "description": "The label of footer link with label=GitHub linking to https://github.com/robertzengcn/aiFetchly"
   },
   "copyright": {
-    "message": "Copyright © 2026 aiFetchly. Construido con Docusaurus.",
+    "message": "Copyright © 2026 aiFetchly.",
     "description": "The footer copyright"
   }
 }
