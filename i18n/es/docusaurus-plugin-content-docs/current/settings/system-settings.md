@@ -105,6 +105,26 @@ Las rutas del navegador son necesarias para:
 
 :::
 
+### Navegador administrado (Managed Browser)
+
+Configure el navegador Chrome visible integrado que utiliza el asistente de IA para investigar en la web y automatizar plataformas sociales. Para conocer todos los detalles sobre cómo el asistente opera el navegador, consulte [Uso del navegador](../ai-outreach/browser-use).
+
+| Ajuste | Predeterminado | Descripción |
+|---|---|---|
+| **Usar navegador administrado integrado** | Habilitado | Habilita o deshabilita las sesiones de navegador administrado controladas por IA. |
+| **Usar caché del navegador administrado** | Habilitado | Reutiliza la caché en disco aislada por cuenta para recursos estáticos entre sesiones para acelerar la carga de páginas. |
+| **Caché máxima del navegador administrado** | 500 MB | Establece el espacio en disco total máximo asignado para las cachés de recursos del navegador administrado (rango: 100–2048 MB). |
+| **Borrar caché al cerrar aiFetchly** | Deshabilitado | Limpia automáticamente las cachés de recursos administrados al salir de la aplicación. |
+
+#### Acciones de caché
+
+- **Borrar caché de la cuenta seleccionada**: Elimina las respuestas HTTP almacenadas en caché para la Cuenta de herramienta activa o seleccionada.
+- **Borrar todas las cachés de navegadores administrados**: Elimina todos los archivos de caché en disco local en todas las cuentas.
+
+:::info Preservación del estado de inicio de sesión
+Borrar la caché del navegador solo elimina archivos temporales descargados (imágenes, scripts, estilos). **Nunca elimina las sesiones de inicio de sesión guardadas, las cookies de autenticación ni las Cuentas de herramientas**.
+:::
+
 ### Preferencias del usuario
 
 Configura tu experiencia con aiFetchly.

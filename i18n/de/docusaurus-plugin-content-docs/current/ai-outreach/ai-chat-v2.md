@@ -24,6 +24,7 @@ V2 und der klassische Assistent laufen parallel. Wenn das V2-Feature-Flag aktivi
 | **Tippindikator** | Sichtbar, während die KI nachdenkt oder ein Tool ausführt. |
 | **Stopp-Schaltfläche** | Bricht den laufenden Stream und jeglichen aktiven Tool-Aufruf ab. |
 | **Slash-Befehle** | Tippen Sie `/` in den Composer, um Aktionen auszuführen (`/clear`, `/status`, `/plugin`) oder wiederverwendbare Prompt-Vorlagen aufzuklappen, die Sie selbst erstellt haben. Siehe [Slash-Befehle](./slash-commands). |
+| **Browser-Nutzung (Browser Use)** | Die KI kann einen sichtbaren Chrome-Browser steuern, um Websites zu durchsuchen und Social-Media-Workflows mit Live-Status, manueller Übergabe und Genehmigungskontrollen zu automatisieren. Siehe [Browser-Nutzung](./browser-use). |
 | **Sprache** | Sprechen Sie Ihre Nachricht und hören Sie die Antwort der KI — auf dem Gerät ausgeführte Spracherkennung und Sprachsynthese. Siehe [Sprache](#sprache). |
 
 ## V2 öffnen

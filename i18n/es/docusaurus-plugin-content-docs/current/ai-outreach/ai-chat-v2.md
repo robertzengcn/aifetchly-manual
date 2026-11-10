@@ -24,6 +24,7 @@ V2 y el asistente heredado funcionan en paralelo. Si la bandera de funcionalidad
 | **Indicador de escritura** | Visible mientras la IA está pensando o ejecutando una herramienta. |
 | **Botón Detener** | Cancela el flujo en curso y cualquier llamada a herramienta en ejecución. |
 | **Comandos slash** | Escriba `/` en el compositor para ejecutar acciones (`/clear`, `/status`, `/plugin`) o expandir plantillas de prompt reutilizables que usted cree. Consulte [Comandos Slash](./slash-commands). |
+| **Uso del navegador (Browser Use)** | La IA puede controlar un navegador Chrome visible para investigar sitios web y automatizar tareas en redes sociales con estado en vivo, traspaso manual y controles de aprobación. Consulte [Uso del navegador](./browser-use). |
 | **Voz** | Diga su mensaje en voz alta y escuche la respuesta de la IA — reconocimiento de voz a texto y texto a voz en el dispositivo. Consulte [Voz](#voz). |
 
 ## Abrir V2

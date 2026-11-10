@@ -105,6 +105,26 @@ Les chemins de navigateur sont nécessaires pour :
 
 :::
 
+### Navigateur géré (Managed Browser)
+
+Configurez le navigateur Chrome visible intégré utilisé par l'assistant IA pour la recherche web et l'automatisation des réseaux sociaux. Pour plus de détails sur le fonctionnement du navigateur, consultez [Utilisation du navigateur](../ai-outreach/browser-use).
+
+| Paramètre | Par défaut | Description |
+|---|---|---|
+| **Utiliser le navigateur géré intégré** | Activé | Active ou désactive les sessions de navigateur géré pilotées par l'IA. |
+| **Utiliser le cache du navigateur géré** | Activé | Réutilise le cache disque isolé par compte pour les ressources statiques afin d'accélérer le chargement des pages. |
+| **Taille maximale du cache du navigateur géré** | 500 Mo | Définit l'espace disque total alloué aux caches de ressources du navigateur géré (plage : 100 à 2048 Mo). |
+| **Vider le cache à la fermeture d'aiFetchly** | Désactivé | Nettoie automatiquement les caches de ressources lors de la fermeture de l'application. |
+
+#### Actions de cache
+
+- **Vider le cache du compte sélectionné** : Supprime les réponses HTTP en cache pour le compte d'outil actif ou sélectionné.
+- **Vider tous les caches des navigateurs gérés** : Supprime tous les fichiers de cache locaux sur l'ensemble des comptes.
+
+:::info Préservation de l'état de connexion
+Vider le cache du navigateur supprime uniquement les fichiers temporaires téléchargés (images, scripts, styles). Cela **ne supprime jamais vos sessions de connexion enregistrées, vos cookies d'authentification ou vos comptes d'outils**.
+:::
+
 ### Préférences utilisateur
 
 Configurez votre expérience aiFetchly.

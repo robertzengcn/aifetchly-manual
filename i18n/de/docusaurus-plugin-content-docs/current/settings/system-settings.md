@@ -105,6 +105,26 @@ Browser-Pfade sind erforderlich für:
 
 :::
 
+### Verwalteter Browser (Managed Browser)
+
+Konfigurieren Sie den integrierten sichtbaren Chrome-Browser, den der KI-Assistent für Webrecherche und Social-Media-Automatisierung nutzt. Ausführliche Informationen dazu finden Sie unter [Browser-Nutzung](../ai-outreach/browser-use).
+
+| Einstellung | Standard | Beschreibung |
+|---|---|---|
+| **Integrierten verwalteten Browser verwenden** | Aktiviert | Aktiviert oder deaktiviert KI-gesteuerte verwaltete Browsersitzungen. |
+| **Cache des verwalteten Browsers verwenden** | Aktiviert | Verwendet kontoisolierten Festplattencache für statische Ressourcen sitzungsübergreifend wieder, um Seitenaufrufe zu beschleunigen. |
+| **Maximaler Cache des verwalteten Browsers** | 500 MB | Legt den maximalen lokalen Speicherplatz für den Browser-Cache fest (Bereich: 100–2048 MB). |
+| **Cache beim Schließen von aiFetchly leeren** | Deaktiviert | Bereinigt Ressourcen-Caches beim Beenden der Anwendung automatisch. |
+
+#### Cache-Aktionen
+
+- **Cache des ausgewählten Kontos leeren**: Löscht zwischengespeicherte HTTP-Antworten für das aktive bzw. ausgewählte Tool-Konto.
+- **Alle Caches des verwalteten Browsers leeren**: Bereinigt alle lokalen Cache-Dateien über alle Konten hinweg.
+
+:::info Anmeldestatus bleibt erhalten
+Das Leeren des Browser-Caches entfernt nur temporär heruntergeladene Dateien (Bilder, Skripte, Stylesheets). **Gespeicherte Anmeldesitzungen, Authentifizierungs-Cookies und Tool-Konten werden niemals gelöscht**.
+:::
+
 ### Benutzereinstellungen
 
 Konfigurieren Sie Ihr aiFetchly-Erlebnis.

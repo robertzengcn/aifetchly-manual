@@ -24,6 +24,7 @@ V2 et l'assistant classique fonctionnent côte à côte. Si le feature flag V2 e
 | **Indicateur de saisie** | Visible pendant que l'IA réfléchit ou exécute un outil. |
 | **Bouton Arrêter** | Annule le flux en cours et tout appel d'outil en cours d'exécution. |
 | **Commandes Slash** | Saisissez `/` dans le composeur pour exécuter des actions (`/clear`, `/status`, `/plugin`) ou développer des modèles d'invite réutilisables que vous créez vous-même. Voir [Commandes Slash](./slash-commands). |
+| **Utilisation du navigateur (Browser Use)** | L'IA peut piloter un navigateur Chrome visible pour rechercher des sites web et automatiser les réseaux sociaux avec statut en direct, relais humain et contrôles d'approbation. Voir [Utilisation du navigateur](./browser-use). |
 | **Voix** | Dictez votre message et écoutez la réponse de l'IA — reconnaissance vocale et synthèse vocale sur l'appareil. Voir [Voix](#voix). |
 
 ## Ouvrir V2

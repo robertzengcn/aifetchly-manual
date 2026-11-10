@@ -105,6 +105,26 @@ Browser paths are required for:
 
 :::
 
+### Managed Browser
+
+Configure the built-in visible Chrome browser used by the AI assistant for web research and social platform automation. For full details on how the assistant operates the browser, see [Browser Use](../ai-outreach/browser-use).
+
+| Setting | Default | Description |
+|---|---|---|
+| **Use built-in managed browser** | Enabled | Enables or disables AI-controlled managed browser sessions. |
+| **Use managed browser cache** | Enabled | Reuses account-isolated disk cache for static resources across sessions to speed up page loads. |
+| **Maximum managed-browser cache** | 500 MB | Sets maximum total disk space allocated for managed browser resource caches (range: 100–2048 MB). |
+| **Clear cache when aiFetchly closes** | Disabled | Automatically cleans up managed resource caches when exiting the application. |
+
+#### Cache Actions
+
+- **Clear selected account cache**: Deletes cached HTTP responses for the currently active or selected Tool Account.
+- **Clear all managed-browser caches**: Clears all local disk cache files across all accounts.
+
+:::info Preserving Login State
+Clearing the browser cache only removes temporary cached files (images, scripts, styles). It **never removes saved login sessions, authentication cookies, or Tool Accounts**.
+:::
+
 ### User Preferences
 
 Configure your aiFetchly experience.

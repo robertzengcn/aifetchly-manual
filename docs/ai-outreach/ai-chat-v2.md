@@ -24,6 +24,7 @@ V2 and the legacy assistant run side by side. If the V2 feature flag is on, clic
 | **Typing indicator** | Visible while the AI is thinking or running a tool. |
 | **Stop button** | Cancels the in-flight stream and any running tool call. |
 | **Slash commands** | Type `/` in the composer to run actions (`/clear`, `/status`, `/plugin`) or expand reusable prompt templates you create yourself. See [Slash Commands](./slash-commands). |
+| **Browser Use** | The AI can operate a visible Chrome browser to research websites and automate social workflows with live status, human handoff, and approval controls. See [Browser Use](./browser-use). |
 | **Voice** | Speak your message and hear the AI reply — on-device speech-to-text and text-to-speech. See [Voice](#voice). |
 
 ## Opening V2
