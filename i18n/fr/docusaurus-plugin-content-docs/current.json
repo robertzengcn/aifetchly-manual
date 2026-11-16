@@ -22,5 +22,9 @@
   "sidebar.docs.category.Settings": {
     "message": "Paramètres",
     "description": "The label for category 'Settings' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.AI Chat Features": {
+    "message": "Fonctionnalités du chat IA",
+    "description": "The label for category 'AI Chat Features' in sidebar 'docs'"
   }
 }

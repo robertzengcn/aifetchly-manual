@@ -47,6 +47,16 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: "category",
+      label: "AI Chat Features",
+      collapsible: false,
+      collapsed: false,
+      items: [
+        "ai-chat-features/ai-image-generation",
+        "ai-chat-features/ai-image-batch-editing",
+      ],
+    },
+    {
+      type: "category",
       label: "Lead Generation",
       collapsible: false,
       collapsed: false,

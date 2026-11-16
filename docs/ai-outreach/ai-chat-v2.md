@@ -26,6 +26,7 @@ V2 and the legacy assistant run side by side. If the V2 feature flag is on, clic
 | **Slash commands** | Type `/` in the composer to run actions (`/clear`, `/status`, `/plugin`) or expand reusable prompt templates you create yourself. See [Slash Commands](./slash-commands). |
 | **Browser Use** | The AI can operate a visible Chrome browser to research websites and automate social workflows with live status, human handoff, and approval controls. See [Browser Use](./browser-use). |
 | **Voice** | Speak your message and hear the AI reply — on-device speech-to-text and text-to-speech. See [Voice](#voice). |
+| **Image generation & editing** | Generate images by chatting, refine them with a follow-up message ("add a dog into the image"), order up to three references, and batch-edit up to 50 images. See [AI Image Generation & Editing](../ai-chat-features/ai-image-generation). |
 
 ## Opening V2
 
@@ -255,6 +256,7 @@ Speech recognition and synthesis are local and free, but to send a message and g
 ## Next steps
 
 - [Slash Commands](./slash-commands) — run actions and reusable prompts with `/`.
+- [AI Image Generation & Editing](../ai-chat-features/ai-image-generation) — generate and edit images in chat, no workspace needed.
 - [Plugin Manager](./plugin-manager) — install plugins from local folder, git, GitHub, npm, or URL.
 - [AI Skills](./ai-skills) — what skills are and how to use them.
 - [MCP Tools](./mcp-tools) — connecting external services.

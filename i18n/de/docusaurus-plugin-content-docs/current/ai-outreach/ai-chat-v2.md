@@ -26,6 +26,7 @@ V2 und der klassische Assistent laufen parallel. Wenn das V2-Feature-Flag aktivi
 | **Slash-Befehle** | Tippen Sie `/` in den Composer, um Aktionen auszuführen (`/clear`, `/status`, `/plugin`) oder wiederverwendbare Prompt-Vorlagen aufzuklappen, die Sie selbst erstellt haben. Siehe [Slash-Befehle](./slash-commands). |
 | **Browser-Nutzung (Browser Use)** | Die KI kann einen sichtbaren Chrome-Browser steuern, um Websites zu durchsuchen und Social-Media-Workflows mit Live-Status, manueller Übergabe und Genehmigungskontrollen zu automatisieren. Siehe [Browser-Nutzung](./browser-use). |
 | **Sprache** | Sprechen Sie Ihre Nachricht und hören Sie die Antwort der KI — auf dem Gerät ausgeführte Spracherkennung und Sprachsynthese. Siehe [Sprache](#sprache). |
+| **Bildgenerierung und -bearbeitung** | Erzeugen Sie Bilder per Chat, verfeinern Sie sie mit einer Folgenachricht („add a dog into the image"), ordnen Sie bis zu drei Referenzen und bearbeiten Sie bis zu 50 Bilder im Batch. Siehe [KI-Bildgenerierung und -bearbeitung](../ai-chat-features/ai-image-generation). |
 
 ## V2 öffnen
 
@@ -255,6 +256,7 @@ Spracherkennung und -synthese sind lokal und kostenlos, aber um eine Nachricht z
 ## Nächste Schritte
 
 - [Slash-Befehle](./slash-commands) — führen Sie Aktionen und wiederverwendbare Prompts mit `/` aus.
+- [KI-Bildgenerierung und -bearbeitung](../ai-chat-features/ai-image-generation) — Bilder im Chat erzeugen und bearbeiten, ganz ohne Workspace.
 - [Plugin-Manager](./plugin-manager) — installieren Sie Plugins aus lokalem Ordner, Git, GitHub, npm oder URL.
 - [KI-Fähigkeiten](./ai-skills) — was Fähigkeiten sind und wie Sie sie verwenden.
 - [MCP-Tools](./mcp-tools) — externe Dienste verbinden.

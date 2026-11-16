@@ -26,6 +26,7 @@ V2 et l'assistant classique fonctionnent côte à côte. Si le feature flag V2 e
 | **Commandes Slash** | Saisissez `/` dans le composeur pour exécuter des actions (`/clear`, `/status`, `/plugin`) ou développer des modèles d'invite réutilisables que vous créez vous-même. Voir [Commandes Slash](./slash-commands). |
 | **Utilisation du navigateur (Browser Use)** | L'IA peut piloter un navigateur Chrome visible pour rechercher des sites web et automatiser les réseaux sociaux avec statut en direct, relais humain et contrôles d'approbation. Voir [Utilisation du navigateur](./browser-use). |
 | **Voix** | Dictez votre message et écoutez la réponse de l'IA — reconnaissance vocale et synthèse vocale sur l'appareil. Voir [Voix](#voix). |
+| **Génération et édition d'images** | Générez des images en discutant, affinez-les avec un message ultérieur (« add a dog into the image »), ordonnez jusqu'à trois références et éditez par lots jusqu'à 50 images. Voir [Génération et édition d'images par IA](../ai-chat-features/ai-image-generation). |
 
 ## Ouvrir V2
 
@@ -255,6 +256,7 @@ La reconnaissance et la synthèse vocale sont locales et gratuites, mais pour en
 ## Étapes suivantes
 
 - [Commandes Slash](./slash-commands) — exécutez des actions et des invites réutilisables avec `/`.
+- [Génération et édition d'images par IA](../ai-chat-features/ai-image-generation) — générez et éditez des images dans le chat, sans espace de travail.
 - [Gestionnaire de plugins](./plugin-manager) — installez des plugins depuis un dossier local, git, GitHub, npm ou une URL.
 - [Compétences IA](./ai-skills) — ce que sont les compétences et comment les utiliser.
 - [Outils MCP](./mcp-tools) — connecter des services externes.

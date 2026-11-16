@@ -26,6 +26,7 @@ V2 y el asistente heredado funcionan en paralelo. Si la bandera de funcionalidad
 | **Comandos slash** | Escriba `/` en el compositor para ejecutar acciones (`/clear`, `/status`, `/plugin`) o expandir plantillas de prompt reutilizables que usted cree. Consulte [Comandos Slash](./slash-commands). |
 | **Uso del navegador (Browser Use)** | La IA puede controlar un navegador Chrome visible para investigar sitios web y automatizar tareas en redes sociales con estado en vivo, traspaso manual y controles de aprobación. Consulte [Uso del navegador](./browser-use). |
 | **Voz** | Diga su mensaje en voz alta y escuche la respuesta de la IA — reconocimiento de voz a texto y texto a voz en el dispositivo. Consulte [Voz](#voz). |
+| **Generación y edición de imágenes** | Genere imágenes conversando, refínelas con un mensaje posterior («add a dog into the image»), ordene hasta tres referencias y edite por lotes hasta 50 imágenes. Consulte [Generación y edición de imágenes con IA](../ai-chat-features/ai-image-generation). |
 
 ## Abrir V2
 
@@ -255,6 +256,7 @@ El reconocimiento y la síntesis de voz son locales y gratuitos, pero para envia
 ## Próximos pasos
 
 - [Comandos Slash](./slash-commands) — ejecute acciones y prompts reutilizables con `/`.
+- [Generación y edición de imágenes con IA](../ai-chat-features/ai-image-generation) — genere y edite imágenes en el chat, sin necesidad de espacio de trabajo.
 - [Gestor de Plugins](./plugin-manager) — instale plugins desde carpeta local, git, GitHub, npm o URL.
 - [AI Skills](./ai-skills) — qué son las habilidades y cómo usarlas.
 - [Herramientas MCP](./mcp-tools) — conexión de servicios externos.
